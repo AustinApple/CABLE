@@ -1,0 +1,63 @@
+{
+    "51479612": {
+        "reactant_set_id": 51479612,
+        "pmid": 35029993,
+        "protein": "Protein ENL",
+        "ligand": {
+            "reference_name": null,
+            "smiles": "C[C@@H]1CC[C@]2(C)[C@H](CCC3=C2CCC2(O3)C(=O)CC[C@@H]3[C@@](C)(C[C@H](O)C4=CC(=O)OC4O)[C@H](C)CC[C@@]23C)[C@@]1(C)C[C@H](O)C1=CC(=O)OC1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5000,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His6-tagged ENL YEATS domain (unknown origin) expressed in Escherichia coli BL21 DE3 assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": null,
+        "references_previous": null,
+        "original_paragraph": "SPR binding analysis methodology can be used to study molecular interactions. Herein, SPR was applied to measure the interactions between compound 1 and the ENL protein. Initially, protein was prepared in 10 mM sodium acetate (pH 5.5) and then immobilized covalently by an amine-coupling reaction on a CM5 sensor chip. The remaining binding sites of the sensor chip were then blocked by ethanol amine. Addition of compound 1, the flow-through analyte, to the chamber resulted in binding to the immobilized protein ligand, producing a small change in refractive index at the gold surface. In this step, compound was diluted in HBS-EP bu\ufb00er (20 mM HEPES at pH 7.4, 150 mM NaCl, 0.05% v/v P20) to the desired concentration and was injected over the chip with a flow rate of 10 \u03bcL/min. All the above bu\ufb00ers, solutions, and sensor chips were placed at room temperature before the run. The association time and dissociation time were both set at 120 s. Binding a\ufb03nities were obtained from the ratio of rate constants to directly characterize protein\u2212molecular interactions. Data analysis was completed via the state model of T200 evaluation software (GE Healthcare).",
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "ENL protein",
+                "strategy": "Amine-coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 1",
+                "concentration_range": "100 \u03bcM highest, 8 concentrations (dilution factor 0.67)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES at pH 7.4, 150 mM NaCl, 0.05% v/v P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "\u00b5L/min"
+                },
+                "temperature_c": "room temperature",
+                "association_time_s": "120",
+                "dissociation_time_s": "120",
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

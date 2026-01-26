@@ -1,0 +1,63 @@
+{
+    "51401743": {
+        "reactant_set_id": 51401743,
+        "pmid": 33440945,
+        "protein": "Serine/threonine-protein kinase Nek7",
+        "ligand": {
+            "reference_name": null,
+            "smiles": "COc1ccc2cc3-c4cc5OCOc5cc4CC[n+]3cc2c1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15600,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to purified recombinant human NEK7 by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": null,
+        "references_previous": null,
+        "original_paragraph": "The SPR assay was performed on a BIAcore T200 biosensor system (GE Healthcare Life Sciences, Piscataway, NJ, USA) at 25\u00b0C using a CM5 chip. The binding of NEK7 at di\ufb00erent concentrations of BBR was performed in 1 \u00d7 PBS-P+ (GE Healthcare Life Sciences) at a flow rate of 20 \u03bcL/min for 120 s. After each binding reaction, a further dissociation time of 60 s was applied after each injection to allow the signal to return to the baseline.",
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Life Sciences",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NEK7",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BBR",
+                "concentration_range": "25 \u03bcM highest, 4 concentrations (dilution factor 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1 \u00d7 PBS-P+ (GE Healthcare Life Sciences)",
+                "pH": null,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "\u00b5L/min"
+                },
+                "temperature_c": "25",
+                "association_time_s": "120",
+                "dissociation_time_s": "60",
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

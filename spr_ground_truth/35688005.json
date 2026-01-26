@@ -1,0 +1,63 @@
+{
+    "51484948": {
+        "reactant_set_id": 51484948,
+        "pmid": 35688005,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "reference_name": null,
+            "smiles": "Nc1nonc1-c1nc2ccccc2n1CC(=O)N\\N=C\\c1ccc(o1)-c1cccc(c1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27700,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 main protease assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": null,
+        "references_previous": null,
+        "original_paragraph": "The SPR assay was used to analyze the interaction between SARS-CoV-2 Mpro with compounds on a Biacore 8 K instrument (GE Healthcare). SARS-CoV-2 Mpro was immobilized on a sensor chip (CM5) via  Amine Coupling Kit (GE Healthcare, Buckinghamshire, UK) at levels of  approximately 10,000 response units (RU). The first flow channel without immobilized protein was set as a reference, and the compounds were injected at the concentration of 50 \u03bcM for screening and 0.2 \u03bcM\u2013100 \u03bcM for binding study in a period of 60 s. Dissociation was  measured for 100\u2013200 s at a flow rate of 30 \u03bcL/min using the following  assay running buffer: 10 mM phosphate buffer containing 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20 (pH 7.5). All of the data were  analyzed through Biacore evaluation software (8 K version 1.0), and the  curve was fitted with a 1:1 kinetics binding model.",
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Mpro",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds (small molecules)",
+                "concentration_range": "50 \u03bcM for screening; 0.2 \u03bcM\u2013100 \u03bcM for binding study"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer containing 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20 (pH 7.5)",
+                "pH": 7.5,
+                "assay_type": null,
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "\u00b5L/min"
+                },
+                "temperature_c": null,
+                "association_time_s": "60",
+                "dissociation_time_s": "100\u2013200",
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow channel without immobilized protein used as reference",
+                "subtraction_method": null,
+                "fitting_model": "1:1 kinetic model",
+                "software": "Biacore Evaluation Software (8K version 1.0)"
+            }
+        }
+    }
+}

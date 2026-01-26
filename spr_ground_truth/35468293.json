@@ -1,0 +1,63 @@
+{
+    "51502839": {
+        "reactant_set_id": 51502839,
+        "pmid": 35468293,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "reference_name": null,
+            "smiles": "CCOc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(c2n1)S(C)(=O)=O)C(=O)N1CCC(CC1)N1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3600,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human BRD4 BD1 (44 to 168 residues) expressed in bacterial expression system by bromoscan assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": null,
+        "references_previous": null,
+        "original_paragraph": "SPR-based ligand binding assays  were performed using a BIAcore S200 (GE Healthcare) at 25\u00b0C using single cycle a\ufb03nity. Immobilization of BRD4 was achieved using  standard amine coupling on a CM5 chip surface. The surface was  prepared through activation with 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide/N-hydroxy succinimide (EDC/NHS), followed by injection of 10 \u03bcg mL\u22121 BRD4 until a target level of 8000 RU was reached. The surface was then quenched using 1 M ethanolamine and  washed with running bu\ufb00er (10 mM HEPES, 150 mM NaCl, 0.01%  (v/v) Tween-20, 0.5 mM TCEP, and 1% (v/v) DMSO) at a flow rate  of 30 \u03bcL min\u22121. XMD8-92 and 46 were injected in a dose\u2212response  manner (nine points ranging from 0 to 20 \u03bcM) with a contact time of  30 s and a dissociation time of 160 s in series across the reference and  BRD4-immobilized flow cells using solvent correction to account for  bulk refractive index changes. The reference channel response was  subtracted from the BRD4-immobilized channel response, and dose\u2212response data were fitted using an a\ufb03nity steady-state 1:1 binding model to determine the Kd.",
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "BRD4",
+                "strategy": "Amine coupling (EDC/NHS activation; ethanolamine quench)",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "10 \u03bcg/mL"
+            },
+            "analyte": {
+                "description": "Small molecules (XMD8-92 and compound 46)",
+                "concentration_range": "0\u201320 \u03bcM (9-point dose\u2013response)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.01% (v/v) Tween-20, 0.5 mM TCEP, 1% (v/v) DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "\u00b5L/min"
+                },
+                "temperature_c": "25",
+                "association_time_s": "30",
+                "dissociation_time_s": "160",
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel (no ligand) flow cell",
+                "subtraction_method": "Reference-subtracted; solvent correction for DMSO",
+                "fitting_model": "Steady-state affinity (1:1 binding model)",
+                "software": null
+            }
+        }
+    }
+}
