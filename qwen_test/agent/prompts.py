@@ -107,9 +107,8 @@ data_analysis:
 Output format (JSON):
 {{{{
     "original_paragraph": {{{{
-        "Methods section, page X": "The extracted methods text...",
-        "Figure X caption": "The figure caption text...",
-        "Figure X": "Data read from the figure (e.g., association time = 60s, dissociation time = 120s)..."
+        "<descriptive_key>": "<extracted_text>",
+        ...
     }}}},
     "confidence": "high/medium/low",
     "reference_number_in_text": "Reference number(s) or 'none'",
@@ -145,6 +144,8 @@ Output format (JSON):
         }}}}
     }}}}
 }}}}
+
+Note: For original_paragraph, use descriptive keys that identify where the text came from (e.g., "Materials and Methods", "SPR Analysis", "Figure 2 caption", "Supporting Information S1"). The keys are flexible - use whatever accurately describes the source location.
 
 If you cannot find a matching SPR assay description, return:
 {{{{
@@ -319,9 +320,8 @@ Return a JSON object where each key is a Pair ID and the value contains that pai
 {{{{
     "{example_ids[0]}": {{{{
         "original_paragraph": {{{{
-            "Methods section, page X": "The extracted methods text...",
-            "Figure X caption": "The figure caption text...",
-            "Figure X": "Data read from the figure..."
+            "<descriptive_key>": "<extracted_text>",
+            ...
         }}}},
         "confidence": "high/medium/low",
         "references_previous": "Complete citation or 'none'",
@@ -342,6 +342,7 @@ Return a JSON object where each key is a Pair ID and the value contains that pai
 IMPORTANT:
 - Include an entry for EVERY Pair ID listed above
 - Use the exact Pair ID as the key
+- For original_paragraph: use descriptive keys that identify where the text came from (e.g., "Materials and Methods", "SPR Analysis", "Figure 2 caption", "Supporting Information S1"). The keys are flexible - use whatever accurately describes the source location.
 - If information for a specific pair cannot be found, set confidence to "N/A" and structured_description to null
 
 Please respond ONLY with valid JSON, no other text."""
