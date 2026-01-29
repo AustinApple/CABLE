@@ -462,6 +462,99 @@ def print_report(results: List[Dict], aggregate: Dict):
 
 
 # =============================================================================
+# Data Loading
+# =============================================================================
+
+def load_json_file(filepath: Path) -> List[Dict]:
+    """Load a JSON file and convert to list format."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        raw = json.load(f)
+
+    if isinstance(raw, dict):
+        first_key = next(iter(raw.keys()), None)
+        if first_key and isinstance(raw[first_key], dict):
+            return list(raw.values())
+        else:
+            return [raw]
+    else:
+        return raw
+
+
+def load_from_directory(gt_dir: Path, ext_dir: Path) -> Tuple[List[Dict], List[Dict], Dict[str, Dict]]:
+    """
+    Load all matching JSON files from ground truth and extracted directories.
+
+    Returns:
+        Tuple of (all_gt_data, all_ext_data, per_paper_data)
+        per_paper_data is a dict mapping filename to {"gt": [...], "ext": [...]}
+    """
+    gt_files = {f.stem: f for f in gt_dir.glob("*.json")}
+    ext_files = {f.stem: f for f in ext_dir.glob("*.json")}
+
+    # Find matching files
+    matching = set(gt_files.keys()) & set(ext_files.keys())
+    gt_only = set(gt_files.keys()) - set(ext_files.keys())
+    ext_only = set(ext_files.keys()) - set(gt_files.keys())
+
+    print(f"\nDirectory mode:")
+    print(f"  Ground truth directory: {gt_dir}")
+    print(f"  Extracted directory:    {ext_dir}")
+    print(f"  Matching files:         {len(matching)}")
+    if gt_only:
+        print(f"  GT only (no extraction): {len(gt_only)} - {list(gt_only)[:5]}{'...' if len(gt_only) > 5 else ''}")
+    if ext_only:
+        print(f"  Extracted only (no GT):  {len(ext_only)} - {list(ext_only)[:5]}{'...' if len(ext_only) > 5 else ''}")
+
+    all_gt_data = []
+    all_ext_data = []
+    per_paper_data = {}
+
+    for name in sorted(matching):
+        gt_data = load_json_file(gt_files[name])
+        ext_data = load_json_file(ext_files[name])
+
+        all_gt_data.extend(gt_data)
+        all_ext_data.extend(ext_data)
+        per_paper_data[name] = {"gt": gt_data, "ext": ext_data}
+
+    print(f"  Total GT entries:       {len(all_gt_data)}")
+    print(f"  Total extracted entries: {len(all_ext_data)}")
+
+    return all_gt_data, all_ext_data, per_paper_data
+
+
+def print_per_paper_summary(per_paper_data: Dict[str, Dict], id_key: str):
+    """Print per-paper evaluation summary."""
+    print("\n" + "=" * 80)
+    print("PER-PAPER SUMMARY")
+    print("=" * 80)
+    print(f"\n{'Paper (PMID)':<15} {'Entries':<10} {'Overall':<12} {'Critical':<12} {'Match Rate':<12}")
+    print("-" * 65)
+
+    paper_results = []
+    for paper_name, data in sorted(per_paper_data.items()):
+        results, aggregate = evaluate_batch(data["gt"], data["ext"], id_key=id_key)
+
+        n_entries = aggregate.get("entries_evaluated", 0)
+        overall = aggregate.get("mean_overall_score", 0)
+        critical = aggregate.get("mean_critical_score", 0)
+        match_rate = aggregate.get("overall_match_rate", 0)
+
+        paper_results.append({
+            "paper": paper_name,
+            "entries": n_entries,
+            "overall_score": overall,
+            "critical_score": critical,
+            "match_rate": match_rate
+        })
+
+        print(f"{paper_name:<15} {n_entries:<10} {overall:<12.2%} {critical:<12.2%} {match_rate:<12.2%}")
+
+    print("-" * 65)
+    return paper_results
+
+
+# =============================================================================
 # Main
 # =============================================================================
 
@@ -471,13 +564,13 @@ def main():
         "--ground-truth",
         type=str,
         required=True,
-        help="Path to ground truth JSON file"
+        help="Path to ground truth JSON file or directory"
     )
     parser.add_argument(
         "--extracted",
         type=str,
         required=True,
-        help="Path to agent extraction results JSON file"
+        help="Path to agent extraction results JSON file or directory"
     )
     parser.add_argument(
         "--output",
@@ -494,39 +587,43 @@ def main():
 
     args = parser.parse_args()
 
-    # Load ground truth
-    print(f"Loading ground truth from {args.ground_truth}...")
-    with open(args.ground_truth, 'r', encoding='utf-8') as f:
-        gt_raw = json.load(f)
+    gt_path = Path(args.ground_truth)
+    ext_path = Path(args.extracted)
 
-    if isinstance(gt_raw, dict):
-        first_key = next(iter(gt_raw.keys()), None)
-        if first_key and isinstance(gt_raw[first_key], dict):
-            gt_data = list(gt_raw.values())
-            print(f"  Converted dict format with {len(gt_data)} entries")
-        else:
-            gt_data = [gt_raw]
+    # Check if both are directories
+    if gt_path.is_dir() and ext_path.is_dir():
+        # Directory mode: evaluate all matching files
+        all_gt_data, all_ext_data, per_paper_data = load_from_directory(gt_path, ext_path)
+
+        if not all_gt_data:
+            print("Error: No matching JSON files found in directories")
+            return
+
+        # Print per-paper summary
+        paper_results = print_per_paper_summary(per_paper_data, args.id_key)
+
+        # Run overall evaluation
+        print("\n" + "=" * 80)
+        print("OVERALL EVALUATION (ALL PAPERS COMBINED)")
+        print("=" * 80)
+        results, aggregate = evaluate_batch(all_gt_data, all_ext_data, id_key=args.id_key)
+        aggregate["per_paper_results"] = paper_results
+
+    elif gt_path.is_file() and ext_path.is_file():
+        # Single file mode
+        print(f"Loading ground truth from {args.ground_truth}...")
+        gt_data = load_json_file(gt_path)
+        print(f"  Loaded {len(gt_data)} entries")
+
+        print(f"Loading extracted data from {args.extracted}...")
+        ext_data = load_json_file(ext_path)
+        print(f"  Loaded {len(ext_data)} entries")
+
+        print("Running evaluation...")
+        results, aggregate = evaluate_batch(gt_data, ext_data, id_key=args.id_key)
     else:
-        gt_data = gt_raw
-
-    # Load extracted data
-    print(f"Loading extracted data from {args.extracted}...")
-    with open(args.extracted, 'r', encoding='utf-8') as f:
-        ext_raw = json.load(f)
-
-    if isinstance(ext_raw, dict):
-        first_key = next(iter(ext_raw.keys()), None)
-        if first_key and isinstance(ext_raw[first_key], dict):
-            ext_data = list(ext_raw.values())
-            print(f"  Converted dict format with {len(ext_data)} entries")
-        else:
-            ext_data = [ext_raw]
-    else:
-        ext_data = ext_raw
-
-    # Run evaluation
-    print("Running evaluation...")
-    results, aggregate = evaluate_batch(gt_data, ext_data, id_key=args.id_key)
+        print("Error: --ground-truth and --extracted must both be files or both be directories")
+        return
 
     # Print report
     print_report(results, aggregate)
