@@ -20,6 +20,7 @@ import os
 from .pubmed_utils import PubMedFetcher, CitationSearcher
 from .pdf_utils import DocumentConverter
 from .prompts import get_structured_assay_extraction_prompt, get_batched_structured_assay_extraction_prompt
+from .prompts_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
 
 
 class AssayExtractionAgentQwen:
@@ -34,10 +35,12 @@ class AssayExtractionAgentQwen:
     def __init__(
         self,
         model_name: str = "Qwen/Qwen3-VL-2B-Instruct",
+        text_model_name: Optional[str] = None,
         pdf_dir: str = "./downloaded_paper_kd",
         device: str = "cuda" if torch.cuda.is_available() else "cpu",
         torch_dtype: str = "bfloat16",
         temperature: float = 0.0,
+        two_step_mode: bool = False,
         search_supplementary: bool = True,
         search_references: bool = True,
         max_reference_depth: int = 1,
@@ -47,11 +50,16 @@ class AssayExtractionAgentQwen:
         Initialize the agent
 
         Args:
-            model_name: Hugging Face model name for Qwen3-VL
+            model_name: Hugging Face model name for Qwen3-VL (vision model)
+            text_model_name: Optional separate model for text-only Step 2.
+                           If None, uses the vision model with text-only input.
             pdf_dir: Directory containing PDF files
             device: Device to run the model on ('cuda' or 'cpu')
             torch_dtype: Data type for model weights ('bfloat16', 'float16', or 'float32')
             temperature: Sampling temperature (0.0 = greedy/deterministic, >0 = more random)
+            two_step_mode: If True, use two-step extraction:
+                          Step 1: Extract paragraphs (vision)
+                          Step 2: Fill structured_description (text-only)
             search_supplementary: Whether to automatically fetch and search supplementary materials
             search_references: Whether to fetch referenced papers if assay not found
             max_reference_depth: Maximum depth for recursive reference search (1 = only direct refs)
@@ -61,10 +69,14 @@ class AssayExtractionAgentQwen:
         print(f"Device: {device}")
         print(f"Torch dtype: {torch_dtype}")
         print(f"Temperature: {temperature}")
+        print(f"Two-step mode: {two_step_mode}")
+        if text_model_name:
+            print(f"Text model for Step 2: {text_model_name}")
         print(f"Search supplementary: {search_supplementary}")
         print(f"Search references: {search_references}")
 
         self.temperature = temperature
+        self.two_step_mode = two_step_mode
 
         # Map string dtype to torch dtype
         dtype_map = {
@@ -84,6 +96,27 @@ class AssayExtractionAgentQwen:
             model_name,
             trust_remote_code=True
         )
+
+        # Load separate text model for Step 2 if specified
+        self.text_model = None
+        self.text_tokenizer = None
+        self.use_separate_text_model = False
+        if text_model_name and text_model_name != model_name:
+            print(f"Loading separate text model: {text_model_name}")
+            from transformers import AutoModelForCausalLM, AutoTokenizer
+            self.text_model = AutoModelForCausalLM.from_pretrained(
+                text_model_name,
+                torch_dtype=torch_dtype_obj,
+                device_map="auto",
+                trust_remote_code=True
+            )
+            self.text_tokenizer = AutoTokenizer.from_pretrained(
+                text_model_name,
+                trust_remote_code=True
+            )
+            self.use_separate_text_model = True
+            print(f"Text model loaded: {text_model_name}")
+
         self.device = device
         self.pdf_dir = Path(pdf_dir)
         self.search_supplementary = search_supplementary
@@ -203,6 +236,112 @@ class AssayExtractionAgentQwen:
 
         return response_text, input_tokens, output_tokens
 
+    def _query_text_model(
+        self,
+        prompt: str,
+        max_new_tokens: int = 2048
+    ) -> Tuple[str, int, int]:
+        """
+        Query model with text-only input (no images).
+
+        This is used for Step 2 of two-step extraction where we only need
+        to process the extracted text, not images.
+
+        Args:
+            prompt: Text prompt
+            max_new_tokens: Maximum tokens to generate
+
+        Returns:
+            Tuple of (response_text, input_tokens, output_tokens)
+        """
+        if self.use_separate_text_model and self.text_model is not None:
+            # Use dedicated text model
+            inputs = self.text_tokenizer(
+                prompt,
+                return_tensors="pt",
+                padding=True
+            ).to(self.device)
+
+            input_tokens = inputs["input_ids"].shape[1]
+
+            with torch.no_grad():
+                if self.temperature == 0.0:
+                    generated_ids = self.text_model.generate(
+                        **inputs,
+                        max_new_tokens=max_new_tokens,
+                        do_sample=False
+                    )
+                else:
+                    generated_ids = self.text_model.generate(
+                        **inputs,
+                        max_new_tokens=max_new_tokens,
+                        do_sample=True,
+                        temperature=self.temperature
+                    )
+
+            generated_ids_trimmed = generated_ids[0][input_tokens:]
+            response_text = self.text_tokenizer.decode(
+                generated_ids_trimmed,
+                skip_special_tokens=True
+            )
+            output_tokens = len(generated_ids_trimmed)
+        else:
+            # Use vision model with text-only input (no images)
+            messages = [{"role": "user", "content": [{"type": "text", "text": prompt}]}]
+
+            text_prompt = self.processor.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True
+            )
+
+            # Process without images
+            inputs = self.processor(
+                text=[text_prompt],
+                images=None,
+                return_tensors="pt",
+                padding=True
+            )
+            inputs = inputs.to(self.device)
+
+            input_tokens = inputs["input_ids"].shape[1]
+
+            with torch.no_grad():
+                if self.temperature == 0.0:
+                    generated_ids = self.model.generate(
+                        **inputs,
+                        max_new_tokens=max_new_tokens,
+                        do_sample=False
+                    )
+                else:
+                    generated_ids = self.model.generate(
+                        **inputs,
+                        max_new_tokens=max_new_tokens,
+                        do_sample=True,
+                        temperature=self.temperature
+                    )
+
+            generated_ids_trimmed = [
+                out_ids[len(in_ids):]
+                for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+            ]
+            response_text = self.processor.batch_decode(
+                generated_ids_trimmed,
+                skip_special_tokens=True,
+                clean_up_tokenization_spaces=False
+            )[0]
+            output_tokens = generated_ids_trimmed[0].shape[0]
+
+        self.token_usage["total_input_tokens"] += input_tokens
+        self.token_usage["total_output_tokens"] += output_tokens
+        self.token_usage["total_tokens"] += input_tokens + output_tokens
+        self.token_usage["requests"] += 1
+
+        print(f"  [Text Query] Input: {input_tokens:,} | Output: {output_tokens:,} | Total: {input_tokens + output_tokens:,}")
+        print(f"  [Accumulated] Input: {self.token_usage['total_input_tokens']:,} | Output: {self.token_usage['total_output_tokens']:,} | Total: {self.token_usage['total_tokens']:,} | Requests: {self.token_usage['requests']}")
+
+        return response_text, input_tokens, output_tokens
+
     def _parse_response(self, response_text: str) -> Optional[Dict]:
         """Parse JSON response from model output."""
         response_text = response_text.strip()
@@ -252,6 +391,292 @@ class AssayExtractionAgentQwen:
             # Legacy string format
             return original_paragraph not in ["NOT FOUND", "", None] and not original_paragraph.startswith("ERROR")
         return False
+
+    # ==================== Two-Step Extraction Methods ====================
+
+    def extract_paragraph(
+        self,
+        pmid: str,
+        assay_description: str,
+        max_pages: Optional[int] = None,
+        max_new_tokens: int = 2048,
+        _depth: int = 0
+    ) -> Dict:
+        """
+        Step 1: Extract original_paragraph from paper using vision model.
+
+        This method extracts the relevant paragraphs from the paper without
+        filling in structured_description fields.
+
+        Args:
+            pmid: PubMed ID of the paper
+            assay_description: Brief assay description from BindingDB
+            max_pages: Maximum number of pages to process (None for all)
+            max_new_tokens: Maximum tokens to generate
+            _depth: Internal parameter for tracking reference search depth
+
+        Returns:
+            Dictionary with 'original_paragraph', 'confidence', 'references_previous',
+            'source', 'search_path', 'supplementary_source' keys
+        """
+        print(f"\n{'='*60}")
+        print(f"[Step 1] Extracting paragraph from PMID {pmid} (depth={_depth})")
+        print(f"{'='*60}")
+
+        # Get main PDF path
+        pdf_path = self.pubmed_fetcher.get_pdf_path(pmid)
+        if pdf_path is None:
+            if self.search_references:
+                print(f"  Main paper not found locally, trying to fetch from PMC...")
+                pdf_path = self.pubmed_fetcher.fetch_paper_by_pmid(pmid)
+
+            if pdf_path is None:
+                return {
+                    "pmid": pmid,
+                    "assay_description": assay_description,
+                    "original_paragraph": {"error": "PDF not found and could not be fetched"},
+                    "confidence": "N/A",
+                    "source": "N/A",
+                    "search_path": [],
+                    "supplementary_source": [],
+                    "references_previous": "none"
+                }
+
+        # Convert main PDF to images (use cache if available)
+        cache_key = f"{pmid}_{max_pages}"
+        if cache_key in self._image_cache:
+            images = self._image_cache[cache_key]
+            print(f"  Using cached images for PMID {pmid} ({len(images)} pages)")
+        else:
+            images = self.doc_converter.pdf_to_images(pdf_path, max_pages=max_pages, label="main")
+            if images and len(images) > 0:
+                self._image_cache[cache_key] = images
+        if images is None or len(images) == 0:
+            return {
+                "pmid": pmid,
+                "assay_description": assay_description,
+                "original_paragraph": {"error": "PDF conversion failed"},
+                "confidence": "N/A",
+                "source": "N/A",
+                "search_path": [],
+                "supplementary_source": [],
+                "references_previous": "none"
+            }
+
+        # Use paragraph extraction prompt (no structured_description)
+        prompt = get_paragraph_extraction_prompt(assay_description)
+        supp_files = []
+
+        try:
+            # Search main paper
+            print(f"  Searching main paper for PMID {pmid}...")
+            response_text, _, _ = self._query_model(images, prompt, max_new_tokens)
+
+            print(f"\n[DEBUG] Raw response: {response_text[:500]}...")
+
+            result = self._parse_response(response_text)
+
+            if result and self._is_paragraph_found(result.get("original_paragraph")):
+                result["pmid"] = pmid
+                result["assay_description"] = assay_description
+                result["source"] = f"main_paper_{pmid}"
+                result["search_path"] = ["main"]
+                result["supplementary_source"] = []
+                print(f"  Found in main paper!")
+                return result
+
+            # Search supplementary materials
+            if self.search_supplementary:
+                print(f"\n  Not found in main paper. Fetching supplementary materials...")
+                supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
+
+                for supp_path in supp_files:
+                    supp_images = self.doc_converter.file_to_images(supp_path, max_pages=max_pages, label="supplementary")
+                    if supp_images and len(supp_images) > 0:
+                        print(f"  Searching supplementary: {supp_path.name}...")
+                        supp_response, _, _ = self._query_model(supp_images, prompt, max_new_tokens)
+                        supp_result = self._parse_response(supp_response)
+
+                        if supp_result and self._is_paragraph_found(supp_result.get("original_paragraph")):
+                            supp_result["pmid"] = pmid
+                            supp_result["assay_description"] = assay_description
+                            supp_result["source"] = f"supplementary_{supp_path.name}"
+                            supp_result["search_path"] = ["main", "supplementary"]
+                            supp_result["supplementary_source"] = ["main"]
+                            print(f"  Found in supplementary: {supp_path.name}!")
+                            return supp_result
+
+            # Return NOT FOUND
+            print(f"  Paragraph not found in any searched documents.")
+            return {
+                "pmid": pmid,
+                "assay_description": assay_description,
+                "original_paragraph": {},
+                "confidence": "N/A",
+                "source": "not_found",
+                "search_path": [],
+                "supplementary_source": [],
+                "references_previous": "none",
+                "searched_locations": f"main_paper, supplementary({len(supp_files)} files)"
+            }
+
+        except Exception as e:
+            print(f"Error extracting paragraph for PMID {pmid}: {e}")
+            import traceback
+            traceback.print_exc()
+            return {
+                "pmid": pmid,
+                "assay_description": assay_description,
+                "original_paragraph": {"error": str(e)},
+                "confidence": "N/A",
+                "source": "error",
+                "search_path": [],
+                "supplementary_source": [],
+                "references_previous": "none"
+            }
+
+    def fill_structured_description(
+        self,
+        extracted_paragraph: Dict[str, str],
+        assay_description: str,
+        protein: Optional[str] = None,
+        ligand_smiles: Optional[str] = None,
+        affinity_data: Optional[Dict] = None,
+        max_new_tokens: int = 2048
+    ) -> Dict:
+        """
+        Step 2: Fill structured_description from extracted paragraph text.
+
+        This method takes text only (no images needed), making it more efficient.
+        Can be used independently on pre-extracted paragraphs.
+
+        Args:
+            extracted_paragraph: Dict mapping location -> text (from Step 1)
+            assay_description: Brief assay description
+            protein: Name of the protein target
+            ligand_smiles: SMILES string for the ligand
+            affinity_data: Dict with keys: type, value, relation, unit
+            max_new_tokens: Maximum tokens to generate
+
+        Returns:
+            Dict with 'structured_description' key
+        """
+        print(f"\n{'='*60}")
+        print(f"[Step 2] Filling structured_description from text")
+        print(f"{'='*60}")
+
+        # Combine paragraph text from dict
+        if isinstance(extracted_paragraph, dict):
+            combined_text = "\n\n".join(
+                f"[{loc}]: {text}" for loc, text in extracted_paragraph.items()
+                if text and str(text).strip()
+            )
+        else:
+            # Handle legacy string format
+            combined_text = str(extracted_paragraph)
+
+        if not combined_text.strip():
+            print("  No text to process, returning null structured_description")
+            return {"structured_description": None}
+
+        # Build prompt for text-only model
+        prompt = get_structured_description_from_text_prompt(
+            extracted_paragraph=combined_text,
+            assay_description=assay_description,
+            protein=protein,
+            ligand_smiles=ligand_smiles,
+            affinity_data=affinity_data
+        )
+
+        try:
+            # Query text model (no images!)
+            response_text, _, _ = self._query_text_model(prompt, max_new_tokens)
+
+            print(f"\n[DEBUG] Raw response: {response_text[:500]}...")
+
+            result = self._parse_response(response_text)
+            if result:
+                return result
+            else:
+                return {"structured_description": None}
+
+        except Exception as e:
+            print(f"Error filling structured_description: {e}")
+            import traceback
+            traceback.print_exc()
+            return {"structured_description": None}
+
+    def _extract_assay_description_two_step(
+        self,
+        pmid: str,
+        assay_description: str,
+        protein: Optional[str] = None,
+        ligand_smiles: Optional[str] = None,
+        affinity_data: Optional[Dict] = None,
+        max_pages: Optional[int] = None,
+        max_new_tokens: int = 4096,
+        _depth: int = 0
+    ) -> Dict:
+        """
+        Two-step extraction pipeline.
+
+        Step 1: Extract paragraphs using vision model (with paper images)
+        Step 2: Fill structured_description from text only (no images)
+
+        Args:
+            pmid: PubMed ID of the paper
+            assay_description: Brief assay description from BindingDB
+            protein: Name of the protein target
+            ligand_smiles: SMILES string for the ligand
+            affinity_data: Dict with keys: type, value, relation, unit
+            max_pages: Maximum number of pages to process
+            max_new_tokens: Maximum tokens to generate
+            _depth: Internal parameter for tracking reference search depth
+
+        Returns:
+            Dictionary with 'original_paragraph', 'structured_description', and metadata
+        """
+        print(f"\n{'='*60}")
+        print(f"[TWO-STEP MODE] Extracting assay from PMID {pmid}")
+        print(f"{'='*60}")
+
+        # Step 1: Extract paragraphs
+        step1_result = self.extract_paragraph(
+            pmid=pmid,
+            assay_description=assay_description,
+            max_pages=max_pages,
+            max_new_tokens=max_new_tokens,
+            _depth=_depth
+        )
+
+        # Check if Step 1 found anything
+        if not self._is_paragraph_found(step1_result.get("original_paragraph")):
+            print(f"  Step 1 did not find relevant paragraphs")
+            return {
+                **step1_result,
+                "structured_description": None
+            }
+
+        print(f"  Step 1 completed, proceeding to Step 2...")
+
+        # Step 2: Fill structured_description from extracted text
+        step2_result = self.fill_structured_description(
+            extracted_paragraph=step1_result.get("original_paragraph", {}),
+            assay_description=assay_description,
+            protein=protein,
+            ligand_smiles=ligand_smiles,
+            affinity_data=affinity_data,
+            max_new_tokens=max_new_tokens
+        )
+
+        # Combine results
+        final_result = {
+            **step1_result,
+            "structured_description": step2_result.get("structured_description")
+        }
+
+        print(f"  Two-step extraction completed for PMID {pmid}")
+        return final_result
 
     # ==================== Reference Handling ====================
 
@@ -430,7 +855,8 @@ class AssayExtractionAgentQwen:
         affinity_data: Optional[Dict] = None,
         max_pages: Optional[int] = None,
         max_new_tokens: int = 4096,
-        _depth: int = 0
+        _depth: int = 0,
+        two_step: Optional[bool] = None
     ) -> Dict:
         """
         Extract structured SPR assay information from a paper.
@@ -439,6 +865,10 @@ class AssayExtractionAgentQwen:
         1. First search the main paper
         2. If not found and search_supplementary=True, fetch and search supplementary materials
         3. If still not found and search_references=True, look for referenced papers and search those
+
+        If two_step mode is enabled (via two_step parameter or self.two_step_mode):
+        - Step 1: Extract paragraphs using vision model
+        - Step 2: Fill structured_description from text only (no images)
 
         Args:
             pmid: PubMed ID of the paper
@@ -449,11 +879,28 @@ class AssayExtractionAgentQwen:
             max_pages: Maximum number of pages to process (None for all)
             max_new_tokens: Maximum tokens to generate
             _depth: Internal parameter for tracking reference search depth
+            two_step: Override two_step_mode setting. If None, uses self.two_step_mode
 
         Returns:
             Dictionary with 'original_paragraph', 'structured_description', 'location',
             'confidence', and 'source' keys
         """
+        # Determine if using two-step mode
+        use_two_step = two_step if two_step is not None else self.two_step_mode
+
+        if use_two_step:
+            return self._extract_assay_description_two_step(
+                pmid=pmid,
+                assay_description=assay_description,
+                protein=protein,
+                ligand_smiles=ligand_smiles,
+                affinity_data=affinity_data,
+                max_pages=max_pages,
+                max_new_tokens=max_new_tokens,
+                _depth=_depth
+            )
+
+        # Original single-step extraction
         print(f"\n{'='*60}")
         print(f"Searching for assay in PMID {pmid} (depth={_depth})")
         print(f"{'='*60}")
