@@ -88,34 +88,18 @@ def get_structured_description_from_text_prompt(
     Args:
         extracted_paragraph: The text extracted in Step 1 (combined from all sources)
         assay_description: Brief assay description from BindingDB
-        protein: Name of the protein target
-        ligand_smiles: SMILES string for the ligand
-        affinity_data: Dict with keys: type, value, relation, unit
+        protein: Deprecated - not used (kept for backward compatibility)
+        ligand_smiles: Deprecated - not used (kept for backward compatibility)
+        affinity_data: Deprecated - not used (kept for backward compatibility)
 
     Returns:
         Formatted prompt string for text-only model input
     """
-    # Build context block
-    context_parts = [f"Assay Description: {assay_description}"]
-    if protein:
-        context_parts.append(f"Protein Target: {protein}")
-    if ligand_smiles:
-        context_parts.append(f"Ligand SMILES: {ligand_smiles}")
-    if affinity_data:
-        aff_str = (
-            f"{affinity_data.get('type', 'Kd')} "
-            f"{affinity_data.get('relation', '=')} "
-            f"{affinity_data.get('value', '')} "
-            f"{affinity_data.get('unit', 'nM')}"
-        )
-        context_parts.append(f"Reported Affinity: {aff_str}")
-    context_block = "\n".join(context_parts)
-
     return f"""You are an expert scientific reader analyzing extracted text from a research paper about Surface Plasmon Resonance (SPR) experiments.
 
 Task: Extract structured assay parameters from the following text.
 
-{context_block}
+Assay Description: {assay_description}
 
 === EXTRACTED TEXT FROM PAPER ===
 {extracted_paragraph}
@@ -125,7 +109,6 @@ Instructions:
 1. Analyze the extracted text carefully to identify SPR assay parameters.
 2. Extract structured assay parameters into the fields described below.
 3. If a parameter is not mentioned in the text, use null.
-4. Extract conditions SPECIFIC to the compound/ligand identified above if possible.
 
 STRUCTURED PARAMETERS TO EXTRACT:
 

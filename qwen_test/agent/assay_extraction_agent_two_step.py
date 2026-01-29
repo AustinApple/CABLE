@@ -352,12 +352,17 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         This method takes text only (no images needed), making it more efficient.
         Can be used independently on pre-extracted paragraphs.
 
+        Note: Since one DESCRIPTION maps to one original_paragraph, the structured
+        description is about the assay methodology and is the same for all
+        protein-ligand pairs. The protein, ligand_smiles, and affinity_data
+        parameters are kept for backward compatibility but are not used.
+
         Args:
             extracted_paragraph: Dict mapping location -> text (from Step 1)
             assay_description: Brief assay description
-            protein: Name of the protein target
-            ligand_smiles: SMILES string for the ligand
-            affinity_data: Dict with keys: type, value, relation, unit
+            protein: Deprecated - not used
+            ligand_smiles: Deprecated - not used
+            affinity_data: Deprecated - not used
             max_new_tokens: Maximum tokens to generate
 
         Returns:
@@ -381,13 +386,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             print("  No text to process, returning null structured_description")
             return {"structured_description": None}
 
-        # Build prompt for text-only model
+        # Build prompt for text-only model (protein/ligand/affinity not used)
         prompt = get_structured_description_from_text_prompt(
             extracted_paragraph=combined_text,
-            assay_description=assay_description,
-            protein=protein,
-            ligand_smiles=ligand_smiles,
-            affinity_data=affinity_data
+            assay_description=assay_description
         )
 
         try:
@@ -427,12 +429,17 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         Step 1: Extract paragraphs from paper images
         Step 2: Fill structured_description from extracted text
 
+        Note: Since one DESCRIPTION maps to one original_paragraph, the structured
+        description is the same for all protein-ligand pairs. The protein,
+        ligand_smiles, and affinity_data parameters are kept for backward
+        compatibility but are not used.
+
         Args:
             pmid: PubMed ID of the paper
             assay_description: Brief assay description
-            protein: Name of the protein target
-            ligand_smiles: SMILES string for the ligand
-            affinity_data: Dict with affinity info
+            protein: Deprecated - not used
+            ligand_smiles: Deprecated - not used
+            affinity_data: Deprecated - not used
             max_pages: Maximum pages to process
             max_new_tokens: Maximum tokens to generate
             _depth: Internal depth for reference search
@@ -464,12 +471,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         print(f"  Step 1 completed, proceeding to Step 2...")
 
         # Step 2: Fill structured_description from extracted text
+        # Note: protein/ligand/affinity not used - assay methodology is the same for all pairs
         step2_result = self.fill_structured_description(
             extracted_paragraph=step1_result.get("original_paragraph", {}),
             assay_description=assay_description,
-            protein=protein,
-            ligand_smiles=ligand_smiles,
-            affinity_data=affinity_data,
             max_new_tokens=max_new_tokens
         )
 

@@ -125,15 +125,10 @@ for pmid, pmid_group in pmid_groups:
         # and copy the result to all pairs with the same DESCRIPTION
         structured_description = None
         if paragraph_found:
-            # Use the first row's context (protein/ligand don't affect the assay methodology extraction)
-            first_row = desc_group.iloc[0]
             print(f"\n    [Step 2] Extracting structured_description (text-only)...")
             step2_result = agent.fill_structured_description(
                 extracted_paragraph=extracted_paragraph,
                 assay_description=description,
-                protein=str(first_row["protein"]) if pd.notna(first_row["protein"]) else None,
-                ligand_smiles=str(first_row["ligand_smiles"]) if pd.notna(first_row["ligand_smiles"]) else None,
-                affinity_data=None,  # Not needed for assay methodology extraction
                 max_new_tokens=2048
             )
             structured_description = step2_result.get("structured_description")
