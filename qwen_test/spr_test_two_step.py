@@ -120,7 +120,25 @@ for pmid, pmid_group in pmid_groups:
         else:
             print(f"  [Step 1] NOT FOUND - No relevant paragraph")
 
-        # ========== STEP 2: Fill structured_description for EACH pair ==========
+        # ========== STEP 2: Fill structured_description ONCE for this DESCRIPTION ==========
+        # Since one DESCRIPTION maps to one original_paragraph, we only need to run Step 2 once
+        # and copy the result to all pairs with the same DESCRIPTION
+        structured_description = None
+        if paragraph_found:
+            # Use the first row's context (protein/ligand don't affect the assay methodology extraction)
+            first_row = desc_group.iloc[0]
+            print(f"\n    [Step 2] Extracting structured_description (text-only)...")
+            step2_result = agent.fill_structured_description(
+                extracted_paragraph=extracted_paragraph,
+                assay_description=description,
+                protein=str(first_row["protein"]) if pd.notna(first_row["protein"]) else None,
+                ligand_smiles=str(first_row["ligand_smiles"]) if pd.notna(first_row["ligand_smiles"]) else None,
+                affinity_data=None,  # Not needed for assay methodology extraction
+                max_new_tokens=2048
+            )
+            structured_description = step2_result.get("structured_description")
+
+        # ========== Copy results to ALL pairs with this DESCRIPTION ==========
         for _, row in desc_group.iterrows():
             reactant_set_id = row["reactant_set_id"]
             protein = str(row["protein"]) if pd.notna(row["protein"]) else None
@@ -134,23 +152,7 @@ for pmid, pmid_group in pmid_groups:
                 "unit": str(row["affinity_unit"]) if pd.notna(row["affinity_unit"]) else "nM"
             }
 
-            print(f"\n    [Step 2] Processing pair: {ligand_name} / {protein}")
-
-            if paragraph_found:
-                # Run Step 2 with this pair's specific context
-                step2_result = agent.fill_structured_description(
-                    extracted_paragraph=extracted_paragraph,
-                    assay_description=description,
-                    protein=protein,
-                    ligand_smiles=ligand_smiles,
-                    affinity_data=affinity_data,
-                    max_new_tokens=2048
-                )
-                structured_description = step2_result.get("structured_description")
-            else:
-                structured_description = None
-
-            # Build result entry
+            # Build result entry (reusing the same structured_description for all pairs)
             entry = {
                 "reactant_set_id": int(reactant_set_id),
                 "pmid": int(pmid),
@@ -162,7 +164,7 @@ for pmid, pmid_group in pmid_groups:
                 "supplementary_source": step1_result.get("supplementary_source", []),
                 "references_previous": step1_result.get("references_previous"),
                 "original_paragraph": extracted_paragraph,
-                "structured_description": structured_description
+                "structured_description": structured_description  # Same for all pairs
             }
 
             key = str(reactant_set_id)
