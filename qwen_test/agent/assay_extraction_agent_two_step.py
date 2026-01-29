@@ -38,7 +38,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
     def __init__(
         self,
-        model_name: str = "Qwen/Qwen3-VL-2B-Instruct",
+        model_name: str = "Qwen/Qwen3-VL-235B-A22B-Thinking",
         text_model_name: Optional[str] = None,
         pdf_dir: str = "./downloaded_paper_kd",
         device: str = "cuda",
