@@ -38,7 +38,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
     def __init__(
         self,
-        model_name: str = "Qwen/Qwen3-VL-235B-A22B-Thinking",
+        model_name: str = "Qwen/Qwen3-VL-30B-A3B-Thinking",
         text_model_name: Optional[str] = None,
         pdf_dir: str = "./downloaded_paper_kd",
         device: str = "cuda",
@@ -522,6 +522,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             pmid_str = str(int(pmid))
             pmid_results = {}
 
+            # Cache extraction results by DESCRIPTION to avoid redundant extractions
+            # Since one DESCRIPTION maps to one original_paragraph, we can reuse results
+            description_cache: Dict[str, Dict] = {}
+
             for _, row in group.iterrows():
                 row_count += 1
                 reactant_set_id = row[reactant_set_id_col] if reactant_set_id_col and reactant_set_id_col in row and pd.notna(row[reactant_set_id_col]) else None
@@ -546,13 +550,24 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 print(f"PMID: {pmid_str}")
                 print(f"Description: {description[:100]}...")
 
-                result = self.extract_assay_description(
-                    pmid_str, description,
-                    protein=protein,
-                    ligand_smiles=ligand_smiles,
-                    affinity_data=affinity_data,
-                    max_pages=max_pages
-                )
+                # Check if we already extracted for this DESCRIPTION
+                if description in description_cache:
+                    print(f"  [CACHE HIT] Reusing extraction result for same DESCRIPTION")
+                    result = description_cache[description]
+                else:
+                    # First time seeing this DESCRIPTION, run full extraction
+                    result = self.extract_assay_description(
+                        pmid_str, description,
+                        protein=protein,
+                        ligand_smiles=ligand_smiles,
+                        affinity_data=affinity_data,
+                        max_pages=max_pages
+                    )
+                    # Cache the result for this DESCRIPTION
+                    description_cache[description] = result
+
+                    if delay > 0:
+                        time.sleep(delay)
 
                 entry = {
                     "reactant_set_id": int(reactant_set_id) if reactant_set_id else None,
@@ -570,9 +585,6 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
                 key = str(reactant_set_id) if reactant_set_id else f"entry_{row_count}"
                 pmid_results[key] = entry
-
-                if delay > 0:
-                    time.sleep(delay)
 
             json_path = output_path / f"{pmid_str}.json"
             with open(json_path, 'w', encoding='utf-8') as f:
