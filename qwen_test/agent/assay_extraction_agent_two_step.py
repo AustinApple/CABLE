@@ -520,6 +520,16 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         for pmid, group in pmid_groups:
             pmid_str = str(int(pmid))
+            json_path = output_path / f"{pmid_str}.json"
+
+            # Skip if PMID already processed (JSON file exists)
+            if json_path.exists():
+                print(f"\n{'='*80}")
+                print(f"[SKIP] PMID {pmid_str} already exists: {json_path}")
+                saved_files[pmid_str] = json_path
+                row_count += len(group)  # Update row count for progress tracking
+                continue
+
             pmid_results = {}
 
             # Cache extraction results by DESCRIPTION to avoid redundant extractions
@@ -586,7 +596,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 key = str(reactant_set_id) if reactant_set_id else f"entry_{row_count}"
                 pmid_results[key] = entry
 
-            json_path = output_path / f"{pmid_str}.json"
+            # json_path already defined at the start of the loop
             with open(json_path, 'w', encoding='utf-8') as f:
                 json.dump(pmid_results, f, indent=4, ensure_ascii=False)
             print(f"\nSaved: {json_path}")
