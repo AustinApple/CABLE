@@ -23,6 +23,11 @@ import time
 from .base_extraction_agent import BaseAssayExtractionAgent
 from .prompts_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
 
+# Type alias for prompt functions
+from typing import Callable
+ParagraphPromptFn = Callable[[str], str]
+StructuredPromptFn = Callable[..., str]
+
 
 class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
     """Two-step agent for extracting SPR assay information.
@@ -47,7 +52,9 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         search_supplementary: bool = True,
         search_references: bool = True,
         max_reference_depth: int = 1,
-        ncbi_api_key: Optional[str] = None
+        ncbi_api_key: Optional[str] = None,
+        paragraph_prompt_fn: Optional['ParagraphPromptFn'] = None,
+        structured_prompt_fn: Optional['StructuredPromptFn'] = None
     ):
         """
         Initialize the two-step extraction agent.
@@ -64,6 +71,12 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             search_references: Whether to fetch referenced papers if assay not found
             max_reference_depth: Maximum depth for recursive reference search (1 = only direct refs)
             ncbi_api_key: NCBI API key for higher rate limits (optional)
+            paragraph_prompt_fn: Custom prompt function for Step 1 (paragraph extraction).
+                               Signature: fn(assay_description: str) -> str.
+                               Defaults to SPR prompt if None.
+            structured_prompt_fn: Custom prompt function for Step 2 (structured description).
+                                Signature: fn(extracted_paragraph: str, assay_description: str, ...) -> str.
+                                Defaults to SPR prompt if None.
         """
         # Initialize base class
         super().__init__(
@@ -77,6 +90,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             max_reference_depth=max_reference_depth,
             ncbi_api_key=ncbi_api_key
         )
+
+        # Store custom prompt functions (default to SPR prompts)
+        self.paragraph_prompt_fn = paragraph_prompt_fn or get_paragraph_extraction_prompt
+        self.structured_prompt_fn = structured_prompt_fn or get_structured_description_from_text_prompt
 
         # Load separate text model for Step 2 if specified
         self.text_model = None
@@ -264,7 +281,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             }
 
         # Use paragraph extraction prompt (no structured_description)
-        prompt = get_paragraph_extraction_prompt(assay_description)
+        prompt = self.paragraph_prompt_fn(assay_description)
         supp_files = []
 
         try:
@@ -387,7 +404,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             return {"structured_description": None}
 
         # Build prompt for text-only model (protein/ligand/affinity not used)
-        prompt = get_structured_description_from_text_prompt(
+        prompt = self.structured_prompt_fn(
             extracted_paragraph=combined_text,
             assay_description=assay_description
         )
