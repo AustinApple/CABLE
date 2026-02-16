@@ -101,11 +101,33 @@ for pmid, pmid_group in pmid_groups:
     pmid_results = {}
 
     # Skip if already processed (resume support)
+    # Re-run if any entry has empty original_paragraph or null structured_description
     json_path = output_dir / f"{pmid_str}.json"
     if json_path.exists():
-        print(f"\n[{pmid_count}/{total_pmids}] PMID {pmid_str}: already exists, skipping")
-        saved_files[pmid_str] = json_path
-        continue
+        needs_rerun = False
+        try:
+            with open(json_path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+            for entry in existing_data.values():
+                op = entry.get("original_paragraph")
+                sd = entry.get("structured_description")
+                # Re-run if original_paragraph is empty list
+                if isinstance(op, list) and len(op) == 0:
+                    needs_rerun = True
+                    break
+                # Re-run if structured_description is null
+                if sd is None:
+                    needs_rerun = True
+                    break
+        except (json.JSONDecodeError, Exception):
+            needs_rerun = True
+
+        if not needs_rerun:
+            print(f"\n[{pmid_count}/{total_pmids}] PMID {pmid_str}: already exists, skipping")
+            saved_files[pmid_str] = json_path
+            continue
+        else:
+            print(f"\n[{pmid_count}/{total_pmids}] PMID {pmid_str}: incomplete results, re-running")
 
     print(f"\n{'='*80}")
     print(f"Processing PMID {pmid_count}/{total_pmids}: {pmid_str} ({len(pmid_group)} pairs)")
