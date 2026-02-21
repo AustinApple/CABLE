@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/spr_experiment_conditions.schema.json",
+  "title": "SPR Experiment Conditions",
+  "description": "A schema to store experimental conditions for a Surface Plasmon Resonance (SPR) assay, based on published literature.",
+  "type": "object",
+  "properties": {
+    "pmid": {
+      "description": "The PubMed ID of the publication.",
+      "type": "string"
+    },
+    "instrument": {
+      "description": "Details about the SPR instrument used.",
+      "type": "object",
+      "properties": {
+        "manufacturer": {
+          "description": "e.g., GE Healthcare, Cytiva, Biacore AB, PlexArrayTM",
+          "type": "string"
+        },
+        "model": {
+          "description": "e.g., Biacore T200, Biacore 8K, BIAcore 3000, PlexArrayTM HT SPRi",
+          "type": "string"
+        }
+      },
+      "required": ["manufacturer", "model"]
+    },
+    "sensor_chip": {
+      "description": "Details about the sensor chip.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "The type of sensor chip surface.",
+          "type": "string",
+          "examples": ["CM5", "CM7", "SA", "NTA", "CMD500D"]
+        },
+        "manufacturer": {
+          "description": "e.g., GE Healthcare, XanTec, Biacore",
+          "type": "string"
+        }
+      },
+      "required": ["type", "manufacturer"]
+    },
+    "immobilization": {
+      "description": "Details about the molecule immobilized on the chip (the ligand).",
+      "type": "object",
+      "properties": {
+        "ligand_name": {
+          "description": "The name of the protein, compound, or molecule attached to the chip.",
+          "type": "string",
+          "examples": ["his-tagged HDAC8", "Biotinylated MEK1", "SARS-CoV-2 Mpro", "Compound UA-18"]
+        },
+        "strategy": {
+          "description": "The chemical or affinity method used for immobilization.",
+          "type": "string",
+          "examples": ["Amine coupling", "SA-Biotin capture", "NTA-His capture", "Photo-crosslinking"]
+        },
+        "density_ru": {
+          "description": "The immobilization level in Response Units (RU). Use a string to capture ranges or approximations.",
+          "type": ["string", "number"],
+          "examples": ["~4900", "6000-8000", "4000", "800-1800"]
+        },
+        "concentration_for_immobilization": {
+          "description": "The concentration of the ligand used during the immobilization step, including units.",
+          "type": "string",
+          "examples": ["~1 µM", "50 μg/mL", "12.5 μg/mL"]
+        }
+      },
+      "required": ["ligand_name", "strategy", "density_ru", "concentration_for_immobilization"]
+    },
+    "analyte": {
+      "description": "Details about the molecule in solution being tested (the analyte).",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "A general description of the analyte(s).",
+          "type": "string",
+          "examples": ["Fragments", "Peptides", "Small molecules", "Compounds", "SARS-CoV-2 S-trimer protein"]
+        },
+        "concentration_range": {
+          "description": "The range of concentrations tested, described as text.",
+          "type": "string",
+          "examples": ["2000 µM", "5000-19.5 nM", "0.2 μM–100 μM", "9-step, 2-fold, top 20 nM"]
+        }
+      },
+      "required": ["description", "concentration_range"]
+    },
+    "assay_conditions": {
+      "description": "Conditions during the binding (association/dissociation) phase.",
+      "type": "object",
+      "properties": {
+        "running_buffer_composition": {
+          "description": "The full composition of the running buffer, including additives (e.g., DMSO, Tween). Exclude pH here; use the separate pH field.",
+          "type": "string"
+        },
+        "pH": {
+          "description": "The pH of the running buffer.",
+          "type": "number",
+          "examples": [7.4, 6.0, 7.5]
+        },
+        "assay_type": {
+          "description": "The type of kinetic experiment performed.",
+          "type": "string",
+          "enum": ["Single Cycle Kinetics", "Multi Cycle Kinetics", "Single Cycle Steady-State Affinity", "Multi Cycle Steady-State Affinity", "Screening", "Unknown"]
+        },
+        "assay_flow_rate": {
+          "description": "The flow rate used during the analyte injection.",
+          "type": "object",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": {
+              "type": "string",
+              "enum": ["µL/min", "µl/min", "ml/min", "µL/s"]
+            }
+          }
+        },
+        "temperature_c": {
+          "description": "The temperature of the experiment. Use a string to allow for 'room temperature'.",
+          "type": "string",
+          "examples": ["25", "4", "room temperature"]
+        },
+        "association_time_s": {
+          "description": "The contact/association time in seconds. Use a string to capture ranges.",
+          "type": ["string", "number"],
+          "examples": ["60", "120", "70", "30-600"]
+        },
+        "dissociation_time_s": {
+          "description": "The dissociation time in seconds. Use a string to capture ranges.",
+          "type": ["string", "number"],
+          "examples": ["240", "420", "600", "100-600", "1800"]
+        },
+        "regeneration_solution": {
+          "description": "The composition of the solution used to regenerate the chip surface.",
+          "type": "string",
+          "examples": ["None", "10 mM glycine pH 2", "40 mM CHAPS...", "9:1 1M NaCl: Glycerol"]
+        }
+      },
+      "required": ["running_buffer_composition", "pH", "assay_type", "assay_flow_rate", "temperature_c", "association_time_s", "dissociation_time_s", "regeneration_solution"]
+    },
+    "data_analysis": {
+      "description": "Details about how the raw data was processed and modeled.",
+      "type": "object",
+      "properties": {
+        "reference_description": {
+          "description": "Description of the reference surface or channel used for subtraction.",
+          "type": "string",
+          "examples": ["Untreated SA surface", "Fc1 (no ligand)", "Reference channels", "Flow-cells 1 and 3"]
+        },
+        "subtraction_method": {
+          "description": "The method of data normalization.",
+          "type": "string",
+          "examples": ["Double referenced", "Reference-subtracted", "Normalized by subtracting control surface"]
+        },
+        "fitting_model": {
+          "description": "The kinetic or affinity model used to fit the data.",
+          "type": "string",
+          "examples": ["1:1 kinetic model", "1:1 langmuir binding model", "Steady-state affinity", "Mass transport model", "Affinity binding model"]
+        },
+        "software": {
+          "description": "The software used for data analysis.",
+          "type": "string",
+          "examples": ["BiaEvaluation 3.0", "GeneData", "Scrubber software, version 2.0c", "Biacore 8K Insight Evaluation Software Version 2.0"]
+        }
+      },
+      "required": ["reference_description", "subtraction_method", "fitting_model", "software"]
+    }
+  },
+  "required": [
+    "pmid",
+    "instrument",
+    "sensor_chip",
+    "immobilization",
+    "analyte",
+    "assay_conditions",
+    "data_analysis"
+  ]
+}
