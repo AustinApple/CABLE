@@ -62,7 +62,7 @@ class QAVerificationAgent:
         self.device = device
         self.temperature = temperature
         self.assay_type = assay_type
-        self.max_new_tokens = 8192
+        self.max_new_tokens = 4096
 
         # Map string dtype to torch dtype
         dtype_map = {
@@ -106,17 +106,24 @@ class QAVerificationAgent:
 
     def _query_model(self, prompt: str, max_new_tokens: int = 8192) -> Tuple[str, int, int]:
         """
-        Query the text model.
+        Query the text model using proper chat template.
 
         Args:
             prompt: Text prompt
-            max_new_tokens: Maximum tokens to generate (large to allow thinking trace)
+            max_new_tokens: Maximum tokens to generate
 
         Returns:
             Tuple of (response_text, input_tokens, output_tokens)
         """
+        messages = [{"role": "user", "content": prompt}]
+        text_input = self.tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+            enable_thinking=False,
+        )
         inputs = self.tokenizer(
-            prompt, return_tensors="pt", padding=True
+            text_input, return_tensors="pt", padding=True
         ).to(self.device)
 
         input_tokens = inputs["input_ids"].shape[1]
