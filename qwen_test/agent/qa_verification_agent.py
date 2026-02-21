@@ -1,7 +1,7 @@
 """
 QA Verification Agent for checking structured_description against original_paragraph.
 
-This is a text-only agent (no vision model needed) that uses a thinking model
+This is a text-only agent (no vision model needed) that uses an instruct model
 to systematically verify whether each field in structured_description is
 supported by the original_paragraph text.
 
@@ -16,7 +16,6 @@ Usage:
 
 import torch
 import json
-import re
 from datetime import datetime
 from pathlib import Path
 from typing import Optional, Dict, Tuple
@@ -49,10 +48,10 @@ class QAVerificationAgent:
         Initialize the QA verification agent.
 
         Args:
-            model_name: HuggingFace model name for a text-only thinking model
+            model_name: HuggingFace model name for a text-only instruct model
             device: Device to run on ('cuda', 'cuda:0', etc.)
             torch_dtype: Data type for model weights
-            temperature: Sampling temperature (thinking models need > 0)
+            temperature: Sampling temperature
             assay_type: "spr" or "itc"
         """
         print(f"Loading QA verification model: {model_name}")
@@ -73,7 +72,7 @@ class QAVerificationAgent:
         self.torch_dtype_obj = dtype_map.get(torch_dtype, torch.bfloat16)
 
         # Load text-only model
-        from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
+        from transformers import AutoModelForCausalLM, AutoTokenizer
 
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
@@ -85,7 +84,6 @@ class QAVerificationAgent:
             model_name,
             trust_remote_code=True,
         )
-        self.streamer = TextStreamer(self.tokenizer, skip_prompt=True)
         print(f"Model loaded: {model_name}")
 
         # Load schema
@@ -106,7 +104,7 @@ class QAVerificationAgent:
 
     def _query_model(self, prompt: str, max_new_tokens: int = 8192) -> Tuple[str, int, int]:
         """
-        Query the text model using proper chat template.
+        Query the text model with raw tokenizer input (no chat template).
 
         Args:
             prompt: Text prompt
@@ -115,15 +113,8 @@ class QAVerificationAgent:
         Returns:
             Tuple of (response_text, input_tokens, output_tokens)
         """
-        messages = [{"role": "user", "content": prompt}]
-        text_input = self.tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-            enable_thinking=False,
-        )
         inputs = self.tokenizer(
-            text_input, return_tensors="pt", padding=True
+            prompt, return_tensors="pt", padding=True
         ).to(self.device)
 
         input_tokens = inputs["input_ids"].shape[1]
@@ -134,7 +125,6 @@ class QAVerificationAgent:
                     **inputs,
                     max_new_tokens=max_new_tokens,
                     do_sample=False,
-                    streamer=self.streamer,
                 )
             else:
                 generated_ids = self.model.generate(
@@ -142,7 +132,6 @@ class QAVerificationAgent:
                     max_new_tokens=max_new_tokens,
                     do_sample=True,
                     temperature=self.temperature,
-                    streamer=self.streamer,
                 )
 
         generated_ids_trimmed = generated_ids[0][input_tokens:]
@@ -179,27 +168,6 @@ class QAVerificationAgent:
             return result
         except json.JSONDecodeError:
             return None
-
-    def _parse_thinking_response(self, response_text: str) -> Tuple[str, Optional[Dict]]:
-        """
-        Parse response from a thinking model, stripping <think>...</think> tags.
-
-        Args:
-            response_text: Raw model output
-
-        Returns:
-            Tuple of (thinking_trace, parsed_json_or_None)
-        """
-        # Extract thinking trace
-        think_match = re.search(r"<think>(.*?)</think>", response_text, re.DOTALL)
-        thinking_trace = think_match.group(1).strip() if think_match else ""
-
-        # Remove thinking tags to get the answer
-        answer_text = re.sub(r"<think>.*?</think>", "", response_text, flags=re.DOTALL).strip()
-
-        parsed = self._parse_json_response(answer_text)
-
-        return thinking_trace, parsed
 
     def _combine_paragraph_text(self, original_paragraph: Dict) -> str:
         """Combine original_paragraph dict into a single text string."""
@@ -246,14 +214,14 @@ class QAVerificationAgent:
         # Query model
         response_text, _, _ = self._query_model(prompt, max_new_tokens)
 
-        # Parse response (handle thinking model output)
-        _, parsed = self._parse_thinking_response(response_text)
+        # Parse response
+        parsed = self._parse_json_response(response_text)
 
         if parsed is None:
             # Retry once
             print("  [QA] First parse failed, retrying...")
             response_text, _, _ = self._query_model(prompt, max_new_tokens)
-            _, parsed = self._parse_thinking_response(response_text)
+            parsed = self._parse_json_response(response_text)
 
         if parsed is None:
             return {
