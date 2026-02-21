@@ -62,6 +62,7 @@ class QAVerificationAgent:
         self.device = device
         self.temperature = temperature
         self.assay_type = assay_type
+        self.max_new_tokens = 8192
 
         # Map string dtype to torch dtype
         dtype_map = {
@@ -72,7 +73,7 @@ class QAVerificationAgent:
         self.torch_dtype_obj = dtype_map.get(torch_dtype, torch.bfloat16)
 
         # Load text-only model
-        from transformers import AutoModelForCausalLM, AutoTokenizer
+        from transformers import AutoModelForCausalLM, AutoTokenizer, TextStreamer
 
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
@@ -84,6 +85,7 @@ class QAVerificationAgent:
             model_name,
             trust_remote_code=True,
         )
+        self.streamer = TextStreamer(self.tokenizer, skip_prompt=True)
         print(f"Model loaded: {model_name}")
 
         # Load schema
@@ -125,6 +127,7 @@ class QAVerificationAgent:
                     **inputs,
                     max_new_tokens=max_new_tokens,
                     do_sample=False,
+                    streamer=self.streamer,
                 )
             else:
                 generated_ids = self.model.generate(
@@ -132,6 +135,7 @@ class QAVerificationAgent:
                     max_new_tokens=max_new_tokens,
                     do_sample=True,
                     temperature=self.temperature,
+                    streamer=self.streamer,
                 )
 
         generated_ids_trimmed = generated_ids[0][input_tokens:]
@@ -205,7 +209,7 @@ class QAVerificationAgent:
         original_paragraph: Dict,
         structured_description: Dict,
         assay_description: str,
-        max_new_tokens: int = 8192,
+        max_new_tokens: Optional[int] = None,
     ) -> Dict:
         """
         Verify a single (original_paragraph, structured_description) pair.
@@ -219,6 +223,9 @@ class QAVerificationAgent:
         Returns:
             QA verification result dict
         """
+        if max_new_tokens is None:
+            max_new_tokens = self.max_new_tokens
+
         combined_text = self._combine_paragraph_text(original_paragraph)
 
         prompt = get_qa_verification_prompt(

@@ -78,6 +78,12 @@ def main():
         help="Sampling temperature (default: 0.6, thinking models need > 0)",
     )
     parser.add_argument(
+        "--max-new-tokens",
+        type=int,
+        default=8192,
+        help="Maximum new tokens to generate (default: 8192)",
+    )
+    parser.add_argument(
         "--no-skip-existing",
         action="store_true",
         help="Re-run QA even if output already exists",
@@ -92,6 +98,7 @@ def main():
         temperature=args.temperature,
         assay_type=args.assay_type,
     )
+    agent.max_new_tokens = args.max_new_tokens
 
     if args.results_file:
         # Single file mode
