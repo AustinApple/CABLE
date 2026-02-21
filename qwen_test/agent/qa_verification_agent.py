@@ -1,13 +1,13 @@
 """
 QA Verification Agent for checking structured_description against original_paragraph.
 
-This is a text-only agent (no vision model needed) that uses an instruct model
+This agent uses a VL (vision-language) instruct model in text-only mode
 to systematically verify whether each field in structured_description is
 supported by the original_paragraph text.
 
 Usage:
     agent = QAVerificationAgent(
-        model_name="Qwen/Qwen3-30B-A3B",
+        model_name="Qwen/Qwen3-VL-32B-Instruct",
         assay_type="spr"
     )
     result = agent.verify_entry(original_paragraph, structured_description, description)
@@ -30,15 +30,15 @@ from .base_extraction_agent import BaseAssayExtractionAgent
 
 
 class QAVerificationAgent:
-    """Text-only agent that verifies structured_description against original_paragraph.
+    """Agent that verifies structured_description against original_paragraph.
 
-    Does NOT inherit from BaseAssayExtractionAgent because that loads a vision model.
-    Instead, loads a text-only CausalLM model directly.
+    Uses a VL (vision-language) instruct model in text-only mode for verification.
+    Does NOT inherit from BaseAssayExtractionAgent to avoid loading PDF/PubMed utilities.
     """
 
     def __init__(
         self,
-        model_name: str = "Qwen/Qwen3-30B-A3B",
+        model_name: str = "Qwen/Qwen3-VL-32B-Instruct",
         device: str = "cuda",
         torch_dtype: str = "bfloat16",
         temperature: float = 0.6,
@@ -48,7 +48,7 @@ class QAVerificationAgent:
         Initialize the QA verification agent.
 
         Args:
-            model_name: HuggingFace model name for a text-only instruct model
+            model_name: HuggingFace model name for a VL instruct model
             device: Device to run on ('cuda', 'cuda:0', etc.)
             torch_dtype: Data type for model weights
             temperature: Sampling temperature
@@ -71,16 +71,16 @@ class QAVerificationAgent:
         }
         self.torch_dtype_obj = dtype_map.get(torch_dtype, torch.bfloat16)
 
-        # Load text-only model
-        from transformers import AutoModelForCausalLM, AutoTokenizer
+        # Load VL model and processor
+        from transformers import AutoModelForImageTextToText, AutoProcessor
 
-        self.model = AutoModelForCausalLM.from_pretrained(
+        self.model = AutoModelForImageTextToText.from_pretrained(
             model_name,
             torch_dtype=self.torch_dtype_obj,
             device_map="auto",
             trust_remote_code=True,
         )
-        self.tokenizer = AutoTokenizer.from_pretrained(
+        self.processor = AutoProcessor.from_pretrained(
             model_name,
             trust_remote_code=True,
         )
@@ -104,7 +104,7 @@ class QAVerificationAgent:
 
     def _query_model(self, prompt: str, max_new_tokens: int = 8192) -> Tuple[str, int, int]:
         """
-        Query the text model with raw tokenizer input (no chat template).
+        Query the VL model in text-only mode using chat template.
 
         Args:
             prompt: Text prompt
@@ -113,8 +113,18 @@ class QAVerificationAgent:
         Returns:
             Tuple of (response_text, input_tokens, output_tokens)
         """
-        inputs = self.tokenizer(
-            prompt, return_tensors="pt", padding=True
+        messages = [{"role": "user", "content": [{"type": "text", "text": prompt}]}]
+
+        text_prompt = self.processor.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True,
+        )
+
+        inputs = self.processor(
+            text=[text_prompt],
+            return_tensors="pt",
+            padding=True,
         ).to(self.device)
 
         input_tokens = inputs["input_ids"].shape[1]
@@ -134,11 +144,14 @@ class QAVerificationAgent:
                     temperature=self.temperature,
                 )
 
-        generated_ids_trimmed = generated_ids[0][input_tokens:]
-        response_text = self.tokenizer.decode(
+        generated_ids_trimmed = [
+            out_ids[len(in_ids):]
+            for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+        ]
+        response_text = self.processor.batch_decode(
             generated_ids_trimmed, skip_special_tokens=True
-        )
-        output_tokens = len(generated_ids_trimmed)
+        )[0]
+        output_tokens = len(generated_ids_trimmed[0])
 
         self.token_usage["total_input_tokens"] += input_tokens
         self.token_usage["total_output_tokens"] += output_tokens
@@ -407,7 +420,7 @@ class QAVerificationAgent:
         """Free GPU memory."""
         print("\nCleaning up QA agent GPU memory...")
         del self.model
-        del self.tokenizer
+        del self.processor
         if "cuda" in self.device:
             torch.cuda.empty_cache()
         print("Cleanup complete!")

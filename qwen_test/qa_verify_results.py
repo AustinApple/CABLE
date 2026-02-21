@@ -62,8 +62,8 @@ def main():
     parser.add_argument(
         "--model",
         type=str,
-        default="Qwen/Qwen3-30B-A3B",
-        help="Model name for QA verification (default: Qwen/Qwen3-30B-A3B)",
+        default="Qwen/Qwen3-VL-32B-Instruct",
+        help="Model name for QA verification (default: Qwen/Qwen3-VL-32B-Instruct)",
     )
     parser.add_argument(
         "--device",
