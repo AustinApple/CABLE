@@ -1,0 +1,85 @@
+{
+    "51351340": {
+        "reactant_set_id": 51351340,
+        "pmid": 32844651,
+        "protein": "Programmed cell death protein 1",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)[C@H](CCCCNC(C)=C2C(=O)CC(C)(C)CC2=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](NC(=O)[C@@H]2CCCN2C(=O)[C@@H](Cc2c[nH]c3ccccc23)NC1=O)[C@@H](C)O)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1660000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PD1 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "All SPR binding studies were performed with a Biacore 8K instrument (GE Healthcare Life Sciences). hcGAS-FL / hcGAS-ΔN (1 mg mL−1) was immobilized in a CMS chip by EDC/NHS method. The tested peptide was diluted with running buffer (20 mM HEPES, pH 7.5, 125 mM KCl,10 mM MgCl2). All the samples contained the same concentration of DMSO (0.5%). The tested peptide was injected at a flow rate of 30 μL min−1 for 200 s of association, followed by 200 s of dissociation at 25 °C. The final graphs were obtained by subtracting blank sensorgrams. The data were analyzed with Biacore Insight Evaluation software.",
+            "Figure 3 caption": "Fig. 3 | XQ2 directly binds with cGAS. a SPR analysis of the binding of XQ2 with full-length human cGAS (hcGAS-FL). The binding affinity (Kd) was determined by fitting the binding data to a simple one-to-one binding model. b Competition of FAM-ISD binding to hcGAS-FL with the indicated doses of XQ2, the polarization signal was detected by a microplate reader. c The docked structure of XQ2 with cGAS (PDB ID: 4O69), and the right panel indicated the detailed interactions between XQ2 and cGAS (right). XQ2 (cyan) and the contacted residues (green) of cGAS were shown as a stick model. Hydrogen bonds were indicated by dash blue lines. d Competition of FAM-ISD binding to hcGAS-FL (D191R) mutant with the indicated doses of XQ2, the polarization signal was detected by a microplate reader. Data are representative of three independent experiments in (b, d). (Data are presented as mean ± SD, n = 3 independent samples in (b, d). Source data are provided as a Source Data file."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Life Sciences",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare Life Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "hcGAS-FL / hcGAS-ΔN",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "1 mg mL−1"
+            },
+            "analyte": {
+                "description": "XQ2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, pH 7.5, 125 mM KCl, 10 mM MgCl2",
+                "pH": 7.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 200,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "blank sensorgrams",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Insight Evaluation software"
+            }
+        }
+    },
+    "51351341": {
+        "reactant_set_id": 51351341,
+        "pmid": 32844651,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)[C@H](CCCCNC(C)=C2C(=O)CC(C)(C)CC2=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](NC(=O)[C@@H]2CCCN2C(=O)[C@@H](Cc2c[nH]c3ccccc23)NC1=O)[C@@H](C)O)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5670.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDL1 (unknown origin) by SPR analysis",
+        "search_path": [],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {},
+        "structured_description": null
+    }
+}

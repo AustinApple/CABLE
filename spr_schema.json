@@ -52,7 +52,7 @@
         "strategy": {
           "description": "The chemical or affinity method used for immobilization.",
           "type": "string",
-          "examples": ["Amine coupling", "SA-Biotin capture", "NTA-His capture", "Photo-crosslinking"]
+          "enum": ["Amine coupling", "SA-Biotin capture", "NTA-His capture", "Thiol coupling", "Aldehyde coupling", "GST capture", "Antibody capture", "Photo-crosslinking", "Direct immobilization", "Other"]
         },
         "density_ru": {
           "description": "The immobilization level in Response Units (RU). Use a string to capture ranges or approximations.",
@@ -103,13 +103,13 @@
           "enum": ["Single Cycle Kinetics", "Multi Cycle Kinetics", "Single Cycle Steady-State Affinity", "Multi Cycle Steady-State Affinity", "Screening", "Unknown"]
         },
         "assay_flow_rate": {
-          "description": "The flow rate used during the analyte injection.",
+          "description": "The flow rate used during the analyte injection. All values must be in µL/min.",
           "type": "object",
           "properties": {
             "value": { "type": "number" },
             "unit": {
               "type": "string",
-              "enum": ["µL/min", "µl/min", "ml/min", "µL/s"]
+              "const": "µL/min"
             }
           }
         },
@@ -148,12 +148,12 @@
         "subtraction_method": {
           "description": "The method of data normalization.",
           "type": "string",
-          "examples": ["Double referenced", "Reference-subtracted", "Normalized by subtracting control surface"]
+          "enum": ["Double referenced", "Reference subtracted", "Solvent correction", "Background subtracted", "Blank subtracted", "Other"]
         },
         "fitting_model": {
           "description": "The kinetic or affinity model used to fit the data.",
           "type": "string",
-          "examples": ["1:1 kinetic model", "1:1 langmuir binding model", "Steady-state affinity", "Mass transport model", "Affinity binding model"]
+          "enum": ["1:1 Langmuir binding model", "1:1 binding model with mass transport", "Steady-state affinity", "Two-state binding model", "Heterogeneous binding model", "Bivalent analyte model", "Other"]
         },
         "software": {
           "description": "The software used for data analysis.",

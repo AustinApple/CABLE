@@ -1,0 +1,266 @@
+{
+    "51604685": {
+        "reactant_set_id": 51604685,
+        "pmid": 38941718,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)COCCCCCn2cc(COc3ccc(COC(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CO)C[C@@H]4CCNC4=O)cc3)nn2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 62.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human VHL (54 to 213 residues)/Elongin B (1 to104 residues)/Elongin C (17 to 112 residues) assessed as dissociation constant measured upto 120 sec by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "W. Farnaby, M. Koegl, M.J. Roy, C. Whitworth, E. Diers, N. Trainor, et al., BAF complex vulnerabilities in cancer demonstrated via structure-based PROTAC design, Nat. Chem. Biol. 15 (7) (2019) 672–680.",
+        "original_paragraph": {
+            "Materials and Methods - Binding assay": "The binding affinities of the PROTACs for SARS-CoV-2 Mpro or E3 ligase VHL were analyzed using a Biacore biosensor system (Biacore T100, Biacore Co., Ltd.) based on SPR technology. Human VHL (54–213), ElonginB (1–104), and ElonginC (17–112) were coexpressed as described previously [40]. Mpro or VCB (VHL-ElonginC-ElonginB) was immobilized on a sensor chip (CM-5, research grade) using a standard primary amine-coupling protocol. The PROTACs in PBS containing Tween 20 (0.05 %, v/v) at graded concentrations (1–50 μM) were flowed over the surface of the sensor at a rate of 40 μL/min for 60 s. At the end of the sample injection, the same buffer was flowed over the sensor surface for 120 s to facilitate dissociation. GC376 or VHL ligand was used as a control. The binding kinetic parameters were calculated using the Biacore evaluation software (version 4.1). For ternary binding assay, one of the two proteins, Mpro and VCB, was immobilized on a sensor chip as described above. P2 (40 μM) in PBS was flowed over the surface of the sensor at a rate of 40 μL/min for 120 s to ensure saturated binding with the immobilized protein. Phosphate buffer was used as a blank and GC376 or VHL ligand was used as a negative control. Then another protein at different concentrations in PBS was injected for 120 s, the chip surface was regenerated with 10 mM glycine pH 2.0. The binding curves were analyzed using the Biacore T100 evaluation software.",
+            "Figure 4 caption": "Fig. 4. Compounds binding to Mpro and VCB. A–C. Kd values of Mpro (A) or VCB (B) immobilized onto the surface of Biacore sensor chips, followed by the addition of analyte at 25 μM (A) or 1 μM (B) in running buffer (20 mM HEPES, pH 7.8) poured over the surface; (–) indicates that no binding was observed. The Kd values were calculated using BLAcore T100 analysis software; Comp. = compound. C. Ternary binding of P2 to Mpro and VCB. Mpro was immobilized on a sensor chip and P2 (50 μM) was injected over the surface of the chip for 120 s, followed by injection of VCB at different concentrations for 120 s. Buffer and GC376 were used as controls. Numbers shown in parentheses are concentrations in μM.",
+            "Figure 4A sensorgram data": "Figure 4A shows sensorgrams for compounds P1, P2, P3, and GC376 binding to Mpro at 25 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (943), P2 (37), P3 (35), Ligand (-), GC376 (128). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4B sensorgram data": "Figure 4B shows sensorgrams for compounds P1, P2, P3, and GC376 binding to VCB at 1 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (62), P2 (37), P3 (34), GC376 (-), Ligand (189). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4C sensorgram data": "Figure 4C shows sensorgrams for ternary binding. The x-axis represents time (s) from 100 to 500. The y-axis represents response unit (RU). The legend indicates: P2 (50)-VCB(1), P2 (50)-VCB(0.25), buffer-VCB(1), GC376(50)-VCB(0.25), buffer-buffer. The curves show the response after injection of VCB at different concentrations following pre-binding of P2 to Mpro."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore Co., Ltd."
+            },
+            "immobilization": {
+                "ligand_name": "Mpro or VCB (VHL-ElonginC-ElonginB)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PROTACs (including P1, P2, P3, GC376, VHL ligand)",
+                "concentration_range": "1–50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing Tween 20 (0.05 %, v/v) or 20 mM HEPES, pH 7.8",
+                "pH": 7.8,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": "Phosphate buffer or blank",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (version 4.1)"
+            }
+        }
+    },
+    "51604686": {
+        "reactant_set_id": 51604686,
+        "pmid": 38941718,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)COCCCCCn2cc(COc3ccc(COC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C[C@@H]4CCNC4=O)C(O)S(=O)(=O)[O-])cc3)nn2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 37.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human VHL (54 to 213 residues)/Elongin B (1 to104 residues)/Elongin C (17 to 112 residues) assessed as dissociation constant measured upto 120 sec by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "W. Farnaby, M. Koegl, M.J. Roy, C. Whitworth, E. Diers, N. Trainor, et al., BAF complex vulnerabilities in cancer demonstrated via structure-based PROTAC design, Nat. Chem. Biol. 15 (7) (2019) 672–680.",
+        "original_paragraph": {
+            "Materials and Methods - Binding assay": "The binding affinities of the PROTACs for SARS-CoV-2 Mpro or E3 ligase VHL were analyzed using a Biacore biosensor system (Biacore T100, Biacore Co., Ltd.) based on SPR technology. Human VHL (54–213), ElonginB (1–104), and ElonginC (17–112) were coexpressed as described previously [40]. Mpro or VCB (VHL-ElonginC-ElonginB) was immobilized on a sensor chip (CM-5, research grade) using a standard primary amine-coupling protocol. The PROTACs in PBS containing Tween 20 (0.05 %, v/v) at graded concentrations (1–50 μM) were flowed over the surface of the sensor at a rate of 40 μL/min for 60 s. At the end of the sample injection, the same buffer was flowed over the sensor surface for 120 s to facilitate dissociation. GC376 or VHL ligand was used as a control. The binding kinetic parameters were calculated using the Biacore evaluation software (version 4.1). For ternary binding assay, one of the two proteins, Mpro and VCB, was immobilized on a sensor chip as described above. P2 (40 μM) in PBS was flowed over the surface of the sensor at a rate of 40 μL/min for 120 s to ensure saturated binding with the immobilized protein. Phosphate buffer was used as a blank and GC376 or VHL ligand was used as a negative control. Then another protein at different concentrations in PBS was injected for 120 s, the chip surface was regenerated with 10 mM glycine pH 2.0. The binding curves were analyzed using the Biacore T100 evaluation software.",
+            "Figure 4 caption": "Fig. 4. Compounds binding to Mpro and VCB. A–C. Kd values of Mpro (A) or VCB (B) immobilized onto the surface of Biacore sensor chips, followed by the addition of analyte at 25 μM (A) or 1 μM (B) in running buffer (20 mM HEPES, pH 7.8) poured over the surface; (–) indicates that no binding was observed. The Kd values were calculated using BLAcore T100 analysis software; Comp. = compound. C. Ternary binding of P2 to Mpro and VCB. Mpro was immobilized on a sensor chip and P2 (50 μM) was injected over the surface of the chip for 120 s, followed by injection of VCB at different concentrations for 120 s. Buffer and GC376 were used as controls. Numbers shown in parentheses are concentrations in μM.",
+            "Figure 4A sensorgram data": "Figure 4A shows sensorgrams for compounds P1, P2, P3, and GC376 binding to Mpro at 25 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (943), P2 (37), P3 (35), Ligand (-), GC376 (128). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4B sensorgram data": "Figure 4B shows sensorgrams for compounds P1, P2, P3, and GC376 binding to VCB at 1 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (62), P2 (37), P3 (34), GC376 (-), Ligand (189). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4C sensorgram data": "Figure 4C shows sensorgrams for ternary binding. The x-axis represents time (s) from 100 to 500. The y-axis represents response unit (RU). The legend indicates: P2 (50)-VCB(1), P2 (50)-VCB(0.25), buffer-VCB(1), GC376(50)-VCB(0.25), buffer-buffer. The curves show the response after injection of VCB at different concentrations following pre-binding of P2 to Mpro."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore Co., Ltd."
+            },
+            "immobilization": {
+                "ligand_name": "Mpro or VCB (VHL-ElonginC-ElonginB)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PROTACs (including P1, P2, P3, GC376, VHL ligand)",
+                "concentration_range": "1–50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing Tween 20 (0.05 %, v/v) or 20 mM HEPES, pH 7.8",
+                "pH": 7.8,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": "Phosphate buffer or blank",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (version 4.1)"
+            }
+        }
+    },
+    "51604687": {
+        "reactant_set_id": 51604687,
+        "pmid": 38941718,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)COCCCCCn2cc(COc3ccc(COC(=O)N[C@@H](CC(C)C)C(=O)N[C@H](C=O)C[C@@H]4CCNC4=O)cc3)nn2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human VHL (54 to 213 residues)/Elongin B (1 to104 residues)/Elongin C (17 to 112 residues) assessed as dissociation constant measured upto 120 sec by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "W. Farnaby, M. Koegl, M.J. Roy, C. Whitworth, E. Diers, N. Trainor, et al., BAF complex vulnerabilities in cancer demonstrated via structure-based PROTAC design, Nat. Chem. Biol. 15 (7) (2019) 672–680.",
+        "original_paragraph": {
+            "Materials and Methods - Binding assay": "The binding affinities of the PROTACs for SARS-CoV-2 Mpro or E3 ligase VHL were analyzed using a Biacore biosensor system (Biacore T100, Biacore Co., Ltd.) based on SPR technology. Human VHL (54–213), ElonginB (1–104), and ElonginC (17–112) were coexpressed as described previously [40]. Mpro or VCB (VHL-ElonginC-ElonginB) was immobilized on a sensor chip (CM-5, research grade) using a standard primary amine-coupling protocol. The PROTACs in PBS containing Tween 20 (0.05 %, v/v) at graded concentrations (1–50 μM) were flowed over the surface of the sensor at a rate of 40 μL/min for 60 s. At the end of the sample injection, the same buffer was flowed over the sensor surface for 120 s to facilitate dissociation. GC376 or VHL ligand was used as a control. The binding kinetic parameters were calculated using the Biacore evaluation software (version 4.1). For ternary binding assay, one of the two proteins, Mpro and VCB, was immobilized on a sensor chip as described above. P2 (40 μM) in PBS was flowed over the surface of the sensor at a rate of 40 μL/min for 120 s to ensure saturated binding with the immobilized protein. Phosphate buffer was used as a blank and GC376 or VHL ligand was used as a negative control. Then another protein at different concentrations in PBS was injected for 120 s, the chip surface was regenerated with 10 mM glycine pH 2.0. The binding curves were analyzed using the Biacore T100 evaluation software.",
+            "Figure 4 caption": "Fig. 4. Compounds binding to Mpro and VCB. A–C. Kd values of Mpro (A) or VCB (B) immobilized onto the surface of Biacore sensor chips, followed by the addition of analyte at 25 μM (A) or 1 μM (B) in running buffer (20 mM HEPES, pH 7.8) poured over the surface; (–) indicates that no binding was observed. The Kd values were calculated using BLAcore T100 analysis software; Comp. = compound. C. Ternary binding of P2 to Mpro and VCB. Mpro was immobilized on a sensor chip and P2 (50 μM) was injected over the surface of the chip for 120 s, followed by injection of VCB at different concentrations for 120 s. Buffer and GC376 were used as controls. Numbers shown in parentheses are concentrations in μM.",
+            "Figure 4A sensorgram data": "Figure 4A shows sensorgrams for compounds P1, P2, P3, and GC376 binding to Mpro at 25 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (943), P2 (37), P3 (35), Ligand (-), GC376 (128). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4B sensorgram data": "Figure 4B shows sensorgrams for compounds P1, P2, P3, and GC376 binding to VCB at 1 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (62), P2 (37), P3 (34), GC376 (-), Ligand (189). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4C sensorgram data": "Figure 4C shows sensorgrams for ternary binding. The x-axis represents time (s) from 100 to 500. The y-axis represents response unit (RU). The legend indicates: P2 (50)-VCB(1), P2 (50)-VCB(0.25), buffer-VCB(1), GC376(50)-VCB(0.25), buffer-buffer. The curves show the response after injection of VCB at different concentrations following pre-binding of P2 to Mpro."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore Co., Ltd."
+            },
+            "immobilization": {
+                "ligand_name": "Mpro or VCB (VHL-ElonginC-ElonginB)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PROTACs (including P1, P2, P3, GC376, VHL ligand)",
+                "concentration_range": "1–50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing Tween 20 (0.05 %, v/v) or 20 mM HEPES, pH 7.8",
+                "pH": 7.8,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": "Phosphate buffer or blank",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (version 4.1)"
+            }
+        }
+    },
+    "51604688": {
+        "reactant_set_id": 51604688,
+        "pmid": 38941718,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](N)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 189.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human VHL (54 to 213 residues)/Elongin B (1 to104 residues)/Elongin C (17 to 112 residues) assessed as dissociation constant measured upto 120 sec by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "W. Farnaby, M. Koegl, M.J. Roy, C. Whitworth, E. Diers, N. Trainor, et al., BAF complex vulnerabilities in cancer demonstrated via structure-based PROTAC design, Nat. Chem. Biol. 15 (7) (2019) 672–680.",
+        "original_paragraph": {
+            "Materials and Methods - Binding assay": "The binding affinities of the PROTACs for SARS-CoV-2 Mpro or E3 ligase VHL were analyzed using a Biacore biosensor system (Biacore T100, Biacore Co., Ltd.) based on SPR technology. Human VHL (54–213), ElonginB (1–104), and ElonginC (17–112) were coexpressed as described previously [40]. Mpro or VCB (VHL-ElonginC-ElonginB) was immobilized on a sensor chip (CM-5, research grade) using a standard primary amine-coupling protocol. The PROTACs in PBS containing Tween 20 (0.05 %, v/v) at graded concentrations (1–50 μM) were flowed over the surface of the sensor at a rate of 40 μL/min for 60 s. At the end of the sample injection, the same buffer was flowed over the sensor surface for 120 s to facilitate dissociation. GC376 or VHL ligand was used as a control. The binding kinetic parameters were calculated using the Biacore evaluation software (version 4.1). For ternary binding assay, one of the two proteins, Mpro and VCB, was immobilized on a sensor chip as described above. P2 (40 μM) in PBS was flowed over the surface of the sensor at a rate of 40 μL/min for 120 s to ensure saturated binding with the immobilized protein. Phosphate buffer was used as a blank and GC376 or VHL ligand was used as a negative control. Then another protein at different concentrations in PBS was injected for 120 s, the chip surface was regenerated with 10 mM glycine pH 2.0. The binding curves were analyzed using the Biacore T100 evaluation software.",
+            "Figure 4 caption": "Fig. 4. Compounds binding to Mpro and VCB. A–C. Kd values of Mpro (A) or VCB (B) immobilized onto the surface of Biacore sensor chips, followed by the addition of analyte at 25 μM (A) or 1 μM (B) in running buffer (20 mM HEPES, pH 7.8) poured over the surface; (–) indicates that no binding was observed. The Kd values were calculated using BLAcore T100 analysis software; Comp. = compound. C. Ternary binding of P2 to Mpro and VCB. Mpro was immobilized on a sensor chip and P2 (50 μM) was injected over the surface of the chip for 120 s, followed by injection of VCB at different concentrations for 120 s. Buffer and GC376 were used as controls. Numbers shown in parentheses are concentrations in μM.",
+            "Figure 4A sensorgram data": "Figure 4A shows sensorgrams for compounds P1, P2, P3, and GC376 binding to Mpro at 25 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (943), P2 (37), P3 (35), Ligand (-), GC376 (128). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4B sensorgram data": "Figure 4B shows sensorgrams for compounds P1, P2, P3, and GC376 binding to VCB at 1 μM. The x-axis represents time (s) from -25 to 125. The y-axis represents response unit (RU). The legend indicates: P1 (62), P2 (37), P3 (34), GC376 (-), Ligand (189). The curves show association (0-50s) and dissociation (50-125s) phases.",
+            "Figure 4C sensorgram data": "Figure 4C shows sensorgrams for ternary binding. The x-axis represents time (s) from 100 to 500. The y-axis represents response unit (RU). The legend indicates: P2 (50)-VCB(1), P2 (50)-VCB(0.25), buffer-VCB(1), GC376(50)-VCB(0.25), buffer-buffer. The curves show the response after injection of VCB at different concentrations following pre-binding of P2 to Mpro."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore Co., Ltd."
+            },
+            "immobilization": {
+                "ligand_name": "Mpro or VCB (VHL-ElonginC-ElonginB)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PROTACs (including P1, P2, P3, GC376, VHL ligand)",
+                "concentration_range": "1–50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing Tween 20 (0.05 %, v/v) or 20 mM HEPES, pH 7.8",
+                "pH": 7.8,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": "Phosphate buffer or blank",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (version 4.1)"
+            }
+        }
+    }
+}

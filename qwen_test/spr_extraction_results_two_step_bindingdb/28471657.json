@@ -1,0 +1,826 @@
+{
+    "50887141": {
+        "reactant_set_id": 50887141,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Nc1nccc(Nc2ccccc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3000000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887142": {
+        "reactant_set_id": 50887142,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Nc1ncc(F)c(Nc2ccccc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 180000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887143": {
+        "reactant_set_id": 50887143,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Nc1ncc(Cl)c(Nc2ccccc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 68000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887144": {
+        "reactant_set_id": 50887144,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Clc1cncnc1Nc1ccc2NC(=O)Cc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887145": {
+        "reactant_set_id": 50887145,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Clc1cnc(NCc2cccnc2)nc1Nc1ccc2NC(=O)Cc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 78.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887146": {
+        "reactant_set_id": 50887146,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCCN)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887156": {
+        "reactant_set_id": 50887156,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Nc1ncnc(Nc2ccccc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1200000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887157": {
+        "reactant_set_id": 50887157,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CN(c1ncccc1CNc1nc(Nc2ccc3NC(=O)Cc3c2)ncc1C(F)(F)F)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 88000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to captured wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887147": {
+        "reactant_set_id": 50887147,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCCN)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to coupled wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {},
+        "structured_description": null
+    },
+    "50887148": {
+        "reactant_set_id": 50887148,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCCN)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) using 1 % DMSO by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | mt BCL6BTB | | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000 and Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS and SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM (for screening), 100 μM (for positive control), 1 mM to 100 μM (two-fold dilutions for competition studies)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced (sensorgrams were double referenced prior to fitting)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887158": {
+        "reactant_set_id": 50887158,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCCN)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) using 3 % DMSO by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; ~13,000 RUs for captured BCL6BTB; ~4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM for primary screen; 100 μM to 12.5 μM (2-fold dilutions) for BCoR peptide; 1 mM to 125 μM (2-fold dilutions) for fragment 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference spots (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "50887149": {
+        "reactant_set_id": 50887149,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H](C)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CO)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCCCN)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild-type human biotinylated Avi-tagged BCL6 BTB domain (5 to 129 amino acid residues) expressed in Escherichia coli BL21 (DE3) using 5 % DMSO by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCoR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCoR peptide in the running buffer and samples. When a compound binds to the same site as the BCoR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCoR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCoR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCoR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCoR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCoR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; ~13,000 RUs for captured BCL6BTB; ~4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Takeda’s fragment library, BCoR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH",
+                "concentration_range": "1 mM (for screening), 100 μM (for positive control), 1 mM to 100 μM (two-fold dilutions for BCoR peptide), 1 mM to 12.5 μM (two-fold dilutions for fragment 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference surface (e.g., NeutrAvidin or buffer-only spots)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    },
+    "50887154": {
+        "reactant_set_id": 50887154,
+        "pmid": 28471657,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC(C)C)NC(C)=O)[C@@H](C)O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CCSC)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](C(C)C)C(=O)N1CCC[C@H]1C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.57,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of BCOR binding to recombinant biotinylated SUMO-tagged BCL6 BTB domain (5 to 129 amino acid residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR biosensing experiments were performed at 22 °C on Biacore 4000 and Biacore S200 instruments equipped with SeriesS CMS and SA sensor chips (GE healthcare). HBS-P+ (10 mM Heps pH 7.4, 150 mM NaCl, 0.05% Surfactant P20, GE healthcare) supplemented with 1 mM DTT was used as the running buffer for immobilization. NeutrAvidin (Thermo Fisher Scientific Inc.) was covalently coupled onto spots 1, 2, and 3 of a CMS sensor chip following the standard amine coupling procedure according to the manufacturer’s instructions. Typical immobilization levels of NeutrAvidin ranged from 10,000 to 13,000 resonance units (RUs). Subsequently, avi-tagged wt BCL6BTB and avi-tagged mt BCL6BTB were injected to spots 1 and 2, respectively. The surfaces were blocked by injecting biocytin (Thermo Fisher Scientific Inc.) to spots 1, 2, and 3. Approximately 13,000 RUs of each BCL6BTB were captured by NeutrAvidin. Furthermore, wt BCL6BTB was immobilized on spot 5 via the standard amine coupling procedure, resulting in immobilization levels of around 4,000 RUs. For the interaction studies, binding experiments were performed in 20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, and 5% DMSO. Different concentration sample solutions were injected for 30 or 60 s at a flow rate of 30 or 50 μL/min, and the dissociation was thereafter followed for up to 30, 60, or 150 s. Data processing and analysis were performed using the Biacore 4000 and Biacore S200 evaluation software (GE healthcare). Solvent correction was included as described in the Biacore software handbook. Sensorgrams were double referenced prior to fitting the concentration series to a steady-state affinity model. The dissociation constant KD was calculated using the equation: KD = Rmax × C/R − C where Rmax, R, and C correspond to the sample binding capacity of the surface (RU), the normalized response of test sample (RU), and the concentration of the test solution (M), respectively. LE was calculated using the equation: LE = ΔG/HA = −2.303 × R × T × log(KD)/HA where ΔG, HA, R, and T correspond to the Gibbs free energy (kcal/mol), heavy atom count, the ideal gas constant (1.987 × 10−3 kcal/K/mol), and the temperature in Kelvin (K). For the primary screen, Takeda’s fragment library was diluted to 1 mM in the running buffer and injected for 30 s. Then, the dissociation was followed for 30 s. Every 33rd cycle, a positive control containing 100 μM BCOR peptide ((Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, chemically synthesized by Toray Research Center) and running buffer as a blank were injected. Data processing and analysis were performed using the Biacore 4000 evaluation software. Solvent correction was included as described in the Biacore 4000 software handbook. The binding responses were normalized by the positive control and the molecular weight of each sample. Fragments with a normalized binding response that exceeded median + median absolute deviation were selected as primary hits. As for NeutrAvidin, fragments with a normalized response that was more than 90% against their theoretical Rmax were selected. For competition studies, data were acquired for test compounds binding to BCL6 in the presence of 100 μM BCOR peptide in the running buffer and samples. When a compound binds to the same site as the BCOR peptide, the response for the compound decreases.",
+            "Figure 2 caption": "Figure 2. Layout of the sensor chip. (A) Four independent flow cells (Fc), each with five detection spots. (B) Protein immobilized in each flow cell. Binding responses of captured wt BCL6BTB, captured mt BCL6BTB, coupled wt BCL6BTB, and NeutrAvidin are detected on spots 1–3, spots 2–3, spots 5–4, and spots 3–4, respectively. Sensorgrams of BCOR peptide binding to (C) captured wt BCL6BTB, (D) captured mt BCL6BTB, (E) coupled wt BCL6BTB, and (F) NeutrAvidin. Lower graphs indicate the fit plots of the response measured at equilibrium plotted against BCOR peptide concentration. Top concentration is 100 μM; dilution step is 2-fold.",
+            "Table 1": "Table 1. Binding Affinities Between BCOR Peptide and BCL6BTBs | DMSO | wt BCL6BTB | | mt BCL6BTB | | | :--- | :--- | :--- | :--- | :--- | | | KD (μM) | Rmax (RU) | KD (μM) | Rmax (RU) | | 1% | 7.5 | 245 | 17 | 311 | | 3% | 9.3 | 242 | 21 | 302 | | 5% | 12 | 243 | 25 | 304 |",
+            "Figure 3 caption": "Figure 3. SPR-based screening of 1494 fragments tested against (A) captured wt BCL6BTB, (B) captured mt BCL6BTB, (C) coupled wt BCL6BTB, and (D) NeutrAvidin. The color of each plot indicates fast binding (blue-circle), slow binding (red-circle), and 100 μM BCOR peptide as a positive control (gray-square). (E) Venn diagram showing the number of fragments selected at each BCL6BTB screening and the overlap of fragments found by each screening.",
+            "Figure 4 caption": "Figure 4. Characterization of fragment 1. (A) Chemical structure of fragment 1. (B) STD-NMR experiments. 1H spectra of fragment 1 for off-resonance (black line) and on-resonance (red line), and the STD spectrum of fragment 1 (difference). (C) SPR competition experiments. Sensorgrams of fragment 1 to mt BCL6BTB in the absence or presence of 100 μM BCOR peptide. Top concentration is 1 mM; dilution step is 2-fold. (D) Co-crystal structure of fragment 1 in complex with BCL6BTB.",
+            "Figure 7 caption": "Figure 7. (A) Co-crystal structure of compound 7 in complex with BCL6BTB. (B) Chemical structure of 7. (C) Equilibrium plot and sensorgrams (insert) of 7 binding to BCL6. (D, E) PPI inhibitory activities in cell-free (ELISA) and cellular (M2H) assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000, Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "SeriesS CMS, SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NeutrAvidin, avi-tagged wt BCL6BTB, avi-tagged mt BCL6BTB, wt BCL6BTB",
+                "strategy": "Amine coupling",
+                "density_ru": "10,000 to 13,000 RUs for NeutrAvidin; approximately 13,000 RUs for captured BCL6BTB; around 4,000 RUs for coupled wt BCL6BTB",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BCOR peptide (Arg498-Pro514)-Lys, acetyl-RSEISTAPSSWVVPKK-OH, and Takeda’s fragment library",
+                "concentration_range": "BCOR peptide: 100 μM to 1.56 μM (2-fold dilutions); fragments: 1 mM to 125 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris, pH 8.0, 150 mM NaCl, 0.01% Surfactant P20, 1 mM DTT, 5% DMSO",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 22,
+                "association_time_s": 30,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double referenced using blank and reference surfaces (spots 3–4 for NeutrAvidin, etc.)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 4000 and Biacore S200 evaluation software (GE healthcare)"
+            }
+        }
+    }
+}

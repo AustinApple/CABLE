@@ -1,0 +1,68 @@
+{
+    "51507134": {
+        "reactant_set_id": 51507134,
+        "pmid": 36204777,
+        "protein": "Nectin-4",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]([C@H](CC(=O)N1CCCC1[C@@H](OC)[C@H](C)C(=O)N[C@@H](C)[C@H](O)c1ccccc1)OC)N(C)C(=O)[C@@H](NC(=O)[C@H](C(C)C)N(C)C(=O)OCc1ccc(NC(=O)[C@H](CCCNC(N)=O)NC(=O)[C@@H](NC(=O)CCCC(=O)NCCC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N(C)CC(=O)N[C@@H](C)N[C@@H](CCCCNC(N)=N)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@H]2CSCCC(=O)N3CN4CN(C3)C(=O)CCSC[C@H](NC(=O)C(CCCCNC(N)=N)NC(=O)[C@H](Cc3c[nH]c5ccccc35)NC(=O)[C@H](Cc3c[nH]c5ccccc35)NC(=O)[C@H](CC(O)=O)NC(=O)C3CCCN3C(=O)[C@H](Cc3c[nH]cn3)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CSC(=O)CC4)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H]3CCCN3C(=O)[C@H](CC(N)=O)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)C3C[C@@H](O)CN3C2=O)C(C)C)C(N)=O)C(C)C)cc1)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminal FLAG-tagged human Nectin-4 (32 to 349 residues) expressed in baculovirus infected sf9 cells assessed as dissociation constant by SPR assay",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "3.3.1 Human Nectin-4 protein production and purification Cloning: Human Nectin-4 (Uniprot: Q96NY8, residues 32-349) with a gp67 signal sequence and C-terminal FLAG tag was cloned into pFastbac-1 and baculovirus using standard Bac-to-Bac™ protocols (Life Technologies). Expression and purification: Sf21 cells at 1 x 106ml-1 in Excell-420 medium (Sigma) at 27°C were infected at a Multiplicity of infection (MOI) of 2 with a P1 virus stock. Supernatant was harvested at 72 hours and incubated for 1 hour at 4°C with Anti-FLAG M2 affinity agarose resin (Sigma) followed by a PBS wash. Resin was subsequently transferred to a column and washed extensively with physiologically buffered saline (PBS). Protein was eluted with 100μg/ml FLAG peptide concentrated to a volume of 2ml and loaded onto an S-200 Superdex column (GE Healthcare) in PBS at 1ml/min. 2ml fractions were collected and fractions containing Nectin-4 protein were concentrated to 16mg/ml. Biotinylation: The protein was randomly biotinylated using EZ-Link™ Sulfo-NHS-LC-LC-Biotin reagent (Thermo Fisher) as per the manufacturer’s suggested protocol. The protein was extensively desalted to remove uncoupled biotin using spin columns and transferred to PBS. 3.3.1 Affinity determination of BT8009 by SPR Streptavidin was immobilized on a CM5 (GE Healthcare) or CMD5000 (Xantec) chip using standard amine-coupling chemistry at 25°C with HBS-N (10 mM HEPES, 0.15 M NaCl, pH 7.4) as the running buffer. Briefly, the carboxymethyl dextran surface was activated with a 7 min injection of a 1:1 ratio of 0.4 M 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μl/min. Streptavidin was diluted to 0.2 mg/ml in 10 mM sodium acetate (pH 4.5) and captured by injecting 120μl onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 Methanolamine (pH 8.5) and biotinylated Nectin-4 captured to a level of 1,200-1,800 RU. Bicycles and BTCs were prepared in PBS/0.05% Tween 20 with a final DMSO concentration of 0.5%. SPR analysis was run on a Biacore 3000 instrument at 25°C at a flow rate of 50μl/min with association time of 60 seconds and dissociation time of between 400 and 1,200 seconds depending upon the individual peptide. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures and data processing and kinetic fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using simple 1:1 binding model allowing for mass transport effects where appropriate.",
+            "Table S10": "Table S10. Affinity determination of BT8009 by SPR Bicycle number K_D (nM) Geometric mean (Lower 95% CI of geo. mean;Upper 95% CI of geo. mean, n=Number of values) BT8009 2.50 (2.09;2.98, n=13)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated Nectin-4",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1,200-1,800",
+                "concentration_for_immobilization": "0.2 mg/ml"
+            },
+            "analyte": {
+                "description": "BT8009 (Bicycle)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N (10 mM HEPES, 0.15 M NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": "400-1200",
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    }
+}

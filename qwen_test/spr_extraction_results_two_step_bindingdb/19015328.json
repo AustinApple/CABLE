@@ -1,0 +1,398 @@
+{
+    "50613867": {
+        "reactant_set_id": 50613867,
+        "pmid": 19015328,
+        "protein": "Major prion protein",
+        "ligand": {
+            "smiles": "CCC(C)C(NC(=O)c1ccccc1)C(=O)N1CCc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 51200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse recombinant PrP (121-231) after 10 mins by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "SPR measurements. Interactions between the PrP and the compounds were analyzed using a Biacore T100 system. A recombinant mouse PrP(121-231) was immobilized on a sensor chip (product CMS) according to the manufacturer’s instructions. Various concentrations of compounds were injected into running buffer (0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl [product HBS-N; Biacore] containing 5% DMSO [pH 7.4]) for 1 min at a flow rate of 30 μl/min. Then, running buffer without compounds was injected for 10 min at the same flow rate. Data were corrected using a blank sensor chip as a control. The dissociation constant (Kd) was calculated from the analyte concentration dependence of the sensorgram response.",
+            "Figure 4 caption": "FIG. 4. Examples of the concentration dependence of the Biacore response for (A) GFP23 as a single and specific binding compound, (B) GJP36 as a multiple or nonspecific binding compound, and (C) GJP82 as a nonbinding compound to mouse PrPC.",
+            "Table 2": "TABLE 2. Results of in silico and ex vivo screenings and Kd valuesa Compound Docked energy (kcal/mol) Mean level of PrPSc ± SD (%) Kd (μM) ± SD for PrPC GFP23 −11.68 36.78 ± 0.63 51.2 ± 12.2 GFP07 −11.78 37.33 ± 4.23 20.0 ± 7.76 GJP45 −11.46 41.85 ± 18.82 86.1 ± 4.6 GFP07 −11.48 47.40 ± 19.89 50.8 ± 11.1 GJP36 −11.93 50.62 ± 21.26 NDb GJP14 −12.38 51.32 ± 7.76 NDb GJP32 −12.46 53.05 ± 10.72 NDb GJP52 −12.00 54.71 ± 9.21 NDb GFP06 −11.78 55.33 ± 12.35 48.6 ± 20.3 GFP01 −11.82 56.73 ± 13.15 No binding GJP51 −11.56 57.44 ± 1.62 NDd GJP50 −11.67 57.55 ± 4.88 NDd GJP30 −11.86 58.78 ± 5.89 21.9 ± 16.4 GJP43 −11.47 63.16 ± 7.91 — GJP22 −12.16 63.70 ± 5.23 — GJP45 −11.60 64.86 ± 16.55 — GJP80 −11.51 65.01 ± 35.45 — GJP58 −11.71 65.03 ± 4.59 — GJP33 −11.64 66.94 ± 0.11 — GFP72 −11.54 67.11 ± 33.65 — GFP16 −11.74 67.24 ± 1.24 — GFP75 −11.52 67.43 ± 23.22 — GFP04 −11.81 68.77 ± 11.7 — GFP66 −11.54 93.68 ± 13.69 No binding GJP82 −11.83 94.61 ± 8.17 No binding GFP73 −11.50 95.70 ± 0.74 No binding a The 24 effective and 3 noneffective compounds in ex vivo tests are shown. Values are the means ± standard deviations (SD) of two to four independent experiments. b Kd was not determined (ND) because of an unlimited increase in Biacore responses. c Kd was not determined because of the low solubility of the compound. d Kd was not determined because of the slow binding kinetics. e —, experiments were not performed.",
+            "Figure 5 caption": "FIG. 5. In vitro screening using the Biacore system. The affinities of compounds to the mouse PrPC immobilized on a sensor chip were evaluated using Biacore response units (RU). The concentration of each compound was 100 μM. *, Compounds judged to be effective based on comparatively high RU values. GN8 was used as a positive control.",
+            "Figure 6 caption": "FIG. 6. The correlation between the relative PrPSc levels and Biacore responses (RU). A scatter plot was built from the relative PrPSc levels and Biacore responses of 37 compounds, including effective and noneffective compounds. Relative PrPSc levels are the means of two to four independent experiments. Error bars represent standard deviations. Based on binding affinities and antiprion activities, these compounds were roughly classified into five categories, i.e., BE, LBE, BNE, LBNE, and A. Compounds GFP22 and GFP73 exhibited high values for levels of PrPSc and Biacore responses, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant mouse PrP(121-231)",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Various compounds (e.g., GFP23, GJP36, GJP82, etc.)",
+                "concentration_range": "Not explicitly stated in Methods; Figure 5 mentions 100 μM for screening, Table 2 shows Kd values derived from concentration dependence"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl (product HBS-N; Biacore) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank sensor chip",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50613868": {
+        "reactant_set_id": 50613868,
+        "pmid": 19015328,
+        "protein": "Major prion protein",
+        "ligand": {
+            "smiles": "CCCCNc1nc2ccccc2n1CC(=O)N1CCc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse recombinant PrP (121-231) after 10 mins by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "SPR measurements. Interactions between the PrP and the compounds were analyzed using a Biacore T100 system. A recombinant mouse PrP(121-231) was immobilized on a sensor chip (product CMS) according to the manufacturer’s instructions. Various concentrations of compounds were injected into running buffer (0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl [product HBS-N; Biacore] containing 5% DMSO [pH 7.4]) for 1 min at a flow rate of 30 μl/min. Then, running buffer without compounds was injected for 10 min at the same flow rate. Data were corrected using a blank sensor chip as a control. The dissociation constant (Kd) was calculated from the analyte concentration dependence of the sensorgram response.",
+            "Figure 4 caption": "FIG. 4. Examples of the concentration dependence of the Biacore response for (A) GFP23 as a single and specific binding compound, (B) GJP36 as a multiple or nonspecific binding compound, and (C) GJP82 as a nonbinding compound to mouse PrPC.",
+            "Table 2": "TABLE 2. Results of in silico and ex vivo screenings and Kd valuesa Compound Docked energy (kcal/mol) Mean level of PrPSc ± SD (%) Kd (μM) ± SD for PrPC GFP23 −11.68 36.78 ± 0.63 51.2 ± 12.2 GFP07 −11.78 37.33 ± 4.23 20.0 ± 7.76 GJP45 −11.46 41.85 ± 18.82 86.1 ± 4.6 GFP07 −11.48 47.40 ± 19.89 50.8 ± 11.1 GJP36 −11.93 50.62 ± 21.26 NDb GJP14 −12.38 51.32 ± 7.76 NDb GJP32 −12.46 53.05 ± 10.72 NDb GJP52 −12.00 54.71 ± 9.21 NDb GFP06 −11.78 55.33 ± 12.35 48.6 ± 20.3 GFP01 −11.82 56.73 ± 13.15 No binding GJP51 −11.56 57.44 ± 1.62 NDd GJP50 −11.67 57.55 ± 4.88 NDd GJP30 −11.86 58.78 ± 5.89 21.9 ± 16.4 GJP43 −11.47 63.16 ± 7.91 — GJP22 −12.16 63.70 ± 5.23 — GJP45 −11.60 64.86 ± 16.55 — GJP80 −11.51 65.01 ± 35.45 — GJP58 −11.71 65.03 ± 4.59 — GJP33 −11.64 66.94 ± 0.11 — GFP72 −11.54 67.11 ± 33.65 — GFP16 −11.74 67.24 ± 1.24 — GFP75 −11.52 67.43 ± 23.22 — GFP04 −11.81 68.77 ± 11.7 — GFP66 −11.54 93.68 ± 13.69 No binding GJP82 −11.83 94.61 ± 8.17 No binding GFP73 −11.50 95.70 ± 0.74 No binding a The 24 effective and 3 noneffective compounds in ex vivo tests are shown. Values are the means ± standard deviations (SD) of two to four independent experiments. b Kd was not determined (ND) because of an unlimited increase in Biacore responses. c Kd was not determined because of the low solubility of the compound. d Kd was not determined because of the slow binding kinetics. e —, experiments were not performed.",
+            "Figure 5 caption": "FIG. 5. In vitro screening using the Biacore system. The affinities of compounds to the mouse PrPC immobilized on a sensor chip were evaluated using Biacore response units (RU). The concentration of each compound was 100 μM. *, Compounds judged to be effective based on comparatively high RU values. GN8 was used as a positive control.",
+            "Figure 6 caption": "FIG. 6. The correlation between the relative PrPSc levels and Biacore responses (RU). A scatter plot was built from the relative PrPSc levels and Biacore responses of 37 compounds, including effective and noneffective compounds. Relative PrPSc levels are the means of two to four independent experiments. Error bars represent standard deviations. Based on binding affinities and antiprion activities, these compounds were roughly classified into five categories, i.e., BE, LBE, BNE, LBNE, and A. Compounds GFP22 and GFP73 exhibited high values for levels of PrPSc and Biacore responses, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant mouse PrP(121-231)",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Various compounds (e.g., GFP23, GJP36, GJP82, etc.)",
+                "concentration_range": "Not explicitly stated in Methods; Figure 5 mentions 100 μM for screening, Table 2 shows Kd values derived from concentration dependence"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl (product HBS-N; Biacore) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank sensor chip",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50613869": {
+        "reactant_set_id": 50613869,
+        "pmid": 19015328,
+        "protein": "Major prion protein",
+        "ligand": {
+            "smiles": "Cc1cccc2cc3c(N)c(sc3nc12)C(=O)NC1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 86100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse recombinant PrP (121-231) after 10 mins by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "SPR measurements. Interactions between the PrP and the compounds were analyzed using a Biacore T100 system. A recombinant mouse PrP(121-231) was immobilized on a sensor chip (product CMS) according to the manufacturer’s instructions. Various concentrations of compounds were injected into running buffer (0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl [product HBS-N; Biacore] containing 5% DMSO [pH 7.4]) for 1 min at a flow rate of 30 μl/min. Then, running buffer without compounds was injected for 10 min at the same flow rate. Data were corrected using a blank sensor chip as a control. The dissociation constant (Kd) was calculated from the analyte concentration dependence of the sensorgram response.",
+            "Figure 4 caption": "FIG. 4. Examples of the concentration dependence of the Biacore response for (A) GFP23 as a single and specific binding compound, (B) GJP36 as a multiple or nonspecific binding compound, and (C) GJP82 as a nonbinding compound to mouse PrPC.",
+            "Table 2": "TABLE 2. Results of in silico and ex vivo screenings and Kd valuesa Compound Docked energy (kcal/mol) Mean level of PrPSc ± SD (%) Kd (μM) ± SD for PrPC GFP23 −11.68 36.78 ± 0.63 51.2 ± 12.2 GFP07 −11.78 37.33 ± 4.23 20.0 ± 7.76 GJP45 −11.46 41.85 ± 18.82 86.1 ± 4.6 GFP07 −11.48 47.40 ± 19.89 50.8 ± 11.1 GJP36 −11.93 50.62 ± 21.26 NDb GJP14 −12.38 51.32 ± 7.76 NDb GJP32 −12.46 53.05 ± 10.72 NDb GJP52 −12.00 54.71 ± 9.21 NDb GFP06 −11.78 55.33 ± 12.35 48.6 ± 20.3 GFP01 −11.82 56.73 ± 13.15 No binding GJP51 −11.56 57.44 ± 1.62 NDd GJP50 −11.67 57.55 ± 4.88 NDd GJP30 −11.86 58.78 ± 5.89 21.9 ± 16.4 GJP43 −11.47 63.16 ± 7.91 — GJP22 −12.16 63.70 ± 5.23 — GJP45 −11.60 64.86 ± 16.55 — GJP80 −11.51 65.01 ± 35.45 — GJP58 −11.71 65.03 ± 4.59 — GJP33 −11.64 66.94 ± 0.11 — GFP72 −11.54 67.11 ± 33.65 — GFP16 −11.74 67.24 ± 1.24 — GFP75 −11.52 67.43 ± 23.22 — GFP04 −11.81 68.77 ± 11.7 — GFP66 −11.54 93.68 ± 13.69 No binding GJP82 −11.83 94.61 ± 8.17 No binding GFP73 −11.50 95.70 ± 0.74 No binding a The 24 effective and 3 noneffective compounds in ex vivo tests are shown. Values are the means ± standard deviations (SD) of two to four independent experiments. b Kd was not determined (ND) because of an unlimited increase in Biacore responses. c Kd was not determined because of the low solubility of the compound. d Kd was not determined because of the slow binding kinetics. e —, experiments were not performed.",
+            "Figure 5 caption": "FIG. 5. In vitro screening using the Biacore system. The affinities of compounds to the mouse PrPC immobilized on a sensor chip were evaluated using Biacore response units (RU). The concentration of each compound was 100 μM. *, Compounds judged to be effective based on comparatively high RU values. GN8 was used as a positive control.",
+            "Figure 6 caption": "FIG. 6. The correlation between the relative PrPSc levels and Biacore responses (RU). A scatter plot was built from the relative PrPSc levels and Biacore responses of 37 compounds, including effective and noneffective compounds. Relative PrPSc levels are the means of two to four independent experiments. Error bars represent standard deviations. Based on binding affinities and antiprion activities, these compounds were roughly classified into five categories, i.e., BE, LBE, BNE, LBNE, and A. Compounds GFP22 and GFP73 exhibited high values for levels of PrPSc and Biacore responses, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant mouse PrP(121-231)",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Various compounds (e.g., GFP23, GJP36, GJP82, etc.)",
+                "concentration_range": "Not explicitly stated in Methods; Figure 5 mentions 100 μM for screening, Table 2 shows Kd values derived from concentration dependence"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl (product HBS-N; Biacore) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank sensor chip",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50613870": {
+        "reactant_set_id": 50613870,
+        "pmid": 19015328,
+        "protein": "Major prion protein",
+        "ligand": {
+            "smiles": "Cc1cc2cc3OCCOc3cc2nc1SCCN1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 50800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse recombinant PrP (121-231) after 10 mins by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "SPR measurements. Interactions between the PrP and the compounds were analyzed using a Biacore T100 system. A recombinant mouse PrP(121-231) was immobilized on a sensor chip (product CMS) according to the manufacturer’s instructions. Various concentrations of compounds were injected into running buffer (0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl [product HBS-N; Biacore] containing 5% DMSO [pH 7.4]) for 1 min at a flow rate of 30 μl/min. Then, running buffer without compounds was injected for 10 min at the same flow rate. Data were corrected using a blank sensor chip as a control. The dissociation constant (Kd) was calculated from the analyte concentration dependence of the sensorgram response.",
+            "Figure 4 caption": "FIG. 4. Examples of the concentration dependence of the Biacore response for (A) GFP23 as a single and specific binding compound, (B) GJP36 as a multiple or nonspecific binding compound, and (C) GJP82 as a nonbinding compound to mouse PrPC.",
+            "Table 2": "TABLE 2. Results of in silico and ex vivo screenings and Kd valuesa Compound Docked energy (kcal/mol) Mean level of PrPSc ± SD (%) Kd (μM) ± SD for PrPC GFP23 −11.68 36.78 ± 0.63 51.2 ± 12.2 GFP07 −11.78 37.33 ± 4.23 20.0 ± 7.76 GJP45 −11.46 41.85 ± 18.82 86.1 ± 4.6 GFP07 −11.48 47.40 ± 19.89 50.8 ± 11.1 GJP36 −11.93 50.62 ± 21.26 NDb GJP14 −12.38 51.32 ± 7.76 NDb GJP32 −12.46 53.05 ± 10.72 NDb GJP52 −12.00 54.71 ± 9.21 NDb GFP06 −11.78 55.33 ± 12.35 48.6 ± 20.3 GFP01 −11.82 56.73 ± 13.15 No binding GJP51 −11.56 57.44 ± 1.62 NDd GJP50 −11.67 57.55 ± 4.88 NDd GJP30 −11.86 58.78 ± 5.89 21.9 ± 16.4 GJP43 −11.47 63.16 ± 7.91 — GJP22 −12.16 63.70 ± 5.23 — GJP45 −11.60 64.86 ± 16.55 — GJP80 −11.51 65.01 ± 35.45 — GJP58 −11.71 65.03 ± 4.59 — GJP33 −11.64 66.94 ± 0.11 — GFP72 −11.54 67.11 ± 33.65 — GFP16 −11.74 67.24 ± 1.24 — GFP75 −11.52 67.43 ± 23.22 — GFP04 −11.81 68.77 ± 11.7 — GFP66 −11.54 93.68 ± 13.69 No binding GJP82 −11.83 94.61 ± 8.17 No binding GFP73 −11.50 95.70 ± 0.74 No binding a The 24 effective and 3 noneffective compounds in ex vivo tests are shown. Values are the means ± standard deviations (SD) of two to four independent experiments. b Kd was not determined (ND) because of an unlimited increase in Biacore responses. c Kd was not determined because of the low solubility of the compound. d Kd was not determined because of the slow binding kinetics. e —, experiments were not performed.",
+            "Figure 5 caption": "FIG. 5. In vitro screening using the Biacore system. The affinities of compounds to the mouse PrPC immobilized on a sensor chip were evaluated using Biacore response units (RU). The concentration of each compound was 100 μM. *, Compounds judged to be effective based on comparatively high RU values. GN8 was used as a positive control.",
+            "Figure 6 caption": "FIG. 6. The correlation between the relative PrPSc levels and Biacore responses (RU). A scatter plot was built from the relative PrPSc levels and Biacore responses of 37 compounds, including effective and noneffective compounds. Relative PrPSc levels are the means of two to four independent experiments. Error bars represent standard deviations. Based on binding affinities and antiprion activities, these compounds were roughly classified into five categories, i.e., BE, LBE, BNE, LBNE, and A. Compounds GFP22 and GFP73 exhibited high values for levels of PrPSc and Biacore responses, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant mouse PrP(121-231)",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Various compounds (e.g., GFP23, GJP36, GJP82, etc.)",
+                "concentration_range": "Not explicitly stated in Methods; Figure 5 mentions 100 μM for screening, Table 2 shows Kd values derived from concentration dependence"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl (product HBS-N; Biacore) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank sensor chip",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50613871": {
+        "reactant_set_id": 50613871,
+        "pmid": 19015328,
+        "protein": "Major prion protein",
+        "ligand": {
+            "smiles": "O=C(Cc1c[nH]c2ccccc12)NC1CCc2ccccc2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 48600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse recombinant PrP (121-231) after 10 mins by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "SPR measurements. Interactions between the PrP and the compounds were analyzed using a Biacore T100 system. A recombinant mouse PrP(121-231) was immobilized on a sensor chip (product CMS) according to the manufacturer’s instructions. Various concentrations of compounds were injected into running buffer (0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl [product HBS-N; Biacore] containing 5% DMSO [pH 7.4]) for 1 min at a flow rate of 30 μl/min. Then, running buffer without compounds was injected for 10 min at the same flow rate. Data were corrected using a blank sensor chip as a control. The dissociation constant (Kd) was calculated from the analyte concentration dependence of the sensorgram response.",
+            "Figure 4 caption": "FIG. 4. Examples of the concentration dependence of the Biacore response for (A) GFP23 as a single and specific binding compound, (B) GJP36 as a multiple or nonspecific binding compound, and (C) GJP82 as a nonbinding compound to mouse PrPC.",
+            "Table 2": "TABLE 2. Results of in silico and ex vivo screenings and Kd valuesa Compound Docked energy (kcal/mol) Mean level of PrPSc ± SD (%) Kd (μM) ± SD for PrPC GFP23 −11.68 36.78 ± 0.63 51.2 ± 12.2 GFP07 −11.78 37.33 ± 4.23 20.0 ± 7.76 GJP45 −11.46 41.85 ± 18.82 86.1 ± 4.6 GFP07 −11.48 47.40 ± 19.89 50.8 ± 11.1 GJP36 −11.93 50.62 ± 21.26 NDb GJP14 −12.38 51.32 ± 7.76 NDb GJP32 −12.46 53.05 ± 10.72 NDb GJP52 −12.00 54.71 ± 9.21 NDb GFP06 −11.78 55.33 ± 12.35 48.6 ± 20.3 GFP01 −11.82 56.73 ± 13.15 No binding GJP51 −11.56 57.44 ± 1.62 NDd GJP50 −11.67 57.55 ± 4.88 NDd GJP30 −11.86 58.78 ± 5.89 21.9 ± 16.4 GJP43 −11.47 63.16 ± 7.91 — GJP22 −12.16 63.70 ± 5.23 — GJP45 −11.60 64.86 ± 16.55 — GJP80 −11.51 65.01 ± 35.45 — GJP58 −11.71 65.03 ± 4.59 — GJP33 −11.64 66.94 ± 0.11 — GFP72 −11.54 67.11 ± 33.65 — GFP16 −11.74 67.24 ± 1.24 — GFP75 −11.52 67.43 ± 23.22 — GFP04 −11.81 68.77 ± 11.7 — GFP66 −11.54 93.68 ± 13.69 No binding GJP82 −11.83 94.61 ± 8.17 No binding GFP73 −11.50 95.70 ± 0.74 No binding a The 24 effective and 3 noneffective compounds in ex vivo tests are shown. Values are the means ± standard deviations (SD) of two to four independent experiments. b Kd was not determined (ND) because of an unlimited increase in Biacore responses. c Kd was not determined because of the low solubility of the compound. d Kd was not determined because of the slow binding kinetics. e —, experiments were not performed.",
+            "Figure 5 caption": "FIG. 5. In vitro screening using the Biacore system. The affinities of compounds to the mouse PrPC immobilized on a sensor chip were evaluated using Biacore response units (RU). The concentration of each compound was 100 μM. *, Compounds judged to be effective based on comparatively high RU values. GN8 was used as a positive control.",
+            "Figure 6 caption": "FIG. 6. The correlation between the relative PrPSc levels and Biacore responses (RU). A scatter plot was built from the relative PrPSc levels and Biacore responses of 37 compounds, including effective and noneffective compounds. Relative PrPSc levels are the means of two to four independent experiments. Error bars represent standard deviations. Based on binding affinities and antiprion activities, these compounds were roughly classified into five categories, i.e., BE, LBE, BNE, LBNE, and A. Compounds GFP22 and GFP73 exhibited high values for levels of PrPSc and Biacore responses, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant mouse PrP(121-231)",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Various compounds (e.g., GFP23, GJP36, GJP82, etc.)",
+                "concentration_range": "Not explicitly stated in Methods; Figure 5 mentions 100 μM for screening, Table 2 shows Kd values derived from concentration dependence"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl (product HBS-N; Biacore) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank sensor chip",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50613872": {
+        "reactant_set_id": 50613872,
+        "pmid": 19015328,
+        "protein": "Major prion protein",
+        "ligand": {
+            "smiles": "CC1CCCCN1CC(=O)Nc1sc2CCCCCc2c1C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse recombinant PrP (121-231) after 10 mins by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "SPR measurements. Interactions between the PrP and the compounds were analyzed using a Biacore T100 system. A recombinant mouse PrP(121-231) was immobilized on a sensor chip (product CMS) according to the manufacturer’s instructions. Various concentrations of compounds were injected into running buffer (0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl [product HBS-N; Biacore] containing 5% DMSO [pH 7.4]) for 1 min at a flow rate of 30 μl/min. Then, running buffer without compounds was injected for 10 min at the same flow rate. Data were corrected using a blank sensor chip as a control. The dissociation constant (Kd) was calculated from the analyte concentration dependence of the sensorgram response.",
+            "Figure 4 caption": "FIG. 4. Examples of the concentration dependence of the Biacore response for (A) GFP23 as a single and specific binding compound, (B) GJP36 as a multiple or nonspecific binding compound, and (C) GJP82 as a nonbinding compound to mouse PrPC.",
+            "Table 2": "TABLE 2. Results of in silico and ex vivo screenings and Kd valuesa Compound Docked energy (kcal/mol) Mean level of PrPSc ± SD (%) Kd (μM) ± SD for PrPC GFP23 −11.68 36.78 ± 0.63 51.2 ± 12.2 GFP07 −11.78 37.33 ± 4.23 20.0 ± 7.76 GJP45 −11.46 41.85 ± 18.82 86.1 ± 4.6 GFP07 −11.48 47.40 ± 19.89 50.8 ± 11.1 GJP36 −11.93 50.62 ± 21.26 NDb GJP14 −12.38 51.32 ± 7.76 NDb GJP32 −12.46 53.05 ± 10.72 NDb GJP52 −12.00 54.71 ± 9.21 NDb GFP06 −11.78 55.33 ± 12.35 48.6 ± 20.3 GFP01 −11.82 56.73 ± 13.15 No binding GJP51 −11.56 57.44 ± 1.62 NDd GJP50 −11.67 57.55 ± 4.88 NDd GJP30 −11.86 58.78 ± 5.89 21.9 ± 16.4 GJP43 −11.47 63.16 ± 7.91 — GJP22 −12.16 63.70 ± 5.23 — GJP45 −11.60 64.86 ± 16.55 — GJP80 −11.51 65.01 ± 35.45 — GJP58 −11.71 65.03 ± 4.59 — GJP33 −11.64 66.94 ± 0.11 — GFP72 −11.54 67.11 ± 33.65 — GFP16 −11.74 67.24 ± 1.24 — GFP75 −11.52 67.43 ± 23.22 — GFP04 −11.81 68.77 ± 11.7 — GFP66 −11.54 93.68 ± 13.69 No binding GJP82 −11.83 94.61 ± 8.17 No binding GFP73 −11.50 95.70 ± 0.74 No binding a The 24 effective and 3 noneffective compounds in ex vivo tests are shown. Values are the means ± standard deviations (SD) of two to four independent experiments. b Kd was not determined (ND) because of an unlimited increase in Biacore responses. c Kd was not determined because of the low solubility of the compound. d Kd was not determined because of the slow binding kinetics. e —, experiments were not performed.",
+            "Figure 5 caption": "FIG. 5. In vitro screening using the Biacore system. The affinities of compounds to the mouse PrPC immobilized on a sensor chip were evaluated using Biacore response units (RU). The concentration of each compound was 100 μM. *, Compounds judged to be effective based on comparatively high RU values. GN8 was used as a positive control.",
+            "Figure 6 caption": "FIG. 6. The correlation between the relative PrPSc levels and Biacore responses (RU). A scatter plot was built from the relative PrPSc levels and Biacore responses of 37 compounds, including effective and noneffective compounds. Relative PrPSc levels are the means of two to four independent experiments. Error bars represent standard deviations. Based on binding affinities and antiprion activities, these compounds were roughly classified into five categories, i.e., BE, LBE, BNE, LBNE, and A. Compounds GFP22 and GFP73 exhibited high values for levels of PrPSc and Biacore responses, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant mouse PrP(121-231)",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Various compounds (e.g., GFP23, GJP36, GJP82, etc.)",
+                "concentration_range": "Not explicitly stated in Methods; Figure 5 mentions 100 μM for screening, Table 2 shows Kd values derived from concentration dependence"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.1% surfactant P20 in 0.01 M HEPES [pH 7.4]–0.15 M NaCl (product HBS-N; Biacore) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank sensor chip",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

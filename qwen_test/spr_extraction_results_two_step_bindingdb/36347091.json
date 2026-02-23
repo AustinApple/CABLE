@@ -1,0 +1,66 @@
+{
+    "51573862": {
+        "reactant_set_id": 51573862,
+        "pmid": 36347091,
+        "protein": "Bile acid receptor",
+        "ligand": {
+            "smiles": "COc1ccc2cc3-c4cc(OC)c(OC)cc4CC[n+]3cc2c1OCc1cccc(C)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 84.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FXR (unknown origin) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "35. X. Wang, R. Yang, S. Liu, Y. Guan, C. Xiao, C. Li, J. Meng, Y. Pang, Y. Liu, IMB-XMA0038, a new inhibitor targeting aspartate-semialdehyde dehydrogenase of Mycobacterium tuberculosis, Emerg. Microb. Infect. 10 (2021) 2291–2299.",
+        "original_paragraph": {
+            "Materials and Methods - 4.3.11. Surface plasmon resonance assay": "The SPR assay was performed on a Reichert2SPR system (Reichert, New York, USA) at 25 °C using CM5 chip. CM5 chip was coated with purified FXR in 10 mmol/L sodium acetate buffer at pH 4.5. The binding of FXR at different concentrations (6.25–50 μmol/L) of compound 3a was performed in 1 × PBST (Thermo Scientific) at a flow rate of 25 μL/min for 90 s, followed by dissociation for 150 s. The results were analyzed using TraceDrawer software (Reichert, New York, USA) [35].",
+            "Figure 6I caption": "Surface plasmon resonance assay (SPR).",
+            "Figure 6I plot description": "The sensorgram in Figure 6I shows the response (in RU) over time (in seconds) for compound 3a at concentrations of 6.25, 12.5, 25.0, and 50.0 μmol/L. The x-axis ranges from 0 to 300 seconds, with the association phase from 0 to 90 s and the dissociation phase from 90 to 240 s. The y-axis (Response) ranges from 0 to 20 RU. The curves show increasing response with higher concentrations, with the 50.0 μmol/L curve reaching the highest response (~15 RU)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Reichert",
+                "model": "Reichert2SPR"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Reichert"
+            },
+            "immobilization": {
+                "ligand_name": "FXR",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 mmol/L sodium acetate buffer at pH 4.5"
+            },
+            "analyte": {
+                "description": "compound 3a",
+                "concentration_range": "6.25–50 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1 × PBST (Thermo Scientific)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "TraceDrawer"
+            }
+        }
+    }
+}

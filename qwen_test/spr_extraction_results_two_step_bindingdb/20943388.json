@@ -1,0 +1,128 @@
+{
+    "50918971": {
+        "reactant_set_id": 50918971,
+        "pmid": 20943388,
+        "protein": "Ras-related protein Rap-1A",
+        "ligand": {
+            "smiles": "C[C@H]1CC[C@]2(C)O[C@]3(C)CC[C@@H]4O[C@@H]5C[C@@H]6O[C@@H]7C[C@H](OS([O-])(=O)=O)[C@@](C)(CCOS([O-])(=O)=O)O[C@H]7C[C@H]6O[C@H]5C[C@H]4O[C@H]3C[C@H]2O[C@H]2C[C@H]3O[C@H]4C[C@H]5O[C@@H](C(=C)C[C@@H]5O[C@]4(C)C[C@@H]3O[C@H]12)[C@](C)(O)\\C=C\\C(=C)CC=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RAP1A in human RBC membrane by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "As the next step, we evaluated the interaction between Rap 1A and YTX using surface plasmon resonance (SPR) techniques. Recombinant Rap 1A was immobilized onto the CM5 sensor chip, over which a YTX or dsYTX solution was passed. Dose-dependent SPR responses were recorded for a series of concentrations of YTX and dsYTX as shown in Figure 4, which clearly indicated their direct interactions with Rap 1A. We then estimated the equilibrium dissociation constant (Kd) of YTX using BIAevaluation software for a heterogeneous ligand-parallel reaction model, which gave rise to two binding affinities, Kd1 143.0 μM and Kd2 4.2 μM. The low affinity Kd1 implies that this interaction is due to non-specific binding while the higher affinity of the Kd2 is probably due to the specific binding of YTX to immobilized Rap 1A. The same model fitting revealed the Kd of dsYTX with Rap 1A to be 0.9 μM. The higher affinity of dsYTX may be accounted for by its higher hydrophobicity. The dissociation constants of YTX and dsYTX for weakly interacting proteins such as streptavidin and membrane integral protein APH1B were comparable with that for the non-specific binding (Supplementary data). We then carried out the SPR experiments with the inverted configuration, where Rap1A was passed on a dsYTX-immobilized chip, and obtained a comparable Kd value of 0.5 μM.",
+            "Figure 4 caption": "Figure 4. SPR sensor grams of YTX (A) and dsYTX (B) for Rap 1A immobilized on the surface of a CM5 sensor chip. (A) YTX (1) was injected in the range 0–50 μM. Color traces correspond to concentration of YTX from 5 μM (bottom) to 50 μM (top) in HBS-EP+ solution; 5 (light green), 10 (light blue), 20 (red), 30 (magenta), 40 (blue), and 50 (green) μM. (B) dsYTX (2) was injected in the range 0 to 30 μM. Color traces correspond to concentration of YTX in HBS-EP+ solution; 5 (light green), 10 (light blue), 20 (red), and 30 (magenta) μM. Theoretical curves obtained from the heterogeneous ligand-parallel reaction model are shown as solid and black lines for sensor gram for YTX (A) and dsYTX (B), respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Rap 1A",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "YTX and dsYTX",
+                "concentration_range": "YTX: 0–50 μM; dsYTX: 0–30 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ solution",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Heterogeneous binding model",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50918969": {
+        "reactant_set_id": 50918969,
+        "pmid": 20943388,
+        "protein": "Ras-related protein Rap-1A",
+        "ligand": {
+            "smiles": "C[C@H]1CC[C@]2(C)O[C@]3(C)CC[C@@H]4O[C@@H]5C[C@@H]6O[C@@H]7C[C@H](O)[C@@](C)(CCO)O[C@H]7C[C@H]6O[C@H]5C[C@H]4O[C@H]3C[C@H]2O[C@H]2C[C@H]3O[C@H]4C[C@H]5O[C@@H](C(=C)C[C@@H]5O[C@]4(C)[C@H](O)[C@@H]3O[C@H]12)[C@](C)(O)\\C=C\\C(=C)CC=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RAP1A in human RBC membrane by surface plasmon resonance analysis with inverted configuration",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis Section": "As the next step, we evaluated the interaction between Rap 1A and YTX using surface plasmon resonance (SPR) techniques. Recombinant Rap 1A was immobilized onto the CM5 sensor chip, over which a YTX or dsYTX solution was passed. Dose-dependent SPR responses were recorded for a series of concentrations of YTX and dsYTX as shown in Figure 4, which clearly indicated their direct interactions with Rap 1A. We then estimated the equilibrium dissociation constant (K_D) of YTX using BIAevaluation software for a heterogeneous ligand-parallel reaction model, which gave rise to two binding affinities, K_D1 143.0 μM and K_D2 4.2 μM. The low affinity K_D1 implies that this interaction is due to non-specific binding while the higher affinity of the K_D2 is probably due to the specific binding of YTX to immobilized Rap 1A. The same model fitting revealed the K_D of dsYTX with Rap 1A to be 0.9 μM. The higher affinity of dsYTX may be accounted for by its higher hydrophobicity. The dissociation constants of YTX and dsYTX for weakly interacting proteins such as streptavidin and membrane integral protein APH1B were comparable with that for the non-specific binding (Supplementary data). We then carried out the SPR experiments with the inverted configuration, where Rap1A was passed on a dsYTX-immobilized chip, and obtained a comparable K_D value of 0.5 μM.",
+            "Figure 4 Caption": "Figure 4. SPR sensor grams of YTX (A) and dsYTX (B) for Rap 1A immobilized on the surface of a CM5 sensor chip. (A) YTX (1) was injected in the range 0–50 μM. Color traces correspond to concentration of YTX from 5 μM (bottom) to 50 μM (top) in HBS-EP+ solution; 5 (light green), 10 (light blue), 20 (red), 30 (magenta), 40 (blue), and 50 (green) μM. (B) dsYTX (2) was injected in the range 0 to 30 μM. Color traces correspond to concentration of YTX in HBS-EP+ solution; 5 (light green), 10 (light blue), 20 (red), and 30 (magenta) μM. Theoretical curves obtained from the heterogeneous ligand-parallel reaction model are shown as solid and black lines for sensor gram for YTX (A) and dsYTX (B), respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Rap 1A",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "YTX and dsYTX",
+                "concentration_range": "YTX: 0–50 μM; dsYTX: 0–30 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ solution",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Heterogeneous binding model",
+                "software": "BIAevaluation"
+            }
+        }
+    }
+}

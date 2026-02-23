@@ -1,0 +1,66 @@
+{
+    "50502483": {
+        "reactant_set_id": 50502483,
+        "pmid": 27138345,
+        "protein": "Fibroblast growth factor 2",
+        "ligand": {
+            "smiles": "C[C@]12CC[C@H]3[C@@H](CC=C4C[C@@H](O)CC[C@]34C)[C@@H]1CC[C@@H]2[C@@H](O)CC(O)(C(F)(F)F)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 40000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant FGF2 treated for 4 mins measured after 10 mins by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Surface Plasmon Resonance (SPR)": "Compounds 9 and 11 were analyzed for their capacity to directly bind to immobilized FGF2 using a BIAcore X-100 apparatus (BIAcore Inc., Piscataway, NJ, USA). FGF2 (20 μg/mL in 10 mM sodium acetate, pH 6.0) was allowed to react with a flow cell of a CM5 sensor chip previously activated with a mixture of 0.2 M N-ethyl-N’-(3-dimethylaminopropyl)carbodiimide hydrochloride and 0.05 M N-hydroxysuccinimide (35 μL, flow rate 10 μL/min). After ligand immobilization, matrix neutralization was performed with 1.0 M ethanolamine (pH 8.5) (35 μL, flow rate 10 μL/min) and the activated/deactivated dextran was used as reference (control) system. Increasing concentrations of 9 and 11 (ranging between 8 and 150 μM) were injected over the FGF2-coated sensor chip, and the response was recorded as a function of time-tracking the SPR intensity change upon binding progression. Injection lasted for 4 min (flow rate 30 μL/min) to allow association to immobilized FGF2 and was followed by 10 min of dissociation; each run was performed in 3% DMSO in PBS and the sensor chip was regenerated with 10 mM NaOH. The equilibrium (plateau) values of the SPR sensorgrams were used to build the binding isotherms displayed, after normalization. Binding isotherm points were fitted with the Langmuir equation for monovalent binding to evaluate the mass surface dissociation constant, Kd. The best-fitting procedure was performed with the SigmaPlot 11.0 software package (Systat Software Inc.).",
+            "Figure 6 caption": "Figure 6. SPR analysis of compounds 9 and 11 on a FGF2-coated sensor chip.",
+            "Molecular Interactions and Docking Simulations section": "Compound 1 exerts its FGF2 trap activity by binding to the growth factor molecule, thus hampering FGF/FGFR interaction. On this basis, DMSO stock solutions of 9 and 11 were diluted in PBS, keeping the final concentration of DMSO at 3%, and their capacity to bind FGF2 was assessed by surface plasmon resonance (SPR) spectroscopy. In parallel, their solubility was evaluated under the same experimental conditions. Similar to 1, compound 11 binds FGF2 immobilized to a BIAcore sensor chip in a dose-dependent manner with an apparent Kd value equal to ~40 μM (Figure 6). When assessed for its solubility, 11 was fully soluble in the 3% DMSO solution up to the concentration of 30 μM, its solubility decreasing at higher concentrations, whereas compound 9 was significantly less soluble. When compared to 11, compound 9 appeared to be unable to interact with immobilized FGF2 at any concentration tested, even when dissolved at a nominal 100 μM concentration, which corresponds to an actual concentration of 25 μM in 3% DMSO solution (Figure 6 and Supporting Information Figure 14)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore Inc.",
+                "model": "BIAcore X-100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore Inc."
+            },
+            "immobilization": {
+                "ligand_name": "FGF2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 μg/mL in 10 mM sodium acetate, pH 6.0"
+            },
+            "analyte": {
+                "description": "Compounds 9 and 11",
+                "concentration_range": "8 to 150 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "3% DMSO in PBS",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 240,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "activated/deactivated dextran (control system)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "SigmaPlot 11.0"
+            }
+        }
+    }
+}

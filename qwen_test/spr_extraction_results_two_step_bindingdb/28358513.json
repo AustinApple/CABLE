@@ -1,0 +1,197 @@
+{
+    "50885466": {
+        "reactant_set_id": 50885466,
+        "pmid": 28358513,
+        "protein": "Eukaryotic initiation factor 4A-III",
+        "ligand": {
+            "smiles": "Cc1c(cnn1-c1cccc(c1)C#N)C(=O)N1CCN([C@H](C1)c1ccc(Cl)cc1)C(=O)c1ccc(Br)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 43.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human recombinant His6-tagged eIF4A3 expressed in Escherichia coli BL21(DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 30: Ito, M.; Iwata, M.; Kamada, Y.; Sogabe, S.; Nakao, S.; Tanaka, T.; Kawamoto, T.; Aparicio, S.; Nakanishi, A.; Imaeda, Y. Discovery of selective ATP-competitive eIF4A3 inhibitors. Bioorg. Med. Chem. 2017, 25, 2200–2209.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Biosensing Assay. SPR biosensing experiments were performed on BiacoreS200 and BiacoreT100 instruments equipped with CM7 sensor chips (GE Healthcare). Immobilization of eIF4A3 onto the CM7 sensor surface was performed following the standard amine coupling procedure according to the manufacturer's instructions. HBS-P+ (10 mM Tris-HCl, pH 7.4, 150 mM NaCl, 0.05% Surfactant P20) supplemented with 1 mM DTT was used as the running buffer for immobilization. Typical immobilization levels ranged from 5000 to 10 000 RU. All binding experiments were performed in 20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 0.2 mM tris(2-carboxyethyl)phosphine (TCEP), 0.02% Surfactant P20 (v/v), and 1–2% DMSO (v/v) at 25 °C. Compound solutions at several concentrations (6–12 points) were injected for 60–120 s at a flow rate of 50 μL/min, and the dissociation was followed for up to 120–1200 s depending on the compound's off-rate. Competition experiments were performed in the presence of blocking compound 52a at a saturated concentration, diluted in the running buffer. Data processing and analyzing were performed using BiacoreS200 and BiacoreT100 evaluation software (GE Healthcare). Sensorgrams were double-referenced prior to global fitting the concentration series to a 1:1 binding model. Dissociative half-lives t1/2 were calculated from the dissociation rate constants koff (t1/2 = ln 2/koff).",
+            "Figure 4 caption": "Figure 4. SPR binding studies of 2 against eIF4A3 in the presence or absence of 52a. The binding signals of compound 2 against immobilized eIF4A3 were detected in the presence of 52a at a saturated concentration (A–C) or absence of 52a (D–F). Parts A and D represent the SPR response to varying concentrations of 2. y axis is SPR response (RU), and x axis is concentration of 2. Parts B and E represent the SPR sensorgrams. y axis is SPR response, and x axis is time. Parts C and F represent the schematics of the experiments.",
+            "Figure 5 caption": "Figure 5. SPR binding studies of 1 against eIF4A3 in the presence or absence of 52a. The binding signals of compound 1 against immobilized eIF4A3 were detected in the presence of 52a at a saturated concentration (A–C) or absence of 52a (D–F). Parts A and D represent the SPR response to varying concentrations of 1. y axis is SPR response (RU), and x axis is concentration of 1. Parts B and E represent the SPR sensorgrams. The y axis is the SPR response, and the x axis is time. Parts C and F represent the schematics of the experiments.",
+            "Table 8": "Table 8. Binding Affinity and Kinetics of 52a,b and 53a | compd | eIF4A3 ATPase IC50 (μM) | eIF4A3 SPR KD (μM)a | kon (M−1 s−1), koff (s−1)a | t1/2 (s)a | |---|---|---|---|---| | 52a | 0.20 | 0.057 | 2.8 × 105, 1.6 × 10−3b | 438.2 | | 52b | 60 | 16b | 1.5 × 103, 2.4 × 10−2b | 28.6b | | 53a | 0.26 | 0.043 | 1.6 × 105, 6.9 × 10−4 | 1006.9 | | 2c | 0.97 | 0.20 | 4.0 × 103, 7.8 × 10−2 | 8.9 | | 1c | 40 | 50 | 1.1 × 103, 5.7 × 10−2 | 12.2 | aSensorgrams of each compound are in Supporting Information Figure 1. bApproximate values due to compound precipitation. cReference 30."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreS200 and BiacoreT100"
+            },
+            "sensor_chip": {
+                "type": "CM7",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "full-length human recombinant His6-tagged eIF4A3",
+                "strategy": "Amine coupling",
+                "density_ru": "5000 to 10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (e.g., 1, 2, 52a, 52b, 53a)",
+                "concentration_range": "6–12 points (concentrations not specified numerically)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 0.2 mM tris(2-carboxyethyl)phosphine (TCEP), 0.02% Surfactant P20 (v/v), and 1–2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BiacoreS200 and BiacoreT100 evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "50885467": {
+        "reactant_set_id": 50885467,
+        "pmid": 28358513,
+        "protein": "Eukaryotic initiation factor 4A-III",
+        "ligand": {
+            "smiles": "Clc1ccc(cc1)[C@H]1CN(CCN1C(=O)c1ccc(Br)cc1)C(=O)c1cnn2cc(Br)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 57.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human recombinant His6-tagged eIF4A3 expressed in Escherichia coli BL21(DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 30: Ito, M.; Iwata, M.; Kamada, Y.; Sogabe, S.; Nakao, S.; Tanaka, T.; Kawamoto, T.; Aparicio, S.; Nakanishi, A.; Imaeda, Y. Discovery of selective ATP-competitive eIF4A3 inhibitors. Bioorg. Med. Chem. 2017, 25, 2200–2209.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Biosensing Assay. SPR biosensing experiments were performed on BiacoreS200 and BiacoreT100 instruments equipped with CM7 sensor chips (GE Healthcare). Immobilization of eIF4A3 onto the CM7 sensor surface was performed following the standard amine coupling procedure according to the manufacturer's instructions. HBS-P+ (10 mM Tris-HCl, pH 7.4, 150 mM NaCl, 0.05% Surfactant P20) supplemented with 1 mM DTT was used as the running buffer for immobilization. Typical immobilization levels ranged from 5000 to 10 000 RU. All binding experiments were performed in 20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 0.2 mM tris(2-carboxyethyl)phosphine (TCEP), 0.02% Surfactant P20 (v/v), and 1–2% DMSO (v/v) at 25 °C. Compound solutions at several concentrations (6–12 points) were injected for 60–120 s at a flow rate of 50 μL/min, and the dissociation was followed for up to 120–1200 s depending on the compound's off-rate. Competition experiments were performed in the presence of blocking compound 52a at a saturated concentration, diluted in the running buffer. Data processing and analyzing were performed using BiacoreS200 and BiacoreT100 evaluation software (GE Healthcare). Sensorgrams were double-referenced prior to global fitting the concentration series to a 1:1 binding model. Dissociative half-lives t1/2 were calculated from the dissociation rate constants koff (t1/2 = ln 2/koff).",
+            "Figure 4 caption": "Figure 4. SPR binding studies of 2 against eIF4A3 in the presence or absence of 52a. The binding signals of compound 2 against immobilized eIF4A3 were detected in the presence of 52a at a saturated concentration (A–C) or absence of 52a (D–F). Parts A and D represent the SPR response to varying concentrations of 2. y axis is SPR response (RU), and x axis is concentration of 2. Parts B and E represent the SPR sensorgrams. y axis is SPR response, and x axis is time. Parts C and F represent the schematics of the experiments.",
+            "Figure 5 caption": "Figure 5. SPR binding studies of 1 against eIF4A3 in the presence or absence of 52a. The binding signals of compound 1 against immobilized eIF4A3 were detected in the presence of 52a at a saturated concentration (A–C) or absence of 52a (D–F). Parts A and D represent the SPR response to varying concentrations of 1. y axis is SPR response (RU), and x axis is concentration of 1. Parts B and E represent the SPR sensorgrams. The y axis is the SPR response, and the x axis is time. Parts C and F represent the schematics of the experiments.",
+            "Table 8": "Table 8. Binding Affinity and Kinetics of 52a,b and 53a | compd | eIF4A3 ATPase IC50 (μM) | eIF4A3 SPR KD (μM)a | kon (M−1 s−1), koff (s−1)a | t1/2 (s)a | |---|---|---|---|---| | 52a | 0.20 | 0.057 | 2.8 × 105, 1.6 × 10−3b | 438.2 | | 52b | 60 | 16b | 1.5 × 103, 2.4 × 10−2b | 28.6b | | 53a | 0.26 | 0.043 | 1.6 × 105, 6.9 × 10−4 | 1006.9 | | 2c | 0.97 | 0.20 | 4.0 × 103, 7.8 × 10−2 | 8.9 | | 1c | 40 | 50 | 1.1 × 103, 5.7 × 10−2 | 12.2 | aSensorgrams of each compound are in Supporting Information Figure 1. bApproximate values due to compound precipitation. cReference 30."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreS200 and BiacoreT100"
+            },
+            "sensor_chip": {
+                "type": "CM7",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "full-length human recombinant His6-tagged eIF4A3",
+                "strategy": "Amine coupling",
+                "density_ru": "5000 to 10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (e.g., 1, 2, 52a, 52b, 53a)",
+                "concentration_range": "6–12 points (concentrations not specified numerically)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 0.2 mM tris(2-carboxyethyl)phosphine (TCEP), 0.02% Surfactant P20 (v/v), and 1–2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BiacoreS200 and BiacoreT100 evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "50885485": {
+        "reactant_set_id": 50885485,
+        "pmid": 28358513,
+        "protein": "Eukaryotic initiation factor 4A-III",
+        "ligand": {
+            "smiles": "Clc1ccc(cc1)[C@@H]1CN(CCN1C(=O)c1ccc(Br)cc1)C(=O)c1cnn2cc(Br)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human recombinant His6-tagged eIF4A3 expressed in Escherichia coli BL21(DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 30: Ito, M.; Iwata, M.; Kamada, Y.; Sogabe, S.; Nakao, S.; Tanaka, T.; Kawamoto, T.; Aparicio, S.; Nakanishi, A.; Imaeda, Y. Discovery of selective ATP-competitive eIF4A3 inhibitors. Bioorg. Med. Chem. 2017, 25, 2200–2209.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Biosensing Assay. SPR biosensing experiments were performed on BiacoreS200 and BiacoreT100 instruments equipped with CM7 sensor chips (GE Healthcare). Immobilization of eIF4A3 onto the CM7 sensor surface was performed following the standard amine coupling procedure according to the manufacturer's instructions. HBS-P+ (10 mM Tris-HCl, pH 7.4, 150 mM NaCl, 0.05% Surfactant P20) supplemented with 1 mM DTT was used as the running buffer for immobilization. Typical immobilization levels ranged from 5000 to 10 000 RU. All binding experiments were performed in 20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 0.2 mM tris(2-carboxyethyl)phosphine (TCEP), 0.02% Surfactant P20 (v/v), and 1–2% DMSO (v/v) at 25 °C. Compound solutions at several concentrations (6–12 points) were injected for 60–120 s at a flow rate of 50 μL/min, and the dissociation was followed for up to 120–1200 s depending on the compound's off-rate. Competition experiments were performed in the presence of blocking compound 52a at a saturated concentration, diluted in the running buffer. Data processing and analyzing were performed using BiacoreS200 and BiacoreT100 evaluation software (GE Healthcare). Sensorgrams were double-referenced prior to global fitting the concentration series to a 1:1 binding model. Dissociative half-lives t1/2 were calculated from the dissociation rate constants koff (t1/2 = ln 2/koff).",
+            "Figure 4 caption": "Figure 4. SPR binding studies of 2 against eIF4A3 in the presence or absence of 52a. The binding signals of compound 2 against immobilized eIF4A3 were detected in the presence of 52a at a saturated concentration (A–C) or absence of 52a (D–F). Parts A and D represent the SPR response to varying concentrations of 2. y axis is SPR response (RU), and x axis is concentration of 2. Parts B and E represent the SPR sensorgrams. y axis is SPR response, and x axis is time. Parts C and F represent the schematics of the experiments.",
+            "Figure 5 caption": "Figure 5. SPR binding studies of 1 against eIF4A3 in the presence or absence of 52a. The binding signals of compound 1 against immobilized eIF4A3 were detected in the presence of 52a at a saturated concentration (A–C) or absence of 52a (D–F). Parts A and D represent the SPR response to varying concentrations of 1. y axis is SPR response (RU), and x axis is concentration of 1. Parts B and E represent the SPR sensorgrams. The y axis is the SPR response, and the x axis is time. Parts C and F represent the schematics of the experiments.",
+            "Table 8": "Table 8. Binding Affinity and Kinetics of 52a,b and 53a | compd | eIF4A3 ATPase IC50 (μM) | eIF4A3 SPR KD (μM)a | kon (M−1 s−1), koff (s−1)a | t1/2 (s)a | |---|---|---|---|---| | 52a | 0.20 | 0.057 | 2.8 × 105, 1.6 × 10−3b | 438.2 | | 52b | 60 | 16b | 1.5 × 103, 2.4 × 10−2b | 28.6b | | 53a | 0.26 | 0.043 | 1.6 × 105, 6.9 × 10−4 | 1006.9 | | 2c | 0.97 | 0.20 | 4.0 × 103, 7.8 × 10−2 | 8.9 | | 1c | 40 | 50 | 1.1 × 103, 5.7 × 10−2 | 12.2 | aSensorgrams of each compound are in Supporting Information Figure 1. bApproximate values due to compound precipitation. cReference 30."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreS200 and BiacoreT100"
+            },
+            "sensor_chip": {
+                "type": "CM7",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "full-length human recombinant His6-tagged eIF4A3",
+                "strategy": "Amine coupling",
+                "density_ru": "5000 to 10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (e.g., 1, 2, 52a, 52b, 53a)",
+                "concentration_range": "6–12 points (concentrations not specified numerically)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris-HCl, pH 8.0, 150 mM NaCl, 0.2 mM tris(2-carboxyethyl)phosphine (TCEP), 0.02% Surfactant P20 (v/v), and 1–2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BiacoreS200 and BiacoreT100 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

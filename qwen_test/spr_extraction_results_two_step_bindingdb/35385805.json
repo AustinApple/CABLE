@@ -1,0 +1,68 @@
+{
+    "51501270": {
+        "reactant_set_id": 51501270,
+        "pmid": 35385805,
+        "protein": "Bcl-2-related protein A1",
+        "ligand": {
+            "smiles": "Fc1cccc(c1)-c1ccc2c(N3CCN(CC3)C(=O)C=C)n(Cc3ccccc3)nc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 262.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged recombinant BFL-1 (1 to 151 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. The surface plasmon resonance assay testing ligand/BFL-1 interaction": "BFL-1 protein was immobilized on a CM5 chip (GE Health). The sensogram was prepared using ZH97 in serial diluted solutions (5000 nM, 2500 nM, 1250 nM, 625 nM, 312.5 nM, and 156.25 nM). The experiment was performed using Biacore T200. SPR sensorgrams have association time intervals of 20 s, and dissociation time intervals of 40 s. Data were analyzed by using Biacore Evaluation Software.",
+            "Figure 4 caption": "Fig. 4. Study of the binding interaction between BFL-1 and 12. (a) The representative BFL-1 binding curve of 12 (ZH97) in the SPR assay, the experiment was repeated in duplicate; (b) The saturation curve of FAM-BID and BFL-1C55A in FP binding assay. (c) The binding affinities of 12, 23, and 1 with BFL-1C55A. Each IC50 value is an average of three independent experiments.",
+            "Figure 4 Table (c)": "12 (ZH97) K_a (1/Ms): 2.087 E+5 K_d (1/s): 0.0611 K_D (M): 2.927 E-7",
+            "Figure 4A Sensorgram": "The x-axis is labeled 'Time (s)' and ranges from -20 to 60. The y-axis is labeled 'Response (RU)' and ranges from 0 to 20. The sensorgram shows multiple curves (in different colors) representing different concentrations of compound 12, with the response increasing with concentration and then decreasing during the dissociation phase.",
+            "Results and Discussion - Text": "The direct binding 12 to BFL-1 was further validated using surface plasmon resonance (SPR) method (Fig. 4a). The data from the SPR assay show that 12 binds to BFL-1 with a K_D value of 262.4 ± 50.6 nM, which is in line with the data obtained in the FP assay."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "BFL-1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ZH97 (compound 12)",
+                "concentration_range": "156.25 nM - 5000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 20,
+                "dissociation_time_s": 40,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Evaluation Software"
+            }
+        }
+    }
+}

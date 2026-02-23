@@ -1,0 +1,1021 @@
+{
+    "51393086": {
+        "reactant_set_id": 51393086,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "Clc1ccc(cc1)C1CCCN1C(=O)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 175000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393087": {
+        "reactant_set_id": 51393087,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N1CCCC1c1ccccc1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393088": {
+        "reactant_set_id": 51393088,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)C1CCCN1C(=O)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 208000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393089": {
+        "reactant_set_id": 51393089,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N1CCCC1c1ccncc1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 160000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393090": {
+        "reactant_set_id": 51393090,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N1CCCC1c1ccc2OCCOc2c1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 138000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393091": {
+        "reactant_set_id": 51393091,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N1CCCC1c1ccsc1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 178000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393092": {
+        "reactant_set_id": 51393092,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "COC(=O)c1ccc(cc1)C(=O)N1CCCC1c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 173000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393093": {
+        "reactant_set_id": 51393093,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "Fc1ccc(cc1)C1CCCN1C(=O)c1ccc(cc1)N1CNC=N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 297000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393094": {
+        "reactant_set_id": 51393094,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "Fc1ccc(CN(C2CC2)C(=O)c2ccc(cc2)C#N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393095": {
+        "reactant_set_id": 51393095,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "CN(Cc1ccc(F)cc1)C(=O)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 74000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393096": {
+        "reactant_set_id": 51393096,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "Fc1ccc(CN(C2CCC2)C(=O)c2ccc(cc2)C#N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 114000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393097": {
+        "reactant_set_id": 51393097,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N(Cc1cccs1)C1CC1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393098": {
+        "reactant_set_id": 51393098,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N(CC1CCOC1)C1CC1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393099": {
+        "reactant_set_id": 51393099,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "NC(=O)C(N1CCC1c1ccc(Cl)cc1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 41000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram data": "The top sensorgram in Figure 2B shows response units over time for concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom sensorgram shows response units over time for concentrations of 0.4, 0.8, 1.6, 3.1, and 6.3 μM. The bottom right plot shows response units versus compound 3f concentration (μM) ranging from 0 to 250 μM.",
+            "Table 1": "Table 1. SARs of the Analogues of Compound 2 and Close Analogues. The SPR Kd for compound 2 is 175 μM. The SPR Kd for compound 2a is 110 μM. The SPR Kd for compound 2b is 208 μM. The SPR Kd for compound 2c is 160 μM. The SPR Kd for compound 2d is 138 μM. The SPR Kd for compound 2e is 178 μM. The SPR Kd for compound 2f is 173 μM. The SPR Kd for compound 2g is 297 μM. The SPR Kd for compound 2h is NB (not bound). The SPR Kd for compound 2i is NB (not bound).",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3. The SPR Kd for compound 3 is 7 μM. The SPR Kd for compound 3a is 74 μM. The SPR Kd for compound 3b is NB (not bound). The SPR Kd for compound 3c is NB (not bound). The SPR Kd for compound 3d is 114 μM. The SPR Kd for compound 3e is NB (not bound). The SPR Kd for compound 3f is 7 μM. The SPR Kd for compound 3g is 5.7 μM.",
+            "Results and Discussion - Structure-Based Discovery of NSD2-PWWP1 Ligands": "The interaction of 1 with NSD2-PWWP1 was further confirmed by surface plasmon resonance (SPR), which yielded a dissociation constant (Kd) of 41 ± 8 μM (Figure S1a). ... The binding of 2 was further confirmed by SPR with a Kd of 175 μM. ... Compound 3 binds NSD2-PWWP1 with a Kd of 7 μM by SPR and shows strong protein stabilization (ΔTagg = 5.7 °C) by DSLS (Figure 1).",
+            "Results and Discussion - Crystal Structure Confirms Binding at the PWWP Aromatic Cage": "The Kd value of 3f was measured as 3.4 ± 0.4 μM in an SPR experiment with 0.5% DMSO (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM (dilution factor of 0.5)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    },
+    "51393102": {
+        "reactant_set_id": 51393102,
+        "pmid": 33522809,
+        "protein": "Histone-lysine N-methyltransferase NSD2",
+        "ligand": {
+            "smiles": "O=C(N(Cc1cccs1)C1CC1)c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NSD2 PWWP1 domain (unknown origin) assessed as dissociation constant in presence of 0.5% DMSO by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. SPR studies were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated NSD2-PWWP1 was captured onto one flow cell of a streptavidin-conjugated SA chip at approximately 6000 response units (according to the manufacturer’s protocol), while another flow cell was left empty for reference subtraction. Compound 3f was tested at 200 μM as the highest concentration and dilution factor of 0.5 in HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) was used to yield 10 concentrations. Experiments were performed using the same buffer with 5% DMSO in single cycle kinetics with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. Kinetic curve fittings and Kd value calculations were done with a 1:1 binding model using the Biacore T200 Evaluation software (GE Health Sciences Inc.). All compounds that were evaluated in biochemical and biophysical assays had >95% purity as determined by 1H NMR and liquid chromatography/mass spectrometry (LC–MS).",
+            "Figure 2 caption": "Figure 2. Compound 3f (structure shown in the center) selectively binds NSD2 PWWP1. (A) Treatment with 3f increases the melting temperature of NSD2-PWWP1 in a DSLS assay. (B) 3f binds NSD2-PWWP1 in an SPR assay. (C) 3f only affects the melting temperature of NSD2-PWWP1 in a panel of 10 PWWP domains at 100 μM.",
+            "Figure 2B sensorgram description": "The top panel of Figure 2B shows sensorgrams for compound 3f at concentrations of 12.5, 25, 50, 100, and 200 μM. The bottom panel shows a dose-response curve for compound 3f with concentrations ranging from 0.4 to 6.3 μM.",
+            "Table 2": "Table 2. SAR of the Analogues of Compound 3 R3 R4 ID ΔTagg (°C)a SPR Kd (μM) c-Pr 3 5.7 7 3a 2 74 3b NB NB 3c NB NB 3d 1.1 114 3e NB NB c-Pr 3f 6.2 7 c-Pr 3g 5.4 5.7 aCompound concentration was 500 μM.",
+            "Abstract": "Using virtual screening and experimental validation, we identified the small-molecule antagonist 3f, which binds to the NSD2-PWWP1 domain with a Kd of 3.4 μM and abrogates histone H3K36me2 binding to the PWWP1 domain in cells.",
+            "Results and Discussion": "The binding of 2 was further confirmed by SPR with a Kd of 175 μM. Although 2 was weaker than the initial hit, this new scaffold allowed us to perform a structure–activity relationship (SAR) by catalog, as several analogues were commercially available. From a substructure search, 34 analogues of 2 were purchased and tested (Table S1). The initial SAR showed that removing the chlorine group improved potency (2a), while replacing it with a methoxy group had no significant effect (2b, Table 1). The chlorophenyl group could be replaced with other heterocycles without a significant effect on potency (2c–2e) but removing the nitrile or replacing it with groups lacking a hydrogen bond acceptor abolished activity (Table 1: 2h vs 2a, 2i vs 2b), suggesting that the nitrile group was forming a specific interaction with the protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated NSD2-PWWP1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 3f",
+                "concentration_range": "0.4 μM - 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM ethylenediaminetetraacetic acid, 0.05% Tween-20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "50991248": {
+        "reactant_set_id": 50991248,
+        "pmid": 36680947,
+        "protein": "Lymphocyte antigen 6K",
+        "ligand": {
+            "smiles": "CC1=CC(C)(C)Nc2c1cc(Cc1cnc(N)nc1N)cc2S(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wild type LY6K assessed as dissociation constant measured upto 250 sec by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Biacore T200 instrument was used to record SPR sensorgrams at 25 °C. Wild type human LY6K (hLY6K-WT) was immobilized on a CM5 chip by standard amine coupling methods in the presence of 10 mM sodium acetate buffer at (pH 4.0) onto an active flow cell (FC) to a level of 2500 to 4800 RU. A reference FC was also prepared, which had the same surface chemistry as on the active FC, but no proteins were immobilized onto it. PBS-P (20 mM phosphate buffer pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P20) was used as the immobilization running buffer. Various concentrations of small molecules (SMs) were injected over the active and reference FCs at a flow rate of 30 μL/min or 50 μL/min. The association and dissociation times were 60 s and 180 s, respectively. Each concentration of SMs was injected in triplicate. PBS-P supplemented with 5% DMSO was used as the running buffer for SMs-hLY6K interactions. The SPR sensorgrams were both reference (signals corresponding to the reference FC) and blank (PBS-P+5% DMSO only) subtracted. The resulted sensorgrams corresponding to each LY6K-WT were evaluated using Biacore T200 Evaluation Software version 1.0 to determine K_D values for SMs bindings to hLY6K-WT. GraphPad prism software was used to plot the graphs.",
+            "Results - Surface Plasmon Resonance": "The surface plasmon resonance (SPR) assay showed a direct binding of NSC243928 1 with immobilized LY6K in dose dependent manner (Figure 3a). The nitro derivative 2, attached at position 3 of the benzene ring maintained a direct binding with LY6K in a dose dependent manner (Figure 3b). The surface plasmon resonance assay on the related biotinylated derivative 3 also showed a direct interaction (Figure 3c). The second series of compounds utilized a carboxyl to tether reporter groups again through amide formation to NSC243928 1, also at position 3. These compounds also exhibited direct binding to immobilized LY6K, including benzyl ester derivative 4 (Figure 3d), fluorescently labeled 5 (Figure 3e) and biotinylated 6 with a long linker PEG7 (Figure 3f).",
+            "Figure 3 caption": "SPR sensorgrams depicting direct binding of (a) 1, (b) 2, (c) 3, (d) 4, (e) 5, (f) 6. Continuous lines represent experimental data. Dotted lines (f) represent 1:1 kinetics fitting.",
+            "Figure 3 sensorgram data": "Figure 3a: NSC243928 (1) at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3b: Compound 2 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3c: Compound 3 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3d: Compound 4 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3e: Compound 5 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3f: Compound 6 at concentrations 5 μM, 2.5 μM, 1.25 μM. All sensorgrams show association phase from 0 to 60 seconds and dissociation phase from 60 to 250 seconds.",
+            "Results - Binding Affinity": "Interestingly, when the biotin was tagged to NSC243928 via a long linker PEG7 (compound 6), 1:1 kinetic fitting of the experimental data resulted in a strong binding affinity with a K_D value of 0.3 μM compared to 3, the biotin tagged to NSC243928, with a K_D value of 4.7 μM (Figure S53)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Wild type human LY6K (hLY6K-WT)",
+                "strategy": "Amine coupling",
+                "density_ru": "2500 to 4800",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (SMs), including NSC243928 1, compound 2, compound 3, compound 4, compound 5, compound 6",
+                "concentration_range": "1.25 μM - 5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate buffer pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P20) supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell with same surface chemistry but no protein immobilized",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software version 1.0"
+            }
+        }
+    },
+    "50991249": {
+        "reactant_set_id": 50991249,
+        "pmid": 36680947,
+        "protein": "Lymphocyte antigen 6K",
+        "ligand": {
+            "smiles": "CC1=CC(C)(C)Nc2c(Cl)cc(Cc3cnc(N)nc3N)cc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wild type LY6K assessed as dissociation constant measured upto 250 sec by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Biacore T200 instrument was used to record SPR sensorgrams at 25 °C. Wild type human LY6K (hLY6K-WT) was immobilized on a CM5 chip by standard amine coupling methods in the presence of 10 mM sodium acetate buffer at (pH 4.0) onto an active flow cell (FC) to a level of 2500 to 4800 RU. A reference FC was also prepared, which had the same surface chemistry as on the active FC, but no proteins were immobilized onto it. PBS-P (20 mM phosphate buffer pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P20) was used as the immobilization running buffer. Various concentrations of small molecules (SMs) were injected over the active and reference FCs at a flow rate of 30 μL/min or 50 μL/min. The association and dissociation times were 60 s and 180 s, respectively. Each concentration of SMs was injected in triplicate. PBS-P supplemented with 5% DMSO was used as the running buffer for SMs-hLY6K interactions. The SPR sensorgrams were both reference (signals corresponding to the reference FC) and blank (PBS-P+5% DMSO only) subtracted. The resulted sensorgrams corresponding to each LY6K-WT were evaluated using Biacore T200 Evaluation Software version 1.0 to determine K_D values for SMs bindings to hLY6K-WT. GraphPad prism software was used to plot the graphs.",
+            "Results - Surface Plasmon Resonance": "The surface plasmon resonance (SPR) assay showed a direct binding of NSC243928 1 with immobilized LY6K in dose dependent manner (Figure 3a). The nitro derivative 2, attached at position 3 of the benzene ring maintained a direct binding with LY6K in a dose dependent manner (Figure 3b). The surface plasmon resonance assay on the related biotinylated derivative 3 also showed a direct interaction (Figure 3c). The second series of compounds utilized a carboxyl to tether reporter groups again through amide formation to NSC243928 1, also at position 3. These compounds also exhibited direct binding to immobilized LY6K, including benzyl ester derivative 4 (Figure 3d), fluorescently labeled 5 (Figure 3e) and biotinylated 6 with a long linker PEG7 (Figure 3f).",
+            "Figure 3 caption": "SPR sensorgrams depicting direct binding of (a) 1, (b) 2, (c) 3, (d) 4, (e) 5, (f) 6. Continuous lines represent experimental data. Dotted lines (f) represent 1:1 kinetics fitting.",
+            "Figure 3 sensorgram data": "Figure 3a: NSC243928 (1) at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3b: Compound 2 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3c: Compound 3 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3d: Compound 4 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3e: Compound 5 at concentrations 5 μM, 2.5 μM, 1.25 μM. Figure 3f: Compound 6 at concentrations 5 μM, 2.5 μM, 1.25 μM. All sensorgrams show association phase from 0 to 60 seconds and dissociation phase from 60 to 250 seconds.",
+            "Results - Binding Affinity": "Interestingly, when the biotin was tagged to NSC243928 via a long linker PEG7 (compound 6), 1:1 kinetic fitting of the experimental data resulted in a strong binding affinity with a K_D value of 0.3 μM compared to 3, the biotin tagged to NSC243928, with a K_D value of 4.7 μM (Figure S53)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Wild type human LY6K (hLY6K-WT)",
+                "strategy": "Amine coupling",
+                "density_ru": "2500 to 4800",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (SMs), including NSC243928 1, compound 2, compound 3, compound 4, compound 5, compound 6",
+                "concentration_range": "1.25 μM - 5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate buffer pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P20) supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell with same surface chemistry but no protein immobilized",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software version 1.0"
+            }
+        }
+    }
+}

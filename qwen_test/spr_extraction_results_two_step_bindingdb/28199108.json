@@ -1,0 +1,717 @@
+{
+    "50730015": {
+        "reactant_set_id": 50730015,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "C[C@H]1CCc2cc(ccc2N1C(=O)c1ccc(O)cc1O)C(=O)N(C)Cc1ccc2nccnc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730017": {
+        "reactant_set_id": 50730017,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "C[C@H]1CCc2cc(ccc2N1C(=O)c1ccc(O)cc1O)-c1nc(Cl)nc2[nH]ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730018": {
+        "reactant_set_id": 50730018,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "C[C@H]1CCc2cc(ccc2N1C(=O)c1ccc(O)cc1O)-c1nc(Cl)ncc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730019": {
+        "reactant_set_id": 50730019,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "C[C@H]1CCc2cc(ccc2N1C(=O)c1ccc(O)cc1O)-c1nc(Cl)nc2ccsc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730020": {
+        "reactant_set_id": 50730020,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "CN(Cc1ccc2nccnc2c1)C(=O)c1ccc(cc1)N(Cc1ccccc1)C(=O)c1ccc(O)cc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730021": {
+        "reactant_set_id": 50730021,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "COc1ccc(CN(C)C(=O)c2ccc(cc2)N(Cc2ccccc2)C(=O)c2ccc(O)cc2O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730022": {
+        "reactant_set_id": 50730022,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "Cc1cnc(Cl)nc1-c1ccc(cc1)N(Cc1ccccc1)C(=O)c1ccc(O)cc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730023": {
+        "reactant_set_id": 50730023,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "Cc1cnc(Cl)nc1-c1ccc(cc1)N(Cc1ccc(CN2CCCC2)cc1)C(=O)c1ccc(O)cc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 78.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730024": {
+        "reactant_set_id": 50730024,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "Cc1cnc(Cl)nc1-c1ccc2N([C@H](CCc2c1)c1cccnc1)C(=O)c1ccc(O)cc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730025": {
+        "reactant_set_id": 50730025,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "FC(F)(F)c1cc(NC(=O)C(Cl)Cl)ccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 40800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50730085": {
+        "reactant_set_id": 50730085,
+        "pmid": 28199108,
+        "protein": "[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",
+        "ligand": {
+            "smiles": "C[C@H]1CCc2cc(ccc2N1C(=O)c1ccc(O)cc1O)-c1nc(Cl)ncc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PDHK1 (unknown origin) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Brough, P. A.; Macias, A.; Roughley, S. D.; Stokes, S.; Davies, N. G. M. Preparation of tetrahydroquinoline compounds and their use as pyruvate dehydrogenase kinase inhibitors. PCT international application WO2015040424, 2015.",
+        "original_paragraph": {
+            "Materials and Methods": "Determination of PDHK Binding Affinity by Fluorescence Polarization. This assay was developed using a fluorescein-labeled probe, VER-160364 (5-[[14-[5-(5-chloro-2,4-dihydroxyphenyl)-3-(ethylcarbamoyl)-1,2-oxazol-4-yl] phenyl]carbamoyl]-2-(6-hydroxy-3-oxo-3H-xanthen-9-yl)benzoic acid; see SI for synthesis) which binds to the ATP site of PDHK resulting in an increase in anisotropy. PDHK-1 protein was used at its Kd concentration of 30 nM, which was determined by titration with a probe concentration of 10 nM. Compounds were tested in a 384-well format incorporating 10-point tripling titration curves in assay buffer (50 mM MOPS pH 7.5; 50 mM K2PO4; 150 mM NaCl; 1 mM DTT; 5% Glycerol; 0.1% Octyl-D-β-glucopyranoside). Following a 90 min incubation period, the plates were read using a Biotek Synergy plate reader (Ex 485/20 nm; Em 528/20 nm) and Delta was calculated by subtracting free probe values from the values obtained at the varying compound concentrations. The data was fitted by nonlinear regression using XLFIT4 within a custom ABASE (IDBS) protocol in order to determine IC50 values.",
+            "SPR Analysis": "The prepared library was screened concomitantly by SPR against PDHK-1 and HSP90 along with blank reference wells and control compounds. The compounds that generated the slowest off-rates for PDHK-1 in this assay are illustrated in Figure 5. Under the library synthesis conditions, unreacted starting material 12 was converted to the primary amide 7 (R1, R2 = H). Compound 7 had a fast PDHK-1 kd of ≥1.0 s−1 by SPR and, as described,35 should not affect the validity of the kd measurement of the reaction product.",
+            "Figure 5 caption": "Figure 5. (A) Structure of compounds with kd ≤ 0.25 s−1 against PDHK-1 as measured by SPR of the crude reaction products of a parallel library. LC purities (% at 254 nm) are shown for the ORS library sample. Purity of repurified material is >95%. (B) Dissociation phase of crude samples of 15, 16, 17, and 18 and the dual PDHK/HSP90 inhibitor control compound 1926 by SPR. The compounds displayed bind to His-His-PDHK-1 immobilized on the NTA chip at 25 °C.",
+            "Table 2": "Table 2. Binding Affinity Data for Initial ORS Library Screen Compounds against PDHK-1 and HSP90α as Measured by SPR and FP Assaysa,b | Cmpd | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | SPR kd (crude) (s−1) | SPR kd (pure) (s−1) | FP cKi (pure) (μM) | LE* | |---|---|---|---|---|---|---|---|---| | 15 (rac) | 0.09 | 0.08 | 0.200 | 0.42 | 0.22 | 0.23 | 9.15 | 0.31 | | (S)-15 | NT | 0.08 | 0.090 | 0.44 | NT | 0.18 | 3.48 | 0.34 | | (R)-15 | NT | 0.27 | 1.17 | 0.37 | NT | 0.60 | 62% @200 | NA | | 16 | 0.25 | NT | NT | NA | NT | NT | NT | NA | | 17 | 0.25 | NT | 0.26 | 0.27 | NT | NT | 0.184 | 0.30 | | 18 | 0.25 | 0.26 | 0.98 | 0.34 | 0.14 | 0.14 | NT | NA | | 19 | NT | 0.014 | 0.136 | 0.31 | NT | 0.001 | 0.032 | 0.34 | | 20 | 0.021 | 0.019 | NT | NA | 0.34 | 0.29 | NT | NA | | 21 | 1.10 | NT | NT | NA | 0.07 | NT | NT | NA | aUnits for LE are kcal/mol/heavy atom. bRelevant synthetic procedures are in the SI. cAll results are the mean of at least two independent determinations. NT: not tested. NA: not applicable. cKi is calculated inhibition constant, calculated from FP IC50.34"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "His-His-PDHK-1",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Crude reaction products of a parallel library (compounds 15, 16, 17, 18, 19, 20, 21)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank reference wells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

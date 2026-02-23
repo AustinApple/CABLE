@@ -1,0 +1,67 @@
+{
+    "51220947": {
+        "reactant_set_id": 51220947,
+        "pmid": 28165739,
+        "protein": "Histone-lysine N-methyltransferase, H3 lysine-79 specific",
+        "ligand": {
+            "smiles": "Fc1cccc(c1)-c1nn2c(Cn3nnc4ccccc34)nnc2s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17270.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human N-terminal 6His-tagged DOT1L (1 to 416 residues) expressed in Escherichia coli BL21(DE3) after 150 secs by SPR-based binding assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR)-Based Binding Assays": "The interaction of 6 with DOT1L was measured using SPR with a Biacore T200 (GE Healthcare) and was performed at 25 °C using a CMS sensor chip. First, the DOT1L protein was prepared in 10 mM sodium acetate (pH 5.5) for the amine-coupling procedure, and a total of 5360 response units (RU) of DOT1L protein were covalently immobilized on the chip. Ethanolamine was used to block the remaining binding sites. For kinetic measurement, 6 was diluted at concentrations ranging from 5 to 60 μM in HBS buffer (10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.1% (v/v) DMSO). This mixture was injected over the chip for 120 s at a flow rate of 30 μL/min and then allowed to dissociate for 150 s. Finally, the state model of the T200 evaluation software was used to analyze the resulting data to obtain the KD value of 6.",
+            "Figure 3C caption": "SPR-based binding assay of 6 with DOT1L. The compound was prepared at concentrations of 49.15 μM, 31.46 μM, 25.17 μM, 16.11 μM, 8.25 μM, and 6.60 μM.",
+            "Figure 3C plot": "The sensorgram shows response units (RU) over time (s). The x-axis ranges from -100 to 300 s. The y-axis ranges from -5 to 15 RU. Six curves are shown, each corresponding to a different concentration of compound 6: 49.15 μM (red), 31.46 μM (blue), 25.17 μM (green), 16.11 μM (yellow), 8.25 μM (purple), and 6.60 μM (orange). The association phase is from 0 to 120 s, and the dissociation phase is from 120 to 300 s. The plot includes a label: 'KD = 17.27 μM'.",
+            "Results section - SPR-Based Binding Assay": "To further understand the mechanism of action of 6 toward DOT1L, we performed surface plasmon resonance (SPR)-based binding assays in which ligand association and dissociation rate constants were determined. As shown in Figure 3C, 6 binds directly to DOT1L with an equilibrium dissociation constant (KD) of 17.27 μM, which equals the IC50 in enzymatic assays. Moreover, there was a positive correlation between the binding strength and dose of 6. These results suggest that 6 binds to DOT1L and blocks its activity in vitro."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human N-terminal 6His-tagged DOT1L (1 to 416 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "5360",
+                "concentration_for_immobilization": "10 mM sodium acetate (pH 5.5)"
+            },
+            "analyte": {
+                "description": "Compound 6",
+                "concentration_range": "6.60 μM - 49.15 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.1% (v/v) DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": "T200 evaluation software"
+            }
+        }
+    }
+}

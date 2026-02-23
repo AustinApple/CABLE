@@ -1,0 +1,64 @@
+{
+    "51581568": {
+        "reactant_set_id": 51581568,
+        "pmid": 38695063,
+        "protein": "Apoptosis regulator Bcl-2",
+        "ligand": {
+            "smiles": "CC(C)c1ccccc1[C@@H]1CCCN1C1CC2(CCN(c3ccc(C(=O)NS(=O)(=O)c4ccc(NC[C@H]5CC[C@](C)(O)CC5)c([N+](=O)[O-])c4)c(Oc4cnc5[nH]ccc5c4)c3)CC2)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.24,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Bcl-2 G101V mutant (unknown origin) by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). The binding kinetics of BGB-11417 and venetoclax were measured in an SPR assay using Biacore 8K (Cytiva, Marlborough, MA) at room temperature. The experiments were performed in HBS-N buffer containing 10 mM HEPES pH 7.4, 250 mM NaCl, 50 μM EDTA, 0.1% tween 20, and 1% DMSO. Briefly, His-tagged Bcl-2 (1.33 μg/mL) or His-tagged Bcl-2 G101V (1.56 μg/mL) was captured using an NTA sensor chip (Cytiva, Marlborough, MA). BGB-11417 (0–40 nM) or venetoclax (0–800 nM) was flowed over the chip with 240-s injections and 800-s dissociations at a flow rate of 50 μL/min. The binding K_D (equilibrium binding constant) was best fitted using a 1:1 binding site kinetic model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged Bcl-2 G101V",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "1.56 μg/mL"
+            },
+            "analyte": {
+                "description": "BGB-11417 or venetoclax",
+                "concentration_range": "BGB-11417: 0–40 nM; venetoclax: 0–800 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N buffer containing 10 mM HEPES pH 7.4, 250 mM NaCl, 50 μM EDTA, 0.1% tween 20, and 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 240,
+                "dissociation_time_s": 800,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

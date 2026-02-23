@@ -1,0 +1,69 @@
+{
+    "50656583": {
+        "reactant_set_id": 50656583,
+        "pmid": 21885287,
+        "protein": "Vascular endothelial growth factor receptor 2",
+        "ligand": {
+            "smiles": "Cn1ccc2ncnc(Oc3ccc(NC(=O)Nc4cccc(c4)C(F)(F)F)c(F)c3)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human N-terminal His-tagged non-phosphorylated VEGFR2 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 5.10. Binding kinetics analysis with a surface plasmon resonance (SPR) biosensor": "To orthogonally determine the rate constants of association or dissociation, SPR experiments were performed with a Biacore 3000 biosensor (GE Healthcare, Fairfield, CT, USA) at 20 °C in 50 mM Tris–HCl (pH 7.5), 5 mM MgCl2, 5 mM MnCl2, 150 mM NaCl, 2 mM DTT, and 0.01% Surfactant P20 (GE Healthcare). Immobilization of non-phosphorylated VEGFR2 protein on the CM7 sensor chip (GE Healthcare) was conducted with the standard amine coupling procedure using 1 μM of protein and 10 μM of Staurosporine complex in 10 mM acetate (pH 6.0), 2 mM DTT, 5 mM MgCl2, 5 mM MnCl2, and 0.05% Surfactant P20. For phosphorylated VEGFR2 protein, immobilization was performed under the same conditions, except that the protein dilution buffer was 10 mM acetate (pH 5.0), 2 mM DTT, 5 mM MgCl2, and 5 mM MnCl2. Binding parameters were calculated globally from the obtained sensorgram data (RU) by fitting to a 1:1 interaction with the mass transfer model, except for Rmax values that were obtained by local fitting to the same binding model. SPR sensorgrams were analyzed with Biaevaluation software (GE Healthcare).",
+            "Figure 7 caption": "Figure 7. Results of SPR binding experiments with non-phosphorylated VEGFR2 (A, B) and phosphorylated VEGFR2 (C, D). 20d was injected at 2-fold serial dilutions from 1.9 to 125 nM for non-phosphorylated VEGFR2 (A) and 2-fold serial dilutions from 1.9 to 500 nM for phosphorylated VEGFR2 (C). Sunitinib was injected at 2-fold serial dilutions from 1.9 to 500 nM for both non-phosphorylated VEGFR2 (B) and phosphorylated VEGFR2 (D). (A) Each sensorgram was globally fitted to a two-state reaction (conformation change) model except for Rmax values that were obtained by local fitting to the same binding model. (B), (C), and (D) Each sensorgram was fitted to a 1:1 binding with mass transfer model, except for Rmax value that were obtained by local fitting to the same binding model. These results are representative data from three independent experiments.",
+            "SPR Analysis section (page 5346)": "In the activity based and fluorescent tracer displacement experiments, 20d only displayed time-dependent inhibition and slow dissociation in the case of non-phosphorylated VEGFR2. In order to evaluate these characteristics of 20d through binding kinetics, we performed SPR analysis using a Biacore biosensor with non-phosphorylated and phosphorylated VEGFR2. The sensorgrams are presented in Figure 7. Unfortunately, the sensorgram traces for 20d against non-phosphorylated enzyme defied fitting to reasonable models. As such, they are best viewed qualitatively. SPR analysis captures transitions that are much faster than what is observable by the methods described above. From the sensorgrams it is clear that onset of the EI complex was not rapid equilibrium (on the SPR time scale) for either non-phosphorylated enzyme or the phosphorylated enzyme. As observed in the pre-incubation and dilution experiments, 20d dissociation from the non-phosphorylated enzyme was considerably slower (indeterminately slow by Biacore) than dissociation from the phosphorylated enzyme. Qualitatively, the two step slow binding mechanism reveals itself in the",
+            "Figure 7 sensorgram data (x-axis)": "Time, sec: 200, 320, 360, 440, 560, 680, 800",
+            "Figure 7 sensorgram data (y-axis)": "Response, RU: -10 to 30 (A), -10 to 90 (B), -20 to 40 (C), -10 to 70 (D)",
+            "Figure 7 concentration ranges": "20d: 1.9 to 125 nM (non-phosphorylated), 1.9 to 500 nM (phosphorylated); Sunitinib: 1.9 to 500 nM (both forms)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM7",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "non-phosphorylated VEGFR2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "1 μM"
+            },
+            "analyte": {
+                "description": "20d and Sunitinib",
+                "concentration_range": "20d: 1.9 to 125 nM (non-phosphorylated VEGFR2), 1.9 to 500 nM (phosphorylated VEGFR2); Sunitinib: 1.9 to 500 nM (both forms)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris–HCl (pH 7.5), 5 mM MgCl2, 5 mM MnCl2, 150 mM NaCl, 2 mM DTT, and 0.01% Surfactant P20",
+                "pH": 7.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "Biaevaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

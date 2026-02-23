@@ -1,0 +1,510 @@
+{
+    "51127978": {
+        "reactant_set_id": 51127978,
+        "pmid": 29934219,
+        "protein": "Casein kinase II subunit alpha/beta",
+        "ligand": {
+            "smiles": "Brc1c(Br)c(Br)c2[nH]nnc2c1Br"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 790.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human CK2alpha/beta expressed in Escherichia coli by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments section": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg mL−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg mL−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (KD) these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single KD (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 300 s monitoring of dissociation.",
+            "Table 1": "Thermodynamic constants measured by SPR for the interaction between tested compounds (1–5) and immobilized tankyrase-1, tankyrase-2, casein kinase 2 and PARP1. XAV939 and TBB were used as reference compounds for binding to TNKS2 and CK2. | Compound | Tankyrase-2 | Casein kinase 2 | Tankyrase-1 | PARP1 | | :--- | :--- | :--- | :--- | :--- | | 1 | no binding | no binding | no binding | no binding | | 2 | 0.021 ± 0.0041 | no binding | 5.26 ± 1.46 | 1.25 ± 0.2 | | 3 | 0.0185 ± 0.0007 | no binding | 0.52 ± 0.28 | no binding | | 4 | 0.0065 ± 0.0007 | no binding | no binding | no binding | | 5 | 0.0042 ± 0.0008 | no binding | no binding | no binding | | XAV939 | – | – | – | – | | TBB | – | 0.79 ± 0.0201 | – | – |",
+            "Figure 3 caption": "Fig. 3. A549 cells were treated for 72 h with the indicated concentrations of 3 and XAV939 in medium with low serum (1.0% FBS) and the cell growth was determined by MTT assay. Data are the means ± SD of two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127975": {
+        "reactant_set_id": 51127975,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase tankyrase-1",
+        "ligand": {
+            "smiles": "Oc1cc(CC=C)cc(c1O)-c1cc(CC=C)ccc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5260.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal GSt-tagged TNKS1 (1000 to 1328 residues) expressed in baculovirus infected Sf9 cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg ml−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μl min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg ml−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μl min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (KD) these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single KD (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μl min−1, with 60 s monitoring of association and 300 s monitoring of dissociation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg ml−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127977": {
+        "reactant_set_id": 51127977,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase tankyrase-1",
+        "ligand": {
+            "smiles": "COc1cc(CC=C)cc(c1O)-c1cc(CC=C)cc(O)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 520.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal GSt-tagged TNKS1 (1000 to 1328 residues) expressed in baculovirus infected Sf9 cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg ml−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μl min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg ml−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μl min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (KD) these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single KD (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μl min−1, with 60 s monitoring of association and 300 s monitoring of dissociation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg ml−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127976": {
+        "reactant_set_id": 51127976,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase tankyrase-2",
+        "ligand": {
+            "smiles": "COc1cc(CC=C)cc(c1O)-c1cc(CC=C)cc(O)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His-tagged TNKS2 (Ser959 to Gly1166 residues) expressed in Escherichia coli by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg mL−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg mL−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (Kd), these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single Kd (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 300 s monitoring of dissociation.",
+            "Table 1": "Thermodynamic constants measured by SPR for the interaction between tested compounds (1–5) and immobilized tankyrase-1, tankyrase-2, casein kinase 2 and PARP1. XAV939 and TBB were used as reference compounds for binding to TNKS2 and CK2. | Compound | Tankyrase-2 | Casein kinase 2 | Tankyrase-1 | PARP1 | | :--- | :--- | :--- | :--- | :--- | | 1 | no binding | no binding | no binding | no binding | | 2 | 0.021 ± 0.0041 | no binding | 5.26 ± 1.46 | 1.25 ± 0.2 | | 3 | 0.0185 ± 0.0007 | no binding | 0.52 ± 0.28 | no binding | | 4 | 0.0065 ± 0.0007 | no binding | no binding | no binding | | 5 | 0.0042 ± 0.0008 | no binding | no binding | no binding | | XAV939 | – | – | – | – | | TBB | – | 0.79 ± 0.0201 | – | – |",
+            "Figure 3 caption": "Fig. 3. A549 cells were treated for 72 h with the indicated concentrations of 3 and XAV939 in medium with low serum (1.0% FBS) and the cell growth was determined by MTT assay. Data are the means ± SD of two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127979": {
+        "reactant_set_id": 51127979,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase tankyrase-2",
+        "ligand": {
+            "smiles": "Oc1nc(nc2CCSCc12)-c1ccc(cc1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His-tagged TNKS2 (Ser959 to Gly1166 residues) expressed in Escherichia coli by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg mL−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg mL−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (Kd), these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single Kd (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 300 s monitoring of dissociation.",
+            "Table 1": "Thermodynamic constants measured by SPR for the interaction between tested compounds (1–5) and immobilized tankyrase-1, tankyrase-2, casein kinase 2 and PARP1. XAV939 and TBB were used as reference compounds for binding to TNKS2 and CK2. | Compound | Tankyrase-2 | Casein kinase 2 | Tankyrase-1 | PARP1 | | :--- | :--- | :--- | :--- | :--- | | 1 | no binding | no binding | no binding | no binding | | 2 | 0.021 ± 0.0041 | no binding | 5.26 ± 1.46 | 1.25 ± 0.2 | | 3 | 0.0185 ± 0.0007 | no binding | 0.52 ± 0.28 | no binding | | 4 | 0.0065 ± 0.0007 | no binding | no binding | no binding | | 5 | 0.0042 ± 0.0008 | no binding | no binding | no binding | | XAV939 | – | – | – | – | | TBB | – | 0.79 ± 0.0201 | – | – |",
+            "Figure 3 caption": "Fig. 3. A549 cells were treated for 72 h with the indicated concentrations of 3 and XAV939 in medium with low serum (1.0% FBS) and the cell growth was determined by MTT assay. Data are the means ± SD of two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127980": {
+        "reactant_set_id": 51127980,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase tankyrase-2",
+        "ligand": {
+            "smiles": "COc1cc(CCCOC(C)=O)cc(c1O)-c1cc(CCCOC(C)=O)cc(OC)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His-tagged TNKS2 (Ser959 to Gly1166 residues) expressed in Escherichia coli by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg mL−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg mL−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (Kd), these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single Kd (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 300 s monitoring of dissociation.",
+            "Table 1": "Thermodynamic constants measured by SPR for the interaction between tested compounds (1–5) and immobilized tankyrase-1, tankyrase-2, casein kinase 2 and PARP1. XAV939 and TBB were used as reference compounds for binding to TNKS2 and CK2. | Compound | Tankyrase-2 | Casein kinase 2 | Tankyrase-1 | PARP1 | | :--- | :--- | :--- | :--- | :--- | | 1 | no binding | no binding | no binding | no binding | | 2 | 0.021 ± 0.0041 | no binding | 5.26 ± 1.46 | 1.25 ± 0.2 | | 3 | 0.0185 ± 0.0007 | no binding | 0.52 ± 0.28 | no binding | | 4 | 0.0065 ± 0.0007 | no binding | no binding | no binding | | 5 | 0.0042 ± 0.0008 | no binding | no binding | no binding | | XAV939 | – | – | – | – | | TBB | – | 0.79 ± 0.0201 | – | – |",
+            "Figure 3 caption": "Fig. 3. A549 cells were treated for 72 h with the indicated concentrations of 3 and XAV939 in medium with low serum (1.0% FBS) and the cell growth was determined by MTT assay. Data are the means ± SD of two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127982": {
+        "reactant_set_id": 51127982,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase tankyrase-2",
+        "ligand": {
+            "smiles": "COc1cc(CCCO)cc(c1O)-c1cc(CCCO)cc(OC)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His-tagged TNKS2 (Ser959 to Gly1166 residues) expressed in Escherichia coli by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg mL−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg mL−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (Kd), these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single Kd (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 300 s monitoring of dissociation.",
+            "Table 1": "Thermodynamic constants measured by SPR for the interaction between tested compounds (1–5) and immobilized tankyrase-1, tankyrase-2, casein kinase 2 and PARP1. XAV939 and TBB were used as reference compounds for binding to TNKS2 and CK2. | Compound | Tankyrase-2 | Casein kinase 2 | Tankyrase-1 | PARP1 | | :--- | :--- | :--- | :--- | :--- | | 1 | no binding | no binding | no binding | no binding | | 2 | 0.021 ± 0.0041 | no binding | 5.26 ± 1.46 | 1.25 ± 0.2 | | 3 | 0.0185 ± 0.0007 | no binding | 0.52 ± 0.28 | no binding | | 4 | 0.0065 ± 0.0007 | no binding | no binding | no binding | | 5 | 0.0042 ± 0.0008 | no binding | no binding | no binding | | XAV939 | – | – | – | – | | TBB | – | 0.79 ± 0.0201 | – | – |",
+            "Figure 3 caption": "Fig. 3. A549 cells were treated for 72 h with the indicated concentrations of 3 and XAV939 in medium with low serum (1.0% FBS) and the cell growth was determined by MTT assay. Data are the means ± SD of two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    },
+    "51127981": {
+        "reactant_set_id": 51127981,
+        "pmid": 29934219,
+        "protein": "Poly [ADP-ribose] polymerase 1",
+        "ligand": {
+            "smiles": "Oc1cc(CC=C)cc(c1O)-c1cc(CC=C)ccc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1250.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human PARP1 expressed in baculovirus infected Sf9 cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR experiments section": "Recombinant Tankyrase-2 (TNKS2) was purchased from MyBioSource (MyBioSource Inc., San Diego, USA). The TNKS2 inhibitor 3,5,7,8-Tetrahydro-2-[4-(trifluoromethyl)phenyl]-4H-thiopyran-4,3-dipyrimidin-4-one (XAV939) was purchased from Santa Cruz Biotechnology, Inc. Recombinant Casein Kinase II (CK2) was purchased from New England Biolabs (New England Biolabs Inc., Massachusetts, USA). The CK2 inhibitor 4,5,6,7-Tetrabromo-2-azabenzimidazole (TBB) was purchased from Santa Cruz Biotechnology, Inc. Recombinant TNKS1 (TRF1-interacting ankyrin-related ADP-ribose polymerase 1), also known as PARP5A, TANK1, or tankyrase-1 was purchased from Sigma Aldrich. Recombinant Poly(ADP-ribose) polymerase 1 (PARP-1) was purchased from Enzo Life Sciences, Inc. SPR analyses were carried out according to our previously published data. Surface Plasmon Resonance Spectroscopy (SPR) analyses were performed to determine binding of the various molecules to the TNKS1, TNKS2, CK2 and PARP1 proteins using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). TNKS1, TNKS2, CK2 and PARP1 were coupled to the surface of a CM5 sensor chip using standard amine-coupling protocols, according to the manufacturer’s instructions. The proteins TNKS2 and CK2 (100 μg mL−1 in 10 mM CH3COONa, pH 7.3) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. TNKS1 (100 μg mL−1 in 10 mM CH3COONa, pH 4.5) was immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 to obtain densities of 8–12 kRU. For the experiments, the recombinant TNKS1, TNKS2 and PARP1 surfaces, a BSA surface and one unmodified reference surface were prepared for simultaneous analyses. For TNKS2 analysis, compounds 1–5 and XAV939 were dissolved to obtain 20 mM solution concentrations, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. For CK2 analysis, compounds 1–5 as well as TBB were dissolved to obtain 20 mM solutions, in 100% DMSO and diluted 1:1000 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) to a final DMSO concentration of 0.5%. For each molecule a five-point concentration series were set up, including 0 – 0.25 – 1 – 10 – 20 μM, and, for each sample the complete binding study was performed using triplicate aliquots. Changes in mass, due to the binding response, were recorded as resonance units (RU). To obtain the dissociation constant (Kd), these responses were fit to a 1:1 Langmuir binding model by nonlinear regression, using the BioEvaluation software program provided by GE Healthcare. Simple interactions were suitably fitted to a single-site bimolecular interaction model (A + B = AB), yielding a single Kd (Table 1). SPR experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 300 s monitoring of dissociation.",
+            "Table 1": "Thermodynamic constants measured by SPR for the interaction between tested compounds (1–5) and immobilized tankyrase-1, tankyrase-2, casein kinase 2 and PARP1. XAV939 and TBB were used as reference compounds for binding to TNKS2 and CK2. | Compound | Tankyrase-2 | Casein kinase 2 | Tankyrase-1 | PARP1 | | :--- | :--- | :--- | :--- | :--- | | 1 | no binding | no binding | no binding | no binding | | 2 | 0.021 ± 0.0041 | no binding | 5.26 ± 1.46 | 1.25 ± 0.2 | | 3 | 0.0185 ± 0.0007 | no binding | 0.52 ± 0.28 | no binding | | 4 | 0.0065 ± 0.0007 | no binding | no binding | no binding | | 5 | 0.0042 ± 0.0008 | no binding | no binding | no binding | | XAV939 | – | – | – | – | | TBB | – | 0.79 ± 0.0201 | – | – |",
+            "Figure 3 caption": "Fig. 3. A549 cells were treated for 72 h with the indicated concentrations of 3 and XAV939 in medium with low serum (1.0% FBS) and the cell growth was determined by MTT assay. Data are the means ± SD of two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TNKS1, TNKS2, CK2, PARP1",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12 kRU",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1–5, XAV939, TBB",
+                "concentration_range": "0 – 0.25 – 1 – 10 – 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) for TNKS2 and PARP1; PBS (10 mM NaH2PO4, 150 mM NaCl, pH 4.5) for CK2",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "BSA surface and one unmodified reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation software program provided by GE Healthcare"
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "51029985": {
+        "reactant_set_id": 51029985,
+        "pmid": 29348072,
+        "protein": "Tumor necrosis factor ligand superfamily member 11",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@@H]1CSSC[C@H](NC(=O)[C@@H](N)Cc2ccc(O)cc2)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc2ccccc2)C(=O)N1)C(=O)N[C@@H](CCCNC(N)=N)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2750.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human sRANKL expressed in Escherichia coli by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. Kinetic binding studies by surface plasmon resonance": "Binding experiments were carried out on BIAcore T200 (BIAcore, Uppsala, Sweden) instruments at 25 °C. Recombinant sRANKL were immobilized to the dextran hydrogel on the sensor surface (BIAcore CM5 sensor chip) with a surface density of 3500 resonance units. The surface regeneration was carried out among binding cycles using Gly-HCl buffer (pH = 2.5). The apparent rate binding constants (kon and koff) and the equilibrium binding constant (KD) for the binding interaction were estimated from the kinetic analysis of sensorgrams, using the BIA evaluation software (BIAcore).",
+            "Results - 2.3. CD spectroscopy of peptides and kinetic binding ability of OM-2": "binding affinity of OM-2 to RANKL was next investigated via surface plasmon resonance (SPR). OM-2 was found to bind to RANKL in a dose-dependent manner. The apparent association (kon) and dissociation constants (koff) of OM-2 were estimated to be 608.7 M−1s−1 and 0.0027 s−1 respectively, and the relative binding affinity (KD) to RANKL was 4.54 μM (Fig. 3B); weaker than the affinity of RANKL to RANK (RANKL to RANK KD = 13.9 nM) or OPG (RANKL to OPG KD = 17.6 nM), but comparable than that between RANKL and the positive OP3-4 peptide (Fig. S7, OP3-4 to RANKL KD = 2.75 μM), suggesting the complex between RANKL and OM-2 to be relatively stable. The improved binding ability compared with OM-1 (Fig. 3C, OM-1 to RANKL KD = 30.91 μM), is speculated to be attributable to the presence of carbohydrate structure into peptide backbone. Although the mechanism for binding between each peptide and RANKL is not clear without the crystal-structure of the OM-2/RANKL complex, the data obtained definitively establishes that glycopeptides OM-2 possess superior chemical and biological properties for the purposes of RANKL inhibition than normal peptides.",
+            "Figure 3 caption": "Fig. 3. A) CD spectra of the peptides in 50% TFE aqueous solution at 20 °C. B) SPR binding studies of OM-2 to RANKL. C) SPR binding studies of OM-1 to RANKL. D) Effects of OM-2 and OP3-4 treatment on down-stream NF-κB signaling pathway by western blot. E) Proteolytic stability of OM-1 vs. OM-2 under α-chymotrypsin treatment. Data points are displayed as the mean value SEM of duplicate independent experiments. The percent residual peptide was monitored via HPLC.",
+            "Figure 3B sensorgram data": "OM-2 + RANKL KD = 4.54 μM kon = 608.70 M−1s−1 koff = 0.0027 s−1",
+            "Figure 3C sensorgram data": "OM-1 + RANKL KD = 30.91 μM kon = 212.40 M−1s−1 koff = 0.0065 s−1"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant sRANKL",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "OM-2 and OM-1 peptides",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "Gly-HCl buffer (pH = 2.5)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    },
+    "51029986": {
+        "reactant_set_id": 51029986,
+        "pmid": 29348072,
+        "protein": "Tumor necrosis factor ligand superfamily member 11",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CSSC[C@H](NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCC(O)=O)NC1=O)C(=O)N[C@@H](CC(C)C)C(N)=O)NC(=O)[C@H](CC(=O)N[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1NC(C)=O)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4540.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human sRANKL expressed in Escherichia coli by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. Kinetic binding studies by surface plasmon resonance": "Binding experiments were carried out on BIAcore T200 (BIAcore, Uppsala, Sweden) instruments at 25 °C. Recombinant sRANKL were immobilized to the dextran hydrogel on the sensor surface (BIAcore CM5 sensor chip) with a surface density of 3500 resonance units. The surface regeneration was carried out among binding cycles using Gly-HCl buffer (pH = 2.5). The apparent rate binding constants (kon and koff) and the equilibrium binding constant (KD) for the binding interaction were estimated from the kinetic analysis of sensorgrams, using the BIA evaluation software (BIAcore).",
+            "Results - 2.3. CD spectroscopy of peptides and kinetic binding ability of OM-2": "binding affinity of OM-2 to RANKL was next investigated via surface plasmon resonance (SPR). OM-2 was found to bind to RANKL in a dose-dependent manner. The apparent association (kon) and dissociation constants (koff) of OM-2 were estimated to be 608.7 M−1s−1 and 0.0027 s−1 respectively, and the relative binding affinity (KD) to RANKL was 4.54 μM (Fig. 3B); weaker than the affinity of RANKL to RANK (RANKL to RANK KD = 13.9 nM) or OPG (RANKL to OPG KD = 17.6 nM), but comparable than that between RANKL and the positive OP3-4 peptide (Fig. S7, OP3-4 to RANKL KD = 2.75 μM), suggesting the complex between RANKL and OM-2 to be relatively stable. The improved binding ability compared with OM-1 (Fig. 3C, OM-1 to RANKL KD = 30.91 μM), is speculated to be attributable to the presence of carbohydrate structure into peptide backbone. Although the mechanism for binding between each peptide and RANKL is not clear without the crystal-structure of the OM-2/RANKL complex, the data obtained definitively establishes that glycopeptides OM-2 possess superior chemical and biological properties for the purposes of RANKL inhibition than normal peptides.",
+            "Figure 3 caption": "Fig. 3. A) CD spectra of the peptides in 50% TFE aqueous solution at 20 °C. B) SPR binding studies of OM-2 to RANKL. C) SPR binding studies of OM-1 to RANKL. D) Effects of OM-2 and OP3-4 treatment on down-stream NF-κB signaling pathway by western blot. E) Proteolytic stability of OM-1 vs. OM-2 under α-chymotrypsin treatment. Data points are displayed as the mean value SEM of duplicate independent experiments. The percent residual peptide was monitored via HPLC.",
+            "Figure 3B sensorgram data": "OM-2 + RANKL KD = 4.54 μM kon = 608.70 M−1s−1 koff = 0.0027 s−1",
+            "Figure 3C sensorgram data": "OM-1 + RANKL KD = 30.91 μM kon = 212.40 M−1s−1 koff = 0.0065 s−1"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant sRANKL",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "OM-2 and OM-1 peptides",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "Gly-HCl buffer (pH = 2.5)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    },
+    "51029987": {
+        "reactant_set_id": 51029987,
+        "pmid": 29348072,
+        "protein": "Tumor necrosis factor ligand superfamily member 11",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CSSC[C@H](NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCC(O)=O)NC1=O)C(=O)N[C@@H](CC(C)C)C(N)=O)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30910.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human sRANKL expressed in Escherichia coli by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. Kinetic binding studies by surface plasmon resonance": "Binding experiments were carried out on BIAcore T200 (BIAcore, Uppsala, Sweden) instruments at 25 °C. Recombinant sRANKL were immobilized to the dextran hydrogel on the sensor surface (BIAcore CM5 sensor chip) with a surface density of 3500 resonance units. The surface regeneration was carried out among binding cycles using Gly-HCl buffer (pH = 2.5). The apparent rate binding constants (kon and koff) and the equilibrium binding constant (KD) for the binding interaction were estimated from the kinetic analysis of sensorgrams, using the BIA evaluation software (BIAcore).",
+            "Results - 2.3. CD spectroscopy of peptides and kinetic binding ability of OM-2": "binding affinity of OM-2 to RANKL was next investigated via surface plasmon resonance (SPR). OM-2 was found to bind to RANKL in a dose-dependent manner. The apparent association (kon) and dissociation constants (koff) of OM-2 were estimated to be 608.7 M−1s−1 and 0.0027 s−1 respectively, and the relative binding affinity (KD) to RANKL was 4.54 μM (Fig. 3B); weaker than the affinity of RANKL to RANK (RANKL to RANK KD = 13.9 nM) or OPG (RANKL to OPG KD = 17.6 nM), but comparable than that between RANKL and the positive OP3-4 peptide (Fig. S7, OP3-4 to RANKL KD = 2.75 μM), suggesting the complex between RANKL and OM-2 to be relatively stable. The improved binding ability compared with OM-1 (Fig. 3C, OM-1 to RANKL KD = 30.91 μM), is speculated to be attributable to the presence of carbohydrate structure into peptide backbone. Although the mechanism for binding between each peptide and RANKL is not clear without the crystal-structure of the OM-2/RANKL complex, the data obtained definitively establishes that glycopeptides OM-2 possess superior chemical and biological properties for the purposes of RANKL inhibition than normal peptides.",
+            "Figure 3 caption": "Fig. 3. A) CD spectra of the peptides in 50% TFE aqueous solution at 20 °C. B) SPR binding studies of OM-2 to RANKL. C) SPR binding studies of OM-1 to RANKL. D) Effects of OM-2 and OP3-4 treatment on down-stream NF-κB signaling pathway by western blot. E) Proteolytic stability of OM-1 vs. OM-2 under α-chymotrypsin treatment. Data points are displayed as the mean value SEM of duplicate independent experiments. The percent residual peptide was monitored via HPLC.",
+            "Figure 3B sensorgram data": "OM-2 + RANKL KD = 4.54 μM kon = 608.70 M−1s−1 koff = 0.0027 s−1",
+            "Figure 3C sensorgram data": "OM-1 + RANKL KD = 30.91 μM kon = 212.40 M−1s−1 koff = 0.0065 s−1"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant sRANKL",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "OM-2 and OM-1 peptides",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "Gly-HCl buffer (pH = 2.5)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    }
+}

@@ -1,0 +1,1498 @@
+{
+    "51500542": {
+        "reactant_set_id": 51500542,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "COC(=O)[C@H](CC(C)C)Nc1nc(Cl)nc(N[C@H]2CC[C@@H](CC2)Nc2nc(Cl)nc(N[C@@H](CC(C)C)C(=O)OC)n2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 95700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500543": {
+        "reactant_set_id": 51500543,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](Nc1nc(Cl)nc(Nc2ccc(NS(=O)(=O)c3ccccc3)cc2)n1)C(=O)OC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 99000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500544": {
+        "reactant_set_id": 51500544,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CCCCS(=O)(=O)Nc1ccc(Nc2nc(Cl)nc(N[C@@H](CC(C)C)C(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500545": {
+        "reactant_set_id": 51500545,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](Nc1nc(Cl)nc(Nc2ccc(NC(C)=O)cc2)n1)C(=O)OC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 36900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500546": {
+        "reactant_set_id": 51500546,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CCCCS(=O)(=O)Nc1ccc(Nc2ncnc(N[C@@H](CC(C)C)C(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 45100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500547": {
+        "reactant_set_id": 51500547,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1)C(=O)OC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500548": {
+        "reactant_set_id": 51500548,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 220000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500549": {
+        "reactant_set_id": 51500549,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1)C(=O)OC(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 84400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500550": {
+        "reactant_set_id": 51500550,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1)C(=O)OC1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25010.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500551": {
+        "reactant_set_id": 51500551,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CON(C)C(=O)[C@H](CC(C)C)Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1440000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500552": {
+        "reactant_set_id": 51500552,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H](CO)Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1631000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500553": {
+        "reactant_set_id": 51500553,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H](COC(C)(C)C)Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 42230.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500554": {
+        "reactant_set_id": 51500554,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(C)[C@H](Nc1ncnc(Nc2ccc(NC(C)=O)cc2)n1)C(=O)OC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 79000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500555": {
+        "reactant_set_id": 51500555,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(NCC(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 832000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500556": {
+        "reactant_set_id": 51500556,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(NCCC(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 146000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500557": {
+        "reactant_set_id": 51500557,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@H](C(=O)OC(C)(C)C)C(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 201000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500558": {
+        "reactant_set_id": 51500558,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@@H](C3CCCCC3)C(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500559": {
+        "reactant_set_id": 51500559,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@@H](Cc3ccccc3)C(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 31300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500560": {
+        "reactant_set_id": 51500560,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@@H](Cc3ccc(F)cc3)C(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 23700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500561": {
+        "reactant_set_id": 51500561,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@H](COC(=O)C(C)(C)C)Cc3ccccc3)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 29600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500562": {
+        "reactant_set_id": 51500562,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@@H](CCc3ccccc3)C(=O)OC(C)(C)C)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 23800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    },
+    "51500563": {
+        "reactant_set_id": 51500563,
+        "pmid": 35333039,
+        "protein": "Atrial natriuretic peptide receptor 3",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(Nc2ncnc(N[C@@H](Cc3ccccc3)C(O)=O)n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 381000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized human NPR-C (27 to 541 residues) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. All SPR analyses were performed on a BIAcore T200 system using Series S CMS sensor chips. All sensorgrams were double-referenced by subtracting the response on a reference flow cell and a blank sample. Ligands were evaluated against the FL (27–541) NPR-C Protein. Human FL NPR-C (27–541)-10His-Flag was covalently attached to a CM5 chip via amine coupling with a surface density of 5000 RU. Binding of agonists (150–0 μM) was analyzed by multicycle sequential injections at a flow rate of 30 μL/min (60 s association time) followed by undisturbed dissociation (30 s) during which curves returned to baseline. Peptide antagonist M372049 was used as a positive control. Agonists were dissolved in dimethyl sulfoxide (DMSO), and the final sample solutions for kinetic affinity assays were 1% DMSO in 1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.). DMSO solvent effects were corrected for with eight calibration solutions (0.5–1.8% DMSO in PBS-P). Equilibrium constants (K_D) were calculated using the affinity model, assuming simple 1:1 (Langmuir) binding. Data processing and analysis were performed using BIAevaluation and OriginPro software. The theoretical R_max (the maximal feasible signal in a ligand–analyte pair) for each compound and protein pair was calculated using eq 1, where R_ligand is the amount of protein loaded in the SPR chip in response units; M_r,analyte is the molecular weight of the compound of interest; M_r,ligand is the molecular weight of the immobilized protein; and V_ligand is the stoichiometry of the binding interaction between the ligand and the analyte. The experimentally observed R_max was then calculated as a percentage of the theoretical R_max as a quality control measure. An experimental R_max < 100% of the theoretical R_max was considered sensible and indicative of genuine binding.",
+            "Figure 4 caption": "Figure 4. Reversal of agonist-induced vasorelaxation upon treatment with NPR-C inhibitors in rat aorta and small mesenteric artery. The selective NPR-C peptide agonist cANF4–23 causes vasorelaxation that is blocked by M372049 and osteocrin in (A) rat aorta and (B) small mesenteric artery. (C) In rat small mesenteric artery small-molecule agonist 1 causes vasorelaxation that is partially blocked by M372049 and osteocrin.",
+            "Table 1": "Table 1. Effect of Changes to the Aryl and Cycloalkyl Groups on NPR-C Bindinga Compound R1 R2 K_D (μM)a 17 CH3 95.7±1.7 19 tBu 99±52 20 tBu 25.7±6.9 21 tBu 36.9 ±1.6 22 tBu Rmax>theoretical 25 tBu 45.1 ±1.9 26 tBu 30.8±1.3 aThe SPR experiments were repeated with similar results.",
+            "Table 2": "Table 2. Exploration of Binding Affinity with Variations to the Ester Groupa Compound R K_D (μM)a 27 220±22 28 84.4±2.8 29 25.0±3.1 32 144±7.7 33 163±6.1 46 42.2±9.6 aThe SPR experiments were repeated with similar results.",
+            "Table 3": "Table 3. Exploration of Binding Affinity for Different Amino Acid Analoguesa Compound R K_D (μM)a 34 Rmax<20% 35 79±47 36 832±190 1 146±39 37 201±6.1 38 Rmax<20% 39 Rmax<20% 40 28.0±4.9 41 31.3±7.3 42 Rmax<20% 43 23.7±3.8 aThe SPR experiments were repeated with similar results.",
+            "Table 4": "Table 4. Exploration of Phenylalanine SARa Compound R K_D (μM)a 44 29.6±4.5 45 23.8±2.0 47 38±17 aThe SPR experiments were repeated with similar results.",
+            "Table 5": "Table 5. Competitive Binding of Selected NPR-C Agonists Compound R FP EC50 (μM) SPR K_D (μM) 26 Inactive 30.8±1.9 40 326.7±12.3 28.0±4.9 1 Low % binding 146±39 41 32±15 31.3±7.3 44 Inactive 29.6±4.5 47 60±10 38±17"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human FL NPR-C (27–541)-10His-Flag",
+                "strategy": "Amine coupling",
+                "density_ru": "5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Agonists (including small molecules and peptides)",
+                "concentration_range": "150–0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline P20 buffer (PBS-P, Cat no 28995084, GE Healthcare Ltd.) with 1% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 30,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell and blank sample",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation and OriginPro"
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "51134563": {
+        "reactant_set_id": 51134563,
+        "pmid": 29541367,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 7",
+        "ligand": {
+            "smiles": "O=c1[nH]cnc2sccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 471000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6-tagged USP7 catalytic domain (213 to 548 residues) expressed in baculovirus infected Sf21 insect cells after 60 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) using a CM5 sensor chip. Recombinant human N-terminal His6-tagged USP7 catalytic domain (213 to 548 residues) was expressed in baculovirus infected Sf21 insect cells and immobilized on the sensor chip via amine coupling. The immobilized USP7 was then used to screen a library of 1.9k fragments. Binding was assessed by injecting compounds at concentrations ranging from 0.1 to 1000 μM in HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20) at a flow rate of 30 μL/min. Association and dissociation phases were monitored for 60 seconds each. Data were analyzed using Biacore T200 evaluation software. The equilibrium binding constant (KD) was determined from the SPR response at equilibrium. The ligand efficiency (LE) was calculated as LE = -log10(KD) / MW (where MW is the molecular weight of the compound)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human N-terminal His6-tagged USP7 catalytic domain (213 to 548 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Library of 1.9k fragments",
+                "concentration_range": "0.1 to 1000 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

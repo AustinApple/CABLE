@@ -1,0 +1,66 @@
+{
+    "51536298": {
+        "reactant_set_id": 51536298,
+        "pmid": 37643372,
+        "protein": "Mitogen-activated protein kinase 9",
+        "ligand": {
+            "smiles": "COc1cc2nccc(Oc3ccc(NC(=O)c4nn(-c5ccc(C)cc5)c(=O)cc4C)cc3)c2cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.9,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to JNK2 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiment": "4.15. SPR Experiment. The binding affinity of compound J27 to JNK2 protein was detected by ProteOn X360 protein interaction array system (Bio-Rad laboratory) and GLH sensor chip (Bio-Rad laboratory, # 1765013). Briefly, the JNK2 protein (acetate buffer) was activated with 40 mM EDC and 10 mM NHS in aqueous solution and immobilized on the sensor. Different concentrations of compound J27 were dissolved in 5% DMSO mobile buffer and injected simultaneously at a flow rate of 30 μL/min. At 25 °C, the binding phase was 120 s and the dissociation phase was 200 s. The 1:1 Langmuir binding model was used to globally fit the kinetic data and calculate the KD value.",
+            "Figure 10 caption": "Figure 10. Direct interactions of J27 with JNK2 in SPR assay.",
+            "Figure 10 sensorgram": "The sensorgram in Figure 10 shows the response (RU) over time (s). The x-axis ranges from -60 to 240 s. The y-axis ranges from -50 to 150 RU. The curves are labeled with J27 concentrations: 64, 32, 16, 8, 4, and 2 μM. The equilibrium dissociation constant (Kd) is labeled as 7.92 × 10⁻⁵ M."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad laboratory",
+                "model": "ProteOn X360"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad laboratory"
+            },
+            "immobilization": {
+                "ligand_name": "JNK2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound J27",
+                "concentration_range": "2 μM - 64 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "5% DMSO mobile buffer",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

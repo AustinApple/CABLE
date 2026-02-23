@@ -1,0 +1,332 @@
+{
+    "50780712": {
+        "reactant_set_id": 50780712,
+        "pmid": 28696694,
+        "protein": "Ubiquitin-conjugating enzyme E2 D3",
+        "ligand": {
+            "smiles": "Cc1cc(OCc2ccccc2Br)c(C)c2[C@@H]3OC(=O)C(=C)[C@@H]3CCc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 283.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant UbcH5c by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Biacore. Experiments were performed on a BIACORE T200 instrument (Biacore AB, Uppsala, Sweden). Recombinant human UbcH5c dissolved in 10 mM sodium acetate buffer (pH = 5.0) was covalently immobilized on the dextran matrix of a CMS sensor chip with the Amine Coupling Kit using a standard primary amine coupling procedure. Gradient concentrations of compounds were injected into the flow cells in running buffer (PBS, 5% DMSO) at a flow rate of 30 μL/min for 90 s of association phase followed by a 120 s dissociation phase and a 30 s regeneration phase. The surface of the sensor chip was regenerated via the injection of 10 μL of the regeneration buffer (5 mM NaOH). The data were analyzed using Biacore T200 Evaluation Software 2.0.1 and fitted to the standard 1:1 interaction model to obtain results. The dissociation constant (Kd) was calculated using the global fitting of the kinetic data from gradient concentrations. This work was supported by Lili Zhu and Lina Quan who are from East China University of Science and Technology.",
+            "SPR Analysis": "To determine the adhesive strength between the above compounds and UbcH5c, the interaction kinetics of the interactions between the candidate compounds and UbcH5c were tested by surface plasmon resonance using a BIACore T200 (Biacore AB, Uppsala, Sweden) system to identify the target compounds possessing the strongest affinity with UbcH5c for subsequent research. The results revealed that all compounds (except 1a) exhibited dose-dependent increases in response to the signal, indicating that those candidate compounds could bind to UbcH5c directly. The sensorgrams provided Kd values for 1b, 6d, 8a, and 8b of 3.64, 0.283, 6.40, and 0.353 μM, respectively (Figure 5). Among these compounds, 6d exhibited the strongest affinity to UbcH5c, with a Kd value of 0.283 μM. Compared with 1 (Kd = 2.58 μM), compound 6d also had a strong affinity and interaction with UbcH5c. In addition, it is easier and cheaper to obtain 6d via semisynthesis from α-santonin. These results indicated that compound 6d might have the potential to be a selective inhibitor of the ubiquitin-conjugating enzyme UbcH5c.",
+            "Figure 5 caption": "Figure 5. SPR analysis of the interaction between active compounds and UbcH5c. Kinetics of target compounds binding to UbcH5c were determined by Biacore. The purified UbcH5c was covalently immobilized onto the CMS sensor chip. Different concentrations of compound were injected at a flow rate of 30 μL/min. The surface was regenerated with 5 mM NaOH. The kinetic parameters Kd were measured by Biacore evaluation software.",
+            "Figure 5 sensorgram data": "1b: Ka = 2.91×10³ M⁻¹s⁻¹, Kd = 1.06×10⁻² s⁻¹, Kd = 3.64 μM. 6d: Ka = 8.10×10³ M⁻¹s⁻¹, Kd = 2.30×10⁻³ s⁻¹, Kd = 0.283 μM. 8a: Ka = 3.92×10³ M⁻¹s⁻¹, Kd = 2.51×10⁻² s⁻¹, Kd = 6.40 μM. 8b: Ka = 5.49×10³ M⁻¹s⁻¹, Kd = 1.90×10⁻³ s⁻¹, Kd = 0.353 μM. Concentrations shown: 0.78, 1.56, 3.125, 6.25, 12.5, 25 μM for 1b and 8a; 0.39, 0.78, 1.56, 3.125, 6.25 μM for 6d; 3.125, 6.25, 12.5, 25, 50 μM for 8b. Time axis: 0 to 220 seconds.",
+            "Table 1": "Table 1. PK Properties of Compound 6d in Rats. (A) intravenous administration: dose (mg/kg) 1, CL (L·h⁻¹·kg⁻¹) 2.48 ± 0.269, Vss (L/kg) 6.26 ± 2.07, t1/2 (h) 1.76 ± 0.55, AUC(0–∞) (ng·h/mL) 408 ± 48.9. (B) oral administration: dose (mg/kg) 5, tmax (h) 3.83 ± 2.56, Cmax (ng/mL) 42.2 ± 24.8, t1/2 (h) 2.86 ± 1.05, AUC(0–∞) (ng·h/mL) 314 ± 197, F (%) 16.8."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human UbcH5c",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 mM sodium acetate buffer (pH = 5.0)"
+            },
+            "analyte": {
+                "description": "Candidate compounds (1b, 6d, 8a, 8b)",
+                "concentration_range": "0.39–25 μM (varied by compound: 1b and 8a: 0.78–25 μM; 6d: 0.39–6.25 μM; 8b: 3.125–50 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software 2.0.1"
+            }
+        }
+    },
+    "50780718": {
+        "reactant_set_id": 50780718,
+        "pmid": 28696694,
+        "protein": "Ubiquitin-conjugating enzyme E2 D3",
+        "ligand": {
+            "smiles": "C[C@H]1[C@H](CC[C@]2(C)CC[C@@H]3[C@H](OC(=O)C3=C)C12)OC(=O)c1cccc(I)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant UbcH5c by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Biacore. Experiments were performed on a BIACORE T200 instrument (Biacore AB, Uppsala, Sweden). Recombinant human UbcH5c dissolved in 10 mM sodium acetate buffer (pH = 5.0) was covalently immobilized on the dextran matrix of a CMS sensor chip with the Amine Coupling Kit using a standard primary amine coupling procedure. Gradient concentrations of compounds were injected into the flow cells in running buffer (PBS, 5% DMSO) at a flow rate of 30 μL/min for 90 s of association phase followed by a 120 s dissociation phase and a 30 s regeneration phase. The surface of the sensor chip was regenerated via the injection of 10 μL of the regeneration buffer (5 mM NaOH). The data were analyzed using Biacore T200 Evaluation Software 2.0.1 and fitted to the standard 1:1 interaction model to obtain results. The dissociation constant (Kd) was calculated using the global fitting of the kinetic data from gradient concentrations. This work was supported by Lili Zhu and Lina Quan who are from East China University of Science and Technology.",
+            "SPR Analysis": "To determine the adhesive strength between the above compounds and UbcH5c, the interaction kinetics of the interactions between the candidate compounds and UbcH5c were tested by surface plasmon resonance using a BIACore T200 (Biacore AB, Uppsala, Sweden) system to identify the target compounds possessing the strongest affinity with UbcH5c for subsequent research. The results revealed that all compounds (except 1a) exhibited dose-dependent increases in response to the signal, indicating that those candidate compounds could bind to UbcH5c directly. The sensorgrams provided Kd values for 1b, 6d, 8a, and 8b of 3.64, 0.283, 6.40, and 0.353 μM, respectively (Figure 5). Among these compounds, 6d exhibited the strongest affinity to UbcH5c, with a Kd value of 0.283 μM. Compared with 1 (Kd = 2.58 μM), compound 6d also had a strong affinity and interaction with UbcH5c. In addition, it is easier and cheaper to obtain 6d via semisynthesis from α-santonin. These results indicated that compound 6d might have the potential to be a selective inhibitor of the ubiquitin-conjugating enzyme UbcH5c.",
+            "Figure 5 caption": "Figure 5. SPR analysis of the interaction between active compounds and UbcH5c. Kinetics of target compounds binding to UbcH5c were determined by Biacore. The purified UbcH5c was covalently immobilized onto the CMS sensor chip. Different concentrations of compound were injected at a flow rate of 30 μL/min. The surface was regenerated with 5 mM NaOH. The kinetic parameters Kd were measured by Biacore evaluation software.",
+            "Figure 5 sensorgram data": "1b: Ka = 2.91×10³ M⁻¹s⁻¹, Kd = 1.06×10⁻² s⁻¹, Kd = 3.64 μM. 6d: Ka = 8.10×10³ M⁻¹s⁻¹, Kd = 2.30×10⁻³ s⁻¹, Kd = 0.283 μM. 8a: Ka = 3.92×10³ M⁻¹s⁻¹, Kd = 2.51×10⁻² s⁻¹, Kd = 6.40 μM. 8b: Ka = 5.49×10³ M⁻¹s⁻¹, Kd = 1.90×10⁻³ s⁻¹, Kd = 0.353 μM. Concentrations shown: 0.78, 1.56, 3.125, 6.25, 12.5, 25 μM for 1b and 8a; 0.39, 0.78, 1.56, 3.125, 6.25 μM for 6d; 3.125, 6.25, 12.5, 25, 50 μM for 8b. Time axis: 0 to 220 seconds.",
+            "Table 1": "Table 1. PK Properties of Compound 6d in Rats. (A) intravenous administration: dose (mg/kg) 1, CL (L·h⁻¹·kg⁻¹) 2.48 ± 0.269, Vss (L/kg) 6.26 ± 2.07, t1/2 (h) 1.76 ± 0.55, AUC(0–∞) (ng·h/mL) 408 ± 48.9. (B) oral administration: dose (mg/kg) 5, tmax (h) 3.83 ± 2.56, Cmax (ng/mL) 42.2 ± 24.8, t1/2 (h) 2.86 ± 1.05, AUC(0–∞) (ng·h/mL) 314 ± 197, F (%) 16.8."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human UbcH5c",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 mM sodium acetate buffer (pH = 5.0)"
+            },
+            "analyte": {
+                "description": "Candidate compounds (1b, 6d, 8a, 8b)",
+                "concentration_range": "0.39–25 μM (varied by compound: 1b and 8a: 0.78–25 μM; 6d: 0.39–6.25 μM; 8b: 3.125–50 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software 2.0.1"
+            }
+        }
+    },
+    "50780719": {
+        "reactant_set_id": 50780719,
+        "pmid": 28696694,
+        "protein": "Ubiquitin-conjugating enzyme E2 D3",
+        "ligand": {
+            "smiles": "C[C@H]1CC[C@@H](O)[C@]2(C)C[C@H]3OC(=O)C(=C)[C@H]3C=C12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2580.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant UbcH5c by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Biacore. Experiments were performed on a BIACORE T200 instrument (Biacore AB, Uppsala, Sweden). Recombinant human UbcH5c dissolved in 10 mM sodium acetate buffer (pH = 5.0) was covalently immobilized on the dextran matrix of a CMS sensor chip with the Amine Coupling Kit using a standard primary amine coupling procedure. Gradient concentrations of compounds were injected into the flow cells in running buffer (PBS, 5% DMSO) at a flow rate of 30 μL/min for 90 s of association phase followed by a 120 s dissociation phase and a 30 s regeneration phase. The surface of the sensor chip was regenerated via the injection of 10 μL of the regeneration buffer (5 mM NaOH). The data were analyzed using Biacore T200 Evaluation Software 2.0.1 and fitted to the standard 1:1 interaction model to obtain results. The dissociation constant (Kd) was calculated using the global fitting of the kinetic data from gradient concentrations. This work was supported by Lili Zhu and Lina Quan who are from East China University of Science and Technology.",
+            "SPR Analysis": "To determine the adhesive strength between the above compounds and UbcH5c, the interaction kinetics of the interactions between the candidate compounds and UbcH5c were tested by surface plasmon resonance using a BIACore T200 (Biacore AB, Uppsala, Sweden) system to identify the target compounds possessing the strongest affinity with UbcH5c for subsequent research. The results revealed that all compounds (except 1a) exhibited dose-dependent increases in response to the signal, indicating that those candidate compounds could bind to UbcH5c directly. The sensorgrams provided Kd values for 1b, 6d, 8a, and 8b of 3.64, 0.283, 6.40, and 0.353 μM, respectively (Figure 5). Among these compounds, 6d exhibited the strongest affinity to UbcH5c, with a Kd value of 0.283 μM. Compared with 1 (Kd = 2.58 μM), compound 6d also had a strong affinity and interaction with UbcH5c. In addition, it is easier and cheaper to obtain 6d via semisynthesis from α-santonin. These results indicated that compound 6d might have the potential to be a selective inhibitor of the ubiquitin-conjugating enzyme UbcH5c.",
+            "Figure 5 caption": "Figure 5. SPR analysis of the interaction between active compounds and UbcH5c. Kinetics of target compounds binding to UbcH5c were determined by Biacore. The purified UbcH5c was covalently immobilized onto the CMS sensor chip. Different concentrations of compound were injected at a flow rate of 30 μL/min. The surface was regenerated with 5 mM NaOH. The kinetic parameters Kd were measured by Biacore evaluation software.",
+            "Figure 5 sensorgram data": "1b: Ka = 2.91×10³ M⁻¹s⁻¹, Kd = 1.06×10⁻² s⁻¹, Kd = 3.64 μM. 6d: Ka = 8.10×10³ M⁻¹s⁻¹, Kd = 2.30×10⁻³ s⁻¹, Kd = 0.283 μM. 8a: Ka = 3.92×10³ M⁻¹s⁻¹, Kd = 2.51×10⁻² s⁻¹, Kd = 6.40 μM. 8b: Ka = 5.49×10³ M⁻¹s⁻¹, Kd = 1.90×10⁻³ s⁻¹, Kd = 0.353 μM. Concentrations shown: 0.78, 1.56, 3.125, 6.25, 12.5, 25 μM for 1b and 8a; 0.39, 0.78, 1.56, 3.125, 6.25 μM for 6d; 3.125, 6.25, 12.5, 25, 50 μM for 8b. Time axis: 0 to 220 seconds.",
+            "Table 1": "Table 1. PK Properties of Compound 6d in Rats. (A) intravenous administration: dose (mg/kg) 1, CL (L·h⁻¹·kg⁻¹) 2.48 ± 0.269, Vss (L/kg) 6.26 ± 2.07, t1/2 (h) 1.76 ± 0.55, AUC(0–∞) (ng·h/mL) 408 ± 48.9. (B) oral administration: dose (mg/kg) 5, tmax (h) 3.83 ± 2.56, Cmax (ng/mL) 42.2 ± 24.8, t1/2 (h) 2.86 ± 1.05, AUC(0–∞) (ng·h/mL) 314 ± 197, F (%) 16.8."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human UbcH5c",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 mM sodium acetate buffer (pH = 5.0)"
+            },
+            "analyte": {
+                "description": "Candidate compounds (1b, 6d, 8a, 8b)",
+                "concentration_range": "0.39–25 μM (varied by compound: 1b and 8a: 0.78–25 μM; 6d: 0.39–6.25 μM; 8b: 3.125–50 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software 2.0.1"
+            }
+        }
+    },
+    "50780720": {
+        "reactant_set_id": 50780720,
+        "pmid": 28696694,
+        "protein": "Ubiquitin-conjugating enzyme E2 D3",
+        "ligand": {
+            "smiles": "CC(=O)O[C@]1(C)CC[C@@H]2[C@H](OC(=O)C2=C)C2=C(C)[C@H](CC12)OC(=O)c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3640.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant UbcH5c by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Biacore. Experiments were performed on a BIACORE T200 instrument (Biacore AB, Uppsala, Sweden). Recombinant human UbcH5c dissolved in 10 mM sodium acetate buffer (pH = 5.0) was covalently immobilized on the dextran matrix of a CMS sensor chip with the Amine Coupling Kit using a standard primary amine coupling procedure. Gradient concentrations of compounds were injected into the flow cells in running buffer (PBS, 5% DMSO) at a flow rate of 30 μL/min for 90 s of association phase followed by a 120 s dissociation phase and a 30 s regeneration phase. The surface of the sensor chip was regenerated via the injection of 10 μL of the regeneration buffer (5 mM NaOH). The data were analyzed using Biacore T200 Evaluation Software 2.0.1 and fitted to the standard 1:1 interaction model to obtain results. The dissociation constant (Kd) was calculated using the global fitting of the kinetic data from gradient concentrations. This work was supported by Lili Zhu and Lina Quan who are from East China University of Science and Technology.",
+            "SPR Analysis": "To determine the adhesive strength between the above compounds and UbcH5c, the interaction kinetics of the interactions between the candidate compounds and UbcH5c were tested by surface plasmon resonance using a BIACore T200 (Biacore AB, Uppsala, Sweden) system to identify the target compounds possessing the strongest affinity with UbcH5c for subsequent research. The results revealed that all compounds (except 1a) exhibited dose-dependent increases in response to the signal, indicating that those candidate compounds could bind to UbcH5c directly. The sensorgrams provided Kd values for 1b, 6d, 8a, and 8b of 3.64, 0.283, 6.40, and 0.353 μM, respectively (Figure 5). Among these compounds, 6d exhibited the strongest affinity to UbcH5c, with a Kd value of 0.283 μM. Compared with 1 (Kd = 2.58 μM), compound 6d also had a strong affinity and interaction with UbcH5c. In addition, it is easier and cheaper to obtain 6d via semisynthesis from α-santonin. These results indicated that compound 6d might have the potential to be a selective inhibitor of the ubiquitin-conjugating enzyme UbcH5c.",
+            "Figure 5 caption": "Figure 5. SPR analysis of the interaction between active compounds and UbcH5c. Kinetics of target compounds binding to UbcH5c were determined by Biacore. The purified UbcH5c was covalently immobilized onto the CMS sensor chip. Different concentrations of compound were injected at a flow rate of 30 μL/min. The surface was regenerated with 5 mM NaOH. The kinetic parameters Kd were measured by Biacore evaluation software.",
+            "Figure 5 sensorgram data": "1b: Ka = 2.91×10³ M⁻¹s⁻¹, Kd = 1.06×10⁻² s⁻¹, Kd = 3.64 μM. 6d: Ka = 8.10×10³ M⁻¹s⁻¹, Kd = 2.30×10⁻³ s⁻¹, Kd = 0.283 μM. 8a: Ka = 3.92×10³ M⁻¹s⁻¹, Kd = 2.51×10⁻² s⁻¹, Kd = 6.40 μM. 8b: Ka = 5.49×10³ M⁻¹s⁻¹, Kd = 1.90×10⁻³ s⁻¹, Kd = 0.353 μM. Concentrations shown: 0.78, 1.56, 3.125, 6.25, 12.5, 25 μM for 1b and 8a; 0.39, 0.78, 1.56, 3.125, 6.25 μM for 6d; 3.125, 6.25, 12.5, 25, 50 μM for 8b. Time axis: 0 to 220 seconds.",
+            "Table 1": "Table 1. PK Properties of Compound 6d in Rats. (A) intravenous administration: dose (mg/kg) 1, CL (L·h⁻¹·kg⁻¹) 2.48 ± 0.269, Vss (L/kg) 6.26 ± 2.07, t1/2 (h) 1.76 ± 0.55, AUC(0–∞) (ng·h/mL) 408 ± 48.9. (B) oral administration: dose (mg/kg) 5, tmax (h) 3.83 ± 2.56, Cmax (ng/mL) 42.2 ± 24.8, t1/2 (h) 2.86 ± 1.05, AUC(0–∞) (ng·h/mL) 314 ± 197, F (%) 16.8."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human UbcH5c",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 mM sodium acetate buffer (pH = 5.0)"
+            },
+            "analyte": {
+                "description": "Candidate compounds (1b, 6d, 8a, 8b)",
+                "concentration_range": "0.39–25 μM (varied by compound: 1b and 8a: 0.78–25 μM; 6d: 0.39–6.25 μM; 8b: 3.125–50 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software 2.0.1"
+            }
+        }
+    },
+    "50780723": {
+        "reactant_set_id": 50780723,
+        "pmid": 28696694,
+        "protein": "Ubiquitin-conjugating enzyme E2 D3",
+        "ligand": {
+            "smiles": "C[C@H]1[C@H](CC[C@]2(C)CC[C@@H]3[C@H](OC(=O)C3=C)C12)OC(=O)c1ccc(I)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 353.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant UbcH5c by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Biacore. Experiments were performed on a BIACORE T200 instrument (Biacore AB, Uppsala, Sweden). Recombinant human UbcH5c dissolved in 10 mM sodium acetate buffer (pH = 5.0) was covalently immobilized on the dextran matrix of a CMS sensor chip with the Amine Coupling Kit using a standard primary amine coupling procedure. Gradient concentrations of compounds were injected into the flow cells in running buffer (PBS, 5% DMSO) at a flow rate of 30 μL/min for 90 s of association phase followed by a 120 s dissociation phase and a 30 s regeneration phase. The surface of the sensor chip was regenerated via the injection of 10 μL of the regeneration buffer (5 mM NaOH). The data were analyzed using Biacore T200 Evaluation Software 2.0.1 and fitted to the standard 1:1 interaction model to obtain results. The dissociation constant (Kd) was calculated using the global fitting of the kinetic data from gradient concentrations. This work was supported by Lili Zhu and Lina Quan who are from East China University of Science and Technology.",
+            "SPR Analysis": "To determine the adhesive strength between the above compounds and UbcH5c, the interaction kinetics of the interactions between the candidate compounds and UbcH5c were tested by surface plasmon resonance using a BIACore T200 (Biacore AB, Uppsala, Sweden) system to identify the target compounds possessing the strongest affinity with UbcH5c for subsequent research. The results revealed that all compounds (except 1a) exhibited dose-dependent increases in response to the signal, indicating that those candidate compounds could bind to UbcH5c directly. The sensorgrams provided Kd values for 1b, 6d, 8a, and 8b of 3.64, 0.283, 6.40, and 0.353 μM, respectively (Figure 5). Among these compounds, 6d exhibited the strongest affinity to UbcH5c, with a Kd value of 0.283 μM. Compared with 1 (Kd = 2.58 μM), compound 6d also had a strong affinity and interaction with UbcH5c. In addition, it is easier and cheaper to obtain 6d via semisynthesis from α-santonin. These results indicated that compound 6d might have the potential to be a selective inhibitor of the ubiquitin-conjugating enzyme UbcH5c.",
+            "Figure 5 caption": "Figure 5. SPR analysis of the interaction between active compounds and UbcH5c. Kinetics of target compounds binding to UbcH5c were determined by Biacore. The purified UbcH5c was covalently immobilized onto the CMS sensor chip. Different concentrations of compound were injected at a flow rate of 30 μL/min. The surface was regenerated with 5 mM NaOH. The kinetic parameters Kd were measured by Biacore evaluation software.",
+            "Figure 5 sensorgram data": "1b: Ka = 2.91×10³ M⁻¹s⁻¹, Kd = 1.06×10⁻² s⁻¹, Kd = 3.64 μM. 6d: Ka = 8.10×10³ M⁻¹s⁻¹, Kd = 2.30×10⁻³ s⁻¹, Kd = 0.283 μM. 8a: Ka = 3.92×10³ M⁻¹s⁻¹, Kd = 2.51×10⁻² s⁻¹, Kd = 6.40 μM. 8b: Ka = 5.49×10³ M⁻¹s⁻¹, Kd = 1.90×10⁻³ s⁻¹, Kd = 0.353 μM. Concentrations shown: 0.78, 1.56, 3.125, 6.25, 12.5, 25 μM for 1b and 8a; 0.39, 0.78, 1.56, 3.125, 6.25 μM for 6d; 3.125, 6.25, 12.5, 25, 50 μM for 8b. Time axis: 0 to 220 seconds.",
+            "Table 1": "Table 1. PK Properties of Compound 6d in Rats. (A) intravenous administration: dose (mg/kg) 1, CL (L·h⁻¹·kg⁻¹) 2.48 ± 0.269, Vss (L/kg) 6.26 ± 2.07, t1/2 (h) 1.76 ± 0.55, AUC(0–∞) (ng·h/mL) 408 ± 48.9. (B) oral administration: dose (mg/kg) 5, tmax (h) 3.83 ± 2.56, Cmax (ng/mL) 42.2 ± 24.8, t1/2 (h) 2.86 ± 1.05, AUC(0–∞) (ng·h/mL) 314 ± 197, F (%) 16.8."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human UbcH5c",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 mM sodium acetate buffer (pH = 5.0)"
+            },
+            "analyte": {
+                "description": "Candidate compounds (1b, 6d, 8a, 8b)",
+                "concentration_range": "0.39–25 μM (varied by compound: 1b and 8a: 0.78–25 μM; 6d: 0.39–6.25 μM; 8b: 3.125–50 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software 2.0.1"
+            }
+        }
+    }
+}

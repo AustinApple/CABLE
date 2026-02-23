@@ -1,0 +1,200 @@
+{
+    "51617443": {
+        "reactant_set_id": 51617443,
+        "pmid": 37804770,
+        "protein": "Nucleoprotein",
+        "ligand": {
+            "smiles": "Cc1onc(-c2ccccc2)c1C(=O)N1CCN(c2ccc([N+](=O)[O-])cc2Cl)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to influenza A virus Nucleoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 28: N. Lejal, B. Tarus, S. Bouguyon, S. Chenavas, B. Bertho, B. Delmas, R.W. Ruigrok, C. Di Primo, A. Slama-Schwok, Structure-based discovery of the novel antiviral properties of naproxen against the nucleoprotein of influenza A virus, Antimicrob. Agents Chemother. 57 (5) (2013) 2231–2242. Reference 29: W. Zheng, W. Fan, S. Zhang, P. Jiao, S. Shang, L. Cui, M. Maheshwari, J. Li, D. Wang, G.F. Gao, L. Sun, W. Liu, Naproxen exhibits broad anti-influenza virus activity in mice by impeding viral nucleoprotein nuclear export, Cell Rep. 27 (6) (2019) 1875–1885.e5.",
+        "original_paragraph": {
+            "Materials and Methods - 3.6. Surface plasmon resonance assay": "The SPR assay for the binding of compound IIB-2 to IFV NP was performed at room temperature on a Biacore™ T200 with CM5 chips (Cytiva, BR-1005-30) as previously described [28,29]. His-tagged NP (Sino Biological, 40724-V08B) was immobilized on an activated CM5 chip at 50 mg/μL in pH 4.5 acetate buffer (Cytiva, BR100350), and a blank channel was used as the negative control. IAV M1 (Sino Biological, 40010-V07E) was immobilized on an activated CM7 chip at 25 mg/μL in pH 5.5 acetate buffer (Cytiva, 28953828), and a blank channel was used as the negative control. IAV NS2 (Sino Biological, 40012-VNAE) was immobilized on an activated CM7 chip at 25 mg/μL in pH 5.0 acetate buffer (Cytiva), and a blank channel was used as the negative control. Compound IIB-2 and NUC were serially diluted three-fold to various concentrations using 10 X PBS-P+ (Cytiva, 28995084) and flowed through the chip. Kd values were calculated using a steady state affinity model by the Biacore T200 analysis software (Biacore™ T200 Evaluation software 3.1).",
+            "Results - 2.10. The affinity of compound IIB-2 for NP was determined through surface plasmon resonance (SPR) experiments": "The aforementioned results suggest that compound IIB-2 does not possess the ability to inhibit CRM1-mediated nucleoprotein export. In used as a positive control. The results showed that the SPR signal was proportional to the concentration of compound IIB-2, and its Kd value was calculated by the steady-state affinity model, as shown in Fig. 7. The Kd value of compound IIB-2 for NP was determined to be 0.2392 μM, and its affinity-dissociation trend exhibited concentration-dependent. However, compound IIB-2 did not exhibit specific affinity towards M1 and NS2 proteins, which was consistent with the control NUC. Therefore, we speculate that the target protein of compound IIB-2 may be influenza NP.",
+            "Figure 7 caption": "Fig. 7. (A) Evaluation of interaction between compound IIB-2 and NP by SPR. His-tagged NP was immobilized on the CM5 chip, and a blank channel was used as the negative control. Compound IIB-2 was serially diluted three-fold to various concentrations and then flowed through the chip. Kd values were calculated using Biacore T200 analysis software. (B) Evaluation of interaction between compound IIB-2 and M1 by SPR. (C) Evaluation of interaction between compound IIB-2 and NS2 by SPR. (D) Evaluation of interaction between compound NUC and NP by SPR. (E) Evaluation of interaction between compound NUC and M1 by SPR. (F) Evaluation of interaction between compound NUC and NS2 by SPR.",
+            "Figure 7 - Sensorgram data (extracted from visual inspection)": "Figure 7A shows sensorgrams for compound IIB-2 binding to NP at concentrations of 0.0547, 0.05, 0.46, 1.37, 4.1, 12.3, and 37 μM. The x-axis (Time) ranges from 0 to 200 seconds. The response (y-axis) ranges from 0 to 40 RU. The Kd value is labeled as 0.2392 μM. Figure 7D shows sensorgrams for compound NUC binding to NP at concentrations of 0.05, 0.15, 0.46, 1.37, 4.1, 12.3, and 37 μM. The Kd value is labeled as 0.0141 μM. Figures 7B, 7C, 7E, and 7F show sensorgrams for interactions with M1 and NS2, with concentrations ranging from 0.05 to 37 μM, but no Kd values are provided as the binding is negligible.",
+            "Table 3": "Table 3 lists EC50 and CC50 values for compounds IIA-4, IIA-5, IIB-2, A9, and OSC. The EC50 for IIB-2 against H5N1 is 14.93 ± 0.02 μM and against H5N8 is 9.60 ± 0.21 μM. The CC50 for IIB-2 is >100 μM. This table is not directly related to the SPR assay but provides context for the compound's activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged NP",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 mg/μL"
+            },
+            "analyte": {
+                "description": "Compound IIB-2",
+                "concentration_range": "0.0547 μM - 37 μM (three-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 X PBS-P+ (Cytiva, 28995084)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation software 3.1"
+            }
+        }
+    },
+    "51617444": {
+        "reactant_set_id": 51617444,
+        "pmid": 37804770,
+        "protein": "Nucleoprotein",
+        "ligand": {
+            "smiles": "CCOc1ccc(/C=C/C(=O)/C=C/c2c(OC)cccc2OC)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 239.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to influenza A virus Nucleoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 28: N. Lejal, B. Tarus, S. Bouguyon, S. Chenavas, B. Bertho, B. Delmas, R.W. Ruigrok, C. Di Primo, A. Slama-Schwok, Structure-based discovery of the novel antiviral properties of naproxen against the nucleoprotein of influenza A virus, Antimicrob. Agents Chemother. 57 (5) (2013) 2231–2242. Reference 29: W. Zheng, W. Fan, S. Zhang, P. Jiao, S. Shang, L. Cui, M. Maheshwari, J. Li, D. Wang, G.F. Gao, L. Sun, W. Liu, Naproxen exhibits broad anti-influenza virus activity in mice by impeding viral nucleoprotein nuclear export, Cell Rep. 27 (6) (2019) 1875–1885.e5.",
+        "original_paragraph": {
+            "Materials and Methods - 3.6. Surface plasmon resonance assay": "The SPR assay for the binding of compound IIB-2 to IFV NP was performed at room temperature on a Biacore™ T200 with CM5 chips (Cytiva, BR-1005-30) as previously described [28,29]. His-tagged NP (Sino Biological, 40724-V08B) was immobilized on an activated CM5 chip at 50 mg/μL in pH 4.5 acetate buffer (Cytiva, BR100350), and a blank channel was used as the negative control. IAV M1 (Sino Biological, 40010-V07E) was immobilized on an activated CM7 chip at 25 mg/μL in pH 5.5 acetate buffer (Cytiva, 28953828), and a blank channel was used as the negative control. IAV NS2 (Sino Biological, 40012-VNAE) was immobilized on an activated CM7 chip at 25 mg/μL in pH 5.0 acetate buffer (Cytiva), and a blank channel was used as the negative control. Compound IIB-2 and NUC were serially diluted three-fold to various concentrations using 10 X PBS-P+ (Cytiva, 28995084) and flowed through the chip. Kd values were calculated using a steady state affinity model by the Biacore T200 analysis software (Biacore™ T200 Evaluation software 3.1).",
+            "Results - 2.10. The affinity of compound IIB-2 for NP was determined through surface plasmon resonance (SPR) experiments": "The aforementioned results suggest that compound IIB-2 does not possess the ability to inhibit CRM1-mediated nucleoprotein export. In used as a positive control. The results showed that the SPR signal was proportional to the concentration of compound IIB-2, and its Kd value was calculated by the steady-state affinity model, as shown in Fig. 7. The Kd value of compound IIB-2 for NP was determined to be 0.2392 μM, and its affinity-dissociation trend exhibited concentration-dependent. However, compound IIB-2 did not exhibit specific affinity towards M1 and NS2 proteins, which was consistent with the control NUC. Therefore, we speculate that the target protein of compound IIB-2 may be influenza NP.",
+            "Figure 7 caption": "Fig. 7. (A) Evaluation of interaction between compound IIB-2 and NP by SPR. His-tagged NP was immobilized on the CM5 chip, and a blank channel was used as the negative control. Compound IIB-2 was serially diluted three-fold to various concentrations and then flowed through the chip. Kd values were calculated using Biacore T200 analysis software. (B) Evaluation of interaction between compound IIB-2 and M1 by SPR. (C) Evaluation of interaction between compound IIB-2 and NS2 by SPR. (D) Evaluation of interaction between compound NUC and NP by SPR. (E) Evaluation of interaction between compound NUC and M1 by SPR. (F) Evaluation of interaction between compound NUC and NS2 by SPR.",
+            "Figure 7 - Sensorgram data (extracted from visual inspection)": "Figure 7A shows sensorgrams for compound IIB-2 binding to NP at concentrations of 0.0547, 0.05, 0.46, 1.37, 4.1, 12.3, and 37 μM. The x-axis (Time) ranges from 0 to 200 seconds. The response (y-axis) ranges from 0 to 40 RU. The Kd value is labeled as 0.2392 μM. Figure 7D shows sensorgrams for compound NUC binding to NP at concentrations of 0.05, 0.15, 0.46, 1.37, 4.1, 12.3, and 37 μM. The Kd value is labeled as 0.0141 μM. Figures 7B, 7C, 7E, and 7F show sensorgrams for interactions with M1 and NS2, with concentrations ranging from 0.05 to 37 μM, but no Kd values are provided as the binding is negligible.",
+            "Table 3": "Table 3 lists EC50 and CC50 values for compounds IIA-4, IIA-5, IIB-2, A9, and OSC. The EC50 for IIB-2 against H5N1 is 14.93 ± 0.02 μM and against H5N8 is 9.60 ± 0.21 μM. The CC50 for IIB-2 is >100 μM. This table is not directly related to the SPR assay but provides context for the compound's activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged NP",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 mg/μL"
+            },
+            "analyte": {
+                "description": "Compound IIB-2",
+                "concentration_range": "0.0547 μM - 37 μM (three-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 X PBS-P+ (Cytiva, 28995084)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation software 3.1"
+            }
+        }
+    },
+    "51617445": {
+        "reactant_set_id": 51617445,
+        "pmid": 37804770,
+        "protein": "Nucleoprotein",
+        "ligand": {
+            "smiles": "COc1cccc(OC)c1/C=C/C(=O)/C=C/c1ccc(N2CCOCC2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 239.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to influenza A virus Nucleoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 28: N. Lejal, B. Tarus, S. Bouguyon, S. Chenavas, B. Bertho, B. Delmas, R.W. Ruigrok, C. Di Primo, A. Slama-Schwok, Structure-based discovery of the novel antiviral properties of naproxen against the nucleoprotein of influenza A virus, Antimicrob. Agents Chemother. 57 (5) (2013) 2231–2242. Reference 29: W. Zheng, W. Fan, S. Zhang, P. Jiao, S. Shang, L. Cui, M. Maheshwari, J. Li, D. Wang, G.F. Gao, L. Sun, W. Liu, Naproxen exhibits broad anti-influenza virus activity in mice by impeding viral nucleoprotein nuclear export, Cell Rep. 27 (6) (2019) 1875–1885.e5.",
+        "original_paragraph": {
+            "Materials and Methods - 3.6. Surface plasmon resonance assay": "The SPR assay for the binding of compound IIB-2 to IFV NP was performed at room temperature on a Biacore™ T200 with CM5 chips (Cytiva, BR-1005-30) as previously described [28,29]. His-tagged NP (Sino Biological, 40724-V08B) was immobilized on an activated CM5 chip at 50 mg/μL in pH 4.5 acetate buffer (Cytiva, BR100350), and a blank channel was used as the negative control. IAV M1 (Sino Biological, 40010-V07E) was immobilized on an activated CM7 chip at 25 mg/μL in pH 5.5 acetate buffer (Cytiva, 28953828), and a blank channel was used as the negative control. IAV NS2 (Sino Biological, 40012-VNAE) was immobilized on an activated CM7 chip at 25 mg/μL in pH 5.0 acetate buffer (Cytiva), and a blank channel was used as the negative control. Compound IIB-2 and NUC were serially diluted three-fold to various concentrations using 10 X PBS-P+ (Cytiva, 28995084) and flowed through the chip. Kd values were calculated using a steady state affinity model by the Biacore T200 analysis software (Biacore™ T200 Evaluation software 3.1).",
+            "Results - 2.10. The affinity of compound IIB-2 for NP was determined through surface plasmon resonance (SPR) experiments": "The aforementioned results suggest that compound IIB-2 does not possess the ability to inhibit CRM1-mediated nucleoprotein export. In used as a positive control. The results showed that the SPR signal was proportional to the concentration of compound IIB-2, and its Kd value was calculated by the steady-state affinity model, as shown in Fig. 7. The Kd value of compound IIB-2 for NP was determined to be 0.2392 μM, and its affinity-dissociation trend exhibited concentration-dependent. However, compound IIB-2 did not exhibit specific affinity towards M1 and NS2 proteins, which was consistent with the control NUC. Therefore, we speculate that the target protein of compound IIB-2 may be influenza NP.",
+            "Figure 7 caption": "Fig. 7. (A) Evaluation of interaction between compound IIB-2 and NP by SPR. His-tagged NP was immobilized on the CM5 chip, and a blank channel was used as the negative control. Compound IIB-2 was serially diluted three-fold to various concentrations and then flowed through the chip. Kd values were calculated using Biacore T200 analysis software. (B) Evaluation of interaction between compound IIB-2 and M1 by SPR. (C) Evaluation of interaction between compound IIB-2 and NS2 by SPR. (D) Evaluation of interaction between compound NUC and NP by SPR. (E) Evaluation of interaction between compound NUC and M1 by SPR. (F) Evaluation of interaction between compound NUC and NS2 by SPR.",
+            "Figure 7 - Sensorgram data (extracted from visual inspection)": "Figure 7A shows sensorgrams for compound IIB-2 binding to NP at concentrations of 0.0547, 0.05, 0.46, 1.37, 4.1, 12.3, and 37 μM. The x-axis (Time) ranges from 0 to 200 seconds. The response (y-axis) ranges from 0 to 40 RU. The Kd value is labeled as 0.2392 μM. Figure 7D shows sensorgrams for compound NUC binding to NP at concentrations of 0.05, 0.15, 0.46, 1.37, 4.1, 12.3, and 37 μM. The Kd value is labeled as 0.0141 μM. Figures 7B, 7C, 7E, and 7F show sensorgrams for interactions with M1 and NS2, with concentrations ranging from 0.05 to 37 μM, but no Kd values are provided as the binding is negligible.",
+            "Table 3": "Table 3 lists EC50 and CC50 values for compounds IIA-4, IIA-5, IIB-2, A9, and OSC. The EC50 for IIB-2 against H5N1 is 14.93 ± 0.02 μM and against H5N8 is 9.60 ± 0.21 μM. The CC50 for IIB-2 is >100 μM. This table is not directly related to the SPR assay but provides context for the compound's activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged NP",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 mg/μL"
+            },
+            "analyte": {
+                "description": "Compound IIB-2",
+                "concentration_range": "0.0547 μM - 37 μM (three-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 X PBS-P+ (Cytiva, 28995084)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation software 3.1"
+            }
+        }
+    }
+}

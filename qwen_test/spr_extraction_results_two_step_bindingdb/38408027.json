@@ -1,0 +1,67 @@
+{
+    "51591744": {
+        "reactant_set_id": 51591744,
+        "pmid": 38408027,
+        "protein": "Pyruvate kinase PKM",
+        "ligand": {
+            "smiles": "COc1ccccc1Nc1nc(-c2cnc3ccccn23)cs1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.915,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human PKM2 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "The specified SPR angle at which resonance occurs under a constant light source wavelength and metal surface circumstances is determined by the refractive index of the material near the metal surface. There are five parts of a sensorgram generated from SPR. These are dissociation, equilibrium, association, regeneration, and baseline. Here, the PKM2 protein was immobilized on a carboxymethylated sensor chip with a concentration of 50 μg/mL. The buffer used was 1.05X PBS-P+. The stock solutions were prepared in assay buffer along with DMSO. Once the ligand 7d was immobilized on the sensor surface, any remaining binding sites were blocked and the interaction analysis sensorgram was generated and analyzed. The system used is Cytiva Biocore T200. All of the experiments performed were in accordance with the manufacturer’s protocol for small- to medium-sized compound libraries (few samples).",
+            "Figure 3I caption": "surface plasmon resonance sensogram of 7d indicated an inverse relationship of binding affinity with ligand concentration and (J) a residence time of 93 s was observed on immobilizing 7d with PKM2, and (K) 7d significantly reduced the level of PKM1 and PKM2 at the mRNA level as indicated by the qRT-PCR study performed on 7d-treated 4T1 cells. This data has been normalized with 18 s as the housekeeping gene, and the experiment was performed on three independent samples of each group, (L) the representative image (CLSM) of 2D and 3D cell cultures is provided to aid in understanding the difference in IC50 values of 7d between them.",
+            "Results and Discussion": "7d Binds to PKM2 and Exhibits Response as Indicated by the Surface Plasmon Resonance (SPR) Analysis. The interaction between the immobilized PKM2 and the synthesized compound 7d was computed by SPR at an immobilized PKM2 concentration of 50 μg/mL. The observed results reveal that compound 7d exhibits higher affinity toward PKM2, at lower concentrations. Specifically, 7d demonstrated a calculated dissociation constant (Kd) value of 0.9152 nM (Figure 3I). This notably low Kd value serves as an indicative measure of 7d’s robust affinity toward the immobilized PKM2. Additionally, the sensogram analysis identified a response onset for compound 7d occurring at 93 s, signifying the completion of the binding cycle within this time frame from one baseline to the subsequent (Figure 3I).",
+            "Figure 3I description in text": "The sensogram analysis identified a response onset for compound 7d occurring at 93 s, signifying the completion of the binding cycle within this time frame from one baseline to the subsequent (Figure 3I)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biocore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxymethylated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "PKM2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "compound 7d",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1.05X PBS-P+",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

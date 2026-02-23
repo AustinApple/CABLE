@@ -1,0 +1,443 @@
+{
+    "50355198": {
+        "reactant_set_id": 50355198,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Br)c(Br)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    },
+    "50355200": {
+        "reactant_set_id": 50355200,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "COC(=O)CC(=O)Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Br)c(Br)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 72.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    },
+    "50355201": {
+        "reactant_set_id": 50355201,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "COC(=O)CCC(=O)Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Br)c(Br)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 150.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    },
+    "50355202": {
+        "reactant_set_id": 50355202,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "OC(=O)CC(=O)Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Br)c(Br)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 42.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    },
+    "50355203": {
+        "reactant_set_id": 50355203,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "OC(=O)CCC(=O)Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Br)c(Br)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    },
+    "50355204": {
+        "reactant_set_id": 50355204,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "COC(=O)CC(=O)Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Cl)c(Cl)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 50.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    },
+    "50355205": {
+        "reactant_set_id": 50355205,
+        "pmid": 26098163,
+        "protein": "DNA gyrase subunit A/B",
+        "ligand": {
+            "smiles": "OC(=O)CC(=O)Nc1nc2CC[C@@H](Cc2s1)NC(=O)c1cc(Cl)c(Cl)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 49.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Measurements. Surface plasmon resonance (SPR) measurements for compounds were performed on a BiacoreX machine using CMS sensor chip (Biacore, GE Healthcare). The system was primed twice with running buffer (10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). The G24 protein was immobilized on the second flow cell of a sensor chip CMS using the standard amino coupling method. Briefly, the carboxymethylated dextran layer was activated with a 7 min pulse of 1-ethyl-3-(3-(dimethylamino)propyl)carbodiimide (EDC) and N-hydroxysuccinimide (NHS) mixed in a 1:1 ratio. Protein was diluted to the final concentration of 50 μg/mL in 10 mM sodium acetate (pH = 4.5) and injected in two short pulses to reach the final immobilization level around 17400 response units. Finally, the rest of the surface was deactivated with a 7 min injection of ethanolamine. The first flow cell was activated with EDC/NHS and deactivated with ethanolamine and served as a reference cell for subtraction of nonspecific binding. Analytes were prepared as DMSO 100X stock solutions and were diluted with a running buffer prior to the injection. They were injected at a flow rate of 30 μL/min for 90 s, and dissociation was monitored for an additional 120 s. Because the dissociation of analytes from the ligand was rapid, no regeneration protocol was needed. For the titration of analytes, the 1% of the DMSO was added to the running buffer in order to diminish the difference in refractive index between the samples and running buffer. Selected compounds 3, 24, 25, 32, 35, 36, and 43 were tested at at least eight different concentrations (depending on their solubility) in three parallel titrations. Some of the concentrations were injected several times to check for the reproducibility of the binding. The sensorgrams (Supporting Information Figure S2) were analyzed using BiaEval software (Biacore, GE Healthcare). Equilibrium binding responses were determined from the binding levels 5 s before the stop of the injection. Kd values were determined by fitting of the data to a 1:1 steady state binding model as described in results.",
+            "Results and Discussion": "Surface Plasmon Resonance (SPR) Experiments. The ability of inhibitors 3, 24, 25, 32, 35, 36, and 43 to inhibit E. coli DNA gyrase in vitro was further evaluated by surface plasmon resonance. In contrast to the functional DNA gyrase assay that was used for screening and determining of IC50 values and comprises GyrA and GyrB subunits of DNA gyrase, the smaller 24 kDa N-terminal part of the GyrB subunit (GyrB24) was used for SPR experiments. The GyrB24 protein, immobilized on the CMS chip, was used for testing using novobiocin as a standard. Inhibitors were tested at eight concentrations in three parallels, depending on the response of the immobilized protein. Kd values were calculated using Origin software with a steady state affinity binding model that assumes one site binding. The results revealed fast and tight binding of inhibitors 3, 24, 25, 32, 35, 36, and 43 to the GyrB24 protein with Kd values in agreement with the previously determined IC50 values in the functional DNA gyrase assay. Measured Kd values for compounds 3, 24, 25, 32, 35, 36, and 43 were 3.0, 0.072, 0.15, 0.050, 0.042, 0.010, and 0.049 μM, which are consistent with their IC50 values of 12, 0.096, 0.093, 0.40, 0.069, 0.049, and 0.13 μM (Tables 2 and 4), suggesting the binding of these pyrrolamide-based inhibitors to the ATP-binding site of E. coli DNA gyrase."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BiacoreX"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore, GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "G24 protein (Escherichia coli DNA gyrase subunit B N-terminal 24 kDa domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "17400",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Selected compounds 3, 24, 25, 32, 35, 36, and 43 (pyrrolamide-based inhibitors)",
+                "concentration_range": "At least eight different concentrations (depending on solubility)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell activated with EDC/NHS and deactivated with ethanolamine, used as reference for subtraction of nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BiaEval software (Biacore, GE Healthcare)"
+            }
+        }
+    }
+}

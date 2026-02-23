@@ -1,0 +1,66 @@
+{
+    "50795320": {
+        "reactant_set_id": 50795320,
+        "pmid": 28526475,
+        "protein": "Indoleamine 2,3-dioxygenase 1",
+        "ligand": {
+            "smiles": "Oc1cccc(c1)-c1csc(N\\N=C2/CC(=O)c3ccccc23)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9828.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human IDO1 by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Surface plasmon resonance analysis": "The interaction between compound 1 and the IDO1 protein was determined using surface plasmon resonance (SPR). Purified human IDO1 protein was immobilized on sensor chip CM5 (GE Healthcare) and carried out at 25 °C on Biacore T200 instruments. HBS-EP buffer (0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, 0.05% v/v Surfactant P20, pH 7.4) was used as running buffer. The ratio of the association and dissociation rate constants was determined as the affinity (K_D).",
+            "Figure 5 caption": "Fig. 5. SPR analysis of compound 1 with IDO1 protein. Concentration from top to bottom: 20 μM, 12.5 μM, 10 μM, 6.25 μM, 1.5625 μM, 0.78125 μM. The equilibrium dissociation constant (K_D) value is 9.828 μM.",
+            "Results - 2.5. SPR analysis": "To further validate the interaction between compound 1 and IDO1 protein, surface plasmon resonance (SPR) assay was conducted using a Biacore T200 optical biosensor. As shown in Fig. 5, the response unit (RU) values were proportional to compound concentrations within the selected ranges. The equilibrium dissociation constant (K_D) between compound 1 and IDO1 was 9.828 μM, which demonstrated its binding affinity to the target IDO1 protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human IDO1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 1",
+                "concentration_range": "0.78125 μM - 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, 0.05% v/v Surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

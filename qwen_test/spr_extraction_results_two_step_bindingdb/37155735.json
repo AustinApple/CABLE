@@ -1,0 +1,132 @@
+{
+    "51546546": {
+        "reactant_set_id": 51546546,
+        "pmid": 37155735,
+        "protein": "Histone acetyltransferase KAT8",
+        "ligand": {
+            "smiles": "CC1=NN(C(=O)\\C1=C/c1ccc[nH]1)c1ccc(cc1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4940.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal 6His tagged KAT8 (173 to 458 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based KAT8 Binding Experiments": "SPR analyses were performed on a Biacore 3000 optical biosensor (GE Healthcare) equipped with a research-grade CMS sensor chip. KAT8 was immobilized (30 μg/mL in 10 mM sodium acetate, pH 4.5) at a flow rate of 10 μL/min by using a standard amine-coupling protocol to obtain a density of 12 kRU. One flow cell was left empty for background subtractions. Both compounds, dissolved in assay buffer (150 mM NaCl, 10 mM HEPES pH 7.4, 0.005% Tween-20), always maintaining a final 1% DMSO concentration. Binding experiments were performed at 25 °C by using a flow rate of 30 μL/min, with 120 s monitoring of association and 200 s monitoring of dissociation. Regeneration of the surfaces was performed, when necessary, by a 10 s injection of 1 mM NaOH. The simple 1:1 binding model of the BIAevaluation software was used for determining equilibrium dissociation constant (K_D) and kinetic dissociation (k_d) and association (k_a) constants by using eqs 1 and 2: dR/dt = k_a·C·(R_max - R) - k_d·R (1) K_D = k_d / k_a (2) where R represents the response unit and C is the concentration of the analyte.",
+            "Figure 3 caption": "Figure 3. Sensorgrams obtained from the SPR interaction between immobilized KAT8 and compound 19 (A) or 34 (B). Each compound was injected at different concentrations with an association time of 120 s and a dissociation time of 200 s, with a flow rate of 30 μL/min.",
+            "Figure 3 sensorgram data": "Figure 3A: Compound 19 sensorgrams at concentrations: 100 μM, 50 μM, 25 μM, 12.5 μM, 6.25 μM. K_D = 4.94 ± 0.18 μM. Figure 3B: Compound 34 sensorgrams at concentrations: 25 μM, 12.5 μM, 6.25 μM, 3.12 μM, 1.56 μM, 0.78 μM. K_D = 2.04 ± 0.24 μM.",
+            "Results section - SPR-Based Binding Assay": "To further validate the most potent and selective compounds 19 and 34 as KAT8i, we set out to perform a binding assay via SPR. This experiment enables the quantification of the direct interaction between KAT8 and any potential binder. In both cases, the interaction was dose-dependent, and the equilibrium dissociation constants (K_D) were 4.94 ± 0.18 μM (19, Figure 3A) and 2.04 ± 0.24 μM (34, Figure 3B), consistent with the KAT8 inhibitory potency observed in the biochemical assay."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal 6His tagged KAT8 (173 to 458 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "12000",
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 19 and Compound 34",
+                "concentration_range": "0.78 μM - 100 μM (for compound 19: 6.25 μM - 100 μM; for compound 34: 0.78 μM - 25 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "150 mM NaCl, 10 mM HEPES, 0.005% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 200,
+                "regeneration_solution": "1 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell left empty for background subtractions",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "51546547": {
+        "reactant_set_id": 51546547,
+        "pmid": 37155735,
+        "protein": "Histone acetyltransferase KAT8",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc(cc1)N1N=C(\\C(=C\\c2ccc[nH]2)C1=O)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2040.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal 6His tagged KAT8 (173 to 458 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based KAT8 Binding Experiments": "SPR analyses were performed on a Biacore 3000 optical biosensor (GE Healthcare) equipped with a research-grade CMS sensor chip. KAT8 was immobilized (30 μg/mL in 10 mM sodium acetate, pH 4.5) at a flow rate of 10 μL/min by using a standard amine-coupling protocol to obtain a density of 12 kRU. One flow cell was left empty for background subtractions. Both compounds, dissolved in assay buffer (150 mM NaCl, 10 mM HEPES pH 7.4, 0.005% Tween-20), always maintaining a final 1% DMSO concentration. Binding experiments were performed at 25 °C by using a flow rate of 30 μL/min, with 120 s monitoring of association and 200 s monitoring of dissociation. Regeneration of the surfaces was performed, when necessary, by a 10 s injection of 1 mM NaOH. The simple 1:1 binding model of the BIAevaluation software was used for determining equilibrium dissociation constant (K_D) and kinetic dissociation (k_d) and association (k_a) constants by using eqs 1 and 2: dR/dt = k_a·C·(R_max - R) - k_d·R (1) K_D = k_d / k_a (2) where R represents the response unit and C is the concentration of the analyte.",
+            "Figure 3 caption": "Figure 3. Sensorgrams obtained from the SPR interaction between immobilized KAT8 and compound 19 (A) or 34 (B). Each compound was injected at different concentrations with an association time of 120 s and a dissociation time of 200 s, with a flow rate of 30 μL/min.",
+            "Figure 3 sensorgram data": "Figure 3A: Compound 19 sensorgrams at concentrations: 100 μM, 50 μM, 25 μM, 12.5 μM, 6.25 μM. K_D = 4.94 ± 0.18 μM. Figure 3B: Compound 34 sensorgrams at concentrations: 25 μM, 12.5 μM, 6.25 μM, 3.12 μM, 1.56 μM, 0.78 μM. K_D = 2.04 ± 0.24 μM.",
+            "Results section - SPR-Based Binding Assay": "To further validate the most potent and selective compounds 19 and 34 as KAT8i, we set out to perform a binding assay via SPR. This experiment enables the quantification of the direct interaction between KAT8 and any potential binder. In both cases, the interaction was dose-dependent, and the equilibrium dissociation constants (K_D) were 4.94 ± 0.18 μM (19, Figure 3A) and 2.04 ± 0.24 μM (34, Figure 3B), consistent with the KAT8 inhibitory potency observed in the biochemical assay."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal 6His tagged KAT8 (173 to 458 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "12000",
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 19 and Compound 34",
+                "concentration_range": "0.78 μM - 100 μM (for compound 19: 6.25 μM - 100 μM; for compound 34: 0.78 μM - 25 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "150 mM NaCl, 10 mM HEPES, 0.005% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 200,
+                "regeneration_solution": "1 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell left empty for background subtractions",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation"
+            }
+        }
+    }
+}

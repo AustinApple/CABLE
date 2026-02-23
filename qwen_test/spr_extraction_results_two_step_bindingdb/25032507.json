@@ -1,0 +1,66 @@
+{
+    "50279918": {
+        "reactant_set_id": 50279918,
+        "pmid": 25032507,
+        "protein": "N-lysine methyltransferase KMT5A",
+        "ligand": {
+            "smiles": "COc1cc2nc(nc(NCCCCCN3CCCC3)c2cc1OC)N1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 36000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of SETD8 (unknown origin) catalytic domain expressed in Escherichia coli by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "The interaction between compound 1 and protein SETD8 was further explored using a ProteOn XPR36 biosensor (Bio-Rad Laboratories, Inc.) at 25 °C. PBS buffer (phosphate buffered saline, pH 7.4) supplemented with 0.005% Tween-20 was used as the running buffer. A GLH (catalog no. 176-5013, Bio-Rad Laboratories, Inc.) sensor chip was first activated by flowing a mixture of 20 mM sulfo-NHS and 20 mM EDC over the chip surface for 5 min at a flow rate of 30 μL/min. SETD8 was then diluted to 20 and 10 μg/mL in 5 mM NaOAc, pH 5.0, and immobilized onto two ligand channels (30 μL/min for 2 min). The surface was then deactivated by flowing 1 M ethanolamine for 5 min at a flow rate of 60 μL/min. A blank injection of the running buffer was made, after which four concentrations of the compound in the running buffer (100, 33.3, 11.1, and 3.7 μM) and a running buffer were injected simultaneously at a flow rate of 50 μL/min for 60 s. The sensorgrams obtained at the four concentrations of the compound were fit simultaneously after subtracting a ligand reference (inner spot) and a double compound reference (buffer) using a Langmuir model to obtain on (ka) and off (kd) rates. The kinetic KD was calculated based on the on and off rates for three replicates. An equilibrium analysis of the data was also performed to calculate the KD.",
+            "Figure 4 caption": "Figure 4. Compound 1 exhibits rapid on and off rates in SPR studies.",
+            "Figure 4 data": "Compound 1 (μM) curves: 100 (red), 33 (blue), 11 (green), 3.7 (orange). k_a = 2.18 ± 0.36x10^4 1/Ms, k_d = 7.82 ± 0.87x10^-1 1/s, K_D = 36.0 ± 2.3 μM. Time (s) axis ranges from -50 to 140. Response (RU) axis ranges from -20 to 160."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "SETD8",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 and 10 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 1",
+                "concentration_range": "3.7 μM - 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer (phosphate buffered saline, pH 7.4) supplemented with 0.005% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Ligand reference (inner spot) and double compound reference (buffer)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

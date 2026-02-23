@@ -1,0 +1,72 @@
+{
+    "50714580": {
+        "reactant_set_id": 50714580,
+        "pmid": 21686082,
+        "protein": "Riboflavin-binding protein",
+        "ligand": {
+            "smiles": "Cc1cc2nc3c(nc(=O)n(CC(=O)NCCCN)c3=O)n(C[C@H](O)[C@H](O)[C@H](O)CO)c2cc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 35500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to chicken riboflavin binding protein by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 15: Caelen, I.; Kalman, A.; Wahlstrom, L. Biosensor-Based Determination of Riboflavin in Milk Samples. Anal. Chem. 2003, 76 (1), 137–143.",
+            "Reference 8: White, H. B.; Merrill, A. H. Riboflavin-Binding Proteins. Annu. Rev. Nutr. 1988, 8 (1), 279–299.",
+            "Reference 16: Hong, S.; Leroueil, P. R.; Majoros, I. J.; Orr, B. G.; Baker, J. J. R.; Banaszak Holl, M. M. The Binding Avidity of a Nanoparticle-Based Multivalent Targeted Drug Delivery Platform. Chem. Biol. 2007, 14 (1), 107–115.",
+            "Reference 17: Attie, A. D.; Raines, R. T. Analysis of Receptor-Ligand Interactions. J. Chem. Educ. 1995, 72 (2), 119–124."
+        ],
+        "original_paragraph": {
+            "SPR Analysis": "SPR sensor chip prepared by immobilization of RF-linker 1 (Scheme S1 in the Supporting Information).15 Binding of RFBP to the RF-presenting sensor chip was studied by varying the concentrations of the protein in the range of 33.0 to 3.70 μM (Figure 3). RFBP bound to the surface in a dose-dependent manner characterized by the biphasic-like association, noticeably at higher doses. Such binding features might reflect various levels of accessibility to the hydrated dextran surface presenting RF ligands or conformational changes of the protein upon ligand occupation. The binding results also suggest slow dissociation of the protein, a feature reported earlier.15 As a control, bovine serum albumin did not bind to the RF-presenting surface in a specific manner (Figure S3 in the Supporting Information). The amount of RFBP bound at the surface was analyzed by the Scatchard plot as a function of the concentrations of RFBP in the buffer (inset in Figure 3). The analysis gave a value for the equilibrium dissociation constant KD (3.55 × 10−5 M). The dissociation constant for RFBP was also calculated by a different method of analysis, where we calculated kinetic binding parameters (off rate = koff; on rate = kon) by analyzing each sensorgram according to BIAevaluation software. Given the 1:1 stoichiometry for the receptor–ligand interaction,8,15 we utilized the Langmuir model16 for the global curve fitting (dotted lines in Figure 3) and derived the kinetic parameters (kon = 1.03 × 102 M−1 s−1; koff = 1.49 × 10−3 s−1; χ2 = 2.5). The resulting equilibrium dissociation constant KD was determined to be 1.45 (±0.49) × 10−5 M. This KD value obtained from the kinetic analysis is close to the value (KD = 3.55 × 10−5 M) determined from the Scatchard analysis for RFBP binding.",
+            "Figure 3 caption": "Figure 3. Binding of RFBP to the ligand 1 immobilized to a CM5 sensor chip surface. The concentration of RFBP in the HBS-EP buffer (pH 7.4) is indicated on each of the sensorgrams. The SPR sensorgrams were corrected for bulk effect (Figure S1 in the Supporting Information; global fitting curves are shown in dotted lines). The KD was determined by the Scatchard plot as shown in the inset where RUeq refers to the response unit (RU) when the protein binding reaches equilibrium on the surface.",
+            "Figure 4 caption": "Figure 4. (a) Representative SPR sensorgrams from the competitive binding experiments with 1. The binding of RFBP (11.1 μM) to the RF (1)-immobilized chip surface was competitively inhibited by the addition of the soluble ligand 1 to the RFBP solution. The concentrations of the added RF ligand are indicated in the overlay of the sensorgrams. An example of the control experiment performed by the injection of 1 alone (220 μM) without RFBP. Each of the RFBP sensorgrams (RFBP + ligand) was corrected against the contribution by the soluble ligand (ligand alone) measured at the designated concentration. (b and c) Plot of fractional inhibition (F = 1 − RU[1]/RU[0]) as a function of inhibitor (ligand) concentration for each of the competitive inhibitors (RF, quinacrine, and 1). The response unit (RU[1]) for each sensorgram was determined by correcting the bulk contribution as described earlier. The range of inhibition concentrations was lower in the case of quinacrine due to its limited solubility in the SPR running buffer.",
+            "SPR Competitive Binding Results": "The SPR method developed here was then used to screen RF-mimicking small molecules for inhibiting the adsorption of RFBP to the chip surface presenting RF ligand 1. As an illustration, Figure 4 shows that the addition of soluble RF ligand 1 to the RFBP-containing solution inhibited the binding of RFBP (11.1 μM) to the surface. The amount of RFBP adsorbed to the surface decreased with increasing concentrations of 1 in solution in a dose-dependent manner where approximately 90% of the protein adsorption was inhibited at the concentrations above ~500 μM. The results from the competition experiments suggest that the interaction between RFBP and 1 immobilized at the surface is biospecific and can be competitively blocked by adding free 1 in the solution. The ligand competition experiment was also performed with RF and quinacrine, the RF-mimicking small molecule identified as the ligand for RFBP from the ITC study (Figure 4 and Figure S2 in the Supporting Information). Each of the experiments suggests for specific blocking of RFBP adsorption to the surface as a function of the ligand concentration. On the basis of the SPR results, the inhibition constant Ki was derived for each ligand according to the solution competition equation,17 and its values are summarized in Table S2 in the Supporting Information. As a reference molecule, RF has a Ki value of 0.35 μM, an inhibitory activity approximately 7-fold more potent than its N(3) derivative 1. In addition, the SPR experiments demonstrated that quinacrine is a competitive inhibitor for RFBP with a Ki value of 6.7 μM. Thus, quinacrine has an inhibitory activity for RFBP ~19-fold lower than RF."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "RF-linker 1",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "RFBP (chicken riboflavin binding protein)",
+                "concentration_range": "3.70 μM to 33.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Control surface with bovine serum albumin (non-specific binding control)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation"
+            }
+        }
+    }
+}

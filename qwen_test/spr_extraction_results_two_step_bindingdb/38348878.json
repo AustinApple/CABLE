@@ -1,0 +1,132 @@
+{
+    "51591561": {
+        "reactant_set_id": 51591561,
+        "pmid": 38348878,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "O=C(O)CN1CCc2nc(OCc3cccc(-c4ccccc4F)c3Cl)ccc2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal human PD-L1 expressed in HEK293 cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. The binding affinity of compounds with mPD-L1 (S0010-M08H, Sino Biological) was examined on a Biacore S200. Briefly, human PD-L1 protein was diluted to 25 μg/mL in 10 mM sodium acetate (pH = 5.0) and then immobilized on a CMS chip for 900 s at a flow rate of 5 μL/min. Dual channels were involved in each experiment, one capturing the ligand and the other serving as a reference channel. The tested compounds were diluted with running buffer (1× HBS-EP containing 5% DMSO) to different concentrations and then injected simultaneously at a flow rate of 30 μL/min, with 60 s of association followed by 90 s of dissociation at 25 °C. The flow path was flushed with a 1X solution of 5% DMSO, and 50% DMSO was used for washing the chip surface. The K_D value was calculated using Biacore S200 Evaluation software. Similarly, hPD-L1/Fc protein (PDI-H5258, Acro Biosystems) was diluted to 25 μg/mL and then immobilized on a Series S Sensor Chip Protein A for 120 s at a flow rate of 10 μL/min. Dual channels were involved in each experiment, one capturing the ligand and the other serving as a reference channel. The tested compounds were diluted with running buffer (1× HBS-EP containing 5% DMSO) to different concentrations and then injected simultaneously at a flow rate of 30 μL/min, with 60 s of association followed by 90 s of dissociation at 25 °C. For the regeneration of surface after each cycle (one-time ligand capture and binding of analyte at a single concentration) was carried out using 10 mM glycine pH 1.5 at a flow rate of 30 μL/min for 30 s.",
+            "Figure 4 caption": "Figure 4. (A) Binding affinity of BMS-202 at different concentrations with mPD-L1 by SPR assay. (B) The binding affinity of X14 at different concentrations with mPD-L1 by SPR assay. (C) Effect of compound X14 on PBMCs killing MDA-MB-231 cells. Tumor cell viability was detected by LDH release. All data are displayed as mean ± SD (*P < 0.05, ***P < 0.001, ****P < 0.0001 vs PBMC group, n = 3).",
+            "Figure 4A": "BMS-202 (K_D =1.37 μM) 39 nM, 78 nM, 156 nM, 625 nM, 1250 nM, 2500 nM",
+            "Figure 4B": "X14 (K_D = 392 nM) 10 nM, 20 nM, 39 nM, 78 nM, 156 nM, 313 nM, 625 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CMS chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "mPD-L1 (S0010-M08H, Sino Biological)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., BMS-202, X14)",
+                "concentration_range": "39 nM - 2500 nM (for BMS-202); 10 nM - 625 nM (for X14)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× HBS-EP containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "10 mM glycine pH 1.5"
+            },
+            "data_analysis": {
+                "reference_description": "Dual channels: one capturing ligand, the other serving as reference channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore S200 Evaluation software"
+            }
+        }
+    },
+    "51591559": {
+        "reactant_set_id": 51591559,
+        "pmid": 38348878,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "O=C(O)CN1CCc2nc(OCc3cccc(-c4ccccc4F)c3Cl)ccc2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 392000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to his-tagged mouse PD-L1 expressed in HEK293 cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. The binding affinity of compounds with mPD-L1 (S0010-M08H, Sino Biological) was examined on a Biacore S200. Briefly, mPD-L1 protein was diluted to 25 μg/mL in 10 mM sodium acetate (pH = 5.0) and then immobilized on a CMS chip for 900 s at a flow rate of 5 μL/min. Dual channels were involved in each experiment, one capturing the ligand and the other serving as a reference channel. The tested compounds were diluted with running buffer (1× HBS-EP containing 5% DMSO) to different concentrations and then injected simultaneously at a flow rate of 30 μL/min, with 60 s of association followed by 90 s of dissociation at 25 °C. The flow path was flushed with a 1X solution of 5% DMSO, and 50% DMSO was used for washing the chip surface. The K_D value was calculated using Biacore S200 Evaluation software. Similarly, hPD-L1/Fc protein (PDI-H5258, Acro Biosystems) was diluted to 25 μg/mL and then immobilized on a Series S Sensor Chip Protein A for 120 s at a flow rate of 10 μL/min. Dual channels were involved in each experiment, one capturing the ligand and the other serving as a reference channel. The tested compounds were diluted with running buffer (1× HBS-EP containing 5% DMSO) to different concentrations and then injected simultaneously at a flow rate of 30 μL/min, with 60 s of association followed by 90 s of dissociation at 25 °C. For the regeneration of surface after each cycle (one-time ligand capture and binding of analyte at a single concentration) was carried out using 10 mM glycine pH 1.5 at a flow rate of 30 μL/min for 30 s.",
+            "Figure 4 caption": "Figure 4. (A) Binding affinity of BMS-202 at different concentrations with mPD-L1 by SPR assay. (B) The binding affinity of X14 at different concentrations with mPD-L1 by SPR assay. (C) Effect of compound X14 on PBMCs killing MDA-MB-231 cells. Tumor cell viability was detected by LDH release. All data are displayed as mean ± SD (*P < 0.05, ***P < 0.001, ****P < 0.0001 vs PBMC group, n = 3).",
+            "Figure 4A": "BMS-202 (K_D =1.37 μM) 39 nM, 78 nM, 156 nM, 625 nM, 1250 nM, 2500 nM",
+            "Figure 4B": "X14 (K_D = 392 nM) 10 nM, 20 nM, 39 nM, 78 nM, 156 nM, 313 nM, 625 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CMS chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "mPD-L1 (S0010-M08H, Sino Biological)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., BMS-202, X14)",
+                "concentration_range": "39 nM - 2500 nM for BMS-202; 10 nM - 625 nM for X14"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× HBS-EP containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "10 mM glycine pH 1.5"
+            },
+            "data_analysis": {
+                "reference_description": "Dual channels: one capturing ligand, the other serving as reference channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore S200 Evaluation software"
+            }
+        }
+    }
+}

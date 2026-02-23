@@ -1,0 +1,498 @@
+{
+    "51440990": {
+        "reactant_set_id": 51440990,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)(C)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@@H]1CCCN1C(=O)OC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440991": {
+        "reactant_set_id": 51440991,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)(C)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1ccccc1)NCc1ccc(cc1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19050.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440992": {
+        "reactant_set_id": 51440992,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](NCc1ccc(cc1)-c1ccccc1)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440993": {
+        "reactant_set_id": 51440993,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)(C)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC#C)NCc1ccc(cc1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440994": {
+        "reactant_set_id": 51440994,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "C=CC[C@H](NCc1ccccc1)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCc1ccc(cc1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440995": {
+        "reactant_set_id": 51440995,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "ClCC(=O)N[C@@H](CC=C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440996": {
+        "reactant_set_id": 51440996,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "COC(=O)c1ccc2n(CC(C)C)cc(CN(CCc3ccc(cc3)-c3ccccc3)Cc3ccccc3)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3260.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    },
+    "51440997": {
+        "reactant_set_id": 51440997,
+        "pmid": 34571172,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "COC(=O)c1ccc2n(C)cc(CN(Cc3ccccc3)C(=O)[C@H](CC#C)NC(=O)OC(C)(C)C)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11410.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip immobilized SARS-CoV-2 spike glycoprotein assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR binding assay": "6.1.7. SPR binding assay SARS-CoV-2 Spike protein (SP) was acquired by GenScript Biotech, NE (cat. no. Z03501-1). Series S Sensor Chip CM5 8 (cat. no. BR100530), His Capture Kit (cat. no. 28995056), Amine Coupling Kit (cat. no. BR100050), HBS-P (cat. no. BR100368) were purchased from Cytiva. The affinity of synthetic compounds for SARS-CoV-2 Spike protein (SP) was determined by SPR using a Biacore T200 (Cytiva) optical biosensor equipped with research-grade CM5 (Carboxy Methyl Dextran) sensor chip. Prior to the immobilization of the SP protein, a pH scouting was performed as follows. Solutions of 1.25 μM of the ligand in 10 mM sodium acetate with pH values ranging from 4.47 to 6 were prepared and injected onto the surface. The SP protein (1.25 μM in 10 mM sodium acetate, pH 4.59) was immobilized by using standard amine-coupling protocol to obtain densities of 1500 RU. HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO was used as a running buffer. Stock solutions of compounds in 100% DMSO were prepared (10 mM). Running buffer was injected at a flow rate of 10 μL/min over the chip to clean and equilibrate the immobilized sensor surface, then a solvent correction was performed as indicated in Laboratory Guideline 29-0057-18 AA, GE Healthcare Life Sciences. A series of increasing concentrations of compounds (0.75–100 μM) diluted in the ligand buffer were injected at 25 °C with a flow rate of 20 μL/min for 90 s (association phase), and then the buffer alone was injected for 600 s (dissociation phase). A regeneration step was not necessary. The first channel was used as a reference surface. The experiments were performed in triplicate. The equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants were calculated from the sensorgrams by global fitting of a 1:1 binding model using evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 Spike protein (SP)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500",
+                "concentration_for_immobilization": "1.25 μM in 10 mM sodium acetate, pH 4.59"
+            },
+            "analyte": {
+                "description": "Synthetic compounds",
+                "concentration_range": "0.75–100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 0.005% (v/v) Surfactant P20) diluted 10 × with Milli-Q water and supplemented with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "The first channel was used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Evaluation software (v3.1) provided with the Biacore T200 instrument (Cytiva)"
+            }
+        }
+    }
+}

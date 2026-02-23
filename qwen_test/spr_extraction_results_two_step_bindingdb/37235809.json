@@ -1,0 +1,64 @@
+{
+    "51541896": {
+        "reactant_set_id": 51541896,
+        "pmid": 37235809,
+        "protein": "Trehalose monomycolate exporter MmpL3",
+        "ligand": {
+            "smiles": "CC(C)=CCC\\C(C)=C\\CNCCNC1C2CC3CC(C2)CC1C3"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 400000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Mycobacterium smegmatis MmpL3 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "21. Jia L, Noker PE, Coward L, Gorman GS, Protopopova M, Tomaszewski JE, Interspecies pharmacokinetics and in vitro metabolism of SQ109. Br J Pharmacol 2006, 147 (5), 476–85. [PubMed: 16432511]",
+        "original_paragraph": {
+            "Materials and Methods": "The SPR experiments were performed as described previously.21 Briefly, M. smegmatis MmpL3 was immobilized on a CM5 sensor chip (GE Healthcare) using amine coupling. The running buffer was 10 mM HEPES, 150 mM NaCl, 0.005% Tween 20, pH 7.4. Compounds were dissolved in DMSO and diluted in running buffer to final concentrations of 0.1, 0.3, 1, 3, 10, 30, and 100 μM. The association phase was 120 s, and the dissociation phase was 180 s. Regeneration was performed with 10 mM glycine-HCl, pH 2.0. Data were analyzed using Biacore T200 Evaluation Software (GE Healthcare)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "M. smegmatis MmpL3",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds dissolved in DMSO and diluted in running buffer",
+                "concentration_range": "0.1, 0.3, 1, 3, 10, 30, and 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.005% Tween 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine-HCl, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation Software (GE Healthcare)"
+            }
+        }
+    }
+}

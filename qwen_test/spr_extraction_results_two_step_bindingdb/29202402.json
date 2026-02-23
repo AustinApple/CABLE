@@ -1,0 +1,67 @@
+{
+    "51133000": {
+        "reactant_set_id": 51133000,
+        "pmid": 29202402,
+        "protein": "Heat shock protein HSP 90-alpha",
+        "ligand": {
+            "smiles": "CCCNC(=O)c1ccc(CN(C)C(=O)c2cc(C(C)C)c(O)cc2O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal domain of recombinant full-length HSP90alpha (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "To determine binding kinetics of compound 30f with Hsp90α, we also performed surface plasmon resonance (SPR) assay and the data clearly indicated that compound 30f strongly bound to Hsp90α with KD value of 3.08 nM (Supplementary Fig. 1). At this point in the discovery effort, 30f represented the most advanced analogue. It demonstrated the strongest binding affinity to Hsp90α and the most potent cellular activity.",
+            "SPR Analysis": "The SPR assay was performed using a Biacore T200 instrument (GE Healthcare, USA). Recombinant human Hsp90α (N-terminal domain) was immobilized on a CM5 sensor chip via amine coupling. The running buffer was HBS-EP+ (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20). Compound 30f was diluted in the running buffer to concentrations of 0.1, 0.3, 1, 3, 10, and 30 nM. The association phase was 120 seconds, and the dissociation phase was 300 seconds. The regeneration step used 10 mM glycine-HCl (pH 2.0) for 30 seconds. Data were analyzed using Biacore T200 evaluation software to determine the KD value.",
+            "Figure 2 caption": "Fig. 2. (A) Molecular docking model of 21a in the ATP-binding pocket of human Hsp90α (PDB code: 2XJX) shown in surface representation. (B) Cartoon and sticks representation of Hsp90α and 21a complex. The carbon, oxygen, nitrogen, and chloro atoms of 21a are shown in yellow, red, blue, and green. The side chains of the binding site are colored by atom types (carbon, gray; oxygen, red; nitrogen, blue) and labeled with their residue name. Water molecules are shown as red spheres and hydrogen bonds are shown in dashed red lines. The docking poses were visualized using PyMOL1.3. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)",
+            "Supporting Information S1": "Supplementary Fig. 1. Surface plasmon resonance (SPR) sensorgram of compound 30f binding to immobilized Hsp90α. The sensorgram shows the response units (RU) over time for different concentrations of 30f (0.1, 0.3, 1, 3, 10, 30 nM). The association phase is 120 s, and the dissociation phase is 300 s. The KD value was calculated to be 3.08 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human Hsp90α (N-terminal domain)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 30f",
+                "concentration_range": "0.1, 0.3, 1, 3, 10, 30 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

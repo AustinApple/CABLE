@@ -1,0 +1,68 @@
+{
+    "51468536": {
+        "reactant_set_id": 51468536,
+        "pmid": 35792403,
+        "protein": "Receptor-interacting serine/threonine-protein kinase 2",
+        "ligand": {
+            "smiles": "COC1=CC(=O)C(CC=C(C)C)(CC=C(C)C)C(=O)\\C1=C(/O)\\C=C\\c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5360.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant RIPK2 (unknown origin) measured by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "Biacore T200 system (GE Healthcare, Uppsala, Sweden) was used to conduct SPR for competition and affinity analysis at 25 °C. Standard amine coupling approach was used to immobilize the recombinant RIPK2 protein on the carboxymethylated 5 (CM5) sensor chip (GE Healthcare). A series of concentrations of TC (3.125 to 100 μM) were used as analytes in the running buffer. Biacore evaluation software (T200 Version 1.0) was employed for analysis of the results.",
+            "Figure 3 caption": "Fig. 3. TC directly binds to RIPK2. (A) The affinity of RIPK2 binding with TC was determined by SPR. (B) The target affinity of RIPK2 binding with TC was determined by microscale thermophoresis (MST). (C) TC (20 μM) was used to pre-treat the BV-2 cells for 4 h. The cellular thermal shift assay (CETSA) was then conducted and the temperature was gradient. Western blot and antibody against RIPK2 were used to analyze the lysates. (D) Docking and molecular dynamics simulation of TC in RIPK2. a) Overall structure of TC bound to RIPK2. b, c) Specific structural interactions observed in the RIPK2 active-site pocket in the RIPK2/TC complex. (E) RIPK2 expression levels were detected by Western blotting after the cells were transfected by RIPK2 siRNA. (F) RIPK2 was necessary for TC-mediated anti-inflammatory activity. RIPK2 siRNA-transfected cells were induced by LPS with or without TC for anti-inflammation assay, and the NO and IL-6 secretions after siRNA knockdown of RIPK2 were detected. The bars in the graph were mean ± SD of 3 independent experiments. Unpaired two-tailed Student’s t test was conducted.",
+            "Figure 3A": "The affinity of RIPK2 binding with TC was determined by SPR. The graph shows a binding curve with concentration on the x-axis (log scale) and response on the y-axis. The curve is fitted with a line, and the text on the graph indicates Kd = 5.36 μM.",
+            "Figure 3C": "The cellular thermal shift assay (CETSA) was conducted with a gradient temperature (42, 46, 50, 54 °C). Western blot analysis was performed to detect RIPK2 and β-actin. The lanes are labeled as TC (treated with TC) and CON (control). The bands for RIPK2 show increased stability in the TC-treated samples at higher temperatures compared to the control.",
+            "Figure 2C": "The signal peaks of TC and blank areas on the chip surface when the BV-2 cell lysate flowed through. The graph shows binding signal (RU) over time (s). The red line represents Tunicatachalcone - BV-2, and the black line represents Background - BV-2. The red line shows a clear binding response with a plateau around 4000 RU, while the black line remains near 0 RU."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant RIPK2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "TC",
+                "concentration_range": "3.125 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore evaluation software (T200 Version 1.0)"
+            }
+        }
+    }
+}

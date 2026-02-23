@@ -1,0 +1,70 @@
+{
+    "51585741": {
+        "reactant_set_id": 51585741,
+        "pmid": 38776379,
+        "protein": "Poly [ADP-ribose] polymerase 1",
+        "ligand": {
+            "smiles": "COc1cc(-c2nc3c(C(N)=O)cccc3[nH]2)cc(Br)c1OS(=O)(=O)c1ccccc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 56.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PAPR1 (unknown origin) assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "5.6. SPR Assay. The SPR assay was similar to the previous study, with the aid of the SpotBot3Microarrayer control software in the Arrayit SpotBot3 pinpoint platform to biosensor Graft-to-PCL surface, and UV cross-linking for 15 min to cross-link Compound I16 to the chip surface. PARP-1 and mutated PARP-1 proteins diluted to different concentrations were injected for detection. The data obtained were analyzed and fitted according to the PLEXERA SPR Data Analysis Module (DAM) analysis software to obtain binding curves and equilibrium dissociation constants (K_D).",
+            "Figure 4 caption": "Figure 4. (A) SPR for evaluating the affinity of I16 for PARP-1 protein. (B) SPR for evaluating the affinity of I16 for mutated PARP-1 proteins.",
+            "Results section": "To further verify whether the binding of compound I16 to PARP-1 protein is a result of I16 occupying the S site of PARP-1 protein, we mutated some of the key amino acids in the S-site of PARP-1 protein by mutating three key amino acids, Ala755, Gln759, and Val762 to Gln755, Ser759, and Ile762, which are the corresponding amino acid residues in PARP-2. The surface plasmon resonance (SPR) technique was able to determine the affinity ability between small molecules and proteins. The results indicate that compound I16 has a strong binding affinity with PARP-1 with a K_D value of 55.7 nM, and the K_D value of I16 with mutated PARP-1 protein is 74.5 nM (Figure 4).",
+            "Figure 4A plot": "K_D value = 55.7 nM",
+            "Figure 4B plot": "K_D value = 74.5 nM",
+            "Figure 4A legend": "BSA 100nM, PARP-1 50 nM, PARP-1 100 nM, PARP-1 200 nM, PARP-1 400 nM, PARP-1 800 nM",
+            "Figure 4B legend": "BSA 100nM, PARP-1(MUT) 50 nM, PARP-1(MUT) 100 nM, PARP-1(MUT) 200 nM, PARP-1(MUT) 400 nM, PARP-1(MUT) 800 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Arrayit",
+                "model": "SpotBot3 pinpoint platform"
+            },
+            "sensor_chip": {
+                "type": "Graft-to-PCL",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Compound I16",
+                "strategy": "Photo-crosslinking",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PARP-1 and mutated PARP-1 proteins",
+                "concentration_range": "50 nM - 800 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "BSA 100 nM",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "PLEXERA SPR Data Analysis Module (DAM)"
+            }
+        }
+    }
+}

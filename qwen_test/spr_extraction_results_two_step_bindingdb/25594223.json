@@ -1,0 +1,197 @@
+{
+    "50313221": {
+        "reactant_set_id": 50313221,
+        "pmid": 25594223,
+        "protein": "Env polyprotein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](N)CSC1CC(=O)N(CCOCCOCCOCc2cn(CCO[C@@H]3O[C@H](CO)[C@@H](O[C@@H]4O[C@H](CO[C@@]5(C[C@H](O)[C@@H](NC(C)=O)[C@@H](O5)[C@H](O)[C@H](O)CO)C(O)=O)[C@@H](O)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)nn2)C1=O)[C@@H](C)O)[C@@H](C)CC)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 250.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 gp41 (46 residues) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Assay. The binding of glyENFs and related peptides to peptide 8 were analyzed by a BIACore biosensor system (BIACore 3000, Biacore Co., Ltd.) based on SPR technique. Peptide 8 was covalently immobilized onto a sensor chip (CM-5, BIACore, research grade) by an amine-coupling method according to the manufacturer’s instructions. The test peptide (in PBS buffer, pH 7.4) at graded concentrations was poured over the sensor chip surface at a rate of 20 μL/min. BSA was used as a negative control. The binding kinetic parameters were calculated by a BIAevaluation software (version 4.1).",
+            "Figure 3 caption": "Figure 3. Binding of ENF, Lac-ENF, and SL-ENF to peptide 8. The analyses were carried out with a BIACore sensor system. Peptide 8 was immobilized onto the surface of Biacore sensor chips. The analyte (ENF, Lac-ENF, or SL-ENF) in running buffer (PBS, pH 7.4) at the indicated concentration was poured over the surface. The Kd values were calculated using the BIACore 3000 analysis software (BIAevaluation, version 4.1). The details of the calculated binding parameters are provided in the Supporting Information (Table S1).",
+            "Results and Discussion": "We next verified that the antiviral activity of glyENFs was attributed to their interactions with the viral gp41 protein. This was analyzed by surface plasmon resonance (SPR) experiments using a 46-residue peptide fragment of gp41, designated N46 (8, for the sequence, see the Experimental Section), which represents the N-heptad repeat (NHR) domain of gp41 and the binding target of ENF and peptide 1. Both Lac-ENF and SL-ENF strongly bound to peptide 8, with affinities of 452 nM and 250 nM, respectively, which are of the same order of magnitude as observed for ENF binding (182 nM) (Figure 3). This result confirms that the addition of glycans to the N-terminus of ENF did not significantly alter the intrinsic affinity of ENF toward the viral fusogenic protein and, thus, did not affect the antiviral activity of ENF (Table 1). The interactions between the peptide 8 and the cysteine-incorporated ENFs or other glyENFs (ENF-Lac and ENF-SL) were also identified and the binding kinetic data (Supporting Information, Table S1) are largely consistent with their antiviral potency. Additionally, no interaction of 8 was detected for BSA, which was used as a negative control.",
+            "Figure 3 sensorgram data": "The sensorgram in Figure 3 shows the response unit (y-axis) over time (x-axis, 100 to 250 s). Three curves are shown: ENF (1.1 μM) with a Kd of 182 nM, SL-ENF (1.8 μM) with a Kd of 250 nM, and Lac-ENF (3.0 μM) with a Kd of 452 nM. The concentrations are labeled on the curves."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "BIACore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "peptide 8",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ENF, Lac-ENF, SL-ENF",
+                "concentration_range": "1.1 μM, 1.8 μM, 3.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "BSA (negative control)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation, version 4.1"
+            }
+        }
+    },
+    "50313222": {
+        "reactant_set_id": 50313222,
+        "pmid": 25594223,
+        "protein": "Env polyprotein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1cnc[nH]1)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccc(O)cc1)NC(C)=O)[C@@H](C)O)[C@@H](C)CC)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 182.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 gp41 (46 residues) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Assay. The binding of glyENFs and related peptides to peptide 8 were analyzed by a BIACore biosensor system (BIACore 3000, Biacore Co., Ltd.) based on SPR technique. Peptide 8 was covalently immobilized onto a sensor chip (CM-5, BIACore, research grade) by an amine-coupling method according to the manufacturer’s instructions. The test peptide (in PBS buffer, pH 7.4) at graded concentrations was poured over the sensor chip surface at a rate of 20 μL/min. BSA was used as a negative control. The binding kinetic parameters were calculated by a BIAevaluation software (version 4.1).",
+            "Figure 3 caption": "Figure 3. Binding of ENF, Lac-ENF, and SL-ENF to peptide 8. The analyses were carried out with a BIACore sensor system. Peptide 8 was immobilized onto the surface of Biacore sensor chips. The analyte (ENF, Lac-ENF, or SL-ENF) in running buffer (PBS, pH 7.4) at the indicated concentration was poured over the surface. The Kd values were calculated using the BIACore 3000 analysis software (BIAevaluation, version 4.1). The details of the calculated binding parameters are provided in the Supporting Information (Table S1).",
+            "Results and Discussion": "We next verified that the antiviral activity of glyENFs was attributed to their interactions with the viral gp41 protein. This was analyzed by surface plasmon resonance (SPR) experiments using a 46-residue peptide fragment of gp41, designated N46 (8, for the sequence, see the Experimental Section), which represents the N-heptad repeat (NHR) domain of gp41 and the binding target of ENF and peptide 1. Both Lac-ENF and SL-ENF strongly bound to peptide 8, with affinities of 452 nM and 250 nM, respectively, which are of the same order of magnitude as observed for ENF binding (182 nM) (Figure 3). This result confirms that the addition of glycans to the N-terminus of ENF did not significantly alter the intrinsic affinity of ENF toward the viral fusogenic protein and, thus, did not affect the antiviral activity of ENF (Table 1). The interactions between the peptide 8 and the cysteine-incorporated ENFs or other glyENFs (ENF-Lac and ENF-SL) were also identified and the binding kinetic data (Supporting Information, Table S1) are largely consistent with their antiviral potency. Additionally, no interaction of 8 was detected for BSA, which was used as a negative control.",
+            "Figure 3 sensorgram data": "The sensorgram in Figure 3 shows the response unit (y-axis) over time (x-axis, 100 to 250 s). Three curves are shown: ENF (1.1 μM) with a Kd of 182 nM, SL-ENF (1.8 μM) with a Kd of 250 nM, and Lac-ENF (3.0 μM) with a Kd of 452 nM. The concentrations are labeled on the curves."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "BIACore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "peptide 8",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ENF, Lac-ENF, SL-ENF",
+                "concentration_range": "1.1 μM, 1.8 μM, 3.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "BSA (negative control)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation, version 4.1"
+            }
+        }
+    },
+    "50313223": {
+        "reactant_set_id": 50313223,
+        "pmid": 25594223,
+        "protein": "Env polyprotein",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](N)CSC1CC(=O)N(CCOCCOCCOCc2cn(CCO[C@@H]3O[C@H](CO)[C@@H](O[C@@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@H]4O)[C@H](O)[C@H]3O)nn2)C1=O)[C@@H](C)O)[C@@H](C)CC)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccccc1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 452.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 gp41 (46 residues) by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Assay. The binding of glyENFs and related peptides to peptide 8 were analyzed by a BIACore biosensor system (BIACore 3000, Biacore Co., Ltd.) based on SPR technique. Peptide 8 was covalently immobilized onto a sensor chip (CM-5, BIACore, research grade) by an amine-coupling method according to the manufacturer’s instructions. The test peptide (in PBS buffer, pH 7.4) at graded concentrations was poured over the sensor chip surface at a rate of 20 μL/min. BSA was used as a negative control. The binding kinetic parameters were calculated by a BIAevaluation software (version 4.1).",
+            "Figure 3 caption": "Figure 3. Binding of ENF, Lac-ENF, and SL-ENF to peptide 8. The analyses were carried out with a BIACore sensor system. Peptide 8 was immobilized onto the surface of Biacore sensor chips. The analyte (ENF, Lac-ENF, or SL-ENF) in running buffer (PBS, pH 7.4) at the indicated concentration was poured over the surface. The Kd values were calculated using the BIACore 3000 analysis software (BIAevaluation, version 4.1). The details of the calculated binding parameters are provided in the Supporting Information (Table S1).",
+            "Results and Discussion": "We next verified that the antiviral activity of glyENFs was attributed to their interactions with the viral gp41 protein. This was analyzed by surface plasmon resonance (SPR) experiments using a 46-residue peptide fragment of gp41, designated N46 (8, for the sequence, see the Experimental Section), which represents the N-heptad repeat (NHR) domain of gp41 and the binding target of ENF and peptide 1. Both Lac-ENF and SL-ENF strongly bound to peptide 8, with affinities of 452 nM and 250 nM, respectively, which are of the same order of magnitude as observed for ENF binding (182 nM) (Figure 3). This result confirms that the addition of glycans to the N-terminus of ENF did not significantly alter the intrinsic affinity of ENF toward the viral fusogenic protein and, thus, did not affect the antiviral activity of ENF (Table 1). The interactions between the peptide 8 and the cysteine-incorporated ENFs or other glyENFs (ENF-Lac and ENF-SL) were also identified and the binding kinetic data (Supporting Information, Table S1) are largely consistent with their antiviral potency. Additionally, no interaction of 8 was detected for BSA, which was used as a negative control.",
+            "Figure 3 sensorgram data": "The sensorgram in Figure 3 shows the response unit (y-axis) over time (x-axis, 100 to 250 s). Three curves are shown: ENF (1.1 μM) with a Kd of 182 nM, SL-ENF (1.8 μM) with a Kd of 250 nM, and Lac-ENF (3.0 μM) with a Kd of 452 nM. The concentrations are labeled on the curves."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore Co., Ltd.",
+                "model": "BIACore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "peptide 8",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ENF, Lac-ENF, SL-ENF",
+                "concentration_range": "1.1 μM, 1.8 μM, 3.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "BSA (negative control)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation, version 4.1"
+            }
+        }
+    }
+}

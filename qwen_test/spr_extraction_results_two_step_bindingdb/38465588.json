@@ -1,0 +1,264 @@
+{
+    "51587373": {
+        "reactant_set_id": 51587373,
+        "pmid": 38465588,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@@H](CO)NCc1cc(Cl)c(OCc2cccc(-c3cccc(OCCCN(CCO)CCO)c3)c2Cl)cc1OCc1ccc2nonc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to his-tagged human PD-L1 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Assay": "The binding affinity of compounds with human PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-H5229) and the mouse PD-L1 IgV domain (Mouse PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-M5220) was assessed using a Biacore T200 instrument (GE Healthcare Biosciences, Sweden). In brief, PD-L1 or PD-1 was diluted in sodium acetate solution (pH 4.5) to a final concentration of 50 μg/mL and immobilized onto a CMS chip, following a standard amine-coupling procedure. Compounds were serially diluted using a PBS buffer containing 0.05% Tween 20 and 5% DMSO to appropriate concentrations and then injected over the chip following a predefined program. The Kd value was determined using Biacore T200 evaluation software (GE Healthcare).",
+            "Materials and Methods - Crystallization of the Complex of hPD-L1 with Small-Molecule Inhibitor X18": "The DNA encoding human PD-L1 (18–134) with a C-terminal 6His tag was inserted into the pET21b vector and transformed into BL21 (DE3) cells for protein expression. The purified inclusion bodies were dissolved in a solution containing 50 mM Tris HCl (pH 8.0), 200 mM NaCl, and 8 M urea and then refolded by diluting with a solution of 50 mM Tris HCl (pH 8.0), 0.5 M arginine, 2 mM reduced-GSH, and 0.2 mM oxidized-GSH with a gradient of urea concentrations from 6 to 0 M. The refolded protein was purified using a Superdex S75 column equilibrated. The hPD-L1 protein at a concentration of 2.5 mg/mL was mixed with compound X18 at a molar ratio of 1:3 and incubated on ice for 60 min. The resulting protein complex was screened for crystallization at 16 °C using a 1:1 ratio of protein to reservoir solution, following the sitting-drop vapor-diffusion method. Diffraction-quality crystals of hPD-L1/X18 complex were obtained from 19% PEG3350% and 0.2 M ammonium tartrate dibasic. The crystals were cryoprotected by the reservoir solution with 25% MPD and flash-frozen in liquid nitrogen for the diffraction data collection. The diffraction data of the crystals were collected at 100 K at the beamlines BL18U1 at Shanghai Synchrotron Radiation Facility and were processed using the HKL3000 software packages. The structures were solved via molecular replacement with the CCP4 program, utilizing a search model from PDB code 5C3T. The model was built using Coot, and subsequent refinement was performed using PHENIX. Data collection and refinement statistics are provided in Table S1.",
+            "Results and Discussion - Binding Affinity Detection": "The binding affinity of X3, X7, X18, and L7 was determined by the surface plasmon resonance (SPR) method. The results of SPR kinetic analysis shown in Table 4 confirmed that all these compounds have strong binding affinity with PD-L1. In order to further assess the interspecies selectivity of X18, we employed SPR to evaluate the binding affinity of X18 with murine PD-L1 (mPD-L1). The results demonstrated that X18 also exhibited high affinity for mPD-L1, with a dissociation constant (Kd) of 31.8 nM (Figure S1).",
+            "Table 4 - Cell-Based NFAT Reporter Gene Activity and Binding Affinity Value of Compounds": "Comp. EC50 (nM) RLUmax Kd (nM) X1 N/A N/A 34.1 ± 13.9 X3 353.2 ± 29.3 2.0 ± 0.04 22.9 ± 1.3 X7 158.4 ± 19.2 2.2 ± 0.02 2.0 ± 1.7 X18 152.8 ± 7.6 2.3 ± 0.03 3.7 ± 3.8 L7 356.4 ± 16.1 1.8 ± 0.05 3.7 ± 3.8",
+            "Figure 6 caption": "Figure 6. (A) X-ray crystal structure of compound X18 in complex with PD-L1 (PDB ID: 8XRS). (B) Interactions between X18 and PD-L1. The π–π stacking interactions are shown as magenta dash line, and hydrogen bond interactions are shown as yellow dash line."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "human PD-L1/B7-H1 Protein, His Tag (ACRO, PD1-H5229) or mouse PD-L1 IgV domain (ACRO, PD1-M5220)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds X3, X7, X18, L7, and X1 (small-molecule inhibitors)",
+                "concentration_range": "Serial dilutions in PBS buffer containing 0.05% Tween 20 and 5% DMSO (exact range not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer containing 0.05% Tween 20 and 5% DMSO",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51587374": {
+        "reactant_set_id": 51587374,
+        "pmid": 38465588,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@@H](CO)NCc1cc(Cl)c(OCc2cccc(-c3cccc(OCCCN4CCC(O)CC4)c3)c2Cl)cc1OCc1ccc2nonc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 23.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to his-tagged human PD-L1 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Assay": "The binding affinity of compounds with human PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-H5229) and the mouse PD-L1 IgV domain (Mouse PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-M5220) was assessed using a Biacore T200 instrument (GE Healthcare Biosciences, Sweden). In brief, PD-L1 or PD-1 was diluted in sodium acetate solution (pH 4.5) to a final concentration of 50 μg/mL and immobilized onto a CMS chip, following a standard amine-coupling procedure. Compounds were serially diluted using a PBS buffer containing 0.05% Tween 20 and 5% DMSO to appropriate concentrations and then injected over the chip following a predefined program. The Kd value was determined using Biacore T200 evaluation software (GE Healthcare).",
+            "Materials and Methods - Crystallization of the Complex of hPD-L1 with Small-Molecule Inhibitor X18": "The DNA encoding human PD-L1 (18–134) with a C-terminal 6His tag was inserted into the pET21b vector and transformed into BL21 (DE3) cells for protein expression. The purified inclusion bodies were dissolved in a solution containing 50 mM Tris HCl (pH 8.0), 200 mM NaCl, and 8 M urea and then refolded by diluting with a solution of 50 mM Tris HCl (pH 8.0), 0.5 M arginine, 2 mM reduced-GSH, and 0.2 mM oxidized-GSH with a gradient of urea concentrations from 6 to 0 M. The refolded protein was purified using a Superdex S75 column equilibrated. The hPD-L1 protein at a concentration of 2.5 mg/mL was mixed with compound X18 at a molar ratio of 1:3 and incubated on ice for 60 min. The resulting protein complex was screened for crystallization at 16 °C using a 1:1 ratio of protein to reservoir solution, following the sitting-drop vapor-diffusion method. Diffraction-quality crystals of hPD-L1/X18 complex were obtained from 19% PEG3350% and 0.2 M ammonium tartrate dibasic. The crystals were cryoprotected by the reservoir solution with 25% MPD and flash-frozen in liquid nitrogen for the diffraction data collection. The diffraction data of the crystals were collected at 100 K at the beamlines BL18U1 at Shanghai Synchrotron Radiation Facility and were processed using the HKL3000 software packages. The structures were solved via molecular replacement with the CCP4 program, utilizing a search model from PDB code 5C3T. The model was built using Coot, and subsequent refinement was performed using PHENIX. Data collection and refinement statistics are provided in Table S1.",
+            "Results and Discussion - Binding Affinity Detection": "The binding affinity of X3, X7, X18, and L7 was determined by the surface plasmon resonance (SPR) method. The results of SPR kinetic analysis shown in Table 4 confirmed that all these compounds have strong binding affinity with PD-L1. In order to further assess the interspecies selectivity of X18, we employed SPR to evaluate the binding affinity of X18 with murine PD-L1 (mPD-L1). The results demonstrated that X18 also exhibited high affinity for mPD-L1, with a dissociation constant (Kd) of 31.8 nM (Figure S1).",
+            "Table 4 - Cell-Based NFAT Reporter Gene Activity and Binding Affinity Value of Compounds": "Comp. EC50 (nM) RLUmax Kd (nM) X1 N/A N/A 34.1 ± 13.9 X3 353.2 ± 29.3 2.0 ± 0.04 22.9 ± 1.3 X7 158.4 ± 19.2 2.2 ± 0.02 2.0 ± 1.7 X18 152.8 ± 7.6 2.3 ± 0.03 3.7 ± 3.8 L7 356.4 ± 16.1 1.8 ± 0.05 3.7 ± 3.8",
+            "Figure 6 caption": "Figure 6. (A) X-ray crystal structure of compound X18 in complex with PD-L1 (PDB ID: 8XRS). (B) Interactions between X18 and PD-L1. The π–π stacking interactions are shown as magenta dash line, and hydrogen bond interactions are shown as yellow dash line."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "human PD-L1/B7-H1 Protein, His Tag (ACRO, PD1-H5229) or mouse PD-L1 IgV domain (ACRO, PD1-M5220)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds X3, X7, X18, L7, and X1 (small-molecule inhibitors)",
+                "concentration_range": "Serial dilutions in PBS buffer containing 0.05% Tween 20 and 5% DMSO (exact range not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer containing 0.05% Tween 20 and 5% DMSO",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51587375": {
+        "reactant_set_id": 51587375,
+        "pmid": 38465588,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@@H](CO)NCc1cc(Cl)c(OCc2cccc(-c3cccc(OCCCN4CCC(O)CC4)c3)c2F)cc1OCc1ccc2nonc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to his-tagged human PD-L1 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Assay": "The binding affinity of compounds with human PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-H5229) and the mouse PD-L1 IgV domain (Mouse PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-M5220) was assessed using a Biacore T200 instrument (GE Healthcare Biosciences, Sweden). In brief, PD-L1 or PD-1 was diluted in sodium acetate solution (pH 4.5) to a final concentration of 50 μg/mL and immobilized onto a CMS chip, following a standard amine-coupling procedure. Compounds were serially diluted using a PBS buffer containing 0.05% Tween 20 and 5% DMSO to appropriate concentrations and then injected over the chip following a predefined program. The Kd value was determined using Biacore T200 evaluation software (GE Healthcare).",
+            "Materials and Methods - Crystallization of the Complex of hPD-L1 with Small-Molecule Inhibitor X18": "The DNA encoding human PD-L1 (18–134) with a C-terminal 6His tag was inserted into the pET21b vector and transformed into BL21 (DE3) cells for protein expression. The purified inclusion bodies were dissolved in a solution containing 50 mM Tris HCl (pH 8.0), 200 mM NaCl, and 8 M urea and then refolded by diluting with a solution of 50 mM Tris HCl (pH 8.0), 0.5 M arginine, 2 mM reduced-GSH, and 0.2 mM oxidized-GSH with a gradient of urea concentrations from 6 to 0 M. The refolded protein was purified using a Superdex S75 column equilibrated. The hPD-L1 protein at a concentration of 2.5 mg/mL was mixed with compound X18 at a molar ratio of 1:3 and incubated on ice for 60 min. The resulting protein complex was screened for crystallization at 16 °C using a 1:1 ratio of protein to reservoir solution, following the sitting-drop vapor-diffusion method. Diffraction-quality crystals of hPD-L1/X18 complex were obtained from 19% PEG3350% and 0.2 M ammonium tartrate dibasic. The crystals were cryoprotected by the reservoir solution with 25% MPD and flash-frozen in liquid nitrogen for the diffraction data collection. The diffraction data of the crystals were collected at 100 K at the beamlines BL18U1 at Shanghai Synchrotron Radiation Facility and were processed using the HKL3000 software packages. The structures were solved via molecular replacement with the CCP4 program, utilizing a search model from PDB code 5C3T. The model was built using Coot, and subsequent refinement was performed using PHENIX. Data collection and refinement statistics are provided in Table S1.",
+            "Results and Discussion - Binding Affinity Detection": "The binding affinity of X3, X7, X18, and L7 was determined by the surface plasmon resonance (SPR) method. The results of SPR kinetic analysis shown in Table 4 confirmed that all these compounds have strong binding affinity with PD-L1. In order to further assess the interspecies selectivity of X18, we employed SPR to evaluate the binding affinity of X18 with murine PD-L1 (mPD-L1). The results demonstrated that X18 also exhibited high affinity for mPD-L1, with a dissociation constant (Kd) of 31.8 nM (Figure S1).",
+            "Table 4 - Cell-Based NFAT Reporter Gene Activity and Binding Affinity Value of Compounds": "Comp. EC50 (nM) RLUmax Kd (nM) X1 N/A N/A 34.1 ± 13.9 X3 353.2 ± 29.3 2.0 ± 0.04 22.9 ± 1.3 X7 158.4 ± 19.2 2.2 ± 0.02 2.0 ± 1.7 X18 152.8 ± 7.6 2.3 ± 0.03 3.7 ± 3.8 L7 356.4 ± 16.1 1.8 ± 0.05 3.7 ± 3.8",
+            "Figure 6 caption": "Figure 6. (A) X-ray crystal structure of compound X18 in complex with PD-L1 (PDB ID: 8XRS). (B) Interactions between X18 and PD-L1. The π–π stacking interactions are shown as magenta dash line, and hydrogen bond interactions are shown as yellow dash line."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "human PD-L1/B7-H1 Protein, His Tag (ACRO, PD1-H5229) or mouse PD-L1 IgV domain (ACRO, PD1-M5220)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds X3, X7, X18, L7, and X1 (small-molecule inhibitors)",
+                "concentration_range": "Serial dilutions in PBS buffer containing 0.05% Tween 20 and 5% DMSO (exact range not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer containing 0.05% Tween 20 and 5% DMSO",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51587377": {
+        "reactant_set_id": 51587377,
+        "pmid": 38465588,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@@H](CO)NCc1cc(Cl)c(OCc2cccc(-c3cccc(OCCCN4CCC(O)CC4)c3)c2F)cc1OCc1ccc2nonc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to his-tagged mouse PD-L1 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Affinity Assay. The binding affinity of compounds with human PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-H5229) and the mouse PD-L1 IgV domain (Mouse PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-M5220) was assessed using a Biacore T200 instrument (GE Healthcare Biosciences, Sweden). In brief, PD-L1 or PD-1 was diluted in sodium acetate solution (pH 4.5) to a final concentration of 50 μg/mL and immobilized onto a CMS chip, following a standard amine-coupling procedure. Compounds were serially diluted using a PBS buffer containing 0.05% Tween 20 and 5% DMSO to appropriate concentrations and then injected over the chip following a predefined program. The Kd value was determined using Biacore T200 evaluation software (GE Healthcare).",
+            "Figure 6 caption": "Figure 6. (A) X-ray crystal structure of compound X18 in complex with PD-L1 (PDB ID: 8XRS). (B) Interactions between X18 and PD-L1. The π–π stacking interactions are shown as magenta dash line, and hydrogen bond interactions are shown as yellow dash line.",
+            "Table 5": "Table 5. Pharmacokinetic Parameters of X18 and X22 | Comp. | X18 | X22^a | |---|---|---| | species | SD rat | SD rat | C57BL/6 mice | | dosage | 50 mg/kg (p.o.) | 9 mg/kg (i.v.) | 45 mg/kg (p.o.) | 2 mg/kg (i.v.) | 10 mg/kg (p.o.) | | t1/2 (h) | 5.3 ± 2.8 | 7.9 ± 0.5 | 4.3 ± 0.3 | 1.7 ± 0.3 | 1.6 ± 0.2 | | Tmax (h) | 0.1 ± 0.1 | 0.08 | 4.00 | 0.08 | 0.7 ± 0.3 | | Cmax (ng/mL) | 45.6 ± 28.7 | 3760.7 ± 982.8 | 49.8 ± 17.9 | 872.3 ± 137.0 | 255.7 ± 157.9 | | AUC0–t (h·ng/mL) | 82.1 ± 70.0 | 2373.5 ± 313.8 | 405.6 ± 186.8 | 531.6 ± 40.5 | 315.6 ± 99.1 | | CL (mL/h/kg) | 1426 ± 48.5 | 3710.7 ± 274.6 | 11.5 ± 3.5 | | F (%) | 3.4 ± 1.6 | ^aThe detection form was X18."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "mouse PD-L1 IgV domain (Mouse PD-L1/B7-H1 Protein, His Tag, ACRO, PD1-M5220)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (not specified in text)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer containing 0.05% Tween 20 and 5% DMSO",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

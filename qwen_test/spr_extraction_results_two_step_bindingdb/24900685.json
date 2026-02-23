@@ -1,0 +1,68 @@
+{
+    "51049307": {
+        "reactant_set_id": 51049307,
+        "pmid": 24900685,
+        "protein": "Hepatocyte growth factor",
+        "ligand": {
+            "smiles": "Nc1c2C(=O)c3ccccc3C(=O)c2c(Nc2ccc(cc2)-c2ccc(Nc3cc(c(N)c4C(=O)c5ccccc5C(=O)c34)S([O-])(=O)=O)cc2)cc1S([O-])(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1950.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to immobilized HGF (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "Surface Plasmon Resonance (SPR) Analysis. The kinetics of the binding reactions between 2a and HGF was determined using an XPR36 (Bio-Rad) SPR apparatus. HGF was immobilized on GLH sensor chips according to the amine coupling protocol described in the application handbook. To assess real-time binding capacity, 200 μL of 2a was injected over the sensor chip surface immobilized with HGF. The chip was then washed with HBS-EP buffer for 5 min. The sensor chip surface was regenerated using 100 μL of NaCl (2 M). All binding experiments were performed at 25 °C with a constant flow rate of 50 μL of HBS-EP/min. To correct for nonspecific binding and changes in the bulk refractive index, a blank channel without HGF was employed as the control for each experiment. Sensorgrams for all binding interactions were recorded in real time and analyzed after they had been subtracted from the blank channel. Changes in mass due to the binding response were recorded as resonance units. Binding kinetics and affinities were computed by equilibrium analysis using Bio-Rad ProteOn Manager version 2.0.1.",
+            "Figure 4 caption": "Figure 4. Sensorgrams of compound 2a with immobilized HGF. Serial concentrations of compound 2a were injected over the HGF-immobilized GLH sensor chip surface. Real-time binding was recorded as response (RU) vs time. The SPR measurement yielded a Kd value of 1.95 μM for compound 2a.",
+            "Results section": "We then determined whether the inhibitory effect of 2a on HGF-mediated c-Met phosphorylation is associated with direct engagement with HGF. A surface plasmon resonance (SPR) assay was employed to assess the interaction between 2a and HGF, for which HGF was immobilized on GLH sensor chips. Encouragingly, compound 2a displayed high binding affinity with HGF, yielding an equilibrium dissociation constant (Kd) of 1.95 μM (Figure 4). Compound 2a not only potentially inhibits intracellular c-Met kinase but also displays binding abilities with the extracellular HGF ligand.",
+            "Abstract": "A surface plasmon resonance assay revealed that the most potent compound, 2a, shows a high binding affinity for HGF with an equilibrium dissociation constant of 1.95 μM.",
+            "Figure 4 sensorgram labels": "The sensorgram shows response (RU) vs time (s). The x-axis ranges from -400 to 800 s. The y-axis ranges from -200 to 1400 RU. The curves are labeled with concentrations: 100 μM (pink), 50 μM (blue), 25 μM (green), 12.5 μM (purple), and 6.25 μM (red)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad",
+                "model": "XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad"
+            },
+            "immobilization": {
+                "ligand_name": "HGF",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 2a",
+                "concentration_range": "6.25 μM - 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer",
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "NaCl (2 M)"
+            },
+            "data_analysis": {
+                "reference_description": "Blank channel without HGF",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Bio-Rad ProteOn Manager version 2.0.1"
+            }
+        }
+    }
+}

@@ -1,0 +1,194 @@
+{
+    "51206854": {
+        "reactant_set_id": 51206854,
+        "pmid": 24499352,
+        "protein": "Heat shock protein HSP 90-alpha",
+        "ligand": {
+            "smiles": "CO[C@H]1C[C@H](C)CC2=C(NCC=C)C(=O)C=C(NC(=O)\\C(C)=C\\C=C/[C@H](OC)[C@@H](OC(N)=O)\\C(C)=C\\[C@H](C)[C@H]1O)C2=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 310.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant HSP90-alpha (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (GE Healthcare). Two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg/mL in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL/min using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1–15, as well as 17-AAG used as a positive control, were dissolved in 100% DMSO to obtain 4 mM solutions and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. A series of concentrations were prepared as 2-fold dilutions in running buffer: for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each test compound were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. SPR experiments were performed at 25 °C, using a flow rate of 50 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A+B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analyses": "SPR experiments were performed as described elsewhere.29 Briefly, analyses were carried out using a Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (GE Healthcare). Two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg/mL in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL/min using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1–15, as well as 17-AAG used as a positive control, were dissolved in 100% DMSO to obtain 4 mM solutions and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. A series of concentrations were prepared as 2-fold dilutions in running buffer: for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each test compound were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. SPR experiments were performed at 25 °C, using a flow rate of 50 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A+B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Results - Interaction with Hsp90": "The interaction of compounds 1–15 with Hsp90 was investigated by a surface plasmon resonance (SPR)-based binding assay;29 the geldanamycin semisynthetic derivative 17-(allylamino)-17-demethoxygeldanamycin (17-AAG)30 was chosen as a positive control. Only two out of the 15 tested compounds interacted efficiently with the immobilized protein. As a result of fitting the relative sensorgrams to a single-site bimolecular interaction model, the thermodynamic parameters for the resulting complex formation were determined. This approach allowed the measurement of a 0.049 ± 0.019 μM KD for the Hsp90/15 complex and a 0.033 ± 0.009 μM KD for the Hsp90/10 complex. Interestingly, both compounds 10 and 15 showed an affinity toward the chaperone that was even greater than that determined for 17-AAG (KD = 0.31 ± 0.04 μM).",
+            "Figure 1 caption": "Figure 1. Inhibition of ATPase activity of Hsp90 α by different concentrations of compounds 10 and 15. 17-AAG and compound 3 were used as positive and negative controls, respectively. Data are the means of two independent experiments performed in triplicate."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–15 and 17-AAG (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation"
+            }
+        }
+    },
+    "51206855": {
+        "reactant_set_id": 51206855,
+        "pmid": 24499352,
+        "protein": "Heat shock protein HSP 90-alpha",
+        "ligand": {
+            "smiles": "CC(=O)O[C@@H]1C[C@H](OC(C)=O)[C@@]2(C)[C@H]3[C@H](OC[C@]13C)[C@@H](O)[C@]1(C)[C@@H]2CC[C@@]2(C)[C@@H](CC=C12)c1ccoc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 49.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant HSP90-alpha (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (GE Healthcare). Two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg/mL in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL/min using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1–15, as well as 17-AAG used as a positive control, were dissolved in 100% DMSO to obtain 4 mM solutions and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. A series of concentrations were prepared as 2-fold dilutions in running buffer: for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each test compound were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. SPR experiments were performed at 25 °C, using a flow rate of 50 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A+B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analyses": "SPR experiments were performed as described elsewhere.29 Briefly, analyses were carried out using a Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (GE Healthcare). Two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg/mL in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL/min using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1–15, as well as 17-AAG used as a positive control, were dissolved in 100% DMSO to obtain 4 mM solutions and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. A series of concentrations were prepared as 2-fold dilutions in running buffer: for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each test compound were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. SPR experiments were performed at 25 °C, using a flow rate of 50 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A+B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Results - Interaction with Hsp90": "The interaction of compounds 1–15 with Hsp90 was investigated by a surface plasmon resonance (SPR)-based binding assay;29 the geldanamycin semisynthetic derivative 17-(allylamino)-17-demethoxygeldanamycin (17-AAG)30 was chosen as a positive control. Only two out of the 15 tested compounds interacted efficiently with the immobilized protein. As a result of fitting the relative sensorgrams to a single-site bimolecular interaction model, the thermodynamic parameters for the resulting complex formation were determined. This approach allowed the measurement of a 0.049 ± 0.019 μM KD for the Hsp90/15 complex and a 0.033 ± 0.009 μM KD for the Hsp90/10 complex. Interestingly, both compounds 10 and 15 showed an affinity toward the chaperone that was even greater than that determined for 17-AAG (KD = 0.31 ± 0.04 μM).",
+            "Figure 1 caption": "Figure 1. Inhibition of ATPase activity of Hsp90 α by different concentrations of compounds 10 and 15. 17-AAG and compound 3 were used as positive and negative controls, respectively. Data are the means of two independent experiments performed in triplicate."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–15 and 17-AAG (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation"
+            }
+        }
+    },
+    "51206856": {
+        "reactant_set_id": 51206856,
+        "pmid": 24499352,
+        "protein": "Heat shock protein HSP 90-alpha",
+        "ligand": {
+            "smiles": "COC(=O)C[C@H]1[C@@]2(C)[C@H](O[C@@H]3C[C@H](C(C)=C23)c2ccoc2)[C@@H]2OC[C@@]3(C)[C@H]2[C@]1(C)[C@H](C[C@H]3O)OC(=O)C(\\C)=C\\C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 33.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant HSP90-alpha (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (GE Healthcare). Two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg/mL in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL/min using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1–15, as well as 17-AAG used as a positive control, were dissolved in 100% DMSO to obtain 4 mM solutions and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. A series of concentrations were prepared as 2-fold dilutions in running buffer: for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each test compound were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. SPR experiments were performed at 25 °C, using a flow rate of 50 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A+B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analyses": "SPR experiments were performed as described elsewhere.29 Briefly, analyses were carried out using a Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (GE Healthcare). Two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg/mL in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL/min using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1–15, as well as 17-AAG used as a positive control, were dissolved in 100% DMSO to obtain 4 mM solutions and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. A series of concentrations were prepared as 2-fold dilutions in running buffer: for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each test compound were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. SPR experiments were performed at 25 °C, using a flow rate of 50 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A+B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Results - Interaction with Hsp90": "The interaction of compounds 1–15 with Hsp90 was investigated by a surface plasmon resonance (SPR)-based binding assay;29 the geldanamycin semisynthetic derivative 17-(allylamino)-17-demethoxygeldanamycin (17-AAG)30 was chosen as a positive control. Only two out of the 15 tested compounds interacted efficiently with the immobilized protein. As a result of fitting the relative sensorgrams to a single-site bimolecular interaction model, the thermodynamic parameters for the resulting complex formation were determined. This approach allowed the measurement of a 0.049 ± 0.019 μM KD for the Hsp90/15 complex and a 0.033 ± 0.009 μM KD for the Hsp90/10 complex. Interestingly, both compounds 10 and 15 showed an affinity toward the chaperone that was even greater than that determined for 17-AAG (KD = 0.31 ± 0.04 μM).",
+            "Figure 1 caption": "Figure 1. Inhibition of ATPase activity of Hsp90 α by different concentrations of compounds 10 and 15. 17-AAG and compound 3 were used as positive and negative controls, respectively. Data are the means of two independent experiments performed in triplicate."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–15 and 17-AAG (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation"
+            }
+        }
+    }
+}

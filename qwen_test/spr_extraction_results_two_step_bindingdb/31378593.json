@@ -1,0 +1,261 @@
+{
+    "51254010": {
+        "reactant_set_id": 51254010,
+        "pmid": 31378593,
+        "protein": "Phosphodiesterase",
+        "ligand": {
+            "smiles": "COc1ccc(cc1C#CC(=O)NCc1ccccc1)C1=NN(C(C)C)C(=O)[C@@H]2CC=CC[C@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 79.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Trypanosoma brucei PDEB1 assessed as dissociation constant treated for 320 secs measured for 900 secs by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "All experiments were performed with a Biacore T200 surface plasmon resonance biosensor instrument (GE healthcare). Proteins were immobilized on CM5 series S sensor chips. Consumables were obtained from GE Healthcare. All solutions were freshly prepared, degassed, and filtered. The neutravidin immobilization was run on HBS-N at a flow speed of 10 μL/min at 25 °C. The matrix of the sensor was activated by injecting on all flow channels a mixture of 0.1 M hydroxysuccinimide (NHS) and 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimidehydrochloride (EDC) at a flow rate of 10 μL/min for 420 s. Subsequently, neutravidin (0.30 mg/mL) in a 10 mM NaAc solution (pH 5.0) was injected for 120 s. Unreacted activated groups of the dextran matrix were deactivated by injection of ethanolamine.HCl (1 M) for 420 s. The catalytic domains of hPDE4D and TbrPDEB1 were produced and purified as previously described. The proteins were buffer exchanged using an Amicon Ultra 0.5 mL centrifugal filter (Merck) to HBS-N, 5% glycerol (v/v), 4 mM MgCl2·6H2O, 100 mM ZnCl2, 2 mM 2-mercaptoethanol and diluted to 1 mg/mL. EZ-Link Sulfo-NHS-Biotin (Thermo Fisher Scientific) was diluted to 1.5 mM in the same buffer, mixed with the protein in a 1:1 M ratio, and incubated at 4 °C overnight. Biotinylated proteins were buffer exchanged to 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, and desalted using 0.5 M Zeba Spin desalting columns (Thermo Scientific). Proteins were diluted to 0.5 mg/mL and injected on the flow channels until 3000 RU in the same buffer at 15 °C. Biotycin (0.05 mg/mL) was injected for 120 s on all flow channels at 15 °C. All compounds were dissolved in DMSO (stock solutions of 10 mM) and diluted in 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v). Suitable concentration series and injection times were determined for each compound separately. In multicycle experiments, a 7-point concentration range of each compound was measured. On a first CM5 chip, a first stock solution was used to obtain a dose response curve in duplicate. On a second CM5 chip, two other independent stock solutions were used to measure dose response curves in duplicate. Compound 20 was injected for 60 s and its dissociation was monitored for 300 s. Compound 37 was injected for 420 s and its dissociation was monitored for 900 s. All",
+            "Figure 6 caption": "Fig. 6. Sensorgrams of compound 20 binding to hPDE4D (A) and TbrPDEB1 (B), and compound 37 binding to hPDE4D (C) and TbrPDEB1 (D). Inset shows steady-state affinity analyses of SPR biosensor interaction data; blank injections are also shown. Measurements using two independent biosensor chips and three different stock solutions indicate good reproducibility (see supplementary information).",
+            "Results - Surface plasmon resonance biosensor analysis": "To increase our understanding of ligand-PDE binding and the molecular features that have an influence on the resulting activity profiles, we performed interaction analyses using a surface plasmon resonance (SPR) biosensor assay (Fig. 6). Biotinylated proteins were captured by neutravidin, immobilized on CM5 chip surface. Interaction assays were performed by injecting suitable concentration series for each compound. Compounds 20 and 37 were injected for respectively 60 and 320 s to reach steady-state equilibrium and their dissociation was monitored (300 s for 20 and 900 s for 37) to determine the pK_D values. The affinity of the unsubstituted alkyne 20 at hPDE4D (pK_D = 6.6 ± 0.1) was ~0.5 log unit higher than the affinity obtained for its binding to TbrPDEB1 (pK_D = 6.1 ± 0.1). Going from 20 to the benzyl substituted analog 37, the affinity for TbrPDEB1 (pK_D = 7.1 ± 0.1) improved 10-fold, while at hPDE4D (pK_D = 7.1 ± 0.1) the affinity of 37 was only 0.5 log-unit higher. These findings indicate that the benzyl substitution of the alkyne has a pronounced effect on TbrPDEB1 binding, as 37 is equipotent at TbrPDEB1 and hPDE4. Interestingly, while the obtained crystal structures do not easily explain the improved biochemical activity profile of"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated proteins (catalytic domains of hPDE4D and TbrPDEB1)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "3000",
+                "concentration_for_immobilization": "0.5 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 20 and 37 (ligands tested for binding to hPDE4D and TbrPDEB1)",
+                "concentration_range": "7-point concentration range (specific values not provided)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 15,
+                "association_time_s": 320,
+                "dissociation_time_s": 900,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections (control channels)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51253980": {
+        "reactant_set_id": 51253980,
+        "pmid": 31378593,
+        "protein": "Phosphodiesterase",
+        "ligand": {
+            "smiles": "COc1ccc(cc1C#CC(N)=O)C1=NN(C(C)C)C(=O)[C@@H]2CC=CC[C@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 794.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Trypanosoma brucei PDEB1 assessed as dissociation constant treated for 60 secs measured for 300 secs by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "All experiments were performed with a Biacore T200 surface plasmon resonance biosensor instrument (GE healthcare). Proteins were immobilized on CM5 series S sensor chips. Consumables were obtained from GE Healthcare. All solutions were freshly prepared, degassed, and filtered. The neutravidin immobilization was run on HBS-N at a flow speed of 10 μL/min at 25 °C. The matrix of the sensor was activated by injecting on all flow channels a mixture of 0.1 M hydroxysuccinimide (NHS) and 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimidehydrochloride (EDC) at a flow rate of 10 μL/min for 420 s. Subsequently, neutravidin (0.30 mg/mL) in a 10 mM NaAc solution (pH 5.0) was injected for 120 s. Unreacted activated groups of the dextran matrix were deactivated by injection of ethanolamine.HCl (1 M) for 420 s. The catalytic domains of hPDE4D and TbrPDEB1 were produced and purified as previously described. The proteins were buffer exchanged using an Amicon Ultra 0.5 mL centrifugal filter (Merck) to HBS-N, 5% glycerol (v/v), 4 mM MgCl2·6H2O, 100 mM ZnCl2, 2 mM 2-mercaptoethanol and diluted to 1 mg/mL. EZ-Link Sulfo-NHS-Biotin (Thermo Fisher Scientific) was diluted to 1.5 mM in the same buffer, mixed with the protein in a 1:1 M ratio, and incubated at 4 °C overnight. Biotinylated proteins were buffer exchanged to 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, and desalted using 0.5 M Zeba Spin desalting columns (Thermo Scientific). Proteins were diluted to 0.5 mg/mL and injected on the flow channels until 3000 RU in the same buffer at 15 °C. Biotycin (0.05 mg/mL) was injected for 120 s on all flow channels at 15 °C. All compounds were dissolved in DMSO (stock solutions of 10 mM) and diluted in 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v). Suitable concentration series and injection times were determined for each compound separately. In multicycle experiments, a 7-point concentration range of each compound was measured. On a first CM5 chip, a first stock solution was used to obtain a dose response curve in duplicate. On a second CM5 chip, two other independent stock solutions were used to measure dose response curves in duplicate. Compound 20 was injected for 60 s and its dissociation was monitored for 300 s. Compound 37 was injected for 420 s and its dissociation was monitored for 900 s. All",
+            "Figure 6 caption": "Fig. 6. Sensorgrams of compound 20 binding to hPDE4D (A) and TbrPDEB1 (B), and compound 37 binding to hPDE4D (C) and TbrPDEB1 (D). Inset shows steady-state affinity analyses of SPR biosensor interaction data; blank injections are also shown. Measurements using two independent biosensor chips and three different stock solutions indicate good reproducibility (see supplementary information).",
+            "Results - Surface plasmon resonance biosensor analysis": "To increase our understanding of ligand-PDE binding and the molecular features that have an influence on the resulting activity profiles, we performed interaction analyses using a surface plasmon resonance (SPR) biosensor assay (Fig. 6). Biotinylated proteins were captured by neutravidin, immobilized on CM5 chip surface. Interaction assays were performed by injecting suitable concentration series for each compound. Compounds 20 and 37 were injected for respectively 60 and 320 s to reach steady-state equilibrium and their dissociation was monitored (300 s for 20 and 900 s for 37) to determine the pK_D values. The affinity of the unsubstituted alkyne 20 at hPDE4D (pK_D = 6.6 ± 0.1) was ~0.5 log unit higher than the affinity obtained for its binding to TbrPDEB1 (pK_D = 6.1 ± 0.1). Going from 20 to the benzyl substituted analog 37, the affinity for TbrPDEB1 (pK_D = 7.1 ± 0.1) improved 10-fold, while at hPDE4D (pK_D = 7.1 ± 0.1) the affinity of 37 was only 0.5 log-unit higher. These findings indicate that the benzyl substitution of the alkyne has a pronounced effect on TbrPDEB1 binding, as 37 is equipotent at TbrPDEB1 and hPDE4. Interestingly, while the obtained crystal structures do not easily explain the improved biochemical activity profile of",
+            "Figure 6 sensorgram data": "Figure 6A: Compound 20 binding to hPDE4D. X-axis: Time (0 to 200 seconds). Y-axis: Response (0 to 14). Inset: Concentration (10^-8 to 10^-5 M). Figure 6B: Compound 20 binding to TbrPDEB1. X-axis: Time (0 to 200 seconds). Y-axis: Response (0 to 20). Inset: Concentration (10^-8 to 10^-5 M). Figure 6C: Compound 37 binding to hPDE4D. X-axis: Time (-100 to 700 seconds). Y-axis: Response (0 to 18). Inset: Concentration (10^-8 to 10^-5 M). Figure 6D: Compound 37 binding to TbrPDEB1. X-axis: Time (-100 to 700 seconds). Y-axis: Response (0 to 16). Inset: Concentration (10^-8 to 10^-5 M)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated proteins (hPDE4D and TbrPDEB1)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "3000",
+                "concentration_for_immobilization": "0.5 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 20 and 37 (ligands tested for binding to hPDE4D and TbrPDEB1)",
+                "concentration_range": "7-point concentration range (not specified numerically, but shown in Figure 6 inset as 10^-8 to 10^-5 M)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 15,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections (control channels without analyte)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51253981": {
+        "reactant_set_id": 51253981,
+        "pmid": 31378593,
+        "protein": "cAMP-specific 3',5'-cyclic phosphodiesterase 4D",
+        "ligand": {
+            "smiles": "COc1ccc(cc1C#CC(=O)NCc1ccccc1)C1=NN(C(C)C)C(=O)[C@@H]2CC=CC[C@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 79.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human PDE4D assessed as dissociation constant treated for 320 secs measured for 900 secs by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "All experiments were performed with a Biacore T200 surface plasmon resonance biosensor instrument (GE healthcare). Proteins were immobilized on CM5 series S sensor chips. Consumables were obtained from GE Healthcare. All solutions were freshly prepared, degassed, and filtered. The neutravidin immobilization was run on HBS-N at a flow speed of 10 μL/min at 25 °C. The matrix of the sensor was activated by injecting on all flow channels a mixture of 0.1 M-hydroxysuccinimide (NHS) and 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimidehydrochloride (EDC) at a flow rate of 10 μL/min for 420 s. Subsequently, neutravidin (0.30 mg/mL) in a 10 mM NaAc solution (pH 5.0) was injected for 120 s. Unreacted activated groups of the dextran matrix were deactivated by injection of ethanolamine.HCl (1 M) for 420 s. The catalytic domains of hPDE4D and TbrPDEB1 were produced and purified as previously described. The proteins were buffer exchanged using an Amicon Ultra 0.5 mL centrifugal filter (Merck) to HBS-N, 5% glycerol (v/v), 4 mM MgCl2·6H2O, 100 mM ZnCl2, 2 mM 2-mercaptoethanol and diluted to 1 mg/mL. EZ-Link Sulfo-NHS-Biotin (Thermo Fisher Scientific) was diluted to 1.5 mM in the same buffer, mixed with the protein in a 1:1 M ratio, and incubated at 4 °C overnight. Biotinylated proteins were buffer exchanged to 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, and desalted using 0.5 M Zeba Spin desalting columns (Thermo Scientific). Proteins were diluted to 0.5 mg/mL and injected on the flow channels until 3000 RU in the same buffer at 15 °C. Biotycin (0.05 mg/mL) was injected for 120 s on all flow channels at 15 °C. All compounds were dissolved in DMSO (stock solutions of 10 mM) and diluted in 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v). Suitable concentration series and injection times were determined for each compound separately. In multicycle experiments, a 7-point concentration range of each compound was measured. On a first CM5 chip, a first stock solution was used to obtain a dose response curve in duplicate. On a second CM5 chip, two other independent stock solutions were used to measure dose response curves in duplicate. Compound 20 was injected for 60 s and its dissociation was monitored for 300 s. Compound 37 was injected for 420 s and its dissociation was monitored for 900 s. All titrations were run at 25 °C at a flow speed of 50 μL/min. Data analyses were performed with Scrubber2. Signals were subtracted from reference surface and blank injections. DMSO correction was performed. The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. All SPR experiments are shown in the Supplementary data with individually measured pK_D and the error reported is the error in the fit of the binding isotherm.",
+            "Figure 6 caption": "Fig. 6. Sensorgrams of compound 20 binding to hPDE4D (A) and TbrPDEB1 (B), and compound 37 binding to hPDE4D (C) and TbrPDEB1 (D). Inset shows steady-state affinity analyses of SPR biosensor interaction data; blank injections are also shown. Measurements using two independent biosensor chips and three different stock solutions indicate good reproducibility (see supplementary information).",
+            "Results - Surface plasmon resonance biosensor analysis": "To increase our understanding of ligand-PDE binding and the molecular features that have an influence on the resulting activity profiles, we performed interaction analyses using a surface plasmon resonance (SPR) biosensor assay (Fig. 6). Biotinylated proteins were captured by neutravidin, immobilized on CM5 chip surface. Interaction assays were performed by injecting suitable concentration series for each compound. Compounds 20 and 37 were injected for respectively 60 and 320 s to reach steady-state equilibrium and their dissociation was monitored (300 s for 20 and 900 s for 37) to determine the pK_D values. The affinity of the unsubstituted alkyne 20 at hPDE4D (pK_D = 6.6 ± 0.1) was ~0.5 log unit higher than the affinity obtained for its binding to TbrPDEB1 (pK_D = 6.1 ± 0.1). Going from 20 to the benzyl substituted analog 37, the affinity for TbrPDEB1 (pK_D = 7.1 ± 0.1) improved 10-fold, while at hPDE4D (pK_D = 7.1 ± 0.1) the affinity of 37 was only 0.5 log-unit higher. These findings indicate that the benzyl substitution of the alkyne has a pronounced effect on TbrPDEB1 binding, as 37 is equipotent at TbrPDEB1 and hPDE4. Interestingly, while the obtained crystal structures do not easily explain the improved biochemical activity profile of",
+            "Figure 6 sensorgram data": "Figure 6A: Compound 20 binding to hPDE4D. X-axis: Time (0 to 200 s). Y-axis: Response (0 to 14). Inset: Concentration (10^-8 to 10^-5 M). Figure 6B: Compound 20 binding to TbrPDEB1. X-axis: Time (0 to 200 s). Y-axis: Response (0 to 20). Inset: Concentration (10^-8 to 10^-5 M). Figure 6C: Compound 37 binding to hPDE4D. X-axis: Time (-100 to 700 s). Y-axis: Response (0 to 18). Inset: Concentration (10^-8 to 10^-5 M). Figure 6D: Compound 37 binding to TbrPDEB1. X-axis: Time (-100 to 700 s). Y-axis: Response (0 to 16). Inset: Concentration (10^-8 to 10^-5 M)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated hPDE4D and TbrPDEB1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "3000",
+                "concentration_for_immobilization": "0.5 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 20 and 37",
+                "concentration_range": "7-point concentration range (not specified numerically, but shown in Figure 6 insets as 10^-8 to 10^-5 M)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 320,
+                "dissociation_time_s": 900,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface and blank injections",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber2"
+            }
+        }
+    },
+    "51253993": {
+        "reactant_set_id": 51253993,
+        "pmid": 31378593,
+        "protein": "cAMP-specific 3',5'-cyclic phosphodiesterase 4D",
+        "ligand": {
+            "smiles": "COc1ccc(cc1C#CC(N)=O)C1=NN(C(C)C)C(=O)[C@@H]2CC=CC[C@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 251.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human PDE4D assessed as dissociation constant treated for 60 secs measured for 300 secs by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "All experiments were performed with a Biacore T200 surface plasmon resonance biosensor instrument (GE healthcare). Proteins were immobilized on CM5 series S sensor chips. Consumables were obtained from GE Healthcare. All solutions were freshly prepared, degassed, and filtered. The neutravidin immobilization was run on HBS-N at a flow speed of 10 μL/min at 25 °C. The matrix of the sensor was activated by injecting on all flow channels a mixture of 0.1 M-hydroxysuccinimide (NHS) and 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimidehydrochloride (EDC) at a flow rate of 10 μL/min for 420 s. Subsequently, neutravidin (0.30 mg/mL) in a 10 mM NaAc solution (pH 5.0) was injected for 120 s. Unreacted activated groups of the dextran matrix were deactivated by injection of ethanolamine.HCl (1 M) for 420 s. The catalytic domains of hPDE4D and TbrPDEB1 were produced and purified as previously described. The proteins were buffer exchanged using an Amicon Ultra 0.5 mL centrifugal filter (Merck) to HBS-N, 5% glycerol (v/v), 4 mM MgCl2·6H2O, 100 mM ZnCl2, 2 mM 2-mercaptoethanol and diluted to 1 mg/mL. EZ-Link Sulfo-NHS-Biotin (Thermo Fisher Scientific) was diluted to 1.5 mM in the same buffer, mixed with the protein in a 1:1 M ratio, and incubated at 4 °C overnight. Biotinylated proteins were buffer exchanged to 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, and desalted using 0.5 M Zeba Spin desalting columns (Thermo Scientific). Proteins were diluted to 0.5 mg/mL and injected on the flow channels until 3000 RU in the same buffer at 15 °C. Biotycin (0.05 mg/mL) was injected for 120 s on all flow channels at 15 °C. All compounds were dissolved in DMSO (stock solutions of 10 mM) and diluted in 0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v). Suitable concentration series and injection times were determined for each compound separately. In multicycle experiments, a 7-point concentration range of each compound was measured. On a first CM5 chip, a first stock solution was used to obtain a dose response curve in duplicate. On a second CM5 chip, two other independent stock solutions were used to measure dose response curves in duplicate. Compound 20 was injected for 60 s and its dissociation was monitored for 300 s. Compound 37 was injected for 420 s and its dissociation was monitored for 900 s. All titrations were run at 25 °C at a flow speed of 50 μL/min. Data analyses were performed with Scrubber2. Signals were subtracted from reference surface and blank injections. DMSO correction was performed. The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. All SPR experiments are shown in the Supplementary data with individually measured pK_D and the error reported is the error in the fit of the binding isotherm.",
+            "Figure 6 caption": "Fig. 6. Sensorgrams of compound 20 binding to hPDE4D (A) and TbrPDEB1 (B), and compound 37 binding to hPDE4D (C) and TbrPDEB1 (D). Inset shows steady-state affinity analyses of SPR biosensor interaction data; blank injections are also shown. Measurements using two independent biosensor chips and three different stock solutions indicate good reproducibility (see supplementary information).",
+            "Figure 6 sensorgram data": "Figure 6A: Compound 20 binding to hPDE4D. Association time: 0-60 s. Dissociation time: 60-300 s. Concentration range: 10^-8 to 10^-5 M (as shown in inset). Figure 6B: Compound 20 binding to TbrPDEB1. Association time: 0-60 s. Dissociation time: 60-300 s. Concentration range: 10^-8 to 10^-5 M (as shown in inset). Figure 6C: Compound 37 binding to hPDE4D. Association time: 0-420 s. Dissociation time: 420-900 s. Concentration range: 10^-8 to 10^-5 M (as shown in inset). Figure 6D: Compound 37 binding to TbrPDEB1. Association time: 0-420 s. Dissociation time: 420-900 s. Concentration range: 10^-8 to 10^-5 M (as shown in inset).",
+            "Results - Surface plasmon resonance biosensor analysis": "To increase our understanding of ligand-PDE binding and the molecular features that have an influence on the resulting activity profiles, we performed interaction analyses using a surface plasmon resonance (SPR) biosensor assay (Fig. 6). Biotinylated proteins were captured by neutravidin, immobilized on CM5 chip surface. Interaction assays were performed by injecting suitable concentration series for each compound. Compounds 20 and 37 were injected for respectively 60 and 320 s to reach steady-state equilibrium and their dissociation was monitored (300 s for 20 and 900 s for 37) to determine the pK_D values. The affinity of the unsubstituted alkyne 20 at hPDE4D (pK_D = 6.6 ± 0.1) was ~0.5 log unit higher than the affinity obtained for its binding to TbrPDEB1 (pK_D = 6.1 ± 0.1). Going from 20 to the benzyl substituted analog 37, the affinity for TbrPDEB1 (pK_D = 7.1 ± 0.1) improved 10-fold, while at hPDE4D (pK_D = 7.1 ± 0.1) the affinity of 37 was only 0.5 log-unit higher. These findings indicate that the benzyl substitution of the alkyne has a pronounced effect on TbrPDEB1 binding, as 37 is equipotent at TbrPDEB1 and hPDE4. Interestingly, while the obtained crystal structures do not easily explain the improved biochemical activity profile of"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated hPDE4D and TbrPDEB1",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "3000",
+                "concentration_for_immobilization": "0.5 mg/mL"
+            },
+            "analyte": {
+                "description": "Compound 20 and Compound 37",
+                "concentration_range": "10^-8 to 10^-5 M"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.5 M Tris-HCl (pH 8.0), 150 mM NaCl, 4 mM MgCl2·6H2O, 100 mM ZnCl2, 5% glycerol (v/v), 2 mM 2-mercaptoethanol, 0.05% Tween-20 (v/v), 2% DMSO (v/v)",
+                "pH": 8.0,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface and blank injections",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber2"
+            }
+        }
+    }
+}

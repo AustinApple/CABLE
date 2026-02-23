@@ -1,0 +1,69 @@
+{
+    "51598163": {
+        "reactant_set_id": 51598163,
+        "pmid": 38354523,
+        "protein": "Phosphoglycerate kinase 1",
+        "ligand": {
+            "smiles": "Cc1ccc(Nc2nc(NCCO)c3ccccc3n2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PGK1 (unknown origin) exogenously expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "L. Zhong, B. Yang, Z. Zhang, J. Wang, X. Wang, Y. Guo, W. Huang, Q. Wang, G. Cai, F. Xia, S. Zhou, S. Ma, Y. Nie, J. Lei, M. Li, P. Liu, W. Deng, Y. Liu, F. Han, J. Wang, Targeting autophagy peptidase ATG4B with a novel natural product inhibitor Azalomycin F4 for advanced gastric cancer, Cell Death Dis. 13 (2) (2022) 161.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5 Surface plasmon resonance (SPR)": "The binding affinity of small-molecule compound and PGK1 protein was measured by SPR assay on a Biacore T200 instrument (GE Healthcare, USA) [27]. Briefly, the purified PGK1 protein was immobilized (~10,000 RU) on a CMS Series S sensor chip (GE Healthcare, USA) according to the standard amine coupling procedure. Running buffer for immobilization was PBST (0.24 g/L KH2PO4, 1.44 g/L Na2HPO4, 8 g/L NaCl, 0.2 g/L KCl, 0.05 % Tween 20, pH 7.4) containing 5 % DMSO. Small-molecule compounds stored as 10 mM stock solutions in 100 % DMSO were directly dissolved in running buffer and analyzed with the Biacore T200 instrument using 2-fold dilution series. SPR response curves and the dissociation constant at equilibrium (Kd) were evaluated and analyzed by Biacore evaluation software.",
+            "Figure 2 caption": "Fig. 2. CHR-6494 and Z57346765 were confirmed to bind PGK1 protein by DARTS and SPR assays. (A) The exogenously expressed PGK1 protein was purified from E. coli. (B) Thermolysin was unable to effectively hydrolyze the PGK1 protein. (C) Pronase E effectively hydrolyzed the PGK1 protein. (D) CHR-6494 bound to the PGK1 protein and protected it from enzymatic hydrolysis. (E) Z57346765 bound to the PGK1 protein and protected it from enzymatic hydrolysis. (F) Prokaryotic expressing PGK1 protein was purified for SPR experiments. (G) SPR results confirmed that CHR-6494 bound to PGK1 protein with a Kd of 3.70 × 10⁻⁵ M. Kd represented the affinity constant. (H) SPR assay confirmed that Z57346765 bound to PGK1 protein with a Kd of 2.09 × 10⁻⁵ M. Kd represented the affinity constant.",
+            "Figure 2G": "Kd=3.70×10⁻⁵ M",
+            "Figure 2H": "Kd=2.09×10⁻⁵ M",
+            "Figure 2G legend": "CHR-6494 1.953μM 3.906μM 7.813μM 15.625μM 31.25μM 62.5μM",
+            "Figure 2H legend": "Z57346765 1.953μM 3.906μM 7.813μM 15.625μM 31.25μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS Series S sensor chip",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PGK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": 10000,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small-molecule compounds (CHR-6494 and Z57346765)",
+                "concentration_range": "1.953 μM - 62.5 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (0.24 g/L KH2PO4, 1.44 g/L Na2HPO4, 8 g/L NaCl, 0.2 g/L KCl, 0.05 % Tween 20, pH 7.4) containing 5 % DMSO",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore evaluation software"
+            }
+        }
+    }
+}

@@ -1,0 +1,194 @@
+{
+    "51214668": {
+        "reactant_set_id": 51214668,
+        "pmid": 26536069,
+        "protein": "Plasma kallikrein",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](CC2CCN(CC2)C(N)=N)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@H](NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human plasma kallikrein by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "To determine the equilibrium binding constants (K_D), the association rate constants (k_on), and dissociation rate constants (k_off) for peptide binding to full-length plasma kallikrein, surface plasmon resonance analysis was performed on a BIACORE T200 instrument (BIACORE, Uppsala, Sweden). A CMS chip was coupled with hPK by injecting the enzyme in a concentration of 30 μg/mL in immobilization buffer (10 mM sodium acetate, pH 5.0), aiming for an immobilized level of approximately 500 response units (RU). Immobilization was followed by surface blocking with ethanolamine. A reference cell was prepared in the same way, without coupling of hPK. Running buffer containing peptidic inhibitors in a dilution series was injected at a flow rate of 30 μL per min during 90 s at 25 °C. Subsequently, the dissociation was monitored during 300 s. Kinetic constants (k_on and k_off) were calculated with the BIACORE evaluation software, using the 1:1 kinetic fit. The K_D values were calculated as k_off/k_on.",
+            "Table 3": "Table 3. Analysis of Peptide–Protease Binding by SPR Analysis^a | protease | peptide | k_on × 10^5 (M^−1 s^−1) | k_off × 10^2 (s^−1) | K_D (nM) | ΔG (kJ/mol) | | :--- | :--- | :--- | :--- | :--- | :--- | | hPK | mupain-1 | no measurable binding | — | >10^6 | >−17.1 | | hPK | mupain-1-16 | kinetics could not be fitted | — | 737 ± 86 (3) | −35.0 | | hPK | peptide 10 | 102 ± 23 (3) | 2.88 ± 0.22 (3) | 3.04 ± 0.86 (3) | −48.6 | ^aThe K_D values were calculated by both kinetic and steady-state methods. Due to the very low affinity to PK, mupain-1 could not be studied by SPR. The association and dissociation rates for mupain-1-16 binding to hPK could not be fitted, but the K_D value was instead calculated by the steady state affinity measurement. The binding of peptide 10 to hPK agreed with a 1:1 binding model. The ΔG values were calculated according to the equation ΔG = RT ln K_D.",
+            "Results and Discussion": "Kinetic Studies of Peptide–Protease Interactions through Surface Plasmon Resonance (SPR) Analysis. The K_D values of peptide 10 and mupain-1-16 binding to hPK are 3.0 and 737 nM, respectively (Table 3). The K_D values are slightly lower than the K_i values from enzymological assays (13.7 nM and 1.58 μM), most likely due to the fact that the SPR analysis was carried out at 25 °C, while the K_i values were determined at 37 °C. Because of the nonmeasurably low affinity (K_i > 1000 μM), the K_D value for mupain-1 binding to hPK could not be determined by SPR. The Gibbs free energy changes (ΔG) for the binding of the peptides to hPK were calculated according to the K_D values. Substitution of the P1 residue (Arg 6) with l-3-(N-amidino-4-piperidyl)alanine contributes a binding energy change of Δ(ΔG) > 17.9 kJ/mol (from mupain-1 to mupain-1-16), while re-engineering the exosite interactions by replacing four residues contributes a binding energy change of Δ(ΔG) = 13.6 kJ/mol (from mupain-1-16 to peptide 10). Therefore, the change in the active site interaction plays an energetically more important role in engineering the affinity of peptide to hPK. But this change in the active site indiscriminately improves the"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIACORE",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "BIACORE"
+            },
+            "immobilization": {
+                "ligand_name": "hPK (human plasma kallikrein)",
+                "strategy": "Amine coupling",
+                "density_ru": "500",
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptidic inhibitors (including mupain-1, mupain-1-16, peptide 10)",
+                "concentration_range": "Dilution series (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Not explicitly stated (only mentioned as 'running buffer containing peptidic inhibitors')",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference cell prepared without coupling of hPK",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIACORE evaluation software"
+            }
+        }
+    },
+    "51214689": {
+        "reactant_set_id": 51214689,
+        "pmid": 26536069,
+        "protein": "Plasma kallikrein",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CC2CCN(CC2)C(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@H](NC(=O)[C@H](CC(O)=O)NC1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 737.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human plasma kallikrein by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "To determine the equilibrium binding constants (K_D), the association rate constants (k_on), and dissociation rate constants (k_off) for peptide binding to full-length plasma kallikrein, surface plasmon resonance analysis was performed on a BIACORE T200 instrument (BIACORE, Uppsala, Sweden). A CMS chip was coupled with hPK by injecting the enzyme in a concentration of 30 μg/mL in immobilization buffer (10 mM sodium acetate, pH 5.0), aiming for an immobilized level of approximately 500 response units (RU). Immobilization was followed by surface blocking with ethanolamine. A reference cell was prepared in the same way, without coupling of hPK. Running buffer containing peptidic inhibitors in a dilution series was injected at a flow rate of 30 μL per min during 90 s at 25 °C. Subsequently, the dissociation was monitored during 300 s. Kinetic constants (k_on and k_off) were calculated with the BIACORE evaluation software, using the 1:1 kinetic fit. The K_D values were calculated as k_off/k_on.",
+            "Table 3": "Table 3. Analysis of Peptide–Protease Binding by SPR Analysis^a | protease | peptide | k_on × 10^5 (M^−1 s^−1) | k_off × 10^2 (s^−1) | K_D (nM) | ΔG (kJ/mol) | | :--- | :--- | :--- | :--- | :--- | :--- | | hPK | mupain-1 | no measurable binding | — | >10^6 | >−17.1 | | hPK | mupain-1-16 | kinetics could not be fitted | — | 737 ± 86 (3) | −35.0 | | hPK | peptide 10 | 102 ± 23 (3) | 2.88 ± 0.22 (3) | 3.04 ± 0.86 (3) | −48.6 | ^aThe K_D values were calculated by both kinetic and steady-state methods. Due to the very low affinity to PK, mupain-1 could not be studied by SPR. The association and dissociation rates for mupain-1-16 binding to hPK could not be fitted, but the K_D value was instead calculated by the steady state affinity measurement. The binding of peptide 10 to hPK agreed with a 1:1 binding model. The ΔG values were calculated according to the equation ΔG = RT ln K_D.",
+            "Results and Discussion": "Kinetic Studies of Peptide–Protease Interactions through Surface Plasmon Resonance (SPR) Analysis. The K_D values of peptide 10 and mupain-1-16 binding to hPK are 3.0 and 737 nM, respectively (Table 3). The K_D values are slightly lower than the K_i values from enzymological assays (13.7 nM and 1.58 μM), most likely due to the fact that the SPR analysis was carried out at 25 °C, while the K_i values were determined at 37 °C. Because of the nonmeasurably low affinity (K_i > 1000 μM), the K_D value for mupain-1 binding to hPK could not be determined by SPR. The Gibbs free energy changes (ΔG) for the binding of the peptides to hPK were calculated according to the K_D values. Substitution of the P1 residue (Arg 6) with l-3-(N-amidino-4-piperidyl)alanine contributes a binding energy change of Δ(ΔG) > 17.9 kJ/mol (from mupain-1 to mupain-1-16), while re-engineering the exosite interactions by replacing four residues contributes a binding energy change of Δ(ΔG) = 13.6 kJ/mol (from mupain-1-16 to peptide 10). Therefore, the change in the active site interaction plays an energetically more important role in engineering the affinity of peptide to hPK. But this change in the active site indiscriminately improves the"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIACORE",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "BIACORE"
+            },
+            "immobilization": {
+                "ligand_name": "hPK (human plasma kallikrein)",
+                "strategy": "Amine coupling",
+                "density_ru": "500",
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptidic inhibitors (including mupain-1, mupain-1-16, peptide 10)",
+                "concentration_range": "Dilution series (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Not explicitly stated (only mentioned as 'running buffer containing peptidic inhibitors')",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference cell prepared without coupling of hPK",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIACORE evaluation software"
+            }
+        }
+    },
+    "51214732": {
+        "reactant_set_id": 51214732,
+        "pmid": 26536069,
+        "protein": "Plasma kallikrein",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@H](NC(=O)[C@H](CC(O)=O)NC1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human plasma kallikrein by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "To determine the equilibrium binding constants (K_D), the association rate constants (k_on), and dissociation rate constants (k_off) for peptide binding to full-length plasma kallikrein, surface plasmon resonance analysis was performed on a BIACORE T200 instrument (BIACORE, Uppsala, Sweden). A CMS chip was coupled with hPK by injecting the enzyme in a concentration of 30 μg/mL in immobilization buffer (10 mM sodium acetate, pH 5.0), aiming for an immobilized level of approximately 500 response units (RU). Immobilization was followed by surface blocking with ethanolamine. A reference cell was prepared in the same way, without coupling of hPK. Running buffer containing peptidic inhibitors in a dilution series was injected at a flow rate of 30 μL per min during 90 s at 25 °C. Subsequently, the dissociation was monitored during 300 s. Kinetic constants (k_on and k_off) were calculated with the BIACORE evaluation software, using the 1:1 kinetic fit. The K_D values were calculated as k_off/k_on.",
+            "Table 3": "Table 3. Analysis of Peptide–Protease Binding by SPR Analysis^a | protease | peptide | k_on × 10^5 (M^−1 s^−1) | k_off × 10^2 (s^−1) | K_D (nM) | ΔG (kJ/mol) | | :--- | :--- | :--- | :--- | :--- | :--- | | hPK | mupain-1 | no measurable binding | — | >10^6 | >−17.1 | | hPK | mupain-1-16 | kinetics could not be fitted | — | 737 ± 86 (3) | −35.0 | | hPK | peptide 10 | 102 ± 23 (3) | 2.88 ± 0.22 (3) | 3.04 ± 0.86 (3) | −48.6 | ^aThe K_D values were calculated by both kinetic and steady-state methods. Due to the very low affinity to PK, mupain-1 could not be studied by SPR. The association and dissociation rates for mupain-1-16 binding to hPK could not be fitted, but the K_D value was instead calculated by the steady state affinity measurement. The binding of peptide 10 to hPK agreed with a 1:1 binding model. The ΔG values were calculated according to the equation ΔG = RT ln K_D.",
+            "Results and Discussion": "Kinetic Studies of Peptide–Protease Interactions through Surface Plasmon Resonance (SPR) Analysis. The K_D values of peptide 10 and mupain-1-16 binding to hPK are 3.0 and 737 nM, respectively (Table 3). The K_D values are slightly lower than the K_i values from enzymological assays (13.7 nM and 1.58 μM), most likely due to the fact that the SPR analysis was carried out at 25 °C, while the K_i values were determined at 37 °C. Because of the nonmeasurably low affinity (K_i > 1000 μM), the K_D value for mupain-1 binding to hPK could not be determined by SPR. The Gibbs free energy changes (ΔG) for the binding of the peptides to hPK were calculated according to the K_D values. Substitution of the P1 residue (Arg 6) with l-3-(N-amidino-4-piperidyl)alanine contributes a binding energy change of Δ(ΔG) > 17.9 kJ/mol (from mupain-1 to mupain-1-16), while re-engineering the exosite interactions by replacing four residues contributes a binding energy change of Δ(ΔG) = 13.6 kJ/mol (from mupain-1-16 to peptide 10). Therefore, the change in the active site interaction plays an energetically more important role in engineering the affinity of peptide to hPK. But this change in the active site indiscriminately improves the"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIACORE",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "BIACORE"
+            },
+            "immobilization": {
+                "ligand_name": "hPK (human plasma kallikrein)",
+                "strategy": "Amine coupling",
+                "density_ru": "500",
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptidic inhibitors (including mupain-1, mupain-1-16, peptide 10)",
+                "concentration_range": "Dilution series (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Not explicitly stated (only mentioned as 'running buffer containing peptidic inhibitors')",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference cell prepared without coupling of hPK",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIACORE evaluation software"
+            }
+        }
+    }
+}

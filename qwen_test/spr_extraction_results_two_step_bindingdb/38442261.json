@@ -1,0 +1,67 @@
+{
+    "51592565": {
+        "reactant_set_id": 51592565,
+        "pmid": 38442261,
+        "protein": "Nuclear receptor ROR-gamma",
+        "ligand": {
+            "smiles": "O=C(O)c1ccc(-c2nn(C(=O)c3c(Cl)cccc3C(F)(F)F)c3cc(C(=O)NCCOCCOCCNC(=S)Nc4ccc5c(c4)C(=O)OC54c5ccc(O)cc5Oc5cc(O)ccc54)ccc23)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 280.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his6-tagged human recombinant RORgamma LBD (261 to 518 residues) expressed in Sf9 insect cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR)-Based Binding Assay": "The SPR binding assays were conducted using a Reichert 4 SPR instrument. The RORγ-LBD protein was immobilized on a CMS chip through covalent coupling with the SPR assay buffer (PBST (1×), 0.05% (v/v) surfactant Tween-20, and 0.25% (v/v) dimethyl sulfoxide, pH 6) according to standard procedure. The probe 12h was 2-fold diluted with assay buffer and then injected at a flow of 10 μL/min for 90 s to contact, followed by dissociation for 240 s, respectively. The equilibrium dissociation constant of the probe 12h was determined by TraceDrawer evaluation software.",
+            "Figure 5 caption": "Figure 5. (A) Binding curves of probe 12h to RORγ-LBD determined by surface plasmon resonance. (B) Fluorescence polarization values of different concentrations of probe 12h in the Tris-HCl buffer. (C) Saturation binding curve of probe 12h to RORγ-LBD using FP.",
+            "Figure 5A data": "The SPR binding curve (Figure 5A) shows signal (in RU) over time (s). The x-axis ranges from 0 to 250 s. The y-axis ranges from 0 to 50 RU. The curve is labeled with K_D=280.2 nM. The legend indicates concentrations: 0.02 μM, 0.04 μM, 0.08 μM, 0.16 μM, 0.31 μM, 0.63 μM, 1.25 μM, 2.5 μM.",
+            "Results and Discussion - Development of FP-Based Binding Assay for RORγ Allosteric Inhibitor Affinity Evaluation": "Following the identification of the optimal probe 12h, we proceeded to evaluate its binding affinity with RORγ-LBD through surface plasmon resonance (SPR), yielding a K_D value of 280.2 ± 54.3 nM (Figure 5A)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Reichert",
+                "model": "4 SPR"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "RORγ-LBD",
+                "strategy": "Other",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "probe 12h",
+                "concentration_range": "0.02 μM - 2.5 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (1×), 0.05% (v/v) surfactant Tween-20, and 0.25% (v/v) dimethyl sulfoxide",
+                "pH": 6,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "TraceDrawer evaluation software"
+            }
+        }
+    }
+}

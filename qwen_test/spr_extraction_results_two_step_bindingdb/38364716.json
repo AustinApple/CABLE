@@ -1,0 +1,68 @@
+{
+    "51580464": {
+        "reactant_set_id": 51580464,
+        "pmid": 38364716,
+        "protein": "Cell division cycle protein 20 homolog",
+        "ligand": {
+            "smiles": "CCC(=O)NC(n1cnc2c(Nc3cc(OC)c(OC)c(OC)c3)nc(N)nc21)C(Cl)(Cl)Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 41710.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity human CDC20 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analysis": "Biosensors based on SPR technology are powerful tools for fragment molecular screening and lead discovery. Using the highly sensitive Biacore™ S200 to output reliable kinetic and affinity data, S series CM5 chip (29-1049-88), amino coupling kit (BR-1000-50), coupling Buffer (BR-1003-49), buffer: 10 x PBS-P+ (28-9950-84) and 20 μg Human CDC20 protein (orb705109) were prepared in advance for the experiments. The first step was protein coupling, the second step was buffer and sample configuration, and the third step was multi-cycle kinetics. Finally, the analysis of a series of concentrations was overlaid to obtain the steady-state response value, and the affinity Kp was obtained by fitting the “saturation curve” with the concentration as the x-coordinate and the steady-state response value as the y-value.",
+            "Results - 2.1.3 E1 exhibited potent binding affinity with CDC20": "To verify the interaction between CDC20 and compound E1, SPR-based experiments were performed on CDC20. Surface plasmon resonance (SPR) is an optical biosensor detection method that uses traditional optical phenomena to detect the interaction between ligands and analytes on a biosensor chip. First the ligand (protein) is immobilized on the sensor surface. When the solution of the target molecule is in contact with the surface, binding occurs between the ligand and the target molecule through affinity, which causes an increase in the refractive index of the SPR sensor surface. This signal change is described by the resonance or response unit (RU), which is proportional to the mass of the molecules bound to the surface of the sensing chip. Therefore, RU can be used to calculate the load of the SPR chip. The results showed that compound E1 exhibits a strong binding affinity with CDC20 (Kp = 41.71 μM) (Fig. 3A), while Apicin shows a relatively weak binding affinity with the CDC20 protein (Kp = 172.2 μM), which may be associated with its low activity (Fig. 3B).",
+            "Figure 3 caption": "Fig. 3. Interaction of compounds E1 with CDC20, along with Apicin acting as the reference compound, were determined by SPR experiments. Sensorgrams for the interaction of (A) E1, (B) Apicin with CDC20.",
+            "Figure 3A sensorgram": "Sensorgram for E1 with CDC20. Concentrations: 1.95 μM, 3.90 μM, 7.80 μM, 15.60 μM. Kp = 41.71 μM.",
+            "Figure 3B sensorgram": "Sensorgram for Apicin with CDC20. Concentrations: 62.50 μM, 125.00 μM, 250.00 μM. Kp = 172.20 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Human CDC20 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 μg"
+            },
+            "analyte": {
+                "description": "Compound E1 and Apicin",
+                "concentration_range": "E1: 1.95 μM - 15.60 μM; Apicin: 62.50 μM - 250.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 x PBS-P+ (28-9950-84)",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

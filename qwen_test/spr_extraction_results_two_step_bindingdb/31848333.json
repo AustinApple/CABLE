@@ -1,0 +1,65 @@
+{
+    "51618819": {
+        "reactant_set_id": 51618819,
+        "pmid": 31848333,
+        "protein": "Histone-lysine N-methyltransferase PRDM9",
+        "ligand": {
+            "smiles": "COc1cc(OC)cc(-c2noc(N3CCN(C)C4(CCN(c5ccnc(C)c5)CC4)C3)n2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 87.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PRDM9 (unknown origin) (195 to 415 residues) assessed as dissociation constant measured at 60 to 120 secs in presence of SAM by by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "Binding studies by SPR were performed using a Biacore T200 (GE Health Sciences Inc.) at 20 °C. Biotinylated PRDM9 was captured onto a flow cell of a streptavidin-conjugated SA chip at approximately 5000 response units (RU) according to manufacturer’s protocol while another flow cell was left empty for reference subtraction. MRK-740 was dissolved in DMSO (50 mM Stock) and diluted to 220 μM before serial dilutions were prepared in DMSO (dilution factor of 0.33 was used to yield 5 concentrations). For SPR analysis the serially titrated compound was diluted 1:200 in HBS-EP (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% Tween-20) and 250 μM SAM giving a final concentration of 0.5% DMSO. Kinetic determination experiments were performed using multicycle kinetics with an on time of 60 s, off time of 120 s at a flow rate of 75 μL min−1.",
+            "Figure 2 caption": "Fig. 2 Orthogonal confirmation of MRK-740 binding to PRDM9. Binding affinity of MRK-740 was determined using SPR in the presence of 350 μM SAM (5×Km SAM, 70 ± 10 μM). a A representative sensorgram (solid green) is shown with the kinetic fit (black dots). From kinetic fitting, a Ka value of 87 ± 5 nM, kon of 1.2 ± 0.1 × 10+6 M−1 s−1 and koff of 0.1 ± 0.01 s−1 were obtained from quadruplicate experiments (n = 4). b The steady state response (black circles) obtained from A is shown with the steady state 1:1 binding model fitting (red dashed line). Biotinylated PRDM9 (amino acids 195–415) was immobilized on the flow cell of a SA sensor chip in 1x HBS-EP buffer, yielding 5700 RU. Using the buffer with 0.5% DMSO, 350 μM SAM and single cycle kinetic with 60 s contact time and a dissociation time of 120 s at a flow rate of 75 μL/min. MRK-740 was tested at 1 μM as the highest concentration with dilution factor of 0.33 for five tested concentrations. c Binding and selectivity of MRK-740 against PRDM family members were tested by DSF as described in Methods. Only binding to PRDM9 and PRDM7 with ΔTm of higher than 2 °C was observed. Mechanism of action of MRK-740 was also evaluated by determining the IC50 values (d) in the presence of fixed peptide (20 μM) and varying SAM concentrations as well as (e) fixed concentration of SAM (350 μM) and varying concentrations of peptide. The data indicate that MRK-740 is a SAM-dependent peptide-competitive inhibitor. All (c–e) experiments were performed in triplicate (n = 3) and data points are presented as average ± standard deviation. Source data are provided as a Source Data file."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated PRDM9 (amino acids 195–415)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "5700",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "MRK-740",
+                "concentration_range": "1 μM to 0.0001 μM (dilution factor of 0.33, 5 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% Tween-20) with 350 μM SAM and 0.5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 75,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow cell (reference subtraction)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

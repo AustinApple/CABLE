@@ -1,0 +1,197 @@
+{
+    "50285738": {
+        "reactant_set_id": 50285738,
+        "pmid": 25068993,
+        "protein": "SPRY domain-containing SOCS box protein 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](CS)NC(C)=O)C(C)C)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CS)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 35.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GST-tagged SPSB2 (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR experiments were performed at 25 °C on a Biacore T200. Immobilization was carried out via standard amine coupling method on a CM5 sensor chip with a flow rate of 10 μL/min and a running buffer of 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4. Both the target (SPSB2 protein) and reference (blank) flow cells were activated for 7 min using a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS). This was followed by an immediate injection of 150 μL of 100 μg/mL of SPSB2 protein, dissolved in 10 mM of sodium acetate, pH 5.5, was injected into both target and reference flow cells to deactivate any remaining activated carboxyl groups on the surface. The binding of both the linear peptide Ac-DINNN-NH2 (GL Biochem Ltd.) and the cyclic peptide was investigated in a running buffer containing 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4. Each peptide was injected onto the surface with contact time of 30–60 s, flow rate of 100 μL/min, and dissociation time of 120–600 s. No further regeneration step was carried out as all peptides were able to dissociate completely after 600 s. The sensorgrams were further corrected for nonspecific binding to the surface by subtracting the signals of the reference surface from those of the target protein surface. The corrected signal was then fitted to a steady state 1:1 interaction model with Biacore T200 Evaluation Software (version 2.0), and the binding affinity, Ka, association rate, kon, and dissociation rate, koff, were estimated.",
+            "Figure 1 caption": "Figure 1. Ac-c[CDVINNNC]-NH2 interacts with SPSB2. (A) SPR sensorgram of immobilized SPSB2 exposed to increasing concentrations of cyclic peptide Ac-c[CDVINNNC]-NH2 in 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4, at 25 °C. (B) kon and koff of the cyclic peptide Ac-c[CDVINNNC]-NH2, its reduced counterpart, and the linear peptide Ac-DINNN-NH2 estimated from the reference subtracted sensorgrams fitted to a steady state 1:1 interaction model. (C) ITC raw thermogram data (upper panel) and binding isotherm (lower panel) for the cyclic peptide in complex with SPSB2 protein in 50 mM HEPES, 50 mM NaCl, pH 7.4, at 25 °C. The data were fitted using a single-site binding model.",
+            "Table 1": "Table 1. Kinetics and Thermodynamics of the Interactions with SPSB2 of Ac-c[CDVINNNC]-NH2, Ac-CVDINNNC-NH2, and Ac-DINNN-NH2a | | cyclic peptide | linear peptides | |---|---|---| | | Ac-c[CDVINNNC]-NH2 | Ac-DINNN-NH2 | Ac-CVDINNNC-NH2 | | SPR | | | | | kon (× 10^5 M^-1 s^-1) | 36.3 | 2.2 | 3.7 | | koff (× 10^-2 s^-1) | 1.6 | 7.0 | 1.3 | | Kd (nM) | 4.4 | 318 | 35.1 | | ITC | | | | | ΔH (kcal/mol) | -33.0 | -13.8 | ND | | TΔS (kcal/mol) | -21.1 | -4.7 | ND | | ΔG (kcal/mol) | -11.9 | -9.1 | ND | aND: Not determined.",
+            "Results and Discussion - Interaction of Ac-c[CDVINNNC]-NH2 with SPSB2": "The cyclic peptide Ac-c[CDVINNNC]-NH2 was found to bind tightly to immobilized SPSB2 by SPR analysis, with a Kd of 4.4 nM (Figure 1A). In contrast, the Ac-DINNN-NH2 linear peptide containing the conserved binding motif of iNOS, bound more weakly to SPSB2, with a Kd of 318 nM (Table 1)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SPSB2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 ug/mL"
+            },
+            "analyte": {
+                "description": "Linear peptide Ac-DINNN-NH2 and cyclic peptide Ac-c[CDVINNNC]-NH2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.05% Tween 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank flow cell (reference surface)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (version 2.0)"
+            }
+        }
+    },
+    "50285739": {
+        "reactant_set_id": 50285739,
+        "pmid": 25068993,
+        "protein": "SPRY domain-containing SOCS box protein 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CC(O)=O)NC(C)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(N)=O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 318.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GST-tagged SPSB2 (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR experiments were performed at 25 °C on a Biacore T200. Immobilization was carried out via standard amine coupling method on a CM5 sensor chip with a flow rate of 10 μL/min and a running buffer of 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4. Both the target (SPSB2 protein) and reference (blank) flow cells were activated for 7 min using a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS). This was followed by an immediate injection of 150 μL of 100 μg/mL of SPSB2 protein, dissolved in 10 mM of sodium acetate, pH 5.5, was injected into both target and reference flow cells to deactivate any remaining activated carboxyl groups on the surface. The binding of both the linear peptide Ac-DINNN-NH2 (GL Biochem Ltd.) and the cyclic peptide was investigated in a running buffer containing 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4. Each peptide was injected onto the surface with contact time of 30–60 s, flow rate of 100 μL/min, and dissociation time of 120–600 s. No further regeneration step was carried out as all peptides were able to dissociate completely after 600 s. The sensorgrams were further corrected for nonspecific binding to the surface by subtracting the signals of the reference surface from those of the target protein surface. The corrected signal was then fitted to a steady state 1:1 interaction model with Biacore T200 Evaluation Software (version 2.0), and the binding affinity, Ka, association rate, kon, and dissociation rate, koff, were estimated.",
+            "Figure 1 caption": "Figure 1. Ac-c[CDVINNNC]-NH2 interacts with SPSB2. (A) SPR sensorgram of immobilized SPSB2 exposed to increasing concentrations of cyclic peptide Ac-c[CDVINNNC]-NH2 in 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4, at 25 °C. (B) kon and koff of the cyclic peptide Ac-c[CDVINNNC]-NH2, its reduced counterpart, and the linear peptide Ac-DINNN-NH2 estimated from the reference subtracted sensorgrams fitted to a steady state 1:1 interaction model. (C) ITC raw thermogram data (upper panel) and binding isotherm (lower panel) for the cyclic peptide in complex with SPSB2 protein in 50 mM HEPES, 50 mM NaCl, pH 7.4, at 25 °C. The data were fitted using a single-site binding model.",
+            "Table 1": "Table 1. Kinetics and Thermodynamics of the Interactions with SPSB2 of Ac-c[CDVINNNC]-NH2, Ac-CVDINNNC-NH2, and Ac-DINNN-NH2a | | cyclic peptide | linear peptides | |---|---|---| | | Ac-c[CDVINNNC]-NH2 | Ac-DINNN-NH2 | Ac-CVDINNNC-NH2 | | SPR | | | | | kon (× 10^5 M^-1 s^-1) | 36.3 | 2.2 | 3.7 | | koff (× 10^-2 s^-1) | 1.6 | 7.0 | 1.3 | | Kd (nM) | 4.4 | 318 | 35.1 | | ITC | | | | | ΔH (kcal/mol) | -33.0 | -13.8 | ND | | TΔS (kcal/mol) | -21.1 | -4.7 | ND | | ΔG (kcal/mol) | -11.9 | -9.1 | ND | aND: Not determined.",
+            "Results and Discussion - Interaction of Ac-c[CDVINNNC]-NH2 with SPSB2": "The cyclic peptide Ac-c[CDVINNNC]-NH2 was found to bind tightly to immobilized SPSB2 by SPR analysis, with a Kd of 4.4 nM (Figure 1A). In contrast, the Ac-DINNN-NH2 linear peptide containing the conserved binding motif of iNOS, bound more weakly to SPSB2, with a Kd of 318 nM (Table 1)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SPSB2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 ug/mL"
+            },
+            "analyte": {
+                "description": "Linear peptide Ac-DINNN-NH2 and cyclic peptide Ac-c[CDVINNNC]-NH2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.05% Tween 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank flow cell (reference surface)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (version 2.0)"
+            }
+        }
+    },
+    "50285740": {
+        "reactant_set_id": 50285740,
+        "pmid": 25068993,
+        "protein": "SPRY domain-containing SOCS box protein 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](CC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](CSSC[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CC(N)=O)NC1=O)C(N)=O)NC(C)=O)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GST-tagged SPSB2 (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR experiments were performed at 25 °C on a Biacore T200. Immobilization was carried out via standard amine coupling method on a CM5 sensor chip with a flow rate of 10 μL/min and a running buffer of 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4. Both the target (SPSB2 protein) and reference (blank) flow cells were activated for 7 min using a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS). This was followed by an immediate injection of 150 μL of 100 μg/mL of SPSB2 protein, dissolved in 10 mM of sodium acetate, pH 5.5, was injected into both target and reference flow cells to deactivate any remaining activated carboxyl groups on the surface. The binding of both the linear peptide Ac-DINNN-NH2 (GL Biochem Ltd.) and the cyclic peptide was investigated in a running buffer containing 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4. Each peptide was injected onto the surface with contact time of 30–60 s, flow rate of 100 μL/min, and dissociation time of 120–600 s. No further regeneration step was carried out as all peptides were able to dissociate completely after 600 s. The sensorgrams were further corrected for nonspecific binding to the surface by subtracting the signals of the reference surface from those of the target protein surface. The corrected signal was then fitted to a steady state 1:1 interaction model with Biacore T200 Evaluation Software (version 2.0), and the binding affinity, Ka, association rate, kon, and dissociation rate, koff, were estimated.",
+            "Figure 1 caption": "Figure 1. Ac-c[CDVINNNC]-NH2 interacts with SPSB2. (A) SPR sensorgram of immobilized SPSB2 exposed to increasing concentrations of cyclic peptide Ac-c[CDVINNNC]-NH2 in 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 0.05% Tween 20, pH 7.4, at 25 °C. (B) kon and koff of the cyclic peptide Ac-c[CDVINNNC]-NH2, its reduced counterpart, and the linear peptide Ac-DINNN-NH2 estimated from the reference subtracted sensorgrams fitted to a steady state 1:1 interaction model. (C) ITC raw thermogram data (upper panel) and binding isotherm (lower panel) for the cyclic peptide in complex with SPSB2 protein in 50 mM HEPES, 50 mM NaCl, pH 7.4, at 25 °C. The data were fitted using a single-site binding model.",
+            "Table 1": "Table 1. Kinetics and Thermodynamics of the Interactions with SPSB2 of Ac-c[CDVINNNC]-NH2, Ac-CVDINNNC-NH2, and Ac-DINNN-NH2a | | cyclic peptide | linear peptides | |---|---|---| | | Ac-c[CDVINNNC]-NH2 | Ac-DINNN-NH2 | Ac-CVDINNNC-NH2 | | SPR | | | | | kon (× 10^5 M^-1 s^-1) | 36.3 | 2.2 | 3.7 | | koff (× 10^-2 s^-1) | 1.6 | 7.0 | 1.3 | | Kd (nM) | 4.4 | 318 | 35.1 | | ITC | | | | | ΔH (kcal/mol) | -33.0 | -13.8 | ND | | TΔS (kcal/mol) | -21.1 | -4.7 | ND | | ΔG (kcal/mol) | -11.9 | -9.1 | ND | aND: Not determined.",
+            "Results and Discussion - Interaction of Ac-c[CDVINNNC]-NH2 with SPSB2": "The cyclic peptide Ac-c[CDVINNNC]-NH2 was found to bind tightly to immobilized SPSB2 by SPR analysis, with a Kd of 4.4 nM (Figure 1A). In contrast, the Ac-DINNN-NH2 linear peptide containing the conserved binding motif of iNOS, bound more weakly to SPSB2, with a Kd of 318 nM (Table 1)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "SPSB2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 ug/mL"
+            },
+            "analyte": {
+                "description": "Linear peptide Ac-DINNN-NH2 and cyclic peptide Ac-c[CDVINNNC]-NH2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.05% Tween 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank flow cell (reference surface)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (version 2.0)"
+            }
+        }
+    }
+}

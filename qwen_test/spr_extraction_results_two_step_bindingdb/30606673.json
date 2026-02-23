@@ -1,0 +1,207 @@
+{
+    "51242048": {
+        "reactant_set_id": 51242048,
+        "pmid": 30606673,
+        "protein": "CD81 antigen",
+        "ligand": {
+            "smiles": "CC(=O)[C@@H]1C[C@H](C(O)=O)[C@@]1(C)CC\\C=C(/C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 39.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CD81 (unknown origin) assessed as disruption of interaction between CD81 the HCV envelope protein E2 by measuring Kd for CD81/E2 interaction at 5 uM by surface plasmon resonance assay (Rvb = 1.3 nM)",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "Interactions between the influenza HA and the compounds were analyzed using the Biacore T200 system (GE Healthcare, Uppsala, Sweden) at 25 °C. Recombinant influenza HA (Sino Biological Inc., Beijing, China) was immobilized on a sensor chip (CM5) using an amine coupling kit (GE Healthcare, Buckinghamshire, UK). Final HA immobilized levels were typically ~16000 RU. Subsequently, compounds were injected as analytes at various concentrations using PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) as running buffer. For binding studies, analytes were applied at corresponding concentrations in running buffer at a flow rate of 30 μL/min with a contact time of 60 s and a dissociation time of 60 s. Chip platforms were washed with running buffer and 50% DMSO. Data were analyzed with the Biacore evaluation software (T200 Version 1.0) by curve fitting using a 1:1 binding model.",
+            "Results - SPR Analysis": "To detect the potential of compounds to inhibit the viral entry related to the factors of host cells, a surface plasmon resonance (SPR) experiment was performed for the binding capability of compounds with CD81, a key target protein for hepatitis C attachment and cell entry by interacting with virus’s E1/E2 glycoproteins heterodimer. Indeed, the strong affinity was observed for compounds 1 (Kd = 0.38 μM) and 2 (Kd = 0.66 μM) (Fig. 8), while the competitive affinity resulted in the remarkable disruption of the interaction between CD81 and the HCV envelope protein E2, as the evidence that the affinity capability of E2 with CD81 dramatically decreased with the Kd value of 39.2 nM after CD81 interacted with compound 1, showing 33 folds than that for the direct interaction between CD81 and E2 (Kd = 1.3 nM) (Fig. 9).",
+            "Figure 8 caption": "Fig. 8. Characterization of the affinities of 1 (A) and 2 (B) to CD81 protein based on the SPR analysis. The affinity constant (Kd), association rate constant (ka) and dissociation rate constant (kd) were calculated by fitting curve using a 1:1 kinetic binding model. Compound 1 Kd is 37.8 nM, ka is 5.33 μM−1s−1, kd is 2.02 μM−1s−1; Compound 2 Kd is 66.5 nM, ka is 38.1 μM−1s−1, kd is 253 μM−1s−1.",
+            "Figure 9 caption": "Fig. 9. Interaction of E2 target with CD 81 in the absence of 1 (A) and presence of 1 (B).",
+            "Figure 8 A sensorgram": "The sensorgram in Figure 8A shows SPR response (RU) over time (s) for compound 1 at concentrations: 0.39 μM, 0.78 μM, 1.56 μM, 3.13 μM, and 6.25 μM.",
+            "Figure 8 B sensorgram": "The sensorgram in Figure 8B shows SPR response (RU) over time (s) for compound 2 at concentrations: 0.39 μM, 0.78 μM, 1.56 μM, 3.13 μM, and 6.25 μM.",
+            "Figure 9 A sensorgram": "The sensorgram in Figure 9A shows SPR response (RU) over time (s) for E2 target with CD81 in the absence of compound 1 at concentrations: 1.95 nM, 3.91 nM, 7.81 nM, 31.25 nM, and 125 nM.",
+            "Figure 9 B sensorgram": "The sensorgram in Figure 9B shows SPR response (RU) over time (s) for E2 target with CD81 in the presence of compound 1 at concentrations: 7.81 nM, 15.63 nM, 31.25 nM, 62.5 nM, and 250 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "CD81",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 1 and 2 (inhibitors of CD81-E2 interaction)",
+                "concentration_range": "0.39 μM - 6.25 μM for compounds 1 and 2; 1.95 nM - 125 nM for E2 in absence of compound 1; 7.81 nM - 250 nM for E2 in presence of compound 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5)",
+                "pH": 4.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "Running buffer and 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (T200 Version 1.0)"
+            }
+        }
+    },
+    "51242044": {
+        "reactant_set_id": 51242044,
+        "pmid": 30606673,
+        "protein": "CD81 antigen",
+        "ligand": {
+            "smiles": "C\\C(=C/CC[C@]1(C)[C@H](C[C@H]1[C@](C)(O)C(O)=O)C(O)=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CD81 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "Interactions between the influenza HA and the compounds were analyzed using the Biacore T200 system (GE Healthcare, Uppsala, Sweden) at 25 °C. Recombinant influenza HA (Sino Biological Inc., Beijing, China) was immobilized on a sensor chip (CM5) using an amine coupling kit (GE Healthcare, Buckinghamshire, UK). Final HA immobilized levels were typically ~16000 RU. Subsequently, compounds were injected as analytes at various concentrations using PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) as running buffer. For binding studies, analytes were applied at corresponding concentrations in running buffer at a flow rate of 30 μL/min with a contact time of 60 s and a dissociation time of 60 s. Chip platforms were washed with running buffer and 50% DMSO. Data were analyzed with the Biacore evaluation software (T200 Version 1.0) by curve fitting using a 1:1 binding model.",
+            "Figure 8 caption": "Fig. 8. Characterization of the affinities of 1 (A) and 2 (B) to CD81 protein based on the SPR analysis. The affinity constant (K_D), association rate constant (k_a) and dissociation rate constant (k_d) were calculated by fitting curve using a 1:1 kinetic binding model. Compound 1 K_D is 37.8 nM, k_a is 5.33 μM⁻¹s⁻¹, k_d is 2.02 μM⁻¹s⁻¹; Compound 2 K_D is 66.5 nM, k_a is 38.1 μM⁻¹s⁻¹, k_d is 253 μM⁻¹s⁻¹.",
+            "Figure 9 caption": "Fig. 9. Interaction of E2 target with CD 81 in the absence of 1 (A) and presence of 1 (B).",
+            "Figure 8 A legend": "0.39 μM, 0.78 μM, 1.56 μM, 3.13 μM, 6.25 μM",
+            "Figure 8 B legend": "0.39 μM, 0.78 μM, 1.56 μM, 3.13 μM, 6.25 μM",
+            "Figure 9 A legend": "1.95 nM, 3.91 nM, 7.81 nM, 31.25 nM, 125 nM",
+            "Figure 9 B legend": "7.81 nM, 15.63 nM, 31.25 nM, 62.5 nM, 250 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant influenza HA",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 1 and 2 (analytes tested for binding to CD81)",
+                "concentration_range": "0.39 μM - 6.25 μM (for compounds 1 and 2); 1.95 nM - 125 nM (for E2 target in Figure 9A); 7.81 nM - 250 nM (for E2 target in Figure 9B)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5)",
+                "pH": 4.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "Running buffer and 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (T200 Version 1.0)"
+            }
+        }
+    },
+    "51242046": {
+        "reactant_set_id": 51242046,
+        "pmid": 30606673,
+        "protein": "CD81 antigen",
+        "ligand": {
+            "smiles": "CC(=O)[C@@H]1C[C@H](C(O)=O)[C@@]1(C)CC\\C=C(/C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 38.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CD81 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "Interactions between the influenza HA and the compounds were analyzed using the Biacore T200 system (GE Healthcare, Uppsala, Sweden) at 25 °C. Recombinant influenza HA (Sino Biological Inc., Beijing, China) was immobilized on a sensor chip (CM5) using an amine coupling kit (GE Healthcare, Buckinghamshire, UK). Final HA immobilized levels were typically ~16000 RU. Subsequently, compounds were injected as analytes at various concentrations using PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) as running buffer. For binding studies, analytes were applied at corresponding concentrations in running buffer at a flow rate of 30 μL/min with a contact time of 60 s and a dissociation time of 60 s. Chip platforms were washed with running buffer and 50% DMSO. Data were analyzed with the Biacore evaluation software (T200 Version 1.0) by curve fitting using a 1:1 binding model.",
+            "Figure 8 caption": "Fig. 8. Characterization of the affinities of 1 (A) and 2 (B) to CD81 protein based on the SPR analysis. The affinity constant (K_D), association rate constant (k_a) and dissociation rate constant (k_d) were calculated by fitting curve using a 1:1 kinetic binding model. Compound 1 K_D is 37.8 nM, k_a is 5.33 μM⁻¹s⁻¹, k_d is 2.02 μM⁻¹s⁻¹; Compound 2 K_D is 66.5 nM, k_a is 38.1 μM⁻¹s⁻¹, k_d is 253 μM⁻¹s⁻¹.",
+            "Figure 9 caption": "Fig. 9. Interaction of E2 target with CD 81 in the absence of 1 (A) and presence of 1 (B).",
+            "Figure 8 A legend": "0.39 μM, 0.78 μM, 1.56 μM, 3.13 μM, 6.25 μM",
+            "Figure 8 B legend": "0.39 μM, 0.78 μM, 1.56 μM, 3.13 μM, 6.25 μM",
+            "Figure 9 A legend": "1.95 nM, 3.91 nM, 7.81 nM, 31.25 nM, 125 nM",
+            "Figure 9 B legend": "7.81 nM, 15.63 nM, 31.25 nM, 62.5 nM, 250 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant influenza HA",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 1 and 2 (analytes tested for binding to CD81)",
+                "concentration_range": "0.39 μM - 6.25 μM (for compounds 1 and 2); 1.95 nM - 125 nM (for E2 target in Figure 9A); 7.81 nM - 250 nM (for E2 target in Figure 9B)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5)",
+                "pH": 4.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "Running buffer and 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (T200 Version 1.0)"
+            }
+        }
+    }
+}

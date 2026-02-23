@@ -1,0 +1,70 @@
+{
+    "51599240": {
+        "reactant_set_id": 51599240,
+        "pmid": 38619191,
+        "protein": "Cyclic GMP-AMP synthase",
+        "ligand": {
+            "smiles": "O=C(CO)N1CC[C@@]2(CCc3[nH]c4c(Cl)c(Cl)cc(-c5ccn(C(F)F)n5)c4c3C2)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 146.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human cGAS assessed as dissociation constant measured upto 240 secs by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) Assays": "SPR experiments were performed using CM5 sensor chips in a BIACORE 8K (GE Healthcare) at 25 °C. cGAS was immobilized to a final density of 18,000 RU. All experiments were carried out with a running buffer containing 20 mM HEPES (pH 7.5), 150 mM KCl, 20 mM MgCl2, and 0.1% DMSO. Sample-dependent responses were subtracted from channel 1, which had no protein immobilized on it. Data were further corrected by subtracting a zero-concentration blank from all compounds. Compounds were injected for 120 s, and dissociation was measured for 120 s at 30 μL/min. Samples were injected with a top concentration, followed by 2-fold dilutions, and a final blank over 7 injection points. Dissociation equilibrium constants (Kd) were determined using a kinetics model (Biacore Insight Evaluation software). Competition assays were carried out using the A-B-A injection type in a BIACORE 8K (GE Healthcare) at 25 °C. All competition experiments were carried out with running buffer containing 20 mM HEPES (pH 7.5), 150 mM KCl, 20 mM MgCl2, and 5% DMSO. Solutions with 30 μM 30d-S were used in the Injection A module, with preanalyte contact time in 180 s and postanalyte contact time in 180 s. Solutions containing 30 μM 30d-S and 2 mM ATP or GTP were used in the Injection B module, with contact time in 180 s. Competition analyses were determined using a kinetics model (Biacore Insight Evaluation software).",
+            "Figure 6 caption": "Figure 6. Competitive binding assays of compound 30d-S with either ATP or GTP with h-cGAS by SPR. (A) The binding affinity of ATP with h-cGAS. (B) The competition assays of 30d-S against ATP with h-cGAS using A-B-A injection mode. (C) The binding affinity of GTP with h-cGAS. (D) The competition assays of 30d-S against GTP with h-cGAS using A-B-A injection mode.",
+            "Figure 6A": "ATP, Kd = 719 μM",
+            "Figure 6C": "GTP, Kd = 288 μM",
+            "Figure 6B": "30d-S (30 μM) + ATP (2 mM)",
+            "Figure 6D": "30d-S (30 μM) + GTP (2 mM)",
+            "Table 7": "Table 7. Inhibitory Activity of Compounds in the Human cGAS Enzyme compounds inhibition rate (%) (12.5 μM) IC50 (μM) 30d 92 0.070 ± 0.046 30d-S 98 0.006 ± 0.002 30d-R 25 >10 6 (G140) 97 0.051 ± 0.011 aThe IC50 values for the enzymatic assay were calculated using GraphPad Prism 8 from three replicate experiments. The values represent mean IC50 ± SD."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "cGAS",
+                "strategy": "Amine coupling",
+                "density_ru": "18000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested for binding affinity to human cGAS, including 30d-S, ATP, GTP",
+                "concentration_range": "Top concentration followed by 2-fold dilutions over 7 injection points (including blank)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.5), 150 mM KCl, 20 mM MgCl2, 0.1% DMSO (for standard assays); 20 mM HEPES (pH 7.5), 150 mM KCl, 20 mM MgCl2, 5% DMSO (for competition assays)",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Channel 1 with no protein immobilized",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Other",
+                "software": "Biacore Insight Evaluation software"
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "51436123": {
+        "reactant_set_id": 51436123,
+        "pmid": 34382796,
+        "protein": "Toll-like receptor 4/MD-2",
+        "ligand": {
+            "smiles": "[Na+].[Na+].CCCCCCCCCCCCCC(=O)N[C@H]1[C@@H](OP([O-])([O-])=O)O[C@H](CO)[C@@H](OC(=O)CCCCCCCCCCCCC)[C@@H]1OC(=O)CCCCCCCCCCCCC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 180.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NTA sensor chip immobilized recombinant human TLR4/MD2 assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analysis": "Surface Plasmon Resonance binding interaction experiments were performed with a Biacore X100 (GE Healthcare). Recombinant human TLR4/MD2 complex was covalently immobilized onto the surface of a sensor chip NTA (cat # BR100034, GE Healthcare) via amine coupling. TLR4/MD2 complex was diluted to a concentration of 20 μg/mL in 10 mM sodium acetate at pH 4.0, and was injected on the NTA chip at a flow rate of 10 μL/min, upon washing with 0.35 M ethylenediaminetetraacetic acid (EDTA), injection of NiCl2 for 60 s, a second wash with 3 mM EDTA, and activation of the carboxyl groups on the sensor surface with 7 min injection of a mixture of 0.2 M EDC and 0.05 M NHS. The remaining esters were blocked with 7 min injection of ethanolamine. Based on the ligand (TLR4/MD2) and analytes (FP11, FP18), molecular weights (MW) of 90 kDa, and 934.39 or 850.04 Da, respectively, the appropriate ligand density (RL) on the chip was calculated as follows: RL = (ligand MW/analyte MW) × Rmax × (1/Sm), where Rmax is the maximum binding signal and Sm corresponds to the binding stoichiometry. The target capture level of the TLR4/MD2 complex was 1933.5 response units (RUs). The other flow cell was used as a reference and was immediately blocked after the activation. Increasing concentrations of FP11 or FP18 were flowed over the NTA sensor chip coated with TLR4/MD2 at a flow rate of 30 μL/min at 25 °C with an association time of 60 s and a dissociation phase of 180 s. A single regeneration step with 50 mM NaOH and an extra wash with phosphate buffered saline (PBS-P) with 50% dimethyl sulfoxide (DMSO) were performed following each analytic cycle. All the analytes tested were sonicated for 15 min and then diluted in the PBS-P + buffer (GE Healthcare) with 5% DMSO. The KD values were evaluated using the Biacore evaluation software (GE Healthcare) after solvent correction, and the reliability of the kinetic constants calculated by assuming a 1:1 binding model supported by the quality assessment indicators values.",
+            "Figure 2 caption": "Figure 2. (A) Docking studies of compounds FP11, FP18, and FP111. (Top) Best AutoDock predicted binding modes for ligands FP11 and FP18 to the human TLR4/MD-2 heterodimer. On the right are details of the interactions between FP11 (magenta and cyan sticks) and FP18 (yellow sticks) and MD-2 protein. (Bottom) Binding of compound FP111 by means of the AutoDock program to the human TLR4/MD-2 system. On the right are represented detailed poses of FP111 to the TLR4/MD-2 heterodimer, with details of the interactions between FP111 type A antagonist-like (purple sticks) and type B agonist-like (salmon pink sticks) orientations. (B) Surface plasmon resonance (SPR) analyses of FP11 and FP18 binding to immobilized TLR4/MD2. Increasing concentrations of FP11 (4.34–69.50 μM, left panel) or FP18 (5.34–85.50 μM, right panel) diluted in running buffer were injected over a TLR4/MD2-immobilized NTA sensor chip. FP11 and FP18 bind to TLR4/MD2 with equilibrium dissociation constant (Kd) values of 0.18 and 0.57 μM, respectively. Data are representative of three independent experiments. Binding kinetics are also shown. Ka, association rate constant; M, molarity; s, seconds; Kd, dissociation rate constant; KD, equilibrium dissociation constant; Rmax, maximum response; RU, response units; Chi, average squared residual.",
+            "Table in Figure 2B": "FP11: Ka (1/Ms) = 3.836*10^4, Kd (1/s) = 7.089*10^-4, KD (M) = 1.848*10^-7, Rmax (RU) = 14.47, Chi^2 (RU) = 0.971 FP18: Ka (1/Ms) = 9.148*10^3, Kd (1/s) = 5.194*10^-4, KD (M) = 5.677*10^-7, Rmax (RU) = 29.09, Chi^2 (RU) = 0.604"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human TLR4/MD2 complex",
+                "strategy": "Amine coupling",
+                "density_ru": "1933.5",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "FP11, FP18",
+                "concentration_range": "FP11: 4.34–69.50 μM; FP18: 5.34–85.50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P + 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "50 mM NaOH followed by PBS-P with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Other flow cell used as reference and immediately blocked after activation",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51436124": {
+        "reactant_set_id": 51436124,
+        "pmid": 34382796,
+        "protein": "Toll-like receptor 4/MD-2",
+        "ligand": {
+            "smiles": "[Na+].[Na+].CCCCCCCCCCCC(=O)N[C@H]1[C@@H](OP([O-])([O-])=O)O[C@H](CO)[C@@H](OC(=O)CCCCCCCCCCC)[C@@H]1OC(=O)CCCCCCCCCCC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 570.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NTA sensor chip immobilized recombinant human TLR4/MD2 assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analysis": "Surface Plasmon Resonance binding interaction experiments were performed with a Biacore X100 (GE Healthcare). Recombinant human TLR4/MD2 complex was covalently immobilized onto the surface of a sensor chip NTA (cat # BR100034, GE Healthcare) via amine coupling. TLR4/MD2 complex was diluted to a concentration of 20 μg/mL in 10 mM sodium acetate at pH 4.0, and was injected on the NTA chip at a flow rate of 10 μL/min, upon washing with 0.35 M ethylenediaminetetraacetic acid (EDTA), injection of NiCl2 for 60 s, a second wash with 3 mM EDTA, and activation of the carboxyl groups on the sensor surface with 7 min injection of a mixture of 0.2 M EDC and 0.05 M NHS. The remaining esters were blocked with 7 min injection of ethanolamine. Based on the ligand (TLR4/MD2) and analytes (FP11, FP18), molecular weights (MW) of 90 kDa, and 934.39 or 850.04 Da, respectively, the appropriate ligand density (RL) on the chip was calculated as follows: RL = (ligand MW/analyte MW) × Rmax × (1/Sm), where Rmax is the maximum binding signal and Sm corresponds to the binding stoichiometry. The target capture level of the TLR4/MD2 complex was 1933.5 response units (RUs). The other flow cell was used as a reference and was immediately blocked after the activation. Increasing concentrations of FP11 or FP18 were flowed over the NTA sensor chip coated with TLR4/MD2 at a flow rate of 30 μL/min at 25 °C with an association time of 60 s and a dissociation phase of 180 s. A single regeneration step with 50 mM NaOH and an extra wash with phosphate buffered saline (PBS-P) with 50% dimethyl sulfoxide (DMSO) were performed following each analytic cycle. All the analytes tested were sonicated for 15 min and then diluted in the PBS-P + buffer (GE Healthcare) with 5% DMSO. The KD values were evaluated using the Biacore evaluation software (GE Healthcare) after solvent correction, and the reliability of the kinetic constants calculated by assuming a 1:1 binding model supported by the quality assessment indicators values.",
+            "Figure 2 caption": "Figure 2. (A) Docking studies of compounds FP11, FP18, and FP111. (Top) Best AutoDock predicted binding modes for ligands FP11 and FP18 to the human TLR4/MD-2 heterodimer. On the right are details of the interactions between FP11 (magenta and cyan sticks) and FP18 (yellow sticks) and MD-2 protein. (Bottom) Binding of compound FP111 by means of the AutoDock program to the human TLR4/MD-2 system. On the right are represented detailed poses of FP111 to the TLR4/MD-2 heterodimer, with details of the interactions between FP111 type A antagonist-like (purple sticks) and type B agonist-like (salmon pink sticks) orientations. (B) Surface plasmon resonance (SPR) analyses of FP11 and FP18 binding to immobilized TLR4/MD2. Increasing concentrations of FP11 (4.34–69.50 μM, left panel) or FP18 (5.34–85.50 μM, right panel) diluted in running buffer were injected over a TLR4/MD2-immobilized NTA sensor chip. FP11 and FP18 bind to TLR4/MD2 with equilibrium dissociation constant (Kd) values of 0.18 and 0.57 μM, respectively. Data are representative of three independent experiments. Binding kinetics are also shown. Ka, association rate constant; M, molarity; s, seconds; Kd, dissociation rate constant; KD, equilibrium dissociation constant; Rmax, maximum response; RU, response units; Chi, average squared residual.",
+            "Table in Figure 2B": "FP11: Ka (1/Ms) = 3.836*10^4, Kd (1/s) = 7.089*10^-4, KD (M) = 1.848*10^-7, Rmax (RU) = 14.47, Chi^2 (RU) = 0.971 FP18: Ka (1/Ms) = 9.148*10^3, Kd (1/s) = 5.194*10^-4, KD (M) = 5.677*10^-7, Rmax (RU) = 29.09, Chi^2 (RU) = 0.604"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human TLR4/MD2 complex",
+                "strategy": "Amine coupling",
+                "density_ru": "1933.5",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "FP11, FP18",
+                "concentration_range": "FP11: 4.34–69.50 μM; FP18: 5.34–85.50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P + 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "50 mM NaOH followed by PBS-P with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Other flow cell used as reference and immediately blocked after activation",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

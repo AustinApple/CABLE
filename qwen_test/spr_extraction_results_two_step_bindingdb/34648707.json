@@ -1,0 +1,782 @@
+{
+    "51436389": {
+        "reactant_set_id": 51436389,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1cccc(C)c1-c1ccc(s1)-c1nnn[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 599000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436390": {
+        "reactant_set_id": 51436390,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1ccccc1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 372000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436391": {
+        "reactant_set_id": 51436391,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1ccc(-c2ccc(s2)C(O)=O)c(C)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 510000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436392": {
+        "reactant_set_id": 51436392,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1cc(C)c(-c2ccc(s2)C(O)=O)c(C)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 319000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436393": {
+        "reactant_set_id": 51436393,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1cccc(C)c1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 130000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436394": {
+        "reactant_set_id": 51436394,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "CCc1ccccc1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 306000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436395": {
+        "reactant_set_id": 51436395,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "CC(C)c1cccc(C(C)C)c1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 640000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436396": {
+        "reactant_set_id": 51436396,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1cccc(F)c1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 527000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436397": {
+        "reactant_set_id": 51436397,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "COc1cccc(C)c1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 461000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436398": {
+        "reactant_set_id": 51436398,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "Cc1cccc(O)c1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 508000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436399": {
+        "reactant_set_id": 51436399,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc(s1)-c1cccc2CCOc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1184000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51436400": {
+        "reactant_set_id": 51436400,
+        "pmid": 34648707,
+        "protein": "Ricin",
+        "ligand": {
+            "smiles": "COCCOCCc1ccccc1-c1ccc(s1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1355000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to castor beans ricin toxin A subunit assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 43: Li, X. P.; Harjian, R. K.; Kahn, J. N.; Schramm, V. L.; Tumer, N. E. Small molecule inhibitors targeting the interaction of ricin toxin A subunit with ribosomes. ACS Infect. Dis. 2020, 6, 1894–1905.",
+        "original_paragraph": {
+            "Materials and Methods": "RTA Binding and Affinity Measurement Using SPR. The affinity of all compounds in the RTA focused library was measured using Biacore 8K+ using the same conditions as previously reported. Biacore 8K+ has eight channels with two flow cells (Fc) in each channel. RTA was immobilized on Fc2 of a CMS chip at 5800 to 6000 RU using the amine coupling method. Fc1 was activated and blocked without RTA using the same method as Fc2 as reference. Compounds were passed over Fc1 and Fc2 in all eight channels in parallel. Data were analyzed using the Biacore Insight Evaluation Software with DMSO correction. The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested.",
+            "Figure 4 caption": "Figure 4. Interaction of advanced compounds with RTA by SPR. The binding sensorgrams of RU-NT-70, RU-NT-75, RU-NT-93, and RU-NT-102 (upper) and the steady-state fitting (lower) with free Rmax are shown. Biacore 8K+ was used to measure the interaction and determine the equilibrium dissociation constant (KD). RTA was immobilized on flow cell 2 (Fc2) of a CMS chip up to 5800–6000 RU using amine coupling. Fc1 was activated and blocked without RTA as reference. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Buffer mismatch was corrected by reference (Fc1) subtraction and DMSO correction. We did not observe any nonspecific interaction of any of the fragments alone on the reference cell using these conditions. All fragments were run on four different channels as replicates. Data were analyzed using the Biacore Insight Evaluation Software. The vertical blue line indicates the highest concentration used is high enough for a reliable KD measurement.",
+            "Table 1": "The KD values were determined using steady-state fitting with the free Rmax model. Using the free Rmax model, we could not determine the affinity of CC10501 because the sensorgram displayed a slope during binding suggesting that secondary binding occurred as the compound concentration increased (Figure S1A). The KD for CC10501 was 584 μM using steady-state fitting with the constant Rmax model when RU-NT-93 was used as a positive control. This value is closer to the actual KD than the previously published value of 270 μM obtained using the P11 peptide as a positive control since the molecular weight (MW) of CC10501 (204 Da) is closer to that of RU-NT-93 (232 Da) than P11 (1218 Da). Even when steady-state fitting with the constant Rmax model was used, the highest concentration of CC10501 did not reach equilibrium. Similarly, we could not determine the KD value of RU-NT-57 using steady-state binding with the free Rmax model possibly because secondary binding occurred as the compound concentration increased (Figure S1B). We were able to obtain the KD values for all other analogs using steady-state fitting with the free Rmax model (Table 1). The inhibitory activity on eukaryotic ribosomes was determined by qRT-PCR using each fragment at 100 μM (Table 1).",
+            "Supporting Information S1": "The binding sensorgrams of Fc1 were subtracted from Fc2 to correct for the buffer mismatch. The buffer alone was subtracted from all sensorgrams at different concentrations to correct for any baseline drift. The running buffer was PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO. Fragments at 0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM were passed over both surfaces at 30 μL/min for 60 s and dissociated for 60 s. There was no nonspecific binding with any of the compounds tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K+"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RTA (ricin toxin A subunit)",
+                "strategy": "Amine coupling",
+                "density_ru": "5800 to 6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds from RTA focused library (fragments including RU-NT-70, RU-NT-75, RU-NT-93, RU-NT-102, CC10501, RU-NT-57, etc.)",
+                "concentration_range": "0.7, 2.1, 6.2, 18.5, 55.6, 166.7, and 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20, pH 7.4) with 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 activated and blocked without RTA as reference",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    }
+}

@@ -1,0 +1,266 @@
+{
+    "50805006": {
+        "reactant_set_id": 50805006,
+        "pmid": 29494148,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "CCCCCCCCCCCCCC(=O)N[C@H]1[C@@H](OP(O)(O)=O)O[C@H](CO)[C@@H](OP(O)(O)=O)[C@@H]1OC(=O)CCCCCCCCCCCCC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding to C-terminal His6-tagged human MD2 expressed in Pichia pastoris GS115 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model.",
+            "Figure 7 caption": "Figure 7. Cell-free binding studies on purified hMD-2 receptor. (A) LPS, FP7, FP10, and FP12 prevent anti-human MD-2 monoclonal antibody binding in a dose-dependent manner. (B) LPS, FP7, FP10, FP12, and FP116 activity in competing with biotin-LPS for hMD-2 binding. (C) Fluorescence measurements show that LPS, FP7, FP10, and FP12 dose-dependently inhibit the binding of bis-ANS to MD-2. (D–H) SPR analysis shows direct interaction between LPS, FP10, FP12, FP7, and FP116 and MD-2; K_D values are reported. Results are mean ± SEM from three parallels representative of at least three independent experiments.",
+            "SPR Analysis text": "SPR data with immobilized hMD-2 showed direct interaction of the receptor with LPS (control) and with the tested synthetic compounds. K_D values derived from sensorgram analysis were 3, 13.7, 22, and 66.8 μM for FP12, FP7, FP10, and FP116, respectively (Figure 7E–H). SPR experimental curve optimal fitting was obtained by assuming 1:1 ligand/MD-2 binding stoichiometry.",
+            "Figure 7E-H": "Figure 7E: FP10, K_D = 22 μM. Figure 7F: FP12, K_D = 14 μM. Figure 7G: FP7, K_D = 3 μM. Figure 7H: FP116, K_D = 67 μM. Concentrations shown: 70, 35, 25, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP10; 70, 50, 20, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP12; 25, 12.5, 6.2, 3.1, 1.5, 0.75, 0.375, 0.187, 0.094, 0.047, 0.023 μM for FP7; 300, 200, 150, 100, 50, 25, 12.5, 6.25, 3.125, 1.56, 0.78, 0.39 μM for FP116. Time axis: 0 to 200 seconds. Response (RU) axis: 0 to 200.",
+            "Experimental Section - SPR Analysis": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "C-terminal His6-tagged human MD2",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.5 μM"
+            },
+            "analyte": {
+                "description": "LPS, FP7, FP10, FP12, FP116",
+                "concentration_range": "0.078 μM - 70 μM (for FP10, FP12, FP7); 0.39 μM - 300 μM (for FP116)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO, 5% EtOH, pH 7.5",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell used as control surface to control nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Evaluation software"
+            }
+        }
+    },
+    "50805007": {
+        "reactant_set_id": 50805007,
+        "pmid": 29494148,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "CCCCCCCCCCCC(=O)N[C@H]1[C@@H](OP(O)([O-])=O)O[C@H](CO)[C@@H](OP(O)([O-])=O)[C@@H]1OC(=O)CCCCCCCCCCC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding to C-terminal His6-tagged human MD2 expressed in Pichia pastoris GS115 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model.",
+            "Figure 7 caption": "Figure 7. Cell-free binding studies on purified hMD-2 receptor. (A) LPS, FP7, FP10, and FP12 prevent anti-human MD-2 monoclonal antibody binding in a dose-dependent manner. (B) LPS, FP7, FP10, FP12, and FP116 activity in competing with biotin-LPS for hMD-2 binding. (C) Fluorescence measurements show that LPS, FP7, FP10, and FP12 dose-dependently inhibit the binding of bis-ANS to MD-2. (D–H) SPR analysis shows direct interaction between LPS, FP10, FP12, FP7, and FP116 and MD-2; K_D values are reported. Results are mean ± SEM from three parallels representative of at least three independent experiments.",
+            "SPR Analysis text": "SPR data with immobilized hMD-2 showed direct interaction of the receptor with LPS (control) and with the tested synthetic compounds. K_D values derived from sensorgram analysis were 3, 13.7, 22, and 66.8 μM for FP12, FP7, FP10, and FP116, respectively (Figure 7E–H). SPR experimental curve optimal fitting was obtained by assuming 1:1 ligand/MD-2 binding stoichiometry.",
+            "Figure 7E-H": "Figure 7E: FP10, K_D = 22 μM. Figure 7F: FP12, K_D = 14 μM. Figure 7G: FP7, K_D = 3 μM. Figure 7H: FP116, K_D = 67 μM. Concentrations shown: 70, 35, 25, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP10; 70, 50, 20, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP12; 25, 12.5, 6.2, 3.1, 1.5, 0.75, 0.375, 0.187, 0.094, 0.047, 0.023 μM for FP7; 300, 200, 150, 100, 50, 25, 12.5, 6.25, 3.125, 1.56, 0.78, 0.39 μM for FP116. Time axis: 0 to 200 seconds. Response (RU) axis: 0 to 200.",
+            "Experimental Section - SPR Analysis": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "C-terminal His6-tagged human MD2",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.5 μM"
+            },
+            "analyte": {
+                "description": "LPS, FP7, FP10, FP12, FP116",
+                "concentration_range": "0.078 μM - 70 μM (for FP10, FP12, FP7); 0.39 μM - 300 μM (for FP116)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO, 5% EtOH, pH 7.5",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell used as control surface to control nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Evaluation software"
+            }
+        }
+    },
+    "50805008": {
+        "reactant_set_id": 50805008,
+        "pmid": 29494148,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "CCCCCCCCCC(=O)N[C@H]1[C@@H](OP(O)([O-])=O)O[C@H](CO)[C@@H](OP(O)([O-])=O)[C@@H]1OC(=O)CCCCCCCCC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 22000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding to C-terminal His6-tagged human MD2 expressed in Pichia pastoris GS115 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model.",
+            "Figure 7 caption": "Figure 7. Cell-free binding studies on purified hMD-2 receptor. (A) LPS, FP7, FP10, and FP12 prevent anti-human MD-2 monoclonal antibody binding in a dose-dependent manner. (B) LPS, FP7, FP10, FP12, and FP116 activity in competing with biotin-LPS for hMD-2 binding. (C) Fluorescence measurements show that LPS, FP7, FP10, and FP12 dose-dependently inhibit the binding of bis-ANS to MD-2. (D–H) SPR analysis shows direct interaction between LPS, FP10, FP12, FP7, and FP116 and MD-2; K_D values are reported. Results are mean ± SEM from three parallels representative of at least three independent experiments.",
+            "SPR Analysis text": "SPR data with immobilized hMD-2 showed direct interaction of the receptor with LPS (control) and with the tested synthetic compounds. K_D values derived from sensorgram analysis were 3, 13.7, 22, and 66.8 μM for FP12, FP7, FP10, and FP116, respectively (Figure 7E–H). SPR experimental curve optimal fitting was obtained by assuming 1:1 ligand/MD-2 binding stoichiometry.",
+            "Figure 7E-H": "Figure 7E: FP10, K_D = 22 μM. Figure 7F: FP12, K_D = 14 μM. Figure 7G: FP7, K_D = 3 μM. Figure 7H: FP116, K_D = 67 μM. Concentrations shown: 70, 35, 25, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP10; 70, 50, 20, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP12; 25, 12.5, 6.2, 3.1, 1.5, 0.75, 0.375, 0.187, 0.094, 0.047, 0.023 μM for FP7; 300, 200, 150, 100, 50, 25, 12.5, 6.25, 3.125, 1.56, 0.78, 0.39 μM for FP116. Time axis: 0 to 200 seconds. Response (RU) axis: 0 to 200.",
+            "Experimental Section - SPR Analysis": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "C-terminal His6-tagged human MD2",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.5 μM"
+            },
+            "analyte": {
+                "description": "LPS, FP7, FP10, FP12, FP116",
+                "concentration_range": "0.078 μM - 70 μM (for FP10, FP12, FP7); 0.39 μM - 300 μM (for FP116)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO, 5% EtOH, pH 7.5",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell used as control surface to control nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Evaluation software"
+            }
+        }
+    },
+    "50805012": {
+        "reactant_set_id": 50805012,
+        "pmid": 29494148,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "CCCCCCCCCCCCCCCC(=O)N[C@H]1[C@@H](OP(O)([O-])=O)O[C@H](CO)[C@@H](OP(O)([O-])=O)[C@@H]1OC(=O)CCCCCCCCCCCCCCC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding to C-terminal His6-tagged human MD2 expressed in Pichia pastoris GS115 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model.",
+            "Figure 7 caption": "Figure 7. Cell-free binding studies on purified hMD-2 receptor. (A) LPS, FP7, FP10, and FP12 prevent anti-human MD-2 monoclonal antibody binding in a dose-dependent manner. (B) LPS, FP7, FP10, FP12, and FP116 activity in competing with biotin-LPS for hMD-2 binding. (C) Fluorescence measurements show that LPS, FP7, FP10, and FP12 dose-dependently inhibit the binding of bis-ANS to MD-2. (D–H) SPR analysis shows direct interaction between LPS, FP10, FP12, FP7, and FP116 and MD-2; K_D values are reported. Results are mean ± SEM from three parallels representative of at least three independent experiments.",
+            "SPR Analysis text": "SPR data with immobilized hMD-2 showed direct interaction of the receptor with LPS (control) and with the tested synthetic compounds. K_D values derived from sensorgram analysis were 3, 13.7, 22, and 66.8 μM for FP12, FP7, FP10, and FP116, respectively (Figure 7E–H). SPR experimental curve optimal fitting was obtained by assuming 1:1 ligand/MD-2 binding stoichiometry.",
+            "Figure 7E-H": "Figure 7E: FP10, K_D = 22 μM. Figure 7F: FP12, K_D = 14 μM. Figure 7G: FP7, K_D = 3 μM. Figure 7H: FP116, K_D = 67 μM. Concentrations shown: 70, 35, 25, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP10; 70, 50, 20, 10, 5, 2.5, 1.25, 0.625, 0.312, 0.156, 0.078 μM for FP12; 25, 12.5, 6.2, 3.1, 1.5, 0.75, 0.375, 0.187, 0.094, 0.047, 0.023 μM for FP7; 300, 200, 150, 100, 50, 25, 12.5, 6.25, 3.125, 1.56, 0.78, 0.39 μM for FP116. Time axis: 0 to 200 seconds. Response (RU) axis: 0 to 200.",
+            "Experimental Section - SPR Analysis": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of the compounds to recombinant hMD-2 was determined using a Biacore X100 with an NTA sensor chip (Biacore, GE Healthcare, Uppsala, Sweden). Briefly, 0.5 μM hMD-2 (in 50 mM Tris, 150 mM NaCl, 0.5% Tween 20, pH 7.5) was immobilized onto the sensor chip previously activated with 1 min pulse of 10 mM NiSO4. The first flow cell was used as a control surface to control nonspecific binding. Both flow cells were injected with the analyte (in PBS, 5% DMSO, 5% EtOH, pH 7.5) at a flow rate of 10 μL/min at 25 °C in increasing concentrations. The data were analyzed with Biacore Evaluation software. K_D values were calculated by global fitting of the equilibrium binding responses from various concentrations of analytes using a 1:1 Langmuir binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "C-terminal His6-tagged human MD2",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.5 μM"
+            },
+            "analyte": {
+                "description": "LPS, FP7, FP10, FP12, FP116",
+                "concentration_range": "0.078 μM - 70 μM (for FP10, FP12, FP7); 0.39 μM - 300 μM (for FP116)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 5% DMSO, 5% EtOH, pH 7.5",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow cell used as control surface to control nonspecific binding",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Evaluation software"
+            }
+        }
+    }
+}

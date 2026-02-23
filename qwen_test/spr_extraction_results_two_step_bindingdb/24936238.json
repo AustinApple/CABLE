@@ -1,0 +1,67 @@
+{
+    "50965581": {
+        "reactant_set_id": 50965581,
+        "pmid": 24936238,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "COc1ccc(cc1OC)S(=O)(=O)N(Cc1ccc2OC(C)(C)C=Cc2c1)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 345.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant P300 CH1 domain assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding and kinetics measurements were performed with a BIACORE T200 system and carboxylic acid coated sensor chips (CM-5 chips with five channels from BIACore, two of which were used here). After activation of the surface with EDC/NHS, KCN1-amine (500 nM; see the Supporting Information for the synthesis of the free amine) in HBS-EP+ buffer was immobilized on the flow cell gold surface by covalent capture. One channel was used to immobilize KCN1-amine, and the other was left blank as a control. Recombinant p300-CH1 peptides in PBS were injected at a flow rate of 50 μL/min. A 1 M NaCl solution was used to dissociate the p300 from the KCN1 compound for surface regeneration. Injection of the protein (association) was followed by injection of running buffer (dissociation). To reduce the probability of nonspecific binding to the chip surface, 50 μL/L of surfactant P20 was added to the p300 buffers in the binding experiments.",
+            "Figure 5 caption": "Figure 5. SPR sensorgrams after subtraction of control illustrate KCN1 binding to p300; protein concentrations from 3 to 60 μg/mL.",
+            "Figure 5 sensorgram data": "The sensorgrams show response (RU) over time (s). The x-axis ranges from -200 to 1000 s. The y-axis ranges from 0 to 250 RU. The curves are labeled with protein concentrations: 3 μg/mL, 9 μg/mL, 12 μg/mL, 18 μg/mL, 30 μg/mL, 45 μg/mL, and 60 μg/mL. The association phase occurs from approximately 0 to 400 s, followed by a dissociation phase from 400 to 800 s.",
+            "Results section": "SPR methodology has been widely used for defining the kinetics and affinities for the interactions between a wide variety of macromolecular entities and high- and low-affinity small molecules. In the present instance, KCN1 was covalently tethered to a gold surface as shown in Figure 4. Recombinant p300-CH1 peptides (after cleavage of the GST moiety) were streamed over the KCN1-enriched surface in a range of concentrations as illustrated by Figure 5. It shows that SPR signals respond to the different protein concentrations, which clearly indicates the existence of binding between KCN1 and p300-CH1. Analysis of the curve shapes and concentration dependence permits an estimate that KCN1 binds to p300-CH1 with a Kd value of ~345 nM. Using a 1:1 kinetic binding model (A + B = AB), the association and dissociation processes were fitted to obtain the on (ka) and off (kd) rates separately. Consequently, the Kd value was calculated as kd/ka ~ 345 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM-5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "KCN1-amine",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "500 nM"
+            },
+            "analyte": {
+                "description": "Recombinant p300-CH1 peptides (after cleavage of the GST moiety)",
+                "concentration_range": "3 μg/mL to 60 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ buffer with 50 μL/L surfactant P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 400,
+                "dissociation_time_s": 400,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": "Blank channel (no ligand immobilized)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

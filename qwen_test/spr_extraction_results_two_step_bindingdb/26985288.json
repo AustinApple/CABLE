@@ -1,0 +1,550 @@
+{
+    "50482137": {
+        "reactant_set_id": 50482137,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 6",
+        "ligand": {
+            "smiles": "CC[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=S)Nc1ccc(c(c1)C(O)=O)-c1c2ccc(O)cc2oc2cc(=O)ccc12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human CBX6 (8 to 65 residues) expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 9: Kaustov, L.; Ouyang, H.; Amaya, M.; Lemak, A.; Nady, N.; Duan, S.; Wasney, G. A.; Li, Z.; Vedadi, M.; Schapira, M.; Min, J.; Arrowsmith, C. H. Recognition and Specificity Determinants of the Human Cbx Chromodomains. J. Biol. Chem. 2011, 286, 521-529.",
+            "Reference 10: Bernstein, E.; Duncan, E. M.; Masui, O.; Gil, J.; Heard, E.; Allis, C. D. Mouse Polycomb Proteins Bind Differentially to Methylated Histone H3 and Rna and Are Enriched in Facultative Heterochromatin. Mol. Cell Biol. 2006, 26, 2560-2569.",
+            "Reference 36: Huang, X. Fluorescence Polarization Competition Assay: The Range of Resolvable Inhibitor Potency Is Limited by the Affinity of the Fluorescent Ligand. J. Biomol. Screen. 2003, 8, 34-38."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant chromodomains for each polycomb paralog (CBX2, CBX4, CBX6, CBX7, and CBX8) were expressed and purified using minor modifications of reported protocols.9 We also prepared one member of the related HP1 family (CBX1; HP1β) as a representative from this more distantly related set of CBX proteins. In spite of the canon that defines H3K9me3 and/or H3K27me3 as the targets of CBX proteins, H3K9me3 and H3K27me3 peptides have been shown not to bind measurably with multiple members of the CBX family.9,10 In order to assure strong baseline affinity for our ligands, we started with a peptidic sequence (1) that we previously identified as a moderate-strength CBX7 binder (IC50 = 73 μM), and a chemically modified version (2) that has improved CBX7 affinity (IC50 = 1.7 μM) arising from a p-bromobenzamide group (Figure S11). Competitive fluorescence polarization (FP) studies are limited in their ability to measure Kd values for potent ligands, especially for comparison across different proteins that have different intrinsic affinities for the FP probes.36 To overcome this limitation by using direct FP titrations of an entire panel of proteins into ligands (which gives reliable Kd values for all complexes), we modified 2 by adding a linking residue and fluorescent dye at the C-terminus. Compounds 3, 4, and 5 were such compounds that vary only in the identity of the side chain directed into the (−2) pocket.",
+            "SPR Analysis": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Figure 4 caption": "Figure 4: Molecular dynamic simulation results showing the change in distances within CBX6 and CBX7 when in complex with compound 3 and 5. A) representative snapshots from MD trajectories, showing only those parts of the ligands that occupy the (−2) pocket as magenta surfaces. The distances d1, d2, d3 define changes in pocket shape that can be compared between simulations (see text). B) mean values for distances d1 (circle), d2 (square), and d3 (triangle) show the changes induced in and around the (−2) pocket when the bulkier compound 5 is bound to CBX6 and CBX7. See also the movies of complete MD simulations (Supporting Information).",
+            "Supporting Information": "Supporting Information Synthesis, characterization, protein expression and purification, FP and SPR binding data for protein-ligand complexes, MD simulation methods (PDF). Two videos (MOV) captured from MD simulation of CBX6 or CBX7 in complex with compound 5."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6-tagged human CBX6 (8 to 65 residues)",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50482138": {
+        "reactant_set_id": 50482138,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 6",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=S)Nc1ccc(c(c1)C(O)=O)-c1c2ccc(O)cc2oc2cc(=O)ccc12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human CBX6 (8 to 65 residues) expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 9: Kaustov, L.; Ouyang, H.; Amaya, M.; Lemak, A.; Nady, N.; Duan, S.; Wasney, G. A.; Li, Z.; Vedadi, M.; Schapira, M.; Min, J.; Arrowsmith, C. H. Recognition and Specificity Determinants of the Human Cbx Chromodomains. J. Biol. Chem. 2011, 286, 521-529.",
+            "Reference 10: Bernstein, E.; Duncan, E. M.; Masui, O.; Gil, J.; Heard, E.; Allis, C. D. Mouse Polycomb Proteins Bind Differentially to Methylated Histone H3 and Rna and Are Enriched in Facultative Heterochromatin. Mol. Cell Biol. 2006, 26, 2560-2569.",
+            "Reference 36: Huang, X. Fluorescence Polarization Competition Assay: The Range of Resolvable Inhibitor Potency Is Limited by the Affinity of the Fluorescent Ligand. J. Biomol. Screen. 2003, 8, 34-38."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant chromodomains for each polycomb paralog (CBX2, CBX4, CBX6, CBX7, and CBX8) were expressed and purified using minor modifications of reported protocols.9 We also prepared one member of the related HP1 family (CBX1; HP1β) as a representative from this more distantly related set of CBX proteins. In spite of the canon that defines H3K9me3 and/or H3K27me3 as the targets of CBX proteins, H3K9me3 and H3K27me3 peptides have been shown not to bind measurably with multiple members of the CBX family.9,10 In order to assure strong baseline affinity for our ligands, we started with a peptidic sequence (1) that we previously identified as a moderate-strength CBX7 binder (IC50 = 73 μM), and a chemically modified version (2) that has improved CBX7 affinity (IC50 = 1.7 μM) arising from a p-bromobenzamide group (Figure S11). Competitive fluorescence polarization (FP) studies are limited in their ability to measure Kd values for potent ligands, especially for comparison across different proteins that have different intrinsic affinities for the FP probes.36 To overcome this limitation by using direct FP titrations of an entire panel of proteins into ligands (which gives reliable Kd values for all complexes), we modified 2 by adding a linking residue and fluorescent dye at the C-terminus. Compounds 3, 4, and 5 were such compounds that vary only in the identity of the side chain directed into the (−2) pocket.",
+            "SPR Analysis": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Figure 4 caption": "Figure 4: Molecular dynamic simulation results showing the change in distances within CBX6 and CBX7 when in complex with compound 3 and 5. A) representative snapshots from MD trajectories, showing only those parts of the ligands that occupy the (−2) pocket as magenta surfaces. The distances d1, d2, d3 define changes in pocket shape that can be compared between simulations (see text). B) mean values for distances d1 (circle), d2 (square), and d3 (triangle) show the changes induced in and around the (−2) pocket when the bulkier compound 5 is bound to CBX6 and CBX7. See also the movies of complete MD simulations (Supporting Information).",
+            "Supporting Information": "Supporting Information Synthesis, characterization, protein expression and purification, FP and SPR binding data for protein-ligand complexes, MD simulation methods (PDF). Two videos (MOV) captured from MD simulation of CBX6 or CBX7 in complex with compound 5."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6-tagged human CBX6 (8 to 65 residues)",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50484128": {
+        "reactant_set_id": 50484128,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 6",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 910.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human CBX6 (8 to 65 residues) expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 9: Kaustov, L.; Ouyang, H.; Amaya, M.; Lemak, A.; Nady, N.; Duan, S.; Wasney, G. A.; Li, Z.; Vedadi, M.; Schapira, M.; Min, J.; Arrowsmith, C. H. Recognition and Specificity Determinants of the Human Cbx Chromodomains. J. Biol. Chem. 2011, 286, 521-529.",
+            "Reference 10: Bernstein, E.; Duncan, E. M.; Masui, O.; Gil, J.; Heard, E.; Allis, C. D. Mouse Polycomb Proteins Bind Differentially to Methylated Histone H3 and Rna and Are Enriched in Facultative Heterochromatin. Mol. Cell Biol. 2006, 26, 2560-2569.",
+            "Reference 36: Huang, X. Fluorescence Polarization Competition Assay: The Range of Resolvable Inhibitor Potency Is Limited by the Affinity of the Fluorescent Ligand. J. Biomol. Screen. 2003, 8, 34-38."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant chromodomains for each polycomb paralog (CBX2, CBX4, CBX6, CBX7, and CBX8) were expressed and purified using minor modifications of reported protocols.9 We also prepared one member of the related HP1 family (CBX1; HP1β) as a representative from this more distantly related set of CBX proteins. In spite of the canon that defines H3K9me3 and/or H3K27me3 as the targets of CBX proteins, H3K9me3 and H3K27me3 peptides have been shown not to bind measurably with multiple members of the CBX family.9,10 In order to assure strong baseline affinity for our ligands, we started with a peptidic sequence (1) that we previously identified as a moderate-strength CBX7 binder (IC50 = 73 μM), and a chemically modified version (2) that has improved CBX7 affinity (IC50 = 1.7 μM) arising from a p-bromobenzamide group (Figure S11). Competitive fluorescence polarization (FP) studies are limited in their ability to measure Kd values for potent ligands, especially for comparison across different proteins that have different intrinsic affinities for the FP probes.36 To overcome this limitation by using direct FP titrations of an entire panel of proteins into ligands (which gives reliable Kd values for all complexes), we modified 2 by adding a linking residue and fluorescent dye at the C-terminus. Compounds 3, 4, and 5 were such compounds that vary only in the identity of the side chain directed into the (−2) pocket.",
+            "SPR Analysis": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Figure 4 caption": "Figure 4: Molecular dynamic simulation results showing the change in distances within CBX6 and CBX7 when in complex with compound 3 and 5. A) representative snapshots from MD trajectories, showing only those parts of the ligands that occupy the (−2) pocket as magenta surfaces. The distances d1, d2, d3 define changes in pocket shape that can be compared between simulations (see text). B) mean values for distances d1 (circle), d2 (square), and d3 (triangle) show the changes induced in and around the (−2) pocket when the bulkier compound 5 is bound to CBX6 and CBX7. See also the movies of complete MD simulations (Supporting Information).",
+            "Supporting Information": "Supporting Information Synthesis, characterization, protein expression and purification, FP and SPR binding data for protein-ligand complexes, MD simulation methods (PDF). Two videos (MOV) captured from MD simulation of CBX6 or CBX7 in complex with compound 5."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6-tagged human CBX6 (8 to 65 residues)",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50484129": {
+        "reactant_set_id": 50484129,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 6",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human CBX6 (8 to 65 residues) expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 9: Kaustov, L.; Ouyang, H.; Amaya, M.; Lemak, A.; Nady, N.; Duan, S.; Wasney, G. A.; Li, Z.; Vedadi, M.; Schapira, M.; Min, J.; Arrowsmith, C. H. Recognition and Specificity Determinants of the Human Cbx Chromodomains. J. Biol. Chem. 2011, 286, 521-529.",
+            "Reference 10: Bernstein, E.; Duncan, E. M.; Masui, O.; Gil, J.; Heard, E.; Allis, C. D. Mouse Polycomb Proteins Bind Differentially to Methylated Histone H3 and Rna and Are Enriched in Facultative Heterochromatin. Mol. Cell Biol. 2006, 26, 2560-2569.",
+            "Reference 36: Huang, X. Fluorescence Polarization Competition Assay: The Range of Resolvable Inhibitor Potency Is Limited by the Affinity of the Fluorescent Ligand. J. Biomol. Screen. 2003, 8, 34-38."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant chromodomains for each polycomb paralog (CBX2, CBX4, CBX6, CBX7, and CBX8) were expressed and purified using minor modifications of reported protocols.9 We also prepared one member of the related HP1 family (CBX1; HP1β) as a representative from this more distantly related set of CBX proteins. In spite of the canon that defines H3K9me3 and/or H3K27me3 as the targets of CBX proteins, H3K9me3 and H3K27me3 peptides have been shown not to bind measurably with multiple members of the CBX family.9,10 In order to assure strong baseline affinity for our ligands, we started with a peptidic sequence (1) that we previously identified as a moderate-strength CBX7 binder (IC50 = 73 μM), and a chemically modified version (2) that has improved CBX7 affinity (IC50 = 1.7 μM) arising from a p-bromobenzamide group (Figure S11). Competitive fluorescence polarization (FP) studies are limited in their ability to measure Kd values for potent ligands, especially for comparison across different proteins that have different intrinsic affinities for the FP probes.36 To overcome this limitation by using direct FP titrations of an entire panel of proteins into ligands (which gives reliable Kd values for all complexes), we modified 2 by adding a linking residue and fluorescent dye at the C-terminus. Compounds 3, 4, and 5 were such compounds that vary only in the identity of the side chain directed into the (−2) pocket.",
+            "SPR Analysis": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Figure 4 caption": "Figure 4: Molecular dynamic simulation results showing the change in distances within CBX6 and CBX7 when in complex with compound 3 and 5. A) representative snapshots from MD trajectories, showing only those parts of the ligands that occupy the (−2) pocket as magenta surfaces. The distances d1, d2, d3 define changes in pocket shape that can be compared between simulations (see text). B) mean values for distances d1 (circle), d2 (square), and d3 (triangle) show the changes induced in and around the (−2) pocket when the bulkier compound 5 is bound to CBX6 and CBX7. See also the movies of complete MD simulations (Supporting Information).",
+            "Supporting Information": "Supporting Information Synthesis, characterization, protein expression and purification, FP and SPR binding data for protein-ligand complexes, MD simulation methods (PDF). Two videos (MOV) captured from MD simulation of CBX6 or CBX7 in complex with compound 5."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6-tagged human CBX6 (8 to 65 residues)",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50484044": {
+        "reactant_set_id": 50484044,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 7",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 160.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human CBX7 (8 to 62 residues) expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 9: Kaustov, L.; Ouyang, H.; Amaya, M.; Lemak, A.; Nady, N.; Duan, S.; Wasney, G. A.; Li, Z.; Vedadi, M.; Schapira, M.; Min, J.; Arrowsmith, C. H. Recognition and Specificity Determinants of the Human Cbx Chromodomains. J. Biol. Chem. 2011, 286, 521-529.",
+            "Reference 10: Bernstein, E.; Duncan, E. M.; Masui, O.; Gil, J.; Heard, E.; Allis, C. D. Mouse Polycomb Proteins Bind Differentially to Methylated Histone H3 and Rna and Are Enriched in Facultative Heterochromatin. Mol. Cell Biol. 2006, 26, 2560-2569.",
+            "Reference 36: Huang, X. Fluorescence Polarization Competition Assay: The Range of Resolvable Inhibitor Potency Is Limited by the Affinity of the Fluorescent Ligand. J. Biomol. Screen. 2003, 8, 34-38."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant chromodomains for each polycomb paralog (CBX2, CBX4, CBX6, CBX7, and CBX8) were expressed and purified using minor modifications of reported protocols.9 We also prepared one member of the related HP1 family (CBX1; HP1β) as a representative from this more distantly related set of CBX proteins. In spite of the canon that defines H3K9me3 and/or H3K27me3 as the targets of CBX proteins, H3K9me3 and H3K27me3 peptides have been shown not to bind measurably with multiple members of the CBX family.9,10 In order to assure strong baseline affinity for our ligands, we started with a peptidic sequence (1) that we previously identified as a moderate-strength CBX7 binder (IC50 = 73 μM), and a chemically modified version (2) that has improved CBX7 affinity (IC50 = 1.7 μM) arising from a p-bromobenzamide group (Figure S11). Competitive fluorescence polarization (FP) studies are limited in their ability to measure Kd values for potent ligands, especially for comparison across different proteins that have different intrinsic affinities for the FP probes.36 To overcome this limitation by using direct FP titrations of an entire panel of proteins into ligands (which gives reliable Kd values for all complexes), we modified 2 by adding a linking residue and fluorescent dye at the C-terminus. Compounds 3, 4, and 5 were such compounds that vary only in the identity of the side chain directed into the (−2) pocket.",
+            "SPR Analysis": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Figure 4 caption": "Figure 4: Molecular dynamic simulation results showing the change in distances within CBX6 and CBX7 when in complex with compound 3 and 5. A) representative snapshots from MD trajectories, showing only those parts of the ligands that occupy the (−2) pocket as magenta surfaces. The distances d1, d2, d3 define changes in pocket shape that can be compared between simulations (see text). B) mean values for distances d1 (circle), d2 (square), and d3 (triangle) show the changes induced in and around the (−2) pocket when the bulkier compound 5 is bound to CBX6 and CBX7. See also the movies of complete MD simulations (Supporting Information).",
+            "Supporting Information": "Supporting Information Synthesis, characterization, protein expression and purification, FP and SPR binding data for protein-ligand complexes, MD simulation methods (PDF). Two videos (MOV) captured from MD simulation of CBX6 or CBX7 in complex with compound 5."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6-tagged human CBX7 (8 to 62 residues)",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin (biotinylated versions of compounds 3 and 5)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50484045": {
+        "reactant_set_id": 50484045,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 7",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human CBX7 (8 to 62 residues) expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 9: Kaustov, L.; Ouyang, H.; Amaya, M.; Lemak, A.; Nady, N.; Duan, S.; Wasney, G. A.; Li, Z.; Vedadi, M.; Schapira, M.; Min, J.; Arrowsmith, C. H. Recognition and Specificity Determinants of the Human Cbx Chromodomains. J. Biol. Chem. 2011, 286, 521-529.",
+            "Reference 10: Bernstein, E.; Duncan, E. M.; Masui, O.; Gil, J.; Heard, E.; Allis, C. D. Mouse Polycomb Proteins Bind Differentially to Methylated Histone H3 and Rna and Are Enriched in Facultative Heterochromatin. Mol. Cell Biol. 2006, 26, 2560-2569.",
+            "Reference 36: Huang, X. Fluorescence Polarization Competition Assay: The Range of Resolvable Inhibitor Potency Is Limited by the Affinity of the Fluorescent Ligand. J. Biomol. Screen. 2003, 8, 34-38."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant chromodomains for each polycomb paralog (CBX2, CBX4, CBX6, CBX7, and CBX8) were expressed and purified using minor modifications of reported protocols.9 We also prepared one member of the related HP1 family (CBX1; HP1β) as a representative from this more distantly related set of CBX proteins. In spite of the canon that defines H3K9me3 and/or H3K27me3 as the targets of CBX proteins, H3K9me3 and H3K27me3 peptides have been shown not to bind measurably with multiple members of the CBX family.9,10 In order to assure strong baseline affinity for our ligands, we started with a peptidic sequence (1) that we previously identified as a moderate-strength CBX7 binder (IC50 = 73 μM), and a chemically modified version (2) that has improved CBX7 affinity (IC50 = 1.7 μM) arising from a p-bromobenzamide group (Figure S11). Competitive fluorescence polarization (FP) studies are limited in their ability to measure Kd values for potent ligands, especially for comparison across different proteins that have different intrinsic affinities for the FP probes.36 To overcome this limitation by using direct FP titrations of an entire panel of proteins into ligands (which gives reliable Kd values for all complexes), we modified 2 by adding a linking residue and fluorescent dye at the C-terminus. Compounds 3, 4, and 5 were such compounds that vary only in the identity of the side chain directed into the (−2) pocket.",
+            "SPR Analysis": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Figure 4 caption": "Figure 4: Molecular dynamic simulation results showing the change in distances within CBX6 and CBX7 when in complex with compound 3 and 5. A) representative snapshots from MD trajectories, showing only those parts of the ligands that occupy the (−2) pocket as magenta surfaces. The distances d1, d2, d3 define changes in pocket shape that can be compared between simulations (see text). B) mean values for distances d1 (circle), d2 (square), and d3 (triangle) show the changes induced in and around the (−2) pocket when the bulkier compound 5 is bound to CBX6 and CBX7. See also the movies of complete MD simulations (Supporting Information).",
+            "Supporting Information": "Supporting Information Synthesis, characterization, protein expression and purification, FP and SPR binding data for protein-ligand complexes, MD simulation methods (PDF). Two videos (MOV) captured from MD simulation of CBX6 or CBX7 in complex with compound 5."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6-tagged human CBX7 (8 to 62 residues)",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin (biotinylated versions of compounds 3 and 5)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50484119": {
+        "reactant_set_id": 50484119,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 7",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human CBX7 V13A mutant expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Results Section": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Discussion Section": "The weak binding to compound 5 by the CBX7-like selective binding of 5. This is consistent with the observed low potency of 5 for binding CBX2 and CBX8, which also have the V13A substitution but differ in other residues."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "CBX6, CBX7, CBX7V13A",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "50484127": {
+        "reactant_set_id": 50484127,
+        "pmid": 26985288,
+        "protein": "Chromobox protein homolog 7",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Br)cc1)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CCCC[N+](C)(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 290.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human CBX7 V13A mutant expressed in Escherichia coli BL21 by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Results Section": "We further confirmed the affinities and selectivities of 3 and 5 by preparing 3-biotin and 5-biotin to enable orthogonal characterization of the complexes by surface plasmon resonance (SPR). The results echo the selectivity trends obtained by direct FP while also generally agreeing with the absolute Kd values (Table 1 and Figures S16, S17).",
+            "Table 1": "Table 1. Binding affinities determined by SPR. | Compound | Protein | Kd (μM) | |----------|---------|---------| | 3-biotin | CBX6 | 0.11 ± 0.01 | | | CBX7 | 0.16 ± 0.01 | | | CBX7V13A| 0.29 ± 0.05 | | 5-biotin | CBX6 | 0.91 ± 0.05 | | | CBX7 | 34 ± 8 | | | CBX7V13A| 24 ± 2 |",
+            "Discussion Section": "The weak binding to compound 5 by the CBX7-like selective binding of 5. This is consistent with the observed low potency of 5 for binding CBX2 and CBX8, which also have the V13A substitution but differ in other residues."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "CBX6, CBX7, CBX7V13A",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "3-biotin and 5-biotin",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

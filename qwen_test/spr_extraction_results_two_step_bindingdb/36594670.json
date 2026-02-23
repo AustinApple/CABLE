@@ -1,0 +1,67 @@
+{
+    "51531995": {
+        "reactant_set_id": 51531995,
+        "pmid": 36594670,
+        "protein": "D-3-phosphoglycerate dehydrogenase",
+        "ligand": {
+            "smiles": "CC(=O)c1cccc(NS(=O)(=O)c2ccc(cc2)C(=O)Nc2nc(cs2)-c2cccc(F)c2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2480.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to his-tagged PHGDH (127 to 722 residues) (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Assay": "SPR Assay. Purified PHGDH protein (His-tag 127–722 amino acid, DetaBio, China) was immobilized on a sensor chip CMS (Cytiva) and carried out at 25 °C on Biacore T200 instruments. PHGDH (66 μg/mL, pH 5.5) was coupled to a CMS Chip to reach an immobilization level of approximately 27358.4 RU (according to the manufacturer’s protocol), and another flow cell was activated and blocked for reference subtraction. PBS buffer (0.01 M phosphate, 0.15 M NaCl, 0.05% v/v Tween 20, 1% DMSO, pH 7.4) was used as a running buffer. The operating conditions are as follows: contact time: 120 s, flow rate: 30 mL/min, and dissociation time: 180 s. The regeneration conditions are as follows: regeneration buffer: glycine–HCl pH 2.5, contact time: 30 s, and flow rate: 30 mL/min. The ratio of the association and dissociation rate constants was determined via the kinetic model. The KD (equilibrium constant) values were calculated as k_d (dissociation rate constant)/k_a (association rate constant) for each interaction and determined by locally fitting with Biacore T200 evaluation software 3.1 (Cytiva).",
+            "Figure 3D caption": "Figure 3. (A,B) Mechanism of action of D8. The second plot of Lineweaver–Burk plots for D8 against PHGDH by titrating NAD+ and 3-PG; (C) MST assay to determine the binding affinity (K_d value) of D8 with the PHGDH protein; and (D) SPR analysis of D8 with the PHGDH protein. Gradient concentrations of the compound from 1.562 to 50 μM were used, and time was measured in seconds.",
+            "Figure 3D plot": "The sensorgram in Figure 3D shows the response (RU) over time (s) for D8 at concentrations of 1.562 μM, 3.125 μM, 6.25 μM, 12.5 μM, 25 μM, and 50 μM. The plot indicates association (increasing response) and dissociation (decreasing response) phases. The equilibrium constant KD value of D8 was 2.48 μM, as stated in the text.",
+            "Text describing SPR results": "To further validate the binding affinity of D8 toward the PHGDH protein, the surface plasmon resonance (SPR) assay was employed using a Biacore T200 optical biosensor. As shown in Figure 3D, the equilibrium constant KD value of D8 was 2.48 μM, suggesting a strong binding ability with PHGDH protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "his-tagged PHGDH (127–722 amino acid)",
+                "strategy": "NTA-His capture",
+                "density_ru": "27358.4",
+                "concentration_for_immobilization": "66 μg/mL"
+            },
+            "analyte": {
+                "description": "D8",
+                "concentration_range": "1.562 μM to 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.01 M phosphate, 0.15 M NaCl, 0.05% v/v Tween 20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "glycine–HCl pH 2.5"
+            },
+            "data_analysis": {
+                "reference_description": "Another flow cell was activated and blocked for reference subtraction",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.1 (Cytiva)"
+            }
+        }
+    }
+}

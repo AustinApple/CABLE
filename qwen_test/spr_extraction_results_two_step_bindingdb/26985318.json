@@ -1,0 +1,66 @@
+{
+    "50496053": {
+        "reactant_set_id": 50496053,
+        "pmid": 26985318,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CC(C)COc1ccc(cc1C#N)-c1nc(C)c(s1)C(=O)Nc1ccc(cc1)S(N)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 149.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant cyclophilin D by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Valasani, K. R.; Vangavagu, J. R.; Day, V. W.; Yan, S. S. Structure Based Design, Pharmacophore Modeling, Virtual Screening, and Molecular Docking Studies for Identification of Novel Cyclophilin D Inhibitors. J. Chem. Inf. Model. 2014, 54, 902–912.",
+        "original_paragraph": {
+            "SPR Analysis": "In the present study, we first evaluated the CypD inhibitor C-9 (structure shown in Figure 1) using in vitro SPR to determine whether this synthetic compound binds to human CypD protein. We next examined the biological activity of inhibitor on Aβ-induced mitochondrial dysfunction. Based on the SPR binding studies and biological activity, inhibitor C-9 was selected as a possible drug candidate for AD prevention and treatment. The synthesized CypD inhibitor C-919 (structure shown in Figure 1) exhibited high binding affinity to human CypD along with the improvement of mitochondrial function. In vitro SPR was used to verify the ability of inhibitor C-9 to bind to human recombinant CypD protein. This presumably correlates with its potential CypD inhibitory activity. Figure 2 demonstrates that the synthetic CypD inhibitor C-9 displays a high binding affinity for human CypD. The equilibrium dissociation constant (KD) was determined using a 1:1 Langmuir binding fit model and the association (kon) and dissociation (koff) rate constants were determined using equations 1 and 2. dR/dt = konC(Rmax - R) - koffR (1) where R represents the response unit, C is the concentration of the analyte, and KD = koff/kon (2) The obtained results were evaluated by χ2 analysis, and all kinetic parameters are listed in Table 1. The SPR results shown in Figure 2 clearly indicate that compound C-9 binds quite strongly to CypD with a KD value of 149 nM (Table 1). This was also verified by the CypD peptidyl prolyl isomerase enzymatic activity.",
+            "Figure 2 caption": "Figure 2. Synthesized CypD inhibitor C-9 binds to immobilized CypD in a dose-dependent manner. Surface plasmon resonance (SPR) analysis of CypD–sulfonamide derivative binding interaction, where the globally fit data (black lines) were overlaid with experimental data (red lines). Human recombinant CypD protein (10 μg/mL) was immobilized directly on the hydrophilic carboxy methylated dextran matrix of the CMS sensor chip (Biacore-3000) using the standard primary amine coupling reaction according to standard procedures. Compound C-9 (2.5, 5, 10, 15, and 20 μM) was injected at a flow rate of 40 μL/min for the determination of the kinetic and equilibrium constants. All data analyses were carried out using BIA evaluation software, and sensor grams were processed by automatic correction for nonspecific bulk refractive index effects. The dissociation constant (KD) was determined as indicated at 25 °C.",
+            "Table 1": "Table 1. CypD PPIase Enzymatic Activity and SPR Results | inhibitor | IC50 (μM) | Ki (μM) | KD (μM) | |---|---|---|---| | compound C-9 | 1.49 ± 0.20 | 1.33 ± 0.13 | 0.149 | | CsA | 0.00360 | 0.00258 | — |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore-3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "human recombinant CypD protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound C-9",
+                "concentration_range": "2.5, 5, 10, 15, and 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    }
+}

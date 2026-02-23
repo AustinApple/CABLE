@@ -1,0 +1,160 @@
+{
+    "51577374": {
+        "reactant_set_id": 51577374,
+        "pmid": 38615409,
+        "protein": "Transcriptional activator protein LasR",
+        "ligand": {
+            "smiles": "C/C=C/C=C/C(=O)NCC(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 LasR assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.15. Protein SPR assays": "The proteins were extracted from the overexpressed strains of E. coli BL21-LasR and E. coli BL21-PqsR and preserved in the laboratory, followed by a molecule-protein analysis using surface plasmon resonance (SPR) interaction. Betterware Inc. provided chemically modified label-free photo-cross-linker sensor chips for the experiment. A BioDot AD-1520 Array Printer was used to print samples and controls on the chip surface with a volume of 1.875 nL/dot, forming 5 nonadjacent repetitions of each sample on the same chip. The flow cell chambers were assembled onto the chip surface. SPR testing was conducted using a bScreen LB 991 Label-free Microarray System from BERTHOLD TECHNOLOGIES to monitor real-time protein interaction. During SPR testing, HBS-EP running buffer and running buffer (1 × PBS with 5 % DMSO) were used to prime the chip surface injecting LasR and PqsR proteins at various concentrations over 600 s at a flow rate of 0.5 μL/s in each associating stage followed by running buffer for dissociation stages lasting for 360 s at a flow rate of 0.5 μL/s. Surface regeneration was performed after each associating-dissociating cycle using a pulse of glycine-HCl (pH 2.5) at a rate of 20 μL/min for 30 s to remove any remaining bound material on the surface. Blank controls and background noise controls were tested individually during the testing process using DMSO solvents for chemical compounds and PBS (pH = 7.0) solvents for proteins, respectively.",
+            "Figure 7 caption": "Fig. 7. SPR interaction and affinity analysis. (A) SPR interaction and affinity analysis of compound A9 and LasR; (B) SPR interaction and affinity analysis of solvent control DMSO and LasR; (C) SPR interaction and affinity analysis of compound A9 and PqsR; (D) SPR interaction and affinity analysis of solvent control DMSO and PqsR.",
+            "Figure 7A plot label": "Avg KD: 1.23 × 10⁻³ M",
+            "Figure 7B plot label": "Avg KD: 4.49 × 10⁻¹ M",
+            "Figure 7C plot label": "Avg KD: 8.36 × 10⁻⁶ M",
+            "Figure 7D plot label": "Avg KD: 2.85 × 10⁻¹ M",
+            "Figure 7A legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7B legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7C legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7D legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7A x-axis label": "TIME (s)",
+            "Figure 7A y-axis label": "A9 - LASR BINDING SIGNAL (RU)",
+            "Figure 7B x-axis label": "TIME (s)",
+            "Figure 7B y-axis label": "DMSO - LASR BINDING SIGNAL (RU)",
+            "Figure 7C x-axis label": "TIME (s)",
+            "Figure 7C y-axis label": "A9 - PQSR BINDING SIGNAL (RU)",
+            "Figure 7D x-axis label": "TIME (s)",
+            "Figure 7D y-axis label": "DMSO - PQSR BINDING SIGNAL (RU)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BERTHOLD TECHNOLOGIES",
+                "model": "bScreen LB 991 Label-free Microarray System"
+            },
+            "sensor_chip": {
+                "type": "chemically modified label-free photo-cross-linker sensor chip",
+                "manufacturer": "Betterware Inc."
+            },
+            "immobilization": {
+                "ligand_name": "LasR and PqsR proteins",
+                "strategy": "Other",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound A9 and DMSO solvent control",
+                "concentration_range": "10 nM - 2560 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP running buffer and 1 × PBS with 5 % DMSO",
+                "pH": 7.0,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30.0,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 600,
+                "dissociation_time_s": 360,
+                "regeneration_solution": "glycine-HCl (pH 2.5)"
+            },
+            "data_analysis": {
+                "reference_description": "Blank controls and background noise controls (DMSO for compounds, PBS for proteins)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51577375": {
+        "reactant_set_id": 51577375,
+        "pmid": 38615409,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "C/C=C/C=C/C(=O)NCC(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 PqsR expressed in Escherichia coli BL21 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.15. Protein SPR assays": "The proteins were extracted from the overexpressed strains of E. coli BL21-LasR and E. coli BL21-PqsR and preserved in the laboratory, followed by a molecule-protein analysis using surface plasmon resonance (SPR) interaction. Biotterways Inc. provided chemically modified label-free photo-cross-linker sensor chips for the experiment. A BioDot AD-1520 Array Printer was used to print samples and controls on the chip surface with a volume of 1.875 nL/dot, forming 5 nonadjacent repetitions of each sample on the same chip. The flow cell chambers were assembled onto the chip surface. SPR testing was conducted using a bScreen LB 991 Label-free Microarray System from BERTHOLD TECHNOLOGIES to monitor real-time protein interaction. During SPR testing, HBS-EP running buffer and running buffer (1 × PBS with 5 % DMSO) were used to prime the chip surface injecting LasR and PqsR proteins at various concentrations over 600 s at a flow rate of 0.5 μL/s in each associating stage followed by running buffer for dissociation stages lasting for 360 s at a flow rate of 0.5 μL/s. Surface regeneration was performed after each associating-dissociating cycle using a pulse of glycine-HCl (pH 2.5) at a rate of 20 μL/min for 30 s to remove any remaining bound material on the surface. Blank controls and background noise controls were tested individually during the testing process using DMSO solvents for chemical compounds and PBS (pH = 7.0) solvents for proteins, respectively.",
+            "Figure 7 caption": "Fig. 7. SPR interaction and affinity analysis. (A) SPR interaction and affinity analysis of compound A9 and LasR; (B) SPR interaction and affinity analysis of solvent control DMSO and LasR; (C) SPR interaction and affinity analysis of compound A9 and PqsR; (D) SPR interaction and affinity analysis of solvent control DMSO and PqsR.",
+            "Figure 7 - Sensorgram A": "Avg KD: 1.23 × 10⁻³ M",
+            "Figure 7 - Sensorgram B": "Avg KD: 4.49 × 10⁻¹ M",
+            "Figure 7 - Sensorgram C": "Avg KD: 8.36 × 10⁻⁶ M",
+            "Figure 7 - Sensorgram D": "Avg KD: 2.85 × 10⁻¹ M",
+            "Figure 7 - Sensorgram A legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7 - Sensorgram B legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7 - Sensorgram C legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7 - Sensorgram D legend": "10nM, 40nM, 160nM, 640nM, 2560nM",
+            "Figure 7 - Sensorgram A x-axis": "TIME (s)",
+            "Figure 7 - Sensorgram A y-axis": "A9 - LASR BINDING SIGNAL (RU)",
+            "Figure 7 - Sensorgram B x-axis": "TIME (s)",
+            "Figure 7 - Sensorgram B y-axis": "DMSO - LASR BINDING SIGNAL (RU)",
+            "Figure 7 - Sensorgram C x-axis": "TIME (s)",
+            "Figure 7 - Sensorgram C y-axis": "A9 - PQSR BINDING SIGNAL (RU)",
+            "Figure 7 - Sensorgram D x-axis": "TIME (s)",
+            "Figure 7 - Sensorgram D y-axis": "DMSO - PQSR BINDING SIGNAL (RU)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BERTHOLD TECHNOLOGIES",
+                "model": "bScreen LB 991 Label-free Microarray System"
+            },
+            "sensor_chip": {
+                "type": "chemically modified label-free photo-cross-linker sensor chip",
+                "manufacturer": "Biotterways Inc."
+            },
+            "immobilization": {
+                "ligand_name": "LasR and PqsR proteins",
+                "strategy": "Photo-crosslinking",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound A9 and DMSO solvent control",
+                "concentration_range": "10 nM - 2560 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP running buffer and 1 × PBS with 5 % DMSO",
+                "pH": 7.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30.0,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 600,
+                "dissociation_time_s": 360,
+                "regeneration_solution": "glycine-HCl (pH 2.5)"
+            },
+            "data_analysis": {
+                "reference_description": "Blank controls and background noise controls using DMSO for compounds and PBS for proteins",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

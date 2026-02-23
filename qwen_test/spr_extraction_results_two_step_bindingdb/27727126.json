@@ -1,0 +1,67 @@
+{
+    "51381886": {
+        "reactant_set_id": 51381886,
+        "pmid": 27727126,
+        "protein": "Signal transducer and activator of transcription 3",
+        "ligand": {
+            "smiles": "Oc1ccc(NS(=O)(=O)c2ccc3C(=O)c4ccccc4C(=O)c3c2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4590.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to STAT3 (unknown origin) expressed in Escherichia coli by CM5 sensor chip immobilization based SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "We use biophysical studies to provide definitive evidence of the direct binding site to STAT3 protein. Specific binding of B9 to wild-type and a series of mutations of the SH2 domain of STAT3 protein were analyzed using surface plasmon resonance. STAT3 protein was expressed in and purified from Escherichia coli. To determine the binding affinity, we tested a range of B9 concentrations from 1.562 μM to 25 μM on a CM5 sensor chip immobilized with STAT3 protein and mutations (Figs. 2 and 3). A dose-dependent interaction between B9 and STAT3 is observed. The results indicated that B9 binding to STAT3 is characterized by a faster association and dissociation rate and with a binding affinity, Kd, of 4.590 μM (Table 1, Fig. 3). In addition, we detected the Kd of B9 to STAT3 mutations (K591A, K591A, S611G, R595G, and I634S/Q635G) (Table 1). Compared to wildtype, the Kd of the K591A, K591A/S611G, and R595G mutations were 3.84 μM, 4.8 μM and 6.534 μM, which were nearly equivalent to that of wildtype. However, the Kd of I634S/Q635G was nearly 4 to 5-fold different compared to wildtype (Fig. S2). On the basis of these data, we demonstrated that B9 directly interacts with STAT3 protein, and the K591A, K591A/S611G and R595G mutations did not affect the binding affinity, although I634S/Q635G decreased the binding affinity due to a loss of hydrogen bonds between I634, 635Q and B9 from our docking result (Fig. 1A and Table 1).",
+            "Figure 3 caption": "Figure 3. B9 binds to STAT3 with considerable binding affinity. SPR study of different concentrations of B9 binding to a CM5 chip with immobilized STAT3 protein. The experiments were independently performed at least twice.",
+            "Table 1": "Table 1 The Kd of B9 binding with STAT3 and STAT3 mutants^a | STAT3 | Kd (μM) | STAT3 | Kd (μM) | | :--- | :--- | :--- | :--- | | Wild type | 4.59 ± 0.305 | C712G | 18.50 ± 0.65 | | K591A | 3.84 ± 0.14 | K591A/S611G | 4.80 ± 0.19 | | R595G | 6.53 ± 0.355 | I634S/Q635G | 22.70 ± 1.1 | ^a Kd values shown are the average of least three independent experiments.",
+            "Figure 3 sensorgram data": "The sensorgram in Figure 3 shows response units on the y-axis and time (s) on the x-axis. The x-axis ranges from -20 to 140 seconds. The y-axis ranges from -2 to 4. Five curves are shown, each corresponding to a different concentration of B9: 1.56 μM, 3.13 μM, 6.25 μM, 12.50 μM, and 25.00 μM. The association phase occurs between approximately 0 and 80 seconds, and the dissociation phase occurs between approximately 80 and 140 seconds. The response units increase with higher concentrations of B9."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "STAT3 protein and mutations",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "B9",
+                "concentration_range": "1.562 μM to 25 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 80,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "51623848": {
+        "reactant_set_id": 51623848,
+        "pmid": 34154424,
+        "protein": "Histone-lysine N-methyltransferase SMYD3",
+        "ligand": {
+            "smiles": "C[C@H]1CC(=O)Nc2cc(C(=O)NCCC3CC3)ccc2N1C(=O)N1CC2CC2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 97.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SMYD3 (unknown origin) assessed as dissociation constant using S-adenosyl-l-methionine as substrate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "Surface plasmon resonance (SPR) analysis was performed using a Biacore T200 (GE Health Sciences Inc.) at 25 °C. Approximately 4700 resonance units of biotinylated SMYD3 (amino acids 1–428) was captured onto one flow cell of an streptavidin sensor chip according to the manufacturer’s protocol. A second flow cell was left empty for reference subtraction. SPR analysis was performed in 20 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.05% Tween-20 supplemented with 2% DMSO. Five concentrations of BAY-6035 (25, 74, 222, 667, and 2000 nM) were prepared by serial dilution. Kinetic determination experiments were performed using single-cycle kinetics with a contact time of 60 s, off time of 300 s, and flow rate of 30 μL/min. To favor complete dissociation of compound for the next cycle, a regeneration step (300 s, 40 μL/min buffer), a stabilization period (120 s), and two blank cycles were run between each cycle. Kinetic curve fittings were done with a 1:1 binding model and the Biacore T200 Evaluation software (GE Health Sciences Inc.). The experiments were performed in triplicate in the presence of 50 μM SAM.",
+            "Figure 6 caption": "Figure 6. Characterization of BAY-6035. Confirmation of binding activity by (A) ITC assay and (B) SPR. (A) ITC of BAY-6035 indicating a submicromolar binding constant (Kd = 133 nM) and a high enthalpic contribution to the binding energy. (B) SPR analysis of BAY-6035 binding to SMYD3 in the presence of SAM (50 μM). A representative sensogram (solid green) is shown with the kinetic fit (black dots). The steady-state response (black circles) is shown with the steady state being 1:1. (C) Mode of action analysis of BAY-6035. IC50 values were determined for compound BAY-6035 at varying concentrations of 3H-SAM (up to 3.5 μM) and a fixed peptide MAP3K2 (249–273) concentration (50 μM), or at varying concentrations of substrate MAP3K2 (up to 150 μM) and a fixed SAM concentration (3.5 μM). The experiments were performed in triplicate. (D) Selectivity profiling with a set of methyltransferase enzymes.",
+            "Figure 6B data": "From kinetic fitting: Kd: 97 ± 5 nM, kon: 3.1 ± 0.3 × 10^5 M^-1 s^-1, koff: 3.0 ± 0.2 × 10^-2 s^-1"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Health Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated SMYD3 (amino acids 1–428)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4700",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BAY-6035",
+                "concentration_range": "25, 74, 222, 667, and 2000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, 0.05% Tween-20, 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "buffer (300 s, 40 μL/min)"
+            },
+            "data_analysis": {
+                "reference_description": "Second flow cell left empty for reference subtraction",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Health Sciences Inc.)"
+            }
+        }
+    }
+}

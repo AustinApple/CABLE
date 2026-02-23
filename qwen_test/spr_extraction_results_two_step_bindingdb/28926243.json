@@ -1,0 +1,1367 @@
+{
+    "50759443": {
+        "reactant_set_id": 50759443,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "COc1ccc(cc1OC)[C@H]1CN(Cc2c(C)cccc2F)C[C@@H]1N(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 210.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759444": {
+        "reactant_set_id": 50759444,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "COc1ccc(cc1OC)[C@H]1CN(C[C@@H]1N(C)C)C1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 43.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759445": {
+        "reactant_set_id": 50759445,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@@H]1CN(Cc2c(F)cccc2Br)C[C@H]1c1cn(C)c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759446": {
+        "reactant_set_id": 50759446,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(F)cccc2Br)C[C@@H]1c1cn(C)c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 150.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759447": {
+        "reactant_set_id": 50759447,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(C)cccc2F)C[C@@H]1c1ccc(cc1)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 140.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759448": {
+        "reactant_set_id": 50759448,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(F)cccc2Br)C[C@@H]1c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759449": {
+        "reactant_set_id": 50759449,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(F)cccc2Br)C[C@@H]1c1ccccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759450": {
+        "reactant_set_id": 50759450,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(F)cc(O)cc2Br)C[C@@H]1c1cn(C)c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 61.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759451": {
+        "reactant_set_id": 50759451,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "COc1ccccc1N1CCN(CC1)C(=O)c1ccccc1S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759462": {
+        "reactant_set_id": 50759462,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(C[C@@H]1c1ccc(cc1)N1CCN(CC1)C(C)=O)[C@@H]1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759463": {
+        "reactant_set_id": 50759463,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@@H]1CN(C[C@H]1c1ccc(cc1)N1CCN(CC1)C(C)=O)[C@H]1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 290.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759464": {
+        "reactant_set_id": 50759464,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@@H]1CN(C[C@H]1c1ccc(cc1)N1CCN(CC1)C(C)=O)[C@@H]1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759470": {
+        "reactant_set_id": 50759470,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "COc1ccccc1CN1C[C@@H]([C@H](C1)c1cn(C)c2ccccc12)N(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 38000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759471": {
+        "reactant_set_id": 50759471,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(C)cccc2F)C[C@@H]1c1ccc(cc1)N1CCN(CC1)C(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759472": {
+        "reactant_set_id": 50759472,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(C[C@@H]1c1ccc(cc1)N1CCN(CC1)C(C)=O)C1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759473": {
+        "reactant_set_id": 50759473,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "COc1ccc(cc1OC)[C@H]1CN(Cc2c(F)cccc2Br)C[C@@H]1N(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759486": {
+        "reactant_set_id": 50759486,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@@H]1CN(Cc2c(C)cccc2F)C[C@H]1c1ccc(cc1)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759487": {
+        "reactant_set_id": 50759487,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(Cc2c(F)cccc2Br)C[C@@H]1c1ccc(O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759488": {
+        "reactant_set_id": 50759488,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "C1Cc2ccccc2CN1c1ccncc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 22000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759492": {
+        "reactant_set_id": 50759492,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(C[C@@H]1c1ccc(cc1)N1CCN(CC1)C(C)=O)[C@H]1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50759494": {
+        "reactant_set_id": 50759494,
+        "pmid": 28926243,
+        "protein": "Polycomb protein EED",
+        "ligand": {
+            "smiles": "CN(C)[C@H]1CN(C[C@@H]1c1ccc(cc1)N1CCN(CC1)S(C)(=O)=O)C1CCc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotin labelled human EED (78 to 441 residues) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Binding Experiment": "SPR Binding Experiment. The binding kinetics of EED compounds were assayed via surface plasmon resonance (SPR) using a Biacore T200 instrument (GE Healthcare and the software provided). Biotinylated EED (h) (78-441) was captured on neutravidin in flow cell 2. A blank surface had neutravidin saturated with biotin in flow cell 1 and used as a reference surface during binding assays. Briefly, the running buffer during neutravidin immobilization was HSB-P+ buffer (10 mM Heps, 150 mM NaCl, 0.05% (v/v) surfactant P20, pH 7.4), and the coupling procedure was run at a flow rate of 5 μL/min. A neutravidin coupling solution was prepared by diluting neutravidin (product no. 31000 from Thermo Scientific) to 25 μg/mL in 10 mM acetate solution (pH 5.5). Carboxyl groups on the dextran layer of the chip were activated by injecting a 1:1 mixture of 0.4 M N-ethyl-N-(3-dimethylaminopropyl)carbodiimide and 0.1 M N-hydroxysuccinimide for 7 min. The neutravidin coupling solution was injected over the activated chip surface for 300 s at 10 μL/min to achieve a immobilization level of 14 000 resonance units (RU). Remaining free activated carboxyl groups were blocked by injecting a solution 1 M ethanolamine for 7 min. Binding affinities measurements were performed at flow rate of 100 μL/min using 20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO. Compounds were assayed using multicycle kinetics mode as provided by the Biacore T200 control software and were recorded at a frequency of 10 Hz. The compounds were diluted in the running buffer and injected in a series of increasing concentrations for contact time of 210 s each, and dissociation was monitored for up to 500 s. Sensorgrams were processed and analyzed using Biacore T200 evaluation software. The binding curves were fit to determine the equilibrium dissociation constant (K_D).",
+            "Figure 4 caption": "Figure 4. Correlation between SPR binding affinities K_D and TR-FRET binding affinities K_i (log scale plot).",
+            "Figure 5 caption": "Figure 5. Kinetic plot of EED aminopyrrolidine compounds showing R_2 progression (log scale plot).",
+            "Table 1": "Table 1. Kinetic Data of Selected EED Compounds compd K_i (μM), TR-FRET k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (μM), SPR 1 0.6 fast fast 38 2 0.0003 1.6 × 10⁶ 0.003 0.002 3 0.003 1.1 × 10⁶ 0.02 0.02 4 0.0007 1.3 × 10⁶ 0.005 0.004 5 0.018 3.1 × 10⁵ 0.11 0.30 6 0.012 6.0 × 10⁵ 0.12 0.21 7 0.003 3.3 × 10⁵ 0.015 0.043 8 0.08 fast fast 3.10 9 0.01 1.9 × 10⁵ 0.03 0.15 10 0.29 fast fast 1.4 11 0.01 7.3 × 10⁵ 0.1 0.14 12 0.11 fast fast 4.8 13 0.091 fast fast 2.6 14 0.45 fast fast 9.8 15 0.02 2.1 × 10⁵ 0.07 0.31 16 0.008 2.5 × 10⁵ 0.02 0.061 17 1.5 fast fast 13.4 18 0.95 fast fast 22"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated EED (h) (78-441)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "14000",
+                "concentration_for_immobilization": "25 ug/mL"
+            },
+            "analyte": {
+                "description": "EED compounds",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Phos, pH 6.5, 150 mM NaCl, 0.05% Tween-20, containing 1 mM DTT and 3% DMSO",
+                "pH": 6.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 210,
+                "dissociation_time_s": 500,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Neutravidin saturated with biotin in flow cell 1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

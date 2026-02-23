@@ -1,0 +1,457 @@
+{
+    "51094245": {
+        "reactant_set_id": 51094245,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "O=C(Nc1ccncc1)[C@@H]1C[C@H]1c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    },
+    "51094246": {
+        "reactant_set_id": 51094246,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "O=C(Nc1ccncc1)C1CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    },
+    "51094247": {
+        "reactant_set_id": 51094247,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccc(NC(=O)C2CC2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 51000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    },
+    "51094248": {
+        "reactant_set_id": 51094248,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "CC(=O)Nc1ccc(NC(=O)C2CC2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 78000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    },
+    "51094249": {
+        "reactant_set_id": 51094249,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "CC1=Nc2ccc(Cl)cc2S(=O)(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 230000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    },
+    "51094250": {
+        "reactant_set_id": 51094250,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "O=C(NCc1ccc(cc1)S(=O)(=O)N1CCN(CC1)C1COC1)c1cc2ccncc2o1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 80.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    },
+    "51094251": {
+        "reactant_set_id": 51094251,
+        "pmid": 24405419,
+        "protein": "Nicotinamide phosphoribosyltransferase",
+        "ligand": {
+            "smiles": "O=C(NCCCCS(=O)(=O)c1ccccc1)c1ccc2nccn2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 860.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NAMPT (2 to 491) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580. Reference 35: Giannetti, A. M. From experimental design to validated hits: a comprehensive walk-through of fragment lead identification using surface plasmon resonance. Methods Enzymol. 2011, 493, 169–218. Reference 32: Hopkins, A. L.; Groom, C. R.; Alex, A. Ligand efficiency: a useful metric for lead selection. Drug Discovery Today 2004, 9, 430–431.",
+        "original_paragraph": {
+            "Experimental Section - SPR-Based Fragment Screening": "NAMPT protein (residues 2–491) containing an N-terminal his-tag and a C-terminal Avi-tag (Avidity, LLC) was biotinylated during expression, purified, and captured to CMS chips (GE Healthcare) as previously described34 using a Biacore T100 (GE Healthcare). Approximately 10 000 RUs of NAMPT were captured by neutravidin, and very little drift from the surface was observed, likely because of the anchoring of each NAMPT dimer through two biotinylated Avi-tags. All binding experiments were performed in 50 mM sodium phosphate, pH 8.6, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, and 5% DMSO and at 20 °C. A small screen of internal NAMPT compounds was performed to identify a suitable control for surface integrity during screening, and compound 7 was selected for this purpose. Pilot fragment screening confirmed good surface stability, and a screen of Genentech’s ~5000 member fragment collection was executed testing each fragment at 100 μM in a single-point format. Raw sensorgram data were reduced, solvent-corrected, double-referenced, inspected for poor sensorgrams and aggregating compounds,35 and fit using Scrubber II (BioLogic Software, Campbell, Australia; http://www.biologic.com.au). Primary data were additionally corrected for drift and daily solvent mismatches and were scaled to fractional binding occupancy using BioBook (IDBS) as previously discussed.34 The 283 fragment compounds passing data quality control filters exhibited binding levels of 3 standard deviations or more above the noise. These hits were retested in a single point assay at 150 μM in the same buffer with and without supplementing with 5 μM potent NAMPT inhibitor (compound 8). Under these conditions, 100% suppression of the binding of control compound 7 to NAMPT was observed. An amount of 165 fragments showed either no binding on retest or no reduction in signal in the presence of the competitor and were therefore deprioritized. The remaining 118 molecules were characterized in dose–response experiments, and these activities afforded K D values for 112 compounds. For fragments with K D values weaker than 200 μM, extrapolation based on the binding level of the control was used as previously described.34 Ligand efficiencies32 were calculated by dividing the free energy of binding by the number of non-hydrogen atoms in the compound.",
+            "Figure 4 caption": "Figure 4. SPR binding data for 283 compounds selected from the primary NAMPT fragment screen for competition analysis at 150 μM. Sensorgram data (A, C) and the binding level derived by averaging all data from 16 to 18 s after injection (B, D) are shown. Fragments are shown as multicolored lines or dots, and the control compound 7 is shown as overlapping red lines and connected red squares. The behavior of the control injections, interspersed every 20 cycles, indicated a high level of reproducibility in the assay over the course of the experiment. Binding in the presence of competitor control compound 8 resulted in a reduction in binding response for many but not all fragments (C, D). The binding response of control compound 7 was completely suppressed in the presence of compound 8 (C, D).",
+            "Figure 5 caption": "Figure 5. Analysis of SPR NAMPT binding and competition data for 118 fragment screening hits. The binding level for each fragment hit is plotted on the x-axis in the absence of the potent competitor control compound (8) and on the y-axis in the presence of 8. The impact of compound 8 on the binding of a given fragment is indicated by the shape of each data point: open circles, binding response reduced by <50%; solid squares, binding response reduced by >50%. Red squares indicate the 16 replicates obtained with the screening control compound 7, and complete suppression of its binding was observed in the presence of 8. Green squares represent fragments that afforded NAMPT cocrystal structures, while magenta squares indicate fragments for which NAMPT cocrystallization was unsuccessfully attempted. The black line indicates unity between the axes (y = x).",
+            "Results and Discussion section": "A SPR-based binding assay for NAMPT was developed that was capable of supporting fragment screening as well as hit-to-lead SAR activities. This assay employed a moderately potent amide-containing NAMPT inhibitor (7, biochemical inhibition IC50 = 0.75 μM, SPR KD = 0.86 μM; Figure 3) as a control to monitor the integrity of the Biacore chip surface during screening. After screening ~5000 fragments at 100 μM using the SPR-based assay and NAMPT, we identified 283 potential leads with binding levels at least three-standard deviations above the noise. These compounds were retested at 150 μM on a fresh NAMPT SPR surface in plain running buffer to confirm the initial binding data (Figure 4A and Figure 4B). Encouragingly, the behavior of control compound 7 indicated a high level of assay reproducibility over the time period during which the confirmatory assessments were conducted (red squares in Figures 4B and 5; although not depicted in these figures, good assay stability was noted for up to 48 h using compound 7). A competition assessment was also included in the follow-up testing of the fragment hits to identify chemical matter that bound in or near the nicotinamide binding site in the vicinity of the previously disclosed NAMPT inhibitors (structures 3–6, Figure 2). Accordingly, the confirmed hits were tested once again using running buffer supplemented with 5 μM of a highly potent NAMPT inhibitor that was believed to occupy the nicotinamide binding site (8, biochemical inhibition IC50 = 0.028 μM, SPR KD = 0.080 μM; Figure 3). As expected, such competition testing completely suppressed the binding of the weaker screening control compound 7 (Figure 4C and Figure 4D). Interestingly, 118 of the confirmed fragment screening hits also exhibited a significant loss in binding signal (>50%) when they were tested in the presence of the potent NAMPT inhibitor 8 (Figure 5, also compare Figure 4B and Figure 4D). We chose to focus additional characterization efforts on these 118 compounds with the expectation that they bound to NAMPT in proximity to the inhibitors we had previously studied. Full dose–response SPR binding experiments employing NAMPT were performed on the 118 molecules identified above to obtain detailed KD and ligand efficiency (LE)22 information. Of the 118 fragments tested, six exhibited KD values weaker than 2.0 mM or showed significant nonspecific binding while 35 bound relatively tightly to the NAMPT protein (KD < 100 μM). The average ligand efficiency of all 112 fragments with measurable KD values was high (0.38) with only 12 molecules exhibiting an LE value less than 0.30. Nicotinamide, the naturally occurring NAMPT substrate, was included in the fragments that were screened and was identified as a hit with a KD value of 9.2 μM and a ligand efficiency of 0.78. The LE exhibited by nicotinamide for NAMPT is the highest we have observed for a fragment lead and, given that NAMPT is highly optimized to efficiently bind this substrate, may approach an upper limit of this parameter for such molecules.23 Encouragingly, cocrystal structures of many of the confirmed fragment hits were subsequently obtained with NAMPT (Figure 5). These cocrystal structures were highly valuable in further optimizing the various fragment leads, and the structure-guided elaboration of two such molecules is described below."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NAMPT protein (residues 2–491) with N-terminal his-tag and C-terminal Avi-tag",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragment compounds from Genentech’s ~5000 member fragment collection, including control compound 7 and competitor compound 8",
+                "concentration_range": "100 μM (primary screen), 150 μM (retest), and dose-response experiments for 118 hits"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate, 1.5 mM TCEP, 0.01% Tween-20, 1% PEG-3350, 5% DMSO",
+                "pH": 8.6,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double-referenced (solvent-corrected, double-referenced)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber II (BioLogic Software), BioBook (IDBS)"
+            }
+        }
+    }
+}

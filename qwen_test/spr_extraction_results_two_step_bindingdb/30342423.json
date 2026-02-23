@@ -1,0 +1,136 @@
+{
+    "51237790": {
+        "reactant_set_id": 51237790,
+        "pmid": 30342423,
+        "protein": "Myeloid differentiation primary response protein MyD88",
+        "ligand": {
+            "smiles": "COc1cc(ccc1O)-c1csc(NC(=O)CCN2CCN(Cc3cccc(c3)[N+]([O-])=O)CC2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human MyD88 TIR domain (157 to 296 residues) expressed in Escherichia coli BL21(DE3) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "The binding affinity of compounds were detected using ProteOn XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Hercules, CA) with a GLH sensor chip (ProteOn, #765013). Briefly, MyD88, MD2 or TLR4 protein (in acetate acid buffer) was immobilized on the sensor after the activation by 40 mM EDC and 10 mM sNHS in water solution. Then compound 6 or 15d at different concentrations was dissolved in running buffer with 5% DMSO. Compounds at different concentrations were injected simultaneously at a flow rate of 30 μL/min for 120s of association phase, followed with 120s of dissociation phase at 25 °C. Data were analyzed by ProteOn manager software. The KD value was calculated using global fitting of the kinetic data from various concentrations by 1:1 Langmuir binding model.",
+            "Figure 3 caption": "Fig. 3. Compound 15d inhibits the homodimerization of MyD88. (A) Effects of 15d on the dimerization of MyD88 as assessed by immunoprecipitation. HEK293T cells were transfected with HA- and FLAG-tagged MyD88 plasmids. Cells were then incubated with compounds 6 and 15d at 20 μM. (B) 15d failed to prevent the interaction between TLR4 and MD2 in LPS-activated RAW264.7 macrophages. (C) 15d had no significant effect on the dimerization of TLR4 in the MD2, HA- and Flag-TLR4 co-transfected HEK-293T cells. (D) SPR analysis of 6 to MyD88 protein. (E) SPR analysis of 15d to MyD88 protein. (F) SPR analysis of 15d to TLR4 protein.",
+            "Figure 3D sensorgram": "6-rhMyD88TIR Binding Response (RU) 100 μM 50 μM 25 μM 12.5 μM 6.25 μM Ka (1/Ms) = 3340 Kd (1/s) = 0.60 KD = 179.6 μM",
+            "Figure 3E sensorgram": "15d-rhMyD88TIR Binding Response (RU) 100 μM 50 μM 25 μM 12.5 μM 6.25 μM Ka (1/Ms) = 4830 Kd (1/s) = 0.167 KD = 34.5 μM",
+            "Figure 3F sensorgram": "15d-rhTLR4 Binding Response (RU) -200 -100 0 100 200 300 400 500",
+            "Results Section 2.4": "We next determined the binding affinity between 15d and recombinant MyD88 protein by surface plasmon resonance (SPR). The TIR domain of human MyD88 protein (157aa–296aa) was prepared and immobilized on the sensor chip. As shown in Fig. 3D–F, 15d exhibited specific binding to MyD88 protein in a dose-dependent manner with a KD value of 34.5 μM. This is 5-times lower compared to the lead compound 6. Consistent with our previous results in HEK293T cells, no direct interaction occurred between 15d and recombinant TLR4. We next performed a molecular docking analysis to predict the binding mode between 15d and MyD88 TIR domain (Fig. S3). In this simulation, the amino-thiazole core of 15d interacted with highly conservative αE helix called the box-3 motif. And the hydroxyl moiety of 4-phenyl stretched to the CD-Loop of MyD88 and formed a key hydrogen bond with the backbone of Gln-249 residue. While the 3-nitrobenzyl fragment interacts with the hydrophobic residues of αA helix and βB strand such as Ile-179, Leu-191 and Val-204. These hydrophobic interactions may also affect the stability of the nearby BB-loop (box-2 motif), thus making the TIR domain association unstable. Collectively, results obtained from the cell-based, cell-free and in silico studies showed that 15d may interact with TIR domain of MyD88 with high affinity, and hindered its homodimerization, thereby inhibiting LPS-stimulated inflammation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "ProteOn"
+            },
+            "immobilization": {
+                "ligand_name": "MyD88, MD2 or TLR4 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6 or 15d",
+                "concentration_range": "6.25 μM - 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Running buffer with 5% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software"
+            }
+        }
+    },
+    "51237791": {
+        "reactant_set_id": 51237791,
+        "pmid": 30342423,
+        "protein": "Myeloid differentiation primary response protein MyD88",
+        "ligand": {
+            "smiles": "O=C(CCN1CCN(Cc2ccccc2)CC1)Nc1nc(cs1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 179600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human MyD88 TIR domain (157 to 296 residues) expressed in Escherichia coli BL21(DE3) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "The binding affinity of compounds were detected using ProteOn XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Hercules, CA) with a GLH sensor chip (ProteOn, #765013). Briefly, MyD88, MD2 or TLR4 protein (in acetate acid buffer) was immobilized on the sensor after the activation by 40 mM EDC and 10 mM sNHS in water solution. Then compound 6 or 15d at different concentrations was dissolved in running buffer with 5% DMSO. Compounds at different concentrations were injected simultaneously at a flow rate of 30 μL/min for 120s of association phase, followed with 120s of dissociation phase at 25 °C. Data were analyzed by ProteOn manager software. The KD value was calculated using global fitting of the kinetic data from various concentrations by 1:1 Langmuir binding model.",
+            "Figure 3 caption": "Fig. 3. Compound 15d inhibits the homodimerization of MyD88. (A) Effects of 15d on the dimerization of MyD88 as assessed by immunoprecipitation. HEK293T cells were transfected with HA- and FLAG-tagged MyD88 plasmids. Cells were then incubated with compounds 6 and 15d at 20 μM. (B) 15d failed to prevent the interaction between TLR4 and MD2 in LPS-activated RAW264.7 macrophages. (C) 15d had no significant effect on the dimerization of TLR4 in the MD2, HA- and Flag-TLR4 co-transfected HEK-293T cells. (D) SPR analysis of 6 to MyD88 protein. (E) SPR analysis of 15d to MyD88 protein. (F) SPR analysis of 15d to TLR4 protein.",
+            "Figure 3D sensorgram": "6-rhMyD88TIR Binding Response (RU) 100 μM 50 μM 25 μM 12.5 μM 6.25 μM Ka (1/Ms) = 3340 Kd (1/s) = 0.60 KD = 179.6 μM",
+            "Figure 3E sensorgram": "15d-rhMyD88TIR Binding Response (RU) 100 μM 50 μM 25 μM 12.5 μM 6.25 μM Ka (1/Ms) = 4830 Kd (1/s) = 0.167 KD = 34.5 μM",
+            "Figure 3F sensorgram": "15d-rhTLR4 Binding Response (RU) -200 -100 0 100 200 300 400 500",
+            "Results Section 2.4": "We next determined the binding affinity between 15d and recombinant MyD88 protein by surface plasmon resonance (SPR). The TIR domain of human MyD88 protein (157aa–296aa) was prepared and immobilized on the sensor chip. As shown in Fig. 3D–F, 15d exhibited specific binding to MyD88 protein in a dose-dependent manner with a KD value of 34.5 μM. This is 5-times lower compared to the lead compound 6. Consistent with our previous results in HEK293T cells, no direct interaction occurred between 15d and recombinant TLR4. We next performed a molecular docking analysis to predict the binding mode between 15d and MyD88 TIR domain (Fig. S3). In this simulation, the amino-thiazole core of 15d interacted with highly conservative αE helix called the box-3 motif. And the hydroxyl moiety of 4-phenyl stretched to the CD-Loop of MyD88 and formed a key hydrogen bond with the backbone of Gln-249 residue. While the 3-nitrobenzyl fragment interacts with the hydrophobic residues of αA helix and βB strand such as Ile-179, Leu-191 and Val-204. These hydrophobic interactions may also affect the stability of the nearby BB-loop (box-2 motif), thus making the TIR domain association unstable. Collectively, results obtained from the cell-based, cell-free and in silico studies showed that 15d may interact with TIR domain of MyD88 with high affinity, and hindered its homodimerization, thereby inhibiting LPS-stimulated inflammation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "ProteOn"
+            },
+            "immobilization": {
+                "ligand_name": "MyD88, MD2 or TLR4 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6 or 15d",
+                "concentration_range": "6.25 μM - 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Running buffer with 5% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software"
+            }
+        }
+    }
+}

@@ -1,0 +1,457 @@
+{
+    "51076259": {
+        "reactant_set_id": 51076259,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "Nc1nnc(o1)-c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 200000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    },
+    "51076268": {
+        "reactant_set_id": 51076268,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "FC(F)(F)c1cc(n[nH]1)-c1cccs1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    },
+    "51076274": {
+        "reactant_set_id": 51076274,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "Nc1cccc(Br)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    },
+    "51076275": {
+        "reactant_set_id": 51076275,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "NC(=O)c1cccc(Br)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    },
+    "51076277": {
+        "reactant_set_id": 51076277,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "Nc1nnc(s1)-c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    },
+    "51076283": {
+        "reactant_set_id": 51076283,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "NC(=O)c1ccc2ccccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    },
+    "51076284": {
+        "reactant_set_id": 51076284,
+        "pmid": 23919758,
+        "protein": "Virulence factor transcriptional regulator MvfR",
+        "ligand": {
+            "smiles": "CCCCCCCc1nc2ccccc2c(O)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 210.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PA14 biotinylated His6SUMO-tagged PqsR expressed in Eschericia coli BL21 (DE3) by surface plasmon resonance spectroscopic analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Giannetti, A. M.; Koch, B. D.; Browner, M. F. Surface plasmon resonance based assay for the detection and characterization of promiscuous inhibitors. J. Med. Chem. 2008, 51, 574–580.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR binding studies were performed using a Biacore T100 instrument optical biosensor (GE Healthcare). CSIRO fragment library collection consisted of 720 compounds with a molecular weight range of 100 to 350 Da. The expression, purification and minimal biotinylation of H6SUMO-PqsR C87 as well as the immobilization onto the streptavidin chip surface and is described in detail in the Supporting Information.",
+            "Materials and Methods - SPR Library Screening": "10 mM DMSO stock solutions of compounds were diluted in 1.05 x DMSO free screening buffer (52.5 mM HEPES, pH 7.4, 157.5 mM NaCl, 0.0525% Tween-20 (v/v)) to 500 μM. Final ligand concentrations (100 μM) were achieved by diluting 1:5 (v/v) in the instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v) and 5% DMSO (v/v)). Two separate fragment screens were performed each time screening 360 fragments against protein targets immobilized on chips I and II. Fragment solutions (100 μM) were injected over the protein sensor surface for 30 s at 60 μL/min at 4 °C. After every 120 injections, a positive control compound (PQS in the first 360 compound screen and fragment 4 in the second screen) was injected for control binding purposes. Regeneration of the surfaces between subsequent binding experiments was achieved by washing the surface at 60 μL/min for 30 s with the instrument running buffer as well as by using a “carry-over injection” of running buffer at 40 μL/min for further 30 s. To determine binding affinity, candidate hit fragments were analyzed using dosage experiments. Fresh 100 mM DMSO fragment solutions were diluted directly into instrument running buffer to a final concentration of 81 μM and then diluted 3-fold down to 1 μM aiming for a 5-point concentration series range. Each compound was injected for 30 s association- and 60 s dissociation time at 20 °C at a constant flow rate of 60 μL/min.",
+            "Materials and Methods - Data Processing": "Scrubber 2 (www.bioligic.com.au) and Microsoft Excel software packages were utilized for data processing and analysis. Using Scrubber software, SPR signals were referenced against the blank surface (streptavidin + D-biotin) and further corrected for DMSO refractive index change as previously described. A normalization scheme of Giannetti et al. was applied to the processed data based on the maximal binding response (Rmax) that has been determined from experiments with the control compound (initially PQS and later fragment 4). For the initial ranking of the best hits, the KD values were estimated using equation derived from the Langmuir adsorption isotherm (1): KD = (Rmax*C)/R - C (1) Rmax, R, and C correspond to the normalized saturation response of the compound, the normalized response of the test compound, and the concentration of the test solution, respectively. To determine binding affinities (KD) from dosage experiments, binding responses at equilibrium were fit to a 1:1 steady state affinity model available within Scrubber. As described above, normalized saturation response (Rmax), derived using reference compound(s), was applied to response curves obtained with fragment hits at non-saturating concentration. Equilibrium isotherm containing the assumed Rmax was used to determine KD values (SI, Figure S1).",
+            "Figure 4 caption": "Figure 4. Competitive binding of 2 and 37 to PqsR (a) Raw ITC data (top) and integrated normalized data (bottom) for titrations of 43 μM PqsR with 500 μM 37 in the absence of 2 (■) and in the presence of 500 μM compound 2 (Δ). (b) NOESY spectrum of a mixture of 500 μM 2 and 400 μM 37 in the presence of 10 μM PqsR; interligand NOEs between the tert-butyl moiety of 2 and the phenyl ring of 37 (top), between the two phenyl rings (bottom); (*) indicates interligand INPHARMA NOEs mediated by PqsR; (**) indicates intramolecular transferred NOEs. Signals marked with (*) or (**) were not detected in a control experiment recorded under identical conditions in the absence of PqsR."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated His6SUMO-tagged PqsR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "CSIRO fragment library compounds (720 compounds, MW 100-350 Da)",
+                "concentration_range": "1 μM - 81 μM (3-fold dilutions, 5-point series) for dosage experiments; 100 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 30,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "instrument running buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 5% DMSO) + carry-over injection of running buffer at 40 μL/min for 30 s"
+            },
+            "data_analysis": {
+                "reference_description": "blank surface (streptavidin + D-biotin)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2, Microsoft Excel"
+            }
+        }
+    }
+}

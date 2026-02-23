@@ -1,0 +1,86 @@
+{
+    "51548750": {
+        "reactant_set_id": 51548750,
+        "pmid": 38300987,
+        "protein": "Tyrosine-protein kinase BTK",
+        "ligand": {
+            "smiles": "NC(=O)c1ncc(nc1Nc1ccc(cc1)C1CCN(C[C@H]2CCN(C2)c2ccc3C(=O)N(C4CCC(=O)NC4=O)C(=O)c3c2)CC1)N1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 45.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BTK (unknown origin) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {},
+        "structured_description": null
+    },
+    "51548751": {
+        "reactant_set_id": 51548751,
+        "pmid": 38300987,
+        "protein": "Tyrosine-protein kinase BTK",
+        "ligand": {
+            "smiles": "NC(=O)c1ncc(nc1Nc1ccc(cc1)C1CCN(C[C@H]2CCN(C2)c2ccc3C(=O)N(C4CCC(=O)NC4=O)C(=O)c3c2)CC1)N1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BTK C481S mutant (unknown origin) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C. BTK C481S was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Compounds were diluted in running buffer and injected at concentrations ranging from 0.1 to 100 nM at a flow rate of 30 μL/min. Association and dissociation times were 120 and 180 s, respectively. Regeneration was achieved with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 evaluation software (GE Healthcare) with a 1:1 Langmuir binding model. The dissociation constant (Kd) was calculated from the SPR data.",
+            "Figure 2 caption": "Figure 2. (A) Sensorgram of NX-2127 binding to BTK C481S mutant. The compound was injected at concentrations of 0.1, 0.3, 1, 3, 10, and 30 nM. The association phase lasted 120 s, and the dissociation phase lasted 180 s. The regeneration step used 10 mM glycine-HCl (pH 2.0) for 30 s. (B) Sensorgram of NX-2127 binding to wild-type BTK. The compound was injected at concentrations of 0.1, 0.3, 1, 3, 10, and 30 nM. The association phase lasted 120 s, and the dissociation phase lasted 180 s. The regeneration step used 10 mM glycine-HCl (pH 2.0) for 30 s.",
+            "Table 1": "Table 1. BTK Degradation Results for Representative Survey of BTK Binders ... The Kd values for NX-2127 binding to BTK C481S and wild-type BTK were determined by SPR and are reported in Table 1. The Kd for NX-2127 binding to BTK C481S was 18 ± 3 nM, and the Kd for NX-2127 binding to wild-type BTK was 45 ± 11 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "BTK C481S",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NX-2127",
+                "concentration_range": "0.1 to 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

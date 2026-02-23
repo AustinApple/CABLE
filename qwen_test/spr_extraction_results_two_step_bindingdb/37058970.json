@@ -1,0 +1,67 @@
+{
+    "51535277": {
+        "reactant_set_id": 51535277,
+        "pmid": 37058970,
+        "protein": "Retinoic acid receptor RXR-alpha",
+        "ligand": {
+            "smiles": "OCC1CCN(CC1)c1cc(ccn1)-c1ccnc(NC(=O)\\C=C\\c2ccccc2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 39.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RXRalpha LBD (unknown origin) assessed as increase in response unit by measuring dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "A BIACore T200 instrument (GE Healthcare) was used in the SPR study, and the protocols were approved by the School of Pharmaceutical Sciences, Xiamen University. On the BIACore T200 (GE Healthcare) at 25 °C, the binding kinetics of RXRα-LBD and BPA-B9 were analyzed. In accordance with the manufacturer’s instructions, RXRα-LBD proteins were diluted to 5 mg/mL in 10 mM NaOAc (pH 5.0) and immobilized on a CM5 sensor chip (GE Healthcare) by amine coupling at densities of 7000 RU. At a flow rate of 30 μL/min, compounds were injected at gradient concentrations into the flow cells in running buffer (PBS, 0.1% DMSO) for 150 s of association followed by 420 s of dissociation. Based on BIACore T200 Evaluation Software 2.0, the data was analyzed. By fitting the kinetic data from gradient concentrations to the standard 1:1 interaction model, the dissociation constant (K_D) was calculated.",
+            "Figure 4 caption": "Fig. 4. BPA-B9 directly binds to RXRα-LBD and selectively modulates its transactivation. (A). The binding affinity of BPA-B9 and RXRα-LBD was analyzed by SPR experiment. (B). Fluorescence quenching assay performed the interaction between BPA-B9 and RXRα-LBD. (C). HeLa cells were co-transfected with pBind-RXRα-LBD and pG5-Luc reporter plasmid for 24 h, then co-incubated with CD3254 at indicated concentration for 24 h. Reporter activities were measured. (D-F). HeLa cells co-transfected with pG5-Luc and pBind-Nur77 (D), RARγ (E), or RXRα (F) were treated with 31.25 nM BPA-B9 for 24 h. Celastrol, ATRA, and CD3254 were used as positive control to Nur77, RARγ, and RXRα, respectively. Student t-test: ns, no significance, ***, P < 0.001, **, 0.001<P < 0.01, *, 0.01<P < 0.05.",
+            "Figure 4A": "The sensorgram in Figure 4A shows the response units (RU) over time for different concentrations of BPA-B9. The concentrations are labeled on the legend: 10.00 μM, 6.000 μM, 3.600 μM, 2.160 μM, 1.296 μM, 0.778 μM, 0.467 μM, 0.280 μM, 0.168 μM, 0.101 μM, 0.060 μM, 0.036 μM, 0.022 μM, and 0.013 μM. The x-axis represents time (s) from 0 to 300, and the y-axis represents Response Units from 0 to 80. The calculated K_D value is 39.29 ± 1.12 nM.",
+            "Results Section - 2.3. Bipyridine amide BPA-B9 binds to RXRα and acts as a selective antagonist": "In order to explore the binding potency of dominant compound BPA-B9 to RXRα, the physical binding affinity of BPA-B9 with RXRα was measured by the surface plasmon resonance (SPR) method and the fluorescence quenching experiment. In the SPR assay, the response unit (RU) value of RXRα-LBD was enhanced by BPA-B9 with a concentration gradient, indicating the extracellular binding affinity of BPA-B9 with RXRα-LBD (Fig. 4A). The calculated value of the dissociation constant (K_D) is 39.29 ± 1.12 nM. The kinetic data from gradient concentrations were fitted to the standard 1:1 interaction model. Furthermore, our fluorescence ligand binding assay showed that BPA-B9 could dose-dependently quench the fluorescence emission of RXRα by the intermolecular interaction with the K_D value of 146.93 ± 16.17 nM (Fig. 4B). Together, these results demonstrate that BPA-B9 can bind to RXRα directly."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "RXRα-LBD",
+                "strategy": "Amine coupling",
+                "density_ru": "7000",
+                "concentration_for_immobilization": "5 mg/mL"
+            },
+            "analyte": {
+                "description": "BPA-B9",
+                "concentration_range": "0.013 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 150,
+                "dissociation_time_s": 420,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIACore T200 Evaluation Software 2.0"
+            }
+        }
+    }
+}

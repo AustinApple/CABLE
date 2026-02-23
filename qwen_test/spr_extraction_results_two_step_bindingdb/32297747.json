@@ -1,0 +1,66 @@
+{
+    "51295124": {
+        "reactant_set_id": 51295124,
+        "pmid": 32297747,
+        "protein": "Speckle-type POZ protein",
+        "ligand": {
+            "smiles": "Cc1cccn2c1nc1n(CCCN3CCOCC3)c(=N)c(cc1c2=O)C(=O)NCc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant N-terminal GST/His-tagged SPOP (unknown origin) MATH binding domain expressed in Escherichia coli BL21 (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance. The SPR assay was run on a Biacore T200 instrument (GE Healthcare). The running buffer was 1× PBS-P* (10 mM PBS-P* (pH 7.4), 137 mM NaCl, 2.7 mM KCl, 0.5% (v/v) surfactant P20, 5% DMSO). SPOP^MATH or SPOP^1–374 was covalently immobilized onto sensor CM5 chips by a standard amine-coupling procedure in 10 mM sodium acetate (pH 4.5). A series of compounds were diluted and injected onto a sensor chip at a flow rate of 30 μL/min for 120 s (contact phase), followed by 120 s of buffer flow (dissociation phase). The K_D value was derived through the use of Biacore T200 evaluation software Version 1.0 (GE Healthcare) and steady-state analysis of data at equilibrium.",
+            "Figure 5 caption": "Figure 5. Investigations on the binding of inhibitors to SPOP in vitro. (A) Effect of 6lc on the thermal stability of SPOP^23–337 in nanoDSF. (B) Effect of 6c on the thermal stability of SPOP^MATH in nanoDSF. (C) Effect of 6lc on the stability of SPOP^MATH in the conventional DSF assay. (E) NMR measurement of 6lc binding to SPOP^MATH. The STD-NMR spectrum for 200 μM 6lc is recorded in the presence of SPOP^MATH. (F) Determination of the affinity of 6lc binding to SPOP^MATH in SPR measurement. Graphs of equilibrium RU responses vs compound concentrations are plotted. (G) Effect of SPOP inhibitors on the stability of SPOP^MATH in the conventional DSF assay. For nanoDSF and conventional DSF assays, ΔT_m for the DMSO-treated SPOP protein were calculated using a naive SPOP sample as the reference, while ΔT_m data for the compound-treated SPOP were reported using DMSO-treated SPOP as the reference.",
+            "Figure 5F": "The SPR measurement for compound 6lc shows a dose-dependent increase in response units (RU) with increasing concentration. The graph plots equilibrium RU responses against compound concentration. The data points are fitted to a curve, and the dissociation constant (K_D) is reported as 30.0 μM. The x-axis represents the concentration of 6lc in μM, ranging from 0 to 80 μM. The y-axis represents the Response Unit (RU)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "SPOP^MATH or SPOP^1–374",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6lc",
+                "concentration_range": "0 to 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× PBS-P* (10 mM PBS-P*, pH 7.4, 137 mM NaCl, 2.7 mM KCl, 0.5% (v/v) surfactant P20, 5% DMSO)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software Version 1.0 (GE Healthcare)"
+            }
+        }
+    }
+}

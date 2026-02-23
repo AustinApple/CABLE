@@ -1,0 +1,67 @@
+{
+    "51616737": {
+        "reactant_set_id": 51616737,
+        "pmid": 37672931,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "COc1ccc(N2C(=O)/C(=C\\c3ccccc3C(F)(F)F)SC2=S)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 chip immobilized NLRP3 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Direct binding of compounds to protein was detected using Surface Plasmon Resonance (SPR). The specific experimental steps are: Dilute NLRP3 to 100 ng/μl with pH 4.0 sodium acetate buffer to make NLRP3 positively charged and immobilize NLRP3 on the CM5 chip by amino coupling, with a response value of about 15000 Ru. For the reference track, only the surface of the closed chip was activated, and NLRP3 was not immobilized. The buffer solution was: PBS-P. Prepare 5% compounds with different concentration gradients and DMSO calibration solutions (4.5%-5.8%) while ensuring that the DMSO content in the buffer solution is 5%. Compounds of different concentrations are made to flow through the surface of the chip in turn. If the compound interacts with NLRP3, a binding and dissociation curve will be generated. If there is no interaction, there will be no response signal. Regeneration is achieved by flushing with buffer solutions after each injection.",
+            "Figure 10 caption": "Fig. 10. (A, B). CSC-6 directly binds to NLRP3. SPR and (C). Cellular Thermal Shift Assay (CETSA) determines the binding of NLRP3 to CSC-6.",
+            "Figure 10A": "Kd=7.2 μM",
+            "Figure 10B": "Concentration(M) from 1×10⁻⁰⁵ to 3×10⁻⁰⁵"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "NLRP3",
+                "strategy": "Amine coupling",
+                "density_ru": "15000",
+                "concentration_for_immobilization": "100 ng/μl"
+            },
+            "analyte": {
+                "description": "Compounds (including CSC-6)",
+                "concentration_range": "1×10⁻⁵ M to 3×10⁻⁵ M"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "Buffer solution"
+            },
+            "data_analysis": {
+                "reference_description": "Surface of closed chip activated without NLRP3 immobilization",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

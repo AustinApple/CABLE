@@ -1,0 +1,65 @@
+{
+    "51060312": {
+        "reactant_set_id": 51060312,
+        "pmid": 29561612,
+        "protein": "Serine/threonine-protein kinase ULK1",
+        "ligand": {
+            "smiles": "Fc1ccc(F)c(NC(=O)[C@H](NC(=S)Nc2cc(cc(c2)C(F)(F)F)C(F)(F)F)c2ccccc2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 719.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type recombinant FLAG tagged-ULK1 (unknown origin) after 360 secs by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 33: Lee, E. J.; Tournier, C. The requirement of uncoordinated 51-like kinase 1 (ULK1) and ULK2 in the regulation of autophagy. Autophagy 2011, 7, 689–695.",
+        "original_paragraph": {
+            "SPR Analysis": "SPR Analysis. The binding affinity of 33i with wild type or mutant ULK1 was determined by SPR analysis according to our previous study.33 In brief, the experiments were performed on a Biacore S51 device (GE Healthcare, Uppsala, Sweden). Compound 33i was prepared at different concentrations and then injected using a flow rate of 30 μL/min for 50 s. The dissociations of 33i between wild type or mutant ULK1 were recorded for 360 s, and the dissociation constant at equilibrium (KD) was assessed with the Biacore S51 evaluation software (version: 1.2.1).",
+            "Figure 3 caption": "Figure 3. Identification of the key amino acids between ULK1 and 33i. (A) Docking pose based on the kinase domain structure of ULK1 (PDB code: 4WNP) showed the interaction between 33i and ULK1. The key amino acid residues are marked red. (B) Lys50, Arg18, Asn86, and Tyr89 in the kinase domain of ULK1 were mutated to alanine by site-directed mutagenesis. The recombinant proteins were purified from insect cells expressing ULK1WT and ULK1 mutants. Then, ULK1 kinase activity was measured by using kinase assay and purified ULK1 mutant proteins in the presence of different concentrations of 33i. The relative kinase activity of ULK1 mutants was normalized to the maximal response of ULK1WT. (C) Flag-tagged ULK1WT and ULK1 mutants were expressed in HEK-293T cells and immunoprecipitated by anti-Flag antibody, then incubated with GST-tagged mAtg13 in a kinase reaction buffer in the presence or absence of 33i. The reaction was stopped and analyzed by Western blot with p-mAtg13 antibody. (D) HEK-293T cells were cotransfected with Flag-tagged ULK1 (WT or mutant ULK1) and GST-tagged mAtg13, then treated with or without 33i. The phosphorylation of mAtg13 in total cell lysates was detected with p-mAtg13 antibody."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "wild type or mutant ULK1",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 33i",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 50,
+                "dissociation_time_s": 360,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore S51 evaluation software (version: 1.2.1)"
+            }
+        }
+    }
+}

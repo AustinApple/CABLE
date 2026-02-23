@@ -1,0 +1,66 @@
+{
+    "51587003": {
+        "reactant_set_id": 51587003,
+        "pmid": 38363069,
+        "protein": "Toll-like receptor 7",
+        "ligand": {
+            "smiles": "CCCCc1nc2c(N)nc3ccccc3c2n1CC1CCOC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 47.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant mouse TLR7 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay (SPR)": "The SPR assay was also performed as previously described. Briefly, murine TLR7 protein solution (diluted with PBS to a concentration of 0.1 mg/mL) was coated on the surface of the 3D dextran chip and incubated at 4 °C overnight with more than 60% of humidity. The chip was washed, blocked on the next day, and then stored at 4 °C until used. Loading buffer and recycling buffer were prepared ahead, while the testing samples should be fresh prepared on the day of the experiment to ensure the stability. Accurately weighed SMU-L11 was dissolved in the loading buffer at a final concentration of 25, 12.5, 6.25, or 0 μM. All the samples were tested by a PlexArray HT A100 (plexera) system, and data were analyzed using BIAevaluation Software.",
+            "Results - Figure 4 caption": "Figure 4. SMU-L11 activates the TLR7 signaling pathway. (A) SMU-L11 stabilized more TLR7 protein in HEK-Blue hTLR7 cells with increasing concentration. Cells were treated with SMU-L11 (0, 0.01, 0.1, 1, 10, and 20 μM) for 24 h, and the cell lysates were assessed using Western blotting and rabbit anti-TLR7 antibody. (B) Quantification of TLR7/GAPDH protein band intensities. (C) Immunoblot analysis of TLR7 and MyD88 of TLR7 immunoprecipitation from TLR7-L11-treated BMDCs for 0–120 min (β-actin as loading control). (D) Activation dynamics of the phosphorylation of IKK α/β, p65 NF-κB, p38 MAPK, JNK, and ERK1/2 in BMDCs. (E) Quantification of phosphorylated protein band intensities. (F) Protein levels of pIRF7, IRF7, and loading control (GAPDH) in BMDCs. (G) Quantification of pIRF7/IRF7 protein band intensities. Data represent the mean ± SD of at least three independent experiments. One-way ANOVA with Bonferroni’s multiple comparison test. ***, p <0.001 (compared to the 0 min group).",
+            "Results - Text": "The calculated K_D value for SMU-L11/TLR7 interaction was 47.2 nM (Figure S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "plexera",
+                "model": "PlexArray HT A100"
+            },
+            "sensor_chip": {
+                "type": "3D dextran chip",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "murine TLR7 protein",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "SMU-L11",
+                "concentration_range": "0, 6.25, 12.5, 25 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "loading buffer (composition not specified)",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "BIAevaluation Software"
+            }
+        }
+    }
+}

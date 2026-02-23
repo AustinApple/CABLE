@@ -1,0 +1,632 @@
+{
+    "51553167": {
+        "reactant_set_id": 51553167,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "Oc1cc(OC(F)(F)F)ccc1COC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553168": {
+        "reactant_set_id": 51553168,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "FC(F)(F)c1ccc(COC2CN(C2)C(=O)N2CC[C@@H]3OCC(=O)N[C@@H]3C2)c(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553169": {
+        "reactant_set_id": 51553169,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "Fc1c(CCC2CN(C2)C(=O)N2CC[C@@H]3OCC(=O)N[C@@H]3C2)cccc1C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 57.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553170": {
+        "reactant_set_id": 51553170,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "Fc1cc(ccc1CCC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553171": {
+        "reactant_set_id": 51553171,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "Fc1ccc(cc1CCC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553172": {
+        "reactant_set_id": 51553172,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "Fc1cccc(c1CCC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553173": {
+        "reactant_set_id": 51553173,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "FC(F)(F)c1cccc(CCC2CN(C2)C(=O)N2CC[C@@H]3OCC(=O)N[C@@H]3C2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 29.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553174": {
+        "reactant_set_id": 51553174,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "COc1cccc(F)c1CCC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 41.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553175": {
+        "reactant_set_id": 51553175,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "Cc1cccc(F)c1CCC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    },
+    "51553176": {
+        "reactant_set_id": 51553176,
+        "pmid": 36137365,
+        "protein": "Monoglyceride lipase",
+        "ligand": {
+            "smiles": "FC(F)(F)c1ccccc1CCC1CN(C1)C(=O)N1CC[C@@H]2OCC(=O)N[C@@H]2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length mouse N-terminal His6-tagged TEV-MAGL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Y. He, L.C. Gobbi, A.M. Herde, D. Rombach, M. Ritter, B. Kuhn, L. Collin, D. Heer, B. Hornsperger, C. Bell, F. O’Hara, J. Benz, M. Honer, C. Keller, L. Collin, H. Richter, R. Schibli, U. Grether, L. Mu, Discovery and evaluation of novel reversible monoacylglycerol lipase radioligands bearing a morpholin-3-one scaffold, Nucl. Med. Biol. 108–109 (2022) 24–32, https://doi.org/10.1016/j.nucmedbio.2022.02.002.",
+        "original_paragraph": {
+            "Materials and Methods - SPR measurements": "All SPR experiments were performed on the SPR instruments (Biacore 3000 and T200, GE Healthcare, Uppsala, Sweden) at 18 °C in the running buffer (10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired). Protein immobilization. N-terminally tagged, full-length mouse His6-TEV-MAGL protein was immobilized on CM5 SPR sensor (Cat. No. BR-100530, GE Healthcare, Uppsala, Sweden) applying protected amino coupling surface chemistry. The target protein was first pre-diluted 40 times from stock (2.3 mg/mL) in the running buffer and further diluted in the coupling buffer (10 mM acetate, pH 5.5) containing 10 μM reference compound to stabilize the protein while immobilization. The sensor surface was first activated by a mixture of 0.2 M 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide and 0.5 M N-hydroxysuccinimide for 10 min. Afterwards, the activated surface was contacted with the protein solution at final protein concentration of 0.06 mg/mL in acetate buffer in presence of the reference compound at saturating concentration until the desired protein surface density was achieved (Response: ca. 3000–4000 relative units). No deactivation of sensor surface was performed. Protein surface was prepared freshly to analyze each slow dissociating compound. Binding assay. All samples were dissolved in DMSO to get 10 mM stock solutions. Further, the samples were diluted with running buffer to get dilution series (adapted to the affinity of the compound) and analyzed in the single cycle kinetic mode (5 concentrations with the dilution factor of 2). Injection of buffer (blank) was performed to collect the dilution signal enabling further data processing. The protein binding activity was tested with (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone), a fast dissociating compound, prior to the injection of slow dissociating compounds. Data processing. SPR resonance signals measured on the active channel (protein channel) were subtracted with signals collected on the reference channel (only activated sensor surface, no protein) and further subtracted with buffer signal (blank). Kinetic and binding parameters were extracted from the experimental binding curves by fitting them into mathematical binding model for one-to-one interaction applying Biacore T200 Evaluation software (version 3.2.1).",
+            "Materials and Methods - SPR measurements - Additional details": "The identification of the radioactive product was performed in an Agilent 1100 series HPLC system, equipped with UV detector and a GapiStar radiodetector (Raytest) using an ACE XDB-C18 Zobrax column (75 mm × 4.6 mm, 3.5 μm; mobile phase A: water containing 0.1% H3PO4, mobile phase B: CH3CN; flow rate of 1 mL/min; 0.0–3.0 min, 30–50% B; 3.0–4.0 min, 50–55% B; 4.0–6.0 min, 55–60% B; 6.0–7.0 min, 60–70% B with a wavelength of 254/230 nm). The retention time of 7 and [11C]7 were 4.99 and 5.02 min, respectively. The difference in retention time is in agreement with the time lag between the UV and radioactivity detectors in our HPLC system. [11C]2 was synthesized according to the literature [10]."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 and T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminally tagged, full-length mouse His6-TEV-MAGL protein",
+                "strategy": "Amine coupling",
+                "density_ru": "3000-4000",
+                "concentration_for_immobilization": "0.06 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested include (2-chlorophenyl)(3-(4-(pyrimidin-2-yl)pyperazin-1-yl)azetidin-1-yl)methanone and other slow dissociating compounds",
+                "concentration_range": "5 concentrations with dilution factor of 2 (adapted to the affinity of the compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Surfactant P20, pH 7.4, 50 mM EDTA supplemented with 1% DMSO (v/v) for binding assay if desired",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 18,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference channel: only activated sensor surface, no protein",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (version 3.2.1)"
+            }
+        }
+    }
+}

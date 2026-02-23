@@ -1,0 +1,66 @@
+{
+    "51573219": {
+        "reactant_set_id": 51573219,
+        "pmid": 37014798,
+        "protein": "Regulatory-associated protein of mTOR",
+        "ligand": {
+            "smiles": "C[C@@H]1[C@@H](OC(C)=O)[C@@]2(OC3(O[C@@H]2[C@@H]2[C@H](O)[C@](Cl)(COC(=O)c4ccccc4)[C@@H](O)[C@@]4(O)[C@@H](C=C(C)C4=O)[C@@]12O3)c1ccccc1)C(C)=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human Raptor and measured for 200 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR for Kinetic Study": "SPR for Kinetic Study. Purified recombinant Raptor protein, which has been diluted in sodium acetate buffer to pH 4.5, was immobilized on the chip (CM5). A series concentration of 1c was flow through the surface of the chip at a flow rate of 30 μL/min for 200 s. The kinetic result was obtained by SPR evaluation software using the 1:1 Langmuir binding model.",
+            "Figure 6F caption": "Binding mode of 1c with the WD40 repeat domain of Raptor. The crystal structure of human Raptor (PDB ID: 5H64) was selected for molecular docking. The hydrogen bond and hydrophobic force were displayed as yellow and blue dashed lines, respectively. The image was generated in PyMOL.",
+            "Figure 6F description": "F SPR analysis of interactions between 1c and Raptor in the kinetic level."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Raptor protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "diluted in sodium acetate buffer to pH 4.5"
+            },
+            "analyte": {
+                "description": "1c",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 4.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 200,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "SPR evaluation software"
+            }
+        }
+    }
+}

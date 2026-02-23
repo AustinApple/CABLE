@@ -1,0 +1,64 @@
+{
+    "51581140": {
+        "reactant_set_id": 51581140,
+        "pmid": 38651218,
+        "protein": "Tyrosinase",
+        "ligand": {
+            "smiles": "Cc1ccc(/C=C/CN2CCN(C(=O)CCC(=O)Nc3ccccc3O)CC2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 198000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to tyrosinase (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Moreover, molecular dynamic assay has been performed to validate that the binding mode of compounds T0, T3, T21, and T22 was all stable (Figure S1). The result of surface plasmon resonance (SPR) assay validated that compound T3 really targeted TYR, and its Kd value is 198 μM (TYR: 50 μg/mL, pH 4.5, 1:1 binding) (Figure S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "TYR",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": "50 ug/mL"
+            },
+            "analyte": {
+                "description": "compound T3",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 4.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

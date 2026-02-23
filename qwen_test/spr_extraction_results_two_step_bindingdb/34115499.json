@@ -1,0 +1,68 @@
+{
+    "51437228": {
+        "reactant_set_id": 51437228,
+        "pmid": 34115499,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "OC[C@@H](NCc1cc(Cl)c(OCc2cccc(c2Br)-c2ccccc2)cc1OCc1ccc2nonc2c1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human PD-L1 assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Affinity Assay. The binding affinity of compounds with the human PD-L1 IgV domain (human PD-L1/B7-H1 protein, His tag, PD-L1-H5229) and the human PD-1 IgV domain (human PD-1/PDCD1 protein, Fc tag, ACRO, PD-1-H5257) was examined on a Biacore T200 (GE Healthcare Biosciences, Sweden). Briefly, His-PD-L1 or Fc-PD-1 was diluted using 1× phosphate-buffered saline (PBST) buffer (99.95% PBS + 0.05% Tween 20) and immobilized onto one CM5 chip, all in 10 mM sodium acetate (pH 4.5) by a standard amine-coupling procedure. Compounds were serially diluted with the phosphate-buffered saline (PBS) buffer containing 0.05% Tween 20 and 5% DMSO to appropriate concentrations and injected at a flow through the chip following the preset program. The K_D value was determined with Biacore T200 evaluation software (GE Healthcare).",
+            "Figure 4 caption": "Figure 4. Binding affinity of L7 to His-hPD-L1 (A) and Fc-hPD-1 (B) was evaluated using the SPR technique. His-hPD-L1 or Fc-hPD-1 was captured on CM5 Chips and various concentrations of L7 flowed through it. The K_D values were determined by Biacore Evaluation software as mean±SEM from two to three independent experiments.",
+            "Table 4": "Table 4. Data of Cell-Based PD-1/PD-L1 Signaling Blockade Assay compound EC50 (nM) RLU_MAX atezolizumab 0.258 ± 0.043 2.40 ± 0.261 L7 375 ± 84.3 1.81 ± 0.028 BMS-1016 2075 ± 573 1.83 ± 0.079 BMS-202 >10 000 ND aThe data were generated from two independent experiments. bND = not determined.",
+            "Figure 3 caption": "Figure 3. Binding mode of L7 in the pocket of the PD-L1 dimer predicted by molecular docking (the docking model was based on the dimeric PD-L1 protein taken from the PDB ID: 5J89). The π–π stacking interactions were shown as a cyan dash line, π-cation interactions were shown as an orange dash line, and hydrogen-bonding interactions were shown as a magenta dash line.",
+            "Results and Discussion": "Binding Affinity of L7 to hPD-1 and hPD-L1. The kinetic analysis of the interaction of L7 with hPD-L1 or hPD-1 was performed through a surface plasmon resonance (SPR) method. As shown in Figure 4, the calculated K_D value for L7 binding to the hPD-L1 extracellular segment was 3.34 nM. Notably, there was no binding for hPD-1 upon treatment with various concentrations of L7, indicating that this compound took effects through binding to PD-L1 but not PD-1."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "His-PD-L1 or Fc-PD-1",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "L7",
+                "concentration_range": "Various concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline (PBST) buffer (99.95% PBS + 0.05% Tween 20) with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "51389102": {
+        "reactant_set_id": 51389102,
+        "pmid": 32912430,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CC(C)c1ccc(cc1)N(C(C(=O)NC1CCCCC1)c1ccc(cc1)[N+]([O-])=O)C(=O)Cc1c[nH]c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin A (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.5 Surface plasmon resonance": "An instrument (Reichert, SR7500DC system) was used to assess the direct target binding of derivative 7b. The CypA protein was immobilized on the sample channel in three steps. The protein was first activated with the mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride and N-hydroxysuccinimide, and the protein stock was diluted with 10 mM sodium acetate at pH 6.0, followed by quenching the protein used 1 M ethanolamine solution (pH 8.5). A second reference standard was treated similarly but without protein. The association time was 5 min and the dissociation time was 10 min. The flow rate was 30 μL/min, the running buffer was PBS – 5% DMSO, and the regeneration solution was 50 mM NaOH. The kinetic parameters were obtained using Scrubber2.",
+            "Results - 2.6 Surface plasmon resonance": "All bisamide derivatives share the same skeleton, and derivative 7b is the most potent compound in all derivatives without considering the cytotoxicity. Meanwhile, taking account of the solubility of bisamide derivatives in the PBS buffer in Surface plasmon resonance (SPR) experiments, 7b was chosen to evaluate the binding affinity to CypA. Different running concentrations of 7b (78.125 nM, 39.0625 nM, 156.25 nM, 312.5 nM, 625 nM, 1.25 μM, 2.5 μM, 5 μM, 10 μM, 20 μM) were tested, and the kinetic parameters were calculated using Scrubber2 (Fig. 7). The dissociation rate of 7b (ka = 2.6 × 10^2 M−1s−1, kd = 1.2 × 10−3 s−1) was slow. The dissociation constant KD was 4.60 μM (KD[M] = kd [S−1]/ka [M−1s−1]), indicating that 7b bound to CypA, which implied bisamide compounds can bind to CypA.",
+            "Figure 7 caption": "Fig. 7. Relative response in resonance units showing interactions between 7b and CypA at different concentrations.",
+            "Figure 7 data": "The sensorgram in Figure 7 shows the relative response (RU) over time (s) for different concentrations of 7b: 0.63 μM, 1.25 μM, 2.5 μM, 5 μM, 10 μM, and 20 μM. The association phase is from 0 to 300 s, and the dissociation phase is from 300 to 500 s. The inset text provides the calculated kinetic parameters: Ka (M⁻¹s⁻¹) = 2.6E+2, Kd (s⁻¹) = 1.2E-3, and KD (μM) = 4.6."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Reichert",
+                "model": "SR7500DC"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "diluted with 10 mM sodium acetate at pH 6.0"
+            },
+            "analyte": {
+                "description": "derivative 7b",
+                "concentration_range": "78.125 nM - 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS – 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 300,
+                "dissociation_time_s": 200,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Second reference standard treated similarly but without protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber2"
+            }
+        }
+    }
+}

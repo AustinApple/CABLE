@@ -1,0 +1,66 @@
+{
+    "51204673": {
+        "reactant_set_id": 51204673,
+        "pmid": 24332657,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Nc1ncnc2[nH]c(nc12)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS coronavirus 3C-like protease using 5-FAM-TSATLQSGFRK(QXL520)-NH2 as substrate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.9. Determination of dissociation equilibrium constant (K_D) by SPR": "Native 3CLpro enzyme was prepared in PBS (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl) and immobilized on a CM5 sensor chip using standard amine-coupling at 20 °C with running buffer HBS-P (10 mM HEPES, 150 mM NaCl, 0.05% surfactant P-20, pH 7.4) using a Biacore T100 instrument. Flow channel 1 was activated by 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture, and the activated surface was blocked by ethanolamine (pH 8.5) as a control. 3CLpro enzyme was diluted in 10 mM sodium acetate (pH 5.0) and immobilized to flow channels 2 and 3 after sensor surface activation with EDC/NHS followed by ethanolamine blocking on unoccupied surface area. 3CLpro immobilization levels of flow channels 2 and 3 were ~11,500 RU and ~16,500 RU, respectively. An unrelated reference protein (~25 kDa) was also immobilized to flow channel 4 as another control to be compared with 3CLpro (33 kDa as a monomer). Six initial HTS hits and one VS hit were prepared as 10 mM DMSO stock solutions. Compound solutions with a series of increasing concentrations (0–200 μM at 1.5-fold dilution) were applied to all four channels at a 20 μL/min flow rate at 20 °C. Sensorgrams were analyzed using BIAevaluation software 2.0.3, and response unit difference (ΔRU) values at each concentration were measured during the equilibrium phase. Data were either single referenced with a blank (ethanolamine) or double referenced with both blank and reference protein RU values. SigmaPlot 12.0 was used to fit the data to a single rectangular hyperbolic function, y = y_max·x/(K_D + x), was used to plot response units and corresponding concentration, where y is the response, y_max is the maximum response and x is the compound concentration.",
+            "Figure 6 caption": "Figure 6. Primary hits from HTS and hit validation using SPR binding assay. (A) Replicate plot from screening 41,022 compounds from structurally diverse in-house, Prestwick FDA-approved drugs, Maybridge and Life Chemicals libraries. The blue box indicates hit compounds with over 50% inhibition at 50 μM compound concentration. The initial percent inhibitions of the four confirmed hits from HTS are shown in red (9), blue (11) and green (14). (B) IC50 values and the dissociation equilibrium constants (K_D) of four virtual screening and six HTS hits. All data were normalized for immobilization levels of target and reference proteins. Bars that reach the top of the graph represent K_D values of over 200 μM (no binding). (C) The binding data of compound 14 fitted to a single rectangular hyperbolic equation (See Methods). The determined K_D of compound 14 was 21.3 ± 6.3 μM, similar to its IC50 value (13.9 ± 2.2 μM). (D) Response units of compound 2 at a series of increasing concentrations (0–90 μM), showing lack of binding to 3CLpro. (E) Response units of compound 13 at a series of increasing concentrations (0–200 μM), showing non-specific binding to 3CLpro.",
+            "Table 2": "Summary statistics for experimental screening of VS and HTS hits Library Number of compounds Primary hits ≥ 50% inh or IC50 ≤ 50 μM Reordered Confirmed hits IC50 ≤ 50 μM Enzyme omission assay Binding confirmed by SPR Reversible hits Final hit rate (%) ZINC library 650,000 (75)a 8/5b NA NA NA 2 1 1.3c In-house 422 0 0 0 0 0 0 0 Prestwick 1200 5/5 1 1 1 0 0 0 Maybridge 14,400 14/13 5 5 5 1 1 0.007 Life Chemicals 25,000 13/8 6 3 3 1 1 0.004 a Number of virtual hit compounds ordered for experimental testing. NA—not applicable. b This number was counted from IC50 values in the absence of a reducing agent. c Final hit rate was calculated with the number of compounds ordered and experimentally tested ones only."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Native 3CLpro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "11,500-16,500",
+                "concentration_for_immobilization": "not stated"
+            },
+            "analyte": {
+                "description": "Six initial HTS hits and one VS hit (compounds tested as 10 mM DMSO stock solutions)",
+                "concentration_range": "0–200 μM at 1.5-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P (10 mM HEPES, 150 mM NaCl, 0.05% surfactant P-20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 (ethanolamine blocked) and flow channel 4 (unrelated reference protein immobilized)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Other",
+                "software": "BIAevaluation software 2.0.3"
+            }
+        }
+    }
+}

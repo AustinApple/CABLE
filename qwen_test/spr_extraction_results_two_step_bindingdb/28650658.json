@@ -1,0 +1,66 @@
+{
+    "50745557": {
+        "reactant_set_id": 50745557,
+        "pmid": 28650658,
+        "protein": "Methylosome protein 50/Protein arginine N-methyltransferase 5",
+        "ligand": {
+            "smiles": "COC(=O)c1ccccc1NC(=O)CSc1nc2cc(OC)ccc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 987.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PRMT5/MEP50 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "Surface Plasmon Resonance (SPR) Analysis. A surface plasmon resonance (SPR) assay was employed to assess the interaction between 17 and PRMT5, for which PRMT5/MEP50 was immobilized on CM5 sensor chips. As shown in Figure 5, compound 17 displayed extracellular binding affinity with PRMT5 with an equilibrium dissociation constant (Kd) value of 0.987 μM, and the equilibrium binding curve fit is shown in Figure S4. This result indicated the direct binding of 17 to PRMT5 at the enzyme level. Although the direct binding of 17 to PRMT5 has been proved, efforts to fully understand the detailed binding mode of 17 are urgently needed through the pursuit of a PRMT5-compound 17 cocrystal structure.",
+            "Figure 5 caption": "Figure 5. Compound 17 binding to PRMT5/MEP50 was analyzed with SPR, and the dissociation constant (Kd = 0.987 μM) was calculated.",
+            "Figure 5 sensorgram data": "The sensorgram in Figure 5 shows response (RU) over time (s). The curves are labeled with PRMT5 concentrations: 0.0989 μM, 0.1978 μM, 0.395625 μM, 0.78125 μM, 1.5625 μM, 3.125 μM, 6.25 μM, and 12.5 μM. The x-axis ranges from -100 to 300 seconds, and the y-axis ranges from 0 to 10 RU. The Kd value is explicitly stated as 0.987 ± 0.043 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "PRMT5/MEP50",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 17",
+                "concentration_range": "0.0989 μM - 12.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

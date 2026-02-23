@@ -1,0 +1,1010 @@
+{
+    "51275865": {
+        "reactant_set_id": 51275865,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CC(=NO1)c1ccc(cc1)C#CC1CC1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.17,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275866": {
+        "reactant_set_id": 51275866,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "CC#Cc1ccc(cc1)N1C[C@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)OC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.063,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275867": {
+        "reactant_set_id": 51275867,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "CCCc1ccc(cc1)C1=NO[C@@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275868": {
+        "reactant_set_id": 51275868,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CC(=NO1)c1ccc(Br)cc1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275869": {
+        "reactant_set_id": 51275869,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@H](O)Cc1ccc(cc1)-c1ccc(cc1)N1C[C@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)OC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.12,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275870": {
+        "reactant_set_id": 51275870,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "CC(C)(O)[C@H]1C[C@@H](C1)C#Cc1ccc(cc1)N1C[C@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)OC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275871": {
+        "reactant_set_id": 51275871,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CN(C(=O)O1)c1ccc(cc1)-c1ccccc1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.026,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275872": {
+        "reactant_set_id": 51275872,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CN(C(=O)O1)c1ccc(cc1)C1CC1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.12,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275873": {
+        "reactant_set_id": 51275873,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CN(C(=O)O1)c1ccc(Br)cc1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.21,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275874": {
+        "reactant_set_id": 51275874,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "CCCc1ccc(cc1)N1C[C@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)OC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.17,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275875": {
+        "reactant_set_id": 51275875,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "CC#Cc1ccc(cc1)C1=NO[C@@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.44,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275876": {
+        "reactant_set_id": 51275876,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C\\C=C\\c1ccc(cc1)C1=NO[C@@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275877": {
+        "reactant_set_id": 51275877,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CN(C(=O)O1)c1ccc(cn1)-c1ccccc1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.12,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275878": {
+        "reactant_set_id": 51275878,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C\\C=C\\c1ccc(cc1)N1C[C@H](C[C@](C)(C(=O)NO)S(C)(=O)=O)OC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275879": {
+        "reactant_set_id": 51275879,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@H](O)[C@H](NC(=O)c1ccc(cc1)C#Cc1ccc(CN2CCOCC2)cc1)C(=O)NO"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.48,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    },
+    "51275880": {
+        "reactant_set_id": 51275880,
+        "pmid": 30226381,
+        "protein": "UDP-3-O-acyl-N-acetylglucosamine deacetylase",
+        "ligand": {
+            "smiles": "C[C@@](C[C@H]1CN(C(=O)O1)c1ccc(cc1)C#CC1CC1)(C(=O)NO)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.065,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa PAO1 NB52019 LpxC after 60 to 420 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Kinetic Study and Data Analysis": "SPR Kinetic Study and Data Analysis. SPR studies were performed with a Biacore T200 instrument. Single-cycle kinetics was performed with 60 s association and 420 s dissociation at 50 μL/min. For each compound, blanks were injected in duplicate, followed by compound injections in five successive increasing concentrations. The surface was regenerated with 12.5% ethylene glycol solution for 180 s at 50 μL/min after each single-cycle injection. Data were analyzed using Biacore T200 evaluation software version 2.0. A 1:1 binding model was applied to fit the data for the extraction of kinetic parameters.",
+            "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization": "LpxC SPR Assay. Generation of Tagged P. aeruginosa Protein for SPR Immobilization. The plasmid pET30b-PaLpxC-Avi encodes P. aeruginosa LpxC followed by an Avi tag (GLNDIFEAQKIEWHE), which provides a biotinylation site for the subsequent recognition of the protein by streptavidin. The plasmid was cloned in two steps. First, the lpxC gene was amplified from P. aeruginosa PAO1 (NB52019) genomic DNA using the primer pair PaLpxCNdelFP and PaLpxCEcoRIRPnostop. The amplified DNA lacks a stop-codon. The PCR product was digested with NdeI and EcoRI and ligated to pET-30b digested with the same enzymes. The resulting plasmid was called pET30b-PaLpxCNEnostop. Secondly, the Avi-tag oligomer pair with complementary sequences and sticky ends, AviTagEcoRIFP and AviTagXhoIRP (Table 5), was annealed, phosphorylated using T4 polynucleotide kinase, and purified by QIAquick nucleotide removal kit. The Avi-tag oligomers were ligated into the EcoRI and XhoI sites of pET30b-PaLpxCNEnostop, resulting in pET30b-PaLpxC-Avi. This plasmid was verified by DNA sequencing. For protein production and SPR immobilization, pET30b-PaLpxC-Avi was co-transformed with pBirAcm into competent BL21 (DE3) pLysS cells; pBirAcm expresses BirA protein, which ligates biotin onto Lys residue of the Avi tag to generate the biotinylated PaLpxC-Avi. The cells were induced with 1 mM IPTG and 50 μM biotin at OD600 of 1.0. The cells were then grown at 18 °C for 16 h before harvesting. The protein was purified by ammonium sulfate precipitation, anion exchange column, and size exclusion chromatography. The purified protein was named PaLpxC-Avi002, with a concentration of 8.5 mg/mL in the storage buffer (20 mM Na2HPO4, pH 7.0, 150 mM NaCl, 0.5 mM TCEP, 10% glycerol). The molecular weight of the protein was confirmed by LC–MS. Series S sensor chip SA purchased from GE Healthcare was used to immobilize PaLpxC-Avi002 protein onto flow cell 2 with an initial binding level of 5333 response units (RU). The final binding level was 4333 RU after an overnight equilibration at a flow rate of 50 μL/min. Flow cell 1 was used as the reference cell (blank). Preparation of Compounds for Kd Determinations. 1 μL from a 10 mM compound stock in DMSO was diluted into 10 mL of the running buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO) to make a 1 μM working stock. From this working stock, 5 serial 1:3 dilutions were prepared, resulting in final test concentrations of 1.23, 3.7, 11.1, 33.3, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S sensor chip SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PaLpxC-Avi002",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4333",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds tested in SPR assay (not named in text)",
+                "concentration_range": "1.23 nM - 100 nM (five concentrations, 1:3 dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, 1 μM ZnSO4, 3% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "12.5% ethylene glycol"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 (blank)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software version 2.0"
+            }
+        }
+    }
+}

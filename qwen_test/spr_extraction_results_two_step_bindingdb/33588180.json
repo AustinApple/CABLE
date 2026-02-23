@@ -1,0 +1,69 @@
+{
+    "51404592": {
+        "reactant_set_id": 51404592,
+        "pmid": 33588180,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "C[C@@H]1O[C@@H](O[C@@H]2[C@@H](CO)O[C@@H](O[C@H]3CC[C@@]4(C)[C@@H](CC[C@]5(C)[C@@H]4CC=C4[C@@H]6CC(C)(C)CC[C@@]6(CC[C@@]54C)C(=O)NCc4ccccc4)C3(C)C)[C@H](O[C@@H]3O[C@@H](C)[C@H](O)[C@@H](O)[C@H]3O)[C@H]2O)[C@H](O)[C@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 940.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 spike glycoprotein S-trimer measured by Surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "42. S.W. Liu, Y.L. Ye, S.M. Li, Y.L. Zhuang, L.Y. Chen, J.X. Chen, Z.N. Cui, L.J. Huo, G.P. Song, Synthesis and SARs of dopamine derivatives as potential inhibitors of influenza virus PA endonuclease, Eur. J. Med. Chem. 189 (2020) 112048.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) measurement": "Compound 12f was fixed on the chip by photo-crosslinking, then recombinant SARS-CoV-2 S-trimer, S1 subunit or S2 subunit protein (DRA 47, DRA 48, DRA 49, Novoprotein Inc. Shanghai) at indicated concentrations were injected sequentially into the chamber in buffer PBST (0.1% Tween 20, pH 7.4), the interaction of S-trimer, S1 subunit or S2 subunit with 12f fixed was detected by PlexArrayTM HT SPRi (Seattle, US). The reaction temperature was controlled at 4 °C, binding time was 600 s, disassociation time was 360 s, flow rate was 0.5 μL/s, the chip was regenerated with Glycine Hydrochloride (pH 2.0). The data of interaction signals was retrieved and analyzed with PlexeraDE software [42].",
+            "Figure 3 caption": "Fig. 3. (A) Dose-response curve for saponin 12f in the antiviral assay against SARS-CoV-2 PsV and VSV-G PsV. (B) Cytotoxicity of saponin 12f against 293T-ACE2 cells. (C) SPR analysis of the interaction between 12f with SARS-CoV-2 S-trimer.",
+            "Figure 3C sensorgram data": "The sensorgram in Fig. 3C shows the binding signal (RU) over time (s) for compound 12f at concentrations of 200nM, 400nM, 800nM, 1600nM, and 3200nM. The binding signal increases with concentration. The dissociation phase is shown after the injection. The figure labels the dissociation constant as Kd = 0.94 μM.",
+            "Figure 5 caption": "Fig. 5. (A) The binding of SARS-CoV-2 S protein and ACE2 (Anti-Flag) in the presence or absence of 12f (40 μM) were detected by Co-IP assays. IgG was included as a negative control. (B–C) SPR analysis of the interaction between 12f with SARS-CoV-2 S1 subunit (B) and S2 subunit (C).",
+            "Figure 5B sensorgram data": "The sensorgram in Fig. 5B shows the binding signal (RU) over time (s) for compound 12f with SARS-CoV-2 S1 subunit at concentrations of 200nM, 400nM, 800nM, 1600nM, and 3200nM. The figure labels the dissociation constant as Kd = 3.69 mM.",
+            "Figure 5C sensorgram data": "The sensorgram in Fig. 5C shows the binding signal (RU) over time (s) for compound 12f with SARS-CoV-2 S2 subunit at concentrations of 200nM, 400nM, 800nM, 1600nM, and 3200nM. The figure labels the dissociation constant as Kd = 2.16 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "PlexArray",
+                "model": "HT SPRi"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Compound 12f",
+                "strategy": "Photo-crosslinking",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Recombinant SARS-CoV-2 S-trimer, S1 subunit, or S2 subunit protein",
+                "concentration_range": "200 nM - 3200 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (0.1% Tween 20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30.0,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 600,
+                "dissociation_time_s": 360,
+                "regeneration_solution": "Glycine Hydrochloride (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "PlexeraDE"
+            }
+        }
+    }
+}

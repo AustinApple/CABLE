@@ -1,0 +1,1432 @@
+{
+    "51037551": {
+        "reactant_set_id": 51037551,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1)Nc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 871.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037552": {
+        "reactant_set_id": 51037552,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Brc1ccc(NC(=O)O[C@@H]2C3CCN(CC3)[C@H]2Cc2cccnc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037553": {
+        "reactant_set_id": 51037553,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Brc1ccc(NC(=O)N[C@@H]2C3CCN(CC3)[C@H]2Cc2cccnc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 437.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037554": {
+        "reactant_set_id": 51037554,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1)Oc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 347.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037555": {
+        "reactant_set_id": 51037555,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 219.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037556": {
+        "reactant_set_id": 51037556,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Brc1ccc(cc1)C(=O)N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 93.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037557": {
+        "reactant_set_id": 51037557,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1)c1cc2ccccc2o1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037558": {
+        "reactant_set_id": 51037558,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1)c1cccs1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 240.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037559": {
+        "reactant_set_id": 51037559,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(Nc1ccccc1)O[C@H]1CN2CCC1CC2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 29512.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037560": {
+        "reactant_set_id": 51037560,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Brc1ccc(NC(=O)O[C@H]2CN3CCC2CC3)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4467.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037561": {
+        "reactant_set_id": 51037561,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(N[C@H]1CN2CCC1CC2)Nc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18621.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037562": {
+        "reactant_set_id": 51037562,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Brc1ccc(NC(=O)N[C@H]2CN3CCC2CC3)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4898.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037563": {
+        "reactant_set_id": 51037563,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 316.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037564": {
+        "reactant_set_id": 51037564,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "N[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 550.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037565": {
+        "reactant_set_id": 51037565,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "N[C@H]1CN2CCC1CC2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 74131.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037566": {
+        "reactant_set_id": 51037566,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "NCCc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 147911.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037567": {
+        "reactant_set_id": 51037567,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(Nc1ccccc1)OCCCc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 741310.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037568": {
+        "reactant_set_id": 51037568,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Brc1ccc(NC(=O)OCCCc2cccnc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 50119.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037569": {
+        "reactant_set_id": 51037569,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "CN1CCC[C@H]1c1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 479.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037570": {
+        "reactant_set_id": 51037570,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "Clc1ccc(cc1)C(=O)N[C@H]1CN2CCC1CC2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3631.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037571": {
+        "reactant_set_id": 51037571,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "O=C(Nc1ccccc1)O[C@@H]1C2CCN(CC2)[C@H]1Cc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51037572": {
+        "reactant_set_id": 51037572,
+        "pmid": 20828128,
+        "protein": "Acetylcholine-binding protein",
+        "ligand": {
+            "smiles": "CN(C)CCc1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6026.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Lymnaea stagnalis His6-AChBP expressed in Bac-to-Bac baculovirus expression system by surface plasmon resonance biosensor assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Assay": "SPR biosensor assays were performed at 25 °C on a BIACORE T100 (GE Healthcare, Uppsala, Sweden). Ls-AChBP and Ac-AChBP were diluted to 0.03–0.1 mg/mL in 50 mM NaAc (pH 5.5) and immobilized on a CM5 sensor chip (research grade, GE Healthcare, Uppsala, Sweden) by amine coupling according to the manufacturer’s instructions. An unmodified dextran surface was used as a reference surface. A phosphate buffer (10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20 (GE Healthcare, Sweden)) was used as a running buffer at a flow rate of 90 μL/min. All compounds were dissolved as 10 mM stock solutions in pure DMSO and diluted in the running buffer. Suitable concentration series were determined for all compounds separately. Typically, samples were injected for 60 s, and the dissociation was recorded for 300 s. Signals were corrected for nonspecific binding to the surface by subtracting signals from the reference surface from those of the AChBP surfaces (reference subtraction). In addition, corrections for minor differences between AChBP and reference surface interactions with DMSO were performed by using a series of solvents standards (solvent correction). Moreover, signals were corrected for background by subtracting signals from a blank injection from those of compound injections (blank subtraction). The affinity was determined by fitting a Langmuir binding equation to steady state binding signals at different concentrations. For the estimation of the affinity of compounds not reaching saturation within the range of concentrations that could be used for the measurements, the maximum binding level (Rmax) was fixed to a value determined by a reference compound of similar molecular weight. Unless otherwise stated, standard deviations were based on at least four experimental series.",
+            "Figure 2 caption": "Figure 2. Examples of sensorgrams for one representative fragment from each group: (A) 8, group I; (B) 17, group II; (C) 3, group III; (D) 25, group IV; (E) 22, group V.",
+            "Table 1": "Table 1. Structures and Affinities of All Compounds Determined by a Direct Binding Biosensor-Based Approach and an Indirect Radioligand Displacement Assay for Ls-AChBP, Ac-AChBP, and α7 nAChR. The table includes pK_D values for Ls-AChBP and Ac-AChBP for all compounds, which are derived from the SPR biosensor assay. For example, compound 8 has a pK_D of 6.36 ± 0.02 for Ls-AChBP and 5.19 ± 0.07 for Ac-AChBP.",
+            "Validation of SPR Biosensor Interaction Assay": "Validation of SPR Biosensor Interaction Assay. Ls-AChBP and Ac-AChBP were immobilized to levels around 3000 RU. Higher amounts were avoided in order to reduce the effects of limited mass transport of analytes. Examples of sensorgrams are given for one representative compound per structural group (Figure 2). These examples show that high quality sensorgrams could be obtained for all fragment groups. Affinity values (K_D) could be determined for all compounds but not interaction rate constants due to very fast kinetics. In some cases saturation could not be reliably used. The affinities of all 20 compounds for Ls-AChBP, along with nicotine and 26, were determined in the SPR biosensor direct assay and radioligand displacement ([³H]epibatidine) assay; affinities for α7-nAChR were determined in a radioligand displacement ([³H]MLA) assay (Table 1). The affinities obtained for Ls-AChBP with the two assays were highly correlated (R² = 0.97), as shown in Figure 3A. This excellent correlation, for a diverse set of compounds with respect to molecular weight and affinities, between the novel SPR biosensor direct assay and the established radioligand displacement assay validates the quality of the SPR biosensor assay for the detection of binding of fragments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Ls-AChBP and Ac-AChBP",
+                "strategy": "Amine coupling",
+                "density_ru": "around 3000",
+                "concentration_for_immobilization": "0.03–0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds dissolved as 10 mM stock solutions in pure DMSO and diluted in running buffer",
+                "concentration_range": "Suitable concentration series determined separately for each compound"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.0, 137 mM NaCl, 3 mM KCl, with addition of 5% DMSO and 0.005% v/v surfactant P20",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 90,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified dextran surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

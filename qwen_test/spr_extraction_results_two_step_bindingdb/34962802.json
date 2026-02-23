@@ -1,0 +1,262 @@
+{
+    "51443657": {
+        "reactant_set_id": 51443657,
+        "pmid": 34962802,
+        "protein": "Tyrosine-protein phosphatase non-receptor type 5",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@@H](NC(=O)[C@H](C)N)[C@@H](C)O)C(=O)N[C@@H](Cc1ccc(OP(O)(O)=O)cc1)C(=O)NCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 670.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of TAM-3Y-F2Pmp peptide binding to N-terminal His6-fused STEP32 (282 to 563 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Measurement of Binding Kinetics by SPR": "For the interaction studies, the immobilized peptides were used as ligands, while the catalytically inactive mutant form, STEP32 C/S, was used for the interaction with p3Y and p-fin4 phosphopeptides, while the catalytically active form STEP32 WT was used for the interaction with F2Pmp-containing peptides. The initial concentration of the STEP32 protein was estimated using the Pierce 660nm Protein Assay Reagent (Thermo) and the FLUOStar Omega Microplate Reader (BMG LABTECH). For each kinetic experiment, a series of at least five different concentrations of STEP32, ranging between 50 nM and 500 μM, were injected onto each peptide immobilized on the sensor chip, at a flow rate of 10 μL/min, in a random order. STEP32 concentrations were prepared as serial dilutions in HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20). The association and dissociation time was set to 5 min. After each kinetic test, 2–4 cycles of regeneration were performed by injecting 1 M NaCl in HBS-EP buffer for 2 min at a flow rate of 20 μL/min. All binding measurements were carried out at 25 °C with HBS-EP as the running buffer. For p3Y, 3Y-F2Pmp, and 3Ysh-3-F2Pmp, the experiments were performed in duplicate and each STEP32 dilution was injected two times. In the case of the p-fin4 peptide, one binding experiment was performed and all STEP32 C/S dilutions were injected in duplicate. Nonspecific bindings were removed by separately subtracting the signal registered on the reference cell from the signal registered on each peptide-immobilized cell surface. The dissociation constant Kd values were calculated using GraphPad Prism 6.0 software by fitting the data to the regression-one-site specific binding model. All sensorgrams and steady-state plots shown in this manuscript as well as in the Supporting Information were prepared using Prism 6.0 (GraphPad Software).",
+            "Figure 4 caption": "Figure 4. Surface plasmon resonance analysis of the interaction between STEP32 and the tyrosine-phosphorylated peptides. Left graphs represent the sensorgrams with binding curves of the interaction between mentioned peptides with the specified concentrations of STEP32 C/S. Specific binding was obtained by subtracting the nonspecific binding response registered to an empty control flow cell from the response of the peptide bound flow cell. Right graphs represent steady-state plots obtained by plotting the maximum response values (RUs) of the sensorgrams against the concentration of STEP32 C/S. The Kd values were calculated by fitting the data to the nonlinear regression-one-site specific binding model.",
+            "Table 4": "Table 4. Comparative Binding Affinities of Tyrosine-Phosphorylated and F2Pmp-Containing Peptides, Determined by SPR | name | sequence | Kd (μM) ± SEM | | :--- | :--- | :--- | | p3Y | ATYKEGYNVpYG | 0.67 ± 0.1^a | | p-fin4 | EGYNVpYE | 0.23 ± 0.09^b | | 3Y-F2Pmp | ATYKEGYNV{F2Pmp}G | 0.40 ± 0.02^a | | 3Ysh-3-F2Pmp | EGYNV{F2Pmp}G | 0.45 ± 0.2^a | | fin4-F2Pmp | EGYNV{F2Pmp}E | ND | ^aData represent mean values ± standard error of the mean (SEM) from two experiments. ^bData represent mean values of two consecutive injections ± SEM for five serial dilutions of the analyte.",
+            "Figure 4 sensorgram data": "The left graphs in Figure 4 show sensorgrams for p3Y and p-fin4. For p3Y, the concentrations of STEP32 C/S are labeled as 10 μM, 1 μM, 500 nM, 100 nM, and 50 nM. For p-fin4, the concentrations are 1 μM, 500 nM, 250 nM, 100 nM, and 50 nM. The x-axis represents time in seconds (0 to 700 for p3Y, 0 to 600 for p-fin4). The y-axis represents Response units (RU). The right graphs show steady-state plots with [STEP32 C/S] (M) on the x-axis (ranging from 5.0×10⁻⁷ to 1.5×10⁻⁵ for p3Y, and 5.0×10⁻⁷ to 1.5×10⁻⁶ for p-fin4) and Response units (RU) on the y-axis."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "TAM-3Y-F2Pmp peptide",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "STEP32 (282 to 563 residues), catalytically inactive mutant form (STEP32 C/S) for p3Y and p-fin4 peptides, catalytically active form (STEP32 WT) for F2Pmp-containing peptides",
+                "concentration_range": "50 nM to 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1 M NaCl in HBS-EP buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Empty control flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "GraphPad Prism 6.0"
+            }
+        }
+    },
+    "51443658": {
+        "reactant_set_id": 51443658,
+        "pmid": 34962802,
+        "protein": "Tyrosine-protein phosphatase non-receptor type 5",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CNC(=O)[C@@H](N)CCC(O)=O)C(=O)N[C@@H](Cc1ccc(OP(O)(O)=O)cc1)C(=O)N[C@@H](CCC(O)=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 230.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of TAM-3Y-F2Pmp peptide binding to N-terminal His6-fused STEP32 (282 to 563 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Measurement of Binding Kinetics by SPR": "For the interaction studies, the immobilized peptides were used as ligands, while the catalytically inactive mutant form, STEP32 C/S, was used for the interaction with p3Y and p-fin4 phosphopeptides, while the catalytically active form STEP32 WT was used for the interaction with F2Pmp-containing peptides. The initial concentration of the STEP32 protein was estimated using the Pierce 660nm Protein Assay Reagent (Thermo) and the FLUOStar Omega Microplate Reader (BMG LABTECH). For each kinetic experiment, a series of at least five different concentrations of STEP32, ranging between 50 nM and 500 μM, were injected onto each peptide immobilized on the sensor chip, at a flow rate of 10 μL/min, in a random order. STEP32 concentrations were prepared as serial dilutions in HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20). The association and dissociation time was set to 5 min. After each kinetic test, 2–4 cycles of regeneration were performed by injecting 1 M NaCl in HBS-EP buffer for 2 min at a flow rate of 20 μL/min. All binding measurements were carried out at 25 °C with HBS-EP as the running buffer. For p3Y, 3Y-F2Pmp, and 3Ysh-3-F2Pmp, the experiments were performed in duplicate and each STEP32 dilution was injected two times. In the case of the p-fin4 peptide, one binding experiment was performed and all STEP32 C/S dilutions were injected in duplicate. Nonspecific bindings were removed by separately subtracting the signal registered on the reference cell from the signal registered on each peptide-immobilized cell surface. The dissociation constant Kd values were calculated using GraphPad Prism 6.0 software by fitting the data to the regression-one-site specific binding model. All sensorgrams and steady-state plots shown in this manuscript as well as in the Supporting Information were prepared using Prism 6.0 (GraphPad Software).",
+            "Figure 4 caption": "Figure 4. Surface plasmon resonance analysis of the interaction between STEP32 and the tyrosine-phosphorylated peptides. Left graphs represent the sensorgrams with binding curves of the interaction between mentioned peptides with the specified concentrations of STEP32 C/S. Specific binding was obtained by subtracting the nonspecific binding response registered to an empty control flow cell from the response of the peptide bound flow cell. Right graphs represent steady-state plots obtained by plotting the maximum response values (RUs) of the sensorgrams against the concentration of STEP32 C/S. The Kd values were calculated by fitting the data to the nonlinear regression-one-site specific binding model.",
+            "Table 4": "Table 4. Comparative Binding Affinities of Tyrosine-Phosphorylated and F2Pmp-Containing Peptides, Determined by SPR | name | sequence | Kd (μM) ± SEM | | :--- | :--- | :--- | | p3Y | ATYKEGYNVpYG | 0.67 ± 0.1^a | | p-fin4 | EGYNVpYE | 0.23 ± 0.09^b | | 3Y-F2Pmp | ATYKEGYNV{F2Pmp}G | 0.40 ± 0.02^a | | 3Ysh-3-F2Pmp | EGYNV{F2Pmp}G | 0.45 ± 0.2^a | | fin4-F2Pmp | EGYNV{F2Pmp}E | ND | ^aData represent mean values ± standard error of the mean (SEM) from two experiments. ^bData represent mean values of two consecutive injections ± SEM for five serial dilutions of the analyte.",
+            "Figure 4 sensorgram data": "The left graphs in Figure 4 show sensorgrams for p3Y and p-fin4. For p3Y, the concentrations of STEP32 C/S are labeled as 10 μM, 1 μM, 500 nM, 100 nM, and 50 nM. For p-fin4, the concentrations are 1 μM, 500 nM, 250 nM, 100 nM, and 50 nM. The x-axis represents time in seconds (0 to 700 for p3Y, 0 to 600 for p-fin4). The y-axis represents Response units (RU). The right graphs show steady-state plots with [STEP32 C/S] (M) on the x-axis (ranging from 5.0×10⁻⁷ to 1.5×10⁻⁵ for p3Y, and 5.0×10⁻⁷ to 1.5×10⁻⁶ for p-fin4) and Response units (RU) on the y-axis."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "TAM-3Y-F2Pmp peptide",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "STEP32 (282 to 563 residues), catalytically inactive mutant form (STEP32 C/S) for p3Y and p-fin4 peptides, catalytically active form (STEP32 WT) for F2Pmp-containing peptides",
+                "concentration_range": "50 nM to 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1 M NaCl in HBS-EP buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Empty control flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "GraphPad Prism 6.0"
+            }
+        }
+    },
+    "51443659": {
+        "reactant_set_id": 51443659,
+        "pmid": 34962802,
+        "protein": "Tyrosine-protein phosphatase non-receptor type 5",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@@H](NC(=O)[C@H](C)N)[C@@H](C)O)C(=O)N[C@@H](Cc1ccc(cc1)C(F)(F)P(O)(O)=O)C(=O)NCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of TAM-3Y-F2Pmp peptide binding to N-terminal His6-fused STEP32 (282 to 563 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Measurement of Binding Kinetics by SPR": "For the interaction studies, the immobilized peptides were used as ligands, while the catalytically inactive mutant form, STEP32 C/S, was used for the interaction with p3Y and p-fin4 phosphopeptides, while the catalytically active form STEP32 WT was used for the interaction with F2Pmp-containing peptides. The initial concentration of the STEP32 protein was estimated using the Pierce 660nm Protein Assay Reagent (Thermo) and the FLUOStar Omega Microplate Reader (BMG LABTECH). For each kinetic experiment, a series of at least five different concentrations of STEP32, ranging between 50 nM and 500 μM, were injected onto each peptide immobilized on the sensor chip, at a flow rate of 10 μL/min, in a random order. STEP32 concentrations were prepared as serial dilutions in HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20). The association and dissociation time was set to 5 min. After each kinetic test, 2–4 cycles of regeneration were performed by injecting 1 M NaCl in HBS-EP buffer for 2 min at a flow rate of 20 μL/min. All binding measurements were carried out at 25 °C with HBS-EP as the running buffer. For p3Y, 3Y-F2Pmp, and 3Ysh-3-F2Pmp, the experiments were performed in duplicate and each STEP32 dilution was injected two times. In the case of the p-fin4 peptide, one binding experiment was performed and all STEP32 C/S dilutions were injected in duplicate. Nonspecific bindings were removed by separately subtracting the signal registered on the reference cell from the signal registered on each peptide-immobilized cell surface. The dissociation constant Kd values were calculated using GraphPad Prism 6.0 software by fitting the data to the regression-one-site specific binding model. All sensorgrams and steady-state plots shown in this manuscript as well as in the Supporting Information were prepared using Prism 6.0 (GraphPad Software).",
+            "Figure 4 caption": "Figure 4. Surface plasmon resonance analysis of the interaction between STEP32 and the tyrosine-phosphorylated peptides. Left graphs represent the sensorgrams with binding curves of the interaction between mentioned peptides with the specified concentrations of STEP32 C/S. Specific binding was obtained by subtracting the nonspecific binding response registered to an empty control flow cell from the response of the peptide bound flow cell. Right graphs represent steady-state plots obtained by plotting the maximum response values (RUs) of the sensorgrams against the concentration of STEP32 C/S. The Kd values were calculated by fitting the data to the nonlinear regression-one-site specific binding model.",
+            "Table 4": "Table 4. Comparative Binding Affinities of Tyrosine-Phosphorylated and F2Pmp-Containing Peptides, Determined by SPR | name | sequence | Kd (μM) ± SEM | | :--- | :--- | :--- | | p3Y | ATYKEGYNVpYG | 0.67 ± 0.1^a | | p-fin4 | EGYNVpYE | 0.23 ± 0.09^b | | 3Y-F2Pmp | ATYKEGYNV{F2Pmp}G | 0.40 ± 0.02^a | | 3Ysh-3-F2Pmp | EGYNV{F2Pmp}G | 0.45 ± 0.2^a | | fin4-F2Pmp | EGYNV{F2Pmp}E | ND | ^aData represent mean values ± standard error of the mean (SEM) from two experiments. ^bData represent mean values of two consecutive injections ± SEM for five serial dilutions of the analyte.",
+            "Figure 4 sensorgram data": "The left graphs in Figure 4 show sensorgrams for p3Y and p-fin4. For p3Y, the concentrations of STEP32 C/S are labeled as 10 μM, 1 μM, 500 nM, 100 nM, and 50 nM. For p-fin4, the concentrations are 1 μM, 500 nM, 250 nM, 100 nM, and 50 nM. The x-axis represents time in seconds (0 to 700 for p3Y, 0 to 600 for p-fin4). The y-axis represents Response units (RU). The right graphs show steady-state plots with [STEP32 C/S] (M) on the x-axis (ranging from 5.0×10⁻⁷ to 1.5×10⁻⁵ for p3Y, and 5.0×10⁻⁷ to 1.5×10⁻⁶ for p-fin4) and Response units (RU) on the y-axis."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "TAM-3Y-F2Pmp peptide",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "STEP32 (282 to 563 residues), catalytically inactive mutant form (STEP32 C/S) for p3Y and p-fin4 peptides, catalytically active form (STEP32 WT) for F2Pmp-containing peptides",
+                "concentration_range": "50 nM to 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1 M NaCl in HBS-EP buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Empty control flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "GraphPad Prism 6.0"
+            }
+        }
+    },
+    "51443660": {
+        "reactant_set_id": 51443660,
+        "pmid": 34962802,
+        "protein": "Tyrosine-protein phosphatase non-receptor type 5",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CNC(=O)[C@@H](N)CCC(O)=O)C(=O)N[C@@H](Cc1ccc(cc1)C(F)(F)P(O)(O)=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 450.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of TAM-3Y-F2Pmp peptide binding to N-terminal His6-fused STEP32 (282 to 563 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Measurement of Binding Kinetics by SPR": "For the interaction studies, the immobilized peptides were used as ligands, while the catalytically inactive mutant form, STEP32 C/S, was used for the interaction with p3Y and p-fin4 phosphopeptides, while the catalytically active form STEP32 WT was used for the interaction with F2Pmp-containing peptides. The initial concentration of the STEP32 protein was estimated using the Pierce 660nm Protein Assay Reagent (Thermo) and the FLUOStar Omega Microplate Reader (BMG LABTECH). For each kinetic experiment, a series of at least five different concentrations of STEP32, ranging between 50 nM and 500 μM, were injected onto each peptide immobilized on the sensor chip, at a flow rate of 10 μL/min, in a random order. STEP32 concentrations were prepared as serial dilutions in HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20). The association and dissociation time was set to 5 min. After each kinetic test, 2–4 cycles of regeneration were performed by injecting 1 M NaCl in HBS-EP buffer for 2 min at a flow rate of 20 μL/min. All binding measurements were carried out at 25 °C with HBS-EP as the running buffer. For p3Y, 3Y-F2Pmp, and 3Ysh-3-F2Pmp, the experiments were performed in duplicate and each STEP32 dilution was injected two times. In the case of the p-fin4 peptide, one binding experiment was performed and all STEP32 C/S dilutions were injected in duplicate. Nonspecific bindings were removed by separately subtracting the signal registered on the reference cell from the signal registered on each peptide-immobilized cell surface. The dissociation constant Kd values were calculated using GraphPad Prism 6.0 software by fitting the data to the regression-one-site specific binding model. All sensorgrams and steady-state plots shown in this manuscript as well as in the Supporting Information were prepared using Prism 6.0 (GraphPad Software).",
+            "Figure 4 caption": "Figure 4. Surface plasmon resonance analysis of the interaction between STEP32 and the tyrosine-phosphorylated peptides. Left graphs represent the sensorgrams with binding curves of the interaction between mentioned peptides with the specified concentrations of STEP32 C/S. Specific binding was obtained by subtracting the nonspecific binding response registered to an empty control flow cell from the response of the peptide bound flow cell. Right graphs represent steady-state plots obtained by plotting the maximum response values (RUs) of the sensorgrams against the concentration of STEP32 C/S. The Kd values were calculated by fitting the data to the nonlinear regression-one-site specific binding model.",
+            "Table 4": "Table 4. Comparative Binding Affinities of Tyrosine-Phosphorylated and F2Pmp-Containing Peptides, Determined by SPR | name | sequence | Kd (μM) ± SEM | | :--- | :--- | :--- | | p3Y | ATYKEGYNVpYG | 0.67 ± 0.1^a | | p-fin4 | EGYNVpYE | 0.23 ± 0.09^b | | 3Y-F2Pmp | ATYKEGYNV{F2Pmp}G | 0.40 ± 0.02^a | | 3Ysh-3-F2Pmp | EGYNV{F2Pmp}G | 0.45 ± 0.2^a | | fin4-F2Pmp | EGYNV{F2Pmp}E | ND | ^aData represent mean values ± standard error of the mean (SEM) from two experiments. ^bData represent mean values of two consecutive injections ± SEM for five serial dilutions of the analyte.",
+            "Figure 4 sensorgram data": "The left graphs in Figure 4 show sensorgrams for p3Y and p-fin4. For p3Y, the concentrations of STEP32 C/S are labeled as 10 μM, 1 μM, 500 nM, 100 nM, and 50 nM. For p-fin4, the concentrations are 1 μM, 500 nM, 250 nM, 100 nM, and 50 nM. The x-axis represents time in seconds (0 to 700 for p3Y, 0 to 600 for p-fin4). The y-axis represents Response units (RU). The right graphs show steady-state plots with [STEP32 C/S] (M) on the x-axis (ranging from 5.0×10⁻⁷ to 1.5×10⁻⁵ for p3Y, and 5.0×10⁻⁷ to 1.5×10⁻⁶ for p-fin4) and Response units (RU) on the y-axis."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "TAM-3Y-F2Pmp peptide",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "STEP32 (282 to 563 residues), catalytically inactive mutant form (STEP32 C/S) for p3Y and p-fin4 peptides, catalytically active form (STEP32 WT) for F2Pmp-containing peptides",
+                "concentration_range": "50 nM to 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (0.01 M HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 2 mM DTT, 0.005% v/v Surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1 M NaCl in HBS-EP buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Empty control flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "GraphPad Prism 6.0"
+            }
+        }
+    }
+}

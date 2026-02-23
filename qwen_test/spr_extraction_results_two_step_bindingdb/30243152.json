@@ -1,0 +1,854 @@
+{
+    "51140382": {
+        "reactant_set_id": 51140382,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(CSc2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 29400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 N-terminal domain capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - CA NTD plot": "K_D = 3.6 ± 1.7 μM",
+            "Figure 2A - CA Monomer plot": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2A - CA Hexamer plot": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - CA NTD plot": "K_D = 32.7 ± 38.3 μM",
+            "Figure 2B - CA Monomer plot": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2B - CA Hexamer plot": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - CA NTD plot": "K_D = 29.4 ± 19.7 μM",
+            "Figure 2C - CA Monomer plot": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2C - CA Hexamer plot": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - CA NTD plot": "K_D = 28.2 ± 16.3 μM",
+            "Figure 2D - CA Monomer plot": "K_D = 12.7 ± 2.5 μM",
+            "Figure 2D - CA Hexamer plot": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140383": {
+        "reactant_set_id": 51140383,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(Cc2ccc3ccccc3c2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 N-terminal domain capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - CA NTD plot": "K_D = 3.6 ± 1.7 μM",
+            "Figure 2A - CA Monomer plot": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2A - CA Hexamer plot": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - CA NTD plot": "K_D = 32.7 ± 38.3 μM",
+            "Figure 2B - CA Monomer plot": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2B - CA Hexamer plot": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - CA NTD plot": "K_D = 29.4 ± 19.7 μM",
+            "Figure 2C - CA Monomer plot": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2C - CA Hexamer plot": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - CA NTD plot": "K_D = 28.2 ± 16.3 μM",
+            "Figure 2D - CA Monomer plot": "K_D = 12.7 ± 2.5 μM",
+            "Figure 2D - CA Hexamer plot": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140384": {
+        "reactant_set_id": 51140384,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(C[S+]([O-])c2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 N-terminal domain capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - CA NTD plot": "K_D = 3.6 ± 1.7 μM",
+            "Figure 2A - CA Monomer plot": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2A - CA Hexamer plot": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - CA NTD plot": "K_D = 32.7 ± 38.3 μM",
+            "Figure 2B - CA Monomer plot": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2B - CA Hexamer plot": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - CA NTD plot": "K_D = 29.4 ± 19.7 μM",
+            "Figure 2C - CA Monomer plot": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2C - CA Hexamer plot": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - CA NTD plot": "K_D = 28.2 ± 16.3 μM",
+            "Figure 2D - CA Monomer plot": "K_D = 12.7 ± 2.5 μM",
+            "Figure 2D - CA Hexamer plot": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140385": {
+        "reactant_set_id": 51140385,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "CN(C(=O)[C@H](Cc1ccccc1)NC(=O)Cc1c(C)[nH]c2ccccc12)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 N-terminal domain capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - CA NTD plot": "K_D = 3.6 ± 1.7 μM",
+            "Figure 2A - CA Monomer plot": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2A - CA Hexamer plot": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - CA NTD plot": "K_D = 32.7 ± 38.3 μM",
+            "Figure 2B - CA Monomer plot": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2B - CA Hexamer plot": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - CA NTD plot": "K_D = 29.4 ± 19.7 μM",
+            "Figure 2C - CA Monomer plot": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2C - CA Hexamer plot": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - CA NTD plot": "K_D = 28.2 ± 16.3 μM",
+            "Figure 2D - CA Monomer plot": "K_D = 12.7 ± 2.5 μM",
+            "Figure 2D - CA Hexamer plot": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140380": {
+        "reactant_set_id": 51140380,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(Cc2ccc3ccccc3c2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 hexameric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - PF-74 binding to CA Hexamer": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - 13m binding to CA Hexamer": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - 13p binding to CA Hexamer": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - 13r binding to CA Hexamer": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140381": {
+        "reactant_set_id": 51140381,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(C[S+]([O-])c2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 93300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 hexameric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - PF-74 binding to CA Hexamer": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - 13m binding to CA Hexamer": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - 13p binding to CA Hexamer": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - 13r binding to CA Hexamer": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140388": {
+        "reactant_set_id": 51140388,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "CN(C(=O)[C@H](Cc1ccccc1)NC(=O)Cc1c(C)[nH]c2ccccc12)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 64.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 hexameric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - PF-74 binding to CA Hexamer": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - 13m binding to CA Hexamer": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - 13p binding to CA Hexamer": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - 13r binding to CA Hexamer": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140389": {
+        "reactant_set_id": 51140389,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(CSc2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 hexameric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2A - PF-74 binding to CA Hexamer": "K_D = 64.3 ± 31.3 nM",
+            "Figure 2B - 13m binding to CA Hexamer": "K_D = 11.0 ± 0.3 μM",
+            "Figure 2C - 13p binding to CA Hexamer": "K_D = 24.1 ± 15.6 μM",
+            "Figure 2D - 13r binding to CA Hexamer": "K_D = 93.3 ± 59.0 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140379": {
+        "reactant_set_id": 51140379,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(CSc2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 monomeric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2 (A) - PF-74 binding to CA Monomer": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2 (B) - 13m binding to CA Monomer": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2 (C) - 13p binding to CA Monomer": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2 (D) - 13r binding to CA Monomer": "K_D = 12.7 ± 2.5 μM",
+            "Table 1 (continued) - PF-74": "EC50 = 5.95 ± 1.32 μM, CC50 > 70.50 μM, SI > 11.85",
+            "Table 1 (continued) - 13m": "EC50 = 4.33 ± 0.83 μM, CC50 > 57.74 μM, SI > 13.33",
+            "Table 1 (continued) - 13p": "EC50 = 6.91 ± 2.43 μM, CC50 > 19.47 μM, SI > 2.82",
+            "Table 1 (continued) - 13r": "EC50 = 6.65 ± 1.47 μM, CC50 > 19.32 μM, SI > 2.91"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140386": {
+        "reactant_set_id": 51140386,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(C[S+]([O-])c2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 monomeric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2 (A) - PF-74 binding to CA Monomer": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2 (B) - 13m binding to CA Monomer": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2 (C) - 13p binding to CA Monomer": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2 (D) - 13r binding to CA Monomer": "K_D = 12.7 ± 2.5 μM",
+            "Table 1 (continued) - PF-74": "EC50 = 5.95 ± 1.32 μM, CC50 > 70.50 μM, SI > 11.85",
+            "Table 1 (continued) - 13m": "EC50 = 4.33 ± 0.83 μM, CC50 > 57.74 μM, SI > 13.33",
+            "Table 1 (continued) - 13p": "EC50 = 6.91 ± 2.43 μM, CC50 > 19.47 μM, SI > 2.82",
+            "Table 1 (continued) - 13r": "EC50 = 6.65 ± 1.47 μM, CC50 > 19.32 μM, SI > 2.91"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140387": {
+        "reactant_set_id": 51140387,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "CN(C(=O)[C@H](Cc1ccccc1)NC(=O)Cc1c(C)[nH]c2ccccc12)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 monomeric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2 (A) - PF-74 binding to CA Monomer": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2 (B) - 13m binding to CA Monomer": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2 (C) - 13p binding to CA Monomer": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2 (D) - 13r binding to CA Monomer": "K_D = 12.7 ± 2.5 μM",
+            "Table 1 (continued) - PF-74": "EC50 = 5.95 ± 1.32 μM, CC50 > 70.50 μM, SI > 11.85",
+            "Table 1 (continued) - 13m": "EC50 = 4.33 ± 0.83 μM, CC50 > 57.74 μM, SI > 13.33",
+            "Table 1 (continued) - 13p": "EC50 = 6.91 ± 2.43 μM, CC50 > 19.47 μM, SI > 2.82",
+            "Table 1 (continued) - 13r": "EC50 = 6.65 ± 1.47 μM, CC50 > 19.32 μM, SI > 2.91"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    },
+    "51140390": {
+        "reactant_set_id": 51140390,
+        "pmid": 30243152,
+        "protein": "Structural capsid protein",
+        "ligand": {
+            "smiles": "COc1ccc(cc1)N(C)C(=O)[C@H](Cc1ccccc1)NC(=O)c1cn(Cc2ccc3ccccc3c2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HIV1 NL4-3 monomeric capsid protein by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Xu et al. [16] - Reference [16] not found in bibliography.",
+        "original_paragraph": {
+            "Materials and Methods - Binding to CA proteins analysis via surface plasmon resonance (SPR)": "All binding assays were performed on a ProteOn XPR36 SPR Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA). The instrument temperature was set at 25 °C for all kinetic analyses. ProteOn GLH sensor chips were preconditioned with two short pulses each (10 s) of 50 mM NaOH, 100 mM HCl, and 0.5% sodium dodecyl sulfate. Then the system was equilibrated with PBS-T buffer (20 mM sodium phosphate, 150 mM NaCl, and 0.005% polysorbate 20, pH 7.4). The surface of a GLH sensor chip was activated with a 1:100 dilution of a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (0.2 M) and sulfo-N-hydroxysuccinimide (0.05 M). Immediately after chip activation, the HIV-1 NL4-3 capsid protein constructs, purified as in Xu et al. [16], were prepared at a concentration of 100 μg/mL in 10 mM sodium acetate, pH 5.0 and injected across ligand flow channels for 5 min in a flow rate of 30 μL/min. Then, after unreacted protein had been washed out, excess active ester groups on the sensor surface were capped by a 5 min injection of 1 M ethanolamine HCl (pH 8.0) at a flow rate of 5 μL/min. A reference surface was similarly created by immobilizing a non-specific protein (IgG b12 anti-HIV-1 gp120; was obtained through the NIH AIDS Reagent Program, Division of AIDS, NIAID, NIH; Anti-HIV-1 gp120 Monoclonal (IgG1 b12) from Dr. Dennis Burton and Carlos Barbas) and was used as a background to correct non-specific binding. To prepare a compound for direct binding analysis, compound stock solutions, along with 100% DMSO, and totaling 10 μL was made to a final volume of 1 mL by addition of sample preparation buffer (PBS, pH 7.4). Preparation of analyte in this manner ensured that the concentration of DMSO was matched with that of running buffer with 3% DMSO. Serial dilutions were then prepared in the running buffer (PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4) and injected at a flow rate of 100 μL/min, for a 1 min association phase, followed by up to a 5 min dissociation phase using the “one shot kinetics” capability of the ProteOn instrument [38]. Data were analyzed using the ProteOn Manager version 3.0 (Bio-Rad). The responses from the reference flow cell were subtracted to account for the nonspecific binding and injection artifacts. The equilibrium dissociation constant (K_D) for the interactions, and derived from a minimum of three experiments, were calculated in ProteOn Manager Version 3.1.0.6 (Bio-Rad, Hercules, CA), using the equilibrium analysis function.",
+            "Figure 2 caption": "Fig. 2. SPR results of compounds 13m (B), 13p (C) and 13r (D) binding to three kinds of CA proteins (NTD, monomer, and hexamer) respectively with PF-74 as the reference (A).",
+            "Figure 2 (A) - PF-74 binding to CA Monomer": "K_D = 2.7 ± 1.1 μM",
+            "Figure 2 (B) - 13m binding to CA Monomer": "K_D = 14.0 ± 3.2 μM",
+            "Figure 2 (C) - 13p binding to CA Monomer": "K_D = 17.3 ± 4.6 μM",
+            "Figure 2 (D) - 13r binding to CA Monomer": "K_D = 12.7 ± 2.5 μM",
+            "Table 1 (continued) - PF-74": "EC50 = 5.95 ± 1.32 μM, CC50 > 70.50 μM, SI > 11.85",
+            "Table 1 (continued) - 13m": "EC50 = 4.33 ± 0.83 μM, CC50 > 57.74 μM, SI > 13.33",
+            "Table 1 (continued) - 13p": "EC50 = 6.91 ± 2.43 μM, CC50 > 19.47 μM, SI > 2.82",
+            "Table 1 (continued) - 13r": "EC50 = 6.65 ± 1.47 μM, CC50 > 19.32 μM, SI > 2.91"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "HIV-1 NL4-3 capsid protein constructs",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 13m, 13p, 13r, and PF-74",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 3% DMSO, 0.005% polysorbate 20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "50 mM NaOH, 100 mM HCl, 0.5% sodium dodecyl sulfate"
+            },
+            "data_analysis": {
+                "reference_description": "Non-specific protein (IgG b12 anti-HIV-1 gp120) immobilized surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "ProteOn Manager Version 3.1.0.6"
+            }
+        }
+    }
+}

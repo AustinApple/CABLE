@@ -1,0 +1,806 @@
+{
+    "51042898": {
+        "reactant_set_id": 51042898,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CNc2cc(F)cc(c2)-c2ccccn2)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2950.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042899": {
+        "reactant_set_id": 51042899,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CNc2cc(F)cc(c2)-c2ccc(cn2)C(O)=O)c(Cl)cc1NC(=O)CSc1ccccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 222.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042900": {
+        "reactant_set_id": 51042900,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OC[C@H](O)[C@H](O)[C@@H](O)[C@@H](O)COc2cc(F)cc(c2)-c2ccc(cn2)C(O)=O)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042901": {
+        "reactant_set_id": 51042901,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OCCCNC(=O)COc2cc(F)cc(c2)-c2ccc(cn2)C(O)=O)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 175.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042902": {
+        "reactant_set_id": 51042902,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)CNc2cc(F)cc(c2)-c2ccc(cn2)C(O)=O)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042903": {
+        "reactant_set_id": 51042903,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)COc2cc(F)cc(c2)-c2ccc(cn2)C(O)=O)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 68.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042904": {
+        "reactant_set_id": 51042904,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OCCCOCCCOc2cc(F)cc(c2)-c2ccc(cn2)C(O)=O)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 850.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042905": {
+        "reactant_set_id": 51042905,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1cc(OCC(O)CO)c(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 360000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042906": {
+        "reactant_set_id": 51042906,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1ccc(Cl)cc1NC(=O)CSc1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 137000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042907": {
+        "reactant_set_id": 51042907,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "Cc1cc(ncc1C(O)=O)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1900000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042909": {
+        "reactant_set_id": 51042909,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "OC(=O)COc1cc(F)cc(c1)-c1ccc(cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51042910": {
+        "reactant_set_id": 51042910,
+        "pmid": 23302067,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc(nc1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human LDH-A by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR": "SPR. SPR studies were performed at room temperature on a BIACORE T100 or a Pioneer SensiQ instrument (as indicated). Human LDH-A was immobilized onto a CM5 chip via amine coupling which yielded ~13000 RU of immobilized protein. Carbonic anhydrase II (Sigma) was used as reference protein. Binding of NADH to LDH-A was tested using 250 μM as the highest concentration in a 2-fold dilution series with nine concentrations in total. The running buffer contained 10 mM HEPES, 150 mM NaCl, and 3% DMSO. Each concentration was tested three times. An overlay of all the binding responses is shown in the Supporting Information (Figure 1S). The responses were well reproducible indicating that the LDH-A surface was active. The fit of the equilibrium response data to a 1:1 interaction model yielded a binding affinity of NADH of 13 μM at room temperature.",
+            "Figure 4 caption": "Figure 4. SPR sensograms for compound 4 (A) and compound 6 (B) binding to the surface with immobilized LDH-A (1), CA-II (2), or an empty surface (3). The sensograms were obtained at 20 °C using a 2-fold dilution series with an upper concentration of 1 mM. Compounds in the millimolar affinity range were found to have significant off-target affinity as demonstrated by the binding to CA-II. Elaborated hits, such as compound 14, not only showed better affinity to LDHA but also improved selectivity.",
+            "Figure 8 caption": "Figure 8. Biochemical and biophysical evaluation of linked compounds. (A) Compound 8 displayed enzyme inhibition virtually independent of detergent. (B) SPR sensogram (black) of compound 7 obtained with “fast-step” concentration ramping (dotted green line). The data were fitted (orange line) to a 1:1 binding model and yielded a Kd of 0.9 μM, in agreement with an IC50 of 60 μM.",
+            "Table 3": "Table 3. Modification of Lead Compound 9 To Improve Cellular Permeability | compd | R1 | R2 | IC50 μM | Kd μM | |---|---|---|---|---| | 9 | COOH | COOH | 0.120 | 0.019 | | 12 | H | COOH | 2.4 | 0.222 | | 13 | COOH | H | 13 | 2.95 | | 14 | CO2Me | CO2Me | >10000 | na |",
+            "Table 2": "Table 2. SAR for Selected Linked Compounds^a | Compound | Linker | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 7 | [linker structure] | 59.0 | 0.850 | 0.13 | | 8 | [linker structure] | 0.440 | 0.068 | 0.14 | | 9 | [linker structure] | 0.120 | 0.019 | 0.15 | | 10 | [linker structure] | 2.40 | 0.175 | 0.14 | | 11 | [linker structure] | 15.2 | 12.0 | 0.10 |",
+            "Table 1": "Table 1. Structures and Activity of Selected Fragments^a | Compound | Structure | IC50 μM | Kd μM | LE | |---|---|---|---|---| | 1 | [structure] | > 2000 | 2300 | 0.18 | | 2 | [structure] | 2200 | 1300 | 0.14 | | 3 | [structure] | 1300 | na | | | 4 | [structure] | na | 1900 | 0.17 | | 5 | [structure] | 770 | 137 | 0.17 | | 6 | [structure] | 342 | 360 | 0.12 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human LDH-A",
+                "strategy": "Amine coupling",
+                "density_ru": "13000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "NADH, compound 4, compound 6, compound 7, compound 8, compound 9, compound 10, compound 11, compound 12, compound 13, compound 14",
+                "concentration_range": "250 μM (highest, 2-fold dilution series, 9 concentrations) for NADH; 1 mM (highest, 2-fold dilution series) for compounds 4 and 6; specific concentrations for other compounds not stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3% DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Carbonic anhydrase II (Sigma) immobilized on a separate channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

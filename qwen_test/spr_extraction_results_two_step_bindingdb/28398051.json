@@ -1,0 +1,65 @@
+{
+    "50901728": {
+        "reactant_set_id": 50901728,
+        "pmid": 28398051,
+        "protein": "Cyclin-dependent kinase 2",
+        "ligand": {
+            "smiles": "CNC1=CC(=O)C2=C(C[C@@]3(C)[C@@H]4CCCC(=C)[C@@]4(C)CC[C@@]3(C)O2)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CDK2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Assay. SPR measurements were performed using a Biacore T200 instrument with four flow channels and a CMS sensor chip with a dextran matrix. According to the amine coupling protocol, CDK-2 (50 μg/mL in 10 mM acetate buffer at pH 4.5) was immobilized on the second flow cell of the CMS chip, while bovine serum albumin (BSA) (50 μg/mL in 10 mM acetate buffer at pH 3.8) was immobilized on the first flow cell as a reference. The immobilization level of CDK-2 was about 5500 RU, and it was about 6000 RU for BSA. For the binding assay, the reaction temperature was controlled at 25 ± 0.1 °C, and the flow rate was set at 30 μL/min. The response obtained from the detection channel (Fc 2) was normalized by subtracting the signal simultaneously acquired from the control channel (Fc 1), which could eliminate nonspecific binding and buffer-induced bulk refractive index changes. PBS buffer (10 mM phosphate buffer, 2.7 mM KCl, and 137 mM NaCl, pH 7.4) was used as the running buffer. Different concentrations of analytes were prepared and measured in the SPR assay, and a solvent correction was performed to adjust the solvent response. The sample solutions were injected onto the chip surface for 120 s. After each binding reaction, a further dissociation time of 120 s was applied after each injection. In addition, the analytes were regenerated from the chip surface with glycine-HCl buffer at pH 2.1 for 30 s. The binding affinity between CDK-2 and the analytes was fitted in the affinity model with Biacore T200 Evaluation Software 1.0.",
+            "Results": "In addition, all of the compounds were tested for their affinities to CDK-2 in a surface plasmon resonance (SPR) assay. The new compound 6 displayed CDK-2 affinity with a Kd value of 4.8 μM (Figure S139)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "CDK-2",
+                "strategy": "Amine coupling",
+                "density_ru": "5500",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 6 and other analytes (not specified)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer, 2.7 mM KCl, and 137 mM NaCl, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "glycine-HCl buffer at pH 2.1"
+            },
+            "data_analysis": {
+                "reference_description": "BSA immobilized on first flow cell (Fc 1)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 Evaluation Software 1.0"
+            }
+        }
+    }
+}

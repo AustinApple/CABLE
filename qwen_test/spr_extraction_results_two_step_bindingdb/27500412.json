@@ -1,0 +1,1432 @@
+{
+    "51321237": {
+        "reactant_set_id": 51321237,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "Cc1cc2nc(N)[nH]c2cc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321240": {
+        "reactant_set_id": 51321240,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "COC(=O)c1cscc1-c1ccc(o1)C(=O)N1CCOCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321241": {
+        "reactant_set_id": 51321241,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "O=C(N1CCN(Cc2ccc3OCOc3c2)CC1)c1ccco1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 400000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321242": {
+        "reactant_set_id": 51321242,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "Cc1ccccc1CN1CCN(CC1)C(=O)c1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321243": {
+        "reactant_set_id": 51321243,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "CS(=O)(=O)N1CCCC(CC1)NCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321250": {
+        "reactant_set_id": 51321250,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "Fc1ccc2OCCNC(=O)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321251": {
+        "reactant_set_id": 51321251,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "CN1CCN(CC1)C(=O)c1ccc(=O)n(Cc2ccc(Cl)cc2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321252": {
+        "reactant_set_id": 51321252,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "C(Nc1ccccn1)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321256": {
+        "reactant_set_id": 51321256,
+        "pmid": 27500412,
+        "protein": "Fatty acid-binding protein, liver",
+        "ligand": {
+            "smiles": "Nc1c2CCCCc2nc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 900000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP1 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP1 and FABP6 proteins",
+                "concentration_range": "50–200 μg/mL for immobilization; 250 μM for fragment screening; dilution series for compound binding studies"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, pH 7.4, 0.05% Tween-20, 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321257": {
+        "reactant_set_id": 51321257,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Cc1cc2nc(N)[nH]c2cc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 29400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by 1 site binding model based surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321244": {
+        "reactant_set_id": 51321244,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Cc1cc2nc(N)[nH]c2cc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by 2 site binding model based surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321238": {
+        "reactant_set_id": 51321238,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Cc1ccccc1CN1CCN(CC1)C(=O)c1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 290000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321239": {
+        "reactant_set_id": 51321239,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Cc1nc(Cn2cnc3cc(C)c(C)cc23)cs1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 400000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321245": {
+        "reactant_set_id": 51321245,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "C(Nc1ccccn1)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321246": {
+        "reactant_set_id": 51321246,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "O=C(N1CCN(Cc2ccc3OCOc3c2)CC1)c1ccco1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 210000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321247": {
+        "reactant_set_id": 51321247,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "COC(=O)c1cscc1-c1ccc(o1)C(=O)N1CCOCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 80000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321248": {
+        "reactant_set_id": 51321248,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Fc1ccc2OCCNC(=O)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 40000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321249": {
+        "reactant_set_id": 51321249,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Cc1cc2nc(N)[nH]c2cc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 31000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321253": {
+        "reactant_set_id": 51321253,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "CN1CCN(CC1)C(=O)c1ccc(=O)n(Cc2ccc(Cl)cc2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 210000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321254": {
+        "reactant_set_id": 51321254,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "CS(=O)(=O)N1CCCC(CC1)NCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321255": {
+        "reactant_set_id": 51321255,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Nc1nc2ccc(cc2[nH]1)C(=O)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    },
+    "51321258": {
+        "reactant_set_id": 51321258,
+        "pmid": 27500412,
+        "protein": "Gastrotropin",
+        "ligand": {
+            "smiles": "Nc1c2CCCCc2nc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 200000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6 and Avi-tagged FABP6 expressed in Escherichia coli NEB cells by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface plasmon resonance data were collected on a Biacore 3000 or Biacore 4000 system (GE Healthcare) at 25 °C. For Biacore 3000 data, streptavidin was immobilized on a CM5 sensor chip (GE Healthcare) using standard amine-coupling chemistry at 25 °C with HBS-N (10 mM HEPES and 0.15 M NaCl, pH 7.4) as the running buffer. The carboxymethyl dextran surface was activated with a 1:1 ratio of 0.4 M 1-ethyl-3-(3-(dimethylamino)propyl) carbodiimide hydrochloride (EDC)/0.1 M N-hydroxy succinimide (NHS) at a flow rate of 10 μL/min. For capture of streptavidin, protein was diluted to 0.1 mg/mL in 10 mM sodium acetate (pH 4.5) and captured by injecting 300 μL onto the activated chip surface. Residual activated groups were blocked with a 7 min injection of 1 M ethanolamine (pH 8.5). hFABP1 and hFABP6 proteins, bearing an N-terminal His6 and Avi-tag, were captured on the streptavidin surface by injection of purified protein diluted to 50–200 μg/mL in 10 mM HEPES pH 7.4/150 mM NaCl. Typical surface densities obtained were 4000–9000 RU. SPR binding data were obtained using appropriate dilution series of each compound at a flow rate of 30–50 μL/min, with a capture time of 60 s and dissociation times of 100 s. Running buffer for compound binding studies was 10 mM HEPES at pH 7.4/150 mM NaCl/0.05% Tween-20/1% DMSO. Data were corrected for DMSO excluded volume effects. All data were double-referenced for blank injections and reference surface using standard processing procedures, and data processing and fitting were performed using Scrubber software, version 2.0c (BioLogic Software). Data were fitted using a simple 1:1 binding model. Fragment screening was carried out with the Charles River fragment screening library of 1460 compounds. For the fragment screen, FABP proteins were immobilized on a streptavidin chip (GE Healthcare) on a Biacore 4000 instrument using a single concentration of each fragment (250 μM), and data were processed with Biacore 4000 instrument software (GE Healthcare). For SPR competition experiments, data were acquired for FABP6 with compounds ±500 μM taurocholate in running buffer and samples.",
+            "Figure 1 caption": "Figure 1. SPR competition study of top fragments with taurocholate. SPR responses of the fragments are shown in the presence and absence of 500 μM taurocholate.",
+            "Table 1": "Table 1. SPR Fragment Hits Showing the Relative Affinities for FABP6 and FABP1 That Were Selected for Follow Up^a | Comp. | Structure | FABP6 K_D (μM) | FABP1 K_D (μM) | |---|---|---|---| | 1 | [Structure] | 31 (4) | >1000 | | 2 | [Structure] | 40 (5) | >1000 | | 3 | [Structure] | 80 (20) | >1000 | | 4 | [Structure] | 200 (40) | 900 (40) | | 5 | [Structure] | 210 (90) | >1000 | | 6 | [Structure] | 210 (5) | 400 (90) | | 7 | [Structure] | 290 (90) | >1000 | | 8 | [Structure] | 300 (40) | >1000 | | 9 | [Structure] | 300 (20) | 300 (20) | ^aError values in parentheses represent the standard deviation.",
+            "Supporting Information": "SPR sensorgram for FABP6 binding to compound 1; SPR sensorgram for FABP1 binding to 8-anilino-1-naphthalenesulfonic acid (ANS) native mass spectrometry spectra for binding of compound 1, cholate, GCDC, glycocholate, and taurocholate to hFABP6; competition study by native mass spectrometry between GCDC and compound 1; electron density maps for ligand binding site in apo-FABP6 structure; and K_D values for FABP6 binding to bile salts (PDF) SMILES (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000 or Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Streptavidin",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "4000-9000",
+                "concentration_for_immobilization": "0.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Recombinant human N-terminal His6 and Avi-tagged FABP6",
+                "concentration_range": "50–200 μg/mL"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% Tween-20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank injections and reference surface",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Scrubber software, version 2.0c (BioLogic Software)"
+            }
+        }
+    }
+}

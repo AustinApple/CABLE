@@ -1,0 +1,65 @@
+{
+    "51041426": {
+        "reactant_set_id": 51041426,
+        "pmid": 23259865,
+        "protein": "Tyrosyl-DNA phosphodiesterase 1",
+        "ligand": {
+            "smiles": "Cn1c2-c3ccccc3C(=O)c2c2ccc(NC(=O)C(O)=O)cc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 31000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant Tdp1 (unknown origin) using 3'-phosphate(GATCTAAAAGACTT) as substrate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Beretta, G. L.; Cossa, G.; Gatti, L.; Zunino, F.; Perego, P. Tyrosyl-DNA Phosphodiesterase 1 Targeting for Modulation of Camptothecin-Based Treatment. Curr. Med. Chem. 2010, 17, 1500–1508.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Analysis. Binding experiments were performed as recently described.16 Briefly, Tdp1 was incubated with 2 mM of a 14-base oligonucleotide containing a phosphate group at the 3' end (GATCTAAAAGACTT) in 10 mM sodium acetate pH 4.5 for 20 min. The CM5 chip surface was activated for 7 min with 0.1 M NHS and 0.4 M EDC at a flow rate of 20 mL/min, and the Tdp1-oligonucleotide mixture was injected until approximately 4000 RU's were attached. Activated amine groups were quenched with an injection of 1 M solution of ethanolamine pH 8.0 for 7 min. Any bound oligonucleotide was removed by washing the surface with 1 M NaCl. A reference surface was prepared in the same manner without coupling of Tdp1. Compound 70 was diluted into running buffer [10 mM HEPES, 150 mM NaCl, 0.01% Tween 20 (v/v), 5% DMSO (v/v)] pH 7.5 and injected over all flow cells at 30 mL/min at 25 °C. Following compound injections, the surface was regenerated with a 30 s injection of 1 M NaCl, a 30 s injection of 50% DMSO (v/v), and a 30 s running buffer injection. Each cycle of compound injection was followed by a buffer cycle for referencing purposes. A DMSO calibration curve was included to correct for refractive index mismatches between the running buffer and compound dilution series.",
+            "Figure 5 caption": "Figure 5. Surface plasmon resonance for compound 14 with Tdp1. The binding of compound 14 to Tdp1 was examined using SPR spectroscopy. Different concentrations of 14 (50, 25, 12.5, and 6.25 μM) were injected over immobilized Tdp1. The kinetics were fit to a 1:1 binding model yielding the following parameters, ka 7.7e4 1/Ms, kd 0.24 1/s, and KD 31 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Tdp1",
+                "strategy": "Amine coupling",
+                "density_ru": "4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 70 (and compound 14 in Figure 5)",
+                "concentration_range": "6.25 μM - 50 μM (for compound 14)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.01% Tween 20 (v/v), 5% DMSO (v/v)",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "1 M NaCl, followed by 50% DMSO (v/v), then running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared without coupling of Tdp1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

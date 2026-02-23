@@ -1,0 +1,132 @@
+{
+    "51542528": {
+        "reactant_set_id": 51542528,
+        "pmid": 37386884,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CC1(C)CC[C@@]2(CC[C@]3(C)[C@@H]([C@@H]2C1)C(=O)C=C1[C@@]3(C)CC[C@H]2C(C)(C)C(=O)C(=C[C@]12C)C#N)C(=O)NCCCCCNc1cccc2C(=O)N(C3CCC(=O)NC3=O)C(=O)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11870.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Keap1 (unknown origin) assessed as dissociation constant incubated for 200 sec by sensor chip immobilization based surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "4.2.3. Surface Plasmon Resonance. The SPR experiment was performed using a Biacore T200 (GE Health Sciences) per the manufacturer’s protocol. Keap1 or CRBN was diluted in sodium acetate solution (pH 4.0 for Keap1, pH 4.5 CRBN) with a final concentration of 10 μg/mL and then immobilized on a CM5 sensor chip by amine coupling to reach target densities of 12,000 resonance units. Immobilized Keap1 or CRBN was used to capture the compound I-d or CDDO. The running buffer contained PBS-T (10 mM sodium phosphate, 150 mM NaCl, and 0.005% Tween-20, pH 7.4) and 2% DMSO. The data were recorded at 25 °C. Then the different concentrations of I-d or CDDO were injected at a flow rate of 10 μL/min, and the contact time was 200 s. Meanwhile, an empty immobilization was performed on one of the sensor chip surfaces used for correction of the binding response. Sensorgrams were analyzed using the Biacore T200 Evaluation Software, and K_D values were calculated using steady-state affinity fitting.",
+            "Figure 2 caption": "Figure 2. I-d exhibited robust Keap1 degradation activity as a PROTAC (A) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with 1 μM synthetic PROTACs for 24 h; (B) immunoblot and quantitative analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with gradient I-d for 24 h; (C) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with different doses and time of I-d; (D) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with MG-132 or MLN-4924 for 2 h and then treated with I-d for 24 h; (E) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with 1 μM I-d, I-d-Me, CDDO, or pomalidomide for 24 h; (F–H) SPR sensorgrams and plots of equilibrium binding responses obtained on an Keap1- or CRBN-coated chip at different concentrations of I-d or CDDO. The data are mean ± SD (n = 3/group).",
+            "Figure 2F-H sensorgram plots": "F: I-d-Keap1, Response [RU] vs Time [s], Concentration [M] from 1x10^-5 to 3x10^-5, K_D = 11.87 μM. G: CDDO-Keap1, Response [RU] vs Time [s], Concentration [M] from 1x10^-5 to 3x10^-5, K_D = 48.72 μM. H: I-d-CRBN, Response [RU] vs Time [s], Concentration [M] from 0.5x10^-5 to 1.5x10^-5, K_D = 2.42 μM.",
+            "Results Section - 2.3.5 I-d Bound Specifically to Keap1 and CRBN": "To further demonstrate whether I-d could specifically bind to Keap1 and CRBN, the surface plasmon resonance (SPR) experiment was conducted. As shown in Figure 2F–H, the SPR experiment confirmed the specific binding of I-d and CDDO to Keap1 with K_D values of 11.87 and 48.72 μM, respectively. Moreover, I-d could also bind to CRBN with a K_D value of 2.42 μM. These results further proved that I-d could bind specifically to Keap1 and CRBN, and its binding affinity with Keap1 was superior to that of CDDO."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "Keap1 or CRBN",
+                "strategy": "Amine coupling",
+                "density_ru": "12000",
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "I-d or CDDO",
+                "concentration_range": "1×10⁻⁵ M to 3×10⁻⁵ M for I-d and CDDO on Keap1; 0.5×10⁻⁵ M to 1.5×10⁻⁵ M for I-d on CRBN"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-T (10 mM sodium phosphate, 150 mM NaCl, and 0.005% Tween-20, pH 7.4) and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 200,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty immobilization on one of the sensor chip surfaces",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    },
+    "51542529": {
+        "reactant_set_id": 51542529,
+        "pmid": 37386884,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CC1(C)CC[C@@]2(CC[C@]3(C)[C@@H]([C@@H]2C1)C(=O)C=C1[C@@]2(C)C=C(C#N)C(=O)C(C)(C)[C@@H]2CC[C@@]31C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 48720.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Keap1 (unknown origin) assessed as dissociation constant incubated for 200 sec by sensor chip immobilization based surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "4.2.3. Surface Plasmon Resonance. The SPR experiment was performed using a Biacore T200 (GE Health Sciences) per the manufacturer’s protocol. Keap1 or CRBN was diluted in sodium acetate solution (pH 4.0 for Keap1, pH 4.5 CRBN) with a final concentration of 10 μg/mL and then immobilized on a CM5 sensor chip by amine coupling to reach target densities of 12,000 resonance units. Immobilized Keap1 or CRBN was used to capture the compound I-d or CDDO. The running buffer contained PBS-T (10 mM sodium phosphate, 150 mM NaCl, and 0.005% Tween-20, pH 7.4) and 2% DMSO. The data were recorded at 25 °C. Then the different concentrations of I-d or CDDO were injected at a flow rate of 10 μL/min, and the contact time was 200 s. Meanwhile, an empty immobilization was performed on one of the sensor chip surfaces used for correction of the binding response. Sensorgrams were analyzed using the Biacore T200 Evaluation Software, and K_D values were calculated using steady-state affinity fitting.",
+            "Figure 2 caption": "Figure 2. I-d exhibited robust Keap1 degradation activity as a PROTAC (A) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with 1 μM synthetic PROTACs for 24 h; (B) immunoblot and quantitative analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with gradient I-d for 24 h; (C) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with different doses and time of I-d; (D) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with MG-132 or MLN-4924 for 2 h and then treated with I-d for 24 h; (E) immunoblot analysis of Keap1 and GAPDH in cell lysates from AML12 cells treated with 1 μM I-d, I-d-Me, CDDO, or pomalidomide for 24 h; (F–H) SPR sensorgrams and plots of equilibrium binding responses obtained on an Keap1- or CRBN-coated chip at different concentrations of I-d or CDDO. The data are mean ± SD (n = 3/group).",
+            "Figure 2F-H sensorgram plots": "F: I-d-Keap1, Response [RU] vs Time [s], Concentration [M] from 1x10^-5 to 3x10^-5, K_D = 11.87 μM. G: CDDO-Keap1, Response [RU] vs Time [s], Concentration [M] from 1x10^-5 to 3x10^-5, K_D = 48.72 μM. H: I-d-CRBN, Response [RU] vs Time [s], Concentration [M] from 0.5x10^-5 to 1.5x10^-5, K_D = 2.42 μM.",
+            "Results Section - 2.3.5 I-d Bound Specifically to Keap1 and CRBN": "To further demonstrate whether I-d could specifically bind to Keap1 and CRBN, the surface plasmon resonance (SPR) experiment was conducted. As shown in Figure 2F–H, the SPR experiment confirmed the specific binding of I-d and CDDO to Keap1 with K_D values of 11.87 and 48.72 μM, respectively. Moreover, I-d could also bind to CRBN with a K_D value of 2.42 μM. These results further proved that I-d could bind specifically to Keap1 and CRBN, and its binding affinity with Keap1 was superior to that of CDDO."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "Keap1 or CRBN",
+                "strategy": "Amine coupling",
+                "density_ru": "12000",
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "I-d or CDDO",
+                "concentration_range": "1×10⁻⁵ M to 3×10⁻⁵ M for I-d and CDDO on Keap1; 0.5×10⁻⁵ M to 1.5×10⁻⁵ M for I-d on CRBN"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-T (10 mM sodium phosphate, 150 mM NaCl, and 0.005% Tween-20, pH 7.4) and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 200,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty immobilization on one of the sensor chip surfaces",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    }
+}

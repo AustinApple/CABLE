@@ -1,0 +1,204 @@
+{
+    "50553769": {
+        "reactant_set_id": 50553769,
+        "pmid": 27769032,
+        "protein": "Receptor tyrosine-protein kinase erbB-2",
+        "ligand": {
+            "smiles": "COc1cccc2C(=O)c3c(O)c4C[C@](O)(C[C@H](O[C@H]5C[C@H](NC(=O)CCCC(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(=O)N[C@@H](Cc6ccccc6)C(O)=O)c6cccc7ccccc67)[C@H](O)[C@H](C)O5)c4c(O)c3C(=O)c12)C(=O)CO"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 172.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HER2 domain-4 (unknown origin) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 41: K.E. Komolov, K.W. Koch, Application of surface plasmon resonance spectroscopy to study G-protein coupled receptor signalling, Methods Mol. Biol. 627 (2010) 249–260.",
+            "Reference 27: S. Banappagari, M. Corti, S. Pincus, S. Satyanarayana, Inhibition of protein-protein interaction of HER2-EGFR and HER2-HER3 by a rationally designed peptidomimetic, J. Biomol. Struct. Dyn. 30 (2012) 594–606."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 4.9. Binding of conjugate to HER2 protein using surface plasmon resonance": "SPR analyses were performed on a Biacore X100 unit (GE Healthcare Biosciences, Piscataway, NJ) at 25 °C. The protein HER2 domain IV (DIV) (obtained from Leinco Technologies, St. Louis, MO) was immobilized on the CM5 sensor chip (GE Healthcare Biosciences) at a rate of 5 μL/min using a standard amine coupling procedure. The carboxyl groups on the sensor chip were activated using a solution containing 0.2 M N-ethyl N-(dimethylamino)propyl) carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS) (35 μL solution, flow rate 5 μL/min). The running buffer was 0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, and 0.005% Tween at pH 7.5. The immobilization of HER2 was performed onto the chip surface until about 10,018 response units (RU) was reached. The unreacted activated groups were blocked with 1 M ethanolamine.",
+            "Results - 2.7. Surface plasmon resonance (SPR) analysis": "This experiment was performed with the aim of showing that the conjugate is binding to the HER2 DIV protein. The HER2 DIV was immobilized on a carboxymethylated (CM5) dextran sensor chip [41] using 10 mM acetate buffer at pH 4, at which the protein showed the highest binding to the sensor chip. The stable surface of immobilized protein was obtained at relative response units (RU) of 10,018. After immobilization of the protein, different concentrations of conjugate were injected (0, 10, 25, 50, and 100 μM) onto the protein. As the concentration of conjugate increased, the RU also increased (Fig. 6). This suggests that the conjugate is binding to the HER2 DIV protein. As a control, a compound that exhibits anti-proliferative activity against BT-474 cell lines at concentrations >50 μM was used. The control compound did not show any binding to HER2 domain IV protein and DOX was also used as control (Figs. S9 and 10 &11 see Supplementary material). Kinetics of association and dissociation were analyzed by curve fitting 1:1 Langmuir binding, and the calculated Kd value for conjugate was 0.172 μM, and for DOX only 11 mM, suggesting that the conjugate binds to HER2 with high affinity and that DOX has very weak binding to the HER2 protein extracellular domain IV. In previous studies, we have shown that compound 5 binds to the HER2 extracellular domain (ECD) with a Kd value around 1 μM [27].",
+            "Figure 6 caption": "Fig. 6. SPR analysis of binding of DOX-compound 5 conjugate to HER2 extracellular domain IV. Domain IV of HER2 was immobilized on a CM5 chip, and different concentrations of conjugate were used as analyte. Kinetics of association and dissociation were measured. The sensor chip surface with only protein was used as a reference, and sensorgrams were represented after subtracting the values from reference surface.",
+            "Figure 6 sensorgram data": "The sensorgram in Figure 6 shows response units (RU) on the y-axis (ranging from 9750 to 10050) and time (s) on the x-axis (ranging from 0 to 400). The curves are labeled with concentrations: 0 μM, 10 μM, 25 μM, 50 μM, and 100 μM. The association phase occurs between approximately 100 and 300 seconds, and the dissociation phase occurs after 300 seconds. The RU increases with increasing concentration of the conjugate."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "HER2 domain IV (DIV)",
+                "strategy": "Amine coupling",
+                "density_ru": "10018",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DOX-compound 5 conjugate",
+                "concentration_range": "0, 10, 25, 50, and 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, and 0.005% Tween",
+                "pH": 7.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 200,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chip surface with only protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50553770": {
+        "reactant_set_id": 50553770,
+        "pmid": 27769032,
+        "protein": "Receptor tyrosine-protein kinase erbB-2",
+        "ligand": {
+            "smiles": "COc1cccc2C(=O)c3c(O)c4C[C@](O)(C[C@H](O[C@H]5C[C@H](N)[C@H](O)[C@H](C)O5)c4c(O)c3C(=O)c12)C(=O)CO"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11000000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HER2 domain-4 (unknown origin) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 41: K.E. Komolov, K.W. Koch, Application of surface plasmon resonance spectroscopy to study G-protein coupled receptor signalling, Methods Mol. Biol. 627 (2010) 249–260.",
+            "Reference 27: S. Banappagari, M. Corti, S. Pincus, S. Satyanarayana, Inhibition of protein-protein interaction of HER2-EGFR and HER2-HER3 by a rationally designed peptidomimetic, J. Biomol. Struct. Dyn. 30 (2012) 594–606."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 4.9. Binding of conjugate to HER2 protein using surface plasmon resonance": "SPR analyses were performed on a Biacore X100 unit (GE Healthcare Biosciences, Piscataway, NJ) at 25 °C. The protein HER2 domain IV (DIV) (obtained from Leinco Technologies, St. Louis, MO) was immobilized on the CM5 sensor chip (GE Healthcare Biosciences) at a rate of 5 μL/min using a standard amine coupling procedure. The carboxyl groups on the sensor chip were activated using a solution containing 0.2 M N-ethyl N-(dimethylamino)propyl) carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS) (35 μL solution, flow rate 5 μL/min). The running buffer was 0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, and 0.005% Tween at pH 7.5. The immobilization of HER2 was performed onto the chip surface until about 10,018 response units (RU) was reached. The unreacted activated groups were blocked with 1 M ethanolamine.",
+            "Results - 2.7. Surface plasmon resonance (SPR) analysis": "This experiment was performed with the aim of showing that the conjugate is binding to the HER2 DIV protein. The HER2 DIV was immobilized on a carboxymethylated (CM5) dextran sensor chip [41] using 10 mM acetate buffer at pH 4, at which the protein showed the highest binding to the sensor chip. The stable surface of immobilized protein was obtained at relative response units (RU) of 10,018. After immobilization of the protein, different concentrations of conjugate were injected (0, 10, 25, 50, and 100 μM) onto the protein. As the concentration of conjugate increased, the RU also increased (Fig. 6). This suggests that the conjugate is binding to the HER2 DIV protein. As a control, a compound that exhibits anti-proliferative activity against BT-474 cell lines at concentrations >50 μM was used. The control compound did not show any binding to HER2 domain IV protein and DOX was also used as control (Figs. S9 and 10 &11 see Supplementary material). Kinetics of association and dissociation were analyzed by curve fitting 1:1 Langmuir binding, and the calculated Kd value for conjugate was 0.172 μM, and for DOX only 11 mM, suggesting that the conjugate binds to HER2 with high affinity and that DOX has very weak binding to the HER2 protein extracellular domain IV. In previous studies, we have shown that compound 5 binds to the HER2 extracellular domain (ECD) with a Kd value around 1 μM [27].",
+            "Figure 6 caption": "Fig. 6. SPR analysis of binding of DOX-compound 5 conjugate to HER2 extracellular domain IV. Domain IV of HER2 was immobilized on a CM5 chip, and different concentrations of conjugate were used as analyte. Kinetics of association and dissociation were measured. The sensor chip surface with only protein was used as a reference, and sensorgrams were represented after subtracting the values from reference surface.",
+            "Figure 6 sensorgram data": "The sensorgram in Figure 6 shows response units (RU) on the y-axis (ranging from 9750 to 10050) and time (s) on the x-axis (ranging from 0 to 400). The curves are labeled with concentrations: 0 μM, 10 μM, 25 μM, 50 μM, and 100 μM. The association phase occurs between approximately 100 and 300 seconds, and the dissociation phase occurs after 300 seconds. The RU increases with increasing concentration of the conjugate."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "HER2 domain IV (DIV)",
+                "strategy": "Amine coupling",
+                "density_ru": "10018",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DOX-compound 5 conjugate",
+                "concentration_range": "0, 10, 25, 50, and 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, and 0.005% Tween",
+                "pH": 7.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 200,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chip surface with only protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50553771": {
+        "reactant_set_id": 50553771,
+        "pmid": 27769032,
+        "protein": "Receptor tyrosine-protein kinase erbB-2",
+        "ligand": {
+            "smiles": "N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(=O)N[C@@H](Cc1ccccc1)C(O)=O)c1cccc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HER2 extracellular domain (unknown origin) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "K.E. Komolov, K.W. Koch, Application of surface plasmon resonance spectroscopy to study G-protein coupled receptor signalling, Methods Mol. Biol. 627 (2010) 249–260.",
+        "original_paragraph": {
+            "Materials and Methods - 4.9. Binding of conjugate to HER2 protein using surface plasmon resonance": "SPR analyses were performed on a Biacore X100 unit (GE Healthcare Biosciences, Piscataway, NJ) at 25 °C. The protein HER2 domain IV (DIV) (obtained from Leinco Technologies, St. Louis, MO) was immobilized on the CM5 sensor chip (GE Healthcare Biosciences) at a rate of 5 μL/min using a standard amine coupling procedure. The carboxyl groups on the sensor chip were activated using a solution containing 0.2 M N-ethyl N-(dimethylamino)propyl) carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS) (35 μL solution, flow rate 5 μL/min). The running buffer was 0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, and 0.005% Tween at pH 7.5. The immobilization of HER2 was performed onto the chip surface until about 10,018 response units (RU) was reached. The unreacted activated groups were blocked with 1 M ethanolamine.",
+            "Results - 2.7. Surface plasmon resonance (SPR) analysis": "This experiment was performed with the aim of showing that the conjugate is binding to the HER2 DIV protein. The HER2 DIV was immobilized on a carboxymethylated (CM5) dextran sensor chip [41] using 10 mM acetate buffer at pH 4, at which the protein showed the highest binding to the sensor chip. The stable surface of immobilized protein was obtained at relative response units (RU) of 10,018. After immobilization of the protein, different concentrations of conjugate were injected (0, 10, 25, 50, and 100 μM) onto the protein. As the concentration of conjugate increased, the RU also increased (Fig. 6). This suggests that the conjugate is binding to the HER2 DIV protein. As a control, a compound that exhibits anti-proliferative activity against BT-474 cell lines at concentrations >50 μM was used. The control compound did not show any binding to HER2 domain IV protein and DOX was also used as control (Figs. S9 and 10 &11 see Supplementary material). Kinetics of association and dissociation were analyzed by curve fitting 1:1 Langmuir binding, and the calculated Kd value for conjugate was 0.172 μM, and for DOX only 11 mM, suggesting that the conjugate binds to HER2 with high affinity and that DOX has very weak binding to the HER2 protein extracellular domain IV. In previous studies, we have shown that compound 5 binds to the HER2 extracellular domain (ECD) with a Kd value around 1 μM [27].",
+            "Figure 6 caption": "Fig. 6. SPR analysis of binding of DOX-compound 5 conjugate to HER2 extracellular domain IV. Domain IV of HER2 was immobilized on a CM5 chip, and different concentrations of conjugate were used as analyte. Kinetics of association and dissociation were measured. The sensor chip surface with only protein was used as a reference, and sensorgrams were represented after subtracting the values from reference surface.",
+            "Figure 6 sensorgram data": "The sensorgram in Figure 6 shows response units (RU) on the y-axis (ranging from 9750 to 10050) and time (s) on the x-axis (ranging from 0 to 400). The curves are labeled with concentrations: 0 μM, 10 μM, 25 μM, 50 μM, and 100 μM. The association phase occurs from 0 to 300 s, and the dissociation phase occurs from 300 to 400 s. The RU increases with higher concentrations of the conjugate. The pH of the running buffer is stated as 7.5 in the methods section.",
+            "Reference [41] in text": "Reference [41] is cited in the SPR analysis section of the results."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Biosciences",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Biosciences"
+            },
+            "immobilization": {
+                "ligand_name": "HER2 domain IV (DIV)",
+                "strategy": "Amine coupling",
+                "density_ru": "10018",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DOX-compound 5 conjugate",
+                "concentration_range": "0, 10, 25, 50, and 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "0.01 M HEPES, 0.15 M NaCl, 3 mM EDTA, and 0.005% Tween",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chip surface with only protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

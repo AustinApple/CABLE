@@ -1,0 +1,66 @@
+{
+    "51599154": {
+        "reactant_set_id": 51599154,
+        "pmid": 38595098,
+        "protein": "Platelet-derived growth factor receptor alpha/beta",
+        "ligand": {
+            "smiles": "Cc1cncc(NC(=O)C(=O)N2CCCCC2c2cccn2C)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated PRMT5/MEP50 complex (unknown origin) in presence of MTA by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 13: Cottrell, K. M.; Maxwell, J. P.; Whittington, D. A. Compounds and Methods of Use. US11077101B1, 2021. Reference 14: Cottrell, K. M.; Maxwell, J. P. Compounds and Methods of Use. WO2021086879, 2021.",
+        "original_paragraph": {
+            "Materials and Methods": "Biological Fluorescence Anisotropy (FA) Assay. A fluorescence anisotropy (FA) assay was used to measure binding of C-terminal 5'-TAMRA-labeled histone H4 peptide (1–11) with PRMT5/MEP50 protein. Assay buffer: 30 mM Bicine (pH 8.0), 150 mM NaCl, 1.5 mM DTT, 0.003% Tween-20. The two peptides used for these studies were Me0: Ac-SGRGKGGKGLGKGGAKRHRKV-K(5-TAMRA)-NH2 and Me2: Ac-SGRGKGGKGLGKGGAKRHRKV-K(5-TAMRA)-NH2. Me0 peptide is not methylated at Arginine 3 and was used to determine the compound potency in the absence of cofactor and in the presence of 50 μM S-adenosyl-l-methionine (SAM). Inhibitor potency was assessed at equilibrium by measuring the dose-dependent displacement of a fixed concentration of the peptide from PRMT5/MEP50. Following incubation at RT for 30 min, the plate was read on an Envision plate reader. For data analysis, fluorescence anisotropy (FA) detected equals 1000 × (S − G × P)/(S + G × 2 × P), where S = detector 2 or channel 2 signal, P = detector 1 or channel 1 signal, G = G factor. Fluorescence anisotropy is normalized to percent inhibition using percent inhibition = (signal − MinAVG)/(MaxAVG − MinAVG) × 100, where MinAVG = the average value of the min value and MaxAVG = the average value of the max value. Curves are fit by XL-Fit as percent inhibition vs log [compound concentration] using a 4-parameter logistic model 205 y = A + ((B − A)/(1 + ((C/x)/D))) with fixed 0% and 100% inhibition limits to calculate the IC50. A: bottom = 0%. B: top = 100%. C: relative IC50. D: Hill slope. The apparent Ki values of TNG908 were calculated using the Cheng–Prusoff equation for a competitive inhibitor.",
+            "Figure 2 caption": "Figure 2. Hit triage strategy for compounds profiled in a high-throughput screen with a peptide displacement assay.",
+            "Results and Discussion": "Hit Finding. Having demonstrated proof of concept for selective killing of MTAP-null vs MTAP WT cells in a previous chemical series 13,14 (Figure 1C), we deployed several hit-finding strategies to identify lead-like starting points for drug design, including DEL and fragment screens. However, the approach that offered the most appealing actives was a high-throughput screen of a 560k compound library at 20 μM using a peptide displacement assay. Fluorescence anisotropy (FA) was used to detect displacement of a TAMRA-labeled histone H4 peptide from PRMT5 in the presence of 50 μM MTA. Five hundred seventeen compounds, representing a 0.09% hit rate, had >20% activity at 20 μM. Hit triage proceeded through the following process by eliminating compounds that (1) had a dose response IC50 value > 25 μM in the peptide displacement assay with MTA, (2) had selectivity less than 2-fold in the presence of SAM (50 μM) versus MTA, (3) lost activity in the MTA-containing peptide displacement assay following resynthesis and structural confirmation, (4) did not confirm binding in an orthogonal surface plasmon resonance (SPR) assay with biotinylated PRMT5/MEP50 immobilized on a streptavidin sensor chip with 50 μM MTA in the running buffer (Figure 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated PRMT5/MEP50",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compounds from high-throughput screen (e.g., TNG908)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 μM MTA in buffer (composition not specified, but likely similar to FA assay buffer: 30 mM Bicine, 150 mM NaCl, 1.5 mM DTT, 0.003% Tween-20)",
+                "pH": 8.0,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

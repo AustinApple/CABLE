@@ -1,0 +1,538 @@
+{
+    "51543006": {
+        "reactant_set_id": 51543006,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 41000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543007": {
+        "reactant_set_id": 51543007,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1cc(OC)c(OC)c(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 47000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543008": {
+        "reactant_set_id": 51543008,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 74000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543009": {
+        "reactant_set_id": 51543009,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1cccc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 78000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543010": {
+        "reactant_set_id": 51543010,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1ccc(OC)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 72000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543011": {
+        "reactant_set_id": 51543011,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1ccc(OC)c(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 29000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543012": {
+        "reactant_set_id": 51543012,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "CCOC(=O)C1=CN(C=C(C1c1ccccc1)C(=O)OCC)C(=O)c1cc(OC)cc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 79000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    },
+    "51543013": {
+        "reactant_set_id": 51543013,
+        "pmid": 37439550,
+        "protein": "NAD-dependent protein deacetylase sirtuin-3, mitochondrial",
+        "ligand": {
+            "smiles": "Oc1ccc(cc1CC=C)-c1cc(CC=C)ccc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 40000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his-tagged human SIRT3 (114 to 380 residues) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "84 Genovese, I.; Giannogante, F.; Barazzuol, L.; Battista, T.; Fiorillo, A.; Vicario, M.; D'Alessandro, G.; Cipriani, R.; Limatola, C.; Rossi, D.; Sorrentino, V.; Poser, E.; Mosca, L.; Squitieri, F.; Perluigi, M.; Arena, A.; van Petegem, F.; Tito, F.; Fazi, F.; Giorgi, C.; Cali, T.; Ilari, A.; Colotti, G. Sorcin Is an Early Marker of Neurodegeneration, Ca(2+) Dysregulation and Endoplasmic Reticulum Stress Associated to Neurodegenerative Diseases. Cell Death Dis 2020, 11, 861.",
+            "85 Battista, T.; Pascarella, G.; Staid, D. S.; Colotti, G.; Rosati, J.; Fiorillo, A.; Casamassa, A.; Vescovi, A. L.; Giabbai, B.; Semrau, M. S.; Fanelli, S.; Storici, P.; Squitieri, F.; Morea, V.; Ilari, A. Known Drugs Identified by Structure-Based Virtual Screening Are Able to Bind Sigma-1 Receptor and Increase Growth of Huntington Disease Patient-Derived Cells. Int J Mol Sci 2021, 22, 1293."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR experiments were carried out using a SensiQ Pioneer system (Oklahoma City, OK, USA), essentially as in Genovese et al. 202084 and in Battista et al. 2021,85 with some modifications, as follows. The sensor chip (COOH5) was chemically activated by a 35 μL injection of a 1:1 mixture of N-ethyl-N’-(3-(diethylaminopropyl) carbodiimide (200 mM) and N-hydroxysuccinimide (50 mM) at a flow rate of 5 μL/min. Sirtuin3 (ligand) was immobilized on activated sensor chips via amine coupling. Immobilization was carried out in 20 mM sodium acetate at pH 4.0; unreacted groups were blocked by injecting 1 M ethanolamine hydrochloride (35 μL). Sirtuin3 immobilization level obtained was 1500–4000 RU. The analytes, dissolved in 100% DMSO at 10 mM concentration, were diluted in buffer 20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 buffer (HBSP) to a concentration of 200 μM (2% final DMSO concentration), further diluted in HBSP + 2% DMSO (HBSP2%D) and injected on the sensor chip at a constant flow rate (nominal flow rate = 30 μL/min) at the following concentrations: 5, 10, 20, 40, and 80 μM. The RU increase relative to baseline indicates complex formation (taking place at known analytes concentrations at each moment in the gradient); the plateau region represents the steady-state phase of the interaction (RUEq); and the decrease in RU after 180 s represents dissociation of analytes from the immobilized Sirtuin3 after injection of HBSP2%D. Regeneration procedures are based on two long (2000 and 500 s) injections of buffer, separated by a brief (5 s) injection of 10 mM NaOH. Control experiments were performed in sensor chips treated as described above in the absence of an immobilized ligand. Kinetic evaluation of the sensorgrams was obtained using the SensiQ Qdat program and full fitting with 1, 2, and 3 sites; Scatchard analysis was used to determine apparent KD values.",
+            "Figure 5 Caption": "Figure 5. Sensorgrams of the interaction between selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol, and SIRT3 protein immobilized onto a COOH5 sensor chip and analytes injected at the following concentrations: 5 (blue), 10 (orange), 20 (gray), 40 (yellow), and 80 μM (light blue).",
+            "Results Section - SIRT3 Biophysical Binding Assay": "Surface Plasmon Resonance Assay. Next, surface plasmon resonance (SPR) experiments were conducted with selected SIRT3 activators 2e and 3a–d to ascertain their biophysical interaction with the human SIRT3 protein. Their parental compounds 2 and 3, together with honokiol, were used as positive controls. The experiments were carried out twice at different concentrations (5, 10, 20, 40, and 80 μM), by injecting the compounds at increasing doses (Figure 5). The resonance units (RU) increase with respect to baseline indicates the formation of the SIRT3/ligand complex, the plateau region represents the steady-state phase of the interaction (RUEq, RU at equilibrium) and the decrease in RU after 180 s represents dissociation of analytes from the immobilized SIRT3 protein after injection of the buffer. Scatchard analysis showed that parental compounds 2 and 3 as well as honokiol interact with SIRT3 with KD values ranging from 40 to 47 μM (Figure 5). Compounds 2e and 3a–d showed affinities in the dual digit micromolar range, with 3c binding to the protein with the highest affinity (KD = 29 μM) (Figure 5), consistently with its highest biochemical SIRT3 activation (387%, Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "COOH5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Sirtuin3 (human SIRT3, 114 to 380 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": "1500-4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected SIRT3 activators 2e, 3a–d, reference compounds 2, 3, and honokiol",
+                "concentration_range": "5, 10, 20, 40, and 80 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Heps, 150 mM NaCl, 0.005% surfactant P20 (HBSP) + 2% DMSO (HBSP2%D)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Sensor chips treated as described above in the absence of an immobilized ligand",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SensiQ Qdat program"
+            }
+        }
+    }
+}

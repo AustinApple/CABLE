@@ -1,0 +1,132 @@
+{
+    "51553139": {
+        "reactant_set_id": 51553139,
+        "pmid": 36116234,
+        "protein": "Histone-lysine N-methyltransferase SMYD3",
+        "ligand": {
+            "smiles": "O=C(NC1CCNCC1)c1cc(on1)C1CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length recombinant SMYD3 (unknown origin) overexpressed in Escherichia coli Rosetta cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Interaction kinetic analysis": "Interaction kinetic analyses were performed employing a Biacore X100 system thermostated at 15 °C. SMYD3 surfaces preparation, experiments execution and data analysis were performed according to the previously published protocol. Briefly, SMYD3 was immobilized at densities between 6500 and 10000 RU through amine-coupling chemistry employing CM5 sensor chips. For the immobilization procedure, HEPES 10 mM, NaCl 150 mM and T-20 0.05% at pH 7.4 (HBS-T) was used as running buffer. Tris-HCl 50 mM, NaCl 150 mM, 2 mM DTT, 0.05% T-20, DMSO 2% (v/v) was used as analysis buffer (TBS-T buffer). EM-compounds stock solutions were prepared at 10 mM concentration in 100% DMSO and diluted to 200 μM in TBS-T buffer so that final DMSO content equals 2%. Interactions were monitored in TBS-T buffer and TBS-T buffer supplemented with SMYD3-saturating concentration of S-adenosyl-methionine (SAM). S-adenosyl-homocysteine (SAH) and peptide MAP3K2249-274 (DYDNPI-FEKFGK26OGGTPRRYVHSYHH; Celtek Peptides, Franklin, USA) were used as control compounds in SAM-free and SAM-saturated running buffer, respectively. A solvent correction procedure was performed and applied to equilibrium responses for data analysis. Data analysis was performed using BIAeval 4.1 and GraphPad software.",
+            "Figure 4 caption": "Fig. 4. Representative sensorgrams for the interaction of compounds with immobilized SMYD3 in the presence of SAM in the running buffer. A) Sensorgrams (left) and response at equilibrium fitted to a 1:1 interaction model (right) for 11 interacting with immobilized SMYD3. B) Sensorgrams (left) and response at equilibrium fitted to a 1:1 interaction model (right) for 11C interacting with immobilized SMYD3. Experiments were carried out in duplicate.",
+            "Figure 4 plot data": "The sensorgrams in Fig. 4 show the response over time (x-axis: Time (s), from 0 to 60) for different concentrations of compounds 11 and 11C. The equilibrium response is plotted against concentration ([11]M or [11C]M) on a logarithmic scale (x-axis: 10^-6 to 10^-4 M). The fitted curves yield K_D values: 32(7) μM for 11 and 13(2) μM for 11C.",
+            "Section 2.3 - Binding affinity studies by SPR biosensor analysis": "Since binding to the target is a prerequisite for a TCI to be effective, we first investigated the interaction between SMYD3 and all derivatives by SPR biosensor technology. Compounds were tested in the presence and absence of saturating concentration of the cofactor S-adenosyl methionine (SAM) in the running buffer to monitor the effect of the cofactor on the binding of the inhibitors. While no interaction with immobilized SMYD3 could be observed for compound 8C and the corresponding reversible analog 8 under any conditions, the other tested compounds only showed interactions with the enzyme when SAM was present in the running buffer. Under these conditions, the isoxazole amides 11 and 11C showed a significantly higher affinity to SMYD3 and responses in agreement with control compounds S-adenosyl homocysteine (SAH) and MAP3K2249-274, a 26 amino acid peptide which carries the MTase target amino acid Lys260, while 9 and 9C produced low responses at all tested concentrations (100 and 1.56 μM). For 11 and 11C-complexes, the steady-state affinity constants (K_D) in the presence of SAM were estimated. Because of relatively short time course of the experiment (within 60 s) no covalent modification of SMYD3 was detected in agreement with the longer time required for the formation of a covalent adduct, as shown by liquid-chromatography mass spectrometry (LC-MS) experiments (see section 4.4). Interactions between 11 or 11C and SMYD3 were characterized by fast association and dissociation rates, as expected for these small compounds interacting with relatively weak affinities (Fig. 4). The signal responses at steady-state fitted with a 1:1 binding stoichiometry, based on the apparent surface activity found for control compounds SAH and MAP3K2249-274 peptide. Thus, a simple binding isotherm was used to estimate the affinities as K_D values, being 32 ± 7 μM for 11 and 13 ± 2 μM for 11C. Note that, the estimates were obtained via an extrapolation since the concentrations that could be used were not high enough to reach saturation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "SMYD3",
+                "strategy": "Amine coupling",
+                "density_ru": "6500-10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "EM-compounds (including 11 and 11C)",
+                "concentration_range": "1.56 μM - 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Tris-HCl 50 mM, NaCl 150 mM, 2 mM DTT, 0.05% T-20, DMSO 2% (v/v) (TBS-T buffer)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 15,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Solvent correction procedure applied to equilibrium responses",
+                "subtraction_method": "Solvent correction",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAeval 4.1 and GraphPad"
+            }
+        }
+    },
+    "51553140": {
+        "reactant_set_id": 51553140,
+        "pmid": 36116234,
+        "protein": "Histone-lysine N-methyltransferase SMYD3",
+        "ligand": {
+            "smiles": "ClCC(=O)N1CCC(CC1)NC(=O)c1cc(on1)C1CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length recombinant SMYD3 (unknown origin) overexpressed in Escherichia coli Rosetta cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Interaction kinetic analysis": "Interaction kinetic analyses were performed employing a Biacore X100 system thermostated at 15 °C. SMYD3 surfaces preparation, experiments execution and data analysis were performed according to the previously published protocol. Briefly, SMYD3 was immobilized at densities between 6500 and 10000 RU through amine-coupling chemistry employing CM5 sensor chips. For the immobilization procedure, HEPES 10 mM, NaCl 150 mM and T-20 0.05% at pH 7.4 (HBS-T) was used as running buffer. Tris-HCl 50 mM, NaCl 150 mM, 2 mM DTT, 0.05% T-20, DMSO 2% (v/v) was used as analysis buffer (TBS-T buffer). EM-compounds stock solutions were prepared at 10 mM concentration in 100% DMSO and diluted to 200 μM in TBS-T buffer so that final DMSO content equals 2%. Interactions were monitored in TBS-T buffer and TBS-T buffer supplemented with SMYD3-saturating concentration of S-adenosyl-methionine (SAM). S-adenosyl-homocysteine (SAH) and peptide MAP3K2249-274 (DYDNPI-FEKFGK26OGGTPRRYVHSYHH; Celtek Peptides, Franklin, USA) were used as control compounds in SAM-free and SAM-saturated running buffer, respectively. A solvent correction procedure was performed and applied to equilibrium responses for data analysis. Data analysis was performed using BIAeval 4.1 and GraphPad software.",
+            "Figure 4 caption": "Fig. 4. Representative sensorgrams for the interaction of compounds with immobilized SMYD3 in the presence of SAM in the running buffer. A) Sensorgrams (left) and response at equilibrium fitted to a 1:1 interaction model (right) for 11 interacting with immobilized SMYD3. B) Sensorgrams (left) and response at equilibrium fitted to a 1:1 interaction model (right) for 11C interacting with immobilized SMYD3. Experiments were carried out in duplicate.",
+            "Figure 4 plot data": "The sensorgrams in Fig. 4 show the response over time (x-axis: Time (s), from 0 to 60) for different concentrations of compounds 11 and 11C. The equilibrium response is plotted against concentration ([11]M or [11C]M) on a logarithmic scale (x-axis: 10^-6 to 10^-4 M). The fitted curves yield K_D values: 32(7) μM for 11 and 13(2) μM for 11C.",
+            "Section 2.3 - Binding affinity studies by SPR biosensor analysis": "Since binding to the target is a prerequisite for a TCI to be effective, we first investigated the interaction between SMYD3 and all derivatives by SPR biosensor technology. Compounds were tested in the presence and absence of saturating concentration of the cofactor S-adenosyl methionine (SAM) in the running buffer to monitor the effect of the cofactor on the binding of the inhibitors. While no interaction with immobilized SMYD3 could be observed for compound 8C and the corresponding reversible analog 8 under any conditions, the other tested compounds only showed interactions with the enzyme when SAM was present in the running buffer. Under these conditions, the isoxazole amides 11 and 11C showed a significantly higher affinity to SMYD3 and responses in agreement with control compounds S-adenosyl homocysteine (SAH) and MAP3K2249-274, a 26 amino acid peptide which carries the MTase target amino acid Lys260, while 9 and 9C produced low responses at all tested concentrations (100 and 1.56 μM). For 11 and 11C-complexes, the steady-state affinity constants (K_D) in the presence of SAM were estimated. Because of relatively short time course of the experiment (within 60 s) no covalent modification of SMYD3 was detected in agreement with the longer time required for the formation of a covalent adduct, as shown by liquid-chromatography mass spectrometry (LC-MS) experiments (see section 4.4). Interactions between 11 or 11C and SMYD3 were characterized by fast association and dissociation rates, as expected for these small compounds interacting with relatively weak affinities (Fig. 4). The signal responses at steady-state fitted with a 1:1 binding stoichiometry, based on the apparent surface activity found for control compounds SAH and MAP3K2249-274 peptide. Thus, a simple binding isotherm was used to estimate the affinities as K_D values, being 32 ± 7 μM for 11 and 13 ± 2 μM for 11C. Note that, the estimates were obtained via an extrapolation since the concentrations that could be used were not high enough to reach saturation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "SMYD3",
+                "strategy": "Amine coupling",
+                "density_ru": "6500-10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "EM-compounds (including 11 and 11C)",
+                "concentration_range": "1.56 μM - 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Tris-HCl 50 mM, NaCl 150 mM, 2 mM DTT, 0.05% T-20, DMSO 2% (v/v) (TBS-T buffer)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 15,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Solvent correction procedure applied to equilibrium responses",
+                "subtraction_method": "Solvent correction",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAeval 4.1 and GraphPad"
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "51364577": {
+        "reactant_set_id": 51364577,
+        "pmid": 32146375,
+        "protein": "Proteasome subunit beta type-5",
+        "ligand": {
+            "smiles": "COC[C@H](NC(=O)[C@H](CC(=O)NCC(C)(C)C)NS(=O)(=O)c1ccc(C)cc1)C(=O)N[C@@H](CC(C)C)C(=O)c1ccco1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to immobilized human 20S proteasome beta 5 subunit by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 27: R. Hartmann-Petersen, C. Gordon, Quantifying protein-protein interactions in the ubiquitin pathway by surface plasmon resonance, Methods Enzymol. 399 (2005) 164–177. Reference 28: E. Gorodkiewicz, H. Ostrowska, A. Sankiewicz, SPR imaging biosensor for the 20S proteasome: sensor development and application to measurement of proteasomes in human blood plasma, Microchim Acta 175 (2011) 177–184.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Inhibitors were dissolved in DMSO (10 mM) and then diluted 20-fold in DMSO to achieve a 0.5 mM final stock solution. The above stock solutions were diluted 20-fold in PBS-P buffer (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% surfactant P20, pH 7.4), and the obtained 25 μM solutions were then serially diluted 2-fold in running buffer (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% surfactant P20, 5% DMSO, pH 7.4) to obtain the final 5% (v/v) DMSO concentration series from 25 μM to 1.56 μM and transferred to a 96-well plate. The SPR experiment was conducted on the Biacore T200 system (GE Healthcare, Uppsala, Sweden) at 25 °C. Human 20S proteasome (Boston Biochem, USA) was immobilized on a CM5 chip using an amine coupling kit (GE Healthcare, Buckinghamshire, UK). Final protein immobilized levels were typically ~15,000 RU. Subsequently, inhibitors of various concentrations were injected individually as analytes at a flow rate of 30 μL/min with both association time and dissociation time of 60 s. Chip platforms were washed with running buffer and 50% DMSO. Data were treated using Biacore T200 evaluation software provided by the manufacturer. Non-specific binding to surface of the chip without proteasome was recorded in parallel and the non-specific signal was subtracted from the sample response with immobilized 20S proteasome to correct for systematic noise and baseline drift. Data were solvent corrected, and the response from the blank injections was used to double reference the binding data. The data were normalized by molecular weight, and rate constants k_on and k_off values were obtained using the Biacore evaluation software (T200 version 1.0) by curve fitting using a 1:1 binding model fit.",
+            "Figure 6 caption": "Fig. 6. SPR sensorgram of (A) MG132 and (B) 11m binding to 20S proteasome immobilized on a CM5 chip.",
+            "Table 2": "Table 2 Association (k_a), and dissociation (k_d) rate constants determined by SPR. Compd. k_a (1/Ms) k_d (1/s) K_D (μM) MG132 2716 0.04609 17 11m 4209 0.01922 4.8",
+            "Figure 6 sensorgram data": "Figure 6A (MG132): Concentrations shown on the plot are 25 μM, 12.5 μM, 6.25 μM, 3.13 μM, 1.56 μM. The sensorgram shows association and dissociation phases for each concentration. The equilibrium dissociation constant (K_D) is labeled as 17 μM. Figure 6B (11m): Concentrations shown on the plot are 25 μM, 12.5 μM, 6.25 μM, 3.13 μM, 1.56 μM. The sensorgram shows association and dissociation phases for each concentration. The equilibrium dissociation constant (K_D) is labeled as 4.6 μM.",
+            "Results section - Binding kinetics analysis": "We next measured the binding affinity of 11m with purified human 20S proteasome through surface plasmon resonance (SPR) on a GE Biacore T200 apparatus. As shown in Fig. 6, both MG132 and 11m evoked specific binding and dose-dependent responses to CM5 chip [27] linked with purified human 20S proteasome. Based on a 1:1 langmuir binding mode fit [28], the equilibrium dissociation constants (K_D) calculated from the k_a/k_d ratio for MG132 and 11m were 17 μM and 4.8 μM respectively, indicating a higher binding affinity of 11m than MG132 to 20S proteasome. Furthermore, 11m had also shown a significantly slower dissociation rate than MG132 (Table 2) indicating a prolonged acting time of 11m, and the relatively “rapid binding and slow dissociation” profile of 11m was supposed to be beneficial in case used in vivo due to reduced dosing frequency."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human 20S proteasome",
+                "strategy": "Amine coupling",
+                "density_ru": "15000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Inhibitors (including MG132 and 11m)",
+                "concentration_range": "1.56 μM - 25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% surfactant P20, 5% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "running buffer and 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Chip surface without proteasome",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software (version 1.0)"
+            }
+        }
+    },
+    "51364578": {
+        "reactant_set_id": 51364578,
+        "pmid": 32146375,
+        "protein": "Proteasome subunit beta type-5",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H](CN[C@@H](CC(C)C)C=O)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to immobilized human 20S proteasome beta 5 subunit by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 27: R. Hartmann-Petersen, C. Gordon, Quantifying protein-protein interactions in the ubiquitin pathway by surface plasmon resonance, Methods Enzymol. 399 (2005) 164–177. Reference 28: E. Gorodkiewicz, H. Ostrowska, A. Sankiewicz, SPR imaging biosensor for the 20S proteasome: sensor development and application to measurement of proteasomes in human blood plasma, Microchim Acta 175 (2011) 177–184.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Inhibitors were dissolved in DMSO (10 mM) and then diluted 20-fold in DMSO to achieve a 0.5 mM final stock solution. The above stock solutions were diluted 20-fold in PBS-P buffer (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% surfactant P20, pH 7.4), and the obtained 25 μM solutions were then serially diluted 2-fold in running buffer (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% surfactant P20, 5% DMSO, pH 7.4) to obtain the final 5% (v/v) DMSO concentration series from 25 μM to 1.56 μM and transferred to a 96-well plate. The SPR experiment was conducted on the Biacore T200 system (GE Healthcare, Uppsala, Sweden) at 25 °C. Human 20S proteasome (Boston Biochem, USA) was immobilized on a CM5 chip using an amine coupling kit (GE Healthcare, Buckinghamshire, UK). Final protein immobilized levels were typically ~15,000 RU. Subsequently, inhibitors of various concentrations were injected individually as analytes at a flow rate of 30 μL/min with both association time and dissociation time of 60 s. Chip platforms were washed with running buffer and 50% DMSO. Data were treated using Biacore T200 evaluation software provided by the manufacturer. Non-specific binding to surface of the chip without proteasome was recorded in parallel and the non-specific signal was subtracted from the sample response with immobilized 20S proteasome to correct for systematic noise and baseline drift. Data were solvent corrected, and the response from the blank injections was used to double reference the binding data. The data were normalized by molecular weight, and rate constants k_on and k_off values were obtained using the Biacore evaluation software (T200 version 1.0) by curve fitting using a 1:1 binding model fit.",
+            "Figure 6 caption": "Fig. 6. SPR sensorgram of (A) MG132 and (B) 11m binding to 20S proteasome immobilized on a CM5 chip.",
+            "Table 2": "Table 2 Association (k_a), and dissociation (k_d) rate constants determined by SPR. Compd. k_a (1/Ms) k_d (1/s) K_D (μM) MG132 2716 0.04609 17 11m 4209 0.01922 4.8",
+            "Figure 6 sensorgram data": "Figure 6A (MG132): Concentrations shown on the plot are 25 μM, 12.5 μM, 6.25 μM, 3.13 μM, 1.56 μM. The sensorgram shows association and dissociation phases for each concentration. The equilibrium dissociation constant (K_D) is labeled as 17 μM. Figure 6B (11m): Concentrations shown on the plot are 25 μM, 12.5 μM, 6.25 μM, 3.13 μM, 1.56 μM. The sensorgram shows association and dissociation phases for each concentration. The equilibrium dissociation constant (K_D) is labeled as 4.6 μM.",
+            "Results section - Binding kinetics analysis": "We next measured the binding affinity of 11m with purified human 20S proteasome through surface plasmon resonance (SPR) on a GE Biacore T200 apparatus. As shown in Fig. 6, both MG132 and 11m evoked specific binding and dose-dependent responses to CM5 chip [27] linked with purified human 20S proteasome. Based on a 1:1 langmuir binding mode fit [28], the equilibrium dissociation constants (K_D) calculated from the k_a/k_d ratio for MG132 and 11m were 17 μM and 4.8 μM respectively, indicating a higher binding affinity of 11m than MG132 to 20S proteasome. Furthermore, 11m had also shown a significantly slower dissociation rate than MG132 (Table 2) indicating a prolonged acting time of 11m, and the relatively “rapid binding and slow dissociation” profile of 11m was supposed to be beneficial in case used in vivo due to reduced dosing frequency."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human 20S proteasome",
+                "strategy": "Amine coupling",
+                "density_ru": "15000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Inhibitors (including MG132 and 11m)",
+                "concentration_range": "1.56 μM - 25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% surfactant P20, 5% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "running buffer and 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Chip surface without proteasome",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software (version 1.0)"
+            }
+        }
+    }
+}

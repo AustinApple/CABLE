@@ -1,0 +1,66 @@
+{
+    "51568104": {
+        "reactant_set_id": 51568104,
+        "pmid": 37905925,
+        "protein": "Tryptophan 5-hydroxylase 1",
+        "ligand": {
+            "smiles": "CCn1c2nc(Cc3cn4cc(C)sc4n3)n(CC3COC3)c2c(=O)[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to THP1 (unknown origin) assessed as equilibrium dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Measurements. The experiment was performed on a Biacore T100 (T200 sensitivity enhanced by GE Healthcare) using an amine coupling kit from GE Healthcare for protein immobilization. Series S Sensor Chip CM5 was purchased from Cytiva. As running buffer, 10 mM Tris pH 7.0, 200 mM ammonium sulfate, 0.05% Tween20, and 1% DMSO was used. Amine coupling of TPH1 was performed according to the standard amine coupling surface preparation wizard in the Biacore control software with a concentration of 30 μg/mL of TPH1 in 10 mM sodium acetate pH 5.5 and a contact time of 130 s. This resulted in an immobilization level of around 10,000 counts. For the binding assay, the inhibitor was diluted in running buffer to the desired concentration and injected over the TPH1 surface for 180 s, followed by a dissociation phase of 1400 s. The regeneration step was performed with 10 mM glycine pH 2.0 for 30 s. Data were collected at 25 °C and a flow rate of 30 μL/min. The data were analyzed using Biacore Evaluation Software 3.0. The binding curves were fitted to a 1:1 Langmuir binding model to calculate the association rate constant (ka), dissociation rate constant (kd), and equilibrium dissociation constant (KD).",
+            "Figure 5 caption": "Figure 5. In vitro studies of 32 (TPT-004). (A) SPR sensograms and fits of the binding kinetics. 32 (TPT-004) was injected over 180 s with a dissociation time of 1400 s and in a 2-fold dilution series starting at 250 nM. A single binding site model was fitted to calculate the KD values and kinetic constants. (B) Effect of 32 (TPT-004) on the serotonin production in BON cells. A highly sensitive fluorimetric HPLC detection assay was applied to measure the intracellular content of serotonin in BON cells treated for 72 h with increasing doses of 32 (TPT-004). Values represent mean ±95% CI. (C) The relative viability of BON cells after 72 h exposure to different 32 (TPT-004) concentrations was evaluated in a WST-1 assay. Values represent mean ± SD.",
+            "Results section": "In vitro Studies of Lead Compound 32 (TPT-004). The in vitro binding kinetics and affinity of 32 (TPT-004) was analyzed in a surface plasmon resonance (SPR) experiment. On the basis of the ratio between the dissociation rate constant (kd = 0.0072 s−1) and the association rate constant (ka = 2.29 e6 M−1 s−1), the equilibrium dissociation constant KD was calculated to be 3.2 nM (Figure 5A)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TPH1",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "32 (TPT-004)",
+                "concentration_range": "250 nM (2-fold dilution series)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Tris pH 7.0, 200 mM ammonium sulfate, 0.05% Tween20, and 1% DMSO",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 1400,
+                "regeneration_solution": "10 mM glycine pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Evaluation Software 3.0"
+            }
+        }
+    }
+}

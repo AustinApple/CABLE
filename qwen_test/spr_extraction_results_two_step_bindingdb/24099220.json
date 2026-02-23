@@ -1,0 +1,65 @@
+{
+    "51082915": {
+        "reactant_set_id": 51082915,
+        "pmid": 24099220,
+        "protein": "Indoleamine 2,3-dioxygenase 1",
+        "ligand": {
+            "smiles": "Fc1ccc-2c(c1)C(=O)c1nc3ccccc3c(=O)n-21"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 46800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human IDO1 by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "The surface plasmon resonance (SPR) was carried out at 25 °C on Biacore T100 instruments using sensor chip CMS (GE Healthcare). PBS was used as running buffer with 0.1% dodecylmaltoside, 0.05 mM EDTA, and 5% DMSO, pH 7.4. The K_D value of the tested compound was determined by BIA evaluation software (GE Healthcare).",
+            "Figure 5 caption": "Figure 5. SPR assay of the binding between human IDO-1 and 5c. SPR curve for the binding of IDO-1 with 5c is shown. The concentrations of 5c injected over the biosensor chip surface immobilized with IDO-1 protein are indicated. The measurement yielded a K_D of 46.8 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human IDO-1",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "5c",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS with 0.1% dodecylmaltoside, 0.05 mM EDTA, and 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "BIA evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

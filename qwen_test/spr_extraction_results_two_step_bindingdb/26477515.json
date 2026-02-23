@@ -1,0 +1,673 @@
+{
+    "50431991": {
+        "reactant_set_id": 50431991,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "Cn1c(S)nnc1C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 145000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50431995": {
+        "reactant_set_id": 50431995,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "OC(=O)c1ccccc1C(=O)c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50431996": {
+        "reactant_set_id": 50431996,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "CCCc1ccc(cc1)C(=O)CCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 173000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50431997": {
+        "reactant_set_id": 50431997,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "OC(=O)CSc1ccnc2cc(Cl)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 264000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50431998": {
+        "reactant_set_id": 50431998,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "Cc1ccc2nc(cc(N3CCNCC3)c2c1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 333000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50431999": {
+        "reactant_set_id": 50431999,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "OC(=O)c1cncc(c1)C#Cc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 446000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50432000": {
+        "reactant_set_id": 50432000,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "OC(=O)CCCc1c[nH]c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 274000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50432001": {
+        "reactant_set_id": 50432001,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "O=c1c(coc2ccccc12)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 999000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50432002": {
+        "reactant_set_id": 50432002,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "Oc1nc(cc(c1C#N)C(F)(F)F)-c1cccs1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 229000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 3 caption": "Figure 3. Sensorgrams and steady state plots for the binding of the validated fragment hits to VIM-2. Fragments were tested in a 1.5-fold dilution series starting at 300 μM. Steady state values were calculated 5 s before the injection stopped and plotted against the concentration. The K_D was calculated by fitting the data to a single binding site model with a constant R_max."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "Meropenem and Captopril (and fragment library for screening)",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series) for meropenem and captopril; 300 μM for fragment screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared by immobilizing streptavidin directly followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    },
+    "50431982": {
+        "reactant_set_id": 50431982,
+        "pmid": 26477515,
+        "protein": "Metallo-beta-lactamase VIM-2",
+        "ligand": {
+            "smiles": "C[C@@H](O)[C@@H]1[C@H]2[C@@H](C)C(S[C@@H]3CN[C@@H](C3)C(=O)N(C)C)=C(N2C1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Reversible binding affinity to Pseudomonas aeruginosa 301-5473 metallo-beta-lactamase VIM-2 expressed in Escherichia coli BL21(DE3) measured for 15 secs by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Docquier, J. D.; Lamotte-Braesse, J.; Galleni, M.; Amicosante, G.; Frere, J. M.; Rossolini, G. M. On functional and structural heterogeneity of VIM-type metallo-β-lactamases. J. Antimicrob. Chemother. 2003, 51, 257–66.",
+        "original_paragraph": {
+            "Materials and Methods - SPR-Based Interaction Analysis": "Experiments were performed at 25 °C using a Biacore T200 (GE Healthcare). The running buffer consisted of 100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO. For data analyses, the Biacore T200 evaluation software 2.0 (GE Healthcare) was used. All sensorgrams were reference and blank subtracted. Running buffer was used for blank injections, and bulk effects were corrected using solvent correction. VIM-2 was immobilized using streptavidin–biotin capturing. For the biotinylation, VIM-2 was mixed in a 1:1 molar ratio with biotinamidohexanoic acid N-hydroxysuccinimide ester (Sigma-Aldrich) in 0.1 M phosphate buffer, pH 7.2, and incubated at room temperature for 30 min. Unreacted biotinamidohexanoic acid N-hydroxysuccinimide ester was removed using an Amicon Ultra centrifugal filter (Merck Kilipore Ltd.) with a molecular cutoff of 10 kDa. Streptavidin (Sigma-Aldrich) was covalently coupled to a CMS chip (GE Healthcare) by standard amine coupling. Therefore, streptavidin was dissolved in 10 mM Na acetate, pH 4.8, at a concentration of 300 μg/mL and injected for 1200 s. Afterward, biotinylated VIM-2 was injected for 240 s at a flow rate of 5 μL/min. The surface was blocked by injecting running buffer containing 0.2 μg/mL biotin (Sigma-Aldrich). A reference surface was prepared by immobilizing streptavidin directly followed by blocking with biotin. For the interaction studies, meropenem (Sigma-Aldrich) and captopril (N-[(S)-3-mercaptop-2-methylpropionyl]-L-proline, Sigma-Aldrich) were dissolved in running buffer and injected in a 2-fold dilution concentration series ranging from 100 to 0.2 μM. The association was followed for 180 s and the dissociation for 240 s. Before and after every concentration series, a blank was injected. For captopril, the sensorgrams were directly fitted to a 1:1 binding model to calculate kₐ, k𝒹, and K_D. For meropenem, the steady state values were calculated from the sensorgrams and plotted against the concentration. The data were fitted to single site binding model to calculate K_D. For the single concentration screen, all fragments were diluted to 300 μM in running buffer and injected for 30 s. The dissociation was followed for 15 s. For every 12th fragment, a positive control containing 300 μM captopril and a blank were injected. Sensorgrams were visually inspected, and fragments inducing a reversible signal increase above the noise level were selected for the secondary screening. The whole fragment library was screened two times in different orders.",
+            "Figure 2 caption": "Figure 2. Sensorgrams for the interaction of (a) meropenem and (b) captopril with VIM-2. For meropenem, the steady state values were determined and plotted as a function of the concentration shown as inset. A single binding site model was fitted to the data to calculate K_D. For captopril, a 1:1 binding model was directly fitted to the sensorgrams (red lines).",
+            "Figure 2a inset": "K_D = 12 μM",
+            "Figure 2b": "K_D = 0.6 μM",
+            "Results and Discussion - SPR-Based Binding Studies with Meropenem and Captopril": "SPR based binding assays are widely used in drug discovery. However, such assays have rarely been used to study β-lactamases. We established an SPR based assay for VIM-2, suitable to study the interactions with small molecules. The immobilization of VIM-2 to the SPR sensor surface was achieved by biotin–streptavidin capturing resulting in a stable surface with an immobilization level of around 1600 response units (RU). To ensure that the protein was active on the surface, the interactions with meropenem and captopril were investigated. Meropenem interacted reversibly with VIM-2, showing a fast association and dissociation (Figure 2a). The steady state values were calculated from the sensorgrams and plotted against the concentration. Data were fitted to a 1:1 interaction model, and the binding affinity (K_D) was calculated with 12 μM. Due to the fast interaction kinetics, it was not possible to determine the association or dissociation constant. The determined K_D for meropenem was in a similar range as the K_m of 2 μM reported by Docquier et al.¹⁹ Captopril bound reversibly to VIM-2 with a clear association and dissociation phase (Figure 2b). The sensorgrams could be described by a 1:1 interaction model. The calculated association constant (kₐ) was 4.2 × 10⁴ M⁻¹ s⁻¹, the dissociation constant (k𝒹) was 0.025 s⁻¹, and K_D was 0.6 μM. The determined K_D was in accordance with the IC₅₀ of 3.5 μM determined with enzymatic inhibition assay, showing that both assays produced consistent results. From the immobilization level of VIM-2 and the saturation levels reached by meropenem and captopril, it was estimated that around 35% of the immobilized protein were active. Although the signal intensity was in a low range, the interaction with captopril (Mw = 217.3 g/mol) clearly showed that the assay was capable of detecting the binding of molecules in the size of fragments.",
+            "Figure 1 caption": "Figure 1. (a) Steady-state kinetics for VIM-2 hydrolyses of nitrocefin. K_m was calculated with 34 ± 2 μM and k_cat with 1171 ± 25 s⁻¹. (b) Dose–response curve for the inhibition of VIM-2 by captopril.",
+            "Figure 1b": "IC₅₀ = 3.5 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "VIM-2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "1600",
+                "concentration_for_immobilization": "300 μg/mL"
+            },
+            "analyte": {
+                "description": "meropenem and captopril",
+                "concentration_range": "100 to 0.2 μM (2-fold dilution series)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mM HEPES, pH 7.2, 150 mM NaCl, 100 μM ZnCl₂, 0.005% surfactant P-20, and 2.5% DMSO",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 5,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Streptavidin immobilized surface followed by blocking with biotin",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software 2.0 (GE Healthcare)"
+            }
+        }
+    }
+}

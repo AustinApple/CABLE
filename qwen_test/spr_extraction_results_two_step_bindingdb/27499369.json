@@ -1,0 +1,1107 @@
+{
+    "51326827": {
+        "reactant_set_id": 51326827,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CCC1NCCn2cccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326828": {
+        "reactant_set_id": 51326828,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CCC(=O)Nc1cc(OC)cc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 157000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326829": {
+        "reactant_set_id": 51326829,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CCC(=O)Nc1ccc(OC)cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 170000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326830": {
+        "reactant_set_id": 51326830,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CCS(=O)(=O)N(C)c1ccc(cc1)C(=O)N1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326831": {
+        "reactant_set_id": 51326831,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3CCN(Cc3c2c1)C(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 205000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326835": {
+        "reactant_set_id": 51326835,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3c(CCNC33CCOCC3)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 380000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326837": {
+        "reactant_set_id": 51326837,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CSC1(NC#N)NCCc2c1[nH]c1ccc(F)cc21"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326839": {
+        "reactant_set_id": 51326839,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3CNCCc3c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 588000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326840": {
+        "reactant_set_id": 51326840,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "Cn1ccc2c(CO)cccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326841": {
+        "reactant_set_id": 51326841,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3c(CCNC3(NC#N)SC)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to the fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326826": {
+        "reactant_set_id": 51326826,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3c(CCNC3(NC#N)SC)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 144000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326832": {
+        "reactant_set_id": 51326832,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CCC(=O)Nc1cc(OC)cc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 281000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326833": {
+        "reactant_set_id": 51326833,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CSC1(NC#N)NCCc2c1[nH]c1ccc(F)cc21"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326834": {
+        "reactant_set_id": 51326834,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3CCN(Cc3c2c1)C(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 215000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326836": {
+        "reactant_set_id": 51326836,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3c(CCNC33CCOCC3)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 314000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326838": {
+        "reactant_set_id": 51326838,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "COc1ccc2[nH]c3CNCCc3c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 675000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    },
+    "51326842": {
+        "reactant_set_id": 51326842,
+        "pmid": 27499369,
+        "protein": "Dihydroorotase",
+        "ligand": {
+            "smiles": "CCC(=O)Nc1ccc(OC)cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 170000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Bacillus anthracis Sterne His-tagged DHOase expressed in Escherichia coli BL21(DE3) Gold cells in presence of N-carbamyl-L-aspartate by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Hit validation with surface plasmon resonance": "Purified histidine-tag cleaved DHOase was buffer exchanged to PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20). Surface Plasmon Resonance was performed at 25 °C using a Biacore T200 instrument and a CM5 sensor chip. The flow channels were activated by a 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) mixture. DHOase was diluted in 10 mM sodium succinate (pH 4.5) and immobilized to flow channels 2, 3, and 4 at levels of 12,974 RU, 9,853 RU, and 12,150 RU, respectively. Flow channel 1 was blocked by ethanolamine (pH 8.5) as a control. Compound solutions at increasing concentrations (0–200 μM at 2-fold dilutions) in binding buffer were applied to all four channels at a 10 μL/min flow rate. The SPR binding buffer was PBS-P, 2% DMSO and 0.5 mM TCEP. 1 mM Ca-asp was added to the binding buffer for competition SPR. The sensorgrams were analyzed using Biaevaluation software 2.0.3. All data was referenced with the blank channel response unit signal prior to fitting. The response unit difference at each concentration was measured during the binding equilibrium phase and K_D values were determined using the steady-state affinity fitting equation embedded in the Biaevaluation software.",
+            "Figure 3 caption": "Figure 3. High-throughput screening (HTS) of DHOase. (A) Replicate plot of colorimetric enzymatic assay with fragments showing >50% inhibition in red. (B) Replicate plot of thermal shift binding assay with fragments showing >2 °C shift in red. (C) Melting curve of DHOase without substrate (black) and DHOase with Compound 4 (red). Compound 4 shows a shift in melting temperature (T_m) as indicated by the arrow. (D) Sensorgram of compound 4 at increasing concentrations.",
+            "Figure 4 caption": "Figure 4. High-throughput screening hits. Bar graphs of the dissociation equilibrium constants (K_D) of 8 initial hit compounds determined by Surface Plasmon Resonance (SPR). K_D values were compared in the presence (green) and in the absence (black) of the substrate Ca-asp as a competitor. Bars that reached the top of the graph represent K_D values of over 1000 μM (no binding).",
+            "Table 3": "Table 3 Preliminary Structure–Activity Relationship (SAR) of HTS hit analogs | Compound | MW | R¹ | R² | K_D (μM) | K_D (μM) with 1 mM Ca-asp | |----------|----|----|----|----------|-----------------------------| | 6 | 308.8 | -OCH₃ | | 380 ± 1 | 314 ± 34 | | 6a | 202.3 | -OCH₃ | | 588 ± 38 | 675 ± 12 | | 6b | 186.3 | -CH₃ | | NBᵇ | NBᵇ | | 6c | 176.2 | -OCH₃ | -2-CH₂NH₂ | NBᵇ | NTᶜ | | 7 | 276.3 | -F | | 67 ± 7 | >1 mM | | 7a | 288.4 | -OCH₃ | | 119 ± 13 | 144 ± 69 | | 8 | 244.3 | -OCH₃ | | 205 ± 8 | 215 ± 2 | ᵃ K_D: Equilibrium dissociation constant determined by SPR; the standard deviation are from three independent experiments. ᵇ NB: Non-specific binding pattern. ᶜ NT: not tested."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "histidine-tag cleaved DHOase",
+                "strategy": "Amine coupling",
+                "density_ru": "12,974; 9,853; 12,150",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound solutions (hit compounds from HTS)",
+                "concentration_range": "0–200 μM at 2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20), 2% DMSO, 0.5 mM TCEP, with 1 mM Ca-asp for competition SPR",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow channel 1 blocked with ethanolamine (pH 8.5) as a control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biaevaluation software 2.0.3"
+            }
+        }
+    }
+}

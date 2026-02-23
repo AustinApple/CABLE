@@ -1,0 +1,69 @@
+{
+    "51613369": {
+        "reactant_set_id": 51613369,
+        "pmid": 37413878,
+        "protein": "Hemagglutinin",
+        "ligand": {
+            "smiles": "CC(=O)c1cc(C)c(O)c(Cc2[nH]c3ccc(-c4c5ccccc5cc5ccccc45)cc3c2Cc2c(O)c(C)cc(C(C)=O)c2O)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Influenza A virus (A/Puerto Rico/8/34) Hemagglutinin by surface plasmon resonance (SPR) assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance assay": "Surface plasmon resonance (SPR) assays were conducted on an SPR biosensor instrument GE BiacoreT200 (GE, USA). H1N1/PR8 HA proteins (Sino Biological Inc., Beijing, China) was first immobilized onto the surface of a carboxymethylated dextran sensor chip (CM5) via amino group coupling. Subsequently, to evaluate the binding of compound 5g to the HA protein on the CM5 chip, compound 5g was injected as analytes at various concentrations (37.5, 18.75, 9.375, 4.6875, and 2.34375 μM) and we used 1 × PBSP as running buffer. NaOH solution (2 mM) was used to regenerate the sensor chip. In addition, in order to correct for nonspecific binding and bulk refractive index change, a blank channel without HA was used and run simultaneously for each experiment. Then, the BiacoreT200 SPR evaluation software was used to calculate the kinetic parameters, and the changes in mass due to the binding response were recorded as resonance units (RUs). PND and arbidol were used as positive controls.",
+            "Figure 4 caption": "Fig. 4. Direct interaction of compound 5g with virus HA protein. (A–C) SPR assay was performed to evaluate the binding of PND, compound 5g, and arbidol to the H1N1/PR8 HA protein, respectively. The KD values calculated by the BiacoreT200 SPR evaluation software are shown.",
+            "Figure 4 A": "PR8 HA + PND Kd = 8.4 μM Concentrations: 2.34375 μM, 4.6875 μM, 9.375 μM, 18.75 μM, 37.5 μM",
+            "Figure 4 B": "PR 8 HA + 5g Kd = 6.4 μM Concentrations: 2.34375 μM, 4.6875 μM, 9.375 μM, 18.75 μM, 37.5 μM",
+            "Figure 4 C": "PR8 HA + arbidol Kd = 51.4 μM Concentrations: 2.34375 μM, 4.6875 μM, 9.375 μM, 18.75 μM, 37.5 μM",
+            "Results section - SPR assay": "To inhibit influenza virus, the surface plasmon resonance (SPR) assay was performed with PR8 HA proteins. As shown in Fig. 4, the SPR data revealed a marked binding of 5g to PR8 HA with the KD equivalent to about 6.4 μM, implicating a high affinity of 5g for HA. Simultaneously, the KD value for 5g binding to HA was lower than that of the positive drugs arbidol (KD = 51.4 μM) and PND (8.4 μM), indicating a relatively stronger affinity of 5g to HA."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE"
+            },
+            "immobilization": {
+                "ligand_name": "H1N1/PR8 HA proteins",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 5g",
+                "concentration_range": "2.34375 μM - 37.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1 × PBSP",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "NaOH solution (2 mM)"
+            },
+            "data_analysis": {
+                "reference_description": "blank channel without HA",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "BiacoreT200 SPR evaluation software"
+            }
+        }
+    }
+}

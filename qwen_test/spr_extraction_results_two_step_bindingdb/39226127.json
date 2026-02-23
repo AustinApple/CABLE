@@ -1,0 +1,67 @@
+{
+    "51610678": {
+        "reactant_set_id": 51610678,
+        "pmid": 39226127,
+        "protein": "Signal transducer and activator of transcription 3",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H](CO)N1CCc2c(oc3c2C(=O)C(=O)c2ccccc2-3)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8299.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant GST-tagged STAT3 (unknown origin) assessed as dissociation constant by Surface plasmon resonance (SPR) assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Assay (SPR). The SPR assay was applied with a Biacore T200 instrument (Biacore T200, GE Healthcare, USA). Recombinant STAT3 protein was immobilized on a CMS sensor chip, and a blank channel was employed as a negative control for each assay. Then, 10–0.1625 μM of 10g were diluted with the running buffer and flowed over the chip. The K_D value was calculated with a steady affinity state model by BIACore T200 analysis software.",
+            "Figure 6 caption": "Figure 6. Compound 10g directly binds to STAT3. (A) Prediction of the binding mode of 10g (Ionization state) to the STAT3 SH2 domain (PDB ID: 1BG1). STAT3 protein is shown as a cartoon, and the inter-residues were shown as blue sticks and compound 10g was shown as a cyan stick. (B) SPR to determine the binding affinity of the STAT3 protein with compound 10g. The expression of STAT3 after transfection of STAT3-shRNA was detected by Western blotting in (C) MDA-MB-231 and (D) MDA-MB-468 cells (upper panel). The cell viability of TNBC cells treated with 10g after transfection of STAT3-shRNA was evaluated by MTT assay (lower panel). All of the quantification data in this figure were expressed as mean ± SD (n = 3): ***p < 0.001, ****p < 0.0001.",
+            "Figure 6B plot": "The SPR sensorgram (left) shows response (RU) over time (s) for concentrations of 10g ranging from 10 μM to 0.1625 μM. The equilibrium binding response (right) is plotted against concentration (μM), with a fitted curve indicating a K_D value of 8.299 μM. The concentrations tested are labeled on the plot: 10, 5, 2.5, 1.25, 0.625, 0.3125, and 0.1625 μM.",
+            "Results section": "To confirm that compound 10g is a direct STAT3 inhibitor, a surface plasmon resonance assay (SPR) was performed to analyze the binding affinity (K_D value) between 10g and STAT3. Initially, recombinant STAT3 with a GST tag was immobilized on CMS chips, and then the solution containing compound 10g (concentrations from 10 to 0.1625 μM) flowed over the chip surface, the signal was collected, and the kinetic affinity was calculated by the software. As shown in Figure 6B, 10g exhibited a high affinity with STAT3 protein with a K_D value of 8.30 μM, and this result was consistent with the STAT3 inhibitory assay."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant GST-tagged STAT3",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 10g",
+                "concentration_range": "0.1625 μM - 10 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "blank channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 analysis software"
+            }
+        }
+    }
+}

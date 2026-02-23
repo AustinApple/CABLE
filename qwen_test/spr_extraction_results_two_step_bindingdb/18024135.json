@@ -1,0 +1,72 @@
+{
+    "50864296": {
+        "reactant_set_id": 50864296,
+        "pmid": 18024135,
+        "protein": "Tyrosine-protein kinase SYK",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](NC(=O)[C@@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1ccc(OP(O)(O)=O)cc1)NC(=O)CNC(=O)c1ccc(cc1)\\N=N\\c1ccc(CNC(=O)CNC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](Cc2ccc(OP(O)(O)=O)cc2)NC(C)=O)[C@H](C)O)cc1)[C@H](C)O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 65.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Syk tSH2 domain by SPR binding assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "7. Dekker, F. J.; de Mol, N. J.; van Ameijde, J.; Fischer, M. J. E.; Ruijtenbeek, R.; Redegeld, F. A. M.; Liskamp, R. M. J. ChemBioChem 2002, 3, 238.",
+            "8. Dekker, F. J.; de Mol, N. J.; Fischer, M. J. E.; Liskamp, R. M. J. Bioorg. Med. Chem. Lett. 2003, 13, 1241.",
+            "21. De Mol, N. J.; Gillies, M. B.; Fischer, M. J. E. Bioorg. Med. Chem. 2002, 10, 1477."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "Peptide 1 (1.02 mg, 0.675 μmol) was dissolved in HBS buffer (675 μL) to obtain a stock solution with a concentration of 1 mM. A series of samples was prepared in HBS buffer containing 50 nM Syk tSH2 and 1 with concentrations ranging from 0 to 3750 nM. The sensor chip was immobilized with the native ITAM peptide as described.7 Competition experiments were performed with the trans isomer 1a and with the isomer mixture 1b. For this 240 μL samples were irradiated with visible light for complete conversion to the trans isomer 1a. Then, half of the sample was injected into the SPR apparatus.",
+            "Figure 4 caption": "Figure 4. SPR competition experiments with Syk tSH2 (50 nM) in the presence of various concentrations of peptide 1 in cis (○) or trans (●) conformation. The data are fitted and KD derived as described.21",
+            "Figure 5 caption": "Figure 5. Effect of conversion of cis isomer 1b to trans isomer 1a in an SPR competition experiment within situ irradiation with visible light. Top curve: Real time SPR signal for binding of 50 nM Syk tSH2 to immobilized native diphosphorylated γ-ITAM peptide on the SPR sensor surface. Bottom curve: SPR signal of 50 nM Syk tSH2 in the presence of 375 nM 1a. Middle curve: 50 nM Syk tSH2 in the presence of 375 nM 60% 1b, after 800 s the sample in the SPR cuvette was irradiated with visible light as indicated by the arrow.",
+            "Results and Discussion - SPR Analysis": "The interaction between the two isomers and the Syk tSH2 protein was measured with SPR. Competition experiments were performed with the native ITAM peptide immobilized on the SPR chip as previously described.1,7,8 Prior to addition, the competing ligand 1 was irradiated with UV light (366 nm) or visible light to give 60% cis isomer or 100% isomer, respectively. The tSH2 and the irradiated cis or trans isomer in different concentrations were injected into the SPR cuvette and the binding of the tSH2 to the sensor chip was measured. From these measurements the dissociation constants (KD) could be calculated as described previously",
+            "Results and Discussion - SPR Analysis (continued)": "The KD value of the trans isomer was 65 ± 8 nM and the observed KD of the mixture containing 60% cis isomer was 146 ± 11 nM. Since the mixture still contained 40% trans isomer 1a, the actual KD,cis can be calculated with Eq. 1 and amounts to 860 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "native ITAM peptide",
+                "strategy": "Direct immobilization",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptide 1 (cis and trans isomers, including mixture 1b)",
+                "concentration_range": "0 to 3750 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    }
+}
