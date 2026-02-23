@@ -1,0 +1,60 @@
+{
+    "50913100": {
+        "reactant_set_id": 50913100,
+        "pmid": 29510947,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "Fc1ccc2[nH]cc(CC3CCOCC3)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 410000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ATP-binding site of ERK2 (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC": "Binding constants and thermodynamic parameters of the interaction between ERK2 and the hit compounds were determined with an ITC200 instrument (GE Healthcare) at 25 °C. Samples were equilibrated with a buffer composed of 25 mM HEPES (pH 7.5), 150 mM NaCl, and 5% (v/v) DMSO. ERK2 at 20 μM was titrated with compounds at 2.5 mM. Data were analyzed with ORIGIN7 using a one-site binding model.",
+            "Results - ITC analysis": "To characterize the thermodynamic features of the noncovalent bond formation between ERK2 and the fragments, we performed an ITC analysis of the hit compounds. One compound (PKO-35641) showed exothermic binding (Fig. S5). The K_D value and thermodynamic parameters of PKO-35641 were: K_D = 410 ± 41 μM, ΔH = −6.2 kcal mol−1, −TΔS = 1.6 kcal mol−1, and ΔG = −4.6 kcal mol−1, when the binding stoichiometry was fixed as 1.0. The dissociation constant was determined to be submillimolar, and the thermodynamics showed favorable binding enthalpy and unfavorable binding entropy changes. For the other hit compounds, exothermic and endothermic reactions were not observed."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "ERK2",
+                "location": "cell",
+                "concentration": "20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PKO-35641",
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM HEPES, 150 mM NaCl, 5% (v/v) DMSO",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

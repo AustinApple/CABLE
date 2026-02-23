@@ -1,0 +1,60 @@
+{
+    "51570228": {
+        "reactant_set_id": 51570228,
+        "pmid": 38064686,
+        "protein": "Retinoic acid receptor RXR-alpha",
+        "ligand": {
+            "smiles": "OC(=O)[C@@H]1C[C@H]1c1nc(c(o1)-c1cc(cc(c1)C(F)(F)F)C(F)(F)F)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "<",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RXR alpha LBD (unknown origin) assessed as dissociation constant at 25 degree C by isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 24: Schierle, S.; Chaikaud, A.; Lillich, F. F.; Ni, X.; Woltersdorf, S.; Merk, D. Oxaprozin Analogues as Selective RXR Agonists with Superior Properties and Pharmacokinetics. J. Med. Chem. 2021, 64 (8), 5123–5136. Reference 50: Chaikaud, A.; Pollinger, J.; Rühl, M.; Ni, X.; Heering, J.; Merk, D. Comprehensive Set of Tertiary Complex Structures and Palmitic Acid Binding Provide Molecular Insights into Ligand Design for RXR Isoforms. Int. J. Mol. Sci. 2020, 21 (22), No. 8457.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC) experiments were conducted on an Affinity ITC instrument (TA Instruments, New Castle, DE) at 25 °C with a stirring speed of 75 rpm. RXRα LBD protein (8 μM, prepared as described previously24,50) in buffer (20 mM Tris pH 7.5, 100 mM NaCl, 5% glycerol) containing 4% DMSO was titrated with rac-27 (40 μM) in the same buffer containing 4% DMSO in 26 injections (1 × 1 and 25 × 4 μL) with an injection interval of 150 s. As control experiments, rac-27 was titrated into the buffer and the buffer was titrated into the RXRα LBD protein under otherwise identical conditions. The heat of the compound-RXRα LBD titration was analyzed using NanoAnalyze software (TA Instruments) with an independent binding model.",
+            "Figure 2 caption - ITC data": "Figure 2. Profiling of rac-27. (a) rac-27 activated full-length human RXR on the RXR:RXR homodimer and the RXR:RAR heterodimer response elements with low nanomolar potency. Data are the mean ± S.E.M. fold activation; n = 4. (b) rac-27 induced mRNA expression of the RXR homodimer-regulated glycerophosphodiester phosphodiesterase 1 (GDE1) in HT29 cells. Data are the mean ± S.E.M. relative GDE1 mRNA expression with GAPDH as a reference gene; n = 6; ***p < 0.001, ****p < 0.0001 (ANOVA). (c) High-affinity binding of rac-27 to the RXRα LBD was confirmed by isothermal titration calorimetry. The isotherm at 25 °C is shown. (d) rac-27 exhibited no off-target activity in the nuclear receptor family at 1 μM corresponding to >100-fold selectivity. rac-27 was tested alone and in competition with the selective reference ligands (see Experimental section). Data are the mean ± S.E.M.; n = 3. (e) rac-27 was nontoxic up to 30 μM concentration in COS-7 cells. Data are the mean ± S.E.M.; n = 3. Doxorubicin (100 μM) as a positive control. (f) rac-27 exhibited high microsomal stability. Propranolol for comparison. Data are the mean ± S.E.M.; n = 6 (rac-27), n = 3 (propranolol)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "TA Instruments Affinity ITC"
+            },
+            "protein": {
+                "name": "RXRα LBD",
+                "location": "cell",
+                "concentration": "8",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "rac-27",
+                "location": "syringe",
+                "concentration": "40"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris, 100 mM NaCl, 5% glycerol, 4% DMSO",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "75",
+                "reference_cell_content": null,
+                "control_method": "rac-27 was titrated into the buffer and the buffer was titrated into the RXRα LBD protein under otherwise identical conditions",
+                "injection_parameters": {
+                    "first_volume": "1",
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "26"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "51459936": {
+        "reactant_set_id": 51459936,
+        "pmid": 35224498,
+        "protein": "Cell division protein FtsZ",
+        "ligand": {
+            "smiles": "COc1cc2ncnc(Nc3ccc(F)c(Cl)c3)c2cc1NC(=O)\\C=C\\N1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Staphylococcus aureus FtsZ assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal titration calorimetry": "A MicroCal PEAQ-ITC instrument (Malvern Panalytical Company) was used to study the thermodynamic parameters in the binding between the test compounds and SaFtsZ. SaFtsZ was dialyzed against Tris-HCl buffer (20 mM Tris-HCl, 150 mM NaCl, pH 7.5), and the test ligands were dissolved in the same dialysis buffer to minimize the heat changes arising from the mismatch between the two portions of solution during the titration. The concentration of DMSO was kept at 5% in both the cell and the syringe. In a typical titration, at the time interval of every 4 seconds, a 2 μL portion of the test compound at 200 μM was titrated into the sample cell containing 20 μM SaFtsZ, and 150 seconds was allowed to maintain a zero-temperature difference between the reference and the sample cell. The total number of injections was 19. The data were analyzed using the MicroCal PEAQ-ITC Analysis Software (Malvern Panalytical Company).",
+            "Results - Binding affinity studies": "Interactions between S2727 and SaFtsZ were characterized by isothermal titration calorimetry (ITC) (Fig. 7). When analyzing the ITC data, ‘one set of sites’ was selected as the fitting model. The dissociation constant (Kd) was determined by an analyzing software (the MicroCal PEAQ-ITC Analysis Software). The dissociation constants (Kd) S2727 with SaFtsZ were 0.6 ± 0.11 μM. The binding between S2727 and SaFtsZ is demonstrated.",
+            "Figure 7 caption": "Fig. 7 ITC titration curve of SaFtsZ with S2727. The top picture is the raw ITC signals resulting from S2727 binding to SaFtsZ in 20 mM Tris-HCl, 150 mM NaCl, pH 7.5, at 25 °C. The curve in the bottom picture was the integrated ITC signals of S2727 binding to SaFtsZ in the same buffer. The dissociation constants (Kd) S2727 with SaFtsZ were 0.6 ± 0.11 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "SaFtsZ",
+                "location": "cell",
+                "concentration": "20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "S2727",
+                "location": "syringe",
+                "concentration": "200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": "4",
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

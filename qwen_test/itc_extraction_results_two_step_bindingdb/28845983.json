@@ -1,0 +1,59 @@
+{
+    "50758484": {
+        "reactant_set_id": 50758484,
+        "pmid": 28845983,
+        "protein": "Bile acid receptor",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc(cc1)C(=O)NCc1ccc(NS(C)(=O)=O)cc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 130.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FXR ligand binding domain (unknown origin) isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, U.K.) at 25 °C. The FXR-LBD (10 μM) was dialyzed against 20 mM HEPES (pH 7.4), 100 mM NaCl, 1 mM DTT, 0.02% CHAPS, and 10% glycerol. The compound 57 (1 mM) was dissolved in the same buffer. The protein solution was loaded into the sample cell, and the compound solution was loaded into the syringe. The titration consisted of 20 injections of 2 μL each, with a 180 s interval between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, U.S.A.) with a one-site binding model. The dissociation constant (Kd) was calculated from the binding isotherm. The enthalpy change (ΔH) and entropy change (ΔS) were derived from the fit. The binding stoichiometry (n) was also determined. The experiment was repeated independently at least three times. The Kd value for 57 was 0.13 μM, with ΔH = -19.5 kcal/mol and ΔS = -34.0 cal mol-1 K-1. The discrepancy between cellular EC50 value and Kd seems due to absence of coactivators in the ITC experiment that might significantly affect the binding equilibrium. The high binding energy might partly arise from potentially marked conformational changes in the FXR-LBD upon binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "FXR-LBD",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 57",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.02% CHAPS, 10% glycerol",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

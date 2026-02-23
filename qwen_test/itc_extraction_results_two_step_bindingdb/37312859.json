@@ -1,0 +1,422 @@
+{
+    "51524200": {
+        "reactant_set_id": 51524200,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)Cc1ccc(Cl)c(c1)C(F)(F)F)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51524201": {
+        "reactant_set_id": 51524201,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)S(=O)(=O)c1ccc(Br)c(c1)[N+]([O-])=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51524202": {
+        "reactant_set_id": 51524202,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)S(=O)(=O)c1ccc(F)c(c1)[N+]([O-])=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51524203": {
+        "reactant_set_id": 51524203,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)S(=O)(=O)c1ccc(Cl)c(c1)[N+]([O-])=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51524204": {
+        "reactant_set_id": 51524204,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)Cc1ccc(Cl)cc1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51524205": {
+        "reactant_set_id": 51524205,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)S(=O)(=O)c1cnc(Cl)cn1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51524206": {
+        "reactant_set_id": 51524206,
+        "pmid": 37312859,
+        "protein": "tRNA (cytosine(38)-C(5))-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)Cc1ccc(c(c1)C(F)(F)F)[N+]([O-])=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full-length human DNMT2 expressed in bacteria assessed as apparent dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zimmermann, R. A.; Schwicker, M.; Meidner, J. L.; Nidoieva, Z.; Helm, M.; Schirmeister, T. An Optimized Microscale Thermophoresis Method for High-Throughput Screening of DNA Methyltransferase 2 Ligands. ACS Pharmacol. Transl. Sci. 2022, 5 (11), 1079–1085.",
+        "original_paragraph": {
+            "Materials and Methods": "To determine the binding affinity of the compounds toward hDNMT2, a screening was performed with full-length hDNMT2 (if not described otherwise, full-length protein was used) based on a microscale thermophoresis (MST) displacement method using the fluorescent ligand FTAD.20 Potent binders were defined as compounds that were able to displace FTAD approximately to the same extent as SFG (MST shift ≥13‰; cut-off ≥10‰). For all potent binders an apparent KD value (KDapp) was determined using MST. All other compounds were not further evaluated. Ligands with the highest affinity toward hDNMT2 (41, 45, 78–80, and 91; 32 for comparison), were subjected to isothermal titration calorimetry (ITC), which served as an orthogonal method to quantify the binding affinity of those ligands. The results from ITC measurements confirmed the data of the MST measurements, as the results of both methods showed a high consistency. Finally, to investigate their actual inhibitory effect, the most potent binders and some selected weak binders were evaluated using a 3H-assay. The assay was performed with tRNAAsp as substrate and tritium-labeled SAM (3H-SAM) as cosubstrate at a compound concentration of 100 μM. For the most potent inhibitors IC50 values were determined. All results are summarized in Table 1.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The hDNMT2 protein (10–20 μM) was placed in the sample cell, and the ligand (100–200 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20. The stirring speed was set to 750 rpm. The injections were performed in 20 steps of 2 μL each, with a spacing of 120 s between injections. The reference power was set to 5 μcal/s. The data were analyzed using the Origin software (Malvern Panalytical) with a one-site binding model. The apparent dissociation constant (KDapp) was calculated from the binding isotherm.",
+            "Figure 4 caption": "Figure 4. (A) LC-MS of intact, denatured hDNMT2Δ with and without ligands. Corresponding peak for free protein signal is highlighted in gray (32+ charge state). For 45 and SFG, no binding was detected under denaturing conditions. Binding to 78–80 all led to addition of the same 551 Da moiety (mass shift and corresponding structure shown in orange). Binding to 91 led to addition of a 508 Da moiety (structure and mass shift shown in blue). (B) Native MS of hDNMT2Δ in complex with 45 and SFG. Peaks corresponding to free protein signal (charge states 14+ and 15+) are highlighted in gray. Binding to 45 (two binding events) and SFG (one event) are highlighted in blue and orange, respectively.",
+            "Supporting Information": "Additional measurements under near-native conditions were performed with SFG and 45 (Figure 4B). As is typical in native MS, these spectra show a narrow charge state distribution with low charge states. For both ligands, a shift by the corresponding mass was detected (570 Da for 45; 381 Da for SFG). Furthermore, a second binding event of ligand 45 was observed. This demonstrates the noncovalent binding of 45 and SFG to hDNMT2Δ. This second, but weaker binding event observed for 45 and 74 could also explain the increased binding stoichiometry determined in the ITC experiments (1.37 ± 0.01 and 1.34 ± 0.04, respectively). On the other hand, for 91, a decreased binding stoichiometry (0.84 ± 0.01) was measured, leading to the assumption that this compound is too reactive and therefore could cause partial protein aggregation. All other compounds investigated with ITC showed binding stoichiometries in the range from 0.9 to 1.1 toward hDNMT2Δ, which correlates nicely with data obtained from protein MS. We determined the binding sites of the covalent ligands with a tryptic digest followed by bottom-up LC-MS/MS. A high sequence coverage of over 80% was achieved for all samples. For 78–80, binding to Cys79, which is known to be the catalytically active cysteine, was detected. In agreement with the denatured intact mass measurements, which indicated a second binding site for 79, an additional modified peptide containing the cysteine residue corresponding to Cys287 in the wild-type protein was detected. Similarly, binding of 91 was also observed at Cys79 and Cys287. As expected, no modified peptides were detected for 45 and SFG, which is consistent with a noncovalent binding mode. These findings indicated two covalent binding sites for 79 and 91, and the binding to only the desired target Cys79 for 78 and 80. Given that four surface-exposed cysteines can be found in the crystal structure of hDNMT2 (PDB 1G55), the results highlight the nonpromiscuous binding behavior of compounds 78 and 80, which only reacted with the catalytically active Cys79. A detailed overview of the results is shown in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hDNMT2",
+                "location": "cell",
+                "concentration": "10-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

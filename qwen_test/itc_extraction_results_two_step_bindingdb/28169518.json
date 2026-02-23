@@ -1,0 +1,59 @@
+{
+    "389054": {
+        "reactant_set_id": 389054,
+        "pmid": 28169518,
+        "protein": "Cytochrome P450 144 [31-434]",
+        "ligand": {
+            "smiles": "Nc1[nH]nc(c1-c1ccc(O)c(c1)-c1cccc(N)c1)-c1ccc(O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 140000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "ITC binding isotherms were recorded on a MicroCal ITC200 instrument (MalvernInstruments). Titrations were conducted at 25 °C by injecting aliquots (2.0 &#956;L) of ligand solutions (1 mM) into protein samples (60.9 &#956;M), both of which had been diluted in 50 mM Tris-HCl buffer (pH 7.5), containing 100 mM KCl, and adjusted to give a final concentration of 10% v/v DMSO-d6. Titrations were typically 20 injections at 90 s intervals. Small background heats from dilution of the ligand were subtracted after performing a second control titration of ligand samples into buffer without protein. Binding isotherms were integrated to give the enthalpy change of each injection and plotted against the molar ratio of ligand added to the sample cell.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. ITC binding isotherms were recorded on a MicroCal ITC200 instrument (Malvern Instruments). Titrations were conducted at 25 °C by injecting aliquots (2.0 μL) of ligand solutions (1 mM) into protein samples (60.9 μM), both of which had been diluted in 50 mM Tris-HCl buffer (pH 7.5), containing 100 mM KCl, and adjusted to give a final concentration of 10% v/v DMSO-d6. Titrations were typically 20 injections at 90 s intervals. Small background heats from dilution of the ligand were subtracted after performing a second control titration of ligand samples into buffer without protein. Binding isotherms were integrated to give the enthalpy change of each injection and plotted against the molar ratio of ligand added to the sample cell. Titrations were fitted using a one-site binding model, using Origin analysis software provided by the manufacturer. The binding stoichiometry was set at N = 1 or 2 to reflect the binding stoichiometry observed in nano-ESI native mass spectra."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": null,
+                "location": "cell",
+                "concentration": "60.9",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM Tris-HCl, 100 mM KCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer without protein; small background heats from dilution of the ligand were subtracted",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "90",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

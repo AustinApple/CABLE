@@ -1,0 +1,61 @@
+{
+    "51389906": {
+        "reactant_set_id": 51389906,
+        "pmid": 33062184,
+        "protein": "GTPase KRas",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CSSC[C@H](NC(=O)[C@@H](NC(=O)[C@@H]2CCCN2C(=O)[C@H](CC(O)=O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC1=O)C(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CCCNC(N)=N)C(N)=O)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CCCNC(N)=N)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to KRAS G12D mutant (unknown origin) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical) at 25 °C. The KRAS G12D protein (100 μM) was loaded into the sample cell, and the peptide (1–2 mM) was loaded into the syringe. The buffer was 20 mM HEPES, pH 7.4, 150 mM NaCl, 0.03 mM n-dodecyl β-d-maltoside. The peptide was titrated into the protein with 20 injections of 2 μL each, spaced 120 s apart. The stirring speed was 750 rpm. The data were analyzed using Origin 7.0 software (OriginLab) with a 1:1 binding model. The control experiment involved titrating the peptide into buffer alone.",
+            "Figure 5 caption": "Figure 5. Isothermal titration calorimetry. (A–D) Heat changes from titration of SAH-SOS1A into (A) KRAS G12D or (B) buffer alone and from titration of cyclorasin 9A5 into (C) KRAS G12D or (D) KRAS G12V. (E) KRpep-2d demonstrated tight binding to KRAS G12D. Raf-RBD demonstrated (F) tight binding to activated wild-type KRAS (GMPPNP) but (G) no binding to the inactive wild-type KRAS (GDP). The assay buffer included 0.03 mM n-dodecyl β-d-maltoside as a detergent.",
+            "Results and Discussion": "To cross-validate our FP and SPR data, we used isothermal titration calorimetry (ITC), a rigorous technique for measuring biomolecular interactions directly under homogeneous conditions. This technique further confirmed that neither SAH-SOS1A nor cyclorasin 9A5 bound to KRAS G12D (Figure 5A,C). Cyclorasin 9A5 also did not bind to KRAS G12V, the protein used for discovery of the macrocyclic peptide (Figure 5D). The heats released during the titrations of SAH-SOS1A into the protein or the buffer itself are almost identical (Figure 5A,B). In contrast, we showed that KRpep-2d binds to KRAS G12D with a KD of 21 nM and a stoichiometry close to unity (Figure 5E). Wild-type KRAS adopts distinct conformations when bound to different nucleotides. As a confirmatory experiment, we showed that wild-type KRAS binds to its downstream effector (Raf-RBD, KD = 6 nM) only when KRAS is activated with GMPPNP but not with GDP (Figure 5F,G)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KRAS G12D",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "peptide",
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 150 mM NaCl, 0.03 mM n-dodecyl β-d-maltoside",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Titration of peptide into buffer alone",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

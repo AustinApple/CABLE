@@ -1,0 +1,62 @@
+{
+    "50508743": {
+        "reactant_set_id": 50508743,
+        "pmid": 27450788,
+        "protein": "Peroxisome proliferator-activated receptor delta",
+        "ligand": {
+            "smiles": "COc1cc(cc(OC)c1O)[C@H]1OC[C@H]2[C@@H]1CO[C@@H]2c1cc(OC)c(O)c(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27620.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PPARbeta-LBD (254 to 441 residues) (unknown origin) expressed in Escherichia coli Rosetta2 cells by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Recombinant protein purification. PPARβ-LBD construct ranging from 254 to 441 was cloned into pET32a (Invitrogen) between BamHI and EcoRI restriction enzyme sites. Protein was overexpressed in E. coli Rosetta2 strain and purified by affinity chromatography on Ni-NTA resin column (Qiagen). Protein was dialyzed against buffer A (50 mM Tris–HCl pH 7.4, 150 mM NaCl, 50 mM EDTA) overnight at 4 °C. Further purification was conducted on Anion exchange Hitrap Q column (GE Healthcare) equilibrated with buffer A and eluted with gradient from 10% to 80% of buffer B (50 mM Tris–HCl pH 7.4, 1 M NaCl, 50 mM EDTA). Fractions containing pure protein were confirmed by using Experion Pro260 chip (Bio-Rad) and followed by concentrating by 10 kDa-centrifugal filters (Merck). Syringaresinol sample. (8R,8'R)-(+)–Syringaresinol was synthesized at Hanchem company with the high purity (>99.7%). To determine the binding affinity between PPARβ-LBD and Syr, isothermal titration calorimetry (ITC) experiments were performed on a VP-ITC instrument (MicroCal). All buffer, protein and ligand solutions were centrifuged and degassed well before used. 2.0 mM Syringaresinol in buffer supplemented with 5% DMSO was titrated to sample cell containing 0.2 mM PPARβ-LBD in the same buffer at 20 °C. Each of injection is 10 μL among 25 of the total number of injections. In the reference experiment, the buffer was injected into protein.",
+            "Figure 1 caption": "Figure 1. Syringaresinol binds to and activates PPARβ-LBD. (A) Docking of PPARβ-LBD/Syr complex. Complex model displays the localization of Syr in ligand binding pocket of PPARβ. The C-backbone of Syr is shown in forest color and Oxygen in red. Hydrogen bond formed between H413 residue and Syr is shown as a dashed line. (B) The purified PPARβ-LBD showed a single purified band assessed by Experion Pro260 chip. (C) The interaction between PPARβ-LBD and Syr was characterized by ITC. ITC data were best fitted with a one binding-site model. (D) TR-FRET assays with Syr compared to PPARβ agonist, GW0742. Values that are denoted by different letters are significantly different (P ≤ 0.05).",
+            "Results section": "The interaction of Syr and PPARβ-LBD was characterized by ITC with the best fit of one-site model (ΔH = −370 ± 125 kcal mol−1). This finding supports the one binding site between Syr and PPARβ-LBD. The binding affinity is 27.62 ± 15.76 μM for KD (Fig. 1C).",
+            "Figure 1C": "One binding site, KD 27.62 ± 15.76 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "PPARβ-LBD",
+                "location": "cell",
+                "concentration": "200",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "Syringaresinol",
+                "location": "syringe",
+                "concentration": "2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM Tris–HCl, 150 mM NaCl, 50 mM EDTA",
+                "pH": "7.4",
+                "temperature_c": "20",
+                "stirring_speed": null,
+                "reference_cell_content": "buffer",
+                "control_method": "Titration of buffer into protein (reference experiment)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "10",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

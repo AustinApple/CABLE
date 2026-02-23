@@ -1,0 +1,242 @@
+{
+    "50247325": {
+        "reactant_set_id": 50247325,
+        "pmid": 25375781,
+        "protein": "Glutamate receptor 2",
+        "ligand": {
+            "smiles": "Fc1ccc2N(CNS(=O)(=O)c2c1)C1CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 350.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GluA2-LBD-L483Y-N754S complex (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. ITC was performed using an ITC200 MicroCalorimeter (GE Healthcare) with a cell volume of 200 μL at 25 °C. Protein concentration was determined by UV absorption. The protein solution consisted of either 96 μM (for compound 6 titration) or 50 μM (for compound 5 titration) GluA2-LBD-L483Y-N754S in 100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu, pH 7.0. The buffer used for the protein solution was also used to dissolve compounds 5 and 6. Both experiments were direct titrations with 8.2 μM 6 and 1.9 μM 5, using 20 injections of 2 μL at 3 min intervals, except for the first injection, which was 0.4 μL. The Origin 7.0 software (MicroCal) was used for data analysis (single binding site model). Prior to fitting, the first data point was discarded and the heat of dilution of injecting ligand into buffer was subtracted. The reported ΔH, −TΔS, and Kd are mean values of three independent titrations.",
+            "Figure 3 caption": "Figure 3. Isothermal titration calorimetry study of binding of 5 (A) and 6 (B) to GluA2-LBD-L483Y-N754S. Raw data (top panel) and isotherm (bottom panel) are shown. Heat is developed after each injection (exothermic reaction), and the signal is reduced when the protein is saturated with 5 and 6, respectively. The experiments shown are representative of three experiments.",
+            "Table 2": "Table 2. Isothermal Titration Calorimetry Using GluA2-LBD-L483Y-N754S | | 5 | 6 | 7^a | 9^b | |---|---|---|---|---| | Kd (μM) | 9.8 ± 0.7 | 1200 ± 40^c | 5.6 ± 0.9^a | 0.35 ± 0.02 | | ΔH (kcal/mol) | −3.4 ± 0.1 | −3.2 ± 0.1 | −4.9 ± 0.4 | −7.5 ± 0.2 | | −TΔS (kcal/mol) | −3.4 ± 0.1 | −0.8 ± 0.1 | −2.3 ± 0.4 | −1.3 ± 0.2 | | nH | 2.1 ± 0.2 | 2.0^d | 2.3 ± 0.1 | 2.7 ± 0.1 | ^aValues from ref 34. ^bValues from ref 32. ^cStandard deviation. ^d nH of compound 6 was fixed at 2.00 during fitting.",
+            "Results and Discussion - Isothermal Titration Calorimetry": "The structures of GluA2-LBD-L483Y-N754S in complex with either 5 or 6 showed different numbers of coordinated water molecules and differences in intermodulator distances. To understand the thermodynamic differences between binding of 5 and 6, we measured the thermodynamics of binding using isothermal titration calorimetry (ITC). GluA2-LBD-L483Y-N754S was also the choice for these studies, as it exists as a preformed dimer in solution, thus mimicking the endogenous binding environment of the dimer of dimers structure found in the full-length GluA2 receptor. Therefore, modulator binding can be measured independently of dimer formation. The ITC measurements showed that the binding of both 5 and 6 to GluA2-LBD-L483Y-N754S is an exothermic process, meaning that heat is generated during binding of the modulators to GluA2-LBD (Figure 3). For 5, the binding affinity (Kd) was measured to be 9.8 μM with ΔH = −3.4 kcal/mol and −TΔS = −3.4 kcal/mol, and for 6, Kd = 1200 μM with ΔH = −3.2 kcal/mol and −TΔS = −0.8 kcal/mol (Table 2). Whereas the enthalpies of 5 and 6 are comparable, 6 has higher entropy of binding than 5, which explains the better binding affinity of 5 compared to 6. A bound water molecule is associated with higher order and thus higher entropy of binding. Compounds 5 and 6 bind in an overall similar binding mode, but differences in the water network surrounding the modulators were observed. Therefore, it is likely that water molecules coordinating directly to the sulfonamide of 6 may partly explain the entropy penalty upon binding of 6 to GluA2-LBD. A comparison of the thermodynamic details of binding of 5 and 6 to those of 7 shows a slight loss of enthalpy for 5 and 6 (ΔH = −3.4/−3.2 versus −4.9 kcal/mol), presumably due to the lack of the weak hydrogen–fluorine bond seen between 7 and GluA2-LBD-L483Y-N754S."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "GluA2-LBD-L483Y-N754S",
+                "location": "cell",
+                "concentration": "96",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 5 or compound 6",
+                "location": "syringe",
+                "concentration": "1.9"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of injecting ligand into buffer were subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50247326": {
+        "reactant_set_id": 50247326,
+        "pmid": 25375781,
+        "protein": "Glutamate receptor 2",
+        "ligand": {
+            "smiles": "CCN1CNS(=O)(=O)c2cc(F)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GluA2-LBD-L483Y-N754S complex (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. ITC was performed using an ITC200 MicroCalorimeter (GE Healthcare) with a cell volume of 200 μL at 25 °C. Protein concentration was determined by UV absorption. The protein solution consisted of either 96 μM (for compound 6 titration) or 50 μM (for compound 5 titration) GluA2-LBD-L483Y-N754S in 100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu, pH 7.0. The buffer used for the protein solution was also used to dissolve compounds 5 and 6. Both experiments were direct titrations with 8.2 μM 6 and 1.9 μM 5, using 20 injections of 2 μL at 3 min intervals, except for the first injection, which was 0.4 μL. The Origin 7.0 software (MicroCal) was used for data analysis (single binding site model). Prior to fitting, the first data point was discarded and the heat of dilution of injecting ligand into buffer was subtracted. The reported ΔH, −TΔS, and Kd are mean values of three independent titrations.",
+            "Figure 3 caption": "Figure 3. Isothermal titration calorimetry study of binding of 5 (A) and 6 (B) to GluA2-LBD-L483Y-N754S. Raw data (top panel) and isotherm (bottom panel) are shown. Heat is developed after each injection (exothermic reaction), and the signal is reduced when the protein is saturated with 5 and 6, respectively. The experiments shown are representative of three experiments.",
+            "Table 2": "Table 2. Isothermal Titration Calorimetry Using GluA2-LBD-L483Y-N754S | | 5 | 6 | 7^a | 9^b | |---|---|---|---|---| | Kd (μM) | 9.8 ± 0.7 | 1200 ± 40^c | 5.6 ± 0.9^a | 0.35 ± 0.02 | | ΔH (kcal/mol) | −3.4 ± 0.1 | −3.2 ± 0.1 | −4.9 ± 0.4 | −7.5 ± 0.2 | | −TΔS (kcal/mol) | −3.4 ± 0.1 | −0.8 ± 0.1 | −2.3 ± 0.4 | −1.3 ± 0.2 | | nH | 2.1 ± 0.2 | 2.0^d | 2.3 ± 0.1 | 2.7 ± 0.1 | ^aValues from ref 34. ^bValues from ref 32. ^cStandard deviation. ^d nH of compound 6 was fixed at 2.00 during fitting.",
+            "Results and Discussion - Isothermal Titration Calorimetry": "The structures of GluA2-LBD-L483Y-N754S in complex with either 5 or 6 showed different numbers of coordinated water molecules and differences in intermodulator distances. To understand the thermodynamic differences between binding of 5 and 6, we measured the thermodynamics of binding using isothermal titration calorimetry (ITC). GluA2-LBD-L483Y-N754S was also the choice for these studies, as it exists as a preformed dimer in solution, thus mimicking the endogenous binding environment of the dimer of dimers structure found in the full-length GluA2 receptor. Therefore, modulator binding can be measured independently of dimer formation. The ITC measurements showed that the binding of both 5 and 6 to GluA2-LBD-L483Y-N754S is an exothermic process, meaning that heat is generated during binding of the modulators to GluA2-LBD (Figure 3). For 5, the binding affinity (Kd) was measured to be 9.8 μM with ΔH = −3.4 kcal/mol and −TΔS = −3.4 kcal/mol, and for 6, Kd = 1200 μM with ΔH = −3.2 kcal/mol and −TΔS = −0.8 kcal/mol (Table 2). Whereas the enthalpies of 5 and 6 are comparable, 6 has higher entropy of binding than 5, which explains the better binding affinity of 5 compared to 6. A bound water molecule is associated with higher order and thus higher entropy of binding. Compounds 5 and 6 bind in an overall similar binding mode, but differences in the water network surrounding the modulators were observed. Therefore, it is likely that water molecules coordinating directly to the sulfonamide of 6 may partly explain the entropy penalty upon binding of 6 to GluA2-LBD. A comparison of the thermodynamic details of binding of 5 and 6 to those of 7 shows a slight loss of enthalpy for 5 and 6 (ΔH = −3.4/−3.2 versus −4.9 kcal/mol), presumably due to the lack of the weak hydrogen–fluorine bond seen between 7 and GluA2-LBD-L483Y-N754S."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "GluA2-LBD-L483Y-N754S",
+                "location": "cell",
+                "concentration": "96",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 5 or compound 6",
+                "location": "syringe",
+                "concentration": "1.9"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of injecting ligand into buffer were subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50247327": {
+        "reactant_set_id": 50247327,
+        "pmid": 25375781,
+        "protein": "Glutamate receptor 2",
+        "ligand": {
+            "smiles": "CCN1CNS(=O)(=O)c2cnccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1200000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GluA2-LBD-L483Y-N754S complex (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. ITC was performed using an ITC200 MicroCalorimeter (GE Healthcare) with a cell volume of 200 μL at 25 °C. Protein concentration was determined by UV absorption. The protein solution consisted of either 96 μM (for compound 6 titration) or 50 μM (for compound 5 titration) GluA2-LBD-L483Y-N754S in 100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu, pH 7.0. The buffer used for the protein solution was also used to dissolve compounds 5 and 6. Both experiments were direct titrations with 8.2 μM 6 and 1.9 μM 5, using 20 injections of 2 μL at 3 min intervals, except for the first injection, which was 0.4 μL. The Origin 7.0 software (MicroCal) was used for data analysis (single binding site model). Prior to fitting, the first data point was discarded and the heat of dilution of injecting ligand into buffer was subtracted. The reported ΔH, −TΔS, and Kd are mean values of three independent titrations.",
+            "Figure 3 caption": "Figure 3. Isothermal titration calorimetry study of binding of 5 (A) and 6 (B) to GluA2-LBD-L483Y-N754S. Raw data (top panel) and isotherm (bottom panel) are shown. Heat is developed after each injection (exothermic reaction), and the signal is reduced when the protein is saturated with 5 and 6, respectively. The experiments shown are representative of three experiments.",
+            "Table 2": "Table 2. Isothermal Titration Calorimetry Using GluA2-LBD-L483Y-N754S | | 5 | 6 | 7^a | 9^b | |---|---|---|---|---| | Kd (μM) | 9.8 ± 0.7 | 1200 ± 40^c | 5.6 ± 0.9^a | 0.35 ± 0.02 | | ΔH (kcal/mol) | −3.4 ± 0.1 | −3.2 ± 0.1 | −4.9 ± 0.4 | −7.5 ± 0.2 | | −TΔS (kcal/mol) | −3.4 ± 0.1 | −0.8 ± 0.1 | −2.3 ± 0.4 | −1.3 ± 0.2 | | nH | 2.1 ± 0.2 | 2.0^d | 2.3 ± 0.1 | 2.7 ± 0.1 | ^aValues from ref 34. ^bValues from ref 32. ^cStandard deviation. ^d nH of compound 6 was fixed at 2.00 during fitting.",
+            "Results and Discussion - Isothermal Titration Calorimetry": "The structures of GluA2-LBD-L483Y-N754S in complex with either 5 or 6 showed different numbers of coordinated water molecules and differences in intermodulator distances. To understand the thermodynamic differences between binding of 5 and 6, we measured the thermodynamics of binding using isothermal titration calorimetry (ITC). GluA2-LBD-L483Y-N754S was also the choice for these studies, as it exists as a preformed dimer in solution, thus mimicking the endogenous binding environment of the dimer of dimers structure found in the full-length GluA2 receptor. Therefore, modulator binding can be measured independently of dimer formation. The ITC measurements showed that the binding of both 5 and 6 to GluA2-LBD-L483Y-N754S is an exothermic process, meaning that heat is generated during binding of the modulators to GluA2-LBD (Figure 3). For 5, the binding affinity (Kd) was measured to be 9.8 μM with ΔH = −3.4 kcal/mol and −TΔS = −3.4 kcal/mol, and for 6, Kd = 1200 μM with ΔH = −3.2 kcal/mol and −TΔS = −0.8 kcal/mol (Table 2). Whereas the enthalpies of 5 and 6 are comparable, 6 has higher entropy of binding than 5, which explains the better binding affinity of 5 compared to 6. A bound water molecule is associated with higher order and thus higher entropy of binding. Compounds 5 and 6 bind in an overall similar binding mode, but differences in the water network surrounding the modulators were observed. Therefore, it is likely that water molecules coordinating directly to the sulfonamide of 6 may partly explain the entropy penalty upon binding of 6 to GluA2-LBD. A comparison of the thermodynamic details of binding of 5 and 6 to those of 7 shows a slight loss of enthalpy for 5 and 6 (ΔH = −3.4/−3.2 versus −4.9 kcal/mol), presumably due to the lack of the weak hydrogen–fluorine bond seen between 7 and GluA2-LBD-L483Y-N754S."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "GluA2-LBD-L483Y-N754S",
+                "location": "cell",
+                "concentration": "96",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 5 or compound 6",
+                "location": "syringe",
+                "concentration": "1.9"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of injecting ligand into buffer were subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50247328": {
+        "reactant_set_id": 50247328,
+        "pmid": 25375781,
+        "protein": "Glutamate receptor 2",
+        "ligand": {
+            "smiles": "CCN1CNS(=O)(=O)c2ncccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GluA2-LBD-L483Y-N754S complex (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. ITC was performed using an ITC200 MicroCalorimeter (GE Healthcare) with a cell volume of 200 μL at 25 °C. Protein concentration was determined by UV absorption. The protein solution consisted of either 96 μM (for compound 6 titration) or 50 μM (for compound 5 titration) GluA2-LBD-L483Y-N754S in 100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu, pH 7.0. The buffer used for the protein solution was also used to dissolve compounds 5 and 6. Both experiments were direct titrations with 8.2 μM 6 and 1.9 μM 5, using 20 injections of 2 μL at 3 min intervals, except for the first injection, which was 0.4 μL. The Origin 7.0 software (MicroCal) was used for data analysis (single binding site model). Prior to fitting, the first data point was discarded and the heat of dilution of injecting ligand into buffer was subtracted. The reported ΔH, −TΔS, and Kd are mean values of three independent titrations.",
+            "Figure 3 caption": "Figure 3. Isothermal titration calorimetry study of binding of 5 (A) and 6 (B) to GluA2-LBD-L483Y-N754S. Raw data (top panel) and isotherm (bottom panel) are shown. Heat is developed after each injection (exothermic reaction), and the signal is reduced when the protein is saturated with 5 and 6, respectively. The experiments shown are representative of three experiments.",
+            "Table 2": "Table 2. Isothermal Titration Calorimetry Using GluA2-LBD-L483Y-N754S | | 5 | 6 | 7^a | 9^b | |---|---|---|---|---| | Kd (μM) | 9.8 ± 0.7 | 1200 ± 40^c | 5.6 ± 0.9^a | 0.35 ± 0.02 | | ΔH (kcal/mol) | −3.4 ± 0.1 | −3.2 ± 0.1 | −4.9 ± 0.4 | −7.5 ± 0.2 | | −TΔS (kcal/mol) | −3.4 ± 0.1 | −0.8 ± 0.1 | −2.3 ± 0.4 | −1.3 ± 0.2 | | nH | 2.1 ± 0.2 | 2.0^d | 2.3 ± 0.1 | 2.7 ± 0.1 | ^aValues from ref 34. ^bValues from ref 32. ^cStandard deviation. ^d nH of compound 6 was fixed at 2.00 during fitting.",
+            "Results and Discussion - Isothermal Titration Calorimetry": "The structures of GluA2-LBD-L483Y-N754S in complex with either 5 or 6 showed different numbers of coordinated water molecules and differences in intermodulator distances. To understand the thermodynamic differences between binding of 5 and 6, we measured the thermodynamics of binding using isothermal titration calorimetry (ITC). GluA2-LBD-L483Y-N754S was also the choice for these studies, as it exists as a preformed dimer in solution, thus mimicking the endogenous binding environment of the dimer of dimers structure found in the full-length GluA2 receptor. Therefore, modulator binding can be measured independently of dimer formation. The ITC measurements showed that the binding of both 5 and 6 to GluA2-LBD-L483Y-N754S is an exothermic process, meaning that heat is generated during binding of the modulators to GluA2-LBD (Figure 3). For 5, the binding affinity (Kd) was measured to be 9.8 μM with ΔH = −3.4 kcal/mol and −TΔS = −3.4 kcal/mol, and for 6, Kd = 1200 μM with ΔH = −3.2 kcal/mol and −TΔS = −0.8 kcal/mol (Table 2). Whereas the enthalpies of 5 and 6 are comparable, 6 has higher entropy of binding than 5, which explains the better binding affinity of 5 compared to 6. A bound water molecule is associated with higher order and thus higher entropy of binding. Compounds 5 and 6 bind in an overall similar binding mode, but differences in the water network surrounding the modulators were observed. Therefore, it is likely that water molecules coordinating directly to the sulfonamide of 6 may partly explain the entropy penalty upon binding of 6 to GluA2-LBD. A comparison of the thermodynamic details of binding of 5 and 6 to those of 7 shows a slight loss of enthalpy for 5 and 6 (ΔH = −3.4/−3.2 versus −4.9 kcal/mol), presumably due to the lack of the weak hydrogen–fluorine bond seen between 7 and GluA2-LBD-L483Y-N754S."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "GluA2-LBD-L483Y-N754S",
+                "location": "cell",
+                "concentration": "96",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 5 or compound 6",
+                "location": "syringe",
+                "concentration": "1.9"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM HEPES, 100 mM NaCl, 2 mM KCl, 5 mM l-Glu",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of injecting ligand into buffer were subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

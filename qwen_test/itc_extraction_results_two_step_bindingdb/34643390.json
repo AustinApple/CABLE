@@ -1,0 +1,61 @@
+{
+    "51457253": {
+        "reactant_set_id": 51457253,
+        "pmid": 34643390,
+        "protein": "Tyrosine-protein phosphatase non-receptor type 11",
+        "ligand": {
+            "smiles": "CC1(N)CCN(CC1)c1cnc2c(n[nH]c2n1)-c1cccc(Cl)c1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 49.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wild type SHP2 assessed as dissociation constant by isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, U.K.) at 25 °C. The SHP2 protein (100 μM) was dialyzed against 20 mM HEPES, pH 7.4, 100 mM NaCl, 1 mM DTT, and 0.01% Tween 20. The compound (100 μM) was dissolved in the same buffer. The protein was loaded into the sample cell (200 μL), and the compound was loaded into the syringe (200 μL). The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding affinity (Kd) was calculated from the fit of the data to the model. The experiments were performed in triplicate, and the average Kd value was reported. The buffer was used as a control to subtract the heat of dilution.",
+            "Figure 5 caption": "Figure 5. (A) X-ray structure (PDB 6WU8) of compound 21 (yellow) bound to SHP2 at 2.4 Å resolution. Replacement of the pyrimidinone of the 1,5-dihydro-4H-pyrazolo[3,4-d]pyrimidin-4-one scaffold with a pyrazine maintained the hydrogen bond between compound and Arg111. (B) Isothermal titration calorimetry data for compound 21 with wild-type and E76K SHP2. The binding affinity (Kd) for compound 21 to wild-type SHP2 was 49 nM, and to E76K SHP2 was 211 nM. The thermograms show the heat released upon injection of compound 21 into the SHP2 protein solution. The binding isotherms are shown in the inset, with the data points representing the experimental data and the solid lines representing the fit to the one-site binding model. The experiments were performed in triplicate, and the average Kd value was reported.",
+            "Table 5": "Table 5. SAR Studies in the 3-Position of the 1H-Pyrazolo[3,4-b]pyrazine Scaffold | Compound | R¹ | R² | SHP2 IC₅₀ (nM) | KYSE-520 pERK IC₅₀ (nM) | Perm Papp×10⁶ (A-B)/(B-A) wt. MDCK; MDCK mdr1 | hERG binding assay (μM) | cLogP | pKa of basic amine | |----------|----|----|----------------|--------------------------|---------------------------------------------|------------------------|------|------------------| | 21 | | | 11 | 47 | 6.0/8.0; 6.0/8.5 | 0.2 | 2.19 | 10.4 | | 22 | | | 53 | 64 | 4.2/8.0; 2.1/28 | 3.5 | 0.42 | 10.4 | | 23 | | | 6 | 35 | - | 0.06 | 3.27 | 10.3 | | 24 | | | 12 | 40 | - | 0.1 | 2.32 | 9.2 | | 25 | | | 5 | 10 | 9.0/10; 6.4/10.2 | 0.1 | 2.73 | 9.3 | | 26 | | | 17 | 22 | 12.4/25.0; 8.6/40.7 | 1.3 | 1.3 | 9.3 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "SHP2",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 21",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.01% Tween 20",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer to subtract the heat of dilution",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

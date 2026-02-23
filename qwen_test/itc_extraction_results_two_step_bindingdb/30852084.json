@@ -1,0 +1,61 @@
+{
+    "51284705": {
+        "reactant_set_id": 51284705,
+        "pmid": 30852084,
+        "protein": "Chaperonin GroEL",
+        "ligand": {
+            "smiles": "CC1=CCC(=C\\C1=N\\C(=O)C1=CC=C\\C(C1)=N/C(=O)/N=C1/CC(=CC=C1)C(=O)\\N=C1\\CC(=CC=C1C)C(=O)\\N=C1/CC=C(c2cc(cc(c12)S(O)(=O)=O)S(O)(=O)=O)S(O)(=O)=O)C(=O)\\N=C1/CC=C(c2cc(cc(c12)S(O)(=O)=O)S(O)(=O)=O)S(O)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli GroEL expressed in Escherichia coliDH5alpha by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC) experiments were performed using a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK). GroEL (150 μM monomer concentration) was dialyzed against 20 mM Tris-HCl (pH 7.5), 100 mM KCl, 1 mM DTT, and 1 mM EDTA. The dialyzed protein was loaded into the sample cell (200 μL). Suramin (2 mM) was prepared in the same buffer and loaded into the syringe. The experiment was conducted at 25 °C with a stirring speed of 300 rpm. A total of 20 injections of 2 μL each were made with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a single-site binding model. The binding parameters were calculated from the integrated heat of each injection and fitted to a single-site binding model. The thermodynamic parameters were obtained from triplicate analyses.",
+            "Figure 2 caption": "Fig. 2. Representative analysis of the binding of suramin (28) to E. coli GroEL measured by Isothermal Titration Calorimetry (ITC). The top panel shows a representative binding isotherm obtained by titrating suramin (2 mM) into a solution of GroEL (150 μM monomer concentration) in the ITC cell. The lower panel shows the integrated data (solid squares) fit to a single-site binding model (solid line). The molar ratio refers to the binding stoichiometry of suramin to monomeric GroEL. Average results for the various binding parameters (Kd, n, ΔH, ΔS, and ΔG) obtained from triplicate analyses are presented in Table 1.",
+            "Table 1": "Table 1 IC50 values for compounds tested in our GroEL/ES-mediated substrate enzyme refolding assays, the native enzymatic reporter counter screens (vide infra), and ITC analytical results for suramin (28) binding to E. coli GroEL. Binding parameter results are averaged from three replicate analyses. Binding is predominantly entropically driven, with a moderate enthalpic contribution to affinity. Particularly interesting is that suramin binds with a stoichiometry of ~9 molecules per GroEL tetradecamer, since suramin does not inhibit GroEL ATPase activity, it is likely binding to unknown sites outside of the ATP pockets. Suramin (28) Assay IC50 (μM) GroEL/ES-dMDH Refolding 8.1 GroEL/ES-dRho Refolding 16 Native MDH reporter activity > 63 Native Rho reporter activity > 100 Stoichiometry n Molecule: GroELmonomer 0.67 ± 0.05 Molecule: GroELoligomer 9.4 ± 0.6 Thermodynamic parameters Log(Kd/μM) 1.31 ± 0.30 Kd (μM) 21 ΔH (kcal/mol) -2.07 ± 0.36 ΔS (kcal/mol·K) 0.014 ± 0.002 TΔS (kcal/mol) 4.15 ± 0.72 ΔG (kcal/mol) -6.22 ± 0.41"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "GroEL",
+                "location": "cell",
+                "concentration": "150",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "suramin",
+                "location": "syringe",
+                "concentration": "2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 100 mM KCl, 1 mM DTT, 1 mM EDTA",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

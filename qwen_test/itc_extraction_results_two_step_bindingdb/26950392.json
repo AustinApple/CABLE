@@ -1,0 +1,962 @@
+{
+    "50491985": {
+        "reactant_set_id": 50491985,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)NCc1ccc(cc1)-c1ccncc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 97300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491986": {
+        "reactant_set_id": 50491986,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)NCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 97300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491989": {
+        "reactant_set_id": 50491989,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "Nc1ccc(CNC(=O)NCC(=O)N2CCCC2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 22700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491990": {
+        "reactant_set_id": 50491990,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)NCc1ccc(N)cc1)C(=O)N1CCC[C@H]1c1ccccc1SC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 410.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491993": {
+        "reactant_set_id": 50491993,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "Nc1ccc(CNC(=O)NCC(=O)N2CCC[C@@H]2c2ccccc2Br)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491994": {
+        "reactant_set_id": 50491994,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CSc1ccccc1[C@H]1CCCN1C(=O)CNC(=O)NCc1ccc(N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491995": {
+        "reactant_set_id": 50491995,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "Nc1ccc(CNC(=O)NCC(=O)N2CCC[C@@H]2c2ccccc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50491999": {
+        "reactant_set_id": 50491999,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)[C@H](CCSC)NC(=O)NCc1ccc(N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5120.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492000": {
+        "reactant_set_id": 50492000,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)NCc1ccc(N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492002": {
+        "reactant_set_id": 50492002,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)NCc1ccc(N)cc1)C(=O)N1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 57600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492003": {
+        "reactant_set_id": 50492003,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)[C@H](CC(C)C)NC(=O)NCc1ccc(N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492005": {
+        "reactant_set_id": 50492005,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)NCc1ccc(NC(C)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492006": {
+        "reactant_set_id": 50492006,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CC[C@@H]1NC(=O)[C@H]([C@H](O)[C@H](C)C\\C=C\\C)N(C)C(=O)[C@H](C(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](NC(=O)[C@H](CC(C)C)N(C)C(=O)CN(C)C1=O)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492007": {
+        "reactant_set_id": 50492007,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)NCc1cccc(c1)-c1ccncc1N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 92500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492009": {
+        "reactant_set_id": 50492009,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)NCc1cccc(c1)-c1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 127000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50492010": {
+        "reactant_set_id": 50492010,
+        "pmid": 26950392,
+        "protein": "Peptidyl-prolyl cis-trans isomerase D",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)NCc1ccc(N)cc1)C(=O)N1CCC[C@@H]1c1ccccc1SC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 82000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Cyclophilin D (unknown origin) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. CypD (100 μM) was dialyzed against 20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT, pH 7.4, and loaded into the sample cell. The ligand (1–2 mM) was dissolved in the same buffer and loaded into the syringe. The sample cell was filled with 1.4 mL of protein solution, and the syringe contained 200 μL of ligand solution. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 300 rpm. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constants (Kd) were calculated from the integrated heat of binding. The experiments were performed in triplicate, and the data are presented as the mean ± SEM. The binding enthalpy (ΔH) and entropy (TΔS) were calculated from the Kd and ΔG values using the equation ΔG = ΔH - TΔS. The ΔG values were calculated from the Kd values using the equation ΔG = -RT ln(Kd).",
+            "Figure 4 caption": "Figure 4. ITC profiles for the binding of selected compounds to CypD. (a) Compound 4, (b) Compound 10, (c) Compound 12, (d) Compound 14, (e) Compound 11, and (f) Compound 19. The top panel shows the raw calorimetric data obtained upon titration of CypD with each ligand; the bottom panel shows the plots of the integrated heat signal as a function of molar ratio of ligand to protein. The data fit to a one-site binding to yield the Kd, ΔH, and ΔS parameters (Table 1).",
+            "Table 1": "Table 1. Summary of Chemical Structures, Thermodynamic Parameters, Binding and Inhibition Constants, and Crystal Structures’ Accession Codes | Compound | Ar | R | X | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | Kd (μM) | Ki (μM) | Crystal Structure | |----------|----|---|---|---------------|---------------|----------------|---------|---------|------------------| | CsA | - | - | - | -10.74 | -14.7 | -3.96 | 0.013 | 0.0082 | 2Z6W | | 4 | H | H | OEt | -6.82 | -13.70 | -6.88 | 10.0 | 5.9 | 3RDC | | 5 | H | H | OEt | -5.47 | -1.98 | 3.49 | 97.3 | 63 | 5CBT | | 6 | H | H | OEt | -5.47 | -1.24 | 4.23 | 97.3 | ND | 5CBU | | 7 | H | H | OEt | -5.31 | -2.33 | 2.98 | 127 | ND | 5CBV | | 8 | H | H | OEt | -5.50 | -1.77 | 3.73 | 92.5 | 22 | 5CCN | | 9 | H | H | OEt | -6.09 | -0.73 | 5.36 | 34.1 | 2.6 | 5CBW | | 10 | H | H | OEt | -6.34 | -4.99 | 1.35 | 22.7 | 4.9 | 4J58 | | 11 | H | H | OEt | -7.19 | -9.51 | -2.32 | 5.4 | ND | 5CCS | | 12 | H | H | OEt | -7.57 | -10.32 | 2.75 | 2.8 | ND | 4J5B | | 13 | H | H | OEt | -8.05 | -4.56 | 3.49 | 1.2 | 0.95 | 4J5D | | 14 | H | H | OEt | -7.20 | -13.54 | -6.31 | 5.12 | 9.1 | 5CCR | | 15 | H | H | OEt | -∞ | -∞ | -∞ | -∞ | ND | ND | | 16 | H | H | OEt | -6.89 | -14.82 | -7.93 | 8.8 | ND | ND | | 17 | H | H | OEt | -5.78 | -6.63 | -0.85 | 57.6 | ND | ND | | 18 | H | H | OEt | -5.60 | -1.1 | 5.48 | 82 | ND | 4J5C | | 19 | H | H | OEt | -8.71 | -12.49 | -3.78 | 0.41 | 0.099 | 4J5C |",
+            "Figure 5 caption": "Figure 5. Thermodynamic signatures for the binding of the different compounds listed in Table 1. (a) Compounds 4–9, Cyclosporin A (CsA). Note the marked difference in the ΔH and ΔS between 4 and 5–9 although ΔG (and hence Ki) values are similar, showing an enthalpy–entropy compensation effect. (b, c) Compounds 10–19 show the progressive improvement."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CypD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM KCl, 1 mM EDTA, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

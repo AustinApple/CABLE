@@ -1,0 +1,62 @@
+{
+    "51381972": {
+        "reactant_set_id": 51381972,
+        "pmid": 27766861,
+        "protein": "Dual specificity tyrosine-phosphorylation-regulated kinase 1A",
+        "ligand": {
+            "smiles": "COC(=N)c1nc2ccc3ncnc(Nc4ccc(OC)cc4F)c3c2s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to DYRK1A (unknown origin) assessed as dissociation constant at 3 uM by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments, Worcestershire, U.K.) at 25 °C. The protein (DYRK1A) was dialyzed against 20 mM HEPES, pH 7.5, 100 mM NaCl, 1 mM DTT, and 0.01% Tween 20. The ligand (compound 2) was dissolved in DMSO and diluted in the same buffer. The protein concentration was 10 μM in the cell, and the ligand concentration was 200 μM in the syringe. The ligand was injected in 20 steps of 2 μL each, with 180 s between injections. The data were analyzed using Origin 7.0 software (MicroCal) with a one-site binding model. The buffer was used as a control to subtract the heat of dilution.",
+            "Figure 5 caption": "Figure 5. ITC binding data of 2 with DYRK1A. Shown are the isotherms of raw titration heat (left), and the normalized binding heat with the single-site fitting (red line) (right).",
+            "Results section": "In addition, studies of the thermodynamics of the unusual binding mode by isothermal titration calorimetry (ITC) revealed also that inhibitor binding was driven by a large negative binding enthalpy. The Kd was determined to be 7.4 ± 4 nM. However, due to the high affinity of 2, the affinity measurements were associated with a large error. The indirectly determined entropy term (TΔS) was unfavorable. (Figure 5).",
+            "Figure 5 data": "Kd = 7.3 ± 4 nM, ΔH = -14.63 ± 0.75 kcal/mol, TΔS = -3.35 kcal/mol, ΔG = -11.28 kcal/mol, n = 1.004 ± 0.016"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "DYRK1A",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 2",
+                "location": "syringe",
+                "concentration": "200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.01% Tween 20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "The buffer was used as a control to subtract the heat of dilution.",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

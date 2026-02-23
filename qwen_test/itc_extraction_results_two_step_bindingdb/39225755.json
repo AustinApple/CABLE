@@ -1,0 +1,62 @@
+{
+    "51605470": {
+        "reactant_set_id": 51605470,
+        "pmid": 39225755,
+        "protein": "Nucleic acid dioxygenase ALKBH1",
+        "ligand": {
+            "smiles": "COc1cccc(COc2cnc(-n3cc(C(=O)O)cn3)nc2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 156.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to 6xHis-tagged human ALKBH1 extracted from Escherichia coli BL21(DE3) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC) experiments were conducted on a MicroCal PEAQ-ITC at 20 °C. Proteins and compounds were prepared or diluted with exactly the same buffer consisting of 20 mM Bis-Tris (pH 6.5), 100 mM NaCl, 1 mM MnCl₂, and 5% glycerol. The titration was performed with an initial injection of 0.2 μL followed by 19 injections of 2.0 μL. The binding isotherms were analyzed with the MicroCal PEAQ-ITC Analysis software using one set of site binding models. In the competition ITC assay, the ALKBH1 protein was incubated with the compound for 20 min before titrating α-KG. The data were analyzed as described above.",
+            "Figure 3 caption": "Figure 3. Bioactivity of compound 29. (A, B) The dose-dependent curve of 29 in the DSF assay. (C) Bioactivity of compound 29 in the ITC assay. (D) Competition experiment with 29 and α-KG using ITC analysis.",
+            "Figure 3C description": "C) Bioactivity of compound 29 in the ITC assay. The graph shows the binding isotherm with the molar ratio on the x-axis and ΔH (kcal/mol) on the y-axis. The fitted curve indicates a K_D value of 0.156 ± 0.051 μM.",
+            "Results section - Bioactivity Validation of 29 by DSF and ITC Assays": "The bioactivity of 29 was further validated by DSF and ITC assays (Figure 3). In the DSF assay, 29 showed a thermal shift (ΔT_m) of 8.86 °C at a concentration of 250 μM and also exhibited dose dependence (Figure 3A,B). It displayed a K_D value of 0.156 ± 0.051 μM in the ITC assay (Figure 3C). ITC assay was also performed to examine whether 29 is a competitive inhibitor of α-KG. After incubating ALKBH1 with 29 for 20 min, the binding of ALKBH1 with α-KG could not be detected, suggesting that 29 prevented the binding of α-KG to ALKBH1, implying a competitive inhibitor of α-KG (Figure 3D)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "6xHis-tagged human ALKBH1",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 29",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Bis-Tris, 100 mM NaCl, 1 mM MnCl₂, 5% glycerol",
+                "pH": "6.5",
+                "temperature_c": "20",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

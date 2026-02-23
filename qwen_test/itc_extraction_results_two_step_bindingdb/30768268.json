@@ -1,0 +1,61 @@
+{
+    "51327741": {
+        "reactant_set_id": 51327741,
+        "pmid": 30768268,
+        "protein": "Cyclin-G-associated kinase",
+        "ligand": {
+            "smiles": "COc1cc(Nc2ccnc3ccc(Br)cc23)cc(OC)c1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GAK (unknown origin) by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical) at 25 °C. GAK (10 μM) was loaded into the sample cell, and compound 11 (1 mM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.01% Tween-20, pH 7.4. The syringe was programmed to inject 20 μL of compound 11 into the sample cell in 20 injections of 1 μL each, with a 120 s spacing between injections. The reference cell contained buffer only. Data were analyzed using Origin 7.0 software (OriginLab) with a one-site binding model.",
+            "Figure 2 caption": "Figure 2. (A) Binding affinity of 11 for NAK family kinases. aTemperature shift of GAK denaturation (n = 4); bTR-FRET-based ligand binding displacement assay (n = 1). (B) DSF curve of GAK and 11. (C) ITC of GAK and 11. (D) KINOMEScan KD results, and (E) KD values for top 5 highest affinity kinases.",
+            "Figure 2C": "Kd = 3.15e-9 M, n = 1.013, ΔH = -14.86 kcal/mol, TΔS = -3.65 kcal/mol, ΔG = -11.21 kcal/mol"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "GAK",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 11",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": "buffer",
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "1",
+                    "subsequent_volume": "1",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

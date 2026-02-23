@@ -1,0 +1,65 @@
+{
+    "51589023": {
+        "reactant_set_id": 51589023,
+        "pmid": 38735150,
+        "protein": "RNA-directed RNA polymerase L",
+        "ligand": {
+            "smiles": "O=C1c2c(ccc(O)c2O)CN1Cc1ccc(O)c(O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His-tagged TOSV cap-ENDO expressed in Escherichia coli BL21 Gold (DE3) assessed as dissociation constant in presence of MnCl2 by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "Isothermal titration calorimetry. Titrations were conducted at 25 °C using a MicroCal PEAQ-ITC System. Cap-ENDOs were dialysed against their respective ITC buffers (20 mM Tris, 250 mM NaCl, 1 % Glycerol; pH 8 supplemented with fresh 2 mM TCEP for LASV enzyme, and 10 mM HEPES, 500 mM NaCl, 1 % Glycerol; pH 7.5 supplemented with fresh 2 mM TCEP for TOSV enzyme). Each titration involved an initial injection of 0.4 μl titrant followed by 18 injections of 2 μl into 100 μl of the Cap-ENDOs in the calorimetric cell. Titrants were dissolved in the corresponding ITC buffer and used at 3 mM of MnCl2·4H2O, 5 mM of MgCl2·6H2O and 1 mM of 11. The heat produced by the metal ions dilution into the ITC buffer was taken as a control and subtracted from the protein-related heat exchange. Similarly, the heat from compound 11 dilution into the ITC buffer containing TOSV Cap-ENDO in the absence of metal ions served as a control for Mn2+ mediated ligand binding and subtracted from the heat exchange obtained when injecting 11 into TOSV Cap-ENDO pre-incubated with 250 μM MnCl2·4H2O in the calorimeter cell. Binding isotherms were analysed through nonlinear least-squares fitting to models representing a single site or two independent sites. Calorimetric data analysis was performed using MicroCal ORIGIN software (OriginLab Corporation, Northampton, MA, USA). The thermodynamic parameters obtained have to be considered apparent, and the values are referred to specific medium and conditions used in the experimental setup.",
+            "Figure 7 caption": "Fig. 7. Compound 11 binding to TOSV Cap-ENDO:Mn complexes. Isothermal titration calorimetry of compound 11 at 1 mM to TOSV Cap-ENDO at 100 μM pre-incubated with 250 μM of MnCl2. The upper plot shows the binding isotherm at 25 °C. The lower plot shows the integrated values after subtracting the heat measured for the dilution of the ligand into the TOSV Cap-ENDO solution without metal ions, with the best fit to a 1 set of sites yielding the respective dissociation constant (Kd).",
+            "Figure 7 lower plot": "Kd = 28 ± 3 μM",
+            "Figure 6 caption": "Fig. 6. Mn2+ and Mg2+ binding to His- (LASV Cap-ENDO) or His+ (TOSV Cap-ENDO) enzymatic domains. Isothermal titration calorimetry of LASV Cap-ENDO at 100 μM with A) MnCl2 at 3 mM, or B) MgCl2 at 5 mM, and C) TOSV Cap-ENDO at 100 μM with MnCl2 at 3 mM. The upper plots show the binding isotherm at 25 °C. The lower plots show the integrated values after subtracting the heat measured for the dilution of the metal salt solution into the buffer, with the best fit to a sequential binding mode for 2 sites and the corresponding dissociation constants (Kd1 and Kd2).",
+            "Figure 6 lower plot A": "Kd1 = 24 ± 4 μM, Kd2 = 137 ± 21 μM",
+            "Figure 6 lower plot B": "Kd1 = 151 ± 9 μM, Kd2 = 172 ± 11 μM",
+            "Figure 6 lower plot C": "Kd1 = 11 ± 1 μM, Kd2 = 66 ± 39 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TOSV cap-ENDO",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "100"
+            },
+            "ligand": {
+                "name": "compound 11",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES, 500 mM NaCl, 1 % Glycerol",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted: heat from metal ions dilution into ITC buffer and heat from compound 11 dilution into TOSV Cap-ENDO solution without metal ions were measured and subtracted.",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

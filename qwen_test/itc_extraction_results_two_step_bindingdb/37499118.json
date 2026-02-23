@@ -1,0 +1,59 @@
+{
+    "51561360": {
+        "reactant_set_id": 51561360,
+        "pmid": 37499118,
+        "protein": "Histone deacetylase 6",
+        "ligand": {
+            "smiles": "COc1ccccc1CNC(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 80.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged HDAC6 UBD (1109 to 1215 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by Isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. HDAC61109–1215 was diluted to 10 μM and dialyzed for 24 h at 4 °C in assay buffer (PBS, 0.05% Tween-20 (v/v), 0.25% DMSO (v/v)). Compound 25 was initially diluted from the solubilized DMSO stock to 0.25% DMSO (v/v) in the assay buffer (no DMSO) for a final concentration of 100 μM. The pH of the protein and compound solution were measured and assessed to be within 0.1 units of each other. ITC measurements were performed at 25 °C on a Nano ITC (TA Instruments), with 300 μL of 10 μM HDAC6 in the sample cell and 50 μL of 100 μM 25 in the injection syringe. A total of 24 × 2 μL injections with an initial 0.5 μL injection that was omitted from the fitting analysis were delivered into 0.167 mL of sample cells at a 180 s interval. The data was analyzed using Nano Analyze software and fitted with an independent-binding site model."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "HDAC61109–1215",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": "300"
+            },
+            "ligand": {
+                "name": "Compound 25",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "PBS, 0.05% Tween-20 (v/v), 0.25% DMSO (v/v)",
+                "pH": "within 0.1 units of each other",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.5",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "24"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

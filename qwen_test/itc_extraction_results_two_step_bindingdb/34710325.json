@@ -1,0 +1,946 @@
+{
+    "51435479": {
+        "reactant_set_id": 51435479,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CC[C@H]1N(C2CCCC2)c2nc(Nc3ccc(cc3OC)C(=O)NC3CCN(C)CC3)ncc2N(C)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 112.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435480": {
+        "reactant_set_id": 51435480,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CC[C@H]1N(C(C)C)c2nc(Nc3ccc(cc3OC)C(=O)N[C@H]3CC[C@@H](CC3)N3CCN(CC4CC4)CC3)ncc2N(C)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 317.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435481": {
+        "reactant_set_id": 51435481,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "COc1cc(ccc1Nc1ncc2N(C)C(=O)C(F)(F)CN(C3CCCC3)c2n1)C(=O)NC1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 267.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435482": {
+        "reactant_set_id": 51435482,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "COc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(C)c2n1)C(=O)N1CCC(CC1)N1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 194.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435483": {
+        "reactant_set_id": 51435483,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CCOc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(C3CCCC3)c2n1)C(=O)N1CCC(CC1)N1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 213.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435484": {
+        "reactant_set_id": 51435484,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CCOc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(C)c2n1)N1CCC(O)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 735.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435485": {
+        "reactant_set_id": 51435485,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CN1CCC(CC1)NC(=O)c1ccc(Nc2ncc(C)c(Nc3ccc(Cl)c(NS(=O)(=O)C(C)(C)C)c3)n2)cc1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 54.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435486": {
+        "reactant_set_id": 51435486,
+        "pmid": 34710325,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "Cc1nnc2[C@H](CC(=O)OC(C)(C)C)N=C(c3c(C)c(C)sc3-n12)c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 71.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRD4 expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH − TΔS = −RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRD4",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435501": {
+        "reactant_set_id": 51435501,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "CC[C@H]1N(C2CCCC2)c2nc(Nc3ccc(cc3OC)C(=O)NC3CCN(C)CC3)ncc2N(C)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 806.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435502": {
+        "reactant_set_id": 51435502,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "CC[C@H]1N(C(C)C)c2nc(Nc3ccc(cc3OC)C(=O)N[C@H]3CC[C@@H](CC3)N3CCN(CC4CC4)CC3)ncc2N(C)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435503": {
+        "reactant_set_id": 51435503,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "COc1cc(ccc1Nc1ncc2N(C)C(=O)C(F)(F)CN(C3CCCC3)c2n1)C(=O)NC1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435504": {
+        "reactant_set_id": 51435504,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "COc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(C)c2n1)C(=O)N1CCC(CC1)N1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435505": {
+        "reactant_set_id": 51435505,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "CCOc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(C3CCCC3)c2n1)C(=O)N1CCC(CC1)N1CCN(C)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435506": {
+        "reactant_set_id": 51435506,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "CCOc1cc(ccc1Nc1ncc2N(C)C(=O)c3ccccc3N(C)c2n1)N1CCC(O)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435507": {
+        "reactant_set_id": 51435507,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "CN1CCC(CC1)NC(=O)c1ccc(Nc2ncc(C)c(Nc3ccc(Cl)c(NS(=O)(=O)C(C)(C)C)c3)n2)cc1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 59.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51435508": {
+        "reactant_set_id": 51435508,
+        "pmid": 34710325,
+        "protein": "Bromodomain testis-specific protein",
+        "ligand": {
+            "smiles": "Cc1nnc2[C@H](CC(=O)OC(C)(C)C)N=C(c3c(C)c(C)sc3-n12)c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 188.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal hexaHis-tagged BRDT expressed in Escherichia coli BL21 (DE3) cells by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). ITC experiments were performed using an ITC200 microcalorimeter from Malvern Panalytical (Spectris PLC). BRDs were buffer-exchanged in ITC buffer (50 mM HEPES pH 7.4, 150 mM NaCl) using PD10 columns (GE Lifesciences) and concentrated to ~10 mg/mL. Experiments were carried out in ITC buffer while stirring at 750 rpm using reverse titration. The microsyringe (40 μL load volume) was loaded with 150–350 μM protein in ITC buffer and was inserted into the calorimetric cell (0.2 mL cell volume) filled with 20–25 μM compound in ITC buffer. All titrations were conducted using an initial control injection of 0.3 μL followed by 25 identical injections (1.52 μL per injection) with a duration of 3.04 s (per injection) and a spacing of 150 s between injections. The ratio of titrants and the titration experiments was optimized to ensure complete saturation of the titrant (protein or compounds) before the final injection, thus facilitating the estimation of baseline for each injection. Experimental data were corrected by subtracting the heats of dilution determined from independent titrations. The collected data were analyzed using MicroCal Origin software provided with the ITC instrument to determine the enthalpies of binding (ΔH) and binding constants (KB) as previously described. Thermodynamic parameters were calculated using the basic equation of thermodynamics (ΔG = ΔH – TΔS = –RT ln KB, and ΔS are the changes in free energy, enthalpy, and entropy of binding, respectively). In all cases, a single binding site model was used.",
+            "Figure 1 caption": "Figure 1. Binding potential of kinase inhibitors for BRD4-1 and BRDT-1. (A) Chemical structures of the studied dihydropteridine- and pyrimidodiazepine-containing kinase inhibitors. (B–D) Correlation of thermostability values determined by DSF vs dissociation constants determined by ITC, MST, and qPCR assay. (E–G) Correlation of dissociation constants determined with each other. For statistical analysis, r is the respective Pearson’s correlation coefficient; asterisks indicate the significance of the two-tailed P value (α = 0.05). For graphical purposes, data were fit to semilogarithmic (B–D) or log–log lines (E–G). The dotted line indicates an idealized 1:1 relationship between the respective dissociation constants.",
+            "Table 1": "Table 1. Binding Potential of Kinase Inhibitors for BRD4-1 and BRDT-1 and Cell Growth Inhibitory Activity | compound | BRD4-1 | BRDT-1 | cell growth inhibitory potential | | :--- | :--- | :--- | :--- | | | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | DSF ΔTm (°C) | MST Kd (nM) | qPCR Kd (nM) | ITC Kd (nM) | MM1.S IC50 (nM) | HEK293T IC50 (nM) | | BI2536 | 10.5 ± 0.08 | 57 ± 11 | 24 ± 0.1 | 112 ± 5.0 | 6.3 ± 0.24 | 240 ± 40 | 105 ± 35 | 806 ± 31 | 1.2 ± 0.15 | 0.6 ± 0.14 | | volasertib | 8.6 ± 0.06 | 169 ± 37 | 77 ± 23 | 317 ± 17 | 5.0 ± 0.09 | 1030 ± 203 | 113 ± 38 | 1700 ± 160 | 4.5 ± 0.25 | 1.1 ± 0.08 | | Ro3280 | 8.2 ± 0.06 | 260 ± 38 | 120 ± 14 | 267 ± 24 | 4.0 ± 0.07 | 1900 ± 630 | 390 ± 28 | 1800 ± 70 | 5.7 ± 0.24 | 2.6 ± 0.08 | | LRRK2-IN-1 | 8.5 ± 0.07 | 69 ± 13 | 66 ± 30 | 194 ± 12 | 3.8 ± 0.09 | 700 ± 350 | 390 ± 28 | 1700 ± 90 | 530 ± 77 | 2800 ± 1400 | | ERK5-IN-1 | 7.3 ± 0.07 | 205 ± 45 | 69 ± 18 | 213 ± 11 | 2.3 ± 0.15 | 1600 ± 290 | 500 ± 28 | 2100 ± 100 | 280 ± 81 | >10 000 | | XMD8-92 | 6.4 ± 0.06 | 800 ± 150 | 205 ± 7.1 | 735 ± 38 | 2.9 ± 0.12 | 3500 ± 960 | 675 ± 21 | 4200 ± 180 | 2100 ± 1800 | 140 ± 12 | | SG3-179 | 13.5 ± 0.12 | 12 ± 2.9 | 12 ± 2.9 | 54 ± 4.9 | 11.9 ± 0.15 | 260 ± 77 | 22 ± 0.7 | 59 ± 4.6 | 26 ± 3.4 | 140 ± 11 | | JQ1 | 11.2 ± 0.06 | 35 ± 11 | 8.2 ± 2.5 | 71 ± 6.6 | 7.2 ± 0.06 | 260 ± 77 | 22 ± 0.7 | 188 ± 7.0 | 33 ± 4.9 | 107 ± 11 | aSingle experiment in quadruplicate (±standard error of the mean, SEM). bSingle experiment in hexaplicate (±SEM). cAverage of three experiments (±standard deviation, SD). dAverage of two experiments (±SD). eSingle experiment (±SEM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "recombinant human N-terminal hexaHis-tagged BRDT",
+                "location": "syringe",
+                "concentration": "150-350",
+                "solution_volume": "40"
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "20-25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.3",
+                    "subsequent_volume": "1.52",
+                    "duration": "3.04",
+                    "spacing": "150",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

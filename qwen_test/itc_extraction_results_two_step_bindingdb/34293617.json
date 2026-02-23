@@ -1,0 +1,374 @@
+{
+    "51418163": {
+        "reactant_set_id": 51418163,
+        "pmid": 34293617,
+        "protein": "Galectin-1",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H]1C(O)O[C@H](CO)[C@@H](O[C@@H]2O[C@H](CO[C@@H]3O[C@H](CO)[C@H](O)[C@H](O)[C@H]3O)[C@@H](O)[C@H](O)[C@H]2NC(C)=O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 770000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Gal-1 assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "Isothermal titration calorimetry was performed in an Isothermal Calorimeter Nano ITC (TA Instruments). Needle and cell concentrations, injection volumes, and time intervals between injections were varied to obtain sufficient heat production per injection to allow good peak integration, and sufficient time between injections to allow the return to equilibrium. Each titration involved 20 injections of 2.5 μL of ligand solution (2.5 mM) at 3 min intervals into the sample cell (200 μL) containing hGal-1 (50 μM) at 298 K. Ligand solutions were prepared by dissolving the ligands in PBS buffer (20 mM phosphate buffer, 150 mM NaCl, pH 7.4) at 298 K. The titration cell was continuously stirred at 300 rpm. The heats of dilution of the ligands in the buffer were subtracted from the titration data. Fitting was performed using the Nano Analyze software to determine the dissociation constant (K_D) and the enthalpy change (ΔH). The stoichiometry (n) was fixed as 1.0.",
+            "Results - Thermodynamic analysis by isothermal titration calorimetry assays": "The interaction between hGal-1 and the selected ligands was also analyzed using Isothermal Titration Calorimetry (ITC). In this technique, the release or absorption of heat due to the interaction between the galectin and the glycan forming the complex is measured. ITC-derived thermodynamic binding data for hGal-1 at 298 K are shown in Table 3. The dissociation constant, K_D, is a measure of the galectin affinity, where the lower K_D, the stronger is the binding. The experimental K_D values showed the following decreasing affinity order: 4 > 5 > 2 > 3 > 1 > 6, which is in accordance with the SPA results.",
+            "Table 3 caption": "Thermodynamic parameters for binding of hGal-1 and ligands evaluated by ITC.",
+            "Table 3 content": "Compound K_D (M) ΔH (kJ/mol) ΔS (J/K·mol) -T·ΔS (kJ/mol) ΔG_bind (kJ/mol) 1 7.70 × 10⁻⁴ -15.3 8.4 -2.5 -17.8 2 1.87 × 10⁻⁴ -45.2 -80.2 23.9 -21.3 3 4.99 × 10⁻⁴ -17.9 3.0 -0.9 -18.8 4 0.96 × 10⁻⁴ -50.3 -91.9 27.4 -22.9 5 1.61 × 10⁻⁴ -47.7 -87.2 26.0 -21.7 6 13.3 × 10⁻⁴ -7.5 90.7 -8.9 -16.4",
+            "Figure 3 caption": "Purity evaluation of compound 1. A: Thin layer chromatography. Lane 1: Sample corresponding to 24 h reaction synthesis, Lane 2: Purified sample of compound 1. B: HPLC chromatograms. Black line: 24 h reaction synthesis, Red line: Purified compound 1.",
+            "Discussion": "Dissociation constants determined by ITC showed that LacNAC (4) and Lacto-N-biose (5) are better ligands than lactose (2), which was confirmed by the SPA assay in competition with ASF. Consistent with these results, poses obtained in docking experiments showed interactions between the GlcpNAc residue in 4 and 5 and hGal-1 CRD, which may explain the higher affinity of hGal-1 for these compounds compared to lactose. Moreover, in the case of lacto-N-biose, the change in the glycosidic linkage from β-(1 → 4) to β-(1 → 3) generates a rotation in the molecule, which allows the formation of additional hydrogen bonds between specific amino acid residues in the CRD and the O4 and O6 of the N-acetylglucosamine moiety. In LacNAC (4), the presence of the N-acetyl group allows the formation of additional hydrogen bonds, increasing the number of interactions with hGal-1 and the stability of the complex, compared to lactose. ITC studies also showed an increase in the dissociation constants for isomers with a β-(1 → 6) glycosidic linkage (Table 3). This could be attributed to a conformational change that takes place in the molecule structure when the linkage between the galactose and the adjacent glucose or GlcpNAc is β-(1 → 6) compared to a β-(1 → 4) glycosidic bond. This hampers a proper fit of the galactose on subsite C as it emerges from the analysis of the interactions observed in the docking studies. This is clearly observed in Fig. 4 (A, C and E), where the β-(1 → 6) linkage forces the sugars adjacent to the terminal galactose to move away from the CRD, causing the loss of interactions. Moreover, SPA results showed a decrease in RP when the linkage between the galactose and the glucopyranose moiety is β-(1 → 6), as in compound 1, 3 or 6, instead of β-(1 → 4), present in compounds 2 and 4, or β-(1 → 3) as in compound 5 (Table 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "hGal-1",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM phosphate buffer, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of the ligands in the buffer were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51418164": {
+        "reactant_set_id": 51418164,
+        "pmid": 34293617,
+        "protein": "Galectin-1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O)C(O)O[C@@H]2CO)[C@H](O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 187000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Gal-1 assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "Isothermal titration calorimetry was performed in an Isothermal Calorimeter Nano ITC (TA Instruments). Needle and cell concentrations, injection volumes, and time intervals between injections were varied to obtain sufficient heat production per injection to allow good peak integration, and sufficient time between injections to allow the return to equilibrium. Each titration involved 20 injections of 2.5 μL of ligand solution (2.5 mM) at 3 min intervals into the sample cell (200 μL) containing hGal-1 (50 μM) at 298 K. Ligand solutions were prepared by dissolving the ligands in PBS buffer (20 mM phosphate buffer, 150 mM NaCl, pH 7.4) at 298 K. The titration cell was continuously stirred at 300 rpm. The heats of dilution of the ligands in the buffer were subtracted from the titration data. Fitting was performed using the Nano Analyze software to determine the dissociation constant (K_D) and the enthalpy change (ΔH). The stoichiometry (n) was fixed as 1.0.",
+            "Results - Thermodynamic analysis by isothermal titration calorimetry assays": "The interaction between hGal-1 and the selected ligands was also analyzed using Isothermal Titration Calorimetry (ITC). In this technique, the release or absorption of heat due to the interaction between the galectin and the glycan forming the complex is measured. ITC-derived thermodynamic binding data for hGal-1 at 298 K are shown in Table 3. The dissociation constant, K_D, is a measure of the galectin affinity, where the lower K_D, the stronger is the binding. The experimental K_D values showed the following decreasing affinity order: 4 > 5 > 2 > 3 > 1 > 6, which is in accordance with the SPA results.",
+            "Table 3 caption": "Thermodynamic parameters for binding of hGal-1 and ligands evaluated by ITC.",
+            "Table 3 content": "Compound K_D (M) ΔH (kJ/mol) ΔS (J/K·mol) -T·ΔS (kJ/mol) ΔG_bind (kJ/mol) 1 7.70 × 10⁻⁴ -15.3 8.4 -2.5 -17.8 2 1.87 × 10⁻⁴ -45.2 -80.2 23.9 -21.3 3 4.99 × 10⁻⁴ -17.9 3.0 -0.9 -18.8 4 0.96 × 10⁻⁴ -50.3 -91.9 27.4 -22.9 5 1.61 × 10⁻⁴ -47.7 -87.2 26.0 -21.7 6 13.3 × 10⁻⁴ -7.5 90.7 -8.9 -16.4",
+            "Figure 3 caption": "Purity evaluation of compound 1. A: Thin layer chromatography. Lane 1: Sample corresponding to 24 h reaction synthesis, Lane 2: Purified sample of compound 1. B: HPLC chromatograms. Black line: 24 h reaction synthesis, Red line: Purified compound 1.",
+            "Discussion": "Dissociation constants determined by ITC showed that LacNAC (4) and Lacto-N-biose (5) are better ligands than lactose (2), which was confirmed by the SPA assay in competition with ASF. Consistent with these results, poses obtained in docking experiments showed interactions between the GlcpNAc residue in 4 and 5 and hGal-1 CRD, which may explain the higher affinity of hGal-1 for these compounds compared to lactose. Moreover, in the case of lacto-N-biose, the change in the glycosidic linkage from β-(1 → 4) to β-(1 → 3) generates a rotation in the molecule, which allows the formation of additional hydrogen bonds between specific amino acid residues in the CRD and the O4 and O6 of the N-acetylglucosamine moiety. In LacNAC (4), the presence of the N-acetyl group allows the formation of additional hydrogen bonds, increasing the number of interactions with hGal-1 and the stability of the complex, compared to lactose. ITC studies also showed an increase in the dissociation constants for isomers with a β-(1 → 6) glycosidic linkage (Table 3). This could be attributed to a conformational change that takes place in the molecule structure when the linkage between the galactose and the adjacent glucose or GlcpNAc is β-(1 → 6) compared to a β-(1 → 4) glycosidic bond. This hampers a proper fit of the galactose on subsite C as it emerges from the analysis of the interactions observed in the docking studies. This is clearly observed in Fig. 4 (A, C and E), where the β-(1 → 6) linkage forces the sugars adjacent to the terminal galactose to move away from the CRD, causing the loss of interactions. Moreover, SPA results showed a decrease in RP when the linkage between the galactose and the glucopyranose moiety is β-(1 → 6), as in compound 1, 3 or 6, instead of β-(1 → 4), present in compounds 2 and 4, or β-(1 → 3) as in compound 5 (Table 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "hGal-1",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM phosphate buffer, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of the ligands in the buffer were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51418165": {
+        "reactant_set_id": 51418165,
+        "pmid": 34293617,
+        "protein": "Galectin-1",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H]1C(O)O[C@H](CO[C@@H]2O[C@H](CO)[C@H](O)[C@H](O)[C@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 499000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Gal-1 assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "Isothermal titration calorimetry was performed in an Isothermal Calorimeter Nano ITC (TA Instruments). Needle and cell concentrations, injection volumes, and time intervals between injections were varied to obtain sufficient heat production per injection to allow good peak integration, and sufficient time between injections to allow the return to equilibrium. Each titration involved 20 injections of 2.5 μL of ligand solution (2.5 mM) at 3 min intervals into the sample cell (200 μL) containing hGal-1 (50 μM) at 298 K. Ligand solutions were prepared by dissolving the ligands in PBS buffer (20 mM phosphate buffer, 150 mM NaCl, pH 7.4) at 298 K. The titration cell was continuously stirred at 300 rpm. The heats of dilution of the ligands in the buffer were subtracted from the titration data. Fitting was performed using the Nano Analyze software to determine the dissociation constant (K_D) and the enthalpy change (ΔH). The stoichiometry (n) was fixed as 1.0.",
+            "Results - Thermodynamic analysis by isothermal titration calorimetry assays": "The interaction between hGal-1 and the selected ligands was also analyzed using Isothermal Titration Calorimetry (ITC). In this technique, the release or absorption of heat due to the interaction between the galectin and the glycan forming the complex is measured. ITC-derived thermodynamic binding data for hGal-1 at 298 K are shown in Table 3. The dissociation constant, K_D, is a measure of the galectin affinity, where the lower K_D, the stronger is the binding. The experimental K_D values showed the following decreasing affinity order: 4 > 5 > 2 > 3 > 1 > 6, which is in accordance with the SPA results.",
+            "Table 3 caption": "Thermodynamic parameters for binding of hGal-1 and ligands evaluated by ITC.",
+            "Table 3 content": "Compound K_D (M) ΔH (kJ/mol) ΔS (J/K·mol) -T·ΔS (kJ/mol) ΔG_bind (kJ/mol) 1 7.70 × 10⁻⁴ -15.3 8.4 -2.5 -17.8 2 1.87 × 10⁻⁴ -45.2 -80.2 23.9 -21.3 3 4.99 × 10⁻⁴ -17.9 3.0 -0.9 -18.8 4 0.96 × 10⁻⁴ -50.3 -91.9 27.4 -22.9 5 1.61 × 10⁻⁴ -47.7 -87.2 26.0 -21.7 6 13.3 × 10⁻⁴ -7.5 90.7 -8.9 -16.4",
+            "Figure 3 caption": "Purity evaluation of compound 1. A: Thin layer chromatography. Lane 1: Sample corresponding to 24 h reaction synthesis, Lane 2: Purified sample of compound 1. B: HPLC chromatograms. Black line: 24 h reaction synthesis, Red line: Purified compound 1.",
+            "Discussion": "Dissociation constants determined by ITC showed that LacNAC (4) and Lacto-N-biose (5) are better ligands than lactose (2), which was confirmed by the SPA assay in competition with ASF. Consistent with these results, poses obtained in docking experiments showed interactions between the GlcpNAc residue in 4 and 5 and hGal-1 CRD, which may explain the higher affinity of hGal-1 for these compounds compared to lactose. Moreover, in the case of lacto-N-biose, the change in the glycosidic linkage from β-(1 → 4) to β-(1 → 3) generates a rotation in the molecule, which allows the formation of additional hydrogen bonds between specific amino acid residues in the CRD and the O4 and O6 of the N-acetylglucosamine moiety. In LacNAC (4), the presence of the N-acetyl group allows the formation of additional hydrogen bonds, increasing the number of interactions with hGal-1 and the stability of the complex, compared to lactose. ITC studies also showed an increase in the dissociation constants for isomers with a β-(1 → 6) glycosidic linkage (Table 3). This could be attributed to a conformational change that takes place in the molecule structure when the linkage between the galactose and the adjacent glucose or GlcpNAc is β-(1 → 6) compared to a β-(1 → 4) glycosidic bond. This hampers a proper fit of the galactose on subsite C as it emerges from the analysis of the interactions observed in the docking studies. This is clearly observed in Fig. 4 (A, C and E), where the β-(1 → 6) linkage forces the sugars adjacent to the terminal galactose to move away from the CRD, causing the loss of interactions. Moreover, SPA results showed a decrease in RP when the linkage between the galactose and the glucopyranose moiety is β-(1 → 6), as in compound 1, 3 or 6, instead of β-(1 → 4), present in compounds 2 and 4, or β-(1 → 3) as in compound 5 (Table 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "hGal-1",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM phosphate buffer, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of the ligands in the buffer were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51418166": {
+        "reactant_set_id": 51418166,
+        "pmid": 34293617,
+        "protein": "Galectin-1",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H]1C(O)O[C@H](CO)[C@@H](O[C@@H]2O[C@H](CO)[C@H](O)[C@H](O)[C@H]2O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 96000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Gal-1 assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "Isothermal titration calorimetry was performed in an Isothermal Calorimeter Nano ITC (TA Instruments). Needle and cell concentrations, injection volumes, and time intervals between injections were varied to obtain sufficient heat production per injection to allow good peak integration, and sufficient time between injections to allow the return to equilibrium. Each titration involved 20 injections of 2.5 μL of ligand solution (2.5 mM) at 3 min intervals into the sample cell (200 μL) containing hGal-1 (50 μM) at 298 K. Ligand solutions were prepared by dissolving the ligands in PBS buffer (20 mM phosphate buffer, 150 mM NaCl, pH 7.4) at 298 K. The titration cell was continuously stirred at 300 rpm. The heats of dilution of the ligands in the buffer were subtracted from the titration data. Fitting was performed using the Nano Analyze software to determine the dissociation constant (K_D) and the enthalpy change (ΔH). The stoichiometry (n) was fixed as 1.0.",
+            "Results - Thermodynamic analysis by isothermal titration calorimetry assays": "The interaction between hGal-1 and the selected ligands was also analyzed using Isothermal Titration Calorimetry (ITC). In this technique, the release or absorption of heat due to the interaction between the galectin and the glycan forming the complex is measured. ITC-derived thermodynamic binding data for hGal-1 at 298 K are shown in Table 3. The dissociation constant, K_D, is a measure of the galectin affinity, where the lower K_D, the stronger is the binding. The experimental K_D values showed the following decreasing affinity order: 4 > 5 > 2 > 3 > 1 > 6, which is in accordance with the SPA results.",
+            "Table 3 caption": "Thermodynamic parameters for binding of hGal-1 and ligands evaluated by ITC.",
+            "Table 3 content": "Compound K_D (M) ΔH (kJ/mol) ΔS (J/K·mol) -T·ΔS (kJ/mol) ΔG_bind (kJ/mol) 1 7.70 × 10⁻⁴ -15.3 8.4 -2.5 -17.8 2 1.87 × 10⁻⁴ -45.2 -80.2 23.9 -21.3 3 4.99 × 10⁻⁴ -17.9 3.0 -0.9 -18.8 4 0.96 × 10⁻⁴ -50.3 -91.9 27.4 -22.9 5 1.61 × 10⁻⁴ -47.7 -87.2 26.0 -21.7 6 13.3 × 10⁻⁴ -7.5 90.7 -8.9 -16.4",
+            "Figure 3 caption": "Purity evaluation of compound 1. A: Thin layer chromatography. Lane 1: Sample corresponding to 24 h reaction synthesis, Lane 2: Purified sample of compound 1. B: HPLC chromatograms. Black line: 24 h reaction synthesis, Red line: Purified compound 1.",
+            "Discussion": "Dissociation constants determined by ITC showed that LacNAC (4) and Lacto-N-biose (5) are better ligands than lactose (2), which was confirmed by the SPA assay in competition with ASF. Consistent with these results, poses obtained in docking experiments showed interactions between the GlcpNAc residue in 4 and 5 and hGal-1 CRD, which may explain the higher affinity of hGal-1 for these compounds compared to lactose. Moreover, in the case of lacto-N-biose, the change in the glycosidic linkage from β-(1 → 4) to β-(1 → 3) generates a rotation in the molecule, which allows the formation of additional hydrogen bonds between specific amino acid residues in the CRD and the O4 and O6 of the N-acetylglucosamine moiety. In LacNAC (4), the presence of the N-acetyl group allows the formation of additional hydrogen bonds, increasing the number of interactions with hGal-1 and the stability of the complex, compared to lactose. ITC studies also showed an increase in the dissociation constants for isomers with a β-(1 → 6) glycosidic linkage (Table 3). This could be attributed to a conformational change that takes place in the molecule structure when the linkage between the galactose and the adjacent glucose or GlcpNAc is β-(1 → 6) compared to a β-(1 → 4) glycosidic bond. This hampers a proper fit of the galactose on subsite C as it emerges from the analysis of the interactions observed in the docking studies. This is clearly observed in Fig. 4 (A, C and E), where the β-(1 → 6) linkage forces the sugars adjacent to the terminal galactose to move away from the CRD, causing the loss of interactions. Moreover, SPA results showed a decrease in RP when the linkage between the galactose and the glucopyranose moiety is β-(1 → 6), as in compound 1, 3 or 6, instead of β-(1 → 4), present in compounds 2 and 4, or β-(1 → 3) as in compound 5 (Table 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "hGal-1",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM phosphate buffer, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of the ligands in the buffer were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51418167": {
+        "reactant_set_id": 51418167,
+        "pmid": 34293617,
+        "protein": "Galectin-1",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H]1C(O)O[C@H](CO)[C@@H](O)[C@@H]1O[C@@H]1O[C@H](CO)[C@H](O)[C@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 161000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Gal-1 assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "Isothermal titration calorimetry was performed in an Isothermal Calorimeter Nano ITC (TA Instruments). Needle and cell concentrations, injection volumes, and time intervals between injections were varied to obtain sufficient heat production per injection to allow good peak integration, and sufficient time between injections to allow the return to equilibrium. Each titration involved 20 injections of 2.5 μL of ligand solution (2.5 mM) at 3 min intervals into the sample cell (200 μL) containing hGal-1 (50 μM) at 298 K. Ligand solutions were prepared by dissolving the ligands in PBS buffer (20 mM phosphate buffer, 150 mM NaCl, pH 7.4) at 298 K. The titration cell was continuously stirred at 300 rpm. The heats of dilution of the ligands in the buffer were subtracted from the titration data. Fitting was performed using the Nano Analyze software to determine the dissociation constant (K_D) and the enthalpy change (ΔH). The stoichiometry (n) was fixed as 1.0.",
+            "Results - Thermodynamic analysis by isothermal titration calorimetry assays": "The interaction between hGal-1 and the selected ligands was also analyzed using Isothermal Titration Calorimetry (ITC). In this technique, the release or absorption of heat due to the interaction between the galectin and the glycan forming the complex is measured. ITC-derived thermodynamic binding data for hGal-1 at 298 K are shown in Table 3. The dissociation constant, K_D, is a measure of the galectin affinity, where the lower K_D, the stronger is the binding. The experimental K_D values showed the following decreasing affinity order: 4 > 5 > 2 > 3 > 1 > 6, which is in accordance with the SPA results.",
+            "Table 3 caption": "Thermodynamic parameters for binding of hGal-1 and ligands evaluated by ITC.",
+            "Table 3 content": "Compound K_D (M) ΔH (kJ/mol) ΔS (J/K·mol) -T·ΔS (kJ/mol) ΔG_bind (kJ/mol) 1 7.70 × 10⁻⁴ -15.3 8.4 -2.5 -17.8 2 1.87 × 10⁻⁴ -45.2 -80.2 23.9 -21.3 3 4.99 × 10⁻⁴ -17.9 3.0 -0.9 -18.8 4 0.96 × 10⁻⁴ -50.3 -91.9 27.4 -22.9 5 1.61 × 10⁻⁴ -47.7 -87.2 26.0 -21.7 6 13.3 × 10⁻⁴ -7.5 90.7 -8.9 -16.4",
+            "Figure 3 caption": "Purity evaluation of compound 1. A: Thin layer chromatography. Lane 1: Sample corresponding to 24 h reaction synthesis, Lane 2: Purified sample of compound 1. B: HPLC chromatograms. Black line: 24 h reaction synthesis, Red line: Purified compound 1.",
+            "Discussion": "Dissociation constants determined by ITC showed that LacNAC (4) and Lacto-N-biose (5) are better ligands than lactose (2), which was confirmed by the SPA assay in competition with ASF. Consistent with these results, poses obtained in docking experiments showed interactions between the GlcpNAc residue in 4 and 5 and hGal-1 CRD, which may explain the higher affinity of hGal-1 for these compounds compared to lactose. Moreover, in the case of lacto-N-biose, the change in the glycosidic linkage from β-(1 → 4) to β-(1 → 3) generates a rotation in the molecule, which allows the formation of additional hydrogen bonds between specific amino acid residues in the CRD and the O4 and O6 of the N-acetylglucosamine moiety. In LacNAC (4), the presence of the N-acetyl group allows the formation of additional hydrogen bonds, increasing the number of interactions with hGal-1 and the stability of the complex, compared to lactose. ITC studies also showed an increase in the dissociation constants for isomers with a β-(1 → 6) glycosidic linkage (Table 3). This could be attributed to a conformational change that takes place in the molecule structure when the linkage between the galactose and the adjacent glucose or GlcpNAc is β-(1 → 6) compared to a β-(1 → 4) glycosidic bond. This hampers a proper fit of the galactose on subsite C as it emerges from the analysis of the interactions observed in the docking studies. This is clearly observed in Fig. 4 (A, C and E), where the β-(1 → 6) linkage forces the sugars adjacent to the terminal galactose to move away from the CRD, causing the loss of interactions. Moreover, SPA results showed a decrease in RP when the linkage between the galactose and the glucopyranose moiety is β-(1 → 6), as in compound 1, 3 or 6, instead of β-(1 → 4), present in compounds 2 and 4, or β-(1 → 3) as in compound 5 (Table 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "hGal-1",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM phosphate buffer, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of the ligands in the buffer were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51418168": {
+        "reactant_set_id": 51418168,
+        "pmid": 34293617,
+        "protein": "Galectin-1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@@H](OC[C@H]2OC(O)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1330000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Gal-1 assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "Isothermal titration calorimetry was performed in an Isothermal Calorimeter Nano ITC (TA Instruments). Needle and cell concentrations, injection volumes, and time intervals between injections were varied to obtain sufficient heat production per injection to allow good peak integration, and sufficient time between injections to allow the return to equilibrium. Each titration involved 20 injections of 2.5 μL of ligand solution (2.5 mM) at 3 min intervals into the sample cell (200 μL) containing hGal-1 (50 μM) at 298 K. Ligand solutions were prepared by dissolving the ligands in PBS buffer (20 mM phosphate buffer, 150 mM NaCl, pH 7.4) at 298 K. The titration cell was continuously stirred at 300 rpm. The heats of dilution of the ligands in the buffer were subtracted from the titration data. Fitting was performed using the Nano Analyze software to determine the dissociation constant (K_D) and the enthalpy change (ΔH). The stoichiometry (n) was fixed as 1.0.",
+            "Results - Thermodynamic analysis by isothermal titration calorimetry assays": "The interaction between hGal-1 and the selected ligands was also analyzed using Isothermal Titration Calorimetry (ITC). In this technique, the release or absorption of heat due to the interaction between the galectin and the glycan forming the complex is measured. ITC-derived thermodynamic binding data for hGal-1 at 298 K are shown in Table 3. The dissociation constant, K_D, is a measure of the galectin affinity, where the lower K_D, the stronger is the binding. The experimental K_D values showed the following decreasing affinity order: 4 > 5 > 2 > 3 > 1 > 6, which is in accordance with the SPA results.",
+            "Table 3 caption": "Thermodynamic parameters for binding of hGal-1 and ligands evaluated by ITC.",
+            "Table 3 content": "Compound K_D (M) ΔH (kJ/mol) ΔS (J/K·mol) -T·ΔS (kJ/mol) ΔG_bind (kJ/mol) 1 7.70 × 10⁻⁴ -15.3 8.4 -2.5 -17.8 2 1.87 × 10⁻⁴ -45.2 -80.2 23.9 -21.3 3 4.99 × 10⁻⁴ -17.9 3.0 -0.9 -18.8 4 0.96 × 10⁻⁴ -50.3 -91.9 27.4 -22.9 5 1.61 × 10⁻⁴ -47.7 -87.2 26.0 -21.7 6 13.3 × 10⁻⁴ -7.5 90.7 -8.9 -16.4",
+            "Figure 3 caption": "Purity evaluation of compound 1. A: Thin layer chromatography. Lane 1: Sample corresponding to 24 h reaction synthesis, Lane 2: Purified sample of compound 1. B: HPLC chromatograms. Black line: 24 h reaction synthesis, Red line: Purified compound 1.",
+            "Discussion": "Dissociation constants determined by ITC showed that LacNAC (4) and Lacto-N-biose (5) are better ligands than lactose (2), which was confirmed by the SPA assay in competition with ASF. Consistent with these results, poses obtained in docking experiments showed interactions between the GlcpNAc residue in 4 and 5 and hGal-1 CRD, which may explain the higher affinity of hGal-1 for these compounds compared to lactose. Moreover, in the case of lacto-N-biose, the change in the glycosidic linkage from β-(1 → 4) to β-(1 → 3) generates a rotation in the molecule, which allows the formation of additional hydrogen bonds between specific amino acid residues in the CRD and the O4 and O6 of the N-acetylglucosamine moiety. In LacNAC (4), the presence of the N-acetyl group allows the formation of additional hydrogen bonds, increasing the number of interactions with hGal-1 and the stability of the complex, compared to lactose. ITC studies also showed an increase in the dissociation constants for isomers with a β-(1 → 6) glycosidic linkage (Table 3). This could be attributed to a conformational change that takes place in the molecule structure when the linkage between the galactose and the adjacent glucose or GlcpNAc is β-(1 → 6) compared to a β-(1 → 4) glycosidic bond. This hampers a proper fit of the galactose on subsite C as it emerges from the analysis of the interactions observed in the docking studies. This is clearly observed in Fig. 4 (A, C and E), where the β-(1 → 6) linkage forces the sugars adjacent to the terminal galactose to move away from the CRD, causing the loss of interactions. Moreover, SPA results showed a decrease in RP when the linkage between the galactose and the glucopyranose moiety is β-(1 → 6), as in compound 1, 3 or 6, instead of β-(1 → 4), present in compounds 2 and 4, or β-(1 → 3) as in compound 5 (Table 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "hGal-1",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "2500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM phosphate buffer, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution of the ligands in the buffer were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

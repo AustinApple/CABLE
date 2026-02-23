@@ -1,0 +1,130 @@
+{
+    "50901695": {
+        "reactant_set_id": 50901695,
+        "pmid": 29528635,
+        "protein": "Heat shock protein HSP 90-alpha",
+        "ligand": {
+            "smiles": "COC(=O)c1c(O)cc(O)c(Cl)c1CCc1nccn1Cc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 620.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human N-terminal 6His-tagged HSP90alpha (1 to 236 residues) expressed in Escherichia coli BL21star/Rosetta2 (DE3) at 298 K by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry. Proteins were equilibrated into DTT-free assay buffer by repeated concentration and dilution using an ultrafiltration spin filter (Millipore). Concentrated ligand solutions in DMSO, typically 100 mM, were diluted into assay buffer. The standard ITC assay buffer contained 40 mM HEPES, pH 7.5, 100 mM NaCl, and 2% DMSO. Titrations were carried out at 25 °C using a VP-ITC calorimeter (Microcal, Inc.) with the protein solution (300–400 μM) loaded into the titration syringe and the inhibitor (30–40 μM) into the cell. The effect of buffer and pH was also determined by repeating the titrations using PBS (pH 7.5), 40 mM MOPS, 100 mM NaCl (pH 6.5), and 40 mM TAPS, 100 mM NaCl (pH 8.5). ITC titrations against radicicol, a well-characterized Hsp90 inhibitor, was used as a benchmark for both instrument and protein quality control. ITC assays consisted of 29 injections of 10 μL (2 μL for the first injection) each, with 5 min intervals between injections and the stirring speed set to 310 rpm. The first injection was discarded in all titrations. Reference power was set at 10 μCal s−1. Data were fitted to a one-site model using Origin 7 software. Titrations using Grp94 and Hsp90 N-terminal domains were repeated two times and errors reported as standard deviation from the mean.",
+            "Figure 5 caption": "Figure 5. Affinity and selectivity profiles of compounds. (A–F) ITC of ligand binding to Hsp90 and Grp94. For panels A, C, D, E, F, 400 μM Hsp90N or Grp94N were titrated into 40 μM 1, 2, or 3 at 25 °C in a buffer containing 40 mM HEPES, pH 7.5, 100 mM NaCl, 2% DMSO. For panel B, 750 μM Hsp90N was titrated into 81 μM 2. Kd values were calculated from the average of two replicate experiments, ±SD. (G) Graphical summary of the thermodynamic binding parameters derived from ITC titrations. (H) Western blot of lysates from MDA-MB-231 cells treated for 24 h with vehicle (D), geldanamycin (5 nM) (G), or indicated amounts of 2. Probe antibodies are listed at the side of each blot.",
+            "Table 2": "Table 2. Thermodynamic Parameters of Ligand Binding ligand protein temp (K) N Kd (μM) ΔG (kcal/mol) ΔH (kcal/mol) TΔS (kcal/mol) 1 Grp94N 298 0.98 ± 0.02 1.38 ± 0.11 −8.00 ± 0.04 −11.53 ± 0.26 −3.53 ± 0.22 1 Grp94NMC 298 1.12 ± 0.11 1.73 ± 0.21 −7.87 ± 0.07 −9.57 ± 1.75 −1.70 ± 1.82 1 Hsp90N 298 1.00 ± 0.09 0.62 ± 0.13 −8.48 ± 0.12 −6.96 ± 0.13 1.52 ± 0.25 1 Hsp90NMC 298 1.07 ± 0.01 0.81 ± 0.10 −8.31 ± 0.11 −6.52 ± 0.12 1.80 ± 0.30 2 Grp94N 298 0.95 ± 0.0 4.20 ± 0.22 −7.35 ± 0.03 −11.33 ± 0.19 −3.98 ± 0.16 2 Hsp90N 298 n/d 3 Grp94N 298 0.92 ± 0.00 0.65 ± 0.02 −8.44 ± 0.02 −10.96 ± 0.07 −2.52 ± 0.09 3 Hsp90N 298 0.93 ± 0.01 0.32 ± 0.01 −8.85 ± 0.02 −8.70 ± 0.04 0.16 ± 0.06 Rdc Grp94N 298 0.93 0.0048 −11.40 −29.30 −17.90",
+            "Figure 5A": "Hsp90N:1 Kd = 0.62 ± 0.13 μM",
+            "Figure 5C": "Hsp90N:3 Kd = 0.32 ± 0.01 μM",
+            "Figure 5D": "Grp94N:1 Kd = 1.38 ± 0.11 μM",
+            "Figure 5E": "Grp94N:2 Kd = 4.20 ± 0.22 μM",
+            "Figure 5F": "Grp94N:3 Kd = 0.65 ± 0.02 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "HSP90alpha (1 to 236 residues)",
+                "location": "syringe",
+                "concentration": "300-400",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "30-40"
+            },
+            "assay_conditions": {
+                "buffer_composition": "40 mM HEPES, 100 mM NaCl, 2% DMSO",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "310",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "10",
+                    "duration": null,
+                    "spacing": "300",
+                    "total_count": "29"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50901700": {
+        "reactant_set_id": 50901700,
+        "pmid": 29528635,
+        "protein": "Heat shock protein HSP 90-alpha",
+        "ligand": {
+            "smiles": "Oc1cc(O)c(Cl)c(CCc2nccn2Cc2ccccc2)c1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 320.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human N-terminal 6His-tagged HSP90alpha (1 to 236 residues) expressed in Escherichia coli BL21star/Rosetta2 (DE3) at 298 K by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry. Proteins were equilibrated into DTT-free assay buffer by repeated concentration and dilution using an ultrafiltration spin filter (Millipore). Concentrated ligand solutions in DMSO, typically 100 mM, were diluted into assay buffer. The standard ITC assay buffer contained 40 mM HEPES, pH 7.5, 100 mM NaCl, and 2% DMSO. Titrations were carried out at 25 °C using a VP-ITC calorimeter (Microcal, Inc.) with the protein solution (300–400 μM) loaded into the titration syringe and the inhibitor (30–40 μM) into the cell. The effect of buffer and pH was also determined by repeating the titrations using PBS (pH 7.5), 40 mM MOPS, 100 mM NaCl (pH 6.5), and 40 mM TAPS, 100 mM NaCl (pH 8.5). ITC titrations against radicicol, a well-characterized Hsp90 inhibitor, was used as a benchmark for both instrument and protein quality control. ITC assays consisted of 29 injections of 10 μL (2 μL for the first injection) each, with 5 min intervals between injections and the stirring speed set to 310 rpm. The first injection was discarded in all titrations. Reference power was set at 10 μCal s−1. Data were fitted to a one-site model using Origin 7 software. Titrations using Grp94 and Hsp90 N-terminal domains were repeated two times and errors reported as standard deviation from the mean.",
+            "Figure 5 caption": "Figure 5. Affinity and selectivity profiles of compounds. (A–F) ITC of ligand binding to Hsp90 and Grp94. For panels A, C, D, E, F, 400 μM Hsp90N or Grp94N were titrated into 40 μM 1, 2, or 3 at 25 °C in a buffer containing 40 mM HEPES, pH 7.5, 100 mM NaCl, 2% DMSO. For panel B, 750 μM Hsp90N was titrated into 81 μM 2. Kd values were calculated from the average of two replicate experiments, ±SD. (G) Graphical summary of the thermodynamic binding parameters derived from ITC titrations. (H) Western blot of lysates from MDA-MB-231 cells treated for 24 h with vehicle (D), geldanamycin (5 nM) (G), or indicated amounts of 2. Probe antibodies are listed at the side of each blot.",
+            "Table 2": "Table 2. Thermodynamic Parameters of Ligand Binding ligand protein temp (K) N Kd (μM) ΔG (kcal/mol) ΔH (kcal/mol) TΔS (kcal/mol) 1 Grp94N 298 0.98 ± 0.02 1.38 ± 0.11 −8.00 ± 0.04 −11.53 ± 0.26 −3.53 ± 0.22 1 Grp94NMC 298 1.12 ± 0.11 1.73 ± 0.21 −7.87 ± 0.07 −9.57 ± 1.75 −1.70 ± 1.82 1 Hsp90N 298 1.00 ± 0.09 0.62 ± 0.13 −8.48 ± 0.12 −6.96 ± 0.13 1.52 ± 0.25 1 Hsp90NMC 298 1.07 ± 0.01 0.81 ± 0.10 −8.31 ± 0.11 −6.52 ± 0.12 1.80 ± 0.30 2 Grp94N 298 0.95 ± 0.0 4.20 ± 0.22 −7.35 ± 0.03 −11.33 ± 0.19 −3.98 ± 0.16 2 Hsp90N 298 n/d 3 Grp94N 298 0.92 ± 0.00 0.65 ± 0.02 −8.44 ± 0.02 −10.96 ± 0.07 −2.52 ± 0.09 3 Hsp90N 298 0.93 ± 0.01 0.32 ± 0.01 −8.85 ± 0.02 −8.70 ± 0.04 0.16 ± 0.06 Rdc Grp94N 298 0.93 0.0048 −11.40 −29.30 −17.90",
+            "Figure 5A": "Hsp90N:1 Kd = 0.62 ± 0.13 μM",
+            "Figure 5C": "Hsp90N:3 Kd = 0.32 ± 0.01 μM",
+            "Figure 5D": "Grp94N:1 Kd = 1.38 ± 0.11 μM",
+            "Figure 5E": "Grp94N:2 Kd = 4.20 ± 0.22 μM",
+            "Figure 5F": "Grp94N:3 Kd = 0.65 ± 0.02 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "HSP90alpha (1 to 236 residues)",
+                "location": "syringe",
+                "concentration": "300-400",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "cell",
+                "concentration": "30-40"
+            },
+            "assay_conditions": {
+                "buffer_composition": "40 mM HEPES, 100 mM NaCl, 2% DMSO",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "310",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "10",
+                    "duration": null,
+                    "spacing": "300",
+                    "total_count": "29"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

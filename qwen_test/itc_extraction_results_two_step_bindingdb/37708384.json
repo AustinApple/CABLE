@@ -1,0 +1,71 @@
+{
+    "51564286": {
+        "reactant_set_id": 51564286,
+        "pmid": 37708384,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1cc(CC(=O)N2C[C@H](O)C[C@H]2C(=O)NCc2ccc(cc2)-c2cnco2)on1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to 6xHis-tagged VHL (1 to 213 residues)/Elongin B/Elogin C (unknown origin) expressed in Escherichia coli BL21 cells using FAM-DEALAHyp-YIPD as substrate assessed as dissociation constant by ITC analysis",
+        "search_path": [],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "error": "CUDA out of memory. Tried to allocate 4.27 GiB. GPU 0 has a total capacity of 79.22 GiB of which 150.06 MiB is free. Including non-PyTorch memory, this process has 77.76 GiB memory in use. Process 1711395 has 1.29 GiB memory in use. Of the allocated memory 67.55 GiB is allocated by PyTorch, and 9.54 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+        },
+        "structured_description": null
+    },
+    "51564290": {
+        "reactant_set_id": 51564290,
+        "pmid": 37708384,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H](C(=O)N1C[C@H](O)[C@H](F)[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 244.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged VHL (54 to 213 residues)/Elongin B (1 to 104 residues)/Elongin C (17 to 112 residues) (unknown origin) expressed in Escherichia coli BL21(DE3) cells assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 16: Van Molle, I.; Thoman, A.; Buckley, D. L.; So, E. C.; Lang, S.; Crews, C. M.; Ciulli, A. Dissecting fragment-based lead discovery at the von Hippel-Lindau protein/hypoxia inducible factor 1α protein-protein interface. Chem. Biol. 2012, 19, 1300–1312. Reference 64: Huang, X. Fluorescence polarization competition assay: The range of resolvable inhibitor potency is limited by the affinity of the fluorescent ligand. J. Biomol. Screen. 2003, 8, 34–38.",
+        "original_paragraph": {
+            "Materials and Methods": "Biophysical Methods. FP Binding Assay. FP competitive binding assays were performed using a PHERAstar FS (BMG LABTECH) with fluorescence excitation and emission wavelengths of λ = 485 and λ = 520 nm, respectively. Assays were run in triplicates of three independent experiments using 384-well plates (Corning 3820), with each well solution containing 15 nM VCB protein, 10 nM 5,6-carboxyfluorescein (FAM)-labeled HIF-1α peptide (FAM-Asp-Glu-Ala-Leu-Ala-Hyp-Tyr-Ile-Pro-Asp-Asp-Phe-Gln-Leu-Arg-Ser-Phe-NH2, “JC9”), and decreasing concentrations of VHL ligands (14-point and 2-fold serial dilution starting from 100 μM VHL ligand). All components were dissolved from stock solutions using 100 mM Bis-Tris, 100 mM NaCl, 1 mM DTT, pH 7.0, to yield a final assay volume of 15 μL. DMSO was added as appropriate to ensure a final concentration of 2% (v/v). Control wells containing VCB and JC9 with no compound (zero displacement), or JC9, in the absence of protein (maximum displacement) were also included to allow for normalization. Percentage displacement values were obtained by normalization of controls and were plotted against log[compound]. The IC50 values were determined for each titration using non-linear regression analysis with Prism GraphPad (Table S1). Dissociation constants Kd were back-calculated from the measured IC50 values by using a displacement binding model as described.16,64 Surface Plasmon Resonance. To perform SPR measurements, 10 mM stock solution of VHL inhibitors was diluted 100-fold in DMSO to achieve a 100 μM final stock concentration. The ligand stock solution was diluted in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM TCEP, 0.005% Tween 20, pH 7.0) to obtain the final concentration of 2% (v/v) DMSO. Final concentrations from 1 μM to 1.4 nM of the VHL inhibitors were prepared on a 96-well plate (7-point, 3-fold serial dilution starting from 1 μM VHL ligand). The experiments were performed at 20 °C on a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) equipped with a streptavidin-functionalized sensor chip (Series S Sensor Chip SA, Cytiva). The system was flushed with running buffer (20 mM HEPES, 150 mM NaCl, 1 mM TCEP, 0.005% Tween 20, and 2% DMSO, pH 7.0). Biotinylated VCB protein (50 nM) was immobilized onto the sensor chip at 10 μL/min for using the automated wizard in the T200 control software to reach the required immobilization levels. The solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Reference flow-cell response was subtracted from the sample response with immobilized VCB protein to correct for systematic noise and baseline drift. Data were solvent-corrected by an eight-point solvent correction, and the response from the blank injections was used to double-reference the binding data. For the determination of binding constants, processed kinetic data were fitted to a 1:1 interaction model using the Biacore Insight Evaluation Software (version 3.0.12.15655).",
+            "Figure 4 caption": "Figure 4. Biophysical characterization of binary complex formation between inhibitor 30 and VCB. (A) Competitive FP binding assay curve, monitoring the displacement of the labeled HIF-1α peptide from VCB by inhibitor 30. Data show mean ± S.E.M. from one representative experiment in triplicate. (B) SPR sensorgrams monitoring real-time interaction of immobilized biotin-VCB protein with 30 (from top to bottom, 1000, 330, 110, 37, 12.3, 4.12, and 1.37 nM). Association and dissociation rate constants are listed in Table S2. Data was fitted to a 1:1 binding model."
+        },
+        "structured_description": null
+    },
+    "51564289": {
+        "reactant_set_id": 51564289,
+        "pmid": 37708384,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2(CC2)C#N)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 80.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VHL/Elongin B/Elongin C (unknown origin) assessed as dissociation constant by ITC analysis",
+        "search_path": [],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "error": "CUDA out of memory. Tried to allocate 4.27 GiB. GPU 0 has a total capacity of 79.22 GiB of which 150.06 MiB is free. Including non-PyTorch memory, this process has 77.76 GiB memory in use. Process 1711395 has 1.29 GiB memory in use. Of the allocated memory 67.55 GiB is allocated by PyTorch, and 9.54 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+        },
+        "structured_description": null
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "50407224": {
+        "reactant_set_id": 50407224,
+        "pmid": 26314339,
+        "protein": "Alpha-ketoglutarate-dependent dioxygenase FTO",
+        "ligand": {
+            "smiles": "Oc1cc(O)c(NC(=O)C2(CCC2)c2ccccc2)cc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FTO (unknown origin) (31 to 505 residues) expressed in Escherichia coli BL21 (DE3) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Experiment": "5.5. Isothermal Titration Calorimetry (ITC). The ITC experiment was carried out at 25 °C with a Microcal ITC200 isothermal titration calorimeter (GE Healthcare). Purified FTO protein stock solution in a buffer containing 25 mM HEPES (pH 7.5), 100 mM NaCl, and 10 mM β-mercaptoethanol was used for the ITC experiment. The protein solution was prepared from the stock solution to contain 10% DMSO and 140 μM FTO. The titrant contained the same buffer plus 1.5 mM compound 1a. To correct the thermal effect from mixing and dilution, a control experiment was performed by injecting the titrant into the buffer without protein. The 0.2 mL sample cell was filled with the protein solution and stirred constantly at 750 rpm. The titrant was titrated into the sample cell with one 0.4 μL injection followed by 2.0 μL injections at 150 s intervals. After the background dilution heats were subtracted from the experimental data, the net titration data were analyzed with the Microcal ORIGIN V7.0 software (Microcal Software, Northampton, MA).",
+            "Figure 2 caption": "Figure 2. Measurement of the binding affinity between FTO and compound 1a by isothermal titration calorimetry (ITC). Data fitting revealed a binding dissociation constant of ~13 μM between compound 1a and FTO.",
+            "Figure 2 data box": "Data: A500uM7052_NDH Model: OneSites Chi^2/DoF = 565.0 N = 0.904 ± 0.0293 Sites K = 7.52E4 ± 1.85E4 M^-1 ΔH = -630.0 ± 28.16 cal/mol ΔS = 20.2 cal/mol/deg"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "FTO",
+                "location": "cell",
+                "concentration": "140",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 1a",
+                "location": "syringe",
+                "concentration": "1500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM HEPES, 100 mM NaCl, 10 mM β-mercaptoethanol",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer without protein to correct for thermal effects from mixing and dilution",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

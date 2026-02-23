@@ -1,0 +1,60 @@
+{
+    "51290912": {
+        "reactant_set_id": 51290912,
+        "pmid": 30773430,
+        "protein": "Fascin",
+        "ligand": {
+            "smiles": "Clc1ccc(Cn2cc(C(=O)Nc3ccncc3)c3n(ncc3c2=O)C2CCNCC2)cc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 50.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human fascin (1 to 493 residues) expressed in Escherichia coli BL21(DE3) pLysS by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "ITC experiments were performed on a MicroCal iTC200 (Malvern Instruments) at 25 °C. The protein (fascin, 1–493) was dialyzed against 20 mM HEPES, 150 mM NaCl, 1 mM DTT, pH 7.4, and concentrated to 15 μM. The ligand (BDP-13176) was dissolved in DMSO and diluted in the same buffer to a final concentration of 150 μM. The protein was loaded into the sample cell (200 μL), and the ligand was loaded into the syringe (250 μL). The experiment consisted of 20 injections of 2 μL each, spaced 120 s apart, with a stirring speed of 300 rpm. A blank experiment with buffer in the syringe was performed to correct for heat of dilution. Data were analyzed using Origin 7.0 software (MicroCal) with a 1:1 binding model.",
+            "Figure 3 caption": "Fig. 3. Comparison of SPR binding affinity, ITC binding parameters and functional bundling assay potency for BDP-13176. A) Multi-cycle kinetic curve for BDP-13176 binding to immobilised (His)6-fascin. Data were fitted using a 1:1 kinetic binding model. B) ITC titration thermogram and referenced isotherm (first point removed) of BDP-13176 (150 μM in syringe) binding to fascin (15 μM in cell). Fitting of the isotherm to a 1:1 binding model resulted in the following binding parameters: N = 1.05 ± 0.01, Kd = (45 ± 7) nM, ΔH = (−2400 ± 200) cal mol−1, ΔS = −45.9 cal mol−1 K−1. C) Inhibition of fascin bundling activity by BDP-13176. Inhibition of bundling activity can be seen as fascin and F-actin move from the pellet (P) to the supernatant (S) with increasing concentrations of BDP-13176. D) Concentration-response curve for bundling assay data shown in C."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "fascin",
+                "location": "cell",
+                "concentration": "15",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "BDP-13176",
+                "location": "syringe",
+                "concentration": "150"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": "A blank experiment with buffer in the syringe was performed to correct for heat of dilution.",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

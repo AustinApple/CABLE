@@ -1,0 +1,62 @@
+{
+    "51258014": {
+        "reactant_set_id": 51258014,
+        "pmid": 31687820,
+        "protein": "Toll-like receptor 8",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1c(I)cccc1Oc1ccc(cc1)-c1nnco1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 86.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human TLR8 (27 to 827 residues) expressed in HEK293 cells in presence of R848 by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 4: (a) Tanji, H.; Ohto, U.; Shibata, T.; Miyake, K.; Shimizu, T. Structural reorganization of the toll-like receptor 8 dimer induced by agonistic ligands. Science 2013, 339, 1426–1429. (b) Ohto, U.; Tanji, H.; Shimizu, T. Structure and function of toll-like receptor 8. Microbes Infect. 2014, 16, 273–282. (c) Tanji, H.; Ohto, U.; Shibata, T.; Taoka, M.; Yamauchi, Y.; Isobe, T.; Miyake, K.; Shimizu, T. Toll-like receptor 8 senses degradation products of single-stranded RNA. Nat. Struct. Mol. Biol. 2015, 22, 109–115.",
+        "original_paragraph": {
+            "Experimental Section - Protein Preparation and ITC": "The extracellular domain of human toll-like receptor 8 (hTLR8, residues 27–827) was prepared as described previously.4 ITC experiments were performed in a buffer composed of 25 mM MES pH 5.5, 0.20 M NaCl, and 5% DMSO at 298 K using a MicroCal iTC200 (GE Healthcare). The titration sequence included a single 0.4 μL injection followed by 18 injections, 2 μL each, with a spacing of 120 s between the injections. The titration conditions were as follows: 100 μM R848 into 10 μM hTLR8 and 50 μM CU-68; 100 μM R848 into 10 μM hTLR8 and 50 μM CU-72; 100 μM R848 into 10 μM hTLR8 and 50 μM CU-115.",
+            "Figure 8 caption": "Figure 8. Therapeutic potential of CU-115, CU-72, and CU-68 on NF-κB inhibition mediated by ssRNA-stimulated HEK 293-TLR8 cells. HEK 293 cells, hTLR8 cells, and an inducible SEAP reporter gene were incubated with sample compounds for 16 h. The data were normalized as [(raw data – untreated cells)/(ligand + solvent control – untreated cells)]. Ligand + solvent is 100% activation, and untreated cells are 0% activation. At 5 μM, CU-68 suppresses the NF-κB inhibition induced by ssRNA-Lyo-40 in HEK 293 TLR8 cells, while CU-115 and CU-72 displayed weaker activity (data are mean ± s.d.; n = 3 independent experiments). (b) CU-68 dose-response-dependent NF-κB inhibition mediated by ssRNA-stimulated HEK 293-TLR8 cells (data are mean ± s.d.; n = 3 independent experiments). (c) ITC thermogram of CU-68 titrated into hTLR8 to determine binding affinity. The titration of R848 into hTLR8 premixed with CU-68 (left), and the titration of R848 into hTLR8 alone (right), suggesting that CU-68 prevents R848 from binding to TLR8 (representative of one independent experiment). The raw data are presented on the top, and the integrated peak areas are shown and fitted below.",
+            "Figure 8 (c) thermogram data": "Kd = 85.5 nM",
+            "Figure 8 (c) thermogram description": "ITC thermogram of CU-68 titrated into hTLR8 to determine binding affinity. The titration of R848 into hTLR8 premixed with CU-68 (left), and the titration of R848 into hTLR8 alone (right), suggesting that CU-68 prevents R848 from binding to TLR8 (representative of one independent experiment). The raw data are presented on the top, and the integrated peak areas are shown and fitted below."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hTLR8 (residues 27–827)",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "R848",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM MES, 0.20 M NaCl, 5% DMSO",
+                "pH": "5.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

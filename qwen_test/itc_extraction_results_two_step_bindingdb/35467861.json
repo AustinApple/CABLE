@@ -1,0 +1,61 @@
+{
+    "51502783": {
+        "reactant_set_id": 51502783,
+        "pmid": 35467861,
+        "protein": "Inositol hexakisphosphate kinase 2",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc2noc(-c3ccc(cc3)-c3ccccc3)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 74.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MBP-tagged recombinant human IP6K2 at 400 uM by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal titration calorimetry experiments were performed using a MicroCal PEAQ-ITC (Malvern Panalytical) with 40 μM recombinant MBP-tagged IP6K2 in the sample cell and 400 μM inhibitor 20 in the syringe, each of which was maintained at 25 °C and containing 20 mM Tris-HCl, pH 7.2, 150 mM KCl, 0.05 mM EDTA, and 0.8 mM MgCl₂. The sample cell (volume = 200 μL) and the syringe were cleaned before each run. Thermograms were constructed from 20 injections, each of which involved 2.0 μL of ligand delivered for 4.0 s, with an equilibration time of 150–300 s between each injection. The stirring speed was set to 750 rpm. Data were fitted to a single binding site model using the analysis software provided by the manufacturer. At least three runs were performed.",
+            "Figure 4 caption": "Figure 4. Interactions of 20 with IP6Ks. Dose/response relationships for inhibition by 20 of (A) IP6K1, (B) IP6K2, and (C) IP6K3 by HPLC analysis of [³H]-InsP₆ phosphorylation. Data represent mean values and standard errors from either three or four independent experiments. (D) Thermogram (“DP” = differential power) for ITC analysis of the interaction of 20 with IP6K2. (E) Corresponding Wiseman plot. The ITC data are from a representative experiment, typical of three.",
+            "Results section - ITC data": "The high affinity interaction between 20 and IP6K2 was further confirmed by ITC: a Kd value of 74 nM was obtained (Figure 4D,E)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "MBP-tagged recombinant human IP6K2",
+                "location": "cell",
+                "concentration": "40",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "inhibitor 20",
+                "location": "syringe",
+                "concentration": "400"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM KCl, 0.05 mM EDTA, 0.8 mM MgCl₂",
+                "pH": "7.2",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": "4",
+                    "spacing": "150-300",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

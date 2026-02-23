@@ -1,0 +1,59 @@
+{
+    "50759686": {
+        "reactant_set_id": 50759686,
+        "pmid": 28949521,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CCS(=O)(=O)Nc1ccc(Oc2ccc(F)cc2F)c(c1)-c1cn(C)c(=O)c2[nH]ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "<",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6-tagged human BRD4 BD1 to BD2 (K57 to K550 residues) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Direct binding of compound 63 to BRD4 bromodomains I and II was tested by isothermal titration calorimetry (ITC). The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical) at 25 °C. The protein was prepared in 20 mM HEPES, pH 7.5, 100 mM NaCl, 1 mM DTT, and 0.05% Tween-20. The ligand was dissolved in DMSO and diluted in the same buffer. The protein concentration was 10 μM in the cell, and the ligand concentration was 100 μM in the syringe. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab) with a one-site binding model. The binding constants were calculated from the integrated heat of each injection. The control experiment was performed by titrating the ligand into buffer alone."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "BRD4 bromodomains I and II (K57 to K550 residues)",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 63",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.05% Tween-20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer alone",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

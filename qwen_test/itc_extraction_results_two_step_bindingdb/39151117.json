@@ -1,0 +1,62 @@
+{
+    "51605174": {
+        "reactant_set_id": 51605174,
+        "pmid": 39151117,
+        "protein": "Signal transducer and activator of transcription 3",
+        "ligand": {
+            "smiles": "CN(C)CCOc1ccc(-c2noc3c2C(=O)c2sccc2C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4242.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal 6His-tagged recombinant human STAT3 (127 to 722 residues) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Protein Purification and Isothermal Titration Calorimetry": "Fragments of human STAT3 amino acid (127–722) with 6 × His tag were cloned into pET-28a plasmid, transformed, and expressed in E. coli BL21 (DE3). When the OD600 reached 0.5, 1 mM isopropyl β-D-thiogalactopyranoside (IPTG) was added to the LB medium, and incubation continued for 4 h. E. coli bacteria were lysed using lysozyme (cat no. SL2073), and the recombinant proteins were purified after the supernatant was incubated with Ni-NTA (QIAGEN) for 1 h at 4 °C. In the ITC assay, 5 μM ABC (300 μL) was titrated with 50 μM B at 25 °C. The KD was calculated using the TA-ITC analysis software (TA-ITC TECHNOLOGY CO., Ltd.) with the one-site model. A control experiment involved titrating the buffer into STAT3 to account for background noise in the measurements.",
+            "Figure 3 caption": "Figure 3. (A) Molecular docking study of 15e binding to the STAT3 SH2 domain (sofware: MOE; PDB code: 6NJS). The amino acid residues of STAT3 involved in the hydrogen bonding interactions are shown in the picture. 15e is labeled in yellow. (B) Prokaryotic expression and purification for STAT3 main fragments (127–722 amino acid). (C) Isothermal titration calorimetry (ITC) measurements of the binding of 15e to STAT3 (127–722). The line is the fit of the binding isotherm to extract the thermodynamic parameters using a one-site binding model.",
+            "Figure 3C data": "Model Independent Variable Value Kd (M) 4.242E-6 n 0.353 ΔH (kJ/mol) -3220 ΔS (J/mol K) -10697",
+            "Results section - 15e Bound to STAT3": "The interaction of 15e with STAT3 was confirmed by isothermal titration calorimetry, and the dissociation constant was determined as 4.242 μM (Figure 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "TA-ITC TECHNOLOGY CO., Ltd. (TA-ITC)"
+            },
+            "protein": {
+                "name": "STAT3 (127–722)",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": "300"
+            },
+            "ligand": {
+                "name": "15e",
+                "location": "syringe",
+                "concentration": "50"
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of buffer into STAT3 to account for background noise",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

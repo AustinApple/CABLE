@@ -1,0 +1,620 @@
+{
+    "51119600": {
+        "reactant_set_id": 51119600,
+        "pmid": 30133284,
+        "protein": "Albumin",
+        "ligand": {
+            "smiles": "Cc1n[nH]c(C)c1CCCOc1cc(ccc1F)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human serum albumin by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 5 caption": "Figure 5. AG10 has high selectivity for binding TTR over albumin or other abundant human serum proteins. (a) Gel filtration and dialysis assay comparing AG10 and tafamidis (each at 30 μM) incubated with purified human serum albumin (600 μM). The concentration of tafamidis bound to albumin after gel filtration (i.e., dialysis time 0 h) was normalized to 100%. Error bars indicate SD (n = 3). (b) 24 h time-course for dialysis of AG10 (10 μM) incubated with purified human TTR (5 μM). Error bars indicate SD (n = 3). (c) Fluorescence change due to modification of purified human TTR (5 μM) by FPE probe monitored for 6 h in the presence of probe alone (black circles), probe plus [fibrinogen (5 μM), albumin (600 μM), IgG (70 μM), transferrin (25 μM)] (gray triangles), probe and AG10 (10 μM) (red squares), or probe and AG10 plus albumin (green diamonds), and probe and AG10 plus all [fibrinogen (5 μM), albumin (600 μM) IgG (70 μM), transferrin (25 μM)] (blue circles). (d) %TTR occupancy in buffer by AG10 in the presence of FPE probe and other serum proteins measured after 3 h of incubation relative to probe alone. (e,f) Same experiment described for AG10 was performed for tafamidis. Error bars indicate SD (n = 3). The significance of the differences were measured by One-Way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001).",
+            "Supporting Information - Binding of AG10 and Tafamidis to Human Serum Albumin": "Binding of AG10 and Tafamidis to Human Serum Albumin. Test compounds (AG10 or tafamidis; both at 30 μM) were incubated with human serum albumin (HSA, 600 μM; albumin from human serum; Sigma-Aldrich, catalogue no. A3782) in assay buffer (10 mM sodium phosphate, 100 mM KCl, and 1 mM EDTA, pH 7.6) for 1 h at 37 °C. Then 500 μL of a solution of HSA and AG10 or tafamidis mixture in assay buffer was subjected to gel filtration on PD Minitrap G25 columns (GE Life Sciences, catalogue no. 45-001-529) by gravity and the fractions containing HSA were identified by NanoDrop. The concentration of HSA (i.e., concentration at time zero) was also determined using NanoDrop (based on calibration curves of known HSA concentrations). HSA concentration was 351 μM for the tafamidis sample and 345 μM for AG10 sample. The concentration of test compounds in these fractions (i.e., concn at time zero) was evaluated using HPLC (based on calibration curves of known concentration of test compounds). Then 500 μL of each HSA/test compound samples was added to a Slide-A-Lyzer dialysis cassette G2 (3.5K MWCO, Thermo Scientific, catalogue no. PI87722). The dialysis cassettes were placed in 100 mL of assay buffer and stirred at room temperature. After 24 h, the samples were removed from dialysis cassette and the volume was measured and results normalized. The concentration of TTR and AG10 obtained from the assay buffer were determined using NanoDrop and LCMS, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "human serum albumin (HSA)",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "tafamidis or AG10",
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119604": {
+        "reactant_set_id": 51119604,
+        "pmid": 30133284,
+        "protein": "Albumin",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc2nc(oc2c1)-c1cc(Cl)cc(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human serum albumin by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 5 caption": "Figure 5. AG10 has high selectivity for binding TTR over albumin or other abundant human serum proteins. (a) Gel filtration and dialysis assay comparing AG10 and tafamidis (each at 30 μM) incubated with purified human serum albumin (600 μM). The concentration of tafamidis bound to albumin after gel filtration (i.e., dialysis time 0 h) was normalized to 100%. Error bars indicate SD (n = 3). (b) 24 h time-course for dialysis of AG10 (10 μM) incubated with purified human TTR (5 μM). Error bars indicate SD (n = 3). (c) Fluorescence change due to modification of purified human TTR (5 μM) by FPE probe monitored for 6 h in the presence of probe alone (black circles), probe plus [fibrinogen (5 μM), albumin (600 μM), IgG (70 μM), transferrin (25 μM)] (gray triangles), probe and AG10 (10 μM) (red squares), or probe and AG10 plus albumin (green diamonds), and probe and AG10 plus all [fibrinogen (5 μM), albumin (600 μM) IgG (70 μM), transferrin (25 μM)] (blue circles). (d) %TTR occupancy in buffer by AG10 in the presence of FPE probe and other serum proteins measured after 3 h of incubation relative to probe alone. (e,f) Same experiment described for AG10 was performed for tafamidis. Error bars indicate SD (n = 3). The significance of the differences were measured by One-Way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001).",
+            "Supporting Information - Binding of AG10 and Tafamidis to Human Serum Albumin": "Binding of AG10 and Tafamidis to Human Serum Albumin. Test compounds (AG10 or tafamidis; both at 30 μM) were incubated with human serum albumin (HSA, 600 μM; albumin from human serum; Sigma-Aldrich, catalogue no. A3782) in assay buffer (10 mM sodium phosphate, 100 mM KCl, and 1 mM EDTA, pH 7.6) for 1 h at 37 °C. Then 500 μL of a solution of HSA and AG10 or tafamidis mixture in assay buffer was subjected to gel filtration on PD Minitrap G25 columns (GE Life Sciences, catalogue no. 45-001-529) by gravity and the fractions containing HSA were identified by NanoDrop. The concentration of HSA (i.e., concentration at time zero) was also determined using NanoDrop (based on calibration curves of known HSA concentrations). HSA concentration was 351 μM for the tafamidis sample and 345 μM for AG10 sample. The concentration of test compounds in these fractions (i.e., concn at time zero) was evaluated using HPLC (based on calibration curves of known concentration of test compounds). Then 500 μL of each HSA/test compound samples was added to a Slide-A-Lyzer dialysis cassette G2 (3.5K MWCO, Thermo Scientific, catalogue no. PI87722). The dialysis cassettes were placed in 100 mL of assay buffer and stirred at room temperature. After 24 h, the samples were removed from dialysis cassette and the volume was measured and results normalized. The concentration of TTR and AG10 obtained from the assay buffer were determined using NanoDrop and LCMS, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "human serum albumin (HSA)",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "tafamidis or AG10",
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119601": {
+        "reactant_set_id": 51119601,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc2nc(oc2c1)-c1cc(Cl)cc(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119602": {
+        "reactant_set_id": 51119602,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "OC(=O)c1cc(ccc1O)-c1ccc(F)cc1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 407.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119603": {
+        "reactant_set_id": 51119603,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1n[nH]c(C)c1CCCOc1cc(ccc1I)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 90.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119606": {
+        "reactant_set_id": 51119606,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "COC(=O)c1ccc(F)c(OCCCc2c(C)n[nH]c2C)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 258.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119607": {
+        "reactant_set_id": 51119607,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1nn(C)c(C)c1CCCOc1cc(ccc1F)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 251.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119608": {
+        "reactant_set_id": 51119608,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119610": {
+        "reactant_set_id": 51119610,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1n[nH]c(C)c1CCCOc1cc(ccc1F)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119611": {
+        "reactant_set_id": 51119611,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "CCc1n[nH]c(CC)c1CCCOc1cc(ccc1F)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1253.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin (unknown origin) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Experimental Section - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). Binding experiments were performed using MicroCal PEAQ-ITC at 25 °C. A solution of ligand (25 μM in PBS pH 7.4, 100 mM KCl, 1 mM EDTA, 2.5% DMSO) was prepared and titrated into an ITC cell containing 2 μM of TTR in an identical buffer. Nineteen injections of ligand (2.0 μL each) were injected into the ITC cell (at 25 °C) to the point that TTR was fully saturated with ligand. Calorimetric data were plotted and fitted using the standard single-site binding model. For control, we tested the enthalpy change caused by titrating blank DMSO into TTR and the resulting binding enthalpy was <0.4 kcal/mol. We also used ITC to titrate tafamidis and AG10 against human serum albumin (HSA). The Kd value for tafamidis (2.3 μM) was similar to what has been reported earlier (Kd = 2.5 μM; EMA assessment report EMA/729083/2011). The binding affinity of AG10 was calculated around 8 μM, which also fits with our data in Figure 5 (where AG10 has lower binding to albumin compared to tafamidis).",
+            "Figure 1 caption": "Figure 1. Binding affinities and potency of stabilizers for TTR in buffer. (a) Interaction of TTR with stabilizers assessed by ITC. Thermodynamic data (summarized in Table 1); ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (b) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (c) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (*p ≤ 0.05; ***p ≤ 0.001).",
+            "Table 1": "Table 1. Comparison of the Binding Affinity, Thermodynamics, and Potency of Stabilizers to TTR in Buffer and Human Serum | stabilizer | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | TΔS (kcal/mol) | %TTR occupancy in buffer (1:1 ratio) | %TTR occupancy in serum (2:1 ratio) | %TTR stabilization in serum (2:1 ratio) | |---|---|---|---|---|---|---|---| | AG10 | 4.8 ± 1.9 | −11.34 | −13.6 | −2.26 | 79.1 ± 1.2 | 98.8 ± 2.9 | 95.4 ± 2.9 | | tafamidis | 4.4 ± 1.3 | −11.39 | −5.0 | 6.39 | 49.9 ± 3.3 | 49 ± 3.3 | 41.5 ± 4.6 | | diflunisal | 407 ± 35 | −8.72 | −8.38 | 0.34 | 28.7 ± 0.6 | 16.2 ± 3.2 | 24.2 ± 2.3 | | tolcapone | 20.6 ± 3.7 | −10.5 | −10.1 | 0.4 | 71.7 ± 2.5 | 71.1 ± 2.9 | 68.4 ± 5.1 | | 1 | 90 ± 14 | −9.61 | −9.82 | −0.21 | 58.3 ± 0.9 | 75.9 ± 3.1 | 86.7 ± 2.3 | | 2 | 258 ± 17 | −8.99 | −6.49 | 2.5 | 38.5 ± 0.8 | 63.2 ± 2.5 | 70.4 ± 2.2 | | 3 | 251 ± 12 | −9.0 | −4.73 | 4.27 | 29.7 ± 0.7 | 43 ± 0.6 | 32.1 ± 4.9 | | 4 | 1253 ± 79 | −8.1 | −2.1 | 6.0 | 17.2 ± 0.9 | 20.8 ± 3.3 | 23.2 ± 1.1 | aStabilizers to TTR ratio. %TTR occupancy in buffer and human serum was determined by FPE assay. %TTR stabilization in human serum was determined by Western blot.",
+            "Figure 4 caption": "Figure 4. Hydrogen bonds between the pyrazole ring of AG10 and S117/S117′ of TTR are important for effective binding to TTR. (a) Chemical structures and in silico docking study of synthesized AG10 analogues 1, 2, 3, and 4. Co-crystal structure of AG10 bound to TTR used for the docking experiment. 1 is the iodo-analogue of AG10. 2 is the methyl-ester form of AG10 that cannot form salt bridge with K15/15′. 3 is the methyl-pyrazole form of AG10 that can potentially form only one hydrogen bond with either K15 or K15′. 4 is the diethyl-pyrazole analogue of AG10 which affects both hydrogen bonds with S117/S117′. (b) Interaction of TTR with analogues assessed by ITC. Thermodynamic data; ΔG are blue bars, ΔH are green bars, and −TΔS are red bars. (c) Fluorescence change caused by modification of TTR in buffer (2.5 μM) by FPE probe monitored in the presence of probe alone (control DMSO) or TTR stabilizers (2.5 μM; 1:1 stabilizers to TTR ratio). (d) Bar graph representation of percent occupancy of TTR in buffer by stabilizers in the presence of FPE probe measured after 3 h of incubation relative to probe alone. Error bars indicate SD (n = 3). (e) Bar graph representation of Western blot data for the stabilization of TTR in human serum by analogues (10 μM; 2:1 stabilizers to TTR ratio). Error bars indicate SD (n = 4). The significance of the differences were measured by one-way ANOVA followed by Tukey’s multiple comparison test (n.s., not significant; *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of blank DMSO into TTR; binding enthalpy <0.4 kcal/mol",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51119609": {
+        "reactant_set_id": 51119609,
+        "pmid": 30133284,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 56.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transthyretin V122I mutant (unknown origin) by ITC method",
+        "search_path": [],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {},
+        "structured_description": null
+    }
+}

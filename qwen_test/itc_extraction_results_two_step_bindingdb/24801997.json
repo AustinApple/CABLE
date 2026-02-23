@@ -1,0 +1,62 @@
+{
+    "50101976": {
+        "reactant_set_id": 50101976,
+        "pmid": 24801997,
+        "protein": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+        "ligand": {
+            "smiles": "Cc1cc(Nc2cc(F)c(c(F)c2)C(F)(F)F)n2nc(nc2n1)C(C)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 48.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to rat DHODH by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Keller, S.; Vargas, C.; Zhao, H.; Piszczek, G.; Brautigam, C. A.; Schuck, P. High-precision isothermal titration calorimetry with automated peak-shape analysis. Anal Chem 2012, 84, 5066-73.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal titration calorimetry analysis": "ITC analyses were performed on a VP-ITC (MicroCal Inc) at 30°C in titration buffer (10 mM HEPES pH 7.8, 20 mM NaCl, 5% Glycerol, 1 mM LDAO, and 0.2% DMSO). PfDHODH (5-10 μM) or rat DHODH (5 - 8 μM) were placed in the calorimetric cell and was titrated with 50 μM of inhibitor. Data were collected in triplicate and analyzed with NITPIC 41 and SEDPHAT (https://sedfittedphat.nibib.nih.gov/software/default.aspx).",
+            "Results - ITC data for rat DHODH": "ITC data were also collected for rat DHODH though solubility limitations combined with weaker or undetectable binding prevented obtaining a full set of data for the tested analogs on the mammalian enzymes. We were able to obtain ITC data for 6 and 11 binding to rat DHODH. For 11, the measured Kd was in good agreement with the kinetically derived IC50 (Tables 1 and 3) but for 6 the sharpness of the transition prevented determination of Kd and ΔS, so only ΔH is reported. In contrast to the binding interactions with PfDHODH, the interaction of 11 with rat DHODH was dominated by the entropic term suggesting that hydrophobic interactions dominate binding to the mammalian enzymes (Table 3). While ΔS could not be calculated for 6, ΔH is similar to that observed for 11, and given their similar binding affinity in the kinetically derived assay these data suggest that binding of 6 will also be dominated by the entropic term.",
+            "Table 3 - Thermodynamic study of DHODH inhibitor interactions": "Table 3. Thermodynamic study of DHODH inhibitor interactions | | | PfDHODH | | Rat DHODH | | |---|---|---|---|---|---| | Inhibitor | LogD | Kd μM (1σ) | ΔH kcal/mol | -TAS kcal/mol | Kd μM (1σ) | ΔH kcal/mol | -TAS kcal/mol | | 8 | 3.55 | 0.17 (0.11 – 0.26) | -10 (-12 to -9.8) | 1.5 | nd | nd | nd | | 5 | 4.05 | 0.027 (0.010 – 0.063) | -8.3 (-9.2 to -7.5) | -2.2 | nd | nd | nd | | 10 | 4.25 | 0.0098 (0.0061 – 0.015) | -9.0 (-9.3 to -8.7) | -2.1 | nd | nd | nd | | 11 | 4.46 | 0.0051 (0.0015 – 0.016) | -8.1 (-8.8 to -7.5) | -3.3 | 0.048 (0.0084-0.143) | -2.1 (-2.5 to -1.9) | -8.0 | | 6 | 5.01 | 0.0096 (0.0040 – 0.019) | -6.5 (-6.9 to -6.2) | -4.5 | CNC | -1.6 (-1.8 to - 1.5) | CNC | Studies were performed at 303°K. The 1σ confidence interval is displayed in parenthesis for three independent experiments. The PfDHODHΔ384-413 expression construct was used for the study. ND, not determined. CNC, could not calculate because the sharpness of the transition prevented an accurate determination of these values. The free energy of binding ΔG = ΔH - TΔS.",
+            "Table 3 footnote": "Studies were performed at 303°K. The 1σ confidence interval is displayed in parenthesis for three independent experiments. The PfDHODHΔ384-413 expression construct was used for the study. ND, not determined. CNC, could not calculate because the sharpness of the transition prevented an accurate determination of these values. The free energy of binding ΔG = ΔH - TΔS."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "rat DHODH",
+                "location": "cell",
+                "concentration": "5-8",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "50"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES, 20 mM NaCl, 5% Glycerol, 1 mM LDAO, 0.2% DMSO",
+                "pH": "7.8",
+                "temperature_c": "30",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

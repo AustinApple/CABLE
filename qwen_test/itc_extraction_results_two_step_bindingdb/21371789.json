@@ -1,0 +1,62 @@
+{
+    "50922461": {
+        "reactant_set_id": 50922461,
+        "pmid": 21371789,
+        "protein": "Serine hydroxymethyltransferase, cytosolic",
+        "ligand": {
+            "smiles": "Nc1nc2[nH]cc(CCc3ccc(cc3)C(=O)N[C@@H](CCC(O)=O)C(O)=O)c2c(=O)[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant Serine hydroxymethyltransferase, cytosolic by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "ITC experiments were carried out using an ITC200 microcalorimeter (MicroCal). A hcSHMT solution was dialyzed thoroughly in the presence of 50 mM glycine. Ligand stock solution was prepared by dissolving pemetrexed powder with dialysis buffer. 2-μl aliquots of 0.2–2 mM pemetrexed solution were injected into a 40 μM (per monomer) protein solution at 30 °C. Data were corrected for heat changes from the injection of the ligand into the titration buffer and fitted using the “one-binding-site model” of the MicroCal version of ORIGIN. The heat of binding (ΔH), the stoichiometry (n), and the dissociation constant (Kd) were then calculated from the molar ratio of the heat evolved per mole of ligand injected versus the molar ratio of ligand to protein using the software provided by the vendor (Table 1).",
+            "Figure 2 caption": "Fig. 2. Microcalorimetric titrations of hcSHMT with pemetrexed. Upper panel: Raw ITC data. Titration of 40 μM SHMT (per monomer) with pemetrexed (800 μM). Lower panel: Integrated peak areas (black circles) and fit with the one-binding-site model of ORIGIN provided by MicroCal (continuous line). Derived thermodynamic parameters are listed in Table 1.",
+            "Table 1": "Table 1 Thermodynamic parameters obtained through microcalorimetric titrations of hcSHMT with pemetrexed. | N^a | 0.6 ± 0.1 | |---|---| | K_a^b | 5.9 ± 1.8 × 10^4 M⁻¹ | | K_d^c | 16.9 ± 5.0 × 10⁻⁶ M | | ΔH^d | −3.3 ± 0.3 × 10³ cal/mol | | ΔS^e | 10.9 ± 0.2 cal/mol/deg | a Stoichiometry of binding. b Association constant. c Dissociation constant. d Heat of binding. e Entropy.",
+            "Results section (ITC)": "using ITC. The experiment was carried out by titrating a 40 μM hcSHMT solution with different pemetrexed concentrations (ranging from 0.2 to 2 mM); the titration profile using the 0.8 mM pemetrexed solution is depicted in Fig. 2 (upper panel). As expected for specific binding, integration of the titration peaks produced a sigmoidal enthalpy curve for the interaction between pemetrexed and hcSHMT (Fig. 2, lower panel). The dissociation constant (Kd) of 16.9 ± 5.0 × 10⁻⁶ M was calculated from the slope of the binding curve. This value is in good agreement with the Ki of pemetrexed determined kinetically. The binding stoichiometry was 0.6:1 (±0.1) (pemetrexed:SHMT) (Fig. 2), close to that previously found for the co-substrate folate [14]. Additional thermodynamic parameters of the hcSHMT/pemetrexed interaction, obtained through ITC, are reported in Table 1."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "human recombinant Serine hydroxymethyltransferase, cytosolic",
+                "location": "cell",
+                "concentration": "40",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "pemetrexed",
+                "location": "syringe",
+                "concentration": "200-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM glycine",
+                "pH": null,
+                "temperature_c": "30",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Data were corrected for heat changes from the injection of the ligand into the titration buffer",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

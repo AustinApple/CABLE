@@ -1,0 +1,65 @@
+{
+    "50699064": {
+        "reactant_set_id": 50699064,
+        "pmid": 21963115,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CC[C@@H]1NC(=O)[C@H]([C@H](O)[C@H](C)C\\C=C\\C)N(C)C(=O)[C@H](C(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](NC(=O)[C@H](CC(C)C)N(C)C(=O)CN(C)C1=O)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant cyclophilin-A by isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 23: X. Pang, M. Zhang, L. Zhou, F. Xie, H. Lu, W. He, S. Jiang, L. Yu, X. Zhang, Discovery of a potent peptidic cyclophilin A inhibitor Trp-Gly-Pro, Eur. J. Med. Chem. 46 (2011) 1701–1705.",
+            "Reference 24: M.A. Wear, M.D. Walkinshaw, Thermodynamics of the cyclophilin-A/cyclosporin-A interaction: a direct comparison of parameters determined by surface plasmon resonance using Biacore T100 and isothermal titration calorimetry, Anal. Biochem. 359 (2006) 285–287.",
+            "Reference 25: J. Fanghanel, G. Fischer, Thermodynamic characterization of the interaction of human cyclophilin 18 with cyclosporin A, Biophys. Chem. 100 (2003) 351–366."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "4.5. Isothermal titration calorimetry Titration experiments were performed in 10 mM HEPES buffer pH 7.5 (AppliChem A1069, Darmstadt, Germany), 100 mM NaCl using a MicroCal VP-ITC at 20 °C. Protein samples were dialyzed against the batch of buffer used for titration. A peptide stock solution was prepared, and prior to the experiment, it was diluted into the same batch of buffer used for dialysis. All solutions used were degassed before filling the sample cell and syringe. The ITC stirring speed was set to 310 rpm. For titration of CSA with CypA 300 μl of 100 μM CypA were added to 1.4 ml of a 10 μM CSA solution in 15 μl steps. Since the initial injection generally delivers inaccurate data, only 2 μl were injected in this step. For ITC of CSA with CypA, the recorded data of this first step were discarded. Reference titration of buffer versus buffer, CypA versus buffer and peptide versus buffer were separately obtained and subtracted from the thermogram of the sample titrations. Binding isotherms were fitted according to a one-site model of binding. Errors correspond to the standard deviations of the non-linear least-squares fit of the data points of the titration curve.",
+            "Figure 1 caption": "Fig. 1. Representative isothermal titration calorimetry of CsA (A) and Trp-Gly-Pro (B) with CypA in 10 mM HEPES buffer pH 7.5, 100 mM NaCl at 20 °C. For the CsA experiment each peak corresponds to the injection of 15 μl of 100 μM cyclophilin into the titration cell containing 10 μM CsA. For the tripeptide the titration cell contained 10 μM CypA which was titrated with 100 μM peptide solution. Capacity of the titration cell was 1.4 ml. Reference titration of buffer versus buffer, CypA versus buffer and peptide versus buffer were separately obtained and subtracted from the thermogram of the sample titrations. Cumulative heat of reaction is displayed as a function of the mole ratio of inhibitor/CypA (lower part). The solid line of the CsA titration represents the least square fit of the compiled data points. (A) CsA binding to CypA gave an association constant K_a = (1.3 ± 0.6) × 10^8 M, a complex stoichiometry N = 1.023 ± 0.08 and a reaction enthalpy ΔH = 10.6 ± 0.1 kcal mol−1. (B) CypA did not show any affinity for the tripeptide in the isothermal titration calorimetry.",
+            "Results and Discussion - ITC": "Direct comparison of surface plasmon resonance, which has been used as an activity independent binding assay by Pang et al. [23], and isothermal titration calorimetry (ITC) has been already utilized to analyze CypA inhibitor interactions [24]. Our ITC experiments indicated an exothermically formed CypA–CsA complex (ΔH = 10.6 kcal mol−1) with a K_d value of 7.6 nM together with a complex stoichiometry of 1.02 in good agreement with published data [24,25]. However, under the same conditions, titration of Trp-Gly-Pro with CypA did not indicate any binding up to 25 μM peptide in the titration cell (Fig. 1)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "CypA",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": "CsA",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES, 100 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "20",
+                "stirring_speed": "310",
+                "reference_cell_content": null,
+                "control_method": "Reference titration of buffer versus buffer, CypA versus buffer and peptide versus buffer were separately obtained and subtracted from the thermogram of the sample titrations.",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "15",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

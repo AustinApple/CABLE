@@ -1,0 +1,61 @@
+{
+    "51579007": {
+        "reactant_set_id": 51579007,
+        "pmid": 38905539,
+        "protein": "ATP-dependent Clp protease proteolytic subunit, mitochondrial",
+        "ligand": {
+            "smiles": "N#Cc1cccc(CN2CCC(c3nc(Cc4ccc(F)c(Cl)c4)no3)CC2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 820.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human ClpP assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Differential Scanning Fluorimetry (DSF) and Isothermal Titration Calorimetry (ITC)": "The fluorescent dye SYPRO Orange was used in DSF experiments. The reaction system is 50 μL, including 1 μM ClpP, 5× SYPRO Orange, a final concentration of 1.25–50 μM SL44 and buffer (K2HPO4/KH2PO4 50 mM pH 7.6, NaCl 100 mM, 5% glycerol), incubate at room temperature for 1 h, and use a PCR instrument to detect fluorescence, the temperature increased from 25 to 99 °C within 40 min. The channel selected was the SYPRO Orange channel; data were recorded and analyzed by BioRadCFX Manager. ITC binding was detected using the Nano-ITC system (Nano, USA). 200 μL of 0.04 mM ClpP monomer concentration was added to the Nano-ITC sample cell and 50 μL of 0.2 mM SL44 was pipetted into the syringe. Injection volume: 50 μL, sample cell volume: 200 μL, pulse interval: 200 s, 20 injections, 2.5 μL each time, stirring speed 300 rpm, temperature 30 °C. Use LaunchNano Analyze software to collect data and export parameters after fitting.",
+            "Figure 3 caption": "Figure 3. Evaluation of the interaction between SL44 and HsClpP and cellular target engagement. (A) α-Casein hydrolysis by HsClpP in the presence of SL44 and ADX-47273 at varying concentrations. (B) Effect of SL44 on the thermal stability of HsClpP assayed in DSF assay. ΔTm, shift in melting temperature. (C) ITC titration curves for the interaction of HsClpP with the derivative SL44. (D) Effect of SL44 on the thermal stabilization of HsClpP in HCCLM3 cells in CETSA. HCCLM3 cells were exposed to DMSO or 10 μM SL44 for 2 h before being subjected to CETSA. (E) Effect of HsClpP overexpression or knockdown on HCC cells growth in the presence of SL44. The data are presented as mean ± SD.",
+            "Figure 3C description": "C ITC titration curves for the interaction of HsClpP with the derivative SL44. The thermogram shows the heat released upon injection of SL44 into the HsClpP solution. The binding isotherm is shown below, with the fitted curve indicating a Kd value of 0.82 μM. The inset provides the binding parameters: Kd = 0.82 μM, ΔH = -35.74 kJ/mol, ΔS = -171.5 J/mol·K, and n = 1.0."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "ClpP",
+                "location": "cell",
+                "concentration": "40",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "SL44",
+                "location": "syringe",
+                "concentration": "200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM K2HPO4/KH2PO4, 100 mM NaCl, 5% glycerol",
+                "pH": "7.6",
+                "temperature_c": "30",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "200",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

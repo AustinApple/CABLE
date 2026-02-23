@@ -1,0 +1,62 @@
+{
+    "51534702": {
+        "reactant_set_id": 51534702,
+        "pmid": 36516476,
+        "protein": "SRSF protein kinase 1",
+        "ligand": {
+            "smiles": "CN(c1ncccc1CNc1ccnc(n1)-c1nc2c(F)c(Cl)ccc2[nH]1)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 145.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SRPK1 (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SRPK1 protein at 9 mg/mL was mixed with MSC-1186 to a final concentration of 1 mM. Crystals were directly obtained from the BCS coarse screen after mixing this solution in equal parts with 0.1 M cacodylate (pH 5), 15% PEG Smear Broad, 5% tacsimate, and 10% ethylene glycol at 4 °C. Crystals were cryoprotected in their mother liquor supplemented by 20% ethylene glycol and snap-frozen in liquid nitrogen.",
+            "ITC Measurements": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern, PA, USA) according to their standard protocols. Effects of test compounds on kinase activity were determined as percent inhibition at a single test concentration of 1 μM or as IC50 values calculated on a 10-dose 3-fold serial dilution in duplicate. The measurement data were processed by means of GraphPad Prism software. IC50 determinations were carried out by fitting a response curve to the data points by means of nonlinear regression analysis.",
+            "Figure 9 caption": "On-target cellular activity of MSC-1186 in HEK293T cells and cellular kinase selectivity (occupancy at 5 μM, cellular NanoBRET). The on-targets SRPK1/2/3 were not available on this screen. P38α and p38β were detected as minor off-targets with 36.1 and 11.3%, respectively. Circle sizes correspond to the data obtained as % inhibition, and benchmark circle sizes are given in the figure legend.",
+            "Supporting Information S1": "The ITC experiments were performed on a MicroCal iTC200 instrument (Malvern, PA, USA) according to their standard protocols. Effects of test compounds on kinase activity were determined as percent inhibition at a single test concentration of 1 μM or as IC50 values calculated on a 10-dose 3-fold serial dilution in duplicate. The measurement data were processed by means of GraphPad Prism software. IC50 determinations were carried out by fitting a response curve to the data points by means of nonlinear regression analysis."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "SRPK1",
+                "location": "cell",
+                "concentration": "9 mg/mL",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "MSC-1186",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "0.1 M cacodylate, 15% PEG Smear Broad, 5% tacsimate, 10% ethylene glycol",
+                "pH": "5",
+                "temperature_c": "4",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

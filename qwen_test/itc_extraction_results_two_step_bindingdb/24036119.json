@@ -1,0 +1,60 @@
+{
+    "375985": {
+        "reactant_set_id": 375985,
+        "pmid": 24036119,
+        "protein": "Histidine-binding periplasmic protein [1-238]",
+        "ligand": {
+            "smiles": "N[C@@H](Cc1cnc[nH]1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 114.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "All ITC experiments were performed using a Microcal VP-ITC microcalorimeter (GE Healthcare). All samples were prepared in a buffer containing 20 mM HEPES (pH 7.0) and 100 mM NaCl. The syringe was filled with 0.5 mM histidine that was injected into the ITC cell containing 20 &#956;M protein (D1, D2, or HisJ) solution at 30 °C. The heat of dilution was measured separately by injecting titrant into the ITC buffer and was shown to be negligible.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Experiments": "ITC Experiments—All ITC experiments were performed using a Microcal VP-ITC microcalorimeter (GE Healthcare). All samples were prepared in a buffer containing 20 mM HEPES (pH 7.0) and 100 mM NaCl. The syringe was filled with 0.5 mM histidine that was injected into the ITC cell containing 20 μM protein (D1, D2, or HisJ) solution at 30 °C. The heat of dilution was measured separately by injecting titrant into the ITC buffer and was shown to be negligible. After subtraction of the heat of dilution, the data were fit to a one-site binding model (MicroCal Origin version 7.0 software) to obtain the stoichiometry (N), enthalpy (ΔH), and association constant (Ka), which are converted to Kd values using the relationship shown in Equation 1,",
+            "Figure 8 caption": "FIGURE 8. Binding of histidine to HisJ by ITC. A representative binding isotherm obtained by injecting histidine into apo-HisJ is shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "D1, D2, or HisJ",
+                "location": "cell",
+                "concentration": "20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "histidine",
+                "location": "syringe",
+                "concentration": "500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.0",
+                "temperature_c": "30",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}
