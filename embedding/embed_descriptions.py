@@ -13,6 +13,7 @@ import json
 import os
 
 import numpy as np
+import torch
 from sentence_transformers import SentenceTransformer
 
 BASE_DIR = "/data/mwu11/LLM_affinity/qwen_test"
@@ -90,7 +91,7 @@ def embed(texts, model_key, batch_size=32):
 
 
 def save_results(entries, embeddings, model_key, assay_type):
-    """Save embeddings (.npy) and metadata (.json) per assay type."""
+    """Save embeddings as a PyTorch dict {reactant_set_id: embedding} per assay type."""
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     prefix = MODEL_CONFIG[model_key]["output_prefix"]
 
@@ -99,18 +100,13 @@ def save_results(entries, embeddings, model_key, assay_type):
         indices = [i for i, e in enumerate(entries) if e["assay_type"] == atype]
         if not indices:
             continue
-        emb_subset = embeddings[indices]
-        meta_subset = [
-            {"pmid": entries[i]["pmid"], "reactant_set_id": entries[i]["reactant_set_id"]}
+        emb_dict = {
+            entries[i]["reactant_set_id"]: torch.tensor(embeddings[i])
             for i in indices
-        ]
-        emb_path = os.path.join(OUTPUT_DIR, f"{prefix}_{atype}_embeddings.npy")
-        meta_path = os.path.join(OUTPUT_DIR, f"{prefix}_{atype}_metadata.json")
-        np.save(emb_path, emb_subset)
-        with open(meta_path, "w") as f:
-            json.dump(meta_subset, f, indent=2)
-        print(f"Saved {emb_subset.shape} embeddings to {emb_path}")
-        print(f"Saved {len(meta_subset)} metadata entries to {meta_path}")
+        }
+        out_path = os.path.join(OUTPUT_DIR, f"{prefix}_{atype}_embeddings.pt")
+        torch.save(emb_dict, out_path)
+        print(f"Saved {len(emb_dict)} embeddings to {out_path}")
 
 
 def main():
