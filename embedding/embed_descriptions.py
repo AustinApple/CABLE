@@ -1,12 +1,18 @@
 """Embed structured descriptions from ITC/SPR extraction results.
 
-Usage:
+CLI usage:
     python embedding/embed_descriptions.py --model pubmedbert --assay_type itc
     python embedding/embed_descriptions.py --model qwen3      --assay_type spr
     python embedding/embed_descriptions.py --model qwen3      --assay_type all
+
+Notebook usage:
+    from embedding.embed_descriptions import main
+    main(standalone_mode=False, args=["--model", "pubmedbert", "--assay_type", "itc"])
+    # or invoke directly:
+    main.main(model="pubmedbert", assay_type="itc", batch_size=32)
 """
 
-import argparse
+import click
 import copy
 import glob
 import json
@@ -109,28 +115,20 @@ def save_results(entries, embeddings, model_key, assay_type):
         print(f"Saved {len(emb_dict)} embeddings to {out_path}")
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Embed structured descriptions")
-    parser.add_argument(
-        "--model", required=True, choices=list(MODEL_CONFIG.keys()),
-        help="Embedding model to use",
-    )
-    parser.add_argument(
-        "--assay_type", required=True, choices=["itc", "spr", "all"],
-        help="Assay type to process",
-    )
-    parser.add_argument("--batch_size", type=int, default=32, help="Batch size for encoding")
-    args = parser.parse_args()
-
-    entries = load_entries(args.assay_type)
+@click.command()
+@click.option("--model", required=True, type=click.Choice(list(MODEL_CONFIG.keys())), help="Embedding model to use")
+@click.option("--assay_type", required=True, type=click.Choice(["itc", "spr", "all"]), help="Assay type to process")
+@click.option("--batch_size", default=32, show_default=True, help="Batch size for encoding")
+def main(model, assay_type, batch_size):
+    entries = load_entries(assay_type)
     print(f"Loaded {len(entries)} entries with non-null structured_description")
     if not entries:
         print("No entries found. Exiting.")
         return
 
     texts = [e["text"] for e in entries]
-    embeddings = embed(texts, args.model, batch_size=args.batch_size)
-    save_results(entries, embeddings, args.model, args.assay_type)
+    embeddings = embed(texts, model, batch_size=batch_size)
+    save_results(entries, embeddings, model, assay_type)
     print("Done.")
 
 
