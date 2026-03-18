@@ -173,7 +173,8 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             text_prompt = self.processor.apply_chat_template(
                 messages,
                 tokenize=False,
-                add_generation_prompt=True
+                add_generation_prompt=True,
+                enable_thinking=False
             )
 
             # Process without images
