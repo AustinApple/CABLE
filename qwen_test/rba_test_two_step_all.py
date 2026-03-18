@@ -5,8 +5,8 @@ Two-Step RBA Assay Extraction for ALL protein-ligand pairs from BindingDB.
 Input: BindingDB_assay_description.tsv
 Selection criteria:
   1. assay_type == "Radioligand Binding Assay"
-  2. Ki (nM) is not null
-  3. IC50 (nM), Kd (nM), EC50 (nM) are all null (Ki-only entries)
+  2. Ki (nM) or IC50 (nM) is not null (at least one)
+  3. Kd (nM), EC50 (nM) are all null (ensure Ki/IC50-only entries)
 
 Two-Step Approach:
 - Step 1: Extract original_paragraph using vision model (with paper images)
@@ -33,27 +33,34 @@ data = pd.read_csv(tsv_path, sep='\t', low_memory=False)
 # Filter: RBA assay type only
 data = data[data['assay_type'] == 'Radioligand Binding Assay'].copy()
 
-# Filter: Ki and IC50 must have a value, and other affinity types must be NaN
+# Filter: Ki or IC50 must have a value (at least one), and other affinity types must be NaN
 data = data[
-    data['Ki (nM)'].notna() &
-    data['IC50 (nM)'].notna() &
+    (data['Ki (nM)'].notna() | data['IC50 (nM)'].notna()) &
     data['Kd (nM)'].isna() &
     data['EC50 (nM)'].isna()
 ]
 
-# Parse Ki values: extract relation (>, <, =) and numeric value
-def parse_ki(ki_str):
-    ki_str = str(ki_str).strip()
-    if ki_str.startswith('>'):
-        return '>', float(ki_str[1:])
-    elif ki_str.startswith('<'):
-        return '<', float(ki_str[1:])
+# Parse affinity values: extract relation (>, <, =) and numeric value
+def parse_affinity(val_str):
+    val_str = str(val_str).strip()
+    if val_str.startswith('>'):
+        return '>', float(val_str[1:])
+    elif val_str.startswith('<'):
+        return '<', float(val_str[1:])
     else:
-        return '=', float(ki_str)
+        return '=', float(val_str)
 
-data[['ki_relation', 'ki_value']] = data['Ki (nM)'].apply(
-    lambda x: pd.Series(parse_ki(x))
-)
+# Parse Ki values where present
+ki_mask = data['Ki (nM)'].notna()
+data.loc[ki_mask, ['ki_relation', 'ki_value']] = data.loc[ki_mask, 'Ki (nM)'].apply(
+    lambda x: pd.Series(parse_affinity(x))
+).values
+
+# Parse IC50 values where present
+ic50_mask = data['IC50 (nM)'].notna()
+data.loc[ic50_mask, ['ic50_relation', 'ic50_value']] = data.loc[ic50_mask, 'IC50 (nM)'].apply(
+    lambda x: pd.Series(parse_affinity(x))
+).values
 
 # Convert PMID to string (drop NaN PMIDs)
 data = data.dropna(subset=['PMID'])
@@ -66,7 +73,7 @@ data = data.rename(columns={
     'Target Name': 'protein',
 })
 
-print(f"Total RBA Ki-only entries: {len(data)}")
+print(f"Total RBA Ki/IC50 entries: {len(data)}")
 print(f"Unique PMIDs: {data['PMID'].nunique()}")
 print(f"Unique (PMID, DESCRIPTION) combinations: {data.groupby(['PMID', 'DESCRIPTION']).ngroups}")
 
@@ -75,7 +82,7 @@ print(f"Unique (PMID, DESCRIPTION) combinations: {data.groupby(['PMID', 'DESCRIP
 agent = TwoStepAssayExtractionAgent(
     model_name="Qwen/Qwen3.5-35B-A3B",
     text_model_name=None,  # Use same model for Step 2 (text-only mode)
-    pdf_dir="/data/mwu11/LLM_affinity/qwen_test/downloaded_paper_kd",
+    pdf_dir="/data/mwu11/LLM_affinity/qwen_test/downloaded_paper",
     torch_dtype="bfloat16",
     device="cuda:0",
     temperature=0.0,
@@ -154,7 +161,7 @@ for pmid, pmid_group in pmid_groups:
             pmid=pmid_str,
             assay_description=description,
             max_pages=None,
-            max_new_tokens=2048
+            max_new_tokens=4096
         )
 
         extracted_paragraph = step1_result.get("original_paragraph", {})
@@ -172,7 +179,7 @@ for pmid, pmid_group in pmid_groups:
             step2_result = agent.fill_structured_description(
                 extracted_paragraph=extracted_paragraph,
                 assay_description=description,
-                max_new_tokens=2048
+                max_new_tokens=4096
             )
             structured_description = step2_result.get("structured_description")
 
@@ -182,12 +189,21 @@ for pmid, pmid_group in pmid_groups:
             protein = str(row["protein"]) if pd.notna(row["protein"]) else None
             ligand_smiles = str(row["ligand_smiles"]) if pd.notna(row["ligand_smiles"]) else None
 
-            affinity_data = {
-                "type": "Ki",
-                "value": row["ki_value"],
-                "relation": row["ki_relation"],
-                "unit": "nM"
-            }
+            affinity_data = []
+            if pd.notna(row.get("ki_value")):
+                affinity_data.append({
+                    "type": "Ki",
+                    "value": row["ki_value"],
+                    "relation": row["ki_relation"],
+                    "unit": "nM"
+                })
+            if pd.notna(row.get("ic50_value")):
+                affinity_data.append({
+                    "type": "IC50",
+                    "value": row["ic50_value"],
+                    "relation": row["ic50_relation"],
+                    "unit": "nM"
+                })
 
             entry = {
                 "reactant_set_id": int(reactant_set_id),
