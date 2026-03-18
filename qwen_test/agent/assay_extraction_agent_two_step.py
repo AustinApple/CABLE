@@ -1,7 +1,7 @@
 """
 Assay Extraction Agent - Two-Step Version
 
-Extracts SPR assay descriptions from papers using a two-step approach:
+Extracts assay descriptions from papers using a two-step approach:
 - Step 1: Extract original_paragraph using vision model (with paper images)
 - Step 2: Fill structured_description from extracted text only (no images)
 
@@ -30,7 +30,7 @@ StructuredPromptFn = Callable[..., str]
 
 
 class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
-    """Two-step agent for extracting SPR assay information.
+    """Two-step agent for extracting assay information.
 
     Step 1: Extract original_paragraph using vision model + paper images
     Step 2: Fill structured_description using text-only input
