@@ -73,7 +73,7 @@ print(f"Unique (PMID, DESCRIPTION) combinations: {data.groupby(['PMID', 'DESCRIP
 #%%
 # Initialize Two-Step agent with RBA-specific prompts
 agent = TwoStepAssayExtractionAgent(
-    model_name="Qwen/Qwen3-VL-32B-Instruct",
+    model_name="Qwen/Qwen3.5-35B-A3B",
     text_model_name=None,  # Use same model for Step 2 (text-only mode)
     pdf_dir="/data/mwu11/LLM_affinity/qwen_test/downloaded_paper_kd",
     torch_dtype="bfloat16",
