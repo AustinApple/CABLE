@@ -146,7 +146,7 @@ nsb_definition:
   - selectivity_rationale: One of: "Target-selective", "Non-selective", "Not specified"
 
 assay_conditions:
-  - assay_format: Physical format. One of: "Filtration (96-well)", "Filtration (tubes)", "Scintillation Proximity Assay (SPA)", "Centrifugation", "Microplate-based (FlashPlate)", "Microplate-based (Cytostar-T)", "Other"
+  - assay_format: Physical format. (e.g., "Filtration (wells)", "Filtration (tubes)", "Scintillation Proximity Assay (SPA)", "Centrifugation", "Microplate-based (FlashPlate)", "Microplate-based (Cytostar-T)", "Other")
   - buffer_composition: Full incubation buffer composition including salts and additives, excluding pH (e.g., "50 mM Tris-HCl, 120 mM NaCl, 5 mM MgCl2, 1 mM EDTA")
   - pH: pH of incubation buffer as a number (e.g., 7.4)
   - incubation_temperature: Temperature as string to allow "room temperature" (e.g., "25", "37", "room temperature")
