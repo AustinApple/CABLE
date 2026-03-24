@@ -67,6 +67,10 @@ data.loc[ic50_mask, ['ic50_relation', 'ic50_value']] = data.loc[ic50_mask, 'IC50
 data = data.dropna(subset=['PMID'])
 data['PMID'] = data['PMID'].astype(float).astype(int).astype(str)
 
+data = data[data['PMID'].isin(['8230098', '2542556', '31547945', '16275090', '17098427', '33237785', '36517209', '17315860', '33422908', '30629436'])]
+
+
+
 # Rename columns for convenience
 data = data.rename(columns={
     'BindingDB Reactant_set_id': 'reactant_set_id',
