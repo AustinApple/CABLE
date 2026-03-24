@@ -21,6 +21,7 @@ from pathlib import Path
 from agent.assay_extraction_agent_two_step import TwoStepAssayExtractionAgent
 from agent.prompts_rba_two_step import (
     get_paragraph_extraction_prompt as get_rba_paragraph_extraction_prompt,
+    get_batch_paragraph_extraction_prompt as get_rba_batch_paragraph_extraction_prompt,
     get_structured_description_from_text_prompt as get_rba_structured_description_from_text_prompt
 )
 
@@ -90,6 +91,7 @@ agent = TwoStepAssayExtractionAgent(
     search_references=True,
     ncbi_api_key="2877565f02e8c0800b1698e0b12f3e4b1108",
     paragraph_prompt_fn=get_rba_paragraph_extraction_prompt,
+    batch_paragraph_prompt_fn=get_rba_batch_paragraph_extraction_prompt,
     structured_prompt_fn=get_rba_structured_description_from_text_prompt
 )
 
@@ -146,31 +148,41 @@ for pmid, pmid_group in pmid_groups:
 
     # Group by DESCRIPTION within this PMID
     desc_groups = pmid_group.groupby("DESCRIPTION")
-    unique_descs = len(desc_groups)
-    print(f"  Unique DESCRIPTIONs: {unique_descs}")
+    unique_descs = list(desc_groups.groups.keys())
+    print(f"  Unique DESCRIPTIONs: {len(unique_descs)}")
 
-    desc_count = 0
-    for description, desc_group in desc_groups:
-        desc_count += 1
-        print(f"\n  --- DESCRIPTION {desc_count}/{unique_descs} ({len(desc_group)} pairs) ---")
-        print(f"  {description[:100]}...")
-
-        # ========== STEP 1: Extract paragraph ONCE for this DESCRIPTION ==========
-        print(f"\n  [Step 1] Extracting paragraph (vision model)...")
+    # ========== STEP 1: Extract paragraphs — read paper ONCE ==========
+    if len(unique_descs) == 1:
+        # Single description — use original method
+        desc = unique_descs[0]
+        print(f"\n  [Step 1] Extracting paragraph (vision model, single)...")
         step1_result = agent.extract_paragraph(
             pmid=pmid_str,
-            assay_description=description,
+            assay_description=desc,
             max_pages=None,
             max_new_tokens=4096
         )
+        step1_results = {desc: step1_result}
+    else:
+        # Multiple descriptions — batch extraction, one model call
+        step1_results = agent.extract_paragraphs_batch(
+            pmid=pmid_str,
+            assay_descriptions=unique_descs,
+            max_pages=None,
+            max_new_tokens=4096 * len(unique_descs)
+        )
 
+    # ========== STEP 2 & Copy: Process each description ==========
+    desc_count = 0
+    for description, desc_group in desc_groups:
+        desc_count += 1
+        step1_result = step1_results[description]
         extracted_paragraph = step1_result.get("original_paragraph", {})
         paragraph_found = agent._is_paragraph_found(extracted_paragraph)
 
-        if paragraph_found:
-            print(f"  [Step 1] SUCCESS - Paragraph extracted")
-        else:
-            print(f"  [Step 1] NOT FOUND - No relevant paragraph")
+        print(f"\n  --- DESCRIPTION {desc_count}/{len(unique_descs)} ({len(desc_group)} pairs) ---")
+        print(f"  {description[:100]}...")
+        print(f"  [Step 1] {'SUCCESS - Paragraph extracted' if paragraph_found else 'NOT FOUND - No relevant paragraph'}")
 
         # ========== STEP 2: Fill structured_description ONCE for this DESCRIPTION ==========
         structured_description = None

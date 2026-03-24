@@ -76,6 +76,88 @@ If you cannot find a matching RBA description, return:
 Please respond ONLY with valid JSON, no other text."""
 
 
+def get_batch_paragraph_extraction_prompt(assay_descriptions: list) -> str:
+    """
+    Step 1 (batch) prompt: Extract original_paragraph for MULTIPLE descriptions
+    in a single pass through the paper.
+
+    Args:
+        assay_descriptions: List of assay description strings from BindingDB
+
+    Returns:
+        Formatted prompt string for vision model
+    """
+    desc_block = "\n".join(
+        f"[{i+1}] {desc}" for i, desc in enumerate(assay_descriptions)
+    )
+    n = len(assay_descriptions)
+    return f"""You are an expert scientific reader analyzing a research paper about Radioligand Binding Assay (RBA) experiments.
+
+Task: Find and extract the COMPLETE ORIGINAL text that describes EACH of the following {n} RBA experiments. Process ALL descriptions in a single pass through the paper.
+
+=== ASSAY DESCRIPTIONS ===
+{desc_block}
+=== END DESCRIPTIONS ===
+
+Instructions:
+1. Search through the paper to find where EACH RBA experiment is described (focus on Experimental Methods or Methods section first, then Results, then figure captions).
+2. For EACH description, extract the COMPLETE ORIGINAL text that contains the full experimental protocol. Include:
+   - Methods/Experimental section paragraphs describing the radioligand binding experiment
+   - Details about the biological preparation (membranes, cells, tissue)
+   - Radioligand identity, concentration, and specific activity
+   - Nonspecific binding (NSB) definition compound and concentration
+   - Incubation conditions (buffer, temperature, time, volume)
+   - Separation and detection methods (filtration, washing, scintillation counting)
+   - Data analysis details (software, fitting model, Ki/IC50 calculation)
+   - Relevant table contents or figure captions if applicable
+3. Do NOT summarize or paraphrase - provide the exact text from the paper.
+4. If a description spans multiple sections, include all relevant text.
+5. If multiple descriptions share the same methodology paragraph, you may extract the same text for each.
+
+6. If the paper references a previous publication for methodology details (e.g., "as described previously", "following [ref]", "according to [author]"):
+
+   CRITICAL STEPS FOR REFERENCE EXTRACTION:
+   a) Note the EXACT reference number mentioned in the methods text
+   b) Go to the References/Bibliography section at the END of the paper
+   c) Find the reference entry that starts with EXACTLY that number
+   d) VERIFY the number matches before copying
+   e) Copy the FULL citation including: authors, title, journal name, year, volume, and page numbers
+
+   IMPORTANT: If you cannot find the exact numbered reference, write "Reference [X] not found in bibliography".
+
+Output format (JSON):
+{{
+    "results": [
+        {{
+            "description_index": 1,
+            "original_paragraph": {{
+                "<descriptive_key>": "<extracted_text>",
+                ...
+            }},
+            "confidence": "high/medium/low",
+            "reference_number_in_text": "Reference number(s) or 'none'",
+            "references_previous": "Complete citation from References section or 'none'"
+        }},
+        ...one entry for EACH description above...
+    ]
+}}
+
+Note: For original_paragraph, use descriptive keys that identify where the text came from (e.g., "Materials and Methods", "Radioligand Binding Assay", "Data Analysis", "Table 1"). The keys are flexible - use whatever accurately describes the source location.
+
+If a description's RBA protocol is NOT found in the paper, still include an entry for it:
+{{
+    "description_index": <number>,
+    "original_paragraph": {{}},
+    "confidence": "N/A",
+    "reference_number_in_text": "none",
+    "references_previous": "none"
+}}
+
+You MUST include exactly {n} entries in the results array, one for each description listed above.
+
+Please respond ONLY with valid JSON, no other text."""
+
+
 def get_structured_description_from_text_prompt(
     extracted_paragraph: str,
     assay_description: str,
