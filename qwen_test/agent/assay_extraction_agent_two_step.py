@@ -26,6 +26,7 @@ from .prompts_two_step import get_paragraph_extraction_prompt, get_structured_de
 # Type alias for prompt functions
 from typing import Callable
 ParagraphPromptFn = Callable[[str], str]
+BatchParagraphPromptFn = Callable[[list], str]
 StructuredPromptFn = Callable[..., str]
 
 
@@ -54,6 +55,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         max_reference_depth: int = 1,
         ncbi_api_key: Optional[str] = None,
         paragraph_prompt_fn: Optional['ParagraphPromptFn'] = None,
+        batch_paragraph_prompt_fn: Optional['BatchParagraphPromptFn'] = None,
         structured_prompt_fn: Optional['StructuredPromptFn'] = None
     ):
         """
@@ -74,6 +76,9 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             paragraph_prompt_fn: Custom prompt function for Step 1 (paragraph extraction).
                                Signature: fn(assay_description: str) -> str.
                                Defaults to SPR prompt if None.
+            batch_paragraph_prompt_fn: Custom prompt function for Step 1 batch extraction.
+                               Signature: fn(assay_descriptions: list) -> str.
+                               Required for extract_paragraphs_batch().
             structured_prompt_fn: Custom prompt function for Step 2 (structured description).
                                 Signature: fn(extracted_paragraph: str, assay_description: str, ...) -> str.
                                 Defaults to SPR prompt if None.
@@ -93,6 +98,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         # Store custom prompt functions (default to SPR prompts)
         self.paragraph_prompt_fn = paragraph_prompt_fn or get_paragraph_extraction_prompt
+        self.batch_paragraph_prompt_fn = batch_paragraph_prompt_fn
         self.structured_prompt_fn = structured_prompt_fn or get_structured_description_from_text_prompt
 
         # Load separate text model for Step 2 if specified
@@ -352,6 +358,194 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 "supplementary_source": [],
                 "references_previous": "none"
             }
+
+    # ==================== Step 1 Batch: Multiple Descriptions ====================
+
+    def extract_paragraphs_batch(
+        self,
+        pmid: str,
+        assay_descriptions: List[str],
+        max_pages: Optional[int] = None,
+        max_new_tokens: int = 4096,
+    ) -> Dict[str, Dict]:
+        """
+        Step 1 (batch): Extract original_paragraph for MULTIPLE descriptions
+        from a single paper in ONE model call.
+
+        This avoids redundant paper reads when a PMID has multiple descriptions.
+
+        Args:
+            pmid: PubMed ID of the paper
+            assay_descriptions: List of assay description strings
+            max_pages: Maximum number of pages to process (None for all)
+            max_new_tokens: Maximum tokens to generate
+
+        Returns:
+            Dict mapping description -> step1 result dict
+        """
+        if self.batch_paragraph_prompt_fn is None:
+            raise ValueError(
+                "batch_paragraph_prompt_fn is required for extract_paragraphs_batch(). "
+                "Pass it to the TwoStepAssayExtractionAgent constructor."
+            )
+
+        n = len(assay_descriptions)
+        print(f"\n{'='*60}")
+        print(f"[Step 1 BATCH] Extracting paragraphs for {n} descriptions from PMID {pmid}")
+        print(f"{'='*60}")
+
+        # Helper to build error/not-found results for all descriptions
+        def _make_error_results(msg, source="N/A"):
+            return {
+                desc: {
+                    "pmid": pmid,
+                    "assay_description": desc,
+                    "original_paragraph": {"error": msg} if source == "N/A" else {},
+                    "confidence": "N/A",
+                    "source": source,
+                    "search_path": [],
+                    "supplementary_source": [],
+                    "references_previous": "none"
+                }
+                for desc in assay_descriptions
+            }
+
+        images, pdf_path = self._get_paper_images(pmid, max_pages)
+
+        if pdf_path is None:
+            return _make_error_results("PDF not found and could not be fetched")
+        if images is None or len(images) == 0:
+            return _make_error_results("PDF conversion failed")
+
+        results_by_desc: Dict[str, Dict] = {}
+        supp_files = []
+
+        try:
+            # ---- Search main paper with all descriptions at once ----
+            prompt = self.batch_paragraph_prompt_fn(assay_descriptions)
+            print(f"  Searching main paper for PMID {pmid} ({n} descriptions)...")
+            response_text, _, _ = self._query_model(images, prompt, max_new_tokens)
+
+            print(f"\n[DEBUG] Raw response: {response_text[:500]}...")
+
+            parsed = self._parse_response(response_text)
+            if parsed and "results" in parsed:
+                for r in parsed["results"]:
+                    idx = r.get("description_index", 0) - 1  # 1-indexed → 0-indexed
+                    if 0 <= idx < n:
+                        desc = assay_descriptions[idx]
+                        if self._is_paragraph_found(r.get("original_paragraph")):
+                            results_by_desc[desc] = {
+                                "pmid": pmid,
+                                "assay_description": desc,
+                                "original_paragraph": r.get("original_paragraph", {}),
+                                "confidence": r.get("confidence", "N/A"),
+                                "source": f"main_paper_{pmid}",
+                                "search_path": ["main"],
+                                "supplementary_source": [],
+                                "references_previous": r.get("references_previous", "none")
+                            }
+                            print(f"  [BATCH] Description {idx+1}: Found in main paper")
+                        else:
+                            print(f"  [BATCH] Description {idx+1}: NOT found in main paper")
+
+            # ---- Identify descriptions not found in main paper ----
+            not_found_descs = [
+                d for d in assay_descriptions
+                if d not in results_by_desc
+            ]
+
+            # ---- Search supplementary materials for not-found descriptions ----
+            if not_found_descs and self.search_supplementary:
+                print(f"\n  {len(not_found_descs)} description(s) not found. Fetching supplementary materials...")
+                supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
+
+                for supp_path in supp_files:
+                    if not not_found_descs:
+                        break
+
+                    supp_images = self.doc_converter.file_to_images(
+                        supp_path, max_pages=max_pages, label="supplementary"
+                    )
+                    if not supp_images or len(supp_images) == 0:
+                        continue
+
+                    # Use single prompt for 1 remaining, batch for multiple
+                    if len(not_found_descs) == 1:
+                        supp_prompt = self.paragraph_prompt_fn(not_found_descs[0])
+                    else:
+                        supp_prompt = self.batch_paragraph_prompt_fn(not_found_descs)
+
+                    print(f"  Searching supplementary: {supp_path.name} ({len(not_found_descs)} description(s))...")
+                    supp_response, _, _ = self._query_model(supp_images, supp_prompt, max_new_tokens)
+
+                    if len(not_found_descs) == 1:
+                        # Single-format response
+                        supp_result = self._parse_response(supp_response)
+                        if supp_result and self._is_paragraph_found(supp_result.get("original_paragraph")):
+                            desc = not_found_descs[0]
+                            results_by_desc[desc] = {
+                                "pmid": pmid,
+                                "assay_description": desc,
+                                "original_paragraph": supp_result.get("original_paragraph", {}),
+                                "confidence": supp_result.get("confidence", "N/A"),
+                                "source": f"supplementary_{supp_path.name}",
+                                "search_path": ["main", "supplementary"],
+                                "supplementary_source": ["main"],
+                                "references_previous": supp_result.get("references_previous", "none")
+                            }
+                            print(f"  Found in supplementary: {supp_path.name}!")
+                            not_found_descs.remove(desc)
+                    else:
+                        # Batch-format response
+                        supp_parsed = self._parse_response(supp_response)
+                        if supp_parsed and "results" in supp_parsed:
+                            for r in supp_parsed["results"]:
+                                idx = r.get("description_index", 0) - 1
+                                if 0 <= idx < len(not_found_descs):
+                                    desc = not_found_descs[idx]
+                                    if self._is_paragraph_found(r.get("original_paragraph")):
+                                        results_by_desc[desc] = {
+                                            "pmid": pmid,
+                                            "assay_description": desc,
+                                            "original_paragraph": r.get("original_paragraph", {}),
+                                            "confidence": r.get("confidence", "N/A"),
+                                            "source": f"supplementary_{supp_path.name}",
+                                            "search_path": ["main", "supplementary"],
+                                            "supplementary_source": ["main"],
+                                            "references_previous": r.get("references_previous", "none")
+                                        }
+                                        print(f"  [BATCH] Description {idx+1}: Found in supplementary {supp_path.name}")
+
+                            # Update not-found list
+                            not_found_descs = [
+                                d for d in not_found_descs if d not in results_by_desc
+                            ]
+
+            # ---- Fill NOT FOUND results for remaining descriptions ----
+            supp_count = len(supp_files) if self.search_supplementary else 0
+            for desc in assay_descriptions:
+                if desc not in results_by_desc:
+                    results_by_desc[desc] = {
+                        "pmid": pmid,
+                        "assay_description": desc,
+                        "original_paragraph": {},
+                        "confidence": "N/A",
+                        "source": "not_found",
+                        "search_path": [],
+                        "supplementary_source": [],
+                        "references_previous": "none",
+                        "searched_locations": f"main_paper, supplementary({supp_count} files)"
+                    }
+                    print(f"  Paragraph not found for: {desc[:80]}...")
+
+            return results_by_desc
+
+        except Exception as e:
+            print(f"Error in batch extraction for PMID {pmid}: {e}")
+            import traceback
+            traceback.print_exc()
+            return _make_error_results(str(e), source="error")
 
     # ==================== Step 2: Structured Description ====================
 
