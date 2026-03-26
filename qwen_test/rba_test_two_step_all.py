@@ -20,6 +20,7 @@ import pandas as pd
 from pathlib import Path
 from agent.assay_extraction_agent_two_step import TwoStepAssayExtractionAgent
 from agent.prompts_rba_two_step import (
+    get_assay_classification_prompt as get_rba_assay_classification_prompt,
     get_paragraph_extraction_prompt as get_rba_paragraph_extraction_prompt,
     get_structured_description_from_text_prompt as get_rba_structured_description_from_text_prompt
 )
@@ -65,6 +66,9 @@ data.loc[ic50_mask, ['ic50_relation', 'ic50_value']] = data.loc[ic50_mask, 'IC50
 # Convert PMID to string (drop NaN PMIDs)
 data = data.dropna(subset=['PMID'])
 data['PMID'] = data['PMID'].astype(float).astype(int).astype(str)
+
+# Note: crude text filter (enzyme|substrate|phosph) removed — replaced by LLM classification (Step 0)
+
 
 # Rename columns for convenience
 data = data.rename(columns={
@@ -155,6 +159,70 @@ for pmid, pmid_group in pmid_groups:
         print(f"\n  --- DESCRIPTION {desc_count}/{unique_descs} ({len(desc_group)} pairs) ---")
         print(f"  {description[:100]}...")
 
+        # ========== STEP 0: Classify assay type from description (text-only) ==========
+        print(f"\n  [Step 0] Classifying assay type (text-only)...")
+        classification_prompt = get_rba_assay_classification_prompt(description)
+        classification_response, _, _ = agent._query_text_model(classification_prompt, max_new_tokens=512)
+        assay_classification = agent._parse_response(classification_response)
+
+        if assay_classification is None:
+            print(f"  [Step 0] WARNING - Could not parse classification, proceeding as RBA")
+            assay_classification = {
+                "is_radioligand_binding_assay": True,
+                "assay_category": "Uncertain",
+                "confidence": "low",
+                "reasoning": "Classification response could not be parsed"
+            }
+
+        is_rba = assay_classification.get("is_radioligand_binding_assay", True)
+        assay_category = assay_classification.get("assay_category", "Unknown")
+        print(f"  [Step 0] Classification: {assay_category} (is_rba={is_rba}, confidence={assay_classification.get('confidence', 'N/A')})")
+
+        if not is_rba:
+            print(f"  [Step 0] NOT an RBA — skipping Steps 1 & 2")
+            print(f"  [Step 0] Reason: {assay_classification.get('reasoning', 'N/A')}")
+
+            # Store results for all pairs with this DESCRIPTION, then continue to next DESCRIPTION
+            for _, row in desc_group.iterrows():
+                reactant_set_id = row["reactant_set_id"]
+                protein = str(row["protein"]) if pd.notna(row["protein"]) else None
+                ligand_smiles = str(row["ligand_smiles"]) if pd.notna(row["ligand_smiles"]) else None
+
+                affinity_data = []
+                if pd.notna(row.get("ki_value")):
+                    affinity_data.append({
+                        "type": "Ki",
+                        "value": row["ki_value"],
+                        "relation": row["ki_relation"],
+                        "unit": "nM"
+                    })
+                if pd.notna(row.get("ic50_value")):
+                    affinity_data.append({
+                        "type": "IC50",
+                        "value": row["ic50_value"],
+                        "relation": row["ic50_relation"],
+                        "unit": "nM"
+                    })
+
+                entry = {
+                    "reactant_set_id": int(reactant_set_id),
+                    "pmid": int(pmid),
+                    "protein": protein,
+                    "ligand": {"smiles": ligand_smiles},
+                    "affinity_data": affinity_data,
+                    "DESCRIPTION": description,
+                    "assay_classification": assay_classification,
+                    "search_path": [],
+                    "supplementary_source": [],
+                    "references_previous": None,
+                    "original_paragraph": {},
+                    "structured_description": None
+                }
+
+                key = str(int(reactant_set_id))
+                pmid_results[key] = entry
+            continue
+
         # ========== STEP 1: Extract paragraph ONCE for this DESCRIPTION ==========
         print(f"\n  [Step 1] Extracting paragraph (vision model)...")
         step1_result = agent.extract_paragraph(
@@ -212,6 +280,7 @@ for pmid, pmid_group in pmid_groups:
                 "ligand": {"smiles": ligand_smiles},
                 "affinity_data": affinity_data,
                 "DESCRIPTION": description,
+                "assay_classification": assay_classification,
                 "search_path": step1_result.get("search_path", []),
                 "supplementary_source": step1_result.get("supplementary_source", []),
                 "references_previous": step1_result.get("references_previous"),
