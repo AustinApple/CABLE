@@ -1,11 +1,95 @@
 """
 Prompt templates for the two-step RBA (Radioligand Binding Assay) extraction pipeline.
 
+Step 0: Classify assay from BindingDB description (text-only, no images)
 Step 1: Extract original_paragraph from paper (uses vision model + images)
 Step 2: Fill structured_description from extracted text (text-only)
 """
 
 from typing import Optional, Dict
+
+
+def get_assay_classification_prompt(assay_description: str) -> str:
+    """
+    Step 0 prompt: Classify whether an assay description refers to a true
+    radioligand binding assay or a different assay type (enzyme activity,
+    functional assay, etc.).
+
+    This is a cheap text-only call using the BindingDB description string —
+    no paper images needed. Runs before Step 1 to gate extraction.
+
+    Args:
+        assay_description: Brief assay description from BindingDB
+
+    Returns:
+        Formatted prompt string for text-only model input
+    """
+    return f"""You are an expert pharmacologist classifying assay types.
+
+Task: Determine whether the following assay description refers to a TRUE radioligand binding assay (RBA) or a different type of assay.
+
+Assay Description:
+{assay_description}
+
+=== CLASSIFICATION CRITERIA ===
+
+A TRUE radioligand binding assay has these characteristics:
+- A radiolabeled LIGAND (drug, agonist, antagonist, or specific binding probe) binds directly to a RECEPTOR or protein target (e.g., GPCR, ion channel, transporter, nuclear receptor, or other binding protein)
+- The assay measures the BINDING INTERACTION itself — how much radioligand occupies the binding site on the target
+- In competition/displacement assays, test compounds compete with the radioligand for the same binding site
+- In saturation binding assays, increasing radioligand concentrations are used to determine Kd and Bmax
+- Biological preparations are typically membrane homogenates, whole cells, or tissue sections
+- Nonspecific binding (NSB) is defined using an excess of an unlabeled compound that binds the SAME target site
+- Bound radioligand is separated from free radioligand by filtration (GF/B, GF/C filters), centrifugation, or Scintillation Proximity Assay (SPA)
+- Reported endpoints include Ki, IC50, Kd, Bmax, pKi, pIC50, or percent inhibition of specific binding
+- Common radioligands: [3H]-labeled receptor ligands, [125I]-labeled receptor ligands
+
+The following are NOT radioligand binding assays:
+
+1. ENZYME ACTIVITY / ENZYME INHIBITION ASSAYS:
+   - The radiolabel is on a SUBSTRATE (e.g., [γ-32P]ATP, [γ-33P]ATP, [14C]-labeled substrate) that the enzyme converts into a radiolabeled PRODUCT
+   - The assay measures CATALYTIC ACTIVITY — phosphorylation of a peptide/protein substrate, hydrolysis, acetylation, methylation, or other chemical transformation
+   - Identifying keywords: kinase assay, phosphorylation, phosphotransfer, substrate phosphorylation, catalytic activity, enzymatic activity, enzyme inhibition, histone acetyltransferase, methyltransferase, protease assay
+   - Product is separated from substrate by TCA precipitation, phosphocellulose paper (P81), SDS-PAGE/autoradiography, thin-layer chromatography, or DEAE filter binding
+   - The IC50 reflects inhibition of enzyme catalytic activity, NOT displacement of a ligand from a binding site
+   - Examples: [γ-33P]ATP kinase assay, [14C]acetyl-CoA acetyltransferase assay, [3H]SAM methyltransferase assay
+
+2. GTPγS FUNCTIONAL ASSAYS:
+   - [35S]GTPγS binding assays measure G-protein ACTIVATION (GDP-to-GTP exchange on Gα subunits) downstream of receptor signaling
+   - This is a FUNCTIONAL readout of receptor activation, NOT a direct measurement of ligand-receptor binding affinity
+   - Identifying keywords: GTPγS, [35S]GTPγS, G-protein activation, GDP/GTP exchange, agonist-stimulated GTPγS binding, basal GTPγS binding
+   - Although they use filtration and membranes (similar to RBA), the measured parameter is G-protein activation, not ligand occupancy at the receptor
+
+3. CELL PROLIFERATION / INCORPORATION ASSAYS:
+   - [3H]thymidine incorporation measures DNA synthesis / cell proliferation
+   - [3H]uridine incorporation measures RNA synthesis
+   - [3H]leucine incorporation measures protein synthesis
+   - These are NOT binding assays — they measure metabolic incorporation of radiolabeled precursors
+
+4. UPTAKE / TRANSPORT ASSAYS:
+   - Radiolabeled compound uptake into cells measures transporter FUNCTION (how much substrate is transported), not binding affinity to the transporter protein
+   - Examples: [3H]dopamine uptake, [3H]serotonin uptake, [3H]GABA uptake
+   - These report IC50 of uptake inhibition, which reflects transporter function, not direct binding
+
+5. METABOLIC ENZYME ASSAYS:
+   - [14C]CO2 release from [14C]-labeled substrates measures metabolic enzyme activity
+   - Radiolabeled metabolite formation assays
+
+EDGE CASE — this IS a true RBA:
+- A radiolabeled enzyme INHIBITOR used to measure DIRECT BINDING to the enzyme active site (no catalysis measured, just binding occupancy) — this is a legitimate binding assay even though the target is an enzyme rather than a receptor
+- Example: [3H]-labeled kinase inhibitor displacement assay measuring binding to the ATP site
+
+=== OUTPUT FORMAT ===
+
+Respond with ONLY valid JSON:
+{{
+    "is_radioligand_binding_assay": true or false,
+    "assay_category": "Radioligand Binding Assay" or "Enzyme Activity Assay" or "GTPγS Functional Assay" or "Cell Proliferation Assay" or "Uptake/Transport Assay" or "Metabolic Enzyme Assay" or "Other" or "Uncertain",
+    "confidence": "high" or "medium" or "low",
+    "reasoning": "Brief explanation of the key evidence in the description that led to this classification"
+}}
+
+Please respond ONLY with valid JSON, no other text."""
 
 
 def get_paragraph_extraction_prompt(assay_description: str) -> str:
@@ -27,48 +111,7 @@ Task: Find and extract the COMPLETE ORIGINAL text that describes the following R
 
 Assay Description: {assay_description}
 
-IMPORTANT — CLASSIFICATION STEP (do this FIRST):
-Before extracting any text, determine whether the assay described in the paper is a TRUE radioligand binding assay or a different type of assay that happens to use radioactivity. Many papers use radioisotopes for enzyme activity assays, which are NOT radioligand binding assays.
-
-A TRUE radioligand binding assay has ALL of these characteristics:
-- A radiolabeled LIGAND (drug, agonist, antagonist) binds directly to a RECEPTOR or protein target (GPCR, ion channel, transporter, nuclear receptor, or other binding protein)
-- The assay measures the BINDING INTERACTION itself — how much radioligand is bound to the target
-- Competition/displacement assays measure how test compounds displace the radioligand from the binding site
-- Saturation binding assays measure radioligand binding at increasing concentrations to determine Kd/Bmax
-- Biological preparations are typically membrane homogenates, whole cells, or tissue sections
-- Nonspecific binding (NSB) is defined using excess unlabeled compound at the SAME binding site
-- Bound radioligand is separated from free by filtration (GF/B, GF/C filters), centrifugation, or SPA
-- Endpoints are Ki, IC50, Kd, Bmax, or percent inhibition of specific binding
-
-The following are NOT radioligand binding assays — return empty if you find these instead:
-
-1. ENZYME ACTIVITY ASSAYS (most common confusion):
-   - The radiolabel is on a SUBSTRATE (e.g., [γ-32P]ATP, [γ-33P]ATP, [14C]-labeled substrate) that is enzymatically converted to a radiolabeled PRODUCT
-   - The assay measures CATALYTIC ACTIVITY — phosphorylation of a substrate, hydrolysis, cleavage, or other substrate turnover
-   - Key terms: kinase assay, phosphorylation, phosphotransfer, substrate phosphorylation, catalytic activity, enzymatic activity
-   - Separation of substrate from product uses TCA precipitation, phosphocellulose paper (P81), SDS-PAGE/autoradiography, or DEAE filter binding
-   - The IC50 reflects inhibition of enzyme catalytic activity, NOT displacement from a binding site
-   - Examples: [γ-33P]ATP kinase assay, [14C]acetyl-CoA acetyltransferase assay, [3H]thymidine incorporation (cell proliferation)
-
-2. GTPγS FUNCTIONAL ASSAYS:
-   - [35S]GTPγS binding assays measure G-protein ACTIVATION downstream of receptor signaling
-   - They quantify GDP-to-GTP exchange on Gα subunits, NOT direct ligand-receptor binding
-   - Key terms: GTPγS, G-protein activation, GDP, GTP exchange, agonist-stimulated [35S]GTPγS binding
-   - Even though they use filtration and membranes, the readout is a FUNCTIONAL response, not a binding affinity
-
-3. OTHER NON-RBA RADIOASSAYS:
-   - [3H]thymidine or [3H]uridine incorporation (cell proliferation/transcription assays)
-   - [14C]CO2 release (metabolic enzyme assays)
-   - Radioligand uptake/transport assays (measuring transporter function, not binding)
-
-EDGE CASE — this IS an RBA:
-- A radiolabeled enzyme INHIBITOR used to measure direct BINDING to the enzyme active site (no catalysis measured, just binding affinity) — this is a legitimate binding assay even though the target is an enzyme
-
-CLASSIFICATION DECISION:
-- If the assay is a TRUE radioligand binding assay → proceed with extraction below
-- If the assay is NOT an RBA (enzyme activity, GTPγS, or other) → return the "not found" JSON with a not_rba_reason field explaining why
-
-Instructions (only if classified as TRUE RBA):
+Instructions:
 1. Search through the paper to find where this RBA experiment is described (focus on Experimental Methods or Methods section first, then Results, then figure captions).
 2. Extract the COMPLETE ORIGINAL text that contains the full experimental protocol. Include:
    - Methods/Experimental section paragraphs describing the radioligand binding experiment
@@ -93,7 +136,7 @@ Instructions (only if classified as TRUE RBA):
 
    IMPORTANT: If you cannot find the exact numbered reference, write "Reference [X] not found in bibliography".
 
-Output format (JSON) — for a TRUE RBA:
+Output format (JSON):
 {{
     "original_paragraph": {{
         "<descriptive_key>": "<extracted_text>",
@@ -106,13 +149,12 @@ Output format (JSON) — for a TRUE RBA:
 
 Note: For original_paragraph, use descriptive keys that identify where the text came from (e.g., "Materials and Methods", "Radioligand Binding Assay", "Data Analysis", "Table 1"). The keys are flexible - use whatever accurately describes the source location.
 
-If you cannot find a matching RBA description, OR if the assay is NOT an RBA, return:
+If you cannot find a matching RBA description, return:
 {{
     "original_paragraph": {{}},
     "confidence": "N/A",
     "reference_number_in_text": "none",
-    "references_previous": "none",
-    "not_rba_reason": "Brief explanation of why this is not an RBA (e.g., 'Enzyme activity assay: kinase assay measuring [γ-33P]ATP phosphotransfer to substrate') or 'none' if simply not found"
+    "references_previous": "none"
 }}
 
 Please respond ONLY with valid JSON, no other text."""
