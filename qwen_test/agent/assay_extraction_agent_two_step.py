@@ -21,7 +21,7 @@ from typing import Optional, Dict, List, Tuple
 import time
 
 from .base_extraction_agent import BaseAssayExtractionAgent
-from .prompts_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
+from .prompts_spr_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
 
 # Type alias for prompt functions
 from typing import Callable
