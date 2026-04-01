@@ -72,7 +72,7 @@ data = data.dropna(subset=['PMID'])
 data['PMID'] = data['PMID'].astype(float).astype(int).astype(str)
 
 # Select a subset of PMIDs for testing
-data = data[data['PMID'].isin(['25847243', '23394126', '26051177', '23597381', '24900405', '26225459', '23769168', '25589936', '27045787', '24432870'])]
+data = data[data['PMID'].isin(['21899328', '22913511', '24973029', '28797774', '34225180', '37708384', '30019901', '22608961', '19366247'])]
 
 
 
@@ -92,7 +92,7 @@ print(f"Unique (PMID, DESCRIPTION) combinations: {data.groupby(['PMID', 'DESCRIP
 agent = TwoStepAssayExtractionAgent(
     model_name="Qwen/Qwen3.5-27B",
     text_model_name=None,  # Use same model for Step 2 (text-only mode)
-    pdf_dir="/data/mwu11/LLM_affinity/qwen_test/downloaded_paper",
+    pdf_dir="/data484_1/mwu11/downloaded_paper",
     torch_dtype="bfloat16",
     device="cuda:0",
     temperature=0.0,

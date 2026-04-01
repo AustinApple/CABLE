@@ -88,7 +88,7 @@ print(f"Unique (PMID, DESCRIPTION) combinations: {data.groupby(['PMID', 'DESCRIP
 agent = TwoStepAssayExtractionAgent(
     model_name="Qwen/Qwen3.5-27B",
     text_model_name=None,  # Use same model for Step 2 (text-only mode)
-    pdf_dir="/data/mwu11/LLM_affinity/qwen_test/downloaded_paper",
+    pdf_dir="/data484_1/mwu11/downloaded_paper",
     torch_dtype="bfloat16",
     device="cuda:0",
     temperature=0.0,
