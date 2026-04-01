@@ -327,6 +327,278 @@ class BaseAssayExtractionAgent:
                 merged[key] = ref_val
         return merged
 
+    def _extract_for_reference(
+        self,
+        pmid: str,
+        assay_description: str,
+        max_pages: Optional[int],
+        max_new_tokens: int,
+        _depth: int
+    ) -> Dict:
+        """Extract from a referenced paper. Subclasses must override this.
+
+        This is the recursive entry point called by _check_and_fetch_references
+        and _search_references_not_found. It should run the full extraction
+        pipeline (main paper + supplementary + reference search) for the given PMID.
+
+        Args:
+            pmid: PubMed ID of the referenced paper
+            assay_description: Brief assay description from BindingDB
+            max_pages: Maximum number of pages to process
+            max_new_tokens: Maximum tokens to generate
+            _depth: Current reference search depth
+
+        Returns:
+            Extraction result dict with 'original_paragraph', 'search_path', etc.
+        """
+        raise NotImplementedError(
+            "Subclasses must implement _extract_for_reference for reference search"
+        )
+
+    @staticmethod
+    def _combine_paragraphs(
+        main_paragraph,
+        main_pmid: str,
+        ref_paragraph,
+        ref_pmid: str
+    ):
+        """Combine original_paragraph from main and referenced papers.
+
+        Handles both dict format (two-step agent) and string format (legacy).
+        """
+        if isinstance(main_paragraph, dict) and isinstance(ref_paragraph, dict):
+            combined = {}
+            for k, v in main_paragraph.items():
+                combined[f"[PMID {main_pmid}] {k}"] = v
+            for k, v in ref_paragraph.items():
+                combined[f"[Ref PMID {ref_pmid}] {k}"] = v
+            return combined
+        if isinstance(main_paragraph, str) and isinstance(ref_paragraph, str):
+            return (
+                f"[From PMID {main_pmid}]: {main_paragraph}\n"
+                f"[From referenced PMID {ref_pmid}]: {ref_paragraph}"
+            )
+        # Mixed types — normalize to dict
+        combined = {}
+        if isinstance(main_paragraph, dict):
+            for k, v in main_paragraph.items():
+                combined[f"[PMID {main_pmid}] {k}"] = v
+        elif main_paragraph:
+            combined[f"[PMID {main_pmid}]"] = str(main_paragraph)
+        if isinstance(ref_paragraph, dict):
+            for k, v in ref_paragraph.items():
+                combined[f"[Ref PMID {ref_pmid}] {k}"] = v
+        elif ref_paragraph:
+            combined[f"[Ref PMID {ref_pmid}]"] = str(ref_paragraph)
+        return combined
+
+    def _resolve_reference_pmids(
+        self,
+        references_previous: str,
+        original_paragraph,
+        pmid: str
+    ) -> List[str]:
+        """Extract referenced PMIDs from references_previous and original_paragraph.
+
+        Tries direct PMID extraction first, then falls back to citation-based search.
+
+        Args:
+            references_previous: The references_previous field from model output
+            original_paragraph: The original_paragraph (dict or str)
+            pmid: Current paper's PMID (excluded from results)
+
+        Returns:
+            List of unique referenced PMIDs (excluding current pmid)
+        """
+        ref_pmids = self.citation_searcher.extract_referenced_pmids(references_previous)
+
+        # Also extract PMIDs mentioned in the paragraph text
+        if isinstance(original_paragraph, str) and original_paragraph:
+            ref_pmids.extend(
+                self.citation_searcher.extract_referenced_pmids(original_paragraph)
+            )
+        elif isinstance(original_paragraph, dict):
+            for v in original_paragraph.values():
+                if v:
+                    ref_pmids.extend(
+                        self.citation_searcher.extract_referenced_pmids(str(v))
+                    )
+
+        ref_pmids = list(set(p for p in ref_pmids if p != pmid))
+
+        if not ref_pmids:
+            # Fallback: citation-based search (author/title/DOI → PubMed query)
+            print(f"  No direct PMIDs found, trying citation-based search...")
+            all_text = references_previous
+            if isinstance(original_paragraph, str) and original_paragraph:
+                all_text += " " + original_paragraph
+            elif isinstance(original_paragraph, dict):
+                all_text += " " + " ".join(
+                    str(v) for v in original_paragraph.values() if v
+                )
+
+            citations = self.citation_searcher.extract_citations_from_text(all_text)
+            if len(references_previous) > 20:
+                citations.append(references_previous)
+
+            for citation in citations[:3]:
+                ref_pmid = self.citation_searcher.search_pmid_by_citation(citation)
+                if ref_pmid and ref_pmid != pmid:
+                    ref_pmids.append(ref_pmid)
+
+            if not ref_pmids:
+                print(f"  Could not find PMIDs from citations either")
+
+        return ref_pmids
+
+    def _check_and_fetch_references(
+        self,
+        result: Dict,
+        pmid: str,
+        assay_description: str,
+        max_pages: Optional[int],
+        max_new_tokens: int,
+        _depth: int
+    ) -> Dict:
+        """Check if a found result references previous work and fetch/combine if needed.
+
+        Called when a paragraph IS found but may reference another paper for the
+        actual protocol details. If a referenced paper is found, the paragraphs
+        are combined.
+
+        Args:
+            result: Extraction result that may contain references_previous
+            pmid: Current paper's PMID
+            assay_description: Brief assay description
+            max_pages: Maximum pages to process
+            max_new_tokens: Maximum tokens to generate
+            _depth: Current reference search depth
+
+        Returns:
+            Updated result (combined with reference if found, unchanged otherwise)
+        """
+        if not self.search_references or _depth >= self.max_reference_depth:
+            return result
+
+        references_previous = result.get("references_previous", "none")
+        if references_previous == "none" or not references_previous:
+            return result
+
+        print(f"  Found reference to previous work: {str(references_previous)[:200]}...")
+
+        ref_pmids = self._resolve_reference_pmids(
+            references_previous, result.get("original_paragraph"), pmid
+        )
+        if not ref_pmids:
+            return result
+
+        for ref_pmid in ref_pmids[:3]:
+            print(f"  Fetching referenced paper PMID {ref_pmid}...")
+            ref_result = self._extract_for_reference(
+                ref_pmid, assay_description, max_pages, max_new_tokens, _depth + 1
+            )
+
+            ref_paragraph = ref_result.get("original_paragraph")
+            if self._is_paragraph_found(ref_paragraph):
+                # Combine paragraphs from both papers
+                result["original_paragraph"] = self._combine_paragraphs(
+                    result.get("original_paragraph"), pmid,
+                    ref_paragraph, ref_pmid
+                )
+                result["source"] = (
+                    f"{result.get('source', '')} + referenced_paper_{ref_pmid}"
+                )
+
+                # Extend search_path
+                current_path = result.get("search_path", [])
+                ref_path = ref_result.get("search_path", [])
+                if isinstance(current_path, list) and isinstance(ref_path, list):
+                    result["search_path"] = current_path + ["reference"] + ref_path
+                else:
+                    result["search_path"] = f"{current_path} -> reference -> {ref_path}"
+
+                # Extend supplementary_source if reference used supplementary
+                ref_supp = ref_result.get("supplementary_source", [])
+                if ref_supp and isinstance(ref_supp, list) and len(ref_supp) > 0:
+                    current_supp = result.get("supplementary_source", [])
+                    if isinstance(current_supp, list):
+                        result["supplementary_source"] = (
+                            current_supp + [f"reference_{ref_pmid}"]
+                        )
+
+                print(f"  Combined with referenced paper PMID {ref_pmid}!")
+                return result
+
+        return result
+
+    def _search_references_not_found(
+        self,
+        result: Dict,
+        pmid: str,
+        assay_description: str,
+        max_pages: Optional[int],
+        max_new_tokens: int,
+        _depth: int
+    ) -> Dict:
+        """Search referenced literature when assay not found in main/supplementary.
+
+        Called when no paragraph was found in the main paper or supplementary
+        materials, but the model's response may contain references_previous
+        pointing to another paper.
+
+        Args:
+            result: The not-found extraction result (may have references_previous)
+            pmid: Current paper's PMID
+            assay_description: Brief assay description
+            max_pages: Maximum pages to process
+            max_new_tokens: Maximum tokens to generate
+            _depth: Current reference search depth
+
+        Returns:
+            Reference paper's result if found, original not-found result otherwise
+        """
+        if not self.search_references or _depth >= self.max_reference_depth:
+            return result
+
+        references_previous = result.get("references_previous", "none")
+        if references_previous == "none" or not references_previous:
+            return result
+
+        print(f"\n  Not found locally. Checking referenced literature: "
+              f"{str(references_previous)[:200]}...")
+
+        ref_pmids = self._resolve_reference_pmids(
+            references_previous, result.get("original_paragraph"), pmid
+        )
+        if not ref_pmids:
+            return result
+
+        for ref_pmid in ref_pmids[:3]:
+            print(f"  Searching referenced paper PMID {ref_pmid}...")
+            ref_result = self._extract_for_reference(
+                ref_pmid, assay_description, max_pages, max_new_tokens, _depth + 1
+            )
+
+            if self._is_paragraph_found(ref_result.get("original_paragraph")):
+                ref_result["source"] = f"referenced_paper_{ref_pmid}_from_{pmid}"
+
+                # Prepend "reference" to search_path
+                ref_path = ref_result.get("search_path", [])
+                if isinstance(ref_path, list):
+                    ref_result["search_path"] = ["reference"] + ref_path
+                else:
+                    ref_result["search_path"] = f"reference -> {ref_path}"
+
+                # Mark supplementary_source if reference used supplementary
+                ref_supp = ref_result.get("supplementary_source", [])
+                if ref_supp and isinstance(ref_supp, list) and len(ref_supp) > 0:
+                    ref_result["supplementary_source"] = [f"reference_{ref_pmid}"]
+
+                print(f"  Found in referenced paper PMID {ref_pmid}!")
+                return ref_result
+
+        return result
+
     # ==================== Cleanup ====================
 
     def clear_image_cache(self):

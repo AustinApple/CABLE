@@ -116,6 +116,25 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             self.use_separate_text_model = True
             print(f"Text model loaded: {text_model_name}")
 
+    # ==================== Reference Hook ====================
+
+    def _extract_for_reference(
+        self,
+        pmid: str,
+        assay_description: str,
+        max_pages: Optional[int],
+        max_new_tokens: int,
+        _depth: int
+    ) -> Dict:
+        """Override base class hook: run extract_paragraph on a referenced paper."""
+        return self.extract_paragraph(
+            pmid=pmid,
+            assay_description=assay_description,
+            max_pages=max_pages,
+            max_new_tokens=max_new_tokens,
+            _depth=_depth
+        )
+
     # ==================== Text-Only Query Method ====================
 
     def _query_text_model(
@@ -301,6 +320,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 result["search_path"] = ["main"]
                 result["supplementary_source"] = []
                 print(f"  Found in main paper!")
+                # Check if it references previous work and combine if so
+                result = self._check_and_fetch_references(
+                    result, pmid, assay_description, max_pages, max_new_tokens, _depth
+                )
                 return result
 
             # Search supplementary materials
@@ -322,11 +345,15 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                             supp_result["search_path"] = ["main", "supplementary"]
                             supp_result["supplementary_source"] = ["main"]
                             print(f"  Found in supplementary: {supp_path.name}!")
+                            # Check if it references previous work and combine if so
+                            supp_result = self._check_and_fetch_references(
+                                supp_result, pmid, assay_description,
+                                max_pages, max_new_tokens, _depth
+                            )
                             return supp_result
 
-            # Return NOT FOUND
-            print(f"  Paragraph not found in any searched documents.")
-            return {
+            # Try referenced literature before giving up
+            not_found_result = {
                 "pmid": pmid,
                 "assay_description": assay_description,
                 "original_paragraph": {},
@@ -334,9 +361,20 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 "source": "not_found",
                 "search_path": [],
                 "supplementary_source": [],
-                "references_previous": "none",
+                "references_previous": result.get("references_previous", "none") if result else "none",
                 "searched_locations": f"main_paper, supplementary({len(supp_files)} files)"
             }
+
+            ref_result = self._search_references_not_found(
+                not_found_result, pmid, assay_description,
+                max_pages, max_new_tokens, _depth
+            )
+            if self._is_paragraph_found(ref_result.get("original_paragraph")):
+                print(f"  Found via referenced literature!")
+                return ref_result
+
+            print(f"  Paragraph not found in any searched documents.")
+            return not_found_result
 
         except Exception as e:
             print(f"Error extracting paragraph for PMID {pmid}: {e}")
