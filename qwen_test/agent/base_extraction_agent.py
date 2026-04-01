@@ -269,9 +269,9 @@ class BaseAssayExtractionAgent:
         """
         pdf_path = self.pubmed_fetcher.get_pdf_path(pmid)
         if pdf_path is None:
-            if self.search_references:
-                print(f"  Main paper not found locally, trying to fetch from PMC...")
-                pdf_path = self.pubmed_fetcher.fetch_paper_by_pmid(pmid)
+
+            print(f"  Main paper not found locally, trying to fetch from PMC...")
+            pdf_path = self.pubmed_fetcher.fetch_paper_by_pmid(pmid)
 
             if pdf_path is None:
                 return None, None
