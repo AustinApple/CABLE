@@ -369,7 +369,10 @@ class BaseAssayExtractionAgent:
         if isinstance(main_paragraph, dict) and isinstance(ref_paragraph, dict):
             combined = {}
             for k, v in main_paragraph.items():
-                combined[f"[PMID {main_pmid}] {k}"] = v
+                if k.startswith("[PMID ") or k.startswith("[Ref PMID "):
+                    combined[k] = v
+                else:
+                    combined[f"[PMID {main_pmid}] {k}"] = v
             for k, v in ref_paragraph.items():
                 combined[f"[Ref PMID {ref_pmid}] {k}"] = v
             return combined
@@ -382,7 +385,10 @@ class BaseAssayExtractionAgent:
         combined = {}
         if isinstance(main_paragraph, dict):
             for k, v in main_paragraph.items():
-                combined[f"[PMID {main_pmid}] {k}"] = v
+                if k.startswith("[PMID ") or k.startswith("[Ref PMID "):
+                    combined[k] = v
+                else:
+                    combined[f"[PMID {main_pmid}] {k}"] = v
         elif main_paragraph:
             combined[f"[PMID {main_pmid}]"] = str(main_paragraph)
         if isinstance(ref_paragraph, dict):
@@ -492,7 +498,13 @@ class BaseAssayExtractionAgent:
         if not ref_pmids:
             return result
 
+        found_any = False
+        seen_pmids = set()
         for ref_pmid in ref_pmids[:3]:
+            if ref_pmid in seen_pmids:
+                continue
+            seen_pmids.add(ref_pmid)
+
             print(f"  Fetching referenced paper PMID {ref_pmid}...")
             ref_result = self._extract_for_reference(
                 ref_pmid, assay_description, max_pages, max_new_tokens, _depth + 1
@@ -527,7 +539,7 @@ class BaseAssayExtractionAgent:
                         )
 
                 print(f"  Combined with referenced paper PMID {ref_pmid}!")
-                return result
+                found_any = True
 
         return result
 

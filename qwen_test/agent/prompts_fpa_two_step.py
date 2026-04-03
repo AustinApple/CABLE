@@ -119,6 +119,7 @@ Instructions:
 1. Analyze the extracted text carefully to identify FP/FA assay parameters.
 2. Extract structured assay parameters into the fields described below.
 3. If a parameter is not mentioned in the text, use null.
+4. The Assay Description specifies the exact target protein for this data point. For protein-specific fields (target_protein, protein_concentration), report only the values relevant to that specific protein, not all proteins mentioned in the text.
 
 STRUCTURED PARAMETERS TO EXTRACT:
 
@@ -183,7 +184,7 @@ detection:
 
 data_analysis:
   - endpoint_reported: One of: "Ki", "IC50", "Kd", "Percent inhibition", "pKi", "pIC50", "EC50", "Other"
-  - ic50_to_ki_conversion: One of: "Cheng-Prusoff equation", "Nikolovska-Coleska equation", "Exact solution", "Not applicable", "Not specified", or null
+  - ic50_to_ki_conversion: One of: "Cheng-Prusoff equation", "Nikolovska-Coleska equation", "Exact solution", "Not applicable", "Not specified", or null. Use "Nikolovska-Coleska equation" when Ki values are obtained by nonlinear regression fitting of competition curves using the Kd of the probe and concentrations of protein and probe (the exact competitive binding equation for FP assays). Use "Not applicable" only when Ki values are reported directly from binding experiments without IC50 conversion.
   - fitting_model: One of: "One-site competition", "Two-site competition", "Four-parameter logistic (4PL)", "Three-parameter logistic (3PL, Hill slope fixed to 1)", "Dose-response (variable slope)", "Other"
   - hill_slope_reported: Object with:
       - reported: One of: "Yes, fixed to 1", "Yes, variable", "Not reported"

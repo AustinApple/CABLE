@@ -161,7 +161,7 @@ for pmid, pmid_group in pmid_groups:
     print(f"  Unique DESCRIPTIONs: {unique_descs}")
 
     desc_count = 0
-    for description, desc_group in list(desc_groups)[0:1]:
+    for description, desc_group in desc_groups:
         desc_count += 1
         print(f"\n  --- DESCRIPTION {desc_count}/{unique_descs} ({len(desc_group)} pairs) ---")
         print(f"  {description[:100]}...")
