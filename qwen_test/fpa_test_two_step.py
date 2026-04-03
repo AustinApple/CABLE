@@ -72,7 +72,8 @@ data = data.dropna(subset=['PMID'])
 data['PMID'] = data['PMID'].astype(float).astype(int).astype(str)
 
 # Select a subset of PMIDs for testing
-data = data[data['PMID'].isin(['21899328', '22913511', '24973029', '28797774', '34225180', '37708384', '30019901', '22608961', '19366247'])]
+#data = data[data['PMID'].isin(['21899328', '22913511', '24973029', '28797774', '34225180', '37708384', '30019901', '22608961', '19366247'])]
+data = data[data['PMID'].isin(['30019901'])]
 
 
 
@@ -160,7 +161,7 @@ for pmid, pmid_group in pmid_groups:
     print(f"  Unique DESCRIPTIONs: {unique_descs}")
 
     desc_count = 0
-    for description, desc_group in desc_groups:
+    for description, desc_group in list(desc_groups)[0:1]:
         desc_count += 1
         print(f"\n  --- DESCRIPTION {desc_count}/{unique_descs} ({len(desc_group)} pairs) ---")
         print(f"  {description[:100]}...")
@@ -231,6 +232,8 @@ for pmid, pmid_group in pmid_groups:
                 "DESCRIPTION": description,
                 "search_path": step1_result.get("search_path", []),
                 "supplementary_source": step1_result.get("supplementary_source", []),
+                "reference_number_in_text": step1_result.get("reference_number_in_text"),
+                "reference_sentence_in_text": step1_result.get("reference_sentence_in_text"),
                 "references_previous": step1_result.get("references_previous"),
                 "original_paragraph": extracted_paragraph,
                 "structured_description": structured_description

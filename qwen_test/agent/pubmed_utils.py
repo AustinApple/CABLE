@@ -310,9 +310,11 @@ class CitationSearcher:
 
         # Strategy 2: Try to extract and search by title
         title = self._extract_title_from_citation(citation)
+        year_match = re.search(r'\b(19|20)\d{2}\b', citation)
+        year = year_match.group(0) if year_match else None
         if title:
             print(f"    Extracted title: {title[:60]}...")
-            pmid = self._search_pubmed_by_title(title)
+            pmid = self._search_pubmed_by_title(title, year=year)
             if pmid:
                 return pmid
 
@@ -476,14 +478,17 @@ class CitationSearcher:
 
         return None
 
-    def _search_pubmed_by_title(self, title: str) -> Optional[str]:
-        """Search PubMed by title."""
+    def _search_pubmed_by_title(self, title: str, year: Optional[str] = None) -> Optional[str]:
+        """Search PubMed by title, optionally filtered by publication year."""
         try:
             url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
             clean_title = re.sub(r'[^\w\s]', ' ', title)
+            term = f"{clean_title}[Title]"
+            if year:
+                term += f" AND {year}[Date - Publication]"
             params = {
                 "db": "pubmed",
-                "term": f"{clean_title}[Title]",
+                "term": term,
                 "retmode": "json",
                 "retmax": 1
             }
@@ -503,7 +508,7 @@ class CitationSearcher:
         return None
 
     def _search_pubmed_by_text(self, citation: str) -> Optional[str]:
-        """Free text search using author names, journal, and year."""
+        """Free text search using author names, journal, year, and optionally volume/page."""
         try:
             search_terms = []
 
@@ -552,6 +557,39 @@ class CitationSearcher:
                     data = response.json()
                     id_list = data.get("esearchresult", {}).get("idlist", [])
                     if id_list:
+                        if len(id_list) == 1:
+                            pmid = id_list[0]
+                            print(f"    Found PMID by free text: {pmid}")
+                            return pmid
+                        # Multiple results: narrow using volume and/or start page
+                        # Citation format: "Journal Year, Vol, StartPage−EndPage"
+                        volume_match = re.search(
+                            r'(?:19|20)\d{2},\s*(\d+),\s*\d+', citation
+                        )
+                        page_match = re.search(
+                            r'(?:19|20)\d{2},\s*\d+,\s*(\d+)', citation
+                        )
+                        narrow_terms = list(search_terms)
+                        if volume_match:
+                            narrow_terms.append(f"{volume_match.group(1)}[Volume]")
+                        if page_match:
+                            narrow_terms.append(f"{page_match.group(1)}[Page]")
+                        if len(narrow_terms) > len(search_terms):
+                            narrow_query = " AND ".join(narrow_terms)
+                            print(f"    Narrowing search: {narrow_query}")
+                            narrow_params = dict(params)
+                            narrow_params["term"] = narrow_query
+                            narrow_params["retmax"] = 1
+                            narrow_resp = requests.get(url, params=narrow_params, timeout=30)
+                            if narrow_resp.status_code == 200:
+                                narrow_ids = narrow_resp.json().get(
+                                    "esearchresult", {}
+                                ).get("idlist", [])
+                                if narrow_ids:
+                                    pmid = narrow_ids[0]
+                                    print(f"    Found PMID by narrowed search: {pmid}")
+                                    return pmid
+                        # Fall back to first result from broad search
                         pmid = id_list[0]
                         print(f"    Found PMID by free text: {pmid}")
                         return pmid
@@ -592,6 +630,18 @@ class CitationSearcher:
             List of extracted citation strings
         """
         citations = []
+
+        # Pattern for numbered reference lists like "(26) Author... (27) Author..."
+        # Split on reference number markers and extract each individual citation
+        numbered_ref_pattern = r'\(\d+\)\s+([A-Z].*?)(?=\s*\(\d+\)\s+[A-Z]|$)'
+        numbered_matches = re.findall(numbered_ref_pattern, text, re.DOTALL)
+        if numbered_matches:
+            for match in numbered_matches:
+                match = match.strip()
+                # Only include if it looks like a proper citation (has a year)
+                if re.search(r'(?:19|20)\d{2}', match) and len(match) > 20:
+                    citations.append(match)
+            return citations
 
         # Pattern for typical citation format
         citation_pattern = r'[A-Z][a-z]+,\s*[A-Z]\.(?:\s*[A-Z]\.)?(?:;\s*[A-Z][a-z]+,\s*[A-Z]\.(?:\s*[A-Z]\.)?)*[^.]*(?:19|20)\d{2}[^.]*\d+[-–]\d+\.?'

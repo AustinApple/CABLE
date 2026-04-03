@@ -42,16 +42,20 @@ Instructions:
 3. Do NOT summarize or paraphrase - provide the exact text from the paper.
 4. If the description spans multiple sections, include all relevant text.
 
-5. If the paper references a previous publication for methodology details (e.g., "as described previously", "following [ref]", "according to [author]"):
+5. If the paper uses language like "as described previously [X]", "following the protocol in [X]", "according to [author] [X]", or "as reported in [X]" specifically within the FP/FA methodology description:
 
    CRITICAL STEPS FOR REFERENCE EXTRACTION:
-   a) Note the EXACT reference number mentioned in the methods text
-   b) Go to the References/Bibliography section at the END of the paper
-   c) Find the reference entry that starts with EXACTLY that number
-   d) VERIFY the number matches before copying
-   e) Copy the FULL citation including: authors, title, journal name, year, volume, and page numbers
+   a) Copy the EXACT sentence(s) from the methods text that contain this language
+   b) Identify the EXACT reference number(s) cited in those sentences
+   c) Go to the References/Bibliography section at the END of the paper
+   d) For EACH reference number, find the entry that starts with EXACTLY that number
+   e) VERIFY each number matches before copying
+   f) Copy the FULL citation for each, including: authors, title, journal name, year, volume, and page numbers
 
-   IMPORTANT: If you cannot find the exact numbered reference, write "Reference [X] not found in bibliography".
+   IMPORTANT:
+   - Only capture references cited with explicit "previously described / protocol from" language in the methods section
+   - Do NOT include references cited for background, compound origins, or result comparisons
+   - If you cannot find an exact numbered reference, write "Reference [X] not found in bibliography"
 
 Output format (JSON):
 {{
@@ -60,8 +64,9 @@ Output format (JSON):
         ...
     }},
     "confidence": "high/medium/low",
-    "reference_number_in_text": "Reference number(s) or 'none'",
-    "references_previous": "Complete citation from References section or 'none'"
+    "reference_number_in_text": "Reference number(s) cited with 'previously described' language (e.g. '26, 27') or 'none'",
+    "reference_sentence_in_text": "The exact sentence(s) from the methods section that cite the reference(s), or 'none'",
+    "references_previous": "Complete citation(s) from References section or 'none'"
 }}
 
 Note: For original_paragraph, use descriptive keys that identify where the text came from (e.g., "Materials and Methods", "Fluorescence Polarization Assay", "Data Analysis", "Table 1"). The keys are flexible - use whatever accurately describes the source location.
