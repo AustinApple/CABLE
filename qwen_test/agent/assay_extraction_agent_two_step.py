@@ -22,6 +22,7 @@ import time
 
 from .base_extraction_agent import BaseAssayExtractionAgent
 from .prompts_spr_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
+from .prompts_fpa_two_step import get_paragraph_extraction_from_text_prompt as get_fpa_paragraph_from_text_prompt
 
 # Type alias for prompt functions
 from typing import Callable
@@ -274,6 +275,33 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         print(f"[Step 1] Extracting paragraph from PMID {pmid} (depth={_depth})")
         print(f"{'='*60}")
 
+        supp_files = []
+
+        # --- Primary path: MinerU markdown → text model (fast, no hallucination) ---
+        markdown = self._get_paper_markdown(pmid)
+        if markdown:
+            text_prompt = get_fpa_paragraph_from_text_prompt(assay_description, markdown)
+            print(f"  Searching main paper (text mode) for PMID {pmid}...")
+            try:
+                response_text, _, _ = self._query_text_model(text_prompt, max_new_tokens)
+                print(f"\n[DEBUG] Raw response: {response_text[:500]}...")
+                result = self._parse_response(response_text)
+                if result and self._is_paragraph_found(result.get("original_paragraph")):
+                    result["pmid"] = pmid
+                    result["assay_description"] = assay_description
+                    result["source"] = f"main_paper_{pmid}_text"
+                    result["search_path"] = ["main"]
+                    result["supplementary_source"] = []
+                    print(f"  Found in main paper (text mode)!")
+                    result = self._check_and_fetch_references(
+                        result, pmid, assay_description, max_pages, max_new_tokens, _depth
+                    )
+                    return result
+                print(f"  Not found via text mode, falling back to vision...")
+            except Exception as e:
+                print(f"  Text mode failed ({e}), falling back to vision...")
+
+        # --- Fallback: vision model on PDF images ---
         images, pdf_path = self._get_paper_images(pmid, max_pages)
 
         if pdf_path is None:
@@ -302,11 +330,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         # Use paragraph extraction prompt (no structured_description)
         prompt = self.paragraph_prompt_fn(assay_description)
-        supp_files = []
 
         try:
             # Search main paper
-            print(f"  Searching main paper for PMID {pmid}...")
+            print(f"  Searching main paper (vision) for PMID {pmid}...")
             response_text, _, _ = self._query_model(images, prompt, max_new_tokens)
 
             print(f"\n[DEBUG] Raw response: {response_text[:500]}...")

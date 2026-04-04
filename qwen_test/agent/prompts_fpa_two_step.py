@@ -82,6 +82,80 @@ If you cannot find a matching FP/FA assay description, return:
 Please respond ONLY with valid JSON, no other text."""
 
 
+def get_paragraph_extraction_from_text_prompt(assay_description: str, markdown_text: str) -> str:
+    """
+    Step 1 text-based prompt: Extract original_paragraph from MinerU markdown.
+
+    Same task as get_paragraph_extraction_prompt but takes markdown text directly
+    instead of PDF images. Used when MinerU pre-processing is available.
+
+    Args:
+        assay_description: Brief assay description from BindingDB
+        markdown_text: Full paper text in markdown format (from MinerU)
+
+    Returns:
+        Formatted prompt string for text-only model
+    """
+    return f"""You are an expert scientific reader analyzing a research paper about Fluorescence Polarization (FP) or Fluorescence Anisotropy (FA) binding assay experiments.
+
+Task: Find and extract the COMPLETE ORIGINAL text that describes the following FP/FA experiment.
+
+Assay Description: {assay_description}
+
+=== FULL PAPER TEXT (MARKDOWN) ===
+{markdown_text}
+=== END OF PAPER TEXT ===
+
+Instructions:
+1. Search through the paper text to find where this FP/FA experiment is described (focus on Experimental Methods or Methods section first, then Results, then figure captions).
+2. Extract the COMPLETE ORIGINAL text that contains the full experimental protocol. Include:
+   - Methods/Experimental section paragraphs describing the fluorescence polarization/anisotropy binding experiment
+   - Details about the target protein (purification, expression system, construct boundaries)
+   - Fluorescent tracer identity, fluorophore, concentration, and Kd
+   - Assay controls (high signal / low signal definitions, positive control compound)
+   - Assay conditions (plate format, buffer, detergent, temperature, incubation time, volume, order of addition)
+   - Detection details (instrument, readout mode FP vs FA, excitation/emission wavelengths, G-factor correction)
+   - Artifact controls (compound fluorescence interference, aggregation checks, inner filter effect)
+   - Data analysis details (software, fitting model, Ki/IC50 calculation, normalization)
+   - Relevant table contents or figure captions if applicable
+3. Do NOT summarize or paraphrase - provide the exact text from the paper.
+4. If the description spans multiple sections, include all relevant text.
+
+5. If the paper uses language like "as described previously [X]", "following the protocol in [X]", "according to [author] [X]", or "as reported in [X]" specifically within the FP/FA methodology description:
+   a) Copy the EXACT sentence(s) from the methods text that contain this language
+   b) Identify the EXACT reference number(s) cited in those sentences (e.g. 26, 27)
+   c) Find the corresponding entries in the References section of the paper text
+   d) Copy the FULL citation for each entry including authors, title, journal, year, volume, and page numbers
+
+   IMPORTANT:
+   - Only capture references cited with explicit "previously described / protocol from" language in the methods section
+   - Do NOT include references cited for background, compound origins, or result comparisons
+
+Output format (JSON):
+{{
+    "original_paragraph": {{
+        "<descriptive_key>": "<extracted_text>",
+        ...
+    }},
+    "confidence": "high/medium/low",
+    "reference_number_in_text": "Reference number(s) cited with 'previously described' language (e.g. '26, 27') or 'none'",
+    "reference_sentence_in_text": "The exact sentence(s) from the methods section that cite the reference(s), or 'none'",
+    "references_previous": "Complete citation(s) from References section or 'none'"
+}}
+
+Note: For original_paragraph, use descriptive keys that identify where the text came from (e.g., "Materials and Methods", "Fluorescence Polarization Assay", "Data Analysis").
+
+If you cannot find a matching FP/FA assay description, return:
+{{
+    "original_paragraph": {{}},
+    "confidence": "N/A",
+    "reference_number_in_text": "none",
+    "references_previous": "none"
+}}
+
+Please respond ONLY with valid JSON, no other text."""
+
+
 def get_structured_description_from_text_prompt(
     extracted_paragraph: str,
     assay_description: str,

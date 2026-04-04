@@ -12,8 +12,10 @@ from typing import Optional, Dict, List, Tuple
 from PIL import Image
 import os
 
+import re
+
 from .pubmed_utils import PubMedFetcher, CitationSearcher
-from .pdf_utils import DocumentConverter
+from .pdf_utils import DocumentConverter, pdf_to_markdown
 
 
 class BaseAssayExtractionAgent:
@@ -89,11 +91,13 @@ class BaseAssayExtractionAgent:
         self.max_reference_depth = max_reference_depth
         self.ncbi_api_key = ncbi_api_key or os.environ.get("NCBI_API_KEY")
 
-        # Create supplementary and reference cache directories
+        # Create supplementary, reference and markdown cache directories
         self.supp_dir = self.pdf_dir / "supplementary"
         self.ref_dir = self.pdf_dir / "references"
+        self.markdown_cache_dir = self.pdf_dir / "markdown_cache"
         self.supp_dir.mkdir(exist_ok=True)
         self.ref_dir.mkdir(exist_ok=True)
+        self.markdown_cache_dir.mkdir(exist_ok=True)
 
         # Initialize utility classes
         self.pubmed_fetcher = PubMedFetcher(
@@ -110,8 +114,13 @@ class BaseAssayExtractionAgent:
         )
         self.doc_converter = DocumentConverter()
 
-        # Cache converted images per PMID to avoid re-converting PDFs
+        # Cache converted images and markdown per PMID
         self._image_cache: Dict[str, List[Image.Image]] = {}
+        self._markdown_cache: Dict[str, Optional[str]] = {}
+
+        # CUDA device index for MinerU subprocess (extract from device string)
+        _dev = str(device)
+        self._cuda_device_idx = _dev.replace("cuda:", "") if _dev.startswith("cuda:") else "0"
 
         self.token_usage = {
             "total_input_tokens": 0,
@@ -288,6 +297,64 @@ class BaseAssayExtractionAgent:
 
         return images, pdf_path
 
+    def _get_paper_markdown(self, pmid: str) -> Optional[str]:
+        """Get paper content as markdown via MinerU. Results are cached in memory.
+
+        Args:
+            pmid: PubMed ID of the paper
+
+        Returns:
+            Markdown text string, or None if conversion failed
+        """
+        if pmid in self._markdown_cache:
+            return self._markdown_cache[pmid]
+
+        pdf_path = self.pubmed_fetcher.get_pdf_path(pmid)
+        if pdf_path is None:
+            pdf_path = self.pubmed_fetcher.fetch_paper_by_pmid(pmid)
+        if pdf_path is None:
+            self._markdown_cache[pmid] = None
+            return None
+
+        print(f"  Converting PMID {pmid} to markdown via MinerU...")
+        md_path = pdf_to_markdown(
+            pdf_path,
+            cache_dir=self.markdown_cache_dir,
+            cuda_device=self._cuda_device_idx
+        )
+        if md_path is None:
+            print(f"  MinerU conversion failed for PMID {pmid}")
+            self._markdown_cache[pmid] = None
+            return None
+
+        markdown = md_path.read_text(encoding="utf-8")
+        self._markdown_cache[pmid] = markdown
+        print(f"  Markdown ready ({len(markdown)} chars)")
+        return markdown
+
+    @staticmethod
+    def _parse_references_from_markdown(markdown: str, ref_numbers: List[str]) -> Dict[str, str]:
+        """Extract specific numbered references from a markdown reference list.
+
+        Looks for patterns like "(26) Author, Title..." and extracts the full
+        citation text for each requested reference number.
+
+        Args:
+            markdown: Full markdown text of the paper
+            ref_numbers: List of reference numbers as strings (e.g. ["26", "27"])
+
+        Returns:
+            Dict mapping reference number -> full citation text
+        """
+        results = {}
+        for num in ref_numbers:
+            pattern = rf'\({re.escape(num)}\)\s+(.*?)(?=\n\s*\(\d+\)|\Z)'
+            match = re.search(pattern, markdown, re.DOTALL)
+            if match:
+                citation = " ".join(match.group(1).split())
+                results[num] = citation
+        return results
+
     # ==================== Reference Handling ====================
 
     @staticmethod
@@ -402,23 +469,47 @@ class BaseAssayExtractionAgent:
         self,
         references_previous: str,
         original_paragraph,
-        pmid: str
+        pmid: str,
+        reference_number_in_text: Optional[str] = None
     ) -> List[str]:
         """Extract referenced PMIDs from references_previous and original_paragraph.
 
-        Tries direct PMID extraction first, then falls back to citation-based search.
+        Priority:
+        1. If reference_number_in_text is given, parse exact citations from the
+           paper's markdown (via MinerU) — deterministic, no hallucination.
+        2. Direct PMID extraction from text.
+        3. Citation-based PubMed search (author/title/volume/page).
 
         Args:
             references_previous: The references_previous field from model output
             original_paragraph: The original_paragraph (dict or str)
             pmid: Current paper's PMID (excluded from results)
+            reference_number_in_text: Comma-separated reference numbers, e.g. "26, 27"
 
         Returns:
             List of unique referenced PMIDs (excluding current pmid)
         """
+        # --- Priority 1: Markdown-based reference resolution (most reliable) ---
+        if reference_number_in_text:
+            ref_nums = [n.strip() for n in str(reference_number_in_text).split(",") if n.strip()]
+            if ref_nums:
+                markdown = self._get_paper_markdown(pmid)
+                if markdown:
+                    citations_from_md = self._parse_references_from_markdown(markdown, ref_nums)
+                    if citations_from_md:
+                        print(f"  Using markdown reference list for refs: {ref_nums}")
+                        ref_pmids = []
+                        for num, citation in citations_from_md.items():
+                            print(f"  Searching PMID for ref ({num}): {citation[:80]}...")
+                            ref_pmid = self.citation_searcher.search_pmid_by_citation(citation)
+                            if ref_pmid and ref_pmid != pmid:
+                                ref_pmids.append(ref_pmid)
+                        if ref_pmids:
+                            return list(dict.fromkeys(ref_pmids))  # deduplicate, preserve order
+
+        # --- Priority 2: Direct PMID extraction from text ---
         ref_pmids = self.citation_searcher.extract_referenced_pmids(references_previous)
 
-        # Also extract PMIDs mentioned in the paragraph text
         if isinstance(original_paragraph, str) and original_paragraph:
             ref_pmids.extend(
                 self.citation_searcher.extract_referenced_pmids(original_paragraph)
@@ -433,7 +524,7 @@ class BaseAssayExtractionAgent:
         ref_pmids = list(set(p for p in ref_pmids if p != pmid))
 
         if not ref_pmids:
-            # Fallback: citation-based search (author/title/DOI → PubMed query)
+            # --- Priority 3: Citation-based search (author/title/DOI → PubMed query) ---
             print(f"  No direct PMIDs found, trying citation-based search...")
             all_text = references_previous
             if isinstance(original_paragraph, str) and original_paragraph:
@@ -493,7 +584,8 @@ class BaseAssayExtractionAgent:
         print(f"  Found reference to previous work: {str(references_previous)[:200]}...")
 
         ref_pmids = self._resolve_reference_pmids(
-            references_previous, result.get("original_paragraph"), pmid
+            references_previous, result.get("original_paragraph"), pmid,
+            reference_number_in_text=result.get("reference_number_in_text")
         )
         if not ref_pmids:
             return result
