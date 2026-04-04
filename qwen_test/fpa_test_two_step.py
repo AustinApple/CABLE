@@ -21,6 +21,7 @@ from pathlib import Path
 from agent.assay_extraction_agent_two_step import TwoStepAssayExtractionAgent
 from agent.prompts_fpa_two_step import (
     get_paragraph_extraction_prompt as get_fpa_paragraph_extraction_prompt,
+    get_paragraph_extraction_from_text_prompt as get_fpa_paragraph_from_text_prompt,
     get_structured_description_from_text_prompt as get_fpa_structured_description_from_text_prompt
 )
 
@@ -101,6 +102,7 @@ agent = TwoStepAssayExtractionAgent(
     search_references=True,
     ncbi_api_key="2877565f02e8c0800b1698e0b12f3e4b1108",
     paragraph_prompt_fn=get_fpa_paragraph_extraction_prompt,
+    text_paragraph_prompt_fn=get_fpa_paragraph_from_text_prompt,
     structured_prompt_fn=get_fpa_structured_description_from_text_prompt
 )
 

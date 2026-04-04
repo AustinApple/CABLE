@@ -22,11 +22,11 @@ import time
 
 from .base_extraction_agent import BaseAssayExtractionAgent
 from .prompts_spr_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
-from .prompts_fpa_two_step import get_paragraph_extraction_from_text_prompt as get_fpa_paragraph_from_text_prompt
 
 # Type alias for prompt functions
 from typing import Callable
 ParagraphPromptFn = Callable[[str], str]
+TextParagraphPromptFn = Callable[[str, str], str]  # (assay_description, markdown_text) -> prompt
 StructuredPromptFn = Callable[..., str]
 
 
@@ -55,6 +55,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         max_reference_depth: int = 1,
         ncbi_api_key: Optional[str] = None,
         paragraph_prompt_fn: Optional['ParagraphPromptFn'] = None,
+        text_paragraph_prompt_fn: Optional['TextParagraphPromptFn'] = None,
         structured_prompt_fn: Optional['StructuredPromptFn'] = None
     ):
         """
@@ -72,9 +73,12 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             search_references: Whether to fetch referenced papers if assay not found
             max_reference_depth: Maximum depth for recursive reference search (1 = only direct refs)
             ncbi_api_key: NCBI API key for higher rate limits (optional)
-            paragraph_prompt_fn: Custom prompt function for Step 1 (paragraph extraction).
+            paragraph_prompt_fn: Custom prompt function for Step 1 vision path (paragraph extraction).
                                Signature: fn(assay_description: str) -> str.
                                Defaults to SPR prompt if None.
+            text_paragraph_prompt_fn: Custom prompt function for Step 1 text path (MinerU markdown).
+                               Signature: fn(assay_description: str, markdown_text: str) -> str.
+                               If None, MinerU text mode is skipped and vision fallback is used directly.
             structured_prompt_fn: Custom prompt function for Step 2 (structured description).
                                 Signature: fn(extracted_paragraph: str, assay_description: str, ...) -> str.
                                 Defaults to SPR prompt if None.
@@ -94,6 +98,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         # Store custom prompt functions (default to SPR prompts)
         self.paragraph_prompt_fn = paragraph_prompt_fn or get_paragraph_extraction_prompt
+        self.text_paragraph_prompt_fn = text_paragraph_prompt_fn  # None = skip text/MinerU mode
         self.structured_prompt_fn = structured_prompt_fn or get_structured_description_from_text_prompt
 
         # Load separate text model for Step 2 if specified
@@ -278,9 +283,9 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         supp_files = []
 
         # --- Primary path: MinerU markdown → text model (fast, no hallucination) ---
-        markdown = self._get_paper_markdown(pmid)
+        markdown = self._get_paper_markdown(pmid) if self.text_paragraph_prompt_fn else None
         if markdown:
-            text_prompt = get_fpa_paragraph_from_text_prompt(assay_description, markdown)
+            text_prompt = self.text_paragraph_prompt_fn(assay_description, markdown)
             print(f"  Searching main paper (text mode) for PMID {pmid}...")
             try:
                 response_text, _, _ = self._query_text_model(text_prompt, max_new_tokens)
