@@ -63,6 +63,50 @@ def pdf_to_markdown(
     return md_path if md_path.exists() else None
 
 
+def preconvert_pdfs(
+    pmids: List[str],
+    pdf_dir: Path,
+    timeout: int = 300
+) -> None:
+    """Convert PDFs to markdown for all PMIDs using MinerU before loading the main model.
+
+    Call this BEFORE initializing TwoStepAssayExtractionAgent so that MinerU
+    and Qwen never share GPU VRAM at the same time. Results are disk-cached;
+    already-converted PMIDs are skipped.
+
+    Args:
+        pmids: List of PMID strings
+        pdf_dir: Directory containing <pmid>.pdf files (same as agent's pdf_dir)
+        timeout: Max seconds to wait per PDF
+    """
+    pdf_dir = Path(pdf_dir)
+    cache_dir = pdf_dir / "markdown_cache"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    total = len(pmids)
+    print(f"Pre-converting {total} PDFs to markdown via MinerU (before loading Qwen)...")
+
+    for i, pmid in enumerate(pmids, 1):
+        pdf_path = pdf_dir / f"{pmid}.pdf"
+        if not pdf_path.exists():
+            print(f"  [{i}/{total}] PMID {pmid}: PDF not found, skipping")
+            continue
+
+        md_path = cache_dir / pmid / "auto" / f"{pmid}.md"
+        if md_path.exists():
+            print(f"  [{i}/{total}] PMID {pmid}: already cached, skipping")
+            continue
+
+        print(f"  [{i}/{total}] PMID {pmid}: converting...")
+        result = pdf_to_markdown(pdf_path, cache_dir=cache_dir, timeout=timeout)
+        if result:
+            print(f"  [{i}/{total}] PMID {pmid}: done")
+        else:
+            print(f"  [{i}/{total}] PMID {pmid}: conversion failed")
+
+    print("Pre-conversion complete.\n")
+
+
 class DocumentConverter:
     """Handles PDF and document conversion operations."""
 

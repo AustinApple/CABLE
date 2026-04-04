@@ -24,6 +24,7 @@ from agent.prompts_fpa_two_step import (
     get_paragraph_extraction_from_text_prompt as get_fpa_paragraph_from_text_prompt,
     get_structured_description_from_text_prompt as get_fpa_structured_description_from_text_prompt
 )
+from agent.pdf_utils import preconvert_pdfs
 
 # ============================================================
 # Load and filter data from BindingDB
@@ -74,8 +75,8 @@ data['PMID'] = data['PMID'].astype(float).astype(int).astype(str)
 
 # Select a subset of PMIDs for testing
 #data = data[data['PMID'].isin(['21899328', '22913511', '24973029', '28797774', '34225180', '37708384', '30019901', '22608961', '19366247'])]
-data = data[data['PMID'].isin(['30019901'])]
-
+#data = data[data['PMID'].isin(['30019901'])]
+data = data[data['PMID'].isin(['37708384'])]
 
 
 # Rename columns for convenience
@@ -89,12 +90,20 @@ print(f"Total FPA Ki/IC50 entries: {len(data)}")
 print(f"Unique PMIDs: {data['PMID'].nunique()}")
 print(f"Unique (PMID, DESCRIPTION) combinations: {data.groupby(['PMID', 'DESCRIPTION']).ngroups}")
 
+PDF_DIR = "/data484_1/mwu11/downloaded_paper"
+
+#%%
+# Step 0: Pre-convert all PDFs to markdown via MinerU BEFORE loading Qwen.
+# This ensures MinerU and Qwen never compete for VRAM at the same time.
+# Already-converted PDFs are skipped instantly via disk cache.
+preconvert_pdfs(data['PMID'].unique().tolist(), pdf_dir=PDF_DIR)
+
 #%%
 # Initialize Two-Step agent with FPA-specific prompts
 agent = TwoStepAssayExtractionAgent(
     model_name="Qwen/Qwen3.5-27B",
     text_model_name=None,  # Use same model for Step 2 (text-only mode)
-    pdf_dir="/data484_1/mwu11/downloaded_paper",
+    pdf_dir=PDF_DIR,
     torch_dtype="bfloat16",
     device="cuda:0",
     temperature=0.0,

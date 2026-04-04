@@ -283,6 +283,8 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         supp_files = []
 
         # --- Primary path: MinerU markdown → text model (fast, no hallucination) ---
+        # If markdown is available, use text mode only — no vision fallback needed since
+        # the markdown contains the full paper text.
         markdown = self._get_paper_markdown(pmid) if self.text_paragraph_prompt_fn else None
         if markdown:
             text_prompt = self.text_paragraph_prompt_fn(assay_description, markdown)
@@ -302,11 +304,24 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                         result, pmid, assay_description, max_pages, max_new_tokens, _depth
                     )
                     return result
-                print(f"  Not found via text mode, falling back to vision...")
             except Exception as e:
                 print(f"  Text mode failed ({e}), falling back to vision...")
+            else:
+                # Markdown available but paragraph not found — return not_found directly,
+                # no point trying vision on the same content.
+                print(f"  Not found in markdown. Returning not found.")
+                return {
+                    "pmid": pmid,
+                    "assay_description": assay_description,
+                    "original_paragraph": {},
+                    "confidence": "N/A",
+                    "source": "not_found",
+                    "search_path": [],
+                    "supplementary_source": [],
+                    "references_previous": "none"
+                }
 
-        # --- Fallback: vision model on PDF images ---
+        # --- Fallback: vision model on PDF images (only when MinerU markdown unavailable) ---
         images, pdf_path = self._get_paper_images(pmid, max_pages)
 
         if pdf_path is None:
