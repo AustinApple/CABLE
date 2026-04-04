@@ -319,8 +319,7 @@ class BaseAssayExtractionAgent:
         print(f"  Converting PMID {pmid} to markdown via MinerU...")
         md_path = pdf_to_markdown(
             pdf_path,
-            cache_dir=self.markdown_cache_dir,
-            cuda_device=self._cuda_device_idx
+            cache_dir=self.markdown_cache_dir
         )
         if md_path is None:
             print(f"  MinerU conversion failed for PMID {pmid}")

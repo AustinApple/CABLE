@@ -15,7 +15,7 @@ MINERU_BIN = "/data/mwu11/miniconda3/envs/mineru/bin/mineru"
 def pdf_to_markdown(
     pdf_path: Path,
     cache_dir: Path,
-    cuda_device: str = "0",
+    cuda_device: Optional[str] = None,
     timeout: int = 300
 ) -> Optional[Path]:
     """Convert PDF to markdown using MinerU (subprocess call).
@@ -42,7 +42,8 @@ def pdf_to_markdown(
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     env = os.environ.copy()
-    env["CUDA_VISIBLE_DEVICES"] = cuda_device
+    if cuda_device is not None:
+        env["CUDA_VISIBLE_DEVICES"] = cuda_device
 
     try:
         subprocess.run(
