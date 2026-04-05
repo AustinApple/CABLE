@@ -267,6 +267,30 @@ class BaseAssayExtractionAgent:
             return original_paragraph not in ["NOT FOUND", "", None] and not original_paragraph.startswith("ERROR")
         return False
 
+    @staticmethod
+    def _paragraph_mentions_supplementary(original_paragraph) -> bool:
+        """Check if extracted paragraph text mentions supplementary materials.
+
+        Detects phrases like 'Supplemental Experimental Procedures',
+        'Supporting Information', 'Table S1', 'Figure S2', etc.
+        """
+        if original_paragraph is None:
+            return False
+        if isinstance(original_paragraph, dict):
+            text = " ".join(str(v) for v in original_paragraph.values())
+        else:
+            text = str(original_paragraph)
+
+        pattern = re.compile(
+            r'supplement(?:al|ary)\s+\w+'
+            r'|supporting\s+(?:information|material)'
+            r'|\bTable\s+S\d'
+            r'|\bFigure\s+S\d'
+            r'|\bFig\.\s*S\d',
+            re.IGNORECASE
+        )
+        return bool(pattern.search(text))
+
     # ==================== PDF/Image Handling ====================
 
     def _get_paper_images(

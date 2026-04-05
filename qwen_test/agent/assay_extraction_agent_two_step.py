@@ -323,6 +323,33 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 result["search_path"] = ["main"]
                 result["supplementary_source"] = []
                 print(f"  Found in main paper!")
+
+                # If paragraph mentions supplementary, chase it to get more details
+                if self.search_supplementary and self._paragraph_mentions_supplementary(result.get("original_paragraph")):
+                    print(f"\n  Paragraph mentions supplementary materials, chasing...")
+                    chase_supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
+                    for supp_path in chase_supp_files:
+                        supp_images = self.doc_converter.file_to_images(
+                            supp_path, max_pages=max_pages, label="supplementary"
+                        )
+                        if supp_images and len(supp_images) > 0:
+                            print(f"  Searching supplementary: {supp_path.name}...")
+                            supp_response, _, _ = self._query_model(supp_images, prompt, max_new_tokens)
+                            supp_result = self._parse_response(supp_response)
+                            if supp_result and self._is_paragraph_found(supp_result.get("original_paragraph")):
+                                main_para = result["original_paragraph"]
+                                supp_para = supp_result["original_paragraph"]
+                                if isinstance(main_para, dict) and isinstance(supp_para, dict):
+                                    for k, v in supp_para.items():
+                                        result["original_paragraph"][f"[Supp {supp_path.name}] {k}"] = v
+                                elif isinstance(main_para, str) and isinstance(supp_para, str):
+                                    result["original_paragraph"] = (
+                                        f"{main_para}\n[Supplementary {supp_path.name}]: {supp_para}"
+                                    )
+                                result["supplementary_source"].append(supp_path.name)
+                                result["search_path"].append("supplementary")
+                                print(f"  Combined with supplementary: {supp_path.name}!")
+
                 # Check if it references previous work and combine if so
                 result = self._check_and_fetch_references(
                     result, pmid, assay_description, max_pages, max_new_tokens, _depth
