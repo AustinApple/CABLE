@@ -26,7 +26,6 @@ from .prompts_spr_two_step import get_paragraph_extraction_prompt, get_structure
 # Type alias for prompt functions
 from typing import Callable
 ParagraphPromptFn = Callable[[str], str]
-TextParagraphPromptFn = Callable[[str, str], str]  # (assay_description, markdown_text) -> prompt
 StructuredPromptFn = Callable[..., str]
 
 
@@ -55,7 +54,6 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         max_reference_depth: int = 1,
         ncbi_api_key: Optional[str] = None,
         paragraph_prompt_fn: Optional['ParagraphPromptFn'] = None,
-        text_paragraph_prompt_fn: Optional['TextParagraphPromptFn'] = None,
         structured_prompt_fn: Optional['StructuredPromptFn'] = None
     ):
         """
@@ -76,9 +74,6 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             paragraph_prompt_fn: Custom prompt function for Step 1 vision path (paragraph extraction).
                                Signature: fn(assay_description: str) -> str.
                                Defaults to SPR prompt if None.
-            text_paragraph_prompt_fn: Custom prompt function for Step 1 text path (MinerU markdown).
-                               Signature: fn(assay_description: str, markdown_text: str) -> str.
-                               If None, MinerU text mode is skipped and vision fallback is used directly.
             structured_prompt_fn: Custom prompt function for Step 2 (structured description).
                                 Signature: fn(extracted_paragraph: str, assay_description: str, ...) -> str.
                                 Defaults to SPR prompt if None.
@@ -98,7 +93,6 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         # Store custom prompt functions (default to SPR prompts)
         self.paragraph_prompt_fn = paragraph_prompt_fn or get_paragraph_extraction_prompt
-        self.text_paragraph_prompt_fn = text_paragraph_prompt_fn  # None = skip text/MinerU mode
         self.structured_prompt_fn = structured_prompt_fn or get_structured_description_from_text_prompt
 
         # Load separate text model for Step 2 if specified
@@ -282,46 +276,8 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         supp_files = []
 
-        # --- Primary path: MinerU markdown → text model (fast, no hallucination) ---
-        # If markdown is available, use text mode only — no vision fallback needed since
-        # the markdown contains the full paper text.
-        markdown = self._get_paper_markdown(pmid) if self.text_paragraph_prompt_fn else None
-        if markdown:
-            text_prompt = self.text_paragraph_prompt_fn(assay_description, markdown)
-            print(f"  Searching main paper (text mode) for PMID {pmid}...")
-            try:
-                response_text, _, _ = self._query_text_model(text_prompt, max_new_tokens)
-                print(f"\n[DEBUG] Raw response: {response_text[:500]}...")
-                result = self._parse_response(response_text)
-                if result and self._is_paragraph_found(result.get("original_paragraph")):
-                    result["pmid"] = pmid
-                    result["assay_description"] = assay_description
-                    result["source"] = f"main_paper_{pmid}_text"
-                    result["search_path"] = ["main"]
-                    result["supplementary_source"] = []
-                    print(f"  Found in main paper (text mode)!")
-                    result = self._check_and_fetch_references(
-                        result, pmid, assay_description, max_pages, max_new_tokens, _depth
-                    )
-                    return result
-            except Exception as e:
-                print(f"  Text mode failed ({e}), falling back to vision...")
-            else:
-                # Markdown available but paragraph not found — return not_found directly,
-                # no point trying vision on the same content.
-                print(f"  Not found in markdown. Returning not found.")
-                return {
-                    "pmid": pmid,
-                    "assay_description": assay_description,
-                    "original_paragraph": {},
-                    "confidence": "N/A",
-                    "source": "not_found",
-                    "search_path": [],
-                    "supplementary_source": [],
-                    "references_previous": "none"
-                }
-
-        # --- Fallback: vision model on PDF images (only when MinerU markdown unavailable) ---
+        # Step 1 always uses vision model on PDF images.
+        # MinerU markdown is used only for reference resolution (see _resolve_reference_pmids).
         images, pdf_path = self._get_paper_images(pmid, max_pages)
 
         if pdf_path is None:

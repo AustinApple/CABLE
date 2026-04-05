@@ -117,10 +117,15 @@ class BaseAssayExtractionAgent:
         # Cache converted images and markdown per PMID
         self._image_cache: Dict[str, List[Image.Image]] = {}
         self._markdown_cache: Dict[str, Optional[str]] = {}
+        # Mapping ref_pmid -> citation text, populated by _resolve_reference_pmids
+        self._ref_pmid_to_citation: Dict[str, str] = {}
 
         # CUDA device index for MinerU subprocess (extract from device string)
         _dev = str(device)
         self._cuda_device_idx = _dev.replace("cuda:", "") if _dev.startswith("cuda:") else "0"
+
+        # Path for logging missing reference papers (set by caller)
+        self.missing_ref_log: Optional[Path] = None
 
         self.token_usage = {
             "total_input_tokens": 0,
@@ -254,7 +259,10 @@ class BaseAssayExtractionAgent:
         if original_paragraph is None:
             return False
         if isinstance(original_paragraph, dict):
-            return any(v and str(v).strip() and str(v).strip() != "NOT FOUND" for v in original_paragraph.values())
+            return any(
+                k != "error" and v and str(v).strip() and str(v).strip() != "NOT FOUND"
+                for k, v in original_paragraph.items()
+            )
         if isinstance(original_paragraph, str):
             return original_paragraph not in ["NOT FOUND", "", None] and not original_paragraph.startswith("ERROR")
         return False
@@ -327,9 +335,34 @@ class BaseAssayExtractionAgent:
             return None
 
         markdown = md_path.read_text(encoding="utf-8")
-        self._markdown_cache[pmid] = markdown
-        print(f"  Markdown ready ({len(markdown)} chars)")
-        return markdown
+        ref_section = self._extract_reference_section(markdown)
+        self._markdown_cache[pmid] = ref_section
+        print(f"  Markdown reference section ready ({len(ref_section)} chars)")
+        return ref_section
+
+    @staticmethod
+    def _extract_reference_section(markdown: str) -> str:
+        """Extract only the reference/bibliography section from paper markdown.
+
+        Looks for common section headers (References, Bibliography, etc.) and
+        returns everything from that header to the end of the document.
+        Falls back to the last 20% of the document if no header is found.
+
+        Args:
+            markdown: Full paper markdown text
+
+        Returns:
+            Reference section text
+        """
+        pattern = re.compile(
+            r'^#{1,3}\s*(references|bibliography|works cited|literature cited|citations)\s*$',
+            re.IGNORECASE | re.MULTILINE
+        )
+        match = pattern.search(markdown)
+        if match:
+            return markdown[match.start():]
+        # Fallback: last 20% of document likely contains references
+        return markdown[int(len(markdown) * 0.8):]
 
     @staticmethod
     def _parse_references_from_markdown(markdown: str, ref_numbers: List[str]) -> Dict[str, str]:
@@ -464,6 +497,24 @@ class BaseAssayExtractionAgent:
             combined[f"[Ref PMID {ref_pmid}]"] = str(ref_paragraph)
         return combined
 
+    def _log_missing_reference(
+        self,
+        main_pmid: str,
+        reference_text: str,
+        ref_pmid: Optional[str] = None
+    ) -> None:
+        """Append a missing-reference entry to the log file.
+
+        Format: main_pmid: reference_text: ref_pmid (or NaN)
+        """
+        if self.missing_ref_log is None:
+            return
+        pmid_str = ref_pmid if ref_pmid else "NaN"
+        line = f"{main_pmid}: {reference_text.strip()}: {pmid_str}\n"
+        with open(self.missing_ref_log, "a", encoding="utf-8") as f:
+            f.write(line)
+        print(f"  [LOG] Missing reference logged → {self.missing_ref_log}")
+
     def _resolve_reference_pmids(
         self,
         references_previous: str,
@@ -498,11 +549,29 @@ class BaseAssayExtractionAgent:
                     if citations_from_md:
                         print(f"  Using markdown reference list for refs: {ref_nums}")
                         ref_pmids = []
+                        resolved_nums = set()
                         for num, citation in citations_from_md.items():
                             print(f"  Searching PMID for ref ({num}): {citation[:80]}...")
                             ref_pmid = self.citation_searcher.search_pmid_by_citation(citation)
                             if ref_pmid and ref_pmid != pmid:
                                 ref_pmids.append(ref_pmid)
+                                resolved_nums.add(num)
+                                self._ref_pmid_to_citation[ref_pmid] = f"({num}) {citation}"
+                            else:
+                                print(f"  Could not resolve PMID for ref ({num}) from markdown")
+                        # For ref nums not resolved via markdown, try references_previous text
+                        unresolved_nums = [n for n in ref_nums if n not in resolved_nums]
+                        if unresolved_nums and references_previous and len(str(references_previous)) > 20:
+                            print(f"  Trying references_previous fallback for unresolved refs: {unresolved_nums}")
+                            fallback_citations = self._parse_references_from_markdown(
+                                str(references_previous), unresolved_nums
+                            )
+                            for num, citation in fallback_citations.items():
+                                print(f"  [Fallback] Searching PMID for ref ({num}): {citation[:80]}...")
+                                ref_pmid = self.citation_searcher.search_pmid_by_citation(citation)
+                                if ref_pmid and ref_pmid != pmid:
+                                    ref_pmids.append(ref_pmid)
+                                    self._ref_pmid_to_citation[ref_pmid] = f"({num}) {citation}"
                         if ref_pmids:
                             return list(dict.fromkeys(ref_pmids))  # deduplicate, preserve order
 
@@ -631,6 +700,9 @@ class BaseAssayExtractionAgent:
 
                 print(f"  Combined with referenced paper PMID {ref_pmid}!")
                 found_any = True
+            else:
+                citation_text = self._ref_pmid_to_citation.get(ref_pmid, str(references_previous))
+                self._log_missing_reference(pmid, citation_text, ref_pmid)
 
         return result
 
@@ -699,6 +771,9 @@ class BaseAssayExtractionAgent:
 
                 print(f"  Found in referenced paper PMID {ref_pmid}!")
                 return ref_result
+            else:
+                citation_text = self._ref_pmid_to_citation.get(ref_pmid, str(references_previous))
+                self._log_missing_reference(pmid, citation_text, ref_pmid)
 
         return result
 

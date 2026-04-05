@@ -21,7 +21,6 @@ from pathlib import Path
 from agent.assay_extraction_agent_two_step import TwoStepAssayExtractionAgent
 from agent.prompts_fpa_two_step import (
     get_paragraph_extraction_prompt as get_fpa_paragraph_extraction_prompt,
-    get_paragraph_extraction_from_text_prompt as get_fpa_paragraph_from_text_prompt,
     get_structured_description_from_text_prompt as get_fpa_structured_description_from_text_prompt
 )
 from agent.pdf_utils import preconvert_pdfs
@@ -111,7 +110,6 @@ agent = TwoStepAssayExtractionAgent(
     search_references=True,
     ncbi_api_key="2877565f02e8c0800b1698e0b12f3e4b1108",
     paragraph_prompt_fn=get_fpa_paragraph_extraction_prompt,
-    text_paragraph_prompt_fn=get_fpa_paragraph_from_text_prompt,
     structured_prompt_fn=get_fpa_structured_description_from_text_prompt
 )
 
@@ -123,6 +121,8 @@ agent = TwoStepAssayExtractionAgent(
 
 output_dir = Path("fpa_extraction_results_two_step_bindingdb")
 output_dir.mkdir(parents=True, exist_ok=True)
+
+agent.missing_ref_log = output_dir / "fpa_reference_missing.log"
 
 saved_files = {}
 pmid_groups = data.groupby("PMID")
@@ -172,7 +172,7 @@ for pmid, pmid_group in pmid_groups:
     print(f"  Unique DESCRIPTIONs: {unique_descs}")
 
     desc_count = 0
-    for description, desc_group in desc_groups:
+    for description, desc_group in list(desc_groups)[0:1]:
         desc_count += 1
         print(f"\n  --- DESCRIPTION {desc_count}/{unique_descs} ({len(desc_group)} pairs) ---")
         print(f"  {description[:100]}...")

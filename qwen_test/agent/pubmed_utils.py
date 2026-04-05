@@ -526,73 +526,93 @@ class CitationSearcher:
             journal_patterns = [
                 (r'(J\.\s*Med\.\s*Chem\.)', "J Med Chem"),
                 (r'(ACS\s*Med\.\s*Chem\.\s*Lett\.)', "ACS Med Chem Lett"),
+                (r'(ACS\s*Chem\.\s*Biol\.)', "ACS Chem Biol"),
+                (r'(Bioorg\.\s*Med\.\s*Chem\.\s*Lett\.)', "Bioorg Med Chem Lett"),
                 (r'(Bioorg\.\s*Med\.\s*Chem\.)', "Bioorg Med Chem"),
                 (r'(Eur\.\s*J\.\s*Med\.\s*Chem\.)', "Eur J Med Chem"),
                 (r'(ChemMedChem)', "ChemMedChem"),
+                (r'(Cell\s*Chem\.\s*Biol\.)', "Cell Chem Biol"),
+                (r'(?<!\w)Chem\.\s*Biol\.(?!\s*Lett)', "Chemistry & biology"),
                 (r'(J\.\s*Biol\.\s*Chem\.)', "J Biol Chem"),
                 (r'(Biochemistry)', "Biochemistry"),
-                (r'(Nature)', "Nature"),
-                (r'(Science)', "Science"),
+                (r'(Angew\.\s*Chem\.)', "Angew Chem Int Ed Engl"),
+                (r'(Proc\.\s*Natl\.\s*Acad\.\s*Sci\.)', "Proc Natl Acad Sci U S A"),
+                (r'\bPNAS\b', "Proc Natl Acad Sci U S A"),
+                (r'(J\.\s*Am\.\s*Chem\.\s*Soc\.)', "J Am Chem Soc"),
+                (r'(Nat\.\s*Chem\.\s*Biol\.)', "Nat Chem Biol"),
+                (r'(Nat\.\s*Struct\.\s*Mol\.\s*Biol\.)', "Nat Struct Mol Biol"),
+                (r'\bNature\b', "Nature"),
+                (r'\bScience\b', "Science"),
             ]
-            for pattern, journal_name in journal_patterns:
+            journal_name = None
+            for pattern, jname in journal_patterns:
                 if re.search(pattern, citation, re.IGNORECASE):
-                    search_terms.append(f'"{journal_name}"[Journal]')
+                    search_terms.append(f'"{jname}"[Journal]')
+                    journal_name = jname
                     break
 
-            if len(search_terms) >= 2:
+            # Extract volume and start page for narrowing
+            volume_match = re.search(r'(?:19|20)\d{2},\s*(\d+),\s*\d+', citation)
+            page_match = re.search(r'(?:19|20)\d{2},\s*\d+,\s*(\d+)', citation)
+
+            def _run_search(terms, max_results=5):
                 url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
-                query = " AND ".join(search_terms)
+                query = " AND ".join(terms)
                 params = {
                     "db": "pubmed",
                     "term": query,
                     "retmode": "json",
-                    "retmax": 5
+                    "retmax": max_results
                 }
                 if self.ncbi_api_key:
                     params["api_key"] = self.ncbi_api_key
-
                 print(f"    Free text search: {query}")
-                response = requests.get(url, params=params, timeout=30)
-                if response.status_code == 200:
-                    data = response.json()
-                    id_list = data.get("esearchresult", {}).get("idlist", [])
-                    if id_list:
-                        if len(id_list) == 1:
-                            pmid = id_list[0]
-                            print(f"    Found PMID by free text: {pmid}")
-                            return pmid
-                        # Multiple results: narrow using volume and/or start page
-                        # Citation format: "Journal Year, Vol, StartPage−EndPage"
-                        volume_match = re.search(
-                            r'(?:19|20)\d{2},\s*(\d+),\s*\d+', citation
-                        )
-                        page_match = re.search(
-                            r'(?:19|20)\d{2},\s*\d+,\s*(\d+)', citation
-                        )
-                        narrow_terms = list(search_terms)
-                        if volume_match:
-                            narrow_terms.append(f"{volume_match.group(1)}[Volume]")
-                        if page_match:
-                            narrow_terms.append(f"{page_match.group(1)}[Page]")
-                        if len(narrow_terms) > len(search_terms):
-                            narrow_query = " AND ".join(narrow_terms)
-                            print(f"    Narrowing search: {narrow_query}")
-                            narrow_params = dict(params)
-                            narrow_params["term"] = narrow_query
-                            narrow_params["retmax"] = 1
-                            narrow_resp = requests.get(url, params=narrow_params, timeout=30)
-                            if narrow_resp.status_code == 200:
-                                narrow_ids = narrow_resp.json().get(
-                                    "esearchresult", {}
-                                ).get("idlist", [])
-                                if narrow_ids:
-                                    pmid = narrow_ids[0]
-                                    print(f"    Found PMID by narrowed search: {pmid}")
-                                    return pmid
-                        # Fall back to first result from broad search
-                        pmid = id_list[0]
-                        print(f"    Found PMID by free text: {pmid}")
-                        return pmid
+                resp = requests.get(url, params=params, timeout=30)
+                if resp.status_code == 200:
+                    return resp.json().get("esearchresult", {}).get("idlist", [])
+                return []
+
+            def _resolve_ids(id_list, base_terms):
+                if not id_list:
+                    return None
+                if len(id_list) == 1:
+                    return id_list[0]
+                # Narrow with volume and/or page
+                narrow_terms = list(base_terms)
+                if volume_match:
+                    narrow_terms.append(f"{volume_match.group(1)}[Volume]")
+                if page_match:
+                    narrow_terms.append(f"{page_match.group(1)}[Page]")
+                if len(narrow_terms) > len(base_terms):
+                    narrow_ids = _run_search(narrow_terms, max_results=1)
+                    if narrow_ids:
+                        print(f"    Found PMID by narrowed search: {narrow_ids[0]}")
+                        return narrow_ids[0]
+                # Fall back to first broad result
+                return id_list[0]
+
+            if len(search_terms) >= 2:
+                id_list = _run_search(search_terms)
+                pmid = _resolve_ids(id_list, search_terms)
+                if pmid:
+                    print(f"    Found PMID by free text: {pmid}")
+                    return pmid
+
+            # Fallback: search by year + journal + volume + page only (skips author,
+            # handles compound surnames like "VanMolle" that don't match PubMed index)
+            if journal_name and year_match and (volume_match or page_match):
+                fallback_terms = [
+                    f'"{journal_name}"[Journal]',
+                    f"{year_match.group(0)}[Date - Publication]",
+                ]
+                if volume_match:
+                    fallback_terms.append(f"{volume_match.group(1)}[Volume]")
+                if page_match:
+                    fallback_terms.append(f"{page_match.group(1)}[Page]")
+                fb_ids = _run_search(fallback_terms, max_results=1)
+                if fb_ids:
+                    print(f"    Found PMID by journal/year/vol/page fallback: {fb_ids[0]}")
+                    return fb_ids[0]
         except Exception as e:
             print(f"    Error in free text search: {e}")
         return None
