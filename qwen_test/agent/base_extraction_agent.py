@@ -293,6 +293,25 @@ class BaseAssayExtractionAgent:
 
     # ==================== PDF/Image Handling ====================
 
+    MAX_SUPPLEMENTARY_PAGES = 50
+
+    @staticmethod
+    def _get_page_count(file_path: Path) -> Optional[int]:
+        """Return the page count of a PDF/DOCX without converting to images."""
+        import fitz
+        suffix = file_path.suffix.lower()
+        try:
+            if suffix == '.pdf':
+                doc = fitz.open(str(file_path))
+                count = len(doc)
+                doc.close()
+                return count
+            elif suffix == '.docx':
+                return None  # can't cheaply count pages for docx
+        except Exception:
+            return None
+        return None
+
     def _get_paper_images(
         self,
         pmid: str,

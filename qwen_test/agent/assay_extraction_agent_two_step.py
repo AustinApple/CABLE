@@ -333,6 +333,11 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                     else:
                         supp_found = False
                         for supp_path in chase_supp_files:
+                            page_count = self._get_page_count(supp_path)
+                            if page_count is not None and page_count > self.MAX_SUPPLEMENTARY_PAGES:
+                                print(f"  Skipping supplementary {supp_path.name}: {page_count} pages > {self.MAX_SUPPLEMENTARY_PAGES} limit")
+                                self._log_chase_miss(pmid, "supplementary", f"skipped {supp_path.name} ({page_count} pages exceeds limit)")
+                                continue
                             supp_images = self.doc_converter.file_to_images(
                                 supp_path, max_pages=max_pages, label="supplementary"
                             )
@@ -369,6 +374,11 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
 
                 for supp_path in supp_files:
+                    page_count = self._get_page_count(supp_path)
+                    if page_count is not None and page_count > self.MAX_SUPPLEMENTARY_PAGES:
+                        print(f"  Skipping supplementary {supp_path.name}: {page_count} pages > {self.MAX_SUPPLEMENTARY_PAGES} limit")
+                        self._log_chase_miss(pmid, "supplementary", f"skipped {supp_path.name} ({page_count} pages exceeds limit)")
+                        continue
                     supp_images = self.doc_converter.file_to_images(supp_path, max_pages=max_pages, label="supplementary")
                     if supp_images and len(supp_images) > 0:
                         print(f"  Searching supplementary: {supp_path.name}...")
