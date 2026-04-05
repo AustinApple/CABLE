@@ -368,6 +368,69 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 )
                 return result
 
+            # Fallback: try markdown text if vision didn't find it
+            markdown = self._get_full_paper_markdown(pmid)
+            if markdown:
+                print(f"\n  Vision did not find paragraph. Trying markdown text fallback...")
+                text_prompt = (
+                    f"The following is the full text of a research paper in markdown format:\n\n"
+                    f"=== FULL PAPER TEXT ===\n{markdown}\n=== END OF PAPER TEXT ===\n\n"
+                    f"{prompt}"
+                )
+                md_response, _, _ = self._query_text_model(text_prompt, max_new_tokens)
+                md_result = self._parse_response(md_response)
+
+                if md_result and self._is_paragraph_found(md_result.get("original_paragraph")):
+                    md_result["pmid"] = pmid
+                    md_result["assay_description"] = assay_description
+                    md_result["source"] = f"main_paper_{pmid}_markdown"
+                    md_result["search_path"] = ["main_markdown"]
+                    md_result["supplementary_source"] = []
+                    print(f"  Found in main paper (markdown fallback)!")
+
+                    # Chase supplementary if mentioned
+                    if self.search_supplementary and self._paragraph_mentions_supplementary(md_result.get("original_paragraph")):
+                        print(f"\n  Paragraph mentions supplementary materials, chasing...")
+                        chase_supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
+                        if not chase_supp_files:
+                            self._log_chase_miss(pmid, "supplementary", "mentioned in paragraph but no files downloaded")
+                        else:
+                            supp_found = False
+                            for supp_path in chase_supp_files:
+                                page_count = self._get_page_count(supp_path)
+                                if page_count is not None and page_count > self.MAX_SUPPLEMENTARY_PAGES:
+                                    print(f"  Skipping supplementary {supp_path.name}: {page_count} pages > {self.MAX_SUPPLEMENTARY_PAGES} limit")
+                                    self._log_chase_miss(pmid, "supplementary", f"skipped {supp_path.name} ({page_count} pages exceeds limit)")
+                                    continue
+                                supp_images = self.doc_converter.file_to_images(
+                                    supp_path, max_pages=max_pages, label="supplementary"
+                                )
+                                if supp_images and len(supp_images) > 0:
+                                    print(f"  Searching supplementary: {supp_path.name}...")
+                                    supp_response, _, _ = self._query_model(supp_images, prompt, max_new_tokens)
+                                    supp_result = self._parse_response(supp_response)
+                                    if supp_result and self._is_paragraph_found(supp_result.get("original_paragraph")):
+                                        main_para = md_result["original_paragraph"]
+                                        supp_para = supp_result["original_paragraph"]
+                                        if isinstance(main_para, dict) and isinstance(supp_para, dict):
+                                            for k, v in supp_para.items():
+                                                md_result["original_paragraph"][f"[Supp {supp_path.name}] {k}"] = v
+                                        elif isinstance(main_para, str) and isinstance(supp_para, str):
+                                            md_result["original_paragraph"] = (
+                                                f"{main_para}\n[Supplementary {supp_path.name}]: {supp_para}"
+                                            )
+                                        md_result["supplementary_source"].append(supp_path.name)
+                                        md_result["search_path"].append("supplementary")
+                                        print(f"  Combined with supplementary: {supp_path.name}!")
+                                        supp_found = True
+                            if not supp_found:
+                                self._log_chase_miss(pmid, "supplementary", "mentioned in paragraph but not found in downloaded files")
+
+                    md_result = self._check_and_fetch_references(
+                        md_result, pmid, assay_description, max_pages, max_new_tokens, _depth
+                    )
+                    return md_result
+
             # Search supplementary materials
             if self.search_supplementary:
                 print(f"\n  Not found in main paper. Fetching supplementary materials...")

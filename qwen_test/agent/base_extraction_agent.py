@@ -383,6 +383,23 @@ class BaseAssayExtractionAgent:
         print(f"  Markdown reference section ready ({len(ref_section)} chars)")
         return ref_section
 
+    def _get_full_paper_markdown(self, pmid: str) -> Optional[str]:
+        """Get full paper text as markdown via MinerU (disk-cached).
+
+        Unlike _get_paper_markdown (which returns only the reference section),
+        this returns the entire document text for use as a text-mode fallback.
+        """
+        # Ensure MinerU conversion has been done (populates disk cache)
+        self._get_paper_markdown(pmid)
+
+        pdf_path = self.pubmed_fetcher.get_pdf_path(pmid)
+        if pdf_path is None:
+            return None
+        md_path = self.markdown_cache_dir / Path(pdf_path).stem / "auto" / f"{Path(pdf_path).stem}.md"
+        if md_path.exists():
+            return md_path.read_text(encoding="utf-8")
+        return None
+
     @staticmethod
     def _extract_reference_section(markdown: str) -> str:
         """Extract only the reference/bibliography section from paper markdown.
