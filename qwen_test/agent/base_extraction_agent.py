@@ -604,6 +604,7 @@ class BaseAssayExtractionAgent:
                                 self._ref_pmid_to_citation[ref_pmid] = f"({num}) {citation}"
                             else:
                                 print(f"  Could not resolve PMID for ref ({num}) from markdown")
+                                self._log_chase_miss(pmid, "reference", f"unresolved ref ({num}): {citation[:120]}")
                         # For ref nums not resolved via markdown, try references_previous text
                         unresolved_nums = [n for n in ref_nums if n not in resolved_nums]
                         if unresolved_nums and references_previous and len(str(references_previous)) > 20:
@@ -658,6 +659,7 @@ class BaseAssayExtractionAgent:
 
             if not ref_pmids:
                 print(f"  Could not find PMIDs from citations either")
+                self._log_chase_miss(pmid, "reference", f"unresolved citation: {str(references_previous)[:150]}")
 
         return ref_pmids
 
@@ -745,9 +747,6 @@ class BaseAssayExtractionAgent:
 
                 print(f"  Combined with referenced paper PMID {ref_pmid}!")
                 found_any = True
-            else:
-                citation_text = self._ref_pmid_to_citation.get(ref_pmid, str(references_previous))
-                self._log_chase_miss(pmid, "reference", f"{citation_text}: {ref_pmid}")
 
         return result
 
@@ -816,9 +815,6 @@ class BaseAssayExtractionAgent:
 
                 print(f"  Found in referenced paper PMID {ref_pmid}!")
                 return ref_result
-            else:
-                citation_text = self._ref_pmid_to_citation.get(ref_pmid, str(references_previous))
-                self._log_chase_miss(pmid, "reference", f"{citation_text}: {ref_pmid}")
 
         return result
 
