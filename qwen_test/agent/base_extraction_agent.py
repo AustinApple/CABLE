@@ -124,8 +124,8 @@ class BaseAssayExtractionAgent:
         _dev = str(device)
         self._cuda_device_idx = _dev.replace("cuda:", "") if _dev.startswith("cuda:") else "0"
 
-        # Path for logging missing reference papers (set by caller)
-        self.missing_ref_log: Optional[Path] = None
+        # Path for logging missing references and inaccessible supplementary (set by caller)
+        self.chase_log: Optional[Path] = None
 
         self.token_usage = {
             "total_input_tokens": 0,
@@ -521,23 +521,25 @@ class BaseAssayExtractionAgent:
             combined[f"[Ref PMID {ref_pmid}]"] = str(ref_paragraph)
         return combined
 
-    def _log_missing_reference(
+    def _log_chase_miss(
         self,
         main_pmid: str,
-        reference_text: str,
-        ref_pmid: Optional[str] = None
+        category: str,
+        detail: str
     ) -> None:
-        """Append a missing-reference entry to the log file.
+        """Append a chase-miss entry to the log file.
 
-        Format: main_pmid: reference_text: ref_pmid (or NaN)
+        Args:
+            main_pmid: PMID of the paper being processed
+            category: 'reference' or 'supplementary'
+            detail: Description of what was missed
         """
-        if self.missing_ref_log is None:
+        if self.chase_log is None:
             return
-        pmid_str = ref_pmid if ref_pmid else "NaN"
-        line = f"{main_pmid}: {reference_text.strip()}: {pmid_str}\n"
-        with open(self.missing_ref_log, "a", encoding="utf-8") as f:
+        line = f"{main_pmid}\t{category}\t{detail.strip()}\n"
+        with open(self.chase_log, "a", encoding="utf-8") as f:
             f.write(line)
-        print(f"  [LOG] Missing reference logged → {self.missing_ref_log}")
+        print(f"  [LOG] Chase miss logged → {self.chase_log}")
 
     def _resolve_reference_pmids(
         self,
@@ -726,7 +728,7 @@ class BaseAssayExtractionAgent:
                 found_any = True
             else:
                 citation_text = self._ref_pmid_to_citation.get(ref_pmid, str(references_previous))
-                self._log_missing_reference(pmid, citation_text, ref_pmid)
+                self._log_chase_miss(pmid, "reference", f"{citation_text}: {ref_pmid}")
 
         return result
 
@@ -797,7 +799,7 @@ class BaseAssayExtractionAgent:
                 return ref_result
             else:
                 citation_text = self._ref_pmid_to_citation.get(ref_pmid, str(references_previous))
-                self._log_missing_reference(pmid, citation_text, ref_pmid)
+                self._log_chase_miss(pmid, "reference", f"{citation_text}: {ref_pmid}")
 
         return result
 

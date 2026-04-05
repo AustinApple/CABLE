@@ -117,7 +117,7 @@ agent = TwoStepAssayExtractionAgent(
 output_dir = Path("fpa_extraction_results_two_step_bindingdb")
 output_dir.mkdir(parents=True, exist_ok=True)
 
-agent.missing_ref_log = output_dir / "fpa_reference_missing.log"
+agent.chase_log = output_dir / "fpa_chase_missing.log"
 
 saved_files = {}
 pmid_groups = data.groupby("PMID")

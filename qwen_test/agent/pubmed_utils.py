@@ -99,33 +99,44 @@ class PubMedFetcher:
 
                 for i, relative_path in enumerate(matches[:5]):
                     file_name = relative_path.split('/')[-1]
-                    supp_url = urljoin(f'https://europepmc.org/articles/{pmc_id}/bin/', file_name)
 
-                    ext = supp_url.split('.')[-1]
+                    ext = file_name.rsplit('.', 1)[-1] if '.' in file_name else 'pdf'
                     supp_filename = f"{pmid}_supp_{i + 1}.{ext.lower()}"
                     supp_path = self.supp_dir / supp_filename
 
                     if not supp_path.exists():
-                        print(f"  Downloading: {supp_url}")
+                        # Try PMC first (same site where we found the link), then Europe PMC as fallback
+                        supp_urls = [
+                            urljoin(article_url, relative_path),
+                            urljoin(f'https://europepmc.org/articles/{pmc_id}/bin/', file_name),
+                        ]
 
-                        try:
-                            download_headers = headers.copy()
-                            download_headers['Referer'] = article_url
+                        saved = False
+                        for supp_url in supp_urls:
+                            print(f"  Downloading: {supp_url}")
+                            try:
+                                download_headers = headers.copy()
+                                download_headers['Referer'] = article_url
 
-                            file_response = session.get(supp_url, headers=download_headers, timeout=60, stream=True)
-                            content_type = file_response.headers.get('Content-Type', '').lower()
+                                file_response = session.get(supp_url, headers=download_headers, timeout=60, stream=True)
+                                content_type = file_response.headers.get('Content-Type', '').lower()
 
-                            if file_response.status_code == 200 and 'html' not in content_type:
-                                with open(supp_path, 'wb') as f:
-                                    for chunk in file_response.iter_content(chunk_size=8192):
-                                        f.write(chunk)
-                                downloaded_files.append(supp_path)
-                                print(f"    Success! Saved {supp_filename}")
-                            else:
-                                print(f"    Failed. Server sent HTML instead of file. (Type: {content_type})")
+                                if file_response.status_code == 200 and 'html' not in content_type:
+                                    with open(supp_path, 'wb') as f:
+                                        for chunk in file_response.iter_content(chunk_size=8192):
+                                            f.write(chunk)
+                                    downloaded_files.append(supp_path)
+                                    print(f"    Success! Saved {supp_filename}")
+                                    saved = True
+                                    break
+                                else:
+                                    print(f"    Failed (status={file_response.status_code}, type={content_type})")
 
-                        except Exception as e:
-                            print(f"    Error: {e}")
+                            except Exception as e:
+                                print(f"    Error: {e}")
+
+                        if not saved:
+                            print(f"    Could not download {file_name} from any source")
                     else:
                         print(f"  Skipping {supp_filename} (already exists)")
                         downloaded_files.append(supp_path)
