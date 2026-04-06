@@ -764,6 +764,19 @@ class BaseAssayExtractionAgent:
 
                 print(f"  Combined with referenced paper PMID {ref_pmid}!")
                 found_any = True
+            else:
+                # Log why the reference couldn't be used
+                citation = self._ref_pmid_to_citation.get(ref_pmid, "")
+                if isinstance(ref_paragraph, dict) and "error" in ref_paragraph:
+                    self._log_chase_miss(
+                        pmid, "reference",
+                        f"resolved PMID {ref_pmid} but PDF unavailable: {citation}"
+                    )
+                else:
+                    self._log_chase_miss(
+                        pmid, "reference",
+                        f"resolved PMID {ref_pmid} but paragraph not found in paper: {citation}"
+                    )
 
         return result
 
@@ -815,7 +828,8 @@ class BaseAssayExtractionAgent:
                 ref_pmid, assay_description, max_pages, max_new_tokens, _depth + 1
             )
 
-            if self._is_paragraph_found(ref_result.get("original_paragraph")):
+            ref_paragraph = ref_result.get("original_paragraph")
+            if self._is_paragraph_found(ref_paragraph):
                 ref_result["source"] = f"referenced_paper_{ref_pmid}_from_{pmid}"
 
                 # Prepend "reference" to search_path
@@ -832,6 +846,19 @@ class BaseAssayExtractionAgent:
 
                 print(f"  Found in referenced paper PMID {ref_pmid}!")
                 return ref_result
+            else:
+                # Log why the reference couldn't be used
+                citation = self._ref_pmid_to_citation.get(ref_pmid, "")
+                if isinstance(ref_paragraph, dict) and "error" in ref_paragraph:
+                    self._log_chase_miss(
+                        pmid, "reference",
+                        f"resolved PMID {ref_pmid} but PDF unavailable: {citation}"
+                    )
+                else:
+                    self._log_chase_miss(
+                        pmid, "reference",
+                        f"resolved PMID {ref_pmid} but paragraph not found in paper: {citation}"
+                    )
 
         return result
 
