@@ -2,7 +2,7 @@
 
 ## Overview
 
-The two-step pipeline extracts structured assay information from scientific papers using a vision-language model (Qwen3-VL). Given a PubMed ID (PMID) and a brief assay description from BindingDB, it locates the relevant experimental paragraphs in the paper and then extracts structured parameters (instrument, sensor chip, buffer, kinetics, etc.).
+The two-step pipeline extracts structured assay information from scientific papers using a vision-language model (Qwen3.5-27B). Given a PubMed ID (PMID) and a brief assay description from BindingDB, it locates the relevant experimental paragraphs in the paper and then extracts structured parameters (instrument, sensor chip, buffer, kinetics, etc.).
 
 **Why two steps?** Step 1 requires a vision model because it reads PDF page images. Step 2 only processes the extracted text, so it can run without images — cheaper, faster, and optionally on a different (text-only) model.
 
