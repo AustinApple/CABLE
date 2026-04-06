@@ -238,6 +238,8 @@ for pmid, pmid_group in pmid_groups:
                 "DESCRIPTION": description,
                 "search_path": step1_result.get("search_path", []),
                 "supplementary_source": step1_result.get("supplementary_source", []),
+                "reference_number_in_text": step1_result.get("reference_number_in_text"),
+                "reference_sentence_in_text": step1_result.get("reference_sentence_in_text"),
                 "references_previous": step1_result.get("references_previous"),
                 "original_paragraph": extracted_paragraph,
                 "structured_description": structured_description

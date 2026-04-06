@@ -75,8 +75,10 @@ data['PMID'] = data['PMID'].astype(float).astype(int).astype(str)
 # Select a subset of PMIDs for testing
 #data = data[data['PMID'].isin(['21899328', '22913511', '24973029', '28797774', '34225180', '37708384', '30019901', '22608961', '19366247'])]
 #data = data[data['PMID'].isin(['30019901'])]
-data = data[data['PMID'].isin(['37708384'])]
-
+#data = data[data['PMID'].isin(['37708384'])]
+#data = data[data['PMID'].isin(['24973029'])]
+#data = data[data['PMID'].isin(['22913511'])]
+data = data[data['PMID'].isin(['34225180'])]
 
 # Rename columns for convenience
 data = data.rename(columns={
@@ -172,7 +174,7 @@ for pmid, pmid_group in pmid_groups:
     print(f"  Unique DESCRIPTIONs: {unique_descs}")
 
     desc_count = 0
-    for description, desc_group in list(desc_groups)[0:1]:
+    for description, desc_group in desc_groups:
         desc_count += 1
         print(f"\n  --- DESCRIPTION {desc_count}/{unique_descs} ({len(desc_group)} pairs) ---")
         print(f"  {description[:100]}...")
