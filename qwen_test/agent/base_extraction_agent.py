@@ -428,8 +428,9 @@ class BaseAssayExtractionAgent:
     def _parse_references_from_markdown(markdown: str, ref_numbers: List[str]) -> Dict[str, str]:
         """Extract specific numbered references from a markdown reference list.
 
-        Looks for patterns like "(26) Author, Title..." and extracts the full
-        citation text for each requested reference number.
+        Supports multiple numbering formats:
+        - Parenthesized: (26) Author, Title...
+        - Dot-numbered:  26. Author, Title...
 
         Args:
             markdown: Full markdown text of the paper
@@ -440,11 +441,17 @@ class BaseAssayExtractionAgent:
         """
         results = {}
         for num in ref_numbers:
-            pattern = rf'\({re.escape(num)}\)\s+(.*?)(?=\n\s*\(\d+\)|\Z)'
-            match = re.search(pattern, markdown, re.DOTALL)
-            if match:
-                citation = " ".join(match.group(1).split())
-                results[num] = citation
+            # Try (N) format first, then N. format
+            patterns = [
+                rf'\({re.escape(num)}\)\s+(.*?)(?=\n\s*\(\d+\)|\Z)',
+                rf'(?:^|\n)\s*{re.escape(num)}\.\s+(.*?)(?=\n\s*\d+\.\s|\Z)',
+            ]
+            for pattern in patterns:
+                match = re.search(pattern, markdown, re.DOTALL)
+                if match:
+                    citation = " ".join(match.group(1).split())
+                    results[num] = citation
+                    break
         return results
 
     # ==================== Reference Handling ====================

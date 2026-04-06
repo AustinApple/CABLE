@@ -2,12 +2,22 @@
 PubMed and PMC utility functions for fetching papers and supplementary materials.
 """
 import re
+import unicodedata
 import requests
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional, List
 from urllib.parse import urljoin
 import torch
+
+
+def _strip_diacritics(text: str) -> str:
+    """Replace accented characters with their ASCII equivalents.
+
+    E.g. Sörme → Sorme, Müller → Muller.
+    """
+    nfkd = unicodedata.normalize('NFKD', text)
+    return ''.join(c for c in nfkd if not unicodedata.combining(c))
 
 
 class PubMedFetcher:
@@ -297,9 +307,10 @@ class CitationSearcher:
         Search for a PMID using a citation string.
 
         Tries multiple strategies:
-        1. Extract and search by DOI
-        2. Extract and search by title
-        3. Free text search using author names, journal, and year
+        1. Split compound references like "(a) ... ; (b) ..." and search each
+        2. Extract and search by DOI
+        3. Extract and search by title
+        4. Free text search using author names, journal, and year
 
         Args:
             citation: Citation string like "Collie, G. W.; Koh, C. M.; ... ACS Med. Chem. Lett. 2019, 10, 1322-1327."
@@ -308,6 +319,27 @@ class CitationSearcher:
             PMID string if found, None otherwise
         """
         print(f"  Searching PMID for citation: {citation[:80]}...")
+
+        # Split compound references: "(a) Author... ; (b) Author..."
+        sub_parts = re.split(r';\s*\([a-z]\)\s*', citation)
+        if len(sub_parts) > 1:
+            # Strip leading "(a) " from first part
+            sub_parts[0] = re.sub(r'^\s*\([a-z]\)\s*', '', sub_parts[0])
+            for i, part in enumerate(sub_parts):
+                part = part.strip()
+                if not part:
+                    continue
+                print(f"    Searching sub-reference ({chr(ord('a') + i)}): {part[:60]}...")
+                pmid = self._search_single_citation(part)
+                if pmid:
+                    return pmid
+            print(f"    Could not find PMID for any sub-reference")
+            return None
+
+        return self._search_single_citation(citation)
+
+    def _search_single_citation(self, citation: str) -> Optional[str]:
+        """Search for a PMID from a single (non-compound) citation string."""
 
         # Strategy 1: Try to find DOI in the citation
         doi_pattern = r'10\.\d{4,}/[^\s,;]+'
@@ -523,10 +555,12 @@ class CitationSearcher:
         try:
             search_terms = []
 
-            # Extract first author's last name
-            author_match = re.match(r'^([A-Za-z]+),', citation)
+            # Extract first author's last name (strip leading (a)/(b)/number prefixes)
+            clean_citation = re.sub(r'^\s*(?:\([a-z]\)\s*|\d+\.\s*)', '', citation)
+            author_match = re.match(r'^([A-Za-z\u00C0-\u024F]+)', clean_citation)
             if author_match:
-                search_terms.append(f"{author_match.group(1)}[Author]")
+                author = _strip_diacritics(author_match.group(1))
+                search_terms.append(f"{author}[Author]")
 
             # Extract year
             year_match = re.search(r'\b(19|20)\d{2}\b', citation)
@@ -534,26 +568,51 @@ class CitationSearcher:
                 search_terms.append(f"{year_match.group(0)}[Date - Publication]")
 
             # Extract journal abbreviation
+            # Dots after abbreviated words are optional so both
+            # "J. Med. Chem." and "J Med Chem." are matched.
+            def _opt_dot(abbr: str) -> str:
+                """Make dots optional in a journal abbreviation pattern.
+
+                E.g. 'J. Med. Chem.' becomes a pattern matching both
+                'J. Med. Chem.' and 'J Med Chem.' (dots optional).
+                """
+                parts = abbr.replace('.', '').split()
+                return r'\s+'.join(re.escape(p) + r'\.?' for p in parts)
+
             journal_patterns = [
-                (r'(J\.\s*Med\.\s*Chem\.)', "J Med Chem"),
-                (r'(ACS\s*Med\.\s*Chem\.\s*Lett\.)', "ACS Med Chem Lett"),
-                (r'(ACS\s*Chem\.\s*Biol\.)', "ACS Chem Biol"),
-                (r'(Bioorg\.\s*Med\.\s*Chem\.\s*Lett\.)', "Bioorg Med Chem Lett"),
-                (r'(Bioorg\.\s*Med\.\s*Chem\.)', "Bioorg Med Chem"),
-                (r'(Eur\.\s*J\.\s*Med\.\s*Chem\.)', "Eur J Med Chem"),
-                (r'(ChemMedChem)', "ChemMedChem"),
-                (r'(Cell\s*Chem\.\s*Biol\.)', "Cell Chem Biol"),
-                (r'(?<!\w)Chem\.\s*Biol\.(?!\s*Lett)', "Chemistry & biology"),
-                (r'(J\.\s*Biol\.\s*Chem\.)', "J Biol Chem"),
-                (r'(Biochemistry)', "Biochemistry"),
-                (r'(Angew\.\s*Chem\.)', "Angew Chem Int Ed Engl"),
-                (r'(Proc\.\s*Natl\.\s*Acad\.\s*Sci\.)', "Proc Natl Acad Sci U S A"),
+                (_opt_dot('J. Med. Chem.'), "J Med Chem"),
+                (_opt_dot('ACS Med. Chem. Lett.'), "ACS Med Chem Lett"),
+                (_opt_dot('ACS Chem. Biol.'), "ACS Chem Biol"),
+                (_opt_dot('Bioorg. Med. Chem. Lett.'), "Bioorg Med Chem Lett"),
+                (_opt_dot('Bioorg. Med. Chem.'), "Bioorg Med Chem"),
+                (_opt_dot('Eur. J. Med. Chem.'), "Eur J Med Chem"),
+                (r'ChemMedChem', "ChemMedChem"),
+                (r'ChemBioChem', "ChemBioChem"),
+                (_opt_dot('Cell Chem. Biol.'), "Cell Chem Biol"),
+                (r'(?<!\w)Chem\.?\s*Biol\.?(?!\s*Lett)', "Chemistry & biology"),
+                (_opt_dot('J. Biol. Chem.'), "J Biol Chem"),
+                (r'Biochemistry', "Biochemistry"),
+                (_opt_dot('Angew. Chem.'), "Angew Chem Int Ed Engl"),
+                (_opt_dot('Proc. Natl. Acad. Sci.'), "Proc Natl Acad Sci U S A"),
                 (r'\bPNAS\b', "Proc Natl Acad Sci U S A"),
-                (r'(J\.\s*Am\.\s*Chem\.\s*Soc\.)', "J Am Chem Soc"),
-                (r'(Nat\.\s*Chem\.\s*Biol\.)', "Nat Chem Biol"),
-                (r'(Nat\.\s*Struct\.\s*Mol\.\s*Biol\.)', "Nat Struct Mol Biol"),
+                (_opt_dot('J. Am. Chem. Soc.'), "J Am Chem Soc"),
+                (_opt_dot('Nat. Chem. Biol.'), "Nat Chem Biol"),
+                (_opt_dot('Nat. Struct. Mol. Biol.'), "Nat Struct Mol Biol"),
                 (r'\bNature\b', "Nature"),
                 (r'\bScience\b', "Science"),
+                # Additional journals
+                (_opt_dot('Org. Biomol. Chem.'), "Org Biomol Chem"),
+                (_opt_dot('Anal. Biochem.'), "Anal Biochem"),
+                (_opt_dot('Meth. Enzymol.'), "Methods Enzymol"),
+                (_opt_dot('Methods Enzymol.'), "Methods Enzymol"),
+                (_opt_dot('J. Biomol. Screening'), "J Biomol Screen"),
+                (_opt_dot('J. Biomol. Screen.'), "J Biomol Screen"),
+                (_opt_dot('Chem. Eur. J.'), "Chemistry"),
+                (_opt_dot('J. Org. Chem.'), "J Org Chem"),
+                (_opt_dot('Org. Lett.'), "Org Lett"),
+                (_opt_dot('Mol. Pharmacol.'), "Mol Pharmacol"),
+                (_opt_dot('Cancer Res.'), "Cancer Res"),
+                (_opt_dot('Clin. Cancer Res.'), "Clin Cancer Res"),
             ]
             journal_name = None
             for pattern, jname in journal_patterns:
@@ -563,8 +622,9 @@ class CitationSearcher:
                     break
 
             # Extract volume and start page for narrowing
-            volume_match = re.search(r'(?:19|20)\d{2},\s*(\d+),\s*\d+', citation)
-            page_match = re.search(r'(?:19|20)\d{2},\s*\d+,\s*(\d+)', citation)
+            # Supports: "2005, 3, 1922" and "2014;57:567" and "2014; 57: 567"
+            volume_match = re.search(r'(?:19|20)\d{2}[,;]\s*(\d+)[,;:]\s*\d+', citation)
+            page_match = re.search(r'(?:19|20)\d{2}[,;]\s*\d+[,;:]\s*(\d+)', citation)
 
             def _run_search(terms, max_results=5):
                 url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
