@@ -1,11 +1,110 @@
 """
 PDF and document conversion utilities.
 """
+import os
+import subprocess
 import fitz  # PyMuPDF
 import pypandoc
 from pathlib import Path
 from typing import Optional, List
 from PIL import Image
+
+MINERU_BIN = "/data/mwu11/miniconda3/envs/mineru/bin/mineru"
+
+
+def pdf_to_markdown(
+    pdf_path: Path,
+    cache_dir: Path,
+    cuda_device: Optional[str] = None,
+    timeout: int = 300
+) -> Optional[Path]:
+    """Convert PDF to markdown using MinerU (subprocess call).
+
+    Caches results — if markdown already exists, returns it directly.
+
+    Args:
+        pdf_path: Path to the PDF file
+        cache_dir: Directory to store markdown output
+        cuda_device: CUDA device index (e.g. "0", "4")
+        timeout: Max seconds to wait for MinerU
+
+    Returns:
+        Path to the markdown file, or None if conversion failed
+    """
+    pdf_path = Path(pdf_path)
+    if not pdf_path.exists():
+        return None
+
+    md_path = cache_dir / pdf_path.stem / "auto" / f"{pdf_path.stem}.md"
+    if md_path.exists():
+        return md_path
+
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    env = os.environ.copy()
+    if cuda_device is not None:
+        env["CUDA_VISIBLE_DEVICES"] = cuda_device
+
+    try:
+        subprocess.run(
+            [MINERU_BIN, "-p", str(pdf_path), "-o", str(cache_dir), "-b", "pipeline"],
+            capture_output=True, text=True, timeout=timeout, env=env, check=False
+        )
+    except subprocess.TimeoutExpired:
+        print(f"  MinerU timed out for {pdf_path.name}")
+        return None
+    except FileNotFoundError:
+        print(f"  MinerU not found at {MINERU_BIN}")
+        return None
+    except Exception as e:
+        print(f"  MinerU error for {pdf_path.name}: {e}")
+        return None
+
+    return md_path if md_path.exists() else None
+
+
+def preconvert_pdfs(
+    pmids: List[str],
+    pdf_dir: Path,
+    timeout: int = 300
+) -> None:
+    """Convert PDFs to markdown for all PMIDs using MinerU before loading the main model.
+
+    Call this BEFORE initializing TwoStepAssayExtractionAgent so that MinerU
+    and Qwen never share GPU VRAM at the same time. Results are disk-cached;
+    already-converted PMIDs are skipped.
+
+    Args:
+        pmids: List of PMID strings
+        pdf_dir: Directory containing <pmid>.pdf files (same as agent's pdf_dir)
+        timeout: Max seconds to wait per PDF
+    """
+    pdf_dir = Path(pdf_dir)
+    cache_dir = pdf_dir / "markdown_cache"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    total = len(pmids)
+    print(f"Pre-converting {total} PDFs to markdown via MinerU (before loading Qwen)...")
+
+    for i, pmid in enumerate(pmids, 1):
+        pdf_path = pdf_dir / f"{pmid}.pdf"
+        if not pdf_path.exists():
+            print(f"  [{i}/{total}] PMID {pmid}: PDF not found, skipping")
+            continue
+
+        md_path = cache_dir / pmid / "auto" / f"{pmid}.md"
+        if md_path.exists():
+            print(f"  [{i}/{total}] PMID {pmid}: already cached, skipping")
+            continue
+
+        print(f"  [{i}/{total}] PMID {pmid}: converting...")
+        result = pdf_to_markdown(pdf_path, cache_dir=cache_dir, timeout=timeout)
+        if result:
+            print(f"  [{i}/{total}] PMID {pmid}: done")
+        else:
+            print(f"  [{i}/{total}] PMID {pmid}: conversion failed")
+
+    print("Pre-conversion complete.\n")
 
 
 class DocumentConverter:

@@ -21,7 +21,7 @@ from typing import Optional, Dict, List, Tuple
 import time
 
 from .base_extraction_agent import BaseAssayExtractionAgent
-from .prompts_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
+from .prompts_spr_two_step import get_paragraph_extraction_prompt, get_structured_description_from_text_prompt
 
 # Type alias for prompt functions
 from typing import Callable
@@ -71,7 +71,7 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             search_references: Whether to fetch referenced papers if assay not found
             max_reference_depth: Maximum depth for recursive reference search (1 = only direct refs)
             ncbi_api_key: NCBI API key for higher rate limits (optional)
-            paragraph_prompt_fn: Custom prompt function for Step 1 (paragraph extraction).
+            paragraph_prompt_fn: Custom prompt function for Step 1 vision path (paragraph extraction).
                                Signature: fn(assay_description: str) -> str.
                                Defaults to SPR prompt if None.
             structured_prompt_fn: Custom prompt function for Step 2 (structured description).
@@ -115,6 +115,25 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
             )
             self.use_separate_text_model = True
             print(f"Text model loaded: {text_model_name}")
+
+    # ==================== Reference Hook ====================
+
+    def _extract_for_reference(
+        self,
+        pmid: str,
+        assay_description: str,
+        max_pages: Optional[int],
+        max_new_tokens: int,
+        _depth: int
+    ) -> Dict:
+        """Override base class hook: run extract_paragraph on a referenced paper."""
+        return self.extract_paragraph(
+            pmid=pmid,
+            assay_description=assay_description,
+            max_pages=max_pages,
+            max_new_tokens=max_new_tokens,
+            _depth=_depth
+        )
 
     # ==================== Text-Only Query Method ====================
 
@@ -255,6 +274,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
         print(f"[Step 1] Extracting paragraph from PMID {pmid} (depth={_depth})")
         print(f"{'='*60}")
 
+        supp_files = []
+
+        # Step 1 always uses vision model on PDF images.
+        # MinerU markdown is used only for reference resolution (see _resolve_reference_pmids).
         images, pdf_path = self._get_paper_images(pmid, max_pages)
 
         if pdf_path is None:
@@ -283,11 +306,10 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
 
         # Use paragraph extraction prompt (no structured_description)
         prompt = self.paragraph_prompt_fn(assay_description)
-        supp_files = []
 
         try:
             # Search main paper
-            print(f"  Searching main paper for PMID {pmid}...")
+            print(f"  Searching main paper (vision) for PMID {pmid}...")
             response_text, _, _ = self._query_model(images, prompt, max_new_tokens)
 
             print(f"\n[DEBUG] Raw response: {response_text[:500]}...")
@@ -301,7 +323,113 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 result["search_path"] = ["main"]
                 result["supplementary_source"] = []
                 print(f"  Found in main paper!")
+
+                # If paragraph mentions supplementary, chase it to get more details
+                if self.search_supplementary and self._paragraph_mentions_supplementary(result.get("original_paragraph")):
+                    print(f"\n  Paragraph mentions supplementary materials, chasing...")
+                    chase_supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
+                    if not chase_supp_files:
+                        self._log_chase_miss(pmid, "supplementary", "mentioned in paragraph but no files downloaded")
+                    else:
+                        supp_found = False
+                        for supp_path in chase_supp_files:
+                            page_count = self._get_page_count(supp_path)
+                            if page_count is not None and page_count > self.MAX_SUPPLEMENTARY_PAGES:
+                                print(f"  Skipping supplementary {supp_path.name}: {page_count} pages > {self.MAX_SUPPLEMENTARY_PAGES} limit")
+                                self._log_chase_miss(pmid, "supplementary", f"skipped {supp_path.name} ({page_count} pages exceeds limit)")
+                                continue
+                            supp_images = self.doc_converter.file_to_images(
+                                supp_path, max_pages=max_pages, label="supplementary"
+                            )
+                            if supp_images and len(supp_images) > 0:
+                                print(f"  Searching supplementary: {supp_path.name}...")
+                                supp_response, _, _ = self._query_model(supp_images, prompt, max_new_tokens)
+                                supp_result = self._parse_response(supp_response)
+                                if supp_result and self._is_paragraph_found(supp_result.get("original_paragraph")):
+                                    main_para = result["original_paragraph"]
+                                    supp_para = supp_result["original_paragraph"]
+                                    if isinstance(main_para, dict) and isinstance(supp_para, dict):
+                                        for k, v in supp_para.items():
+                                            result["original_paragraph"][f"[Supp {supp_path.name}] {k}"] = v
+                                    elif isinstance(main_para, str) and isinstance(supp_para, str):
+                                        result["original_paragraph"] = (
+                                            f"{main_para}\n[Supplementary {supp_path.name}]: {supp_para}"
+                                        )
+                                    result["supplementary_source"].append(supp_path.name)
+                                    result["search_path"].append("supplementary")
+                                    print(f"  Combined with supplementary: {supp_path.name}!")
+                                    supp_found = True
+                        if not supp_found:
+                            self._log_chase_miss(pmid, "supplementary", "mentioned in paragraph but not found in downloaded files")
+
+                # Check if it references previous work and combine if so
+                result = self._check_and_fetch_references(
+                    result, pmid, assay_description, max_pages, max_new_tokens, _depth
+                )
                 return result
+
+            # Fallback: try markdown text if vision didn't find it
+            markdown = self._get_full_paper_markdown(pmid)
+            if markdown:
+                print(f"\n  Vision did not find paragraph. Trying markdown text fallback...")
+                text_prompt = (
+                    f"The following is the full text of a research paper in markdown format:\n\n"
+                    f"=== FULL PAPER TEXT ===\n{markdown}\n=== END OF PAPER TEXT ===\n\n"
+                    f"{prompt}"
+                )
+                md_response, _, _ = self._query_text_model(text_prompt, max_new_tokens)
+                md_result = self._parse_response(md_response)
+
+                if md_result and self._is_paragraph_found(md_result.get("original_paragraph")):
+                    md_result["pmid"] = pmid
+                    md_result["assay_description"] = assay_description
+                    md_result["source"] = f"main_paper_{pmid}_markdown"
+                    md_result["search_path"] = ["main_markdown"]
+                    md_result["supplementary_source"] = []
+                    print(f"  Found in main paper (markdown fallback)!")
+
+                    # Chase supplementary if mentioned
+                    if self.search_supplementary and self._paragraph_mentions_supplementary(md_result.get("original_paragraph")):
+                        print(f"\n  Paragraph mentions supplementary materials, chasing...")
+                        chase_supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
+                        if not chase_supp_files:
+                            self._log_chase_miss(pmid, "supplementary", "mentioned in paragraph but no files downloaded")
+                        else:
+                            supp_found = False
+                            for supp_path in chase_supp_files:
+                                page_count = self._get_page_count(supp_path)
+                                if page_count is not None and page_count > self.MAX_SUPPLEMENTARY_PAGES:
+                                    print(f"  Skipping supplementary {supp_path.name}: {page_count} pages > {self.MAX_SUPPLEMENTARY_PAGES} limit")
+                                    self._log_chase_miss(pmid, "supplementary", f"skipped {supp_path.name} ({page_count} pages exceeds limit)")
+                                    continue
+                                supp_images = self.doc_converter.file_to_images(
+                                    supp_path, max_pages=max_pages, label="supplementary"
+                                )
+                                if supp_images and len(supp_images) > 0:
+                                    print(f"  Searching supplementary: {supp_path.name}...")
+                                    supp_response, _, _ = self._query_model(supp_images, prompt, max_new_tokens)
+                                    supp_result = self._parse_response(supp_response)
+                                    if supp_result and self._is_paragraph_found(supp_result.get("original_paragraph")):
+                                        main_para = md_result["original_paragraph"]
+                                        supp_para = supp_result["original_paragraph"]
+                                        if isinstance(main_para, dict) and isinstance(supp_para, dict):
+                                            for k, v in supp_para.items():
+                                                md_result["original_paragraph"][f"[Supp {supp_path.name}] {k}"] = v
+                                        elif isinstance(main_para, str) and isinstance(supp_para, str):
+                                            md_result["original_paragraph"] = (
+                                                f"{main_para}\n[Supplementary {supp_path.name}]: {supp_para}"
+                                            )
+                                        md_result["supplementary_source"].append(supp_path.name)
+                                        md_result["search_path"].append("supplementary")
+                                        print(f"  Combined with supplementary: {supp_path.name}!")
+                                        supp_found = True
+                            if not supp_found:
+                                self._log_chase_miss(pmid, "supplementary", "mentioned in paragraph but not found in downloaded files")
+
+                    md_result = self._check_and_fetch_references(
+                        md_result, pmid, assay_description, max_pages, max_new_tokens, _depth
+                    )
+                    return md_result
 
             # Search supplementary materials
             if self.search_supplementary:
@@ -309,6 +437,11 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 supp_files = self.pubmed_fetcher.fetch_supplementary_from_pmc(pmid)
 
                 for supp_path in supp_files:
+                    page_count = self._get_page_count(supp_path)
+                    if page_count is not None and page_count > self.MAX_SUPPLEMENTARY_PAGES:
+                        print(f"  Skipping supplementary {supp_path.name}: {page_count} pages > {self.MAX_SUPPLEMENTARY_PAGES} limit")
+                        self._log_chase_miss(pmid, "supplementary", f"skipped {supp_path.name} ({page_count} pages exceeds limit)")
+                        continue
                     supp_images = self.doc_converter.file_to_images(supp_path, max_pages=max_pages, label="supplementary")
                     if supp_images and len(supp_images) > 0:
                         print(f"  Searching supplementary: {supp_path.name}...")
@@ -322,11 +455,15 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                             supp_result["search_path"] = ["main", "supplementary"]
                             supp_result["supplementary_source"] = ["main"]
                             print(f"  Found in supplementary: {supp_path.name}!")
+                            # Check if it references previous work and combine if so
+                            supp_result = self._check_and_fetch_references(
+                                supp_result, pmid, assay_description,
+                                max_pages, max_new_tokens, _depth
+                            )
                             return supp_result
 
-            # Return NOT FOUND
-            print(f"  Paragraph not found in any searched documents.")
-            return {
+            # Try referenced literature before giving up
+            not_found_result = {
                 "pmid": pmid,
                 "assay_description": assay_description,
                 "original_paragraph": {},
@@ -334,9 +471,20 @@ class TwoStepAssayExtractionAgent(BaseAssayExtractionAgent):
                 "source": "not_found",
                 "search_path": [],
                 "supplementary_source": [],
-                "references_previous": "none",
+                "references_previous": result.get("references_previous", "none") if result else "none",
                 "searched_locations": f"main_paper, supplementary({len(supp_files)} files)"
             }
+
+            ref_result = self._search_references_not_found(
+                not_found_result, pmid, assay_description,
+                max_pages, max_new_tokens, _depth
+            )
+            if self._is_paragraph_found(ref_result.get("original_paragraph")):
+                print(f"  Found via referenced literature!")
+                return ref_result
+
+            print(f"  Paragraph not found in any searched documents.")
+            return not_found_result
 
         except Exception as e:
             print(f"Error extracting paragraph for PMID {pmid}: {e}")

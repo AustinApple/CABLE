@@ -2,12 +2,22 @@
 PubMed and PMC utility functions for fetching papers and supplementary materials.
 """
 import re
+import unicodedata
 import requests
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from typing import Optional, List
 from urllib.parse import urljoin
 import torch
+
+
+def _strip_diacritics(text: str) -> str:
+    """Replace accented characters with their ASCII equivalents.
+
+    E.g. Sörme → Sorme, Müller → Muller.
+    """
+    nfkd = unicodedata.normalize('NFKD', text)
+    return ''.join(c for c in nfkd if not unicodedata.combining(c))
 
 
 class PubMedFetcher:
@@ -99,33 +109,44 @@ class PubMedFetcher:
 
                 for i, relative_path in enumerate(matches[:5]):
                     file_name = relative_path.split('/')[-1]
-                    supp_url = urljoin(f'https://europepmc.org/articles/{pmc_id}/bin/', file_name)
 
-                    ext = supp_url.split('.')[-1]
+                    ext = file_name.rsplit('.', 1)[-1] if '.' in file_name else 'pdf'
                     supp_filename = f"{pmid}_supp_{i + 1}.{ext.lower()}"
                     supp_path = self.supp_dir / supp_filename
 
                     if not supp_path.exists():
-                        print(f"  Downloading: {supp_url}")
+                        # Try PMC first (same site where we found the link), then Europe PMC as fallback
+                        supp_urls = [
+                            urljoin(article_url, relative_path),
+                            urljoin(f'https://europepmc.org/articles/{pmc_id}/bin/', file_name),
+                        ]
 
-                        try:
-                            download_headers = headers.copy()
-                            download_headers['Referer'] = article_url
+                        saved = False
+                        for supp_url in supp_urls:
+                            print(f"  Downloading: {supp_url}")
+                            try:
+                                download_headers = headers.copy()
+                                download_headers['Referer'] = article_url
 
-                            file_response = session.get(supp_url, headers=download_headers, timeout=60, stream=True)
-                            content_type = file_response.headers.get('Content-Type', '').lower()
+                                file_response = session.get(supp_url, headers=download_headers, timeout=60, stream=True)
+                                content_type = file_response.headers.get('Content-Type', '').lower()
 
-                            if file_response.status_code == 200 and 'html' not in content_type:
-                                with open(supp_path, 'wb') as f:
-                                    for chunk in file_response.iter_content(chunk_size=8192):
-                                        f.write(chunk)
-                                downloaded_files.append(supp_path)
-                                print(f"    Success! Saved {supp_filename}")
-                            else:
-                                print(f"    Failed. Server sent HTML instead of file. (Type: {content_type})")
+                                if file_response.status_code == 200 and 'html' not in content_type:
+                                    with open(supp_path, 'wb') as f:
+                                        for chunk in file_response.iter_content(chunk_size=8192):
+                                            f.write(chunk)
+                                    downloaded_files.append(supp_path)
+                                    print(f"    Success! Saved {supp_filename}")
+                                    saved = True
+                                    break
+                                else:
+                                    print(f"    Failed (status={file_response.status_code}, type={content_type})")
 
-                        except Exception as e:
-                            print(f"    Error: {e}")
+                            except Exception as e:
+                                print(f"    Error: {e}")
+
+                        if not saved:
+                            print(f"    Could not download {file_name} from any source")
                     else:
                         print(f"  Skipping {supp_filename} (already exists)")
                         downloaded_files.append(supp_path)
@@ -286,9 +307,10 @@ class CitationSearcher:
         Search for a PMID using a citation string.
 
         Tries multiple strategies:
-        1. Extract and search by DOI
-        2. Extract and search by title
-        3. Free text search using author names, journal, and year
+        1. Split compound references like "(a) ... ; (b) ..." and search each
+        2. Extract and search by DOI
+        3. Extract and search by title
+        4. Free text search using author names, journal, and year
 
         Args:
             citation: Citation string like "Collie, G. W.; Koh, C. M.; ... ACS Med. Chem. Lett. 2019, 10, 1322-1327."
@@ -297,6 +319,27 @@ class CitationSearcher:
             PMID string if found, None otherwise
         """
         print(f"  Searching PMID for citation: {citation[:80]}...")
+
+        # Split compound references: "(a) Author... ; (b) Author..."
+        sub_parts = re.split(r';\s*\([a-z]\)\s*', citation)
+        if len(sub_parts) > 1:
+            # Strip leading "(a) " from first part
+            sub_parts[0] = re.sub(r'^\s*\([a-z]\)\s*', '', sub_parts[0])
+            for i, part in enumerate(sub_parts):
+                part = part.strip()
+                if not part:
+                    continue
+                print(f"    Searching sub-reference ({chr(ord('a') + i)}): {part[:60]}...")
+                pmid = self._search_single_citation(part)
+                if pmid:
+                    return pmid
+            print(f"    Could not find PMID for any sub-reference")
+            return None
+
+        return self._search_single_citation(citation)
+
+    def _search_single_citation(self, citation: str) -> Optional[str]:
+        """Search for a PMID from a single (non-compound) citation string."""
 
         # Strategy 1: Try to find DOI in the citation
         doi_pattern = r'10\.\d{4,}/[^\s,;]+'
@@ -310,9 +353,11 @@ class CitationSearcher:
 
         # Strategy 2: Try to extract and search by title
         title = self._extract_title_from_citation(citation)
+        year_match = re.search(r'\b(19|20)\d{2}\b', citation)
+        year = year_match.group(0) if year_match else None
         if title:
             print(f"    Extracted title: {title[:60]}...")
-            pmid = self._search_pubmed_by_title(title)
+            pmid = self._search_pubmed_by_title(title, year=year)
             if pmid:
                 return pmid
 
@@ -476,14 +521,17 @@ class CitationSearcher:
 
         return None
 
-    def _search_pubmed_by_title(self, title: str) -> Optional[str]:
-        """Search PubMed by title."""
+    def _search_pubmed_by_title(self, title: str, year: Optional[str] = None) -> Optional[str]:
+        """Search PubMed by title, optionally filtered by publication year."""
         try:
             url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
             clean_title = re.sub(r'[^\w\s]', ' ', title)
+            term = f"{clean_title}[Title]"
+            if year:
+                term += f" AND {year}[Date - Publication]"
             params = {
                 "db": "pubmed",
-                "term": f"{clean_title}[Title]",
+                "term": term,
                 "retmode": "json",
                 "retmax": 1
             }
@@ -503,14 +551,16 @@ class CitationSearcher:
         return None
 
     def _search_pubmed_by_text(self, citation: str) -> Optional[str]:
-        """Free text search using author names, journal, and year."""
+        """Free text search using author names, journal, year, and optionally volume/page."""
         try:
             search_terms = []
 
-            # Extract first author's last name
-            author_match = re.match(r'^([A-Za-z]+),', citation)
+            # Extract first author's last name (strip leading (a)/(b)/number prefixes)
+            clean_citation = re.sub(r'^\s*(?:\([a-z]\)\s*|\d+\.\s*)', '', citation)
+            author_match = re.match(r'^([A-Za-z\u00C0-\u024F]+)', clean_citation)
             if author_match:
-                search_terms.append(f"{author_match.group(1)}[Author]")
+                author = _strip_diacritics(author_match.group(1))
+                search_terms.append(f"{author}[Author]")
 
             # Extract year
             year_match = re.search(r'\b(19|20)\d{2}\b', citation)
@@ -518,43 +568,122 @@ class CitationSearcher:
                 search_terms.append(f"{year_match.group(0)}[Date - Publication]")
 
             # Extract journal abbreviation
+            # Dots after abbreviated words are optional so both
+            # "J. Med. Chem." and "J Med Chem." are matched.
+            def _opt_dot(abbr: str) -> str:
+                """Make dots optional in a journal abbreviation pattern.
+
+                E.g. 'J. Med. Chem.' becomes a pattern matching both
+                'J. Med. Chem.' and 'J Med Chem.' (dots optional).
+                """
+                parts = abbr.replace('.', '').split()
+                return r'\s+'.join(re.escape(p) + r'\.?' for p in parts)
+
             journal_patterns = [
-                (r'(J\.\s*Med\.\s*Chem\.)', "J Med Chem"),
-                (r'(ACS\s*Med\.\s*Chem\.\s*Lett\.)', "ACS Med Chem Lett"),
-                (r'(Bioorg\.\s*Med\.\s*Chem\.)', "Bioorg Med Chem"),
-                (r'(Eur\.\s*J\.\s*Med\.\s*Chem\.)', "Eur J Med Chem"),
-                (r'(ChemMedChem)', "ChemMedChem"),
-                (r'(J\.\s*Biol\.\s*Chem\.)', "J Biol Chem"),
-                (r'(Biochemistry)', "Biochemistry"),
-                (r'(Nature)', "Nature"),
-                (r'(Science)', "Science"),
+                (_opt_dot('J. Med. Chem.'), "J Med Chem"),
+                (_opt_dot('ACS Med. Chem. Lett.'), "ACS Med Chem Lett"),
+                (_opt_dot('ACS Chem. Biol.'), "ACS Chem Biol"),
+                (_opt_dot('Bioorg. Med. Chem. Lett.'), "Bioorg Med Chem Lett"),
+                (_opt_dot('Bioorg. Med. Chem.'), "Bioorg Med Chem"),
+                (_opt_dot('Eur. J. Med. Chem.'), "Eur J Med Chem"),
+                (r'ChemMedChem', "ChemMedChem"),
+                (r'ChemBioChem', "ChemBioChem"),
+                (_opt_dot('Cell Chem. Biol.'), "Cell Chem Biol"),
+                (r'(?<!\w)Chem\.?\s*Biol\.?(?!\s*Lett)', "Chemistry & biology"),
+                (_opt_dot('J. Biol. Chem.'), "J Biol Chem"),
+                (r'Biochemistry', "Biochemistry"),
+                (_opt_dot('Angew. Chem.'), "Angew Chem Int Ed Engl"),
+                (_opt_dot('Proc. Natl. Acad. Sci.'), "Proc Natl Acad Sci U S A"),
+                (r'\bPNAS\b', "Proc Natl Acad Sci U S A"),
+                (_opt_dot('J. Am. Chem. Soc.'), "J Am Chem Soc"),
+                (_opt_dot('Nat. Chem. Biol.'), "Nat Chem Biol"),
+                (_opt_dot('Nat. Struct. Mol. Biol.'), "Nat Struct Mol Biol"),
+                (r'\bNature\b', "Nature"),
+                (r'\bScience\b', "Science"),
+                # Additional journals
+                (_opt_dot('Org. Biomol. Chem.'), "Org Biomol Chem"),
+                (_opt_dot('Anal. Biochem.'), "Anal Biochem"),
+                (_opt_dot('Meth. Enzymol.'), "Methods Enzymol"),
+                (_opt_dot('Methods Enzymol.'), "Methods Enzymol"),
+                (_opt_dot('J. Biomol. Screening'), "J Biomol Screen"),
+                (_opt_dot('J. Biomol. Screen.'), "J Biomol Screen"),
+                (_opt_dot('Chem. Eur. J.'), "Chemistry"),
+                (_opt_dot('J. Org. Chem.'), "J Org Chem"),
+                (_opt_dot('Org. Lett.'), "Org Lett"),
+                (_opt_dot('Mol. Pharmacol.'), "Mol Pharmacol"),
+                (_opt_dot('Cancer Res.'), "Cancer Res"),
+                (_opt_dot('Clin. Cancer Res.'), "Clin Cancer Res"),
             ]
-            for pattern, journal_name in journal_patterns:
+            journal_name = None
+            for pattern, jname in journal_patterns:
                 if re.search(pattern, citation, re.IGNORECASE):
-                    search_terms.append(f'"{journal_name}"[Journal]')
+                    search_terms.append(f'"{jname}"[Journal]')
+                    journal_name = jname
                     break
 
-            if len(search_terms) >= 2:
+            # Extract volume and start page for narrowing
+            # Supports: "2005, 3, 1922" and "2014;57:567" and "2014; 57: 567"
+            volume_match = re.search(r'(?:19|20)\d{2}[,;]\s*(\d+)[,;:]\s*\d+', citation)
+            page_match = re.search(r'(?:19|20)\d{2}[,;]\s*\d+[,;:]\s*(\d+)', citation)
+
+            def _run_search(terms, max_results=5):
                 url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
-                query = " AND ".join(search_terms)
+                query = " AND ".join(terms)
                 params = {
                     "db": "pubmed",
                     "term": query,
                     "retmode": "json",
-                    "retmax": 5
+                    "retmax": max_results
                 }
                 if self.ncbi_api_key:
                     params["api_key"] = self.ncbi_api_key
-
                 print(f"    Free text search: {query}")
-                response = requests.get(url, params=params, timeout=30)
-                if response.status_code == 200:
-                    data = response.json()
-                    id_list = data.get("esearchresult", {}).get("idlist", [])
-                    if id_list:
-                        pmid = id_list[0]
-                        print(f"    Found PMID by free text: {pmid}")
-                        return pmid
+                resp = requests.get(url, params=params, timeout=30)
+                if resp.status_code == 200:
+                    return resp.json().get("esearchresult", {}).get("idlist", [])
+                return []
+
+            def _resolve_ids(id_list, base_terms):
+                if not id_list:
+                    return None
+                if len(id_list) == 1:
+                    return id_list[0]
+                # Narrow with volume and/or page
+                narrow_terms = list(base_terms)
+                if volume_match:
+                    narrow_terms.append(f"{volume_match.group(1)}[Volume]")
+                if page_match:
+                    narrow_terms.append(f"{page_match.group(1)}[Page]")
+                if len(narrow_terms) > len(base_terms):
+                    narrow_ids = _run_search(narrow_terms, max_results=1)
+                    if narrow_ids:
+                        print(f"    Found PMID by narrowed search: {narrow_ids[0]}")
+                        return narrow_ids[0]
+                # Fall back to first broad result
+                return id_list[0]
+
+            if len(search_terms) >= 2:
+                id_list = _run_search(search_terms)
+                pmid = _resolve_ids(id_list, search_terms)
+                if pmid:
+                    print(f"    Found PMID by free text: {pmid}")
+                    return pmid
+
+            # Fallback: search by year + journal + volume + page only (skips author,
+            # handles compound surnames like "VanMolle" that don't match PubMed index)
+            if journal_name and year_match and (volume_match or page_match):
+                fallback_terms = [
+                    f'"{journal_name}"[Journal]',
+                    f"{year_match.group(0)}[Date - Publication]",
+                ]
+                if volume_match:
+                    fallback_terms.append(f"{volume_match.group(1)}[Volume]")
+                if page_match:
+                    fallback_terms.append(f"{page_match.group(1)}[Page]")
+                fb_ids = _run_search(fallback_terms, max_results=1)
+                if fb_ids:
+                    print(f"    Found PMID by journal/year/vol/page fallback: {fb_ids[0]}")
+                    return fb_ids[0]
         except Exception as e:
             print(f"    Error in free text search: {e}")
         return None
@@ -592,6 +721,18 @@ class CitationSearcher:
             List of extracted citation strings
         """
         citations = []
+
+        # Pattern for numbered reference lists like "(26) Author... (27) Author..."
+        # Split on reference number markers and extract each individual citation
+        numbered_ref_pattern = r'\(\d+\)\s+([A-Z].*?)(?=\s*\(\d+\)\s+[A-Z]|$)'
+        numbered_matches = re.findall(numbered_ref_pattern, text, re.DOTALL)
+        if numbered_matches:
+            for match in numbered_matches:
+                match = match.strip()
+                # Only include if it looks like a proper citation (has a year)
+                if re.search(r'(?:19|20)\d{2}', match) and len(match) > 20:
+                    citations.append(match)
+            return citations
 
         # Pattern for typical citation format
         citation_pattern = r'[A-Z][a-z]+,\s*[A-Z]\.(?:\s*[A-Z]\.)?(?:;\s*[A-Z][a-z]+,\s*[A-Z]\.(?:\s*[A-Z]\.)?)*[^.]*(?:19|20)\d{2}[^.]*\d+[-–]\d+\.?'
