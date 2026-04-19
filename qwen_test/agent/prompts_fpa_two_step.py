@@ -202,7 +202,7 @@ biological_preparation:
   - tissue_or_cell_line: Expression system or cell line used to produce the protein (e.g., "E. coli BL21(DE3) expressing His-tagged hBRD4-BD1", "Sf9 insect cells expressing hHsp90α")
   - species: Species origin of the target protein (e.g., "Human", "Rat", "Mouse", "E. coli (recombinant human)")
   - target_protein: Protein target including domain or construct boundaries if specified (e.g., "BRD4 bromodomain 1 (BD1, residues 44–168)", "MDM2 (residues 1–118)")
-  - protein_concentration: Concentration of protein used in the assay with units (e.g., "50 nM", "100 nM")
+  - protein_concentration: Protein concentration as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000, mM * 1000000. Return null if the paper reports mass units (e.g., mg/mL) without a molecular weight for conversion, or if not stated. Use ASCII 'u', not Unicode micro.
   - protein_purity_method: Purification method if reported (e.g., "Ni-NTA affinity chromatography followed by SEC"), or null
 
 fluorescent_tracer:
@@ -211,21 +211,20 @@ fluorescent_tracer:
   - fluorophore: Fluorophore conjugated to the tracer (e.g., "Fluorescein (FITC)", "FAM (6-carboxyfluorescein)", "TAMRA", "BODIPY", "Alexa Fluor 488")
   - excitation_wavelength_nm: Excitation wavelength in nanometers (e.g., 485), or null
   - emission_wavelength_nm: Emission wavelength in nanometers (e.g., 530), or null
-  - concentration_used: Concentration of tracer used in the assay with units (e.g., "5 nM", "10 nM")
+  - concentration_used: Tracer concentration as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000. Return null if only qualitative (e.g., "~Kd concentration") or if not stated. Use ASCII 'u', not Unicode micro.
   - kd_value: Object with:
-      - value: Numeric Kd value
-      - unit: One of: "nM", "µM", "pM"
+      - value: Kd as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000. Use ASCII 'u', not Unicode micro. Use null if not stated.
       - source: One of: "Determined in this study", "Literature value", "Not specified"
 
 test_compound:
   - description: General description of the test compound(s) (e.g., "Small molecules", "Novel BRD4 inhibitors", "Stapled peptides targeting MDM2")
-  - concentration_range: Range of concentrations tested (e.g., "0.1 nM – 100 µM", "10-point, half-log dilution, top 50 µM")
+  - concentration_range: Range of concentrations tested as a string, with all concentrations normalized to micromolar (uM). Convert from other molar units: mM * 1000, nM / 1000, pM / 1000000. Use ASCII 'u', not Unicode micro. Examples: "0.0001-100 uM", "10-point, half-log dilution, top 50 uM", "Single point at 10 uM".
   - vehicle_solvent: Solvent used and its final assay concentration (e.g., "DMSO, final 1%")
   - dmso_tolerance_tested: One of: "Yes", "No", "Not specified"
 
 assay_controls:
   - high_signal_control: Condition representing maximum polarization/anisotropy (fully bound tracer) (e.g., "Protein + tracer, no competitor")
-  - low_signal_control: Condition representing minimum polarization/anisotropy (fully displaced or free tracer) (e.g., "Tracer only, no protein", "Tracer + 100 µM unlabeled JQ1")
+  - low_signal_control: Condition representing minimum polarization/anisotropy (fully displaced or free tracer) (e.g., "Tracer only, no protein", "Tracer + 100 uM unlabeled JQ1")
   - positive_control_compound: Reference compound of known affinity used to validate the assay (e.g., "(+)-JQ1", "Nutlin-3a"), or null
   - positive_control_expected_value: Expected Ki or IC50 for the positive control with units (e.g., "Ki = 50 nM"), or null
   - z_prime_reported: Object with:
@@ -239,11 +238,9 @@ assay_conditions:
   - ph: pH of assay buffer as a number (e.g., 7.4)
   - detergent_used: Detergent included in buffer (e.g., "0.01% Triton X-100", "0.05% CHAPS"), or null
   - incubation_temperature: Temperature as string (e.g., "25", "37", "room temperature")
-  - incubation_time: Object with:
-      - value: Duration as number or string (e.g., 30, 60, "30-60", "overnight")
-      - unit: One of: "min", "h"
+  - incubation_time: Duration of incubation before reading, as a number in minutes. Convert from other units: h * 60. Use a string for ranges (e.g., "30-60") or qualitative values (e.g., "overnight").
   - equilibrium_confirmed: One of: "Yes", "No", "Not specified"
-  - total_assay_volume: Total volume per well with units (e.g., "20 µL", "50 µL")
+  - total_assay_volume: Total volume per well as a number in microliters (uL). Convert from other units: mL * 1000. Use null if not stated. Use ASCII 'u', not Unicode micro.
   - order_of_addition: Order of component addition (e.g., "Protein + compound pre-incubated 15 min, then tracer added", "All components added simultaneously"), or null
 
 detection:
@@ -283,7 +280,7 @@ Output format (JSON):
             "tissue_or_cell_line": "...",
             "species": "...",
             "target_protein": "...",
-            "protein_concentration": "...",
+            "protein_concentration": <number in nM> or null,
             "protein_purity_method": "..." or null
         }},
         "fluorescent_tracer": {{
@@ -292,12 +289,12 @@ Output format (JSON):
             "fluorophore": "...",
             "excitation_wavelength_nm": ... or null,
             "emission_wavelength_nm": ... or null,
-            "concentration_used": "...",
-            "kd_value": {{"value": ..., "unit": "...", "source": "..."}}
+            "concentration_used": <number in nM> or null,
+            "kd_value": {{"value": <number in nM> or null, "source": "..."}}
         }},
         "test_compound": {{
             "description": "...",
-            "concentration_range": "...",
+            "concentration_range": "<range in uM, e.g., '0.0001-100 uM'>",
             "vehicle_solvent": "...",
             "dmso_tolerance_tested": "..."
         }},
@@ -315,9 +312,9 @@ Output format (JSON):
             "ph": ...,
             "detergent_used": "..." or null,
             "incubation_temperature": "...",
-            "incubation_time": {{"value": ..., "unit": "..."}},
+            "incubation_time": <number in minutes, or string for ranges like "30-60" or "overnight">,
             "equilibrium_confirmed": "...",
-            "total_assay_volume": "...",
+            "total_assay_volume": <number in uL> or null,
             "order_of_addition": "..." or null
         }},
         "detection": {{

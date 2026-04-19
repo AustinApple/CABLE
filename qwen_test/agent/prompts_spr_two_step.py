@@ -124,17 +124,17 @@ immobilization:
   - ligand_name: Name of the molecule immobilized on the chip (e.g., "his-tagged HDAC8", "Biotinylated AcrB")
   - strategy: Immobilization method (e.g., "Amine coupling", "SA-Biotin capture", "NTA-His capture")
   - density_ru: Immobilization level in Response Units (number or range, e.g., 2040, "6000-8000")
-  - concentration_for_immobilization: Concentration used for immobilization with units (e.g., "50 ug/mL"), null if not stated
+  - concentration_for_immobilization: Ligand concentration during immobilization as a number in micromolar (uM). Convert from other molar units: mM × 1000, nM / 1000. Return null if the paper reports mass units (e.g., ug/mL, mg/mL) without providing a molecular weight for conversion, or if not stated. Use ASCII 'u', not Unicode micro (µ/μ).
 
 analyte:
   - description: Description of the analyte being tested (e.g., "MC-207,110 (efflux pump inhibitor)")
-  - concentration_range: Concentration range tested with units (e.g., "12.5 uM - 200 uM (two-fold dilutions)")
+  - concentration_range: Concentration range tested as a string, with all concentrations normalized to micromolar (uM). Convert from other molar units: mM × 1000, nM / 1000. Use ASCII 'u', not Unicode micro (µ/μ). Examples: "12.5-200 uM", "0.0195-5 uM", "9-step, 2-fold, top 0.02 uM".
 
 assay_conditions:
-  - running_buffer_composition: Full buffer composition including pH and additives
+  - running_buffer_composition: Full buffer composition including additives (exclude pH; use the separate pH field)
   - pH: pH value as a number (e.g., 7.5, 6.0)
   - assay_type: One of: "Single Cycle Kinetics", "Multi Cycle Kinetics", "Single Cycle Steady-State Affinity", "Multi Cycle Steady-State Affinity", "Screening", "Unknown"
-  - assay_flow_rate: Object with "value" (number) and "unit" (one of: "uL/min", "ml/min", "uL/s")
+  - assay_flow_rate: Flow rate during analyte injection as a number in microliters per minute (uL/min). Convert from other units: mL/min × 1000, uL/s × 60. Use ASCII 'u', not Unicode micro (µ/μ).
   - temperature_c: Temperature in Celsius (number or null)
   - association_time_s: Association/contact time in seconds (number or null)
   - dissociation_time_s: Dissociation time in seconds (number or null)
@@ -155,17 +155,17 @@ Output format (JSON):
             "ligand_name": "...",
             "strategy": "...",
             "density_ru": ...,
-            "concentration_for_immobilization": "..." or null
+            "concentration_for_immobilization": <number in uM> or null
         }},
         "analyte": {{
             "description": "...",
-            "concentration_range": "..."
+            "concentration_range": "<range in uM, e.g., '12.5-200 uM'>"
         }},
         "assay_conditions": {{
             "running_buffer_composition": "...",
             "pH": ...,
             "assay_type": "...",
-            "assay_flow_rate": {{"value": ..., "unit": "..."}},
+            "assay_flow_rate": <number in uL/min>,
             "temperature_c": ... or null,
             "association_time_s": ... or null,
             "dissociation_time_s": ... or null,

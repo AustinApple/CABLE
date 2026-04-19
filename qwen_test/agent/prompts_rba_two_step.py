@@ -205,7 +205,7 @@ biological_preparation:
   - tissue_or_cell_line: Tissue, cell line, or expression system (e.g., "Rat striatal membranes", "CHO-K1 cells stably expressing hD2R")
   - species: Species origin (e.g., "Human", "Rat", "Mouse", "Guinea pig")
   - target_protein: Receptor or protein target, including isoform/subunit if specified (e.g., "Dopamine D2 receptor", "GABAA (α1β2γ2)")
-  - protein_concentration: Concentration of membrane protein or cells per well/tube with units (e.g., "50 µg/well", "100,000 cells/well")
+  - protein_concentration: Concentration of membrane protein or cells per well/tube with units. Heterogeneous field — may be mass-based (ug/well, ug/tube, ug/mL) or cell-count-based (cells/well). Use ASCII 'u', not Unicode micro (µ/μ). Examples: "50 ug/well", "100,000 cells/well".
 
 radioligand:
   - name: Name of the radioligand including isotope label (e.g., "[3H]-SCH 23390", "[125I]-RTI-55")
@@ -213,20 +213,19 @@ radioligand:
   - specific_activity: Object with:
       - value: Numeric value or range as string (e.g., 85.5, "81-86")
       - unit: One of: "Ci/mmol", "mCi/mmol", "GBq/mmol", "TBq/mmol"
-  - concentration_used: Concentration used in assay with units (e.g., "1 nM", "0.5 nM")
+  - concentration_used: Radioligand concentration in the assay as a number in nanomolar (nM). Convert from other molar units: pM / 1000, uM × 1000, mM × 1000000. Return null if the paper reports only a qualitative value (e.g., "~Kd concentration") or uses units that cannot be converted to nM. Use ASCII 'u', not Unicode micro (µ/μ).
   - kd_value: Object with:
-      - value: Numeric Kd value
-      - unit: One of: "nM", "µM", "pM"
+      - value: Kd value as a number in nanomolar (nM). Convert from other units: uM × 1000, pM / 1000. Use ASCII 'u', not Unicode micro (µ/μ).
       - source: One of: "Determined in this study", "Literature value", "Not specified"
 
 test_compound:
   - description: General description of the test compound(s) (e.g., "Small molecules", "Novel D2 antagonists")
-  - concentration_range: Range of concentrations tested (e.g., "0.1 nM – 10 µM", "10-point, half-log dilution")
+  - concentration_range: Range of concentrations tested as a string, with all concentrations normalized to micromolar (uM). Convert from other molar units: nM / 1000, pM / 1000000, mM × 1000. Use ASCII 'u', not Unicode micro (µ/μ). Examples: "0.0001-10 uM", "10-point, half-log dilution, top 10 uM".
   - vehicle_solvent: Solvent used and its final assay concentration (e.g., "DMSO, final 1%")
 
 nsb_definition:
   - compound_name: Unlabeled compound used to define nonspecific binding (e.g., "Haloperidol", "Naloxone")
-  - compound_concentration: Concentration of the NSB-defining compound with units (e.g., "10 µM")
+  - compound_concentration: NSB-defining compound concentration as a number in micromolar (uM). Convert from other molar units: nM / 1000, mM × 1000. Return null if units cannot be converted to uM. Use ASCII 'u', not Unicode micro (µ/μ).
   - selectivity_rationale: One of: "Target-selective", "Non-selective", "Not specified"
 
 assay_conditions:
@@ -234,11 +233,9 @@ assay_conditions:
   - buffer_composition: Full incubation buffer composition including salts and additives, excluding pH (e.g., "50 mM Tris-HCl, 120 mM NaCl, 5 mM MgCl2, 1 mM EDTA")
   - pH: pH of incubation buffer as a number (e.g., 7.4)
   - incubation_temperature: Temperature as string to allow "room temperature" (e.g., "25", "37", "room temperature")
-  - incubation_time: Object with:
-      - value: Duration as number or string (e.g., 60, "60-120")
-      - unit: One of: "min", "h"
+  - incubation_time: Duration of incubation as a number in minutes. Convert from other units: h × 60, s / 60. Use a string to capture ranges (e.g., "60-120"). Examples: 60, 90, "60-120".
   - equilibrium_confirmed: One of: "Yes", "No", "Not specified"
-  - total_assay_volume: Total assay volume with units (e.g., "200 µL", "1 mL")
+  - total_assay_volume: Total assay volume as a number in microliters (uL). Convert from other units: mL × 1000. Use ASCII 'u', not Unicode micro (µ/μ). Examples: 200, 500, 1000.
 
 separation_and_detection:
   - separation_method: One of: "Rapid vacuum filtration", "Harvester filtration", "Centrifugation", "SPA (no separation)", "FlashPlate (no separation)", "Other"
@@ -273,17 +270,17 @@ Output format (JSON):
             "name": "...",
             "isotope": "...",
             "specific_activity": {{"value": ..., "unit": "..."}},
-            "concentration_used": "...",
-            "kd_value": {{"value": ..., "unit": "...", "source": "..."}}
+            "concentration_used": <number in nM> or null,
+            "kd_value": {{"value": <number in nM>, "source": "..."}}
         }},
         "test_compound": {{
             "description": "...",
-            "concentration_range": "...",
+            "concentration_range": "<range in uM, e.g., '0.0001-10 uM'>",
             "vehicle_solvent": "..."
         }},
         "nsb_definition": {{
             "compound_name": "...",
-            "compound_concentration": "...",
+            "compound_concentration": <number in uM> or null,
             "selectivity_rationale": "..."
         }},
         "assay_conditions": {{
@@ -291,9 +288,9 @@ Output format (JSON):
             "buffer_composition": "...",
             "pH": ...,
             "incubation_temperature": "...",
-            "incubation_time": {{"value": ..., "unit": "..."}},
+            "incubation_time": <number in minutes, or string for ranges like "60-120">,
             "equilibrium_confirmed": "...",
-            "total_assay_volume": "..."
+            "total_assay_volume": <number in uL>
         }},
         "separation_and_detection": {{
             "separation_method": "...",

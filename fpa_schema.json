@@ -34,9 +34,9 @@
           "examples": ["BRD4 bromodomain 1 (BD1, residues 44–168)", "MDM2 (residues 1–118)", "Hsp90α N-terminal domain", "ERα ligand-binding domain", "XIAP BIR3 domain"]
         },
         "protein_concentration": {
-          "description": "The concentration of protein used in the assay, including units.",
-          "type": "string",
-          "examples": ["50 nM", "100 nM", "25 nM", "200 nM"]
+          "description": "The concentration of protein used in the assay, as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000, mM * 1000000. Return null if the paper reports mass units (e.g., mg/mL) without a molecular weight for conversion, or if not stated. Use ASCII 'u', not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [50, 100, 25, 200]
         },
         "protein_purity_method": {
           "description": "The purification method used, if reported.",
@@ -76,20 +76,17 @@
           "examples": [530, 580, 670, 520]
         },
         "concentration_used": {
-          "description": "The concentration of tracer used in the assay, including units.",
-          "type": "string",
-          "examples": ["5 nM", "10 nM", "1 nM", "20 nM", "~Kd concentration"]
+          "description": "The concentration of tracer used in the assay, as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000. Return null if only qualitative (e.g., '~Kd concentration') or if not stated. Use ASCII 'u', not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [5, 10, 1, 20]
         },
         "kd_value": {
           "description": "The known dissociation constant (Kd) of the tracer for the target protein, required for Ki calculation via Cheng-Prusoff.",
           "type": "object",
           "properties": {
             "value": {
-              "type": "number"
-            },
-            "unit": {
-              "type": "string",
-              "examples": ["nM", "µM", "pM"]
+              "description": "Kd as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000. Use ASCII 'u', not Unicode micro.",
+              "type": ["number", "null"]
             },
             "source": {
               "description": "Whether the tracer Kd was determined in-house or taken from literature.",
@@ -97,7 +94,7 @@
               "examples": ["Determined in this study", "Literature value", "Not specified"]
             }
           },
-          "required": ["value", "unit", "source"]
+          "required": ["value", "source"]
         }
       },
       "required": ["name", "tracer_type", "fluorophore", "concentration_used", "kd_value"]
@@ -112,9 +109,9 @@
           "examples": ["Small molecules", "Peptides", "Novel BRD4 inhibitors", "Stapled peptides targeting MDM2", "Fragment library"]
         },
         "concentration_range": {
-          "description": "The range of concentrations tested for the competition curve.",
+          "description": "The range of concentrations tested for the competition curve, as a string with all concentrations normalized to micromolar (uM). Convert from other molar units: mM * 1000, nM / 1000, pM / 1000000. Use ASCII 'u', not Unicode micro.",
           "type": "string",
-          "examples": ["0.1 nM – 100 µM", "10-point, half-log dilution, top 50 µM", "12 concentrations, 3-fold serial dilution", "Single point at 10 µM"]
+          "examples": ["0.0001-100 uM", "10-point, half-log dilution, top 50 uM", "12 concentrations, 3-fold serial dilution", "Single point at 10 uM"]
         },
         "vehicle_solvent": {
           "description": "The solvent used to dissolve the test compounds and its final assay concentration.",
@@ -141,7 +138,7 @@
         "low_signal_control": {
           "description": "The condition representing minimum polarization/anisotropy (fully displaced or free tracer).",
           "type": "string",
-          "examples": ["Tracer only, no protein", "Tracer + 100 µM unlabeled JQ1", "Tracer + 50 µM reference competitor"]
+          "examples": ["Tracer only, no protein", "Tracer + 100 uM unlabeled JQ1", "Tracer + 50 uM reference competitor"]
         },
         "positive_control_compound": {
           "description": "A reference compound of known affinity used to validate the assay.",
@@ -151,7 +148,7 @@
         "positive_control_expected_value": {
           "description": "The expected Ki or IC50 for the positive control compound, including units.",
           "type": ["string", "null"],
-          "examples": ["Ki = 50 nM", "IC50 = 0.6 µM", "Not specified"]
+          "examples": ["Ki = 50 nM", "IC50 = 0.6 uM", "Not specified"]
         },
         "z_prime_reported": {
           "description": "Whether the Z'-factor (assay quality metric) was reported and its value.",
@@ -206,19 +203,9 @@
           "examples": ["25", "37", "4", "room temperature"]
         },
         "incubation_time": {
-          "description": "The duration of incubation before reading.",
-          "type": "object",
-          "properties": {
-            "value": {
-              "type": ["string", "number"],
-              "examples": [30, 60, 120, "30-60", "overnight"]
-            },
-            "unit": {
-              "type": "string",
-              "enum": ["min", "h"]
-            }
-          },
-          "required": ["value", "unit"]
+          "description": "The duration of incubation before reading, as a number in minutes. Convert from other units: h * 60. Use a string for ranges (e.g., '30-60') or qualitative values (e.g., 'overnight').",
+          "type": ["string", "number"],
+          "examples": [30, 60, 120, "30-60", "overnight"]
         },
         "equilibrium_confirmed": {
           "description": "Whether the authors confirmed that binding had reached equilibrium (e.g., via a time course of FP signal).",
@@ -226,9 +213,9 @@
           "enum": ["Yes", "No", "Not specified"]
         },
         "total_assay_volume": {
-          "description": "The total volume of the assay mixture per well, including units.",
-          "type": "string",
-          "examples": ["20 µL", "25 µL", "50 µL", "100 µL", "10 µL"]
+          "description": "The total volume of the assay mixture per well, as a number in microliters (uL). Convert from other units: mL * 1000. Use ASCII 'u', not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [20, 25, 50, 100, 10]
         },
         "order_of_addition": {
           "description": "The order in which components were added and any pre-incubation steps.",

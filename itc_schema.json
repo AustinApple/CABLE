@@ -43,15 +43,16 @@
           ]
         },
         "concentration": {
-          "description": "Concentration of the protein in µM. Extract numeric value only.",
-          "type": "string",
+          "description": "Concentration of the protein in micromolar (uM). Extract numeric value only (no units). Convert from other molar units: mM × 1000, nM / 1000. Use a string to allow ranges (e.g., '75-225'). Return null if the paper reports it in mass units (e.g., mg/mL) without providing a molecular weight for conversion. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": ["string", "null"],
           "examples": [
             "15",
-            "75-225"
+            "75-225",
+            null
           ]
         },
         "solution_volume": {
-          "description": "Volume of the protein solution in µL. Extract numeric value only.",
+          "description": "Volume of the protein solution in microliters (uL). Extract numeric value only. Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
           "type": "string",
           "examples": [
             "3000",
@@ -83,11 +84,12 @@
           ]
         },
         "concentration": {
-          "description": "Concentration of the ligand in µM. Extract numeric value only.",
-          "type": "string",
+          "description": "Concentration of the ligand in micromolar (uM). Extract numeric value only (no units). Convert from other molar units: mM × 1000, nM / 1000. Use a string to allow ranges (e.g., '10-30'). Return null if the paper reports it in mass units (e.g., mg/mL) without providing a molecular weight for conversion. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": ["string", "null"],
           "examples": [
             "30",
-            "10-30"
+            "10-30",
+            null
           ]
         }
       },
@@ -110,9 +112,9 @@
         },
         "pH": {
           "description": "pH of the buffer.",
-          "type": "string",
+          "type": "number",
           "examples": [
-            "7.4"
+            7.4
           ]
         },
         "temperature_c": {
@@ -147,12 +149,12 @@
           "type": "object",
           "properties": {
             "first_volume": {
-              "description": "Volume of the first injection in µL. Extract numeric value only.",
+              "description": "Volume of the first injection in microliters (uL). Extract numeric value only. Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
               "type": "string",
               "examples": ["0.4", "1", "2"]
             },
             "subsequent_volume": {
-              "description": "Volume of subsequent injections in µL. Extract numeric value only.",
+              "description": "Volume of subsequent injections in microliters (uL). Extract numeric value only. Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
               "type": "string",
               "examples": ["2", "8", "10"]
             },

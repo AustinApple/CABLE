@@ -125,26 +125,26 @@ instrument:
 protein:
   - name: Name of the protein/macromolecule (e.g., "HSP90", "LpxC", "TTR")
   - location: Where the protein is loaded - "cell" or "syringe"
-  - concentration: Protein concentration with units (e.g., "31 µM", "50 uM", "10-20 uM")
-  - solution_volume: Volume of protein solution used (e.g., "1.3 mL", "300 µL", "200 uL")
+  - concentration: Protein concentration as a string in micromolar (uM), numeric value ONLY (no units in the value). Convert from other molar units: mM × 1000, nM / 1000. Use a string to allow ranges (e.g., "15", "75-225"). Return null if the paper reports mass units (e.g., mg/mL) without a molecular weight for conversion. Use ASCII 'u', not Unicode micro (µ/μ).
+  - solution_volume: Volume of protein solution as a string in microliters (uL), numeric value ONLY. Convert from other units: mL × 1000. Examples: "3000", "270". Use ASCII 'u', not Unicode micro (µ/μ).
 
 ligand:
   - name: Name of the small molecule/ligand (e.g., "compound 1", "radicicol", "tolcapone"), or null if not named
   - location: Where the ligand is loaded - "cell" or "syringe"
-  - concentration: Ligand concentration with units (e.g., "310 µM", "500 uM")
+  - concentration: Ligand concentration as a string in micromolar (uM), numeric value ONLY (no units in the value). Convert from other molar units: mM × 1000, nM / 1000. Use a string to allow ranges (e.g., "30", "10-30"). Return null if the paper reports mass units (e.g., mg/mL) without a molecular weight for conversion. Use ASCII 'u', not Unicode micro (µ/μ).
 
 assay_conditions:
   - buffer_composition: Full buffer composition excluding pH (e.g., "20 mM Tris-HCl, 1 mM EDTA"). Put concentration before chemical name.
-  - pH: pH value as a string (e.g., "7.5", "7.4")
-  - temperature_c: Temperature in Celsius as a string (e.g., "25", "37")
-  - stirring_speed: Stirring speed with units (e.g., "750 rpm", "1000 rpm"), or null if not stated
+  - pH: pH value as a number (e.g., 7.5, 7.4)
+  - temperature_c: Temperature in Celsius as a string, numeric value ONLY (e.g., "25", "37")
+  - stirring_speed: Stirring speed in rpm as a string, numeric value ONLY (e.g., "750", "1000"), or null if not stated
   - reference_cell_content: Content of the reference cell (e.g., "water", "buffer"), or null if not stated
   - control_method: Description of control/blank experiments (e.g., "Titration of ligand into buffer", "Heats of dilution subtracted"), or null if not stated
-  - injection_parameters: Object with injection details:
-    - first_volume: Volume of the first injection (e.g., "0.4 µL", "2 µL")
-    - subsequent_volume: Volume of subsequent injections (e.g., "2 µL", "10 µL")
-    - duration: Duration of each injection (e.g., "4 s", "10 s"), or null if not stated
-    - spacing: Time between injections (e.g., "120 s", "180 s", "3 min"), or null if not stated
+  - injection_parameters: Object with injection details (all values as strings with numeric value ONLY, no units):
+    - first_volume: Volume of the first injection in microliters (uL). Convert from other units: mL × 1000. Examples: "0.4", "2". Use ASCII 'u', not Unicode micro (µ/μ).
+    - subsequent_volume: Volume of subsequent injections in microliters (uL). Convert from other units: mL × 1000. Examples: "2", "10". Use ASCII 'u', not Unicode micro (µ/μ).
+    - duration: Duration of each injection in seconds. Convert from other units: min × 60. Examples: "4", "10". Use null if not stated.
+    - spacing: Time between injections in seconds. Convert from other units: min × 60. Examples: "120", "180". Use null if not stated.
     - total_count: Total number of injections as a string (e.g., "19", "25"), or null if not stated
 
 data_analysis:
@@ -157,26 +157,26 @@ Output format (JSON):
         "protein": {{
             "name": "...",
             "location": "cell" or "syringe",
-            "concentration": "...",
-            "solution_volume": "..." or null
+            "concentration": "<number in uM as string>" or null,
+            "solution_volume": "<number in uL as string>" or null
         }},
         "ligand": {{
             "name": "..." or null,
             "location": "cell" or "syringe",
-            "concentration": "..."
+            "concentration": "<number in uM as string>" or null
         }},
         "assay_conditions": {{
             "buffer_composition": "...",
-            "pH": "...",
-            "temperature_c": "...",
-            "stirring_speed": "..." or null,
+            "pH": <number>,
+            "temperature_c": "<number in Celsius as string>",
+            "stirring_speed": "<number in rpm as string>" or null,
             "reference_cell_content": "..." or null,
             "control_method": "..." or null,
             "injection_parameters": {{
-                "first_volume": "..." or null,
-                "subsequent_volume": "..." or null,
-                "duration": "..." or null,
-                "spacing": "..." or null,
+                "first_volume": "<number in uL as string>" or null,
+                "subsequent_volume": "<number in uL as string>" or null,
+                "duration": "<number in seconds as string>" or null,
+                "spacing": "<number in seconds as string>" or null,
                 "total_count": "..." or null
             }}
         }},

@@ -60,9 +60,9 @@
           "examples": ["~4900", "6000-8000", "4000", "800-1800"]
         },
         "concentration_for_immobilization": {
-          "description": "The concentration of the ligand used during the immobilization step, including units.",
-          "type": "string",
-          "examples": ["~1 µM", "50 μg/mL", "12.5 μg/mL"]
+          "description": "The concentration of the ligand used during the immobilization step, in micromolar (uM). Convert from other molar units: mM × 1000, nM / 1000. Return null if the paper reports it in mass units (e.g., ug/mL) without providing a molecular weight for conversion. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [1, 50, 12.5, null]
         }
       },
       "required": ["ligand_name", "strategy", "density_ru", "concentration_for_immobilization"]
@@ -77,9 +77,9 @@
           "examples": ["Fragments", "Peptides", "Small molecules", "Compounds", "SARS-CoV-2 S-trimer protein"]
         },
         "concentration_range": {
-          "description": "The range of concentrations tested, described as text.",
+          "description": "The range of concentrations tested, described as text. Normalize all concentrations to micromolar (uM) using: mM × 1000, nM / 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
           "type": "string",
-          "examples": ["2000 µM", "5000-19.5 nM", "0.2 μM–100 μM", "9-step, 2-fold, top 20 nM"]
+          "examples": ["2000 uM", "5-0.0195 uM", "0.2-100 uM", "9-step, 2-fold, top 0.02 uM"]
         }
       },
       "required": ["description", "concentration_range"]
@@ -103,16 +103,10 @@
           "enum": ["Single Cycle Kinetics", "Multi Cycle Kinetics", "Single Cycle Steady-State Affinity", "Multi Cycle Steady-State Affinity", "Screening", "Unknown"]
         },
         "assay_flow_rate": {
-          "description": "The flow rate used during the analyte injection. All values must be in µL/min.",
-          "type": "object",
-          "properties": {
-            "value": { "type": "number" },
-            "unit": {
-              "type": "string",
-              "const": "µL/min"
-            }
-          }
+          "description": "The flow rate used during analyte injection, in microliters per minute (uL/min).",
+          "type": "number"
         },
+
         "temperature_c": {
           "description": "The temperature of the experiment. Use a string to allow for 'room temperature'.",
           "type": "string",
