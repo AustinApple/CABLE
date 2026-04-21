@@ -27,13 +27,17 @@ OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
 
 ASSAY_DIRS = {
     "spr": {
-        "dir": os.path.join(BASE_DIR, "spr_extraction_results_two_step_bindingdb"),
+        "dir": os.path.join(BASE_DIR, "spr_extraction_results_two_step_bindingdb_standardized"),
         "label": "Surface Plasmon Resonance (SPR)",
     },
     "itc": {
-        "dir": os.path.join(BASE_DIR, "itc_extraction_results_two_step_bindingdb"),
+        "dir": os.path.join(BASE_DIR, "itc_extraction_results_two_step_bindingdb_standardized"),
         "label": "Isothermal Titration Calorimetry (ITC)",
     },
+    "fpa": {
+        "dir": os.path.join(BASE_DIR, "fpa_extraction_results_two_step_bindingdb_standardized"),
+        "label": "Fluorescence Polarization Assay (FPA)",
+    }
 }
 
 MODEL_CONFIG = {
@@ -117,8 +121,8 @@ def save_results(entries, embeddings, model_key, assay_type):
 
 @click.command()
 @click.option("--model", required=True, type=click.Choice(list(MODEL_CONFIG.keys())), help="Embedding model to use")
-@click.option("--assay_type", required=True, type=click.Choice(["itc", "spr", "all"]), help="Assay type to process")
-@click.option("--batch_size", default=32, show_default=True, help="Batch size for encoding")
+@click.option("--assay_type", required=True, type=click.Choice(["itc", "spr", "fpa", "all"]), help="Assay type to process")
+@click.option("--batch_size", default=128, show_default=True, help="Batch size for encoding")
 def main(model, assay_type, batch_size):
     entries = load_entries(assay_type)
     print(f"Loaded {len(entries)} entries with non-null structured_description")
