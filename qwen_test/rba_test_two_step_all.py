@@ -120,6 +120,7 @@ for pmid, pmid_group in pmid_groups:
     # Skip if already processed (resume support)
     # Re-run if any entry has empty original_paragraph or null structured_description
     json_path = output_dir / f"{pmid_str}.json"
+    existing_data = {}
     if json_path.exists():
         needs_rerun = False
         try:
@@ -136,6 +137,7 @@ for pmid, pmid_group in pmid_groups:
                     break
         except (json.JSONDecodeError, Exception):
             needs_rerun = True
+            existing_data = {}
 
         if not needs_rerun:
             print(f"\n[{pmid_count}/{total_pmids}] PMID {pmid_str}: already exists, skipping")
@@ -143,6 +145,14 @@ for pmid, pmid_group in pmid_groups:
             continue
         else:
             print(f"\n[{pmid_count}/{total_pmids}] PMID {pmid_str}: incomplete results, re-running")
+
+    # Build a lookup of existing assay_classification per DESCRIPTION (shared across entries)
+    existing_classification_by_desc = {}
+    for entry in existing_data.values():
+        desc = entry.get("DESCRIPTION")
+        classification = entry.get("assay_classification")
+        if desc and classification and desc not in existing_classification_by_desc:
+            existing_classification_by_desc[desc] = classification
 
     print(f"\n{'='*80}")
     print(f"Processing PMID {pmid_count}/{total_pmids}: {pmid_str} ({len(pmid_group)} pairs)")
@@ -160,19 +170,23 @@ for pmid, pmid_group in pmid_groups:
         print(f"  {description[:100]}...")
 
         # ========== STEP 0: Classify assay type from description (text-only) ==========
-        print(f"\n  [Step 0] Classifying assay type (text-only)...")
-        classification_prompt = get_rba_assay_classification_prompt(description)
-        classification_response, _, _ = agent._query_text_model(classification_prompt, max_new_tokens=512)
-        assay_classification = agent._parse_response(classification_response)
+        assay_classification = existing_classification_by_desc.get(description)
+        if assay_classification:
+            print(f"\n  [Step 0] Reusing existing classification from previous run")
+        else:
+            print(f"\n  [Step 0] Classifying assay type (text-only)...")
+            classification_prompt = get_rba_assay_classification_prompt(description)
+            classification_response, _, _ = agent._query_text_model(classification_prompt, max_new_tokens=512)
+            assay_classification = agent._parse_response(classification_response)
 
-        if assay_classification is None:
-            print(f"  [Step 0] WARNING - Could not parse classification, proceeding as RBA")
-            assay_classification = {
-                "is_radioligand_binding_assay": True,
-                "assay_category": "Uncertain",
-                "confidence": "low",
-                "reasoning": "Classification response could not be parsed"
-            }
+            if assay_classification is None:
+                print(f"  [Step 0] WARNING - Could not parse classification, proceeding as RBA")
+                assay_classification = {
+                    "is_radioligand_binding_assay": True,
+                    "assay_category": "Uncertain",
+                    "confidence": "low",
+                    "reasoning": "Classification response could not be parsed"
+                }
 
         is_rba = assay_classification.get("is_radioligand_binding_assay", True)
         assay_category = assay_classification.get("assay_category", "Unknown")
