@@ -9,9 +9,8 @@ The two-step pipeline extracts structured assay information from scientific pape
 ```
 Input (PMID + assay description)
         |
-  [Pre-conversion] MinerU: PDF -> Markdown (disk-cached, before model loads)
-        |
   [Step 1] Vision model reads PDF images -> original_paragraph
+        |     (falls back to MinerU markdown on-demand if vision misses)
         |
   [Step 2] Text-only model reads extracted text -> structured_description
         |
@@ -20,15 +19,20 @@ Output (JSON per PMID)
 
 ---
 
-## Step 0: Pre-conversion (MinerU)
+## PDF → Markdown Conversion (MinerU, on-demand)
 
-**File:** `pdf_utils.py` — `preconvert_pdfs()`
+**File:** `pdf_utils.py` — `pdf_to_markdown()`; called from `base_extraction_agent.py` — `_get_paper_markdown()` / `_get_full_paper_markdown()`.
 
-Before loading the Qwen model, all PDFs are converted to markdown using MinerU (a separate process). This avoids MinerU and Qwen competing for GPU VRAM.
+MinerU conversion is **lazy**: it runs only when a downstream step actually needs the markdown. The current test scripts (e.g. `rba_test_two_step_all.py`, `fpa_test_two_step.py`) do **not** call the bulk `preconvert_pdfs()` helper — every conversion is triggered on first use, then cached.
 
+Trigger points:
+1. **Step 1 markdown fallback** — `assay_extraction_agent_two_step.py:372` calls `_get_full_paper_markdown(pmid)` only when the vision model fails to locate the paragraph in PDF images.
+2. **Reference resolution** — `base_extraction_agent.py:615` calls `_get_paper_markdown(pmid)` to read the bibliography section when chasing cited papers.
+
+Implementation details:
 - Runs as a subprocess (`/data/mwu11/miniconda3/envs/mineru/bin/mineru`).
-- Results are disk-cached under `<pdf_dir>/markdown_cache/<pmid>/auto/<pmid>.md`.
-- Already-converted PDFs are skipped instantly.
+- Results are disk-cached under `<pdf_dir>/markdown_cache/<pmid>/auto/<pmid>.md`, and additionally memory-cached in `self._markdown_cache`. Each PMID is converted at most once per run.
+- `preconvert_pdfs()` (bulk pre-pass) is still available in `pdf_utils.py` for callers that want to convert everything up-front before the model is loaded — useful when MinerU and Qwen would otherwise contend for GPU VRAM — but it is opt-in.
 
 **Error handling:**
 | Condition | Behavior |
@@ -37,10 +41,6 @@ Before loading the Qwen model, all PDFs are converted to markdown using MinerU (
 | Subprocess times out (default 300s) | Prints timeout warning, returns `None` |
 | PDF file doesn't exist | Skips with log message |
 | Any other subprocess error | Prints error, returns `None` |
-
-The markdown output is used in two places later:
-1. **Reference resolution** — parsing the bibliography section to find cited paper PMIDs.
-2. **Text fallback** — if the vision model fails to find the paragraph in images, the full markdown text is tried as a fallback.
 
 ---
 
@@ -83,7 +83,7 @@ This step finds and extracts the relevant experimental paragraphs from the paper
 ### 1.2 Markdown Text Fallback
 
 If the vision model returns empty `original_paragraph`:
-- The full paper markdown (from MinerU pre-conversion) is sent to the model as text-only input.
+- MinerU is invoked on-demand (if it hasn't been run for this PMID already), and the full paper markdown is sent to the model as text-only input.
 - This catches cases where the vision model misses content (e.g., complex layouts, small text).
 
 ### 1.3 Supplementary Material Chase
