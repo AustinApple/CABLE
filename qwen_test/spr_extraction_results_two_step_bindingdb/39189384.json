@@ -1,0 +1,65 @@
+{
+    "51607681": {
+        "reactant_set_id": 51607681,
+        "pmid": 39189384,
+        "protein": "Transcriptional coactivator YAP1",
+        "ligand": {
+            "smiles": "COc1ccc(-c2cc(-c3ccccc3)nc3c2CC(=O)Nc2ccccc2-3)cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 738.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to YAP (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. SPR experiments were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C. The YAP protein (human, recombinant, His-tagged, 1-360, 100 μg/mL) was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% P20. The analyte, NSC682769, was dissolved in DMSO and diluted in running buffer to concentrations ranging from 0.1 to 100 μM. The association phase lasted 120 s, followed by a 120 s dissociation phase. Regeneration was achieved with 10 mM glycine, pH 2.0, for 30 s. Data were analyzed using Biacore T200 evaluation software. The dissociation constant (Kd) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. Strategy to find the suitable tethering site for the design of YAP PROTACs. (A) Structures of designed compounds built from four tethering sites: tethering site 1 shown in purple, tethering site 2 shown in red, tethering site 3 shown in blue, and tethering site 4 shown in black, each connected by small linker attached. (B) TEAD dependent luciferase reporter assay. HEK 293T cells were treated with dimethyl sulfoxide (DMSO), and designed compounds or NSC682769 for 24 h. Data are mean values of three independent experiments (n = 3) ± standard deviation (SD). Not significant (N.S.); *p < 0.05; **p < 0.01; ***p < 0.005; ****p < 0.001 (Student’s t-test)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "YAP protein (human, recombinant, His-tagged, 1-360)",
+                "strategy": "Amine coupling",
+                "density_ru": 1000,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "NSC682769",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

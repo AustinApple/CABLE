@@ -1,0 +1,68 @@
+{
+    "51580545": {
+        "reactant_set_id": 51580545,
+        "pmid": 38377827,
+        "protein": "Toll-like receptor 2",
+        "ligand": {
+            "smiles": "[O-][S+](Cc1ccc(F)cc1)c1ccc2cc(Br)ccc2n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3560.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TLR2 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) assay": "Biacore T100 was used to measure binding affinities. The active TLR2 protein was diluted in sodium acetate solution (pH 4.5) to a concentration of 20 μg/mL and then immobilized on a -COOH sensor chip by amine coupling to reach target densities of 9100 resonance units (RU). The running buffer was PBS containing 5 % DMSO. Data were recorded at 25 °C. Then, different concentrations of 5 were injected at a flow rate of 30 μL/min with a contact time of 60 s and a dissociation time of 60 s. Sensorgrams were analysed using BiacoreT100 Analysis Software. The KD affinity constant values were calculated by kinetic analysis or the steady-state affinity method.",
+            "Figure 12 caption": "Fig. 12. The binding affinity of 5 to TLR2 was analysed using SPR.",
+            "Results - 3.2. Surface plasmon resonance (SPR) assay": "The SPR assay was used to further confirm the interaction between the TLR2 protein and 5. As shown in Fig. 12, 5 exhibited concentration-dependent binding to the TLR2 protein. The KD value of the dissociation constant for 5 was 3.56 μM, indicating that 5 stably binds with TLR2, which is probably a target of 5.",
+            "Figure 12 sensorgram data": "The sensorgram in Fig. 12 shows response (RU) over time (s). The concentrations of compound 5 are labeled on the plot: 3 μM (green), 6.25 μM (yellow), 12.5 μM (blue), 25 μM (orange), and 100 μM (purple). The association phase lasts for 60 s (from 0 to 60 s), followed by a 60 s dissociation phase (from 60 to 120 s). The KD value is explicitly stated as 3.56 μM in the text.",
+            "Table 2": "Table 2: The binding free energy of TLR2 molecules through the MM-GBSA approach. Molecule: 5, Total ΔGbind(kcal/mol): -26.22, Standard Deviation: ±1.34. Molecule: Ligand, Total ΔGbind(kcal/mol): -34.02, Standard Deviation: ±0.83."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "-COOH",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TLR2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "9100",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 5",
+                "concentration_range": "3 μM - 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing 5 % DMSO",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BiacoreT100 Analysis Software"
+            }
+        }
+    }
+}

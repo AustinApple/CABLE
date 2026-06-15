@@ -1,0 +1,66 @@
+{
+    "51484948": {
+        "reactant_set_id": 51484948,
+        "pmid": 35688005,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Nc1nonc1-c1nc2ccccc2n1CC(=O)N\\N=C\\c1ccc(o1)-c1cccc(c1)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 main protease assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR assay was used to analyze the interaction between SARS-CoV-2 M^pro with compounds on a Biacore 8 K instrument (GE Healthcare). SARS-CoV-2 M^pro was immobilized on a sensor chip (CM5) via Amine Coupling Kit (GE Healthcare, Buckinghamshire, UK) at levels of approximately 10,000 response units (RU). The first flow channel without immobilized protein was set as a reference, and the compounds were injected at the concentration of 50 μM for screening and 0.2 μM–100 μM for binding study in a period of 60 s. Dissociation was measured for 100–200 s at a flow rate of 30 μL/min using the following assay running buffer: 10 mM phosphate buffer containing 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20 (pH 7.5). All of the data were analyzed through Biacore evaluation software (8 K version 1.0), and the curve was fitted with a 1:1 kinetics binding model.",
+            "Figure 2 caption": "Fig. 2. The discovery of SARS-CoV-2 M^pro inhibitors. (A) Screen the in-house library through SPR assay. (B) The chemical structure and K_D value of compound F8. (C) The dose-dependent curve of F8 against SARS-CoV-2 M^pro. (D) The similarity analysis of compound F8 with known SARS-CoV-2 M^pro inhibitors.",
+            "Figure 2B": "F8 SARS-CoV-2 M^pro K_D = 27.7 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV-2 M^pro",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds (including compound F8)",
+                "concentration_range": "0.2 μM–100 μM for binding study; 50 μM for screening"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer containing 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P20",
+                "pH": 7.5,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 100,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First flow channel without immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore evaluation software (8 K version 1.0)"
+            }
+        }
+    }
+}

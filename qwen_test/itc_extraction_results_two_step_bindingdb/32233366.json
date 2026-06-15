@@ -1,0 +1,60 @@
+{
+    "51259825": {
+        "reactant_set_id": 51259825,
+        "pmid": 32233366,
+        "protein": "Toll-like receptor 8",
+        "ligand": {
+            "smiles": "CSc1nnc(CCCO)n1-c1cc(C)c(C)c(C)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 225.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human TLR8 ectodomain by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Assay": "ITC experiments were done in a buffer composed of 25 mM MES pH 5.5, 0.20 M NaCl, and 5% DMSO at 298 K using a MicroCal iTC200 (GE Healthcare). The titration sequence included a single 0.4 μL injection followed by 18 injections, 2 μL each, with a spacing of 120 s between the injections. The titration conditions were as follows: 100 μM TH1027 into 10 μM hTLR8; 100 μM hTLR8 into 10 μM TH1027; 100 μM R848 into 10 μM hTLR8; 100 μM hTLR8 in the presence of 50 μM TH1027. OriginLab software (GE Healthcare) was used to analyze the raw ITC data.",
+            "Figure 1 caption": "Figure 1. Rational design of small-molecule TLR8 inhibitors. (A) X-ray crystal structure of the TLR8 protein (PDB: 3W3G). The side view of the unliganded conformation of the TLR8 ectodomain and the close-up view of the antagonist binding site of unliganded TLR8. (B) TH1027 dose-dependently inhibited R848- or ssRNA06-induced TLR8 activation with an IC50 of 30 nM. (C) ITC thermogram of TH1027 titrated into human TLR8 (hTLR8) to determine its binding affinity and stoichiometry (Kd = 225 nM). The raw data are presented on top and the integrated peak areas are shown and fitted below. The red line represents baseline for peak integration. (D) Specificity test for TH1027 using TLR-specific ligands to selectively activate the respective TLRs: 100 ng/mL of Pam3CSK4, 100 ng/mL of Pam2CSK4, 5 μg/mL of polyribosinic/polyribocytidylic acid [poly(I/C)], 20 ng/mL of LPS (lipopolysaccharide), 50 ng/mL of flagellin, 1 μg/mL of R848, 2 μg/mL of R848, and 0.5 μM of ODN2006 were used to selectively activate hTLR1/2, hTLR2/6, hTLR3, hTLR4, hTLR5, hTLR7, hTLR8, and hTLR9 cells, respectively (data are mean s.d.). (E) TNF-α and IL-8 mRNA levels in R848-treated HEK-Blue TLR8 cells in the presence or absence of 1 μM TH1027 or the negative control 2a (1 μM). Data are the average quantification of three independent biological replicates (data are mean s.d.)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hTLR8",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "TH1027",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM MES, 0.20 M NaCl, 5% DMSO",
+                "pH": "5.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

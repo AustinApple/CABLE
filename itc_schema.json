@@ -1,0 +1,222 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/itc_experiment_conditions_v2.1.schema.json",
+  "title": "ITC Experiment Conditions",
+  "description": "A schema to store experimental conditions for an Isothermal Titration Calorimetry (ITC) assay, emphasizing reagents over physical location.",
+  "type": "object",
+  "properties": {
+    "pmid": {
+      "description": "The PubMed ID of the publication.",
+      "type": "string"
+    },
+    "instrument": {
+      "description": "Details about the ITC instrument used.",
+      "type": "object",
+      "properties": {
+        "model": {
+          "description": "Brand and model of the ITC instrument used.",
+          "type": "string",
+          "examples": [
+            "MicroCal VP-ITC",
+            "MicroCal PEAQ-ITC"
+          ]
+        }
+      },
+      "required": [
+        "model"
+      ]
+    },
+    "protein": {
+      "description": "Details about the protein/macromolecule used in the experiment.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the protein.",
+          "type": "string"
+        },
+        "location": {
+          "description": "Physical location of the protein during the experiment.",
+          "type": "string",
+          "enum": [
+            "cell",
+            "syringe"
+          ]
+        },
+        "concentration": {
+          "description": "Concentration of the protein in micromolar (uM). Extract numeric value only (no units). Convert from other molar units: mM × 1000, nM / 1000. Use a string to allow ranges (e.g., '75-225'). Return null if the paper reports it in mass units (e.g., mg/mL) without providing a molecular weight for conversion. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": ["string", "null"],
+          "examples": [
+            "15",
+            "75-225",
+            null
+          ]
+        },
+        "solution_volume": {
+          "description": "Volume of the protein solution in microliters (uL). Extract numeric value only. Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": "string",
+          "examples": [
+            "3000",
+            "270"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "location",
+        "concentration",
+        "solution_volume"
+      ]
+    },
+    "ligand": {
+      "description": "Details about the small molecule/ligand used in the experiment.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the ligand.",
+          "type": "string"
+        },
+        "location": {
+          "description": "Physical location of the ligand during the experiment.",
+          "type": "string",
+          "enum": [
+            "cell",
+            "syringe"
+          ]
+        },
+        "concentration": {
+          "description": "Concentration of the ligand in micromolar (uM). Extract numeric value only (no units). Convert from other molar units: mM × 1000, nM / 1000. Use a string to allow ranges (e.g., '10-30'). Return null if the paper reports it in mass units (e.g., mg/mL) without providing a molecular weight for conversion. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": ["string", "null"],
+          "examples": [
+            "30",
+            "10-30",
+            null
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "location",
+        "concentration"
+      ]
+    },
+    "assay_conditions": {
+      "description": "Conditions under which the titration was performed.",
+      "type": "object",
+      "properties": {
+        "buffer_composition": {
+          "description": "Composition of the buffer. Put concentration before chemical. Exclude pH.",
+          "type": "string",
+          "examples": [
+            "10 mM Hepes, 150 mM NaCl, 3mM EDTA"
+          ]
+        },
+        "pH": {
+          "description": "pH of the buffer.",
+          "type": "number",
+          "examples": [
+            7.4
+          ]
+        },
+        "temperature_c": {
+          "description": "Temperature of the experiment in °C. Extract numeric value only.",
+          "type": "string",
+          "examples": [
+            "25"
+          ]
+        },
+        "stirring_speed": {
+          "description": "Stirring speed in rpm. Extract numeric value only.",
+          "type": "string",
+          "examples": [
+            "1000"
+          ]
+        },
+        "reference_cell_content": {
+          "description": "Content of the reference cell (usually water or buffer).",
+          "type": "string"
+        },
+        "control_method": {
+          "description": "Description of control experiments/blanks performed to correct for heat of dilution.",
+          "type": "string",
+          "examples": [
+            "Titration of ligand into buffer",
+            "Titration of buffer into protein solution",
+            "Subtracted constant heat of injection"
+          ]
+        },
+        "injection_parameters": {
+          "description": "Specifics regarding the injection volumes and timing.",
+          "type": "object",
+          "properties": {
+            "first_volume": {
+              "description": "Volume of the first injection in microliters (uL). Extract numeric value only. Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
+              "type": "string",
+              "examples": ["0.4", "1", "2"]
+            },
+            "subsequent_volume": {
+              "description": "Volume of subsequent injections in microliters (uL). Extract numeric value only. Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
+              "type": "string",
+              "examples": ["2", "8", "10"]
+            },
+            "duration": {
+              "description": "Duration of each injection in s. Extract numeric value only.",
+              "type": "string",
+              "examples": ["4", "16", "20"]
+            },
+            "spacing": {
+              "description": "Time between each injection in s. Extract numeric value only.",
+              "type": "string",
+              "examples": ["120", "150", "180"]
+            },
+            "total_count": {
+              "description": "Total number of injections. Extract numeric value only.",
+              "type": "string",
+              "examples": ["19", "20", "25"]
+            }
+          },
+          "required": [
+            "first_volume",
+            "subsequent_volume",
+            "duration",
+            "spacing",
+            "total_count"
+          ]
+        }
+      },
+      "required": [
+        "buffer_composition",
+        "pH",
+        "temperature_c",
+        "stirring_speed",
+        "reference_cell_content",
+        "control_method",
+        "injection_parameters"
+      ]
+    },
+    "data_analysis": {
+      "description": "Details about how the data was modeled.",
+      "type": "object",
+      "properties": {
+        "binding_model": {
+          "description": "The binding model used to fit the ITC data.",
+          "type": "string",
+          "examples": [
+            "one-site",
+            "two-sites"
+          ]
+        }
+      },
+      "required": [
+        "binding_model"
+      ]
+    }
+  },
+  "required": [
+    "pmid",
+    "instrument",
+    "protein",
+    "ligand",
+    "assay_conditions",
+    "data_analysis"
+  ]
+}

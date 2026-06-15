@@ -1,0 +1,131 @@
+{
+    "50434006": {
+        "reactant_set_id": 50434006,
+        "pmid": 26363505,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)c1cc(ccc1-c1c2ccc(O)cc2oc2cc(=O)ccc12)N=C=S)[C@@H](C)O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 69.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to the Keap1 (321 to 609 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) cells by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "2.6. Determination of dissociation equilibrium constant (Kd) by surface plasmon resonance (SPR) Purified Keap1 protein was diluted to 80 μg/mL with 10 mM sodium acetate (pH 5.0) and injected for 7 min at a 10 μL/min flow rate on a CMS sensor chip for immobilization at 25 °C with running buffer PBS-P (10 mM phosphate pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20) using a Biacore T200 instrument. Blank surface was used as a control on flow channels 1 and 3. Keap1 was immobilized to flow channels 2 and 4 after sensor surface activation by a mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) followed by ethanolamine blocking on unoccupied surface area. Keap1 immobilization levels of flow channels 2 and 4 were ~6560 RU and ~5700 RU, respectively. Compound solutions with a series of increasing concentrations were applied to all four channels at a 30 μL/min flow rate with assay buffer (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20, 2 mM TCEP, and 2% DMSO), and real-time response units (RU) were monitored. Sensorgrams were analyzed using the Biacore T200 evaluation software 2.0. Data were referenced with blank channel RU values, and the Kd values were determined by fitting the reference subtracted data to a single rectangular hyperbolic curve equation (Eq. (1)) where y is the RU, ymax is the maximum RU, and x is the compound concentration. Kinetic fittings were done by 1 to 1 binding equation embedded in the Biacore T200 evaluation software 2.0. y = ymax * x / (Kd + x) (1)",
+            "Table 1": "Table 1 Inhibition of association of Nrf2 peptide with Keap1 (Kelch domain) using fluorescence anisotropy assay and dissociation equilibrium constant (Kd) by surface plasmon resonance (SPR) assay. ... (Table content as shown in the image, including columns for Cmpd., R, R¹, R², R³, IC50 (nM) (95% CL), and Kd (nM) ± SD) a ND: Not determined. b 95% confidence level, as calculated by Graphpad Prism 6.1; fluorescence anisotropy experiments were performed in triplicate. c Standard deviation from three independent experiments.",
+            "Figure 3 caption": "Fig. 3. Docking and WATSite results for compounds (A) 8, (B) 12e, (C) 16b, (D) 16a, (E) 12a and (F) 7. For each molecule, the Glide docking score is shown, and the measured IC50 is noted in parentheses. The template selected by the ensemble docking procedure is shown below the docking score for each compound. The locations of the waters (shown as red spheres in Fig. 2A) in the crystal structure 4IQK are shown as gray spheres in each frame. High occupancy (>80%) hydration sites predicted by WATSite that were within 2.0 Å of crystal waters are shown as red spheres. The ΔG of the hydration sites are shown in kcal/mol next to each site; a negative value indicates a favorable hydration site, and a positive value indicates an unfavorable site. The crystal structures of compound 12e (PDB: 4XMB; Panel B) and 7 (PDB: 4IQK; panel F) are shown in smaller orange sticks (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Keap1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "6560 and 5700",
+                "concentration_for_immobilization": "80 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (not specified in text)",
+                "concentration_range": "Series of increasing concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20, 2 mM TCEP, and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 420,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank surface on flow channels 1 and 3",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0"
+            }
+        }
+    },
+    "50434007": {
+        "reactant_set_id": 50434007,
+        "pmid": 26363505,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)CNC(=O)[C@@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)c1cc(ccc1-c1c2ccc(O)cc2oc2cc(=O)ccc12)N=C=S)[C@@H](C)O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to the Keap1 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 2.6 Determination of dissociation equilibrium constant (Kd) by surface plasmon resonance (SPR)": "Purified Keap1 protein was diluted to 80 μg/mL with 10 mM sodium acetate (pH 5.0) and injected for 7 min at a 10 μL/min flow rate on a CMS sensor chip for immobilization at 25 °C with running buffer PBS-P (10 mM phosphate pH 7.4, 2.7 mM KCl, 137 mM NaCl, and 0.05% surfactant P-20) using a Biacore T200 instrument. Blank surface was used as a control on flow channels 1 and 3. Keap1 was immobilized to flow channels 2 and 4 after sensor surface activation by a mixture of 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride (EDC)/N-hydroxysuccinimide (NHS) followed by ethanolamine blocking on unoccupied surface area. Keap1 immobilization levels of flow channels 2 and 4 were ~6560 RU and ~5700 RU, respectively. Compound solutions with a series of increasing concentrations were applied to all four channels at a 30 μL/min flow rate with assay buffer (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20, 2 mM TCEP, and 2% DMSO), and real-time response units (RU) were monitored. Sensorgrams were analyzed using the Biacore T200 evaluation software 2.0. Data were referenced with blank channel RU values, and the Kd values were determined by fitting the reference subtracted data to a single rectangular hyperbolic curve equation (Eq. (1)) where y is the RU, ymax is the maximum RU, and x is the compound concentration. Kinetic fittings were done by 1 to 1 binding equation embedded in the Biacore T200 evaluation software 2.0. y = ymax * x / (Kd + x)",
+            "Results - 3.2 In vitro assays": "A subset of the compounds with demonstrated ability to bind to the Kelch domain via the FP assays was tested in a surface plasmon resonance (SPR) assay. The Kelch domain of Keap1 was immobilized on a CM5 sensor chip. Compound solutions of increasing concentrations were applied to the protein-bound chip, and response units were measured (see Supplementary information and Table 1). The experiments were conducted three separate times. The Nrf2 peptide (FITC-LDEETGEFL-NH2) alone was tested by SPR as a control. The determined Kd value was 68.9 nM, which is slightly weaker than the reported Kd (25 nM). Approximately 60% of captured Keap1 was active based on the comparison between calculated RUmax and achieved RUmax:",
+            "Table 1": "Inhibition of association of Nrf2 peptide with Keap1 (Kelch domain) using fluorescence anisotropy assay and dissociation equilibrium constant (Kd) by surface plasmon resonance (SPR) assay. | Cmpd. | R | R¹ | R² | R³ | IC50 (nM) (95% CL)ᵇ | Kd (nM) ± SDᶜ | |---|---|---|---|---|---|---| | 7 | p-OCH₃ | p-OCH₃ | H | H | 940 (850–1300) | 1700 ± 120 | | 8 | p-OCH₃ | p-OCH₃ | CH₂COOH | CH₂COOH | 24 (19–31) | 20 ± 3 | | 11a | H | H | H | H | >25,000 | NDᵃ | | 11b | p-OCH₃ | p-OCH₃ | H | H | 2300 ± 110 | NDᵃ | | 11c | p-Cl | p-Cl | H | H | >25,000 | NDᵃ | | 11d | m-COOH | m-COOH | H | H | >25,000 | NDᵃ | | 11e | p-CF₃ | p-CF₃ | H | H | >25,000 | NDᵃ | | 11f | m-CF₃ | m-CF₃ | H | H | >25,000 | NDᵃ | | 11g | m,p-di OCH₃ | m,p-di OCH₃ | H | H | 1100 (800–1500) | NDᵃ | | 11h | p-CH₃ | p-CH₃ | H | H | 890 (480–1650) | NDᵃ | | 11i | p-N(CH₃)₂ | p-N(CH₃)₂ | H | H | 190 (84–444) | NDᵃ | | 11j | p-F | p-F | H | H | 660 (172–2565) | NDᵃ | | 12a | p-OCH₃ | p-OCH₃ | CH₂COOEt | CH₂COOEt | >25,000 | >250,000 | | 12b | p-OCH₃ | p-OCH₃ | CH₂CH=CH₂ | CH₂CH=CH₂ | >25,000 | NDᵃ | | 12c | p-OCH₃ | p-OCH₃ | CH₃ | CH₃ | >25,000 | NDᵃ | | 12d | p-OCH₃ | p-OCH₃ | Et | Et | >25,000 | NDᵃ | | 12e | p-OCH₃ | p-OCH₃ | CH₂CONH₂ | CH₂CONH₂ | 63 (52–85) | 44 ± 8 | | 12f | p-OCH₃ | p-OCH₃ | CH₂C≡CH | CH₂C≡CH | >25,000 | NDᵃ | | 14a | H | H | H | H | >25,000 | NDᵃ | | 14b | p-OCH₃ | p-OCH₃ | H | H | >25,000 | NDᵃ | | 14c | H | p-CF₃ | H | H | >25,000 | NDᵃ | | 14d | p-OCH₃ | m-OCH₃ | H | H | 410 (150–1100) | NDᵃ | | 16a | p-OCH₃ | p-OCH₃ | H | CH₂COOEt | 85 (45–160) | 400 ± 84 | | 16b | p-OCH₃ | p-OCH₃ | H | CH₂COOH | 61 (46–82) | 110 ± 11 |",
+            "Figure 3 caption": "Fig. 3. Docking and WATSite results for compounds (A) 8, (B) 12e, (C) 16b, (D) 16a, (E) 12a and (F) 7. For each molecule, the Glide docking score is shown, and the measured IC50 is noted in parentheses. The template selected by the ensemble docking procedure is shown below the docking score for each compound. The locations of the waters (shown as red spheres in Fig. 2A) in the crystal structure 4IQK are shown as gray spheres in each frame. High occupancy (>80%) hydration sites predicted by WATSite that were within 2.0 Å of crystal waters are shown as red spheres. The ΔG of the hydration sites are shown in kcal/mol next to each site; a negative value indicates a favorable hydration site, and a positive value indicates an unfavorable site. The crystal structures of compound 12e (PDB: 4XMB; Panel B) and 7 (PDB: 4IQK; panel F) are shown in smaller orange sticks (For interpretation of the references to color in this figure legend, the reader is referred to the web version of this article.)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Keap1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "6560-5700",
+                "concentration_for_immobilization": "80 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions with a series of increasing concentrations",
+                "concentration_range": "Not specified"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20, 2 mM TCEP, and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank surface used as a control on flow channels 1 and 3",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 2.0"
+            }
+        }
+    }
+}

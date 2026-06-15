@@ -1,0 +1,912 @@
+{
+    "51197202": {
+        "reactant_set_id": 51197202,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(N(Cc1cn(Cc2ccc(cc2)-c2ccccc2)nn1)Cc1cn(Cc2ccc(cc2)-c2ccccc2)nn1)c1cn(Cc2ccc(cc2)-c2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 72.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197203": {
+        "reactant_set_id": 51197203,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "O=C1N(CCCn2cc(CN(Cc3cn(CCCN4C(=O)c5ccccc5C4=O)nn3)Cc3cn(CCCN4C(=O)c5ccccc5C4=O)nn3)nn2)C(=O)c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 89.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197204": {
+        "reactant_set_id": 51197204,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "O=C1c2ccccc2C(=O)c2cc(Cn3cc(CN(Cc4cn(Cc5ccc6C(=O)c7ccccc7C(=O)c6c5)nn4)Cc4cn(Cc5ccc6C(=O)c7ccccc7C(=O)c6c5)nn4)nn3)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 107.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197205": {
+        "reactant_set_id": 51197205,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "O=C1c2ccccc2C(=O)c2cc(Cn3cc(COCc4cn(Cc5ccc6C(=O)c7ccccc7C(=O)c6c5)nn4)nn3)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197206": {
+        "reactant_set_id": 51197206,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(CCc1cn(Cc2ccc3ccccc3c2)nn1)Cc1cn(Cc2ccc3ccccc3c2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 84.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197207": {
+        "reactant_set_id": 51197207,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(CCc1cn(Cc2cccc3ccccc23)nn1)Cc1cn(Cc2cccc3ccccc23)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 191.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197208": {
+        "reactant_set_id": 51197208,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(N(Cc1cn(Cc2cccc3ccccc23)nn1)Cc1cn(Cc2cccc3ccccc23)nn1)c1cn(Cc2cccc3ccccc23)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 201.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197209": {
+        "reactant_set_id": 51197209,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "O=C1N(CCCn2cc(COCc3cn(CCCN4C(=O)c5ccccc5C4=O)nn3)nn2)C(=O)c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197211": {
+        "reactant_set_id": 51197211,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(N(Cc1cn(Cc2ccc3ccccc3c2)nn1)Cc1cn(Cc2ccc3ccccc3c2)nn1)c1cn(Cc2ccc3ccccc3c2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 55.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197213": {
+        "reactant_set_id": 51197213,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C[C@@H]1C[C@H]2O[C@@H]2\\C=C/C=C/C(=O)Cc2c(Cl)c(O)cc(O)c2C(=O)O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197214": {
+        "reactant_set_id": 51197214,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(OCc1cn(Cc2ccc(cc2)-c2ccccc2)nn1)c1cn(Cc2ccc(cc2)-c2ccccc2)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 237.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197215": {
+        "reactant_set_id": 51197215,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "O=C(c1ccccc1)c1ccc(Cn2cc(COCc3cn(Cc4ccc(cc4)C(=O)c4ccccc4)nn3)nn2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197216": {
+        "reactant_set_id": 51197216,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "C(OCc1cn(Cc2cccc3ccccc23)nn1)c1cn(Cc2cccc3ccccc23)nn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    },
+    "51197217": {
+        "reactant_set_id": 51197217,
+        "pmid": 23770448,
+        "protein": "Heat shock protein HSP 90-beta",
+        "ligand": {
+            "smiles": "O=C(c1ccccc1)c1ccc(Cn2cc(CN(Cc3cn(Cc4ccc(cc4)C(=O)c4ccccc4)nn3)Cc3cn(Cc4ccc(cc4)C(=O)c4ccccc4)nn3)nn2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 151.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Hsp90 by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance analyses": "SPR analyses were performed as described elsewhere [30]. Briefly, SPR analyses were performed using a Biacore 3000 optical biosensor equipped with research-grade CM5 sensor chips (GE Healthcare). Using this platform, two separate recombinant Hsp90 surfaces, a BSA surface and an unmodified reference surface, were prepared for simultaneous analyses. Proteins (100 μg mL−1 in 10 mM sodium acetate, pH 5.0) were immobilized on individual sensor chip surfaces at a flow rate of 5 μL min−1 using standard amine-coupling protocols to obtain densities of 8–12 kRU. Compounds 1a–f, 2a–f, 3a–f and 4a–f, as well as radicicol used as positive controls, were dissolved in 100% DMSO to obtain 4 mM solutions, and diluted 1:200 (v/v) in PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4) to a final DMSO concentration of 0.5%. Compounds concentration series were prepared as 2-fold dilutions into running buffer; for each sample, the complete binding study was performed using a six-point concentration series, typically spanning 0.025–1 μM, and triplicate aliquots of each compound concentration were dispensed into single-use vials. Included in each analysis were multiple blank samples of running buffer alone. Binding experiments were performed at 25 °C, using a flow rate of 50 μL min−1, with 60 s monitoring of association and 200 s monitoring of dissociation. Simple interactions were adequately fit to a single-site bimolecular interaction model (A + B = AB), yielding a single KD. Sensorgram elaborations were performed using the Biaevaluation software provided by GE Healthcare.",
+            "Figure 8 caption": "Fig. 8. SPR results. Sensorgrams obtained by injecting different concentrations (from 0.020 to 1 μM) of compounds 1a–f, 2a–f, 3a–f, and 4a–f on immobilized Hsp90.",
+            "Table 1": "Table 1 Thermodynamic and kinetic constants measured by SPR for the interaction between tested compounds and immobilized Hsp90. Compound KD (nM) Ka (1/s) × 10³ 1a NBª 1b NBª 1c NBª 1d 191 ± 83 2.78 ± 0.23 1e 84 ± 27 2.05 ± 0.42 1f NBª 2a 3.6 ± 0.9 0.08 ± 0.02 2b 2.8 ± 0.7 0.05 ± 0.01 2c 3.5 ± 1.1 0.07 ± 0.02 2d 10.3 ± 2.4 0.12 ± 0.04 2e NBª 2f 237 ± 76 3.12 ± 0.33 3a NBª 3b NBª 3c NBª 3d NBª 3e NBª 3f NBª 4a 151 ± 38 2.36 ± 0.28 4b 107 ± 26 2.15 ± 0.31 4c 89 ± 13 1.05 ± 0.21 4d 201 ± 83 2.33 ± 0.28 4e 55 ± 8 0.28 ± 0.09 4f 72 ± 11 0.35 ± 0.12 Radicicol 2.2 ± 0.5 0.15 ± 0.03 ª NB: no binding.",
+            "References section - Reference [30]": "F. Dal Piaz, A. Vassallo, L. Lepore, A. Tosco, A. Bader, N. De Tommasi, Sesterterpenes as tubulin tyrosine ligase inhibitors. First insight of structure–activity relationships and discovery of new lead, J. Med. Chem. 52 (2009) 3814–3828."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant Hsp90",
+                "strategy": "Amine coupling",
+                "density_ru": "8-12",
+                "concentration_for_immobilization": "100 μg mL−1"
+            },
+            "analyte": {
+                "description": "Compounds 1a–f, 2a–f, 3a–f, 4a–f, and radicicol (positive control)",
+                "concentration_range": "0.025–1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (10 mM NaH2PO4, 150 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified reference surface and BSA surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biaevaluation software"
+            }
+        }
+    }
+}

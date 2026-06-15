@@ -1,0 +1,62 @@
+{
+    "51571859": {
+        "reactant_set_id": 51571859,
+        "pmid": 36735271,
+        "protein": "Serine/threonine-protein kinase PknB",
+        "ligand": {
+            "smiles": "CC(C)Oc1cc(C2CCNCC2)c(C)cc1Nc1nc(ncc1Cl)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Mycobacterium tuberculosis PknB assessed as dissociation constant at 600 uM by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "The purified protein PknB (30 μM) and compound 5a (600 μM) were both prepared by using ITC buffer (20 mM tris pH 7.5, 200 mM NaCl) with an adjusted DMSO concentration in the protein solution to 0.6%. The resulting samples were all thoroughly degassed before titration. ITC measurements were performed by a nanoITC instrument (TA Instruments Ltd.). Experiments were carried out in the sample cell, which was heated to a temperature of 25 °C, the interval of continuous injection was set as 180 s, and the stirring speed was 300 rpm. The compound was added to the syringe and titrated 20 times with 2.5 μL each. The data were analyzed by Nano Analyze software (Microcal, LLC ITC 200) and fitted by a binding site predicted model.",
+            "Figure 4 caption": "Figure 4. (A) First derivative of the melt curves of PknB with compound 5a or dimethyl sulfoxide (DMSO); (B) ITC thermograms and isotherms to assess the binding of 5a to PknB; and (C) the alignment of 5a (cyan sticks) with a reported PknB inhibitor (PDB: 6B2P, yellow sticks).",
+            "Results - ITC assay description": "Furthermore, the isothermal titration calorimetry (ITC) assay was operated to measure the binding intensity of compound 5a to PknB. The measurements showed that the binding of compound 5a to PknB results in a negative Gibbs free energy of −3.1 kcal/mol and a K_D value of 9.4 μM (Figure 4B).",
+            "Figure 4B data": "The ITC thermogram in Figure 4B shows a series of exothermic peaks corresponding to the injections of compound 5a into the PknB solution. The binding isotherm (lower curve in Figure 4B) is fitted to a single-site binding model, yielding a K_D value of 9.4 ± 0.2 μM, as indicated on the graph."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "PknB",
+                "location": "cell",
+                "concentration": "30",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 5a",
+                "location": "syringe",
+                "concentration": "600"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM tris, 200 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

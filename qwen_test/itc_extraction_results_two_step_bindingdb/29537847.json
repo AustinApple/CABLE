@@ -1,0 +1,722 @@
+{
+    "50765758": {
+        "reactant_set_id": 50765758,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "OC(=O)c1ccnc2cc([nH]c12)[C@@H](OCCN1CCCCC1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 60.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765759": {
+        "reactant_set_id": 50765759,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "OC(=O)c1ccnc2cc([nH]c12)C(OCC1CCC(F)(F)CC1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 470.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765760": {
+        "reactant_set_id": 50765760,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "CN1CCCC1CCOC(c1cc2nccc(C(O)=O)c2[nH]1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 150.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765761": {
+        "reactant_set_id": 50765761,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "OC(=O)c1ccnc2cc([nH]c12)C(OCCCN1CCCCC1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 250.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765762": {
+        "reactant_set_id": 50765762,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "CC(C)c1cc([nH]n1)C(=O)N1CC[C@H](C1)NC(=O)C1CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765764": {
+        "reactant_set_id": 50765764,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "CC(C)c1cc([nH]n1)C(=O)N1CC[C@@H](C1)NC(=O)C1CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765783": {
+        "reactant_set_id": 50765783,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "CCCOC(c1cc2nccc(C(O)=O)c2[nH]1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 530.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765784": {
+        "reactant_set_id": 50765784,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "OC(=O)c1ccnc2cc([nH]c12)[C@H](OCCN1CCCCC1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 220.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765786": {
+        "reactant_set_id": 50765786,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "OC(=O)c1ccnc2cc([nH]c12)C(OCCN1CCC(F)(F)CC1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 210.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765788": {
+        "reactant_set_id": 50765788,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "Cn1ccnc1CCOC(c1cc2nccc(C(O)=O)c2[nH]1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 410.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765789": {
+        "reactant_set_id": 50765789,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "CCN(CCN(C)C)C(=O)CNCc1cc(ccn1)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "50765795": {
+        "reactant_set_id": 50765795,
+        "pmid": 29537847,
+        "protein": "Lysine-specific demethylase 5A",
+        "ligand": {
+            "smiles": "OC(=O)c1ccnc2cc([nH]c12)C(OCCN1CCCCC1)c1ccccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 180.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to ARID/PHD1/Zn binding domain truncated human N-terminal His-SUMO-tagged KDM5A (1 to 588 residues) expressed in Escherichia coli by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Horton, J. R.; Liu, L.; Gale, M.; Wu, L.; Shanks, J. R.; Zhang, X.; Webber, P. J.; Bell, J. S.; Kales, S. C.; Mott, B. T.; Rai, G.; Jansen, D. J.; Henderson, M. J.; Urban, D. J.; Hall, M. D.; Simeonov, A.; Maloney, D. J.; Johns, M. A.; Fu, H.; Jadhav, A.; Vertino, P. M.; Yan, Q.; Cheng, X. Structural basis for KDM5A histone lysine demethylase inhibition by diverse compounds. J. Med. Chem. 2016, 59, 769–781.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC experiments were carried out as described.38 Briefly, enzyme was dialyzed extensively against 20 mM HEPES, pH 8.0, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP) supplemented with 500 μM MnCl2 and 10% (v/v) DMSO, and the dialysate was used to prepare fresh working solutions of various inhibitors. The manganese ion was utilized instead of iron since it would not oxidize during the time frame of these experiments. Titration was carried out at 0.42–1.1 mM compound [I] concentration and enzyme [E] concentration of 25–80 μM. Compounds were injected into protein or buffer (to measure the heat of dilution) in 25 steps of 4 μL volume using a MicroCal Auto-iTC200. Binding affinity (Kb), stoichiometry (N), and binding enthalpy (ΔH) were determined by fitting the data using the ITC data analysis module of Origin version 7.0 (OriginLab Corp.). For each ITC experiment, we performed a test run to figure out the optimal enzyme and inhibitor concentrations to be used and range of titrations. Each curve is fitted for 20 data points. Due to the small differences in the Kd values of very similar chemical compounds, the data presented resulted from experiments done at the same time using the same batch of enzymes, which is essential to avoid the variation from batches of enzyme preparation.",
+            "Figure 1C caption": "Summary of isothermal titration calorimetry measurement of dissociation constants (Kd) of various compounds to KDM5A(1–588)ΔAP (see Figure S2 for original binding data).",
+            "Figure 1C table": "Compound Kd (μM) N9 (381656) 0.53±0.06 N40 (408936) 0.18±0.02 N51 (479257) 0.22±0.03 N52 (479258) 0.06±0.01 N41 (414992) 0.21±0.02 N42 (415015) 0.47±0.05 N46 (421826) 0.15±0.01 N47 (421835) 0.41 ±0.03 N48 (421948) 0.25±0.02 N54 (482457) 2.4±0.4 N55 (482458) >12",
+            "Results section - Structure-Function Relationships": "Using the purified minimal catalytic domain KDM5A(1–588)ΔAP, we measured the dissociation constants (Kd) by isothermal titration calorimetry (ITC) (Figures 1C and S2). Among the mixtures, N9 (patent WO20141464708), which lacks a piperidine ring, has an approximately 3-fold weaker binding affinity relative to N40. Compounds with piperidine (N40 or N48), difluoropiperidine (N41), or pyrrolidine (N46) substitutions have similar binding affinities in the range of 0.15–0.25 μM. This indicates that the identity of the basic substituents at the end of alkoxyether and the length of alkyl linker has a relatively small impact on binding affinity and is tolerant of structural modification. The substitution of pyrrolidine ring in N46 with an imidazole ring in N47 reduced the binding affinity by ~3-fold. Shortening the alkoxyether extension from two-carbon to one-carbon reduced the binding affinity by ~2-fold (N41 and N42), whereas an increase in the alkyl chain length to three carbons did not affect binding affinity (N40 and N48). Importantly, among the compounds examined, the pure S-enantiomer N52 exhibited the highest binding affinity with a Kd of 60 nM, approximately 4-fold better than that of the R-enantiomer N51."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "KDM5A(1–588)ΔAP",
+                "location": "cell",
+                "concentration": "25-80",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound [I]",
+                "location": "syringe",
+                "concentration": "420-1100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 300 mM NaCl, 5% glycerol, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP), 500 μM MnCl2, 10% (v/v) DMSO",
+                "pH": "8.0",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (to measure the heat of dilution)",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

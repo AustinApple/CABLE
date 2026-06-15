@@ -1,0 +1,457 @@
+{
+    "399873": {
+        "reactant_set_id": 399873,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "NC(=O)[C@@H]1C[C@]2(NC(=O)NC2=O)c2cc(F)ccc2O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "399874": {
+        "reactant_set_id": 399874,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "Fc1ccc2C(=O)N(Cc3ccc(Br)cc3F)C(=O)C3(CC(=O)NC3=O)c2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "399875": {
+        "reactant_set_id": 399875,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "OC(=O)COc1cc(Cl)ccc1C(=O)NCc1cccc(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "399876": {
+        "reactant_set_id": 399876,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "OC(=O)COc1cc(F)ccc1C(=O)Nc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "399877": {
+        "reactant_set_id": 399877,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "OC(=O)COc1cc(F)ccc1C(=O)Nc1cccc(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 23.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "399878": {
+        "reactant_set_id": 399878,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "OC(=O)COc1ccc(cc1C(=O)NCc1cccc(c1)[N+]([O-])=O)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "399879": {
+        "reactant_set_id": 399879,
+        "pmid": 28287700,
+        "protein": "Aldo-keto reductase family 1 member B1",
+        "ligand": {
+            "smiles": "OC(=O)Cn1c2ccccc2c2nnc(S)nc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 38.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to &#8764;10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 &#956;g/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 Methanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was &#8764;1000 RU, and all injections were performed at a flow rate of 10 &#956;L/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: Krimmer, S. G., Cramer, J., Betz, M., Frith, V., Karlsson, R., Heine, A., and Klebe, G. (2017) Elucidating the Origin of Long Residence Time Binding for Inhibitors of the Metalloprotease Thermolysin. ACS Chem. Biol. 12, 225–233. Reference 54: Neudert, G., and Klebe, G. (2011) Fccon: Format conversion, manipulation, and feature computation of molecular data. Bioinformatics 27, 1021–1022.",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. The anti-His antibody (His Capture Kit, GE Healthcare) was immobilized on sensor chip CM5 (GE Healthcare), in a Biacore T200 or Biacore S200 instrument, to ~10000 resonance units (RU) using a standard amine coupling procedure (Amine Coupling Kit, GE Healthcare). His-tagged aldose reductase (ALR2), at a concentration of 100 μg/mL, was captured on the anti-His antibody using dual injection consisting of a 3 min injection of protein followed by a 100 s activation with a mixture (1:1) of 0.2 M N-ethyl-N-(dimethylamino)propylcarbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS), and final blocking with an injection of 1.0 M ethanolamine (pH 8.5) for 100 s. Activation with EDC and NHS and blocking with ethanolamine stabilized the ALR2 capture and allowed the use of a single surface for the analysis of a number of compounds with no need for regeneration. The ALR2 capture level was ~1000 RU, and all injections were performed at a flow rate of 10 μL/min. For the interaction analysis, the compound concentrations ranged from 3 to 10000 nM with a 5-fold dilution step, using a single-cycle kinetic approach with three or five concentrations or injections per cycle. Data were collected and evaluated as recently described by us.53,54 Representative sensorgrams are shown in Figures S10 and S11.",
+            "Table 3 caption": "Table 3. Determination of Binding Kinetic Parameters by SPR Measurements",
+            "Table 3": "ligand k_on (M⁻¹ s⁻¹) k_off (s⁻¹) K_D (M) n 1 1.6 × 10⁵ 2.5 × 10⁻³ 1.6 × 10⁻⁸ 1 2 2.8 × 10⁵ 1.5 × 10⁻³ 5.5 × 10⁻⁹ 1 3 (1.7 ± 0.3) × 10⁶ (2.3 ± 0.5) × 10⁻² 1.4 × 10⁻⁸ 3 8 (5.8 ± 1.7) × 10⁵ (1.3 ± 0.5) × 10⁻² 2.3 × 10⁻⁸ 3 11 (6.5 ± 1.7) × 10⁵ (1.0 ± 0.2) × 10⁻² 1.5 × 10⁻⁸ 3 12 7.9 × 10⁴ 3.0 × 10⁻³ 3.8 × 10⁻⁸ 1",
+            "Figure 8 caption": "Figure 8. k_on/k_off map showing the differences in binding kinetics. The diagonals display iso-affinity lines, and the studied ligand concentration ranges in the SPR analysis from ~5 to 40 nM. Four compounds (2, 3, 8, and 11) that open the hydrophobic pocket (●) cover a range of 1 order of magnitude in kinetic constants k_on and k_off. Two compounds (1 and 12) that leave the binding pocket closed (▲) exhibit similar k_off values, whereas k_on of Fidarestat (1) is twice as high as that of 12. Nonetheless, the binding kinetic properties of those opening the pocket or leaving it closed do not fall into separate classes, excluding the opening of the pocket as a time-limiting step of binding."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200 or Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "anti-His antibody",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "His-tagged aldose reductase (ALR2)",
+                "concentration_range": "3 to 10000 nM with a 5-fold dilution step"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

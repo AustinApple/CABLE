@@ -1,0 +1,136 @@
+{
+    "51195063": {
+        "reactant_set_id": 51195063,
+        "pmid": 23647823,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "COc1ccc(cc1O)[C@@H]1CC(=O)c2c(O)cc(O)cc2O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS coronavirus 3C-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "34. Tassa, C.; Duffner, J. L.; Lewis, T. A.; Weissleder, R.; Schreiber, S. L.; Koehler, A. N.; Shaw, S. Y. Bioconjugate Chem. 2010, 21, 14.",
+        "original_paragraph": {
+            "Materials and Methods - 4.7. Real-time analysis of ligand interaction with SARS-CoV 3CLpro by surface plasmon resonance (SPR)": "SPR measurements were performed on a Reichert SPR SR7500 instrument kindly provided on loan from Woongjin BSC Inc. The enzyme was dialyzed in PBS buffer prior to immobilization. The surface was activated with a 7 min injection of EDC/sulfo-NHS mixture at 200/50 mM concentration. The protein was diluted to 100 μg/mL with 20 mM acetate buffer (pH 5.0) and injected for 10 min. The active sites were quenched with 1 M ethanolamine buffer at pH 8.0 and washed with phosphate-buffered saline at pH 7.2 (PBS). The binding surface was stabilized with 3–5 blank injections of PBS. PBS was used as a running and sample dilution buffer for all of the experiments. The tested inhibitors were first prepared as 20 mM stock solutions in dimethyl sulfoxide (DMSO) and further diluted in PBS immediately prior to the experiments. Analyte binding was analyzed using automated runs of the twofold dilution series and two ‘zero concentration’ injections. Regeneration steps were performed using 10 mM NaOH. The data were analyzed with the Scrubber2 software. Referenced and blanked binding dissociation curves were fit globally to a two-state binding kinetics model.",
+            "Results - 2.4. Real-time analysis of dieckol (8) interaction with SARS-CoV 3CLpro by surface plasmon resonance (SPR)": "Surface plasmon resonance (SPR) is a useful technique for monitor molecular reactions in real-time and has been used to determine binding specificity as well as the rates of association and dissociation between ligands and protein. In this study, the SARS-CoV 3CLpro was immobilized on the sensor chip, and the most potent 3CLpro inhibitor, dieckol (8), isolated from E. cava was passed over the sensor’s surface. To analyze whether dieckol’s (8) interaction is due to a specific binding event, the SPR sensorgram of the compound was recorded at several different concentrations. The binding responses in resonance units (RUs) were continuously recorded and presented graphically as a function of time. The association was described by a simple equilibrium of the A + B ↔ AB type (A, analyte; B, ligand; and AB, complex). The SPR sensorgram was used to determine the kinetic binding parameters, the association rate constant kon [μM−1 s−1] and the dissociation rate constant koff [s−1]. For SARS-CoV 3CLpro, dieckol (8) increased the SPR sensorgram in a significant and dose-dependent manner (Fig. 4A). The dissociation constant KD (koff/kon) was calculated by globally fitting the kinetic data at various dieckol (8) concentrations (12.5, 25, and 50 μM) to the Langmuir binding model (KD = 10.3 μM). The KD for the dieckol (8) interaction was thus simulated as a classical type of interaction (several analyte concentrations flowed serially across an immobilized ligand with a surface regeneration step between each injection)34 with kon = 73.5 μM−1 s−1 and koff = 0.000843 s−1, which quantitatively revealed a higher association rate than that of hesperitin (KD = 24.5 μM) (see Supplementary data Fig. 7S).",
+            "Figure 4 caption": "Figure 4. (A) Sensorgrams for the interaction of dieckol (8) with SARS-CoV 3CLpro. (B) The binding pose of dieckol (8) in SARS-CoV 3CLpro. Ribbon plots of dieckol (8) complexed to 3CLpro with hydrogen bonding.",
+            "Figure 4A sensorgram data": "The sensorgram in Figure 4A shows three curves corresponding to dieckol concentrations of 12.5 μM, 25.0 μM, and 50.0 μM. The x-axis represents time in seconds (0 to 450 sec), and the y-axis represents response in arbitrary units (0 to 160). The association phase occurs from 0 to approximately 200 seconds, followed by a dissociation phase from 200 to 450 seconds. The response at the end of the association phase (at 200 sec) is approximately 40 RU for 12.5 μM, 80 RU for 25.0 μM, and 140 RU for 50.0 μM.",
+            "Table 1": "Table 1. Inhibitory effects of isolated phlorotannins (1–9) on the cell-free cleavage activity of SARS-CoV 3CLpro. Compound 8 (dieckol) has an IC50 of 2.7 ± 0.6 μM and a Ki of 2.4 ± 0.2 μM, indicating competitive inhibition.",
+            "Table 2": "Table 2. Inhibitory effects of isolated phlorotannins (1–9) on the cell-based cis-cleavage activity of SARS-CoV 3CLpro. Compound 8 (dieckol) has an IC50 of 68.1 ± 2.2 μM and a CC50 >200 μM, resulting in a selectivity index (SI) >2.9."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Reichert",
+                "model": "SPR SR7500"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV 3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "dieckol (8)",
+                "concentration_range": "12.5 μM - 50.0 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "phosphate-buffered saline (PBS) at pH 7.2",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 200,
+                "dissociation_time_s": 250,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "blank injections of PBS",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Two-state binding model",
+                "software": "Scrubber2"
+            }
+        }
+    },
+    "51195066": {
+        "reactant_set_id": 51195066,
+        "pmid": 23647823,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Oc1cc(O)cc(Oc2c(O)cc(O)c3Oc4cc(Oc5c(O)cc(Oc6c(O)cc(O)c7Oc8cc(O)cc(O)c8Oc67)cc5O)cc(O)c4Oc23)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS coronavirus 3C-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "34. Tassa, C.; Duffner, J. L.; Lewis, T. A.; Weissleder, R.; Schreiber, S. L.; Koehler, A. N.; Shaw, S. Y. Bioconjugate Chem. 2010, 21, 14.",
+        "original_paragraph": {
+            "Materials and Methods - 4.7. Real-time analysis of ligand interaction with SARS-CoV 3CLpro by surface plasmon resonance (SPR)": "SPR measurements were performed on a Reichert SPR SR7500 instrument kindly provided on loan from Woongjin BSC Inc. The enzyme was dialyzed in PBS buffer prior to immobilization. The surface was activated with a 7 min injection of EDC/sulfo-NHS mixture at 200/50 mM concentration. The protein was diluted to 100 μg/mL with 20 mM acetate buffer (pH 5.0) and injected for 10 min. The active sites were quenched with 1 M ethanolamine buffer at pH 8.0 and washed with phosphate-buffered saline at pH 7.2 (PBS). The binding surface was stabilized with 3–5 blank injections of PBS. PBS was used as a running and sample dilution buffer for all of the experiments. The tested inhibitors were first prepared as 20 mM stock solutions in dimethyl sulfoxide (DMSO) and further diluted in PBS immediately prior to the experiments. Analyte binding was analyzed using automated runs of the twofold dilution series and two ‘zero concentration’ injections. Regeneration steps were performed using 10 mM NaOH. The data were analyzed with the Scrubber2 software. Referenced and blanked binding dissociation curves were fit globally to a two-state binding kinetics model.",
+            "Results - 2.4. Real-time analysis of dieckol (8) interaction with SARS-CoV 3CLpro by surface plasmon resonance (SPR)": "Surface plasmon resonance (SPR) is a useful technique for monitor molecular reactions in real-time and has been used to determine binding specificity as well as the rates of association and dissociation between ligands and protein. In this study, the SARS-CoV 3CLpro was immobilized on the sensor chip, and the most potent 3CLpro inhibitor, dieckol (8), isolated from E. cava was passed over the sensor’s surface. To analyze whether dieckol’s (8) interaction is due to a specific binding event, the SPR sensorgram of the compound was recorded at several different concentrations. The binding responses in resonance units (RUs) were continuously recorded and presented graphically as a function of time. The association was described by a simple equilibrium of the A + B ↔ AB type (A, analyte; B, ligand; and AB, complex). The SPR sensorgram was used to determine the kinetic binding parameters, the association rate constant kon [μM−1 s−1] and the dissociation rate constant koff [s−1]. For SARS-CoV 3CLpro, dieckol (8) increased the SPR sensorgram in a significant and dose-dependent manner (Fig. 4A). The dissociation constant KD (koff/kon) was calculated by globally fitting the kinetic data at various dieckol (8) concentrations (12.5, 25, and 50 μM) to the Langmuir binding model (KD = 10.3 μM). The KD for the dieckol (8) interaction was thus simulated as a classical type of interaction (several analyte concentrations flowed serially across an immobilized ligand with a surface regeneration step between each injection)34 with kon = 73.5 μM−1 s−1 and koff = 0.000843 s−1, which quantitatively revealed a higher association rate than that of hesperitin (KD = 24.5 μM) (see Supplementary data Fig. 7S).",
+            "Figure 4 caption": "Figure 4. (A) Sensorgrams for the interaction of dieckol (8) with SARS-CoV 3CLpro. (B) The binding pose of dieckol (8) in SARS-CoV 3CLpro. Ribbon plots of dieckol (8) complexed to 3CLpro with hydrogen bonding.",
+            "Figure 4A sensorgram data": "The sensorgram in Figure 4A shows three curves corresponding to dieckol concentrations of 12.5 μM, 25.0 μM, and 50.0 μM. The x-axis represents time in seconds (0 to 450 sec), and the y-axis represents response in arbitrary units (0 to 160). The association phase occurs from 0 to approximately 200 seconds, followed by a dissociation phase from 200 to 450 seconds. The response at the end of the association phase (at 200 sec) is approximately 40 RU for 12.5 μM, 80 RU for 25.0 μM, and 140 RU for 50.0 μM.",
+            "Table 1": "Table 1. Inhibitory effects of isolated phlorotannins (1–9) on the cell-free cleavage activity of SARS-CoV 3CLpro. Compound 8 (dieckol) has an IC50 of 2.7 ± 0.6 μM and a Ki of 2.4 ± 0.2 μM, indicating competitive inhibition.",
+            "Table 2": "Table 2. Inhibitory effects of isolated phlorotannins (1–9) on the cell-based cis-cleavage activity of SARS-CoV 3CLpro. Compound 8 (dieckol) has an IC50 of 68.1 ± 2.2 μM and a CC50 >200 μM, resulting in a selectivity index (SI) >2.9."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Reichert",
+                "model": "SPR SR7500"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SARS-CoV 3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "dieckol (8)",
+                "concentration_range": "12.5 μM - 50.0 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "phosphate-buffered saline (PBS) at pH 7.2",
+                "pH": 7.2,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 200,
+                "dissociation_time_s": 250,
+                "regeneration_solution": "10 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "blank injections of PBS",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Two-state binding model",
+                "software": "Scrubber2"
+            }
+        }
+    }
+}

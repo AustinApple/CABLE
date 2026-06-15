@@ -1,0 +1,578 @@
+{
+    "51271709": {
+        "reactant_set_id": 51271709,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCSC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa tRNA (guanine(37)-N1)-methyltransferase (Leu5 to Asp25 residues) expressed in Escherichia coli BL21 (DE3) Rosetta T1R cells by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. Anti-His antibody was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min incubation of 1 M ethanolamine, pH 8.0. The protein TrmD, at a concentration of 1 μM, in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a ligand K_D (μM) k_on (M^−1 s^−1) k_off (s^−1) PaTrmD^c SAH^b 5.9 55500 ± 479 0.326 ± 0.002 AZ51 0.091 128000 ± 318 0.0117 ± 0.0000 15 0.0016 13500000 ± 87800 0.0218 ± 0.0001 MtbTrmD^d SAH 10.1 7700 ± 14 0.0775 ± 0.0001 AZ51 10.4 20100 ± 80 0.209 ± 0.0004 15 0.19 645000 ± 3030 0.120 ± 0.0003 SaTrmD^e SAH 3.3 279000 ± 36000 0.92 ± 0.03 AZ51 27.5 59900 ± 566 1.65 ± 0.01 15 3.1 2940000 ± 241000 9.15 ± 0.73 ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o − F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "1 μM"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors such as AZ51, 15, SAH)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271715": {
+        "reactant_set_id": 51271715,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "NC1CCN(Cc2ccc(CNC(=O)c3csc4nc[nH]c(=O)c34)cc2)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 91.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa tRNA (guanine(37)-N1)-methyltransferase (Leu5 to Asp25 residues) expressed in Escherichia coli BL21 (DE3) Rosetta T1R cells by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. Anti-His antibody was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min incubation of 1 M ethanolamine, pH 8.0. The protein TrmD, at a concentration of 1 μM, in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a ligand K_D (μM) k_on (M^−1 s^−1) k_off (s^−1) PaTrmD^c SAH^b 5.9 55500 ± 479 0.326 ± 0.002 AZ51 0.091 128000 ± 318 0.0117 ± 0.0000 15 0.0016 13500000 ± 87800 0.0218 ± 0.0001 MtbTrmD^d SAH 10.1 7700 ± 14 0.0775 ± 0.0001 AZ51 10.4 20100 ± 80 0.209 ± 0.0004 15 0.19 645000 ± 3030 0.120 ± 0.0003 SaTrmD^e SAH 3.3 279000 ± 36000 0.92 ± 0.03 AZ51 27.5 59900 ± 566 1.65 ± 0.01 15 3.1 2940000 ± 241000 9.15 ± 0.73 ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o − F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "1 μM"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors such as AZ51, 15, SAH)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271720": {
+        "reactant_set_id": 51271720,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "CCCCCCCCNCc1ccc(CNC(=O)c2csc3nc[nH]c(=O)c23)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas aeruginosa tRNA (guanine(37)-N1)-methyltransferase (Leu5 to Asp25 residues) expressed in Escherichia coli BL21 (DE3) Rosetta T1R cells by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. Anti-His antibody was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min incubation of 1 M ethanolamine, pH 8.0. The protein TrmD, at a concentration of 1 μM, in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a ligand K_D (μM) k_on (M^−1 s^−1) k_off (s^−1) PaTrmD^c SAH^b 5.9 55500 ± 479 0.326 ± 0.002 AZ51 0.091 128000 ± 318 0.0117 ± 0.0000 15 0.0016 13500000 ± 87800 0.0218 ± 0.0001 MtbTrmD^d SAH 10.1 7700 ± 14 0.0775 ± 0.0001 AZ51 10.4 20100 ± 80 0.209 ± 0.0004 15 0.19 645000 ± 3030 0.120 ± 0.0003 SaTrmD^e SAH 3.3 279000 ± 36000 0.92 ± 0.03 AZ51 27.5 59900 ± 566 1.65 ± 0.01 15 3.1 2940000 ± 241000 9.15 ± 0.73 ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o − F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "1 μM"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors such as AZ51, 15, SAH)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271701": {
+        "reactant_set_id": 51271701,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "NC1CCN(Cc2ccc(CNC(=O)c3csc4nc[nH]c(=O)c34)cc2)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length Mycobacterium tuberculosis tRNA (guanine(37)-N1)-methyltransferase expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. The protein TrmD, at a concentration of 1 M ethanamine, pH 8.0, was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min injection of 1 M ethanamine, pH 8.0. The protein TrmD, at a concentration of 50 μg/mL in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a | ligand | K_D (μM) | k_on (M^−1 s^−1) | k_off (s^−1) | |---|---|---|---| | PaTrmD^c | SAH^b | 5.9 | 55500 ± 479 | 0.326 ± 0.002 | | | AZ51 | 0.091 | 128000 ± 318 | 0.0117 ± 0.0000 | | | 15 | 0.0016 | 13500000 ± 87800 | 0.0218 ± 0.0001 | | MtbTrmD^d | SAH | 10.1 | 7700 ± 14 | 0.0775 ± 0.0001 | | | AZ51 | 10.4 | 20100 ± 80 | 0.209 ± 0.0004 | | | 15 | 0.19 | 645000 ± 3030 | 0.120 ± 0.0003 | | SaTrmD^e | SAH | 3.3 | 279000 ± 36000 | 0.92 ± 0.03 | | | AZ51 | 27.5 | 59900 ± 566 | 1.65 ± 0.01 | | | 15 | 3.1 | 2940000 ± 241000 | 9.15 ± 0.73 | ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o − F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors: SAH, AZ51, 15)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271702": {
+        "reactant_set_id": 51271702,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "CCCCCCCCNCc1ccc(CNC(=O)c2csc3nc[nH]c(=O)c23)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 190.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length Mycobacterium tuberculosis tRNA (guanine(37)-N1)-methyltransferase expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. The protein TrmD, at a concentration of 1 M ethanamine, pH 8.0, was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min injection of 1 M ethanamine, pH 8.0. The protein TrmD, at a concentration of 50 μg/mL in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a | ligand | K_D (μM) | k_on (M^−1 s^−1) | k_off (s^−1) | |---|---|---|---| | PaTrmD^c | SAH^b | 5.9 | 55500 ± 479 | 0.326 ± 0.002 | | | AZ51 | 0.091 | 128000 ± 318 | 0.0117 ± 0.0000 | | | 15 | 0.0016 | 13500000 ± 87800 | 0.0218 ± 0.0001 | | MtbTrmD^d | SAH | 10.1 | 7700 ± 14 | 0.0775 ± 0.0001 | | | AZ51 | 10.4 | 20100 ± 80 | 0.209 ± 0.0004 | | | 15 | 0.19 | 645000 ± 3030 | 0.120 ± 0.0003 | | SaTrmD^e | SAH | 3.3 | 279000 ± 36000 | 0.92 ± 0.03 | | | AZ51 | 27.5 | 59900 ± 566 | 1.65 ± 0.01 | | | 15 | 3.1 | 2940000 ± 241000 | 9.15 ± 0.73 | ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o − F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors: SAH, AZ51, 15)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271703": {
+        "reactant_set_id": 51271703,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCSC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length Mycobacterium tuberculosis tRNA (guanine(37)-N1)-methyltransferase expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. The protein TrmD, at a concentration of 1 M ethanamine, pH 8.0, was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min injection of 1 M ethanamine, pH 8.0. The protein TrmD, at a concentration of 50 μg/mL in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a | ligand | K_D (μM) | k_on (M^−1 s^−1) | k_off (s^−1) | |---|---|---|---| | PaTrmD^c | SAH^b | 5.9 | 55500 ± 479 | 0.326 ± 0.002 | | | AZ51 | 0.091 | 128000 ± 318 | 0.0117 ± 0.0000 | | | 15 | 0.0016 | 13500000 ± 87800 | 0.0218 ± 0.0001 | | MtbTrmD^d | SAH | 10.1 | 7700 ± 14 | 0.0775 ± 0.0001 | | | AZ51 | 10.4 | 20100 ± 80 | 0.209 ± 0.0004 | | | 15 | 0.19 | 645000 ± 3030 | 0.120 ± 0.0003 | | SaTrmD^e | SAH | 3.3 | 279000 ± 36000 | 0.92 ± 0.03 | | | AZ51 | 27.5 | 59900 ± 566 | 1.65 ± 0.01 | | | 15 | 3.1 | 2940000 ± 241000 | 9.15 ± 0.73 | ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o − F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors: SAH, AZ51, 15)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271686": {
+        "reactant_set_id": 51271686,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "CCCCCCCCNCc1ccc(CNC(=O)c2csc3nc[nH]c(=O)c23)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length Staphylococcus aureus tRNA (guanine(37)-N1)-methyltransferase expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. The protein TrmD, at a concentration of 1 M ethanamine, pH 8.0, was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min injection of 1 M ethanamine, pH 8.0. The protein TrmD, at a concentration of 50 μg/mL in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a | ligand | K_D (μM) | k_on (M^−1 s^−1) | k_off (s^−1) | |---|---|---|---| | PaTrmD^c | SAH^b | 5.9 | 55500 ± 479 | 0.326 ± 0.002 | | | AZ51 | 0.091 | 128000 ± 318 | 0.0117 ± 0.0000 | | | 15 | 0.0016 | 13500000 ± 87800 | 0.0218 ± 0.0001 | | MtbTrmD^d | SAH | 10.1 | 7700 ± 14 | 0.0775 ± 0.0001 | | | AZ51 | 10.4 | 20100 ± 80 | 0.209 ± 0.0004 | | | 15 | 0.19 | 645000 ± 3030 | 0.120 ± 0.0003 | | SaTrmD^e | SAH | 3.3 | 279000 ± 36000 | 0.92 ± 0.03 | | | AZ51 | 27.5 | 59900 ± 566 | 1.65 ± 0.01 | | | 15 | 3.1 | 2940000 ± 241000 | 9.15 ± 0.73 | ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o – F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors: SAH, AZ51, 15)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271704": {
+        "reactant_set_id": 51271704,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCSC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length Staphylococcus aureus tRNA (guanine(37)-N1)-methyltransferase expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. The protein TrmD, at a concentration of 1 M ethanamine, pH 8.0, was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min injection of 1 M ethanamine, pH 8.0. The protein TrmD, at a concentration of 50 μg/mL in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a | ligand | K_D (μM) | k_on (M^−1 s^−1) | k_off (s^−1) | |---|---|---|---| | PaTrmD^c | SAH^b | 5.9 | 55500 ± 479 | 0.326 ± 0.002 | | | AZ51 | 0.091 | 128000 ± 318 | 0.0117 ± 0.0000 | | | 15 | 0.0016 | 13500000 ± 87800 | 0.0218 ± 0.0001 | | MtbTrmD^d | SAH | 10.1 | 7700 ± 14 | 0.0775 ± 0.0001 | | | AZ51 | 10.4 | 20100 ± 80 | 0.209 ± 0.0004 | | | 15 | 0.19 | 645000 ± 3030 | 0.120 ± 0.0003 | | SaTrmD^e | SAH | 3.3 | 279000 ± 36000 | 0.92 ± 0.03 | | | AZ51 | 27.5 | 59900 ± 566 | 1.65 ± 0.01 | | | 15 | 3.1 | 2940000 ± 241000 | 9.15 ± 0.73 | ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o – F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors: SAH, AZ51, 15)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51271716": {
+        "reactant_set_id": 51271716,
+        "pmid": 31442049,
+        "protein": "tRNA (guanine-N(1)-)-methyltransferase",
+        "ligand": {
+            "smiles": "NC1CCN(Cc2ccc(CNC(=O)c3csc4nc[nH]c(=O)c34)cc2)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length Staphylococcus aureus tRNA (guanine(37)-N1)-methyltransferase expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). SPR analysis was performed using a BIACORE T200 instrument (GE Healthcare) equipped with a CMS-S sensor chip. The surfaces of all flow cells were activated for 7 min with a 1:1 mixture of 0.1 M NHS and 0.1 M EDC at a flow rate of 10 μL/min. The protein TrmD, at a concentration of 1 M ethanamine, pH 8.0, was captured on all surfaces to ~12000 RU. Surfaces were then blocked with a 7 min injection of 1 M ethanamine, pH 8.0. The protein TrmD, at a concentration of 50 μg/mL in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, and 0.05% Tween-20, was captured on the anti-His antibody surface to a density of ~2200 RU. Flow cell no. 1 was left blank to serve as a reference surface. Different concentrations (2-fold dilutions) of the test analyte were injected from lowest to highest concentration in the same buffer over the flow cell at 30 μL/min for a contact time of 30 s and dissociation time of 240 s. Analysis of inhibitor binding affinity to TrmD was quantified using 2-fold dilutions. Data were collected at a rate of 10 Hz, and at a temperature of 25 °C. The K_D value was calculated using steady-state affinity fit.",
+            "Table 2": "Table 2. Binding Kinetics of TrmD Ligands^a | ligand | K_D (μM) | k_on (M^−1 s^−1) | k_off (s^−1) | |---|---|---|---| | PaTrmD^c | SAH^b | 5.9 | 55500 ± 479 | 0.326 ± 0.002 | | | AZ51 | 0.091 | 128000 ± 318 | 0.0117 ± 0.0000 | | | 15 | 0.0016 | 13500000 ± 87800 | 0.0218 ± 0.0001 | | MtbTrmD^d | SAH | 10.1 | 7700 ± 14 | 0.0775 ± 0.0001 | | | AZ51 | 10.4 | 20100 ± 80 | 0.209 ± 0.0004 | | | 15 | 0.19 | 645000 ± 3030 | 0.120 ± 0.0003 | | SaTrmD^e | SAH | 3.3 | 279000 ± 36000 | 0.92 ± 0.03 | | | AZ51 | 27.5 | 59900 ± 566 | 1.65 ± 0.01 | | | 15 | 3.1 | 2940000 ± 241000 | 9.15 ± 0.73 | ^aBinding data determined by surface plasmon resonance (SPR) as described in Experimental Procedures. ^bS-Adenosylhomocysteine; ^cGram-negative bacterial TrmD; ^dMycobacterial TrmD. ^eGram-positive bacterial TrmD.",
+            "Figure 2 caption": "Figure 2. Crystal structures of AZ51 with PaTrmD and MtbTrmD. (A) The IC50 values determined for AZ51 at tRNA concentrations of 1.5 μM (●), 4.5 μM (□), and 15 μM (▲), respectively, are 0.18 ± 0.03, 0.33 ± 0.04, and 0.84 ± 0.09 μM. Each data point represents an average of duplicate experiments with error bars indicated as SD. (B,D) Close-up views of catalytic sites of PaTrmD–AZ51 (B; PDB 6JOE) and MtbTrmD–AZ51 (D; PDB 6JOF) showing the binding modes of inhibitor AZ51, respectively. Polypeptide chains are shown as cartoons (chain A in gray and chain B in cyan), whereas key interacting residues are shown as sticks. AZ51 are shown as sticks with an 2F_o – F_c electron density (gray) map contoured at 1.0σ. Potential interactions involved in AZ51 binding are indicated by broken lines (black, hydrogen bonds; green, stacking interactions). (C) Inhibitor AZ51 binding at catalytic site induces wall-loop conformational change and thereafter blocks substrate tRNA (G37) binding. SAM-bound PaTrmD (PDB 5WYQ) and tRNA-bound H. influenzae TrmD (PDB 4YVI) were superimposed onto AZ51-bound PaTrmD, respectively. Polypeptide chains of PaTrmD–AZ51 are shown as surface, while the bound AZ51 (yellow) and side chain flipped residue Tyr120 (gray) are shown as sticks. PaTrmD–SAM structure (light pink) displays SAM and residue Tyr120 in sticks representation. G37 of tRNA substrate in H. influenzae TrmD structure is shown as orange. Polypeptide chains of PaTrmD–SAM and H. influenzae TrmD–tRNA are omitted for clarity. (E) The superposition of catalytic sites of PaTrmD–AZ51 and MtbTrmD–AZ51. The inhibitor AZ51 and residues in different positions from PaTrmD and MtbTrmD are indicated as sticks."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS-S",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TrmD",
+                "strategy": "NTA-His capture",
+                "density_ru": "2200",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Test analyte (inhibitors: SAH, AZ51, 15)",
+                "concentration_range": "2-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM Tris-HCl, 150 mM NaCl, 1 mM MgCl2, 1 mM DTT, 0.05% Tween-20",
+                "pH": 8.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 240,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell no. 1 left blank to serve as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

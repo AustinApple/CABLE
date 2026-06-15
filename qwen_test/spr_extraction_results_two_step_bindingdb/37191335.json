@@ -1,0 +1,67 @@
+{
+    "51547041": {
+        "reactant_set_id": 51547041,
+        "pmid": 37191335,
+        "protein": "Tumor necrosis factor",
+        "ligand": {
+            "smiles": "C[C@@H](O)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](C)NC(=O)[C@H](Cc1cnc[nH]1)NC(=O)[C@H](CS)NC(=O)[C@H](C)N)C(=O)N[C@@H](CCCNC(N)=N)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TNF-alpha (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "MST Detected the Affinity between TNF-α and TNF-α In Vitro. TNF-α was labeled by fluorescence using NanoTemper’s His-Tag Labeling Kit and the RED-tris-NTA kit according to the manufacturer’s labeling protocol. The final concentration of TNF-α was 100 nM, and peptides were diluted with PBS containing 0.5% (v/v) Tween-20. Peptides were diluted in a gradient containing the appropriate concentration range, and after adding TNF-α and incubating for 10 min at room temperature, samples were added to standard capillaries, and thermophoresis was measured on a Monolith NT.115 instrument (NanoTemper Technologies, München, Germany) at a 95% luminescent diode and 60% MST power at 25 °C. The values of the dissociation constant K_D were fitted using Nanotemper Analysis software v.2.3. In addition, TNFR1 and TNFR2 proteins were labeled according to the above steps to investigate the selective binding of peptides to TNF-α. Finally, the TNF-α protein was labeled, and 10, 50, and 100 μM of pep2 were incubated with TNF-α for 15 min at room temperature, and the mixture was added to the gradient dilution of the TNFR1 protein to determine its K_D value.",
+            "Figure 1 caption": "Figure 1. Acquiring high-affinity TNF-α inhibitors by phage display. (A–C) Amino acid sequence, structure, and tertiary structure of pep1 (A), pep2 (B), and pep3 (C). (D–F) Recombinant proteins of TNFR1/TNFR2/TNF-α were fluorescently labeled and titrated with a range of concentrations of unlabeled pep2 (488.3 nM to 500 μM). Dose–response binding curves and affinity values (K_D) for TNFα-pep2 were derived by plotting normalized fluorescence (Fnorm) against ligand concentrations and fitting them according to the law of mass action (D). The data points of TNFR1-pep2 (E) and TNFR2-pep2 (F) show a scattered distribution that is unsuitable for fitting and indicates no binding. (G–H) Comparative analysis of TNFRs-TNF-α binding in the presence or absence of pep2 with MST. For inhibitory assays, labeled TNFR1(G) or TNFR2(H) were preincubated with 10 μM concentration of the peptide before titration with TNF-α. Fnorm was baseline-corrected/subtracted (ΔFnorm), and then the amplitudes were normalized to generate ordinal numbers representing the proportion of labeled molecules in the bound state. (I) Inhibited TNF-α-induced cell death. The inhibition was measured at different concentrations of the peptide as well as infliximab (1 and 10 μM). Survival rates are reported as the mean ± SD. Each experiment was repeated three times.",
+            "Table 1": "Table 1. MST Analysis of Equilibrium Dissociation Constants (K_D) for Peptide–Protein Interactions | peptide code | sequence | K_D (μM) | pI | MW | |---|---|---|---|---| | 1: pep1 | NQILSLLGI | no binding^a | 5.97 | 970.16 | | 2: pep2 | ACHAWAPTR | 5.14 | 8.931 | 1012.14 | | 3: pep3 | AKKIILRLS | no binding^a | 11.696 | 1041.33 | ^aNo binding was detected in the titration concentration range of the peptide.",
+            "Results and Discussion": "In addition, pep2 also showed significant anti-TNF-α induced cytotoxicity in HT-29 cells (Figure S4K). In line with it, the microthermal surge method (MST) and surface plasmon resonance (SPR) results suggested that in contrast to pep1 and pep3, which could not target TNF-α in the titration concentration range of the peptide, pep2 possessed TNF-α targeting ability (K_D = 5.14 μM, K_D = 6 μM) (Figure 1E, Table 1 and Figure S4A). Although pep2 possesses anticell death ability and binds to TNF-α, it still perhaps abrogates the TNF-α/TNFR1 signaling pathway by blocking TNFR1. Hence, we also detected the affinity of pep2 with TNFR1 and TNFR2, with the result suggesting that pep2 did not bind significantly to TNFR1 and TNFR2 (Figure 1F,G). In addition, we perform the receptor kinetics experiment that detects the affinity of TNF-α with TNFRs in the presence or absence of pep2 by MST for confirming the inhibitor mode of pep2. A 74-fold decrease in affinity from 13.4 to 996.1 nM with TNFR1 and an approximately 10-fold decrease from 30.5 to 320.7 nM with TNFR2 were observed, indicating that pep2 competes with TNFR1 and TNFR2 for binding TNF-α. The same result was obtained in SPR; the reaction values (RU) of TNF-α with TNFR1 and TNFR2 were significantly reduced by the addition of pep2 (Figure S4B and S4C). Taken together, pep2 was a competitive antagonist which could counter the TNF-α-mediated apoptosis by especially blocking TNF-α, although these clearly need optimization and validation in additional X-ray diffraction data."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "pep2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

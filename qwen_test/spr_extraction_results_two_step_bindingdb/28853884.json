@@ -1,0 +1,642 @@
+{
+    "51121942": {
+        "reactant_set_id": 51121942,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 123.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 10 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 10,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121943": {
+        "reactant_set_id": 51121943,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2(CC2)C#N)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 99.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 10 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 10,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121944": {
+        "reactant_set_id": 51121944,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2CCC2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 271.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 10 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 10,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121976": {
+        "reactant_set_id": 51121976,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "CC(=O)C1(CC1)C(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 115.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 10 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 10,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121977": {
+        "reactant_set_id": 51121977,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2(F)CC2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 10 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 10,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121940": {
+        "reactant_set_id": 51121940,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 107.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 20 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121945": {
+        "reactant_set_id": 51121945,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2(CC2)C#N)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 52.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 20 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121946": {
+        "reactant_set_id": 51121946,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2CCC2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 233.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 20 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121965": {
+        "reactant_set_id": 51121965,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "Cc1ncsc1-c1ccc(CNC(=O)[C@@H]2C[C@@H](O)CN2C(=O)[C@@H](NC(=O)C2(F)CC2)C(C)(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 20 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    },
+    "51121978": {
+        "reactant_set_id": 51121978,
+        "pmid": 28853884,
+        "protein": "Elongin-C",
+        "ligand": {
+            "smiles": "CC(=O)C1(CC1)C(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 97.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to VBC (unknown origin) at 50 uM at 20 degC by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR). VHL inhibitors were dissolved in DMSO (1 mM) and then diluted 20-fold in DMSO to achieve a 50 μM final stock concentration. Ligand stock solution was serially diluted 2-fold (five times) in DMSO, and the obtained solutions were then diluted individually in SPR buffer (20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0) to obtain the final 2% (v/v) DMSO concentration series from 1 μM to 31.25 nM (2-fold dilutions) and transferred to a 96-well plate. The experiment was conducted in a Biacore T100 (GE Healthcare, Biacore, Uppsala, Sweden) at 10 and 20 °C, and solutions were injected individually using 60 and 160 s association and dissociation times, respectively. Data were treated using Biacore T100 evaluation software provided by the manufacturer. Reference flow-cell response was subtracted from the sample response with immobilized VBC protein to correct for systematic noise and baseline drift. The data were normalized to double reference and the response from the blank injections was used to obtain the binding data. The data were solvent corrected, and the rate constants k_on and k_off values were obtained using a 1:1 binding model fit.",
+            "Table 4": "Table 4. Structures, Association (k_on), and Dissociation (k_off) Rate Constants Determined by Surface Plasmon Resonance (SPR), K_d Determined by SPR (K_d = k_off/k_on), Calculated Dissociative Half-Times (t_1/2), and Microsomal and Plasma Stability of Inhibitors 1, 10, 15, 16, and 18 Inhibitor R k_on (M⁻¹s⁻¹) k_off (s⁻¹) K_d SPR (nM) Dissociative t_1/2 (s) Microsomal stability (mL·min⁻¹·g⁻¹) Plasma Stability (1/2 life in min) 1 7.5×10⁵ ±1.0×10⁴ (10°C) 0.092±0.001 123 (10°C) 7.534±0.007 0.7 >180 2.18×10⁵ ±4×10⁴ (20°C) 0.233±0.005 107 (20°C) 2.98±0.01 10 2.4×10⁵ ±1.0×10⁴ (10°C) 0.058±0.007 24 (10°C) 11.94±0.08 2.9 >180 5.99×10⁵ ±1.1×10⁴ (20°C) 0.098±0.001 16 (20°C) 7.073±0.007 15 6.6×10⁵ ±1.1×10⁴ (10°C) 0.065±0.001 99 (10°C) 10.66±0.01 3.1 >180 7.8×10⁵ ±1.0×10⁴ (20°C) 0.118±0.001 52 (20°C) 5.874±0.007 16 6.0×10⁵ ±4×10⁴ (10°C) 0.069±0.004 115 (10°C) 10.04±0.01 2.5 >180 8.2×10⁵ ±5×10⁴ (20°C) 0.169±0.002 97 (20°C) 4.01±0.007 18 5.17×10⁵ ±4×10⁴ (10°C) 0.140±0.002 271 (10°C) 4.95±0.01 3.0 >180 1.10×10⁶ ±3×10⁴ (20°C) 0.256±0.004 233 (20°C) 2.71±0.01 aDissociative half-life of inhibitor–VBC binary complex calculated based on inhibitor dissociation rate constants (k_off), t_1/2 = ln2/k_off.",
+            "Figure 9 caption": "Figure 9. Activity in cells vs half-life dissociation from VBC protein complex. Values shown are for inhibitors 1, 3, 6, 10, 15, and 16–19 at 10 °C (squares) and at 20 °C (triangles). HIF-1α protein levels measured using Western blot, as proxy of cellular activity, and normalized to protein levels with inhibitor 10."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "VBC protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "VHL inhibitors",
+                "concentration_range": "31.25 nM to 1 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.005% Tween P20, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 160,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow-cell response",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T100 evaluation software"
+            }
+        }
+    }
+}

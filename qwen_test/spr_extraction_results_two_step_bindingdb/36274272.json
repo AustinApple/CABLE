@@ -1,0 +1,66 @@
+{
+    "51521662": {
+        "reactant_set_id": 51521662,
+        "pmid": 36274272,
+        "protein": "Nuclear receptor subfamily 4 group A member 1",
+        "ligand": {
+            "smiles": "CN(C)CCCNC(=O)c1cc2cc(Nc3nccc(n3)-c3cccnc3)ccc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 354.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Nur77 ligand binding domain (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "27. M. Hu, Q. Luo, G. Altongbieke, S. Chu, L. Xie, X. Chen, D. Zhang, Y. Zhou, Z. Wang, X. Ye, L. Cai, F. Zhang, H. Chen, X. Jiang, H. Fang, J. Liu, M. T. Diaz-Meco, Y. Su, H. Zhou, J. Moscat, X. Lin, X.-k. Zhang, Celastrol-induced Nur77 interaction with TRAF2 alleviates inflammation by promoting mitochondrial ubiquitination and autophagy, Mol. Cell. 66 (2017) 141–153.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "The protocols were approved by the Instrumental Analysis and Testing Center, School of Pharmacy, Xiamen University. The binding kinetics between Nur77-LBD and compounds were performed on a BIACORE T200 instrument (GE Healthcare) at 25 °C [27]. Nur77-LBD were diluted to 0.05 mg/mL in 50 mmol/L NaOAc (pH 5.0) and immobilized on a CMS sensor chip (GE Healthcare) by amine coupling at densities approximately 10,000 RU according to the manufacturer’s instructions. Gradient concentrations of compounds were injected into the flow cells in running buffer (PBS, 0.4% DMSO) at a flow rate of 30 μL/min for 150 s of association phase followed by a 420 s dissociation phase and a 30 s regeneration phase (10 mmol/L Glycin-HCl, pH 2.5). The data were analyzed with BIACore T200 Evaluation Software 2.0 and referenced for blank injections and reference Surface. The relative unit (RU) was used to represent binding affinity, which is defined as the response difference between flow cell containing the immobilized receptor and the reference flow cell. The dissociation constant (Kd) was fitted to the standard 1:1 interaction model and calculated using the global fitting of the kinetic data from gradient concentrations. The fitting curve of 8b with Nur77-LBD protein was obtained using Origin 8.0 software.",
+            "Figure 4 caption": "Fig. 4. 8b is a good binder of Nur77. (A). The physical binding affinity of 8b to Nur77-LBD by SPR assay. The Kd value is 354 nM. (B) Fluorescence titration curve of Nur77-LBD with 8b. The concentration of 8b increased from 0.08 μM to 10 μM, and the Kd value is 121 nM. (C) Nur77 transactivation profile of 8b. HEK293T cells co-transfected with pG5-Luc and pBind-Nur77-LBD were treated with indicated concentrations of compound 8b for 12 h. Reporter activities were measured as described above. D-E, HEK293T cells co-transfected with pG5-Luc and pBind-RXRα (D) or PPARγ (E) were treated with 5 μM 8b for 12 h. CD3254 and rosiglitazone (Roz) were used as positive control to RXRα and PPARγ, respectively. Data shown are mean ± SD, n = 3. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001 vs the control group. (F). The IFD binding model of 8b with Nur77 (PDB ID: 4RE8).",
+            "Results - Evaluation of the Nur77-binding activity of 8b with Nur77": "In order to examine the binding activity of 8b with Nur77, we performed a surface plasmon resonance (SPR) technology-based experiment, fluorescence quenching assay, and luciferase reporter gene assay. As shown in Fig. 4A, 8b dose-dependently enhanced the SPR response of Nur77-LBD with a Kd value of 354 nM. Furthermore, the fluorescence quenching assay showed that the fluorescence intensity excited by Nur77 protein was gradually quenched by 8b with a comparable Kd of 121 nM (Fig. 4B). Together, these results demonstrate that 8b can bind to Nur77-LBD directly in vitro. Next, we evaluated 8b for its effect on the transcriptional of Nur77 in HEK293T cells using a luciferase transcription assay. Celastrol was selected as a positive reference, and it could effectively inhibit the pBind-Nur77 and the activation of Nur77 reporter [27,28]. The selected compound 8b potently inhibited the Nur77-driven luciferase activity in a dose-dependent manner (Fig. 4C), indicating that 8b could effectively inhibit the transcriptional level of Nur77. Compound 8b at 5 μM showed a similar inhibitory effect compared with the reference compound Celastrol (2 μM). However, 8b had little effect on the transcriptional activities of RXRα and PPARγ (Fig. 4D&E). Together, our data suggest that 8b acts as a selective Nur77 modulator by binding to the Nur77-LBD."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nur77-LBD",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "0.05 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (specifically compound 8b is discussed)",
+                "concentration_range": "Gradient concentrations (not specified numerically)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 150,
+                "dissociation_time_s": 420,
+                "regeneration_solution": "10 mmol/L Glycin-HCl, pH 2.5"
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell (blank injections and reference surface)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIACore T200 Evaluation Software 2.0"
+            }
+        }
+    }
+}

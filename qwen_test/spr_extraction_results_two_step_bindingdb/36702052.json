@@ -1,0 +1,69 @@
+{
+    "51549622": {
+        "reactant_set_id": 51549622,
+        "pmid": 36702052,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "C\\N=c1/nc(-c2ccccc2)n(s1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 798.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 chip-immobilised full-length recombinant SARS-CoV-2 3CL protease expressed in Escherichia coli BL21 (DE3) cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "All SPR experiments were performed at 25 °C in HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3.0 mM EDTA, and 0.05% (v/v) Tween-20) containing 5% DMSO with Biacore 8K (GE Healthcare). 3CLpro was immobilized on the CM5 chip at a level of 8000–10000 response units (RU). 10 mM compound stock solution was diluted with 1x HBS-EP buffer in an eight-concentration series with a final DMSO concentration of 5%. Analyte was injected and run through the chip with an association time of 240 s and a dissociation time of 200 s and washed with 50% DMSO in each cycle. Solvent correction was performed every 48th cycle. Raw data were reduced, double-referenced, and solvent-corrected using Biacore 8K Evaluation Software. The Kp value of each compound was calculated using a steady-state affinity model with a constant Rmax.",
+            "Figure 1 caption": "Fig. 1. The discovery of the lead compound 6a. (a) Schematic representation of the workflow to identify the 3CLpro inhibitor. (b) 2D structure of compound 6a. (c) Representative inhibition profile for 6a against 3CLpro. Error bars represent the mean ± SD of three replicates. (d) SPR sensorgrams of compound 6a bound to 3CLpro at concentrations of 0.39–12.5 μM. Experiments were performed using Biacore 8K (GE Healthcare) and data were analyzed using Biacore 8K analysis software. (e) The predicted surface of the electrostatic potential of 6a and 3CLpro. The surface model represents 3CLpro, 6a (green) bound at the active site is shown as a stick-ball model. The residue Cys145 is depicted as a sphere.",
+            "Figure 1d data": "The SPR sensorgrams of compound 6a bound to 3CLpro at concentrations of 0.39–12.5 μM. The x-axis (Time (s)) ranges from -80 to 480 s. The y-axis (Relative response (RU)) ranges from -4 to 28. The curves are labeled with concentrations: 0.39 μM, 0.78 μM, 1.56 μM, 3.125 μM, 6.25 μM, and 12.5 μM.",
+            "Figure 1c data": "The representative inhibition profile for 6a against 3CLpro. The x-axis (6a (μM)) is on a log scale from 0.001 to 100. The y-axis (Inhibition rate (%)) ranges from -20 to 120. The IC50 value is labeled as 0.193 ± 0.008 μM.",
+            "Figure 1e data": "The predicted surface of the electrostatic potential of 6a and 3CLpro. The surface model represents 3CLpro. The compound 6a (green) is shown as a stick-ball model bound at the active site. The residue Cys145 is depicted as a sphere. The binding site is labeled with S1, S1', S2, and S3.",
+            "Results section": "We also measured the representative dose-dependent response curves for 6a against 3CLpro by surface plasmon resonance (SPR) assay (Fig. 1d). SPR provided affinity values and indicated that 6a strongly interacted with 3CLpro with Kp of 0.798 ± 0.065 μM. On the other side, the SPR sensorgram presents slow association and dissociation rates of 6a against 3CLpro, indicating 6a could be a reversible covalent inhibitor of the protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "full-length recombinant SARS-CoV-2 3CL protease",
+                "strategy": "Amine coupling",
+                "density_ru": "8000-10000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6a",
+                "concentration_range": "0.39–12.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3.0 mM EDTA, and 0.05% (v/v) Tween-20) containing 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 200,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Solvent correction performed every 48th cycle",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore 8K Evaluation Software"
+            }
+        }
+    }
+}

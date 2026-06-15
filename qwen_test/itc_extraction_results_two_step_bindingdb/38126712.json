@@ -1,0 +1,61 @@
+{
+    "51593135": {
+        "reactant_set_id": 51593135,
+        "pmid": 38126712,
+        "protein": "Serine/threonine-protein kinase 26",
+        "ligand": {
+            "smiles": "O=C1NCCCCCNc2nc(c3ccccc3n2)Nc2cc1[nH]n2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 115.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal 6His-tagged TEV fused MST4 (unknown origin) expressed in Escherichia coli BL21 (DE3) cells assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 34: Kabsch, W. XDS. Acta Crystallogr., Sect. D: Struct. Biol. 2010, 66 (2), 125–132.",
+        "original_paragraph": {
+            "ITC Measurements": "The K_D of 21c was determined by isothermal calorimetry. The sample cell, sample syringe, and injection syringe were equilibrated with gel filtration buffer. The sample cell was filled with compound solution (25 μM in gel filtration buffer), and the injection syringe was filled with protein solution (100 μM in gel filtration buffer). Measurements were performed using an Affinity ITC (TA Instruments) at a temperature of 25 °C and a stirring rate of 250 rpm. MST4 expressed and purified as previously described34 was titrated into the compound solution (940 μL cell volume) with 8 μL per injection, except the first injection, which was 4 μL. The time between each injection was set to 300 s. The results were analyzed using NanoAnalyze Software (TA Instruments).",
+            "Figure 2B caption": "ITC measurement of 21c against MST4 revealed a high binding affinity with a K_D value of 115 nM.",
+            "Figure 2B": "K_D = 115 ± 30 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "TA Instruments Affinity ITC"
+            },
+            "protein": {
+                "name": "MST4",
+                "location": "syringe",
+                "concentration": "100",
+                "solution_volume": "940"
+            },
+            "ligand": {
+                "name": "21c",
+                "location": "cell",
+                "concentration": "25"
+            },
+            "assay_conditions": {
+                "buffer_composition": "gel filtration buffer",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "250",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "4",
+                    "subsequent_volume": "8",
+                    "duration": null,
+                    "spacing": "300",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

@@ -1,0 +1,526 @@
+{
+    "51548734": {
+        "reactant_set_id": 51548734,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 1",
+        "ligand": {
+            "smiles": "C1Cn2cccc2C(=N1)c1ccncc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 960000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS1 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR Analysis": "For the SPR screen, SOS1 or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics. The TINS screen was configured to select fragments that preferentially bound to both SOS1 and SOS2. In TINS, a Sepharose-based resin was loaded with SOS1 and SOS2 together and a reference protein loaded separately and placed in a dual cell sample holder. Cocktails of 3–5 fragments were injected into both samples simultaneously. Fragments that bound to both SOS1 and SOS2 became temporarily immobilized, and the relaxation of the NMR signal was enhanced greater than 3 orders of magnitude, which resulted in a diminution of resonance peaks. Preferential binding to the target over the reference was determined through an examination of the ratio of peak amplitudes in each cell (T/R ratio). Fragments that bound to both SOS1 and SOS2 experienced a twofold higher concentration of protein and were therefore more completely relaxed, resulting in the lowest T/R ratio. A total of 1068 fragments were assayed, and by the analysis of the T/R screen profile (see Supporting Information), 133 fragments with the smallest T/R ratio were selected as hits (12% hit rate). The combined hits from the SPR and TINS screens totaled 213, with 100 hits from TINS, 80 from SPR, and 33 compounds that were hits in both assays. The 213 hits were then submitted for Kd determination by SPR; 57 hits were confirmed, as defined by saturable binding to SOS1 or SOS2, a reasonable occupancy in a 25–300% range and sensorgrams displaying fast on/off kinetics. We were encouraged to see that of the 57 confirmed hits, 40 were dual SOS1/SOS2 binders, 8 were SOS2-specific, and 9 were SOS1-specific.",
+            "Table 1": "Table 1. SPR Kd’s for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography | Ex | Compound structure and solubility | SOS1 SPR Kd (μM)a | SOS2 SPR Kd (μM)a | PDB code | |----|----------------------------------|-------------------|-------------------|----------| | 7 | Solubility 0.87 mM | NSb | 2,000 | - | | 8 | Solubility 0.55 mM | 960 | 300 | - | | 9 | Solubility 1.05 mM | NS | 330 | 8UC9 | | 10 | Solubility 1.05 mM | NS | 730 | 8UH0 | | 11 | Solubility >10 mM | 490 | 430 | - | | 12 | Solubility >10 mM | NS | 550 | 8T5G | | 13 | Solubility >10 mM | NS | ~2,000 | 8T5R | | 14 | Solubility >10 mM | NS | NS | 8T5M | aKd is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4.",
+            "Figure 3 caption": "Figure 3. Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Figure 4 caption": "Figure 4. X-ray cocrystal structure of (A) 9 bound to SOS2 (PDB 8UC9) and (B) 10 bound to SOS2 (PDB 8UH0).",
+            "Figure 5 caption": "Figure 5. SOS2 X-ray cocrystal structures of (A) 12 (PDB 8T5G), (B) 13 (PDB 8T5R), and (C) 14 (PDB 8T5M) bound to site-1."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS1 or SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments (in initial screen), later 213 hits (in Kd determination)",
+                "concentration_range": "500 μM (initial screen); 25–300% occupancy range (Kd determination)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548735": {
+        "reactant_set_id": 51548735,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 1",
+        "ligand": {
+            "smiles": "CN1CCNCC11CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 490000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS1 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR Analysis": "For the SPR screen, SOS1 or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics. The TINS screen was configured to select fragments that preferentially bound to both SOS1 and SOS2. In TINS, a Sepharose-based resin was loaded with SOS1 and SOS2 together and a reference protein loaded separately and placed in a dual cell sample holder. Cocktails of 3–5 fragments were injected into both samples simultaneously. Fragments that bound to both SOS1 and SOS2 became temporarily immobilized, and the relaxation of the NMR signal was enhanced greater than 3 orders of magnitude, which resulted in a diminution of resonance peaks. Preferential binding to the target over the reference was determined through an examination of the ratio of peak amplitudes in each cell (T/R ratio). Fragments that bound to both SOS1 and SOS2 experienced a twofold higher concentration of protein and were therefore more completely relaxed, resulting in the lowest T/R ratio. A total of 1068 fragments were assayed, and by the analysis of the T/R screen profile (see Supporting Information), 133 fragments with the smallest T/R ratio were selected as hits (12% hit rate). The combined hits from the SPR and TINS screens totaled 213, with 100 hits from TINS, 80 from SPR, and 33 compounds that were hits in both assays. The 213 hits were then submitted for Kd determination by SPR; 57 hits were confirmed, as defined by saturable binding to SOS1 or SOS2, a reasonable occupancy in a 25–300% range and sensorgrams displaying fast on/off kinetics. We were encouraged to see that of the 57 confirmed hits, 40 were dual SOS1/SOS2 binders, 8 were SOS2-specific, and 9 were SOS1-specific.",
+            "Table 1": "Table 1. SPR Kd’s for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography | Ex | Compound structure and solubility | SOS1 SPR Kd (μM)a | SOS2 SPR Kd (μM)a | PDB code | |----|----------------------------------|-------------------|-------------------|----------| | 7 | Solubility 0.87 mM | NSb | 2,000 | - | | 8 | Solubility 0.55 mM | 960 | 300 | - | | 9 | Solubility 1.05 mM | NS | 330 | 8UC9 | | 10 | Solubility 1.05 mM | NS | 730 | 8UH0 | | 11 | Solubility >10 mM | 490 | 430 | - | | 12 | Solubility >10 mM | NS | 550 | 8T5G | | 13 | Solubility >10 mM | NS | ~2,000 | 8T5R | | 14 | Solubility >10 mM | NS | NS | 8T5M | aKd is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4.",
+            "Figure 3 caption": "Figure 3. Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Figure 4 caption": "Figure 4. X-ray cocrystal structure of (A) 9 bound to SOS2 (PDB 8UC9) and (B) 10 bound to SOS2 (PDB 8UH0).",
+            "Figure 5 caption": "Figure 5. SOS2 X-ray cocrystal structures of (A) 12 (PDB 8T5G), (B) 13 (PDB 8T5R), and (C) 14 (PDB 8T5M) bound to site-1."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS1 or SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments (in initial screen), later 213 hits (in Kd determination)",
+                "concentration_range": "500 μM (initial screen); 25–300% occupancy range (Kd determination)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548736": {
+        "reactant_set_id": 51548736,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 2",
+        "ligand": {
+            "smiles": "CC(N)Cc1c[nH]c2c(C)cccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2000000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR and TINS Screen": "For the SPR screen, SOS1, or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics.",
+            "Figure 3 caption": "Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Table 1": "Table 1. SPR K_D's for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography Ex Compound structure and solubility SOS1 SPR K_D (μM)a SOS2 SPR K_D (μM)a PDB code 7 ‘Solubility 0.87 mM’ NSb 2,000 - 8 ‘Solubility 0.55 mM’ 960 300 - 9 ‘Solubility 1.05 mM’ NS 330 8UC9 10 ‘Solubility 1.05 mM’ NS 730 8UH0 11 ‘Solubility >10 mM’ 490 430 - 12 ‘Solubility >10 mM’ NS 550 8T5G 13 ‘Solubility >10 mM’ NS ~2,000 8T5R 14 ‘Solubility >10 mM’ NS NS 8T5M aK_D is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments",
+                "concentration_range": "500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548737": {
+        "reactant_set_id": 51548737,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 2",
+        "ligand": {
+            "smiles": "C1Cn2cccc2C(=N1)c1ccncc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR and TINS Screen": "For the SPR screen, SOS1, or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics.",
+            "Figure 3 caption": "Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Table 1": "Table 1. SPR K_D's for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography Ex Compound structure and solubility SOS1 SPR K_D (μM)a SOS2 SPR K_D (μM)a PDB code 7 ‘Solubility 0.87 mM’ NSb 2,000 - 8 ‘Solubility 0.55 mM’ 960 300 - 9 ‘Solubility 1.05 mM’ NS 330 8UC9 10 ‘Solubility 1.05 mM’ NS 730 8UH0 11 ‘Solubility >10 mM’ 490 430 - 12 ‘Solubility >10 mM’ NS 550 8T5G 13 ‘Solubility >10 mM’ NS ~2,000 8T5R 14 ‘Solubility >10 mM’ NS NS 8T5M aK_D is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments",
+                "concentration_range": "500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548738": {
+        "reactant_set_id": 51548738,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 2",
+        "ligand": {
+            "smiles": "Nc1ccnc2cc(Cl)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 330000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR and TINS Screen": "For the SPR screen, SOS1, or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics.",
+            "Figure 3 caption": "Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Table 1": "Table 1. SPR K_D's for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography Ex Compound structure and solubility SOS1 SPR K_D (μM)a SOS2 SPR K_D (μM)a PDB code 7 ‘Solubility 0.87 mM’ NSb 2,000 - 8 ‘Solubility 0.55 mM’ 960 300 - 9 ‘Solubility 1.05 mM’ NS 330 8UC9 10 ‘Solubility 1.05 mM’ NS 730 8UH0 11 ‘Solubility >10 mM’ 490 430 - 12 ‘Solubility >10 mM’ NS 550 8T5G 13 ‘Solubility >10 mM’ NS ~2,000 8T5R 14 ‘Solubility >10 mM’ NS NS 8T5M aK_D is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments",
+                "concentration_range": "500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548739": {
+        "reactant_set_id": 51548739,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 2",
+        "ligand": {
+            "smiles": "Oc1cccc2ccc(nc12)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 730000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR and TINS Screen": "For the SPR screen, SOS1, or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics.",
+            "Figure 3 caption": "Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Table 1": "Table 1. SPR K_D's for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography Ex Compound structure and solubility SOS1 SPR K_D (μM)a SOS2 SPR K_D (μM)a PDB code 7 ‘Solubility 0.87 mM’ NSb 2,000 - 8 ‘Solubility 0.55 mM’ 960 300 - 9 ‘Solubility 1.05 mM’ NS 330 8UC9 10 ‘Solubility 1.05 mM’ NS 730 8UH0 11 ‘Solubility >10 mM’ 490 430 - 12 ‘Solubility >10 mM’ NS 550 8T5G 13 ‘Solubility >10 mM’ NS ~2,000 8T5R 14 ‘Solubility >10 mM’ NS NS 8T5M aK_D is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments",
+                "concentration_range": "500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548740": {
+        "reactant_set_id": 51548740,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 2",
+        "ligand": {
+            "smiles": "CN1CCNCC11CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 430000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR and TINS Screen": "For the SPR screen, SOS1, or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics.",
+            "Figure 3 caption": "Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Table 1": "Table 1. SPR K_D's for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography Ex Compound structure and solubility SOS1 SPR K_D (μM)a SOS2 SPR K_D (μM)a PDB code 7 ‘Solubility 0.87 mM’ NSb 2,000 - 8 ‘Solubility 0.55 mM’ 960 300 - 9 ‘Solubility 1.05 mM’ NS 330 8UC9 10 ‘Solubility 1.05 mM’ NS 730 8UH0 11 ‘Solubility >10 mM’ 490 430 - 12 ‘Solubility >10 mM’ NS 550 8T5G 13 ‘Solubility >10 mM’ NS ~2,000 8T5R 14 ‘Solubility >10 mM’ NS NS 8T5M aK_D is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments",
+                "concentration_range": "500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    },
+    "51548741": {
+        "reactant_set_id": 51548741,
+        "pmid": 38156904,
+        "protein": "Son of sevenless homolog 2",
+        "ligand": {
+            "smiles": "Nc1c2CCCCc2nc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 550000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated SOS2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "All test compounds were purchased from commercial suppliers and used as received, unless otherwise indicated. The purity of test compounds was determined to be ≥95% by high-performance liquid chromatography, and the confirmation of structure was determined by proton NMR and mass spectroscopy, as described below. Proton nuclear magnetic resonance (1H NMR) spectra were recorded on Bruker Avance 400 MHz spectrometers. Chemical shifts are expressed in δ ppm and are calibrated to the residual solvent peak: proton. Coupling constants (J), when given, are reported in hertz. Multiplicities are reported using the following abbreviations: s = singlet, d = doublet, dd = doublet of doublets, t = triplet, q = quartet, sxt = sextet, m = multiplet (range of multiplets is given), br = broad signal, and dt = doublet of triplets. The mass spectra and purity were obtained for all compounds by high-performance liquid chromatography–mass spectrometry (LC–MS) on an Agilent 1260 Infinity II instrument using electrospray ionization (ESI). HPLC conditions were as follows: Gemini NX-C18 LC column 4.6 mm × 150 mm, 3 μm, 5–95% ACN (0.0375% TFA) in water (0.0375% TFA), 10 min run, flow rate 1.5 mL/min, UV detection (λ = 220, 254 nm) or Agilent C18 LC column 4.6 mm × 150 mm, 3 μm, 70:30 ACN (0.0375% TFA):water (0.0375% TFA), 20 min run, flow rate 1.5 mL/min, UV detection (λ = 214 nm).",
+            "SPR and TINS Screen": "For the SPR screen, SOS1, or SOS2 was immobilized on a neutravidin-coated sensor chip, and the binding of 2187 fragments was investigated at 500 μM. A total of 113 hits were identified (5% hit rate), as defined by the normalized occupancy ≥40% and visual inspection of sensorgrams to select hits displaying fast-on/off kinetics.",
+            "Figure 3 caption": "Flow scheme and summary results for the SPR, TINS, and X-ray crystallographic fragment screens.",
+            "Table 1": "Table 1. SPR K_D's for SPR and TINS Fragment Hits 7–14 Submitted for SOS2 X-Ray Crystallography Ex Compound structure and solubility SOS1 SPR K_D (μM)a SOS2 SPR K_D (μM)a PDB code 7 ‘Solubility 0.87 mM’ NSb 2,000 - 8 ‘Solubility 0.55 mM’ 960 300 - 9 ‘Solubility 1.05 mM’ NS 330 8UC9 10 ‘Solubility 1.05 mM’ NS 730 8UH0 11 ‘Solubility >10 mM’ 490 430 - 12 ‘Solubility >10 mM’ NS 550 8T5G 13 ‘Solubility >10 mM’ NS ~2,000 8T5R 14 ‘Solubility >10 mM’ NS NS 8T5M aK_D is based on n ≥ 2 with SEM within 0.2 units. bNS: nonsaturable binding. cSolubility measured by 1H NMR in DPBS buffer at pH 7.2. dSolubility measured by total light and dynamic light scattering in 1X PBS buffer at pH 7.4."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "neutravidin-coated",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "SOS2",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "2187 fragments",
+                "concentration_range": "500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

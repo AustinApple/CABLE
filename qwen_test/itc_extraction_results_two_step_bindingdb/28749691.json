@@ -1,0 +1,59 @@
+{
+    "50815746": {
+        "reactant_set_id": 50815746,
+        "pmid": 28749691,
+        "protein": "Bile acid receptor",
+        "ligand": {
+            "smiles": "COc1ccc(CNc2c(nc3ccc(Cl)cn23)-c2cc(Cl)ccn2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 37.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FXR (unknown origin) ligand binding domain by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 (Malvern Instruments, Worcestershire, U.K.) at 25 °C. The FXR-LBD (10 μM) was dialyzed against 20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.02% CHAPS, pH 7.4, and loaded into the sample cell. The ligand (58, 100 μM) was dissolved in the same buffer and loaded into the syringe. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA) with a one-site binding model. The binding constant (Kd), enthalpy change (ΔH), and stoichiometry (n) were determined from the fit. A control experiment with buffer in the syringe was performed to correct for heat of dilution."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "FXR-LBD",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.02% CHAPS",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "A control experiment with buffer in the syringe was performed to correct for heat of dilution.",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

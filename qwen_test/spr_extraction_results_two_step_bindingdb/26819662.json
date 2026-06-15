@@ -1,0 +1,67 @@
+{
+    "50489027": {
+        "reactant_set_id": 50489027,
+        "pmid": 26819662,
+        "protein": "Histone deacetylase 4",
+        "ligand": {
+            "smiles": "ONC(=O)[C@]1(F)[C@@H]([C@H]1c1ccc(cc1)-c1ncc(F)cn1)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HDAC4 catalytic domain (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Lauffer, B. E.; Mintzer, R.; Fong, R.; Mukund, S.; Tam, C.; Zilberleyb, I.; Flicke, B.; Ritscher, A.; Fedorowicz, G.; Vallero, R.; Ortwine, D. F.; Gunzner, J.; Modrusan, Z.; Neumann, L.; Koth, C. M.; Lupardus, P. J.; Kaminker, J. S.; Heise, C. E.; Steiner, P. Histone deacetylase (HDAC) inhibitor kinetic rate constants correlate with cellular histone acetylation but not transcription and cell viability. J. Biol. Chem. 2013, 288, 26926-26943.",
+        "original_paragraph": {
+            "SPR Analysis": "A direct measure of compound binding to the target was determined by surface plasmon resonance (SPR) where the HDAC4 catalytic domain was immobilized via amine coupling to the sensor surface (see Supporting Information). At steady state, the K_D for compound 14 was determined to be 0.01 μM (Table 2), with a K_on of 196800 /M.s and a K_off of 0.0044 /s, i.e. moderate on and off rates. The corresponding des-fluoro compound 13 displayed lower affinity, consistent with the biochemical assay, with a K_D value of 0.18 μM, driven by larger K_off of 0.0186 /s (the K_on value was 190270 /M.s).",
+            "Table 2 caption": "Table 2. Comparison of SPR K_D values with biochemical activity values for compounds 13, 14 and 16. a Arithmetic mean and standard error of ≥3 measurements.",
+            "Table 2 data": "Entry 13: Biochemical HDAC4 IC50 (μM) = 0.05±0.02, SPR K_D (μM) = 0.11±0.01 Entry 14: Biochemical HDAC4 IC50 (μM) = 0.01±0.001, SPR K_D (μM) = 0.02±0.01 Entry 16: Biochemical HDAC4 IC50 (μM) = 0.03±0.01, SPR K_D (μM) = 0.08±0.06",
+            "Figure 2 caption": "Figure 2. A. X-ray structure of HDAC2 (class I HDAC) with SAHA (4LXZ).[13] B. Protein structure superposition of HDAC4cd X-ray structures with compounds 13 and 14 (PDB codes: 4CBT, 5A2S, respectively). C. Enlarged region of the HDAC4 active site with compound 14. Residue numbering from PDB files."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "HDAC4 catalytic domain",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 13, Compound 14, Compound 16",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

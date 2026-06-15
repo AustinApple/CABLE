@@ -1,0 +1,62 @@
+{
+    "51601778": {
+        "reactant_set_id": 51601778,
+        "pmid": 39114932,
+        "protein": "Glucose-induced degradation protein 4 homolog",
+        "ligand": {
+            "smiles": "COc1cc(N2CCN(C(=O)CCOCCOCCOCCNC(=O)[C@@H]3CCCN3)CC2)ccc1Nc1ncc(Cl)c(Nc2ccccc2P(C)(C)=O)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6050.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His6-tagged GID4 (114 to 300 residues)(unknown origin) expressed in Escherichia coli Rosetta (DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC) Analysis": "ITC assays were conducted at 25 °C using a MicroCal PEAQ-ITC instrument (Malvern Panalytical). Purified GID4 protein fragment (residue 114–300) and Pro-PEG3-BA were both dissolved in an identical buffer (200 mM NaCl, 2 mM MgCl₂, 20 mM Hepes, 0.5 mM TCEP). Pro-PEG3-BA (1 mM in syringe) was titrated into the protein solution (32.5 μM in cell) with 19 injections of 2 μL each, except for the initial injection of 0.4 μL, with an interval of 150 s between injections and a reference power setting of 10 μcal/s. Analysis of the ITC data was carried out with MicroCal PEAQ-ITC Analysis Software.",
+            "Materials and Methods - Protein Expression and Purification": "His₆-tagged GID4 (residue 114–300) was transformed into E. coli Rosetta (DE3) competent cell and induced with 0.5 mM IPTG at 16 °C overnight. The cells were harvested by centrifugation at 3500 rpm for 20 min. Then, the bacterial pellets were resuspended in buffer containing 300 mM NaCl, 2 mM MgCl₂, 50 mM Hepes pH 7.4, 0.5 mM TCEP, 1 mM PMSF and lysed by sonication for 30 min (200 W power, 3 s on, 3 s off), followed by centrifugation to collect the supernatant at 16 000 rcf for 40 min at 4 °C. The cell lysates were applied to Ni-NTA affinity resin (Qiagen) and incubated for 1 h at 4 °C. The nickel column was washed with a gradient of imidazole in wash buffer (200 mM NaCl, 2 mM MgCl₂, 20 mM Hepes pH 7.4, 0.5 mM TCEP) containing 10 mM, 20 mM, and 50 mM imidazole, the bound proteins were eluted in elution buffer (200 mM NaCl, 2 mM MgCl₂, 20 mM Hepes pH 7.4, 0.5 mM TCEP, 300 mM imidazole). The eluted proteins were subsequently purified through size-exclusion chromatography (SEC) using Superdex 10/300 Increase (Cytiva) in buffer containing 200 mM NaCl, 2 mM MgCl₂, 20 mM Hepes pH 7.4, 0.5 mM TCEP. The peak fractions were pooled and concentrated for isothermal titration calorimetry (ITC) analysis.",
+            "Results - ITC Analysis": "To evaluate the extent of ternary complex formation of GID4-Pro-PEG3-BA with ALK versus EGFR in living cells, we performed a NanoBRET assay. The results revealed that the treatment of Pro-PEG3-BA caused an approximately 2-fold increase in the BRET signal between GID4 and ALK (Figure S6B). In contrast, the BRET signal between GID4 and EGFR showed a smaller increase of approximately 1.3-fold (Figure S6B). These results indicate a higher affinity for GID4-Pro-PEG3-BA to form a ternary complex with ALK than with EGFR.",
+            "Figure 6 caption": "As depicted in Figure 3B, AATacs demonstrate greater potency toward ALK compared to EGFR double mutant, which could be partially attributed to the strong binding affinity of the ternary complex formed with the target protein and the E3 ligase. To evaluate this issue, we first examined the affinity between Pro-PEG3-BA and GID4 using isothermal titration calorimetry (ITC). We found that the binding constant (Kₐ) value of Pro-PEG3-BA and GID4 protein is 6.05 μM (Figure S6A)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "GID4 (residue 114–300)",
+                "location": "cell",
+                "concentration": "32.5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "Pro-PEG3-BA",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "200 mM NaCl, 2 mM MgCl₂, 20 mM Hepes, 0.5 mM TCEP",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

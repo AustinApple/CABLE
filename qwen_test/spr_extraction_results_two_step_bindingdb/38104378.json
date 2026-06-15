@@ -1,0 +1,66 @@
+{
+    "51595621": {
+        "reactant_set_id": 51595621,
+        "pmid": 38104378,
+        "protein": "Receptor tyrosine-protein kinase erbB-2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@@H]1CCCN1C(=O)[C@@H](NC(=O)[C@H](C)N)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CSSCCOC(=O)C1(CC)C(=O)OCc2c1cc1n(c2=O)Cc2cc3ccccc3nc2-1)C(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(=O)NCC(=O)N[C@@H](CC(N)=O)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)NCC(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CO)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CCCCN)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human HER2 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "The SPR experiments were performed on CM5 sensor chips and Biacore T200 (GE Healthcare). Before formal coupling the protein to the CM5 chips, the pre-enrichment experiments of ligand were carried out to determine the optimal coupling concentration and pH. The ligand was diluted to 10 μg/mL in sodium acetate solution at pH 4.0, 4.5, 5.0 and 5.5, respectively. The pre-enrichment experiments were performed on the channel 2 of CM5 chip to determine the optimal pH at a flow rate of 10 μL/min, and CM5 chip was regenerated using 50 mM NaOH. After the ligand protein was diluted to 20 μg/mL with an optimal pH sodium acetate solution (such as pH 4.0), the ligand protein is coupled to channel 2 of the chip, while channels 1 and 2 are blocked. The coupling reagent was EDC/NHS, and the blocking reagent was ethanolamine. The ligand coupling level was calculated according to the following formula: R_max = MW_analyte/MW_ligand_protein × R_L × S_n Actual Coupling Ratio = 1.5R_L (R_max is the maximum response value, which is set to 100 RU here. For the case of 1: 1 coupling (S_n = 1), the ligand coupling level R_L is calculated.) Analytes were diluted with PBST buffer to an appropriate concentration, the flow rate was set to 10 μL/min, the flow path was selected as flow path 1–2, and the regeneration conditions were selected as Glycine 3.0, 2.5 and 2.0, respectively. Channel 1 has no coupled protein and is used as the reference channel. Regeneration conditions were screened by observing the binding of analyte to ligand by the signal from Flow path 2–1. Different concentrations of analytes are selected for analysis to determine the appropriate concentration and ensure that the response value is within a reasonable range. Analytes were diluted with PBST buffer to different concentrations (50, 25, 12.5, 6.25, 3.125, 1.56 μM), the regeneration condition was selected as Glycine 2.5, the flow rate was set to 30 μL/min, the injection time of each cycle was set to 90 s, and the dissociation time was also set to 90 s. According to the Biacore manufacturer’s instructions, the binding-dissociation curve was fitted and analyzed by Biacore T200 Evaluation Software, and the affinity-related parameters were calculated.",
+            "Figure 5B caption": "Binding affinity between conjugate 4 and HER2 protein.",
+            "Figure 5B plot description": "The sensorgram in Figure 5B shows the binding response over time for conjugate 4 at different concentrations (3.125 μM, 6.25 μM, 12.5 μM, 25 μM, 50 μM). The x-axis represents time (seconds) from -50 to 200, and the y-axis represents response (RU). The curves show association (increasing response) and dissociation (decreasing response) phases. The text in the figure indicates 'Conjugate 4, K_D=8.26×10⁻⁶M'."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "HER2 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "100",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Conjugate 4",
+                "concentration_range": "1.56 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 90,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "Glycine 2.5"
+            },
+            "data_analysis": {
+                "reference_description": "Channel 1 with no coupled protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    }
+}

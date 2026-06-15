@@ -1,0 +1,770 @@
+{
+    "50723248": {
+        "reactant_set_id": 50723248,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "CN1CCN(CC1)c1cccc2cc(NC(=O)Nc3ccc(Oc4ccnc5[nH]ccc45)cc3)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723250": {
+        "reactant_set_id": 50723250,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(c3)C(F)(F)F)cc2)ccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723251": {
+        "reactant_set_id": 50723251,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723252": {
+        "reactant_set_id": 50723252,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 120000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723254": {
+        "reactant_set_id": 50723254,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CO[P@@](O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723304": {
+        "reactant_set_id": 50723304,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "COc1cc2ncccc2cc1NC(=O)c1csc2cncnc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 59.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723305": {
+        "reactant_set_id": 50723305,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CO[P@](O)(=O)O[P@@](O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, and other nucleotides (ADP, AMP, Adenosine)",
+                "concentration_range": "For ATP: 20 μM (repeated injections); for Compound 1: 0.5 μM (highest) with 7 doses in 2-fold dilution series; for competition experiment: 0.5 μM Compound 1 and 20 μM ATP"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent) to prevent oxidation of Cys174 in ATP pocket",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "50723255": {
+        "reactant_set_id": 50723255,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CO[P@@](O)(=O)OP(O)(O)=O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 63000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, ADP, AMP, Adenosine",
+                "concentration_range": "0.5 μM to 20 μM (two-fold dilutions for Compound 1; 20 μM for ATP in Z'-factor calculation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent)",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50723258": {
+        "reactant_set_id": 50723258,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](COP(O)(O)=O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 370000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, ADP, AMP, Adenosine",
+                "concentration_range": "0.5 μM to 20 μM (two-fold dilutions for Compound 1; 20 μM for ATP in Z'-factor calculation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent)",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50723262": {
+        "reactant_set_id": 50723262,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "COc1cc2ncccc2cc1NC(=O)c1csc2cncnc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 150.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, ADP, AMP, Adenosine",
+                "concentration_range": "0.5 μM to 20 μM (two-fold dilutions for Compound 1; 20 μM for ATP in Z'-factor calculation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent)",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50723267": {
+        "reactant_set_id": 50723267,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "CNC(=O)c1cc(Oc2ccc(NC(=O)Nc3ccc(Cl)c(c3)C(F)(F)F)cc2)ccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, ADP, AMP, Adenosine",
+                "concentration_range": "0.5 μM to 20 μM (two-fold dilutions for Compound 1; 20 μM for ATP in Z'-factor calculation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent)",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50723306": {
+        "reactant_set_id": 50723306,
+        "pmid": 28109791,
+        "protein": "Mitogen-activated protein kinase kinase kinase 7",
+        "ligand": {
+            "smiles": "Nc1ncnc2n(cnc12)[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues) expressed in baculovirus infected sf9 cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Fabian, M.; Biggs, W.H. 3rd; Treiber, D.K.; Atteridge, C.E.; Azimioara, M.D.; Benedetti, M.G.; Carter, T.A.; Ciceri, P.; Edeen, P.T.; Floyd, M.; Ford, J.M.; Galvin, M.; Gerlach, J.L.; Grotzfeld, R.M.; Herrgard, S.; Insko, D.E.; Insko, M.A.; Lai, A.G.; Lelias, J.M.; Mehta, S.A.; Milanov, Z.V.; Velasco, A.M.; Wodicka, L.M.; Patel, H.K.; Zarrinkar, P.P.; Lockhart, D.J. Nat. Biotechnol. 2005, 23, 329.",
+        "original_paragraph": {
+            "Materials and Methods": "For the biophysical screening, an SPR-based binding assay was developed using a TAK1-TAB1 (TAK1 binding protein) fusion protein that consists of TAK1 kinase domain fused via a linker with the minimal region of TAB1 required for TAK1 binding and activation. TAK1 is known to exert its activity only when it forms a complex with TAB1. The minimally biotinylated TAK1 coupled on the streptavidine-coated surface of a sensor chip showed dose-dependent binding response upon the addition of ATP samples of increasing concentration (Suppl. Fig. S1a, b.). In addition, a known ATP-site covalent binder, 5Z-7-oxozeaenol, showed binding without any apparent dissociation, as expected with covalent binding (Suppl. Fig. S1c.). In the running buffer, a reducing agent, dithiothreitol, was added to offset the rapid loss of activity in the immobilized protein, presumably due to oxidation of a free cysteine, Cys174, present in the ATP pocket (Suppl. Fig. S1d). The Z'-factor was 0.84, when calculated for the repeated injections of 20 μM ATP. The assay is interpreted to be excellent, when the value is larger than 0.5.",
+            "Figure 2 caption": "Figure 2. SPR characterization of the binding of compound 1 to TAK1. a) Chemical structure of 1. b) The interaction of TAK1 with 1 (7 doses, 2-fold dilution series with the highest concentration at 0.5 μM). Theoretical curves were calculated by global fitting of the shown sensorgrams and are overlaid with the experimental curves. c) SPR-based competition experiment for 1. Sensorgrams corresponding to individual solutions for 1 and ATP are shown in light and dark grey, respectively, and a mixture solution is shown in black. Concentrations of 1 and ATP were 0.5 μM and 20 μM, respectively, both in the individual and mixture solutions. d) Graphical representation of the competition experiment for 1. White vertical bars represent the experimental responses measured for three different solutions as annotated in the bottom of each bar. Light gray and dark gray bars correspond to calculated signals for expected for non-competitive and competitive bindings, respectively. The signal for the non-competitive binding was calculated as the sum of the individual responses of ATP and 1 solutions, while the value for the competitive binding was determined according to the equation (5) in the reference 16, by using the K_D values in Table 1.",
+            "Table 1": "Table 1. Summary of the kinetic parameters determined for compounds that bind to TAK1 kinase | Compound | TAK1 autophosphorylation | K_D (μM) | k_on (M⁻¹s⁻¹) | k_off (s⁻¹) | |---|---|---|---|---| | ATP | Yes | 2.8 | fast | fast | | ADP | No | 63 | fast | fast | | ADP | Yes | 4.1 | fast | fast | | AMP | No | 370 | fast | fast | | AMP | Yes | 120 | fast | fast | | Adenosine | No | 34 | fast | fast | | Adenosine | Yes | 4.4 | fast | fast | | Compound 1 | No | 0.15 | fast | fast | | Compound 1 | Yes | 0.059 | 5.8 x 10⁵ | 0.034 | | Sorafenib | No | 1.3 | 1.4 x 10⁴ | 0.018 | | Sorafenib | Yes | 0.60 | 9.6 x 10³ | 0.0058 | | Compound 2 | Yes | 0.012 | 6.6 x 10⁴ | 0.00079 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human biotinylated N-terminal GST-tagged non-autophosphorylated TAK1 (1 to 303 residues) fused with TAB1 (437 to 504 residues)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "ATP, 5Z-7-oxozeaenol, Compound 1, Sorafenib, Compound 2, ADP, AMP, Adenosine",
+                "concentration_range": "0.5 μM to 20 μM (two-fold dilutions for Compound 1; 20 μM for ATP in Z'-factor calculation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer containing dithiothreitol (reducing agent)",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "50868118": {
+        "reactant_set_id": 50868118,
+        "pmid": 18046409,
+        "protein": "NAD-dependent protein deacetylase sirtuin-1",
+        "ligand": {
+            "smiles": "COc1cc(cc(OC)c1OC)C(=O)Nc1ccccc1-c1cn2c(CN3CCNCC3)csc2n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human SIRT1 by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "The full details of the materials and methods are presented in the Supplementary Information. The compounds, SRT1460, SRT1720, and SRT2183, were synthesized at Sirtis Pharmaceuticals. SIRT1 constructs were expressed in E. coli and purified by affinity, size exclusion, and/or ion exchange chromatography. The SIRT1 fluorescence polarization assay used a peptide based on p53 linked to biotin at the N-terminal end and to a fluorescent tag at the C-terminal end. The reaction was a coupled enzyme assay where the first reaction was the deacetylation reaction and the second was cleavage by trypsin at the exposed lysine. The mass spectrometry assay was used for all SAR studies and employs the same peptide as the HTS assay. For the in cell western assay (ICW) the acetylation state of p53 was determined using a polyclonal antibody against the acetylated lysine residue at position 382 in p53. The effect of test compounds on the K_m of SIRT1 for peptide substrate was examined using the mass spectrometry assay. Isothermal titration calorimetry was performed using a VP-ITC (MicroCal, Inc.). For the isobologram analysis a concentration matrix of two compounds was created and tested against SIRT1 using the mass spectrometry assay. For pharmacokinetic studies compounds were administered by oral gavage or intravenously to C57BL/6 male mice at the doses indicated. For all in vivo efficacy studies vehicle or test compound was administered once daily by oral gavage. For the DIO studies, C57BL/6 male mice were fed a high-fat diet until their mean body weight reached approximately 40 g. Lep^ob/ob mice and heterozygous Lep^ob/+ mice were placed on a high-fat diet for a minimum of 1 week before the start of a study and remained on the high-fat diet for the duration of the study. Male fatty (fa/fa) Zucker (ZF) rats (Harlan Sprague–Dawley, Inc.) were used for the studies.",
+            "Results Section": "The energetics of binding of SRT1460 to purified SIRT1 enzyme were studied by isothermal titration calorimetry. The titration of SRT1460 against purified human SIRT1-C did not result in detectable binding (data not shown). In the presence of acetylated peptide substrate SRT1460 exhibited signs of protein-binding-site saturation best fitting a one site binding model (Fig. 2b). The dissociation constant (K_d) for SRT1460 was 16.2 μM and the enthalpy (ΔH) was −6.1 kcal mol^−1. The data suggest that SRT1460, and other related SIRT1 activators, bind to a SIRT1–peptide substrate complex and promote a more productive conformation that enhances catalytic activity. Binding of substrate may induce a conformational change that leads to the exposure of an allosteric binding site.",
+            "Figure 2 caption": "Figure 2 | In vitro characterization of activators of human SIRT1. a, The effect of SIRT1 activators on peptide substrate K_m. b, Calorimetric titrations of SIRT1-C–peptide substrate complex with the activator SRT1460. Top panel: heat of binding SRT1460 to enzyme–peptide complex. Bottom panel: integrated fit with a one-site binding model. c, Isobologram analysis of resveratrol versus SRT1720 and SRT1720 versus SRT1460. The experimental data are best fit to the theoretical line of additivity (dashed line). d, SIRT1 N-terminal truncations define the allosteric compound binding site. The ability of resveratrol and SRT1720 to activate SIRT1 was examined against a series of N-terminal deletions in the mass spectrometry assay."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "SIRT1-C",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "SRT1460",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

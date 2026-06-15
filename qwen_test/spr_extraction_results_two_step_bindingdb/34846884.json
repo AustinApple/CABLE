@@ -1,0 +1,66 @@
+{
+    "51455203": {
+        "reactant_set_id": 51455203,
+        "pmid": 34846884,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "Cn1c2ccc(Nc3ccnc(Cl)c3C#N)cc2c(NC(C)(C)c2ncc(cn2)C2CC2)cc1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 234.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human BCL6 BDB domain by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR experiments were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C. The human BCL6 BTB domain (residues 1–120) was immobilized on a CM5 sensor chip via amine coupling. The ligand was injected at concentrations ranging from 0.1 to 100 nM in HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20) at a flow rate of 30 μL/min. Regeneration was achieved with 10 mM glycine-HCl, pH 2.0. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 8 caption": "Figure 8. X-ray structure of 25 (PDB: 7OKD, resolution 1.94 Å).",
+            "Results section": "Biochemical and cellular potency was maintained, and binding affinity to the BCL6 BTB domain was also confirmed by SPR (25 TR-FRET pIC50 7.58, SPR pKD 6.63)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human BCL6 BTB domain (residues 1–120)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 25 (as inferred from Figure 8 caption and Results section)",
+                "concentration_range": "0.1 to 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM glycine-HCl, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

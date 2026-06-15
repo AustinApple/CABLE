@@ -1,0 +1,140 @@
+{
+    "51100348": {
+        "reactant_set_id": 51100348,
+        "pmid": 29665527,
+        "protein": "Histone acetyltransferase GCN5",
+        "ligand": {
+            "smiles": "CC1(C)CC(=O)C2=C(C1)NC1=C(C2c2cc(Br)c(OCc3ccc(cc3)C(O)=O)c(Br)c2)C(=O)CC(C)(C)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to yeast GCN5 (99 to 262 residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [32] not found in bibliography",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) based binding assay": "The SPR binding assays were performed on a Biacore T200 instrument (GE Healthcare). GCN5 protein was covalently coupled on CM5 chip according to standard procedure [32]. The whole system was equilibrated overnight first with HBS buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 0.05% (v/v) surfactant P20, and 0.25% (v/v) dimethyl sulfoxide). The whole system was incubated for 60 min at room temperature before amplified chemiluminescent signal at 570 nm was collected on the multilabel reader. All data were analyzed in Graphpad Prism 6.0. Detailed information about high throughput screening and assay development is provided in Supplementary material (Table S1, Fig. S1).",
+            "Figure 2 caption": "Fig. 2. Evaluation of hit compound DC_G16 by biochemical and biophysical assays in vitro. a) The inhibitory activity of DC_G16 determined in GCN5 radioisotope assay. b) STD NMR experiments of 5 μM GCN5 in the presence of 200 μM DC_G16. c) Dose-dependent CPMG spectra for 200 μM DC_G16 (red) in the presence of 5 μM GCN5 (blue), 2 μM GCN5 (green) and 1 μM GCN5 (aqua). d) SPR-based binding assay of DC_G16 with GCN5. The compound was prepared at concentration of 19.2 μM, 21.2 μM, 25.6 μM, 34.1 μM, 41.3 μM, and 50 μM, respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Figure 4 caption": "Fig. 4. The interaction and putative binding mode between DC_G16-11 and GCN5. a) SPR based binding assay of DC_G16-11 with GCN5. The compound was prepared at concentration of 0.9 μM, 1.2 μM, 1.7 μM, 2.4 μM, 4.7 μM and 6.5 μM, respectively. b) The alignment of H3 peptide binding site of tetrahymena GCN5 (PDB ID: 1QSN) and predicted binding conformation of DC_G16-11. H3 peptide is depicted as green sticks, while DC_G16-11 is depicted as magenta sticks. GCN5 is shown in white surface. c) Close-up view of the key interactions stabilizing DC_G16-11 in H3 peptide binding pocket. DC_G16-11 is depicted as magenta sticks, the surrounding key residues are shown in slate sticks and labelled. Hydrogen bonds are shown as yellow dot lines. GCN5 is shown in white surface. d) A putative halogen bond between bromine atom and oxygen atom. Bromine atom, oxygen atom and carbon atom involved in halogen bond are shown in green, yellow and orange ball, respectively, the measurement results of distance between Br and O and angle of C-Br-O are shown in red. DC_G16-11 is depicted as magenta sticks. E173 is shown in slate sticks. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Results - Binding assay based on SPR": "Given the prominent potency of DC_G16-11, surface plasmon resonance (SPR) based binding assay was performed to quantitatively determine the binding affinity between DC_G16-11 and GCN5. The results revealed the binding between DC_G16-11 and GCN5 with a K_D value of 4.2 μM (Fig. 4a). Compared with DC_G16, DC_G16-11 presented a higher binding affinity with GCN5, which was consistent with inhibitory activity measured by radioisotope assays.",
+            "Results - Discovery of hit compound DC_G16 through HTS": "Both Carr-Purcell-Meiboom-Gill (CPMG) and saturation transfer difference (STD) in NMR studies revealed that only DC_G16 could bind to the catalytic domain of GCN5 (Fig. 2b, c). The direct binding between DC_G16 and GCN5 was further measured quantitatively using SPR with a K_D value of 26.2 μM (Fig. 2d), which was in accordance with the inhibitory activity in radioactive acetylation assay (Fig. 2a). Hence, we identified DC_G16 as a hit compound for follow-up optimization.",
+            "Table 1": "Table 1 (continued) Entry Compound Structure IC50 (μM) 10 6e 26%@33 μM 11 6f (DC_G16-11) 6.8",
+            "Figure 2d": "DC_G16 K_D=26.2 μM Response unit -100 0 100 200 Time/s 19.2 μM 21.2 μM 25.6 μM 34.1 μM 41.3 μM 50 μM",
+            "Figure 4a": "DC_G16-11 K_D=4.2 μM Response unit -100 0 100 200 Time/s 0.9 μM 1.2 μM 1.7 μM 2.4 μM 4.7 μM 6.5 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GCN5 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DC_G16 and DC_G16-11 compounds",
+                "concentration_range": "DC_G16: 19.2 μM - 50 μM; DC_G16-11: 0.9 μM - 6.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 0.05% (v/v) surfactant P20, and 0.25% (v/v) dimethyl sulfoxide",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Graphpad Prism 6.0"
+            }
+        }
+    },
+    "51100356": {
+        "reactant_set_id": 51100356,
+        "pmid": 29665527,
+        "protein": "Histone acetyltransferase GCN5",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc(COc2c(Cl)cc(cc2Cl)C2C3=C(CCCC3=O)NC3=C2C(=O)CCC3)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 26200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to yeast GCN5 (99 to 262 residues) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [32] not found in bibliography",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) based binding assay": "The SPR binding assays were performed on a Biacore T200 instrument (GE Healthcare). GCN5 protein was covalently coupled on CM5 chip according to standard procedure [32]. The whole system was equilibrated overnight first with HBS buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 0.05% (v/v) surfactant P20, and 0.25% (v/v) dimethyl sulfoxide). The whole system was incubated for 60 min at room temperature before amplified chemiluminescent signal at 570 nm was collected on the multilabel reader. All data were analyzed in Graphpad Prism 6.0. Detailed information about high throughput screening and assay development is provided in Supplementary material (Table S1, Fig. S1).",
+            "Figure 2 caption": "Fig. 2. Evaluation of hit compound DC_G16 by biochemical and biophysical assays in vitro. a) The inhibitory activity of DC_G16 determined in GCN5 radioisotope assay. b) STD NMR experiments of 5 μM GCN5 in the presence of 200 μM DC_G16. c) Dose-dependent CPMG spectra for 200 μM DC_G16 (red) in the presence of 5 μM GCN5 (blue), 2 μM GCN5 (green) and 1 μM GCN5 (aqua). d) SPR-based binding assay of DC_G16 with GCN5. The compound was prepared at concentration of 19.2 μM, 21.2 μM, 25.6 μM, 34.1 μM, 41.3 μM, and 50 μM, respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Figure 4 caption": "Fig. 4. The interaction and putative binding mode between DC_G16-11 and GCN5. a) SPR based binding assay of DC_G16-11 with GCN5. The compound was prepared at concentration of 0.9 μM, 1.2 μM, 1.7 μM, 2.4 μM, 4.7 μM and 6.5 μM, respectively. b) The alignment of H3 peptide binding site of tetrahymena GCN5 (PDB ID: 1QSN) and predicted binding conformation of DC_G16-11. H3 peptide is depicted as green sticks, while DC_G16-11 is depicted as magenta sticks. GCN5 is shown in white surface. c) Close-up view of the key interactions stabilizing DC_G16-11 in H3 peptide binding pocket. DC_G16-11 is depicted as magenta sticks, the surrounding key residues are shown in slate sticks and labelled. Hydrogen bonds are shown as yellow dot lines. GCN5 is shown in white surface. d) A putative halogen bond between bromine atom and oxygen atom. Bromine atom, oxygen atom and carbon atom involved in halogen bond are shown in green, yellow and orange ball, respectively, the measurement results of distance between Br and O and angle of C-Br-O are shown in red. DC_G16-11 is depicted as magenta sticks. E173 is shown in slate sticks. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Results - Binding assay based on SPR": "Given the prominent potency of DC_G16-11, surface plasmon resonance (SPR) based binding assay was performed to quantitatively determine the binding affinity between DC_G16-11 and GCN5. The results revealed the binding between DC_G16-11 and GCN5 with a K_D value of 4.2 μM (Fig. 4a). Compared with DC_G16, DC_G16-11 presented a higher binding affinity with GCN5, which was consistent with inhibitory activity measured by radioisotope assays.",
+            "Results - Discovery of hit compound DC_G16 through HTS": "Both Carr-Purcell-Meiboom-Gill (CPMG) and saturation transfer difference (STD) in NMR studies revealed that only DC_G16 could bind to the catalytic domain of GCN5 (Fig. 2b, c). The direct binding between DC_G16 and GCN5 was further measured quantitatively using SPR with a K_D value of 26.2 μM (Fig. 2d), which was in accordance with the inhibitory activity in radioactive acetylation assay (Fig. 2a). Hence, we identified DC_G16 as a hit compound for follow-up optimization.",
+            "Table 1": "Table 1 (continued) Entry Compound Structure IC50 (μM) 10 6e 26%@33 μM 11 6f (DC_G16-11) 6.8",
+            "Figure 2d": "DC_G16 K_D=26.2 μM Response unit -100 0 100 200 Time/s 19.2 μM 21.2 μM 25.6 μM 34.1 μM 41.3 μM 50 μM",
+            "Figure 4a": "DC_G16-11 K_D=4.2 μM Response unit -100 0 100 200 Time/s 0.9 μM 1.2 μM 1.7 μM 2.4 μM 4.7 μM 6.5 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GCN5 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DC_G16 and DC_G16-11 compounds",
+                "concentration_range": "DC_G16: 19.2 μM - 50 μM; DC_G16-11: 0.9 μM - 6.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 0.05% (v/v) surfactant P20, and 0.25% (v/v) dimethyl sulfoxide",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Graphpad Prism 6.0"
+            }
+        }
+    }
+}

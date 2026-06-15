@@ -1,0 +1,59 @@
+{
+    "50804991": {
+        "reactant_set_id": 50804991,
+        "pmid": 29485874,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "CCOC(=O)c1ccnc2[nH]ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 49500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human full length N-terminal His tagged-MTH1 expressed in Escherichia coli at 3 mM by isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "Isothermal Titration Calorimetry (ITC) was used to obtain the thermodynamic information on binding between MTH1 and fragment 1. All the measurements were performed in a buffer composed of 20 mM Tris pH 7.5, 150 mM NaCl, 2 mM MgCl2, 10% glycerol, 0.5 mM TCEP. The calorimeter cell (volume 200 μL) was loaded with MTH1 protein at a concentration of 326 μM, and the syringe was loaded with fragment 1 (dissolved in the same buffer) at a concentration of 3 mM in 1.5% DMSO (v/v). The DMSO concentrations in the cell and the syringe were carefully matched. Titrations were carried out at 25 °C with a stirring speed of 1000 rpm, and each reaction had an initial delay of 60 s. Spacing between injections was kept at 150 s and the reference power at 8 μcal/s. The injection protocol included a single 0.4 μL first injection followed by 38 × 2 μL injections of the compound into the calorimeter cell. Data were analyzed using Origin 7 software package and fitted well to a one-site binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": null
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "326",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "fragment 1",
+                "location": "syringe",
+                "concentration": "3000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris, 150 mM NaCl, 2 mM MgCl2, 10% glycerol, 0.5 mM TCEP",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "39"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

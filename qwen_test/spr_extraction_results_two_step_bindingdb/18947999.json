@@ -1,0 +1,327 @@
+{
+    "50876052": {
+        "reactant_set_id": 50876052,
+        "pmid": 18947999,
+        "protein": "Glycophorin-A",
+        "ligand": {
+            "smiles": "C[C@H]1CC[C@]2(C)O[C@]3(C)CC[C@@H]4O[C@@H]5C[C@@H]6O[C@@H]7C[C@H](OS([O-])(=O)=O)[C@@](C)(CCOS([O-])(=O)=O)O[C@H]7C[C@H]6O[C@H]5C[C@H]4O[C@H]3C[C@H]2O[C@H]2C[C@H]3O[C@H]4C[C@H]5O[C@@H](C(=C)C[C@@H]5O[C@]4(C)C[C@@H]3O[C@H]12)[C@](C)(O)\\C=C\\C(=C)CC=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 120000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transmembrane alpha-helix of glycophorin A by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Torikai, K.; Oishi, T.; Ujihara, S.; Matsumori, N.; Konoki, K.; Murata, M.; Aimoto, S. J. Am. Chem. Soc. 2008, 130, 10217.",
+        "original_paragraph": {
+            "Materials and Methods": "We first examined the interaction of LSPs with a transmembrane α-helix of GpA by SPR. For the SPR experiments (BIACORE X), a synthetic peptide corresponding to the transmembrane domain (EPEITLIFGVMAGVIGTILLISYGIRRL, GpA-TM) was immobilized via an amide bond onto the CM5 sensorchip, which possesses carboxymethyl groups covalently attached to dextran. As LSP models, we selected synthetic compounds 1, 2, 3, and natural YTX (Fig. 3) since YTX was sufficiently obtained from the laboratory cultures of the dinoflagellate Protoceratium reticulatum. Desulfated YTX (ds-YTX) was prepared by hydrolysis of sulfate esters by a reported method. These LSPs have been shown to dissociate GpA dimers into monomers in the SDS-PAGE experiments. Their interaction with GpA-TM was analyzed under the following conditions: a running buffer HBS (10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20, a flow rate 10 μL/min, and temperature 25 °C. Higher concentration of Tween 20 was used to mimic biomembrane environments by covering the hydrophobic surface of the transmembrane peptide with the detergent.",
+            "Figure 2 caption": "Figure 2. SPR sensorgrams of LSPs binding to GpA-TM. (A) YTX was injected in 0–40 μM; (B) ds-YTX was injected in 0–40 μM (containing 1% DMSO and 400 μM Tween 20). Four traces in either (A) or (B) corresponds 40, 30, 20, and 10 μM from the top.",
+            "Table 1": "Table 1 Dissociation constant (μM) of LSPs against GpA-TM LSP GpA-TM GpA-TM (2G/2I) YTX 120 85 ds-YTX 270 99 1 2400 860 2 240 150 3 48 7.7 * The values are cited from a previous study.18",
+            "Results section": "As a result, dose-dependent changes in sensorgrams were observed for all the analytes tested (Fig. 2, data not shown for ALPs). The equilibrium dissociation constant (Kd) was determined using BIAevaluation software with a steady state affinity model based on stoichiometric interaction (Table 1). The affinity of YTX to GpA-TM is higher than that of ds-YTX although this stabilization effect for the YTX–GpA-TM complex may be derived from the electrostatic interaction between two sulfate esters of YTX and basic amino acids in GpA-TM (e.g., R96 and R97). On the other hand, affinities of tetracyclic and heptacyclic ALPs (2 and 3), a part of which have been published previously,18 were comparable to or higher than that of YTX, while monocyclic ether 1 showed virtually no interaction. These results are roughly consistent with those of SDS-PAGE.18 The higher affinity of 3 suggests that the shape of LSP molecules influences the proximity to transmembrane peptides."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GpA-TM (EPEITLIFGVMAGVIGTILLISYGIRRL)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "LSPs including synthetic compounds 1, 2, 3, and natural YTX, as well as desulfated YTX (ds-YTX)",
+                "concentration_range": "0–40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS (10 mM HEPES, 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50876053": {
+        "reactant_set_id": 50876053,
+        "pmid": 18947999,
+        "protein": "Glycophorin-A",
+        "ligand": {
+            "smiles": "C[C@@]12CC[C@@H]3O[C@@H]4C[C@@H]5O[C@@H]6C[C@H](O)[C@@H](CO)O[C@H]6CC[C@@]5(C)O[C@H]4C[C@H]3O[C@H]1C[C@H]1O[C@@H](CCOCc3ccccc3)[C@@H](C[C@@H]1O2)OCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 48000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transmembrane alpha-helix of glycophorin A by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Torikai, K.; Oishi, T.; Ujihara, S.; Matsumori, N.; Konoki, K.; Murata, M.; Aimoto, S. J. Am. Chem. Soc. 2008, 130, 10217.",
+        "original_paragraph": {
+            "Materials and Methods": "We first examined the interaction of LSPs with a transmembrane α-helix of GpA by SPR. For the SPR experiments (BIACORE X), a synthetic peptide corresponding to the transmembrane domain (EPEITLIFGVMAGVIGTILLISYGIRRL, GpA-TM) was immobilized via an amide bond onto the CM5 sensorchip, which possesses carboxymethyl groups covalently attached to dextran. As LSP models, we selected synthetic compounds 1, 2, 3, and natural YTX (Fig. 3) since YTX was sufficiently obtained from the laboratory cultures of the dinoflagellate Protoceratium reticulatum. Desulfated YTX (ds-YTX) was prepared by hydrolysis of sulfate esters by a reported method. These LSPs have been shown to dissociate GpA dimers into monomers in the SDS-PAGE experiments. Their interaction with GpA-TM was analyzed under the following conditions: a running buffer HBS (10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20, a flow rate 10 μL/min, and temperature 25 °C. Higher concentration of Tween 20 was used to mimic biomembrane environments by covering the hydrophobic surface of the transmembrane peptide with the detergent.",
+            "Figure 2 caption": "Figure 2. SPR sensorgrams of LSPs binding to GpA-TM. (A) YTX was injected in 0–40 μM; (B) ds-YTX was injected in 0–40 μM (containing 1% DMSO and 400 μM Tween 20). Four traces in either (A) or (B) corresponds 40, 30, 20, and 10 μM from the top.",
+            "Table 1": "Table 1 Dissociation constant (μM) of LSPs against GpA-TM LSP GpA-TM GpA-TM (2G/2I) YTX 120 85 ds-YTX 270 99 1 2400 860 2 240 150 3 48 7.7 * The values are cited from a previous study.18",
+            "Results section": "As a result, dose-dependent changes in sensorgrams were observed for all the analytes tested (Fig. 2, data not shown for ALPs). The equilibrium dissociation constant (Kd) was determined using BIAevaluation software with a steady state affinity model based on stoichiometric interaction (Table 1). The affinity of YTX to GpA-TM is higher than that of ds-YTX although this stabilization effect for the YTX–GpA-TM complex may be derived from the electrostatic interaction between two sulfate esters of YTX and basic amino acids in GpA-TM (e.g., R96 and R97). On the other hand, affinities of tetracyclic and heptacyclic ALPs (2 and 3), a part of which have been published previously,18 were comparable to or higher than that of YTX, while monocyclic ether 1 showed virtually no interaction. These results are roughly consistent with those of SDS-PAGE.18 The higher affinity of 3 suggests that the shape of LSP molecules influences the proximity to transmembrane peptides."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GpA-TM (EPEITLIFGVMAGVIGTILLISYGIRRL)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "LSPs including synthetic compounds 1, 2, 3, and natural YTX, as well as desulfated YTX (ds-YTX)",
+                "concentration_range": "0–40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS (10 mM HEPES, 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50876054": {
+        "reactant_set_id": 50876054,
+        "pmid": 18947999,
+        "protein": "Glycophorin-A",
+        "ligand": {
+            "smiles": "C[C@@]12CC[C@@H]3O[C@H](CO)[C@@H](O)C[C@H]3O[C@H]1C[C@H]1O[C@@H](COCc3ccccc3)[C@@H](C[C@@H]1O2)OCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 240000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transmembrane alpha-helix of glycophorin A by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Torikai, K.; Oishi, T.; Ujihara, S.; Matsumori, N.; Konoki, K.; Murata, M.; Aimoto, S. J. Am. Chem. Soc. 2008, 130, 10217.",
+        "original_paragraph": {
+            "Materials and Methods": "We first examined the interaction of LSPs with a transmembrane α-helix of GpA by SPR. For the SPR experiments (BIACORE X), a synthetic peptide corresponding to the transmembrane domain (EPEITLIFGVMAGVIGTILLISYGIRRL, GpA-TM) was immobilized via an amide bond onto the CM5 sensorchip, which possesses carboxymethyl groups covalently attached to dextran. As LSP models, we selected synthetic compounds 1, 2, 3, and natural YTX (Fig. 3) since YTX was sufficiently obtained from the laboratory cultures of the dinoflagellate Protoceratium reticulatum. Desulfated YTX (ds-YTX) was prepared by hydrolysis of sulfate esters by a reported method. These LSPs have been shown to dissociate GpA dimers into monomers in the SDS-PAGE experiments. Their interaction with GpA-TM was analyzed under the following conditions: a running buffer HBS (10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20, a flow rate 10 μL/min, and temperature 25 °C. Higher concentration of Tween 20 was used to mimic biomembrane environments by covering the hydrophobic surface of the transmembrane peptide with the detergent.",
+            "Figure 2 caption": "Figure 2. SPR sensorgrams of LSPs binding to GpA-TM. (A) YTX was injected in 0–40 μM; (B) ds-YTX was injected in 0–40 μM (containing 1% DMSO and 400 μM Tween 20). Four traces in either (A) or (B) corresponds 40, 30, 20, and 10 μM from the top.",
+            "Table 1": "Table 1 Dissociation constant (μM) of LSPs against GpA-TM LSP GpA-TM GpA-TM (2G/2I) YTX 120 85 ds-YTX 270 99 1 2400 860 2 240 150 3 48 7.7 * The values are cited from a previous study.18",
+            "Results section": "As a result, dose-dependent changes in sensorgrams were observed for all the analytes tested (Fig. 2, data not shown for ALPs). The equilibrium dissociation constant (Kd) was determined using BIAevaluation software with a steady state affinity model based on stoichiometric interaction (Table 1). The affinity of YTX to GpA-TM is higher than that of ds-YTX although this stabilization effect for the YTX–GpA-TM complex may be derived from the electrostatic interaction between two sulfate esters of YTX and basic amino acids in GpA-TM (e.g., R96 and R97). On the other hand, affinities of tetracyclic and heptacyclic ALPs (2 and 3), a part of which have been published previously,18 were comparable to or higher than that of YTX, while monocyclic ether 1 showed virtually no interaction. These results are roughly consistent with those of SDS-PAGE.18 The higher affinity of 3 suggests that the shape of LSP molecules influences the proximity to transmembrane peptides."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GpA-TM (EPEITLIFGVMAGVIGTILLISYGIRRL)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "LSPs including synthetic compounds 1, 2, 3, and natural YTX, as well as desulfated YTX (ds-YTX)",
+                "concentration_range": "0–40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS (10 mM HEPES, 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50876055": {
+        "reactant_set_id": 50876055,
+        "pmid": 18947999,
+        "protein": "Glycophorin-A",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@@H](COCc2ccccc2)[C@@H](C[C@@H]1O)OCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2400000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transmembrane alpha-helix of glycophorin A by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Torikai, K.; Oishi, T.; Ujihara, S.; Matsumori, N.; Konoki, K.; Murata, M.; Aimoto, S. J. Am. Chem. Soc. 2008, 130, 10217.",
+        "original_paragraph": {
+            "Materials and Methods": "We first examined the interaction of LSPs with a transmembrane α-helix of GpA by SPR. For the SPR experiments (BIACORE X), a synthetic peptide corresponding to the transmembrane domain (EPEITLIFGVMAGVIGTILLISYGIRRL, GpA-TM) was immobilized via an amide bond onto the CM5 sensorchip, which possesses carboxymethyl groups covalently attached to dextran. As LSP models, we selected synthetic compounds 1, 2, 3, and natural YTX (Fig. 3) since YTX was sufficiently obtained from the laboratory cultures of the dinoflagellate Protoceratium reticulatum. Desulfated YTX (ds-YTX) was prepared by hydrolysis of sulfate esters by a reported method. These LSPs have been shown to dissociate GpA dimers into monomers in the SDS-PAGE experiments. Their interaction with GpA-TM was analyzed under the following conditions: a running buffer HBS (10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20, a flow rate 10 μL/min, and temperature 25 °C. Higher concentration of Tween 20 was used to mimic biomembrane environments by covering the hydrophobic surface of the transmembrane peptide with the detergent.",
+            "Figure 2 caption": "Figure 2. SPR sensorgrams of LSPs binding to GpA-TM. (A) YTX was injected in 0–40 μM; (B) ds-YTX was injected in 0–40 μM (containing 1% DMSO and 400 μM Tween 20). Four traces in either (A) or (B) corresponds 40, 30, 20, and 10 μM from the top.",
+            "Table 1": "Table 1 Dissociation constant (μM) of LSPs against GpA-TM LSP GpA-TM GpA-TM (2G/2I) YTX 120 85 ds-YTX 270 99 1 2400 860 2 240 150 3 48 7.7 * The values are cited from a previous study.18",
+            "Results section": "As a result, dose-dependent changes in sensorgrams were observed for all the analytes tested (Fig. 2, data not shown for ALPs). The equilibrium dissociation constant (Kd) was determined using BIAevaluation software with a steady state affinity model based on stoichiometric interaction (Table 1). The affinity of YTX to GpA-TM is higher than that of ds-YTX although this stabilization effect for the YTX–GpA-TM complex may be derived from the electrostatic interaction between two sulfate esters of YTX and basic amino acids in GpA-TM (e.g., R96 and R97). On the other hand, affinities of tetracyclic and heptacyclic ALPs (2 and 3), a part of which have been published previously,18 were comparable to or higher than that of YTX, while monocyclic ether 1 showed virtually no interaction. These results are roughly consistent with those of SDS-PAGE.18 The higher affinity of 3 suggests that the shape of LSP molecules influences the proximity to transmembrane peptides."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GpA-TM (EPEITLIFGVMAGVIGTILLISYGIRRL)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "LSPs including synthetic compounds 1, 2, 3, and natural YTX, as well as desulfated YTX (ds-YTX)",
+                "concentration_range": "0–40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS (10 mM HEPES, 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50876056": {
+        "reactant_set_id": 50876056,
+        "pmid": 18947999,
+        "protein": "Glycophorin-A",
+        "ligand": {
+            "smiles": "C[C@H]1CC[C@]2(C)O[C@]3(C)CC[C@@H]4O[C@@H]5C[C@@H]6O[C@@H]7C[C@H](O)[C@@](C)(CCO)O[C@H]7C[C@H]6O[C@H]5C[C@H]4O[C@H]3C[C@H]2O[C@H]2C[C@H]3O[C@H]4C[C@H]5O[C@@H](C(=C)C[C@@H]5O[C@]4(C)C[C@@H]3O[C@H]12)[C@](C)(O)\\C=C\\C(=C)CC=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 270000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to transmembrane alpha-helix of glycophorin A by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Torikai, K.; Oishi, T.; Ujihara, S.; Matsumori, N.; Konoki, K.; Murata, M.; Aimoto, S. J. Am. Chem. Soc. 2008, 130, 10217.",
+        "original_paragraph": {
+            "Materials and Methods": "We first examined the interaction of LSPs with a transmembrane α-helix of GpA by SPR. For the SPR experiments (BIACORE X), a synthetic peptide corresponding to the transmembrane domain (EPEITLIFGVMAGVIGTILLISYGIRRL, GpA-TM) was immobilized via an amide bond onto the CM5 sensorchip, which possesses carboxymethyl groups covalently attached to dextran. As LSP models, we selected synthetic compounds 1, 2, 3, and natural YTX (Fig. 3) since YTX was sufficiently obtained from the laboratory cultures of the dinoflagellate Protoceratium reticulatum. Desulfated YTX (ds-YTX) was prepared by hydrolysis of sulfate esters by a reported method. These LSPs have been shown to dissociate GpA dimers into monomers in the SDS-PAGE experiments. Their interaction with GpA-TM was analyzed under the following conditions: a running buffer HBS (10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20, a flow rate 10 μL/min, and temperature 25 °C. Higher concentration of Tween 20 was used to mimic biomembrane environments by covering the hydrophobic surface of the transmembrane peptide with the detergent.",
+            "Figure 2 caption": "Figure 2. SPR sensorgrams of LSPs binding to GpA-TM. (A) YTX was injected in 0–40 μM; (B) ds-YTX was injected in 0–40 μM (containing 1% DMSO and 400 μM Tween 20). Four traces in either (A) or (B) corresponds 40, 30, 20, and 10 μM from the top.",
+            "Table 1": "Table 1 Dissociation constant (μM) of LSPs against GpA-TM LSP GpA-TM GpA-TM (2G/2I) YTX 120 85 ds-YTX 270 99 1 2400 860 2 240 150 3 48 7.7 * The values are cited from a previous study.18",
+            "Results section": "As a result, dose-dependent changes in sensorgrams were observed for all the analytes tested (Fig. 2, data not shown for ALPs). The equilibrium dissociation constant (Kd) was determined using BIAevaluation software with a steady state affinity model based on stoichiometric interaction (Table 1). The affinity of YTX to GpA-TM is higher than that of ds-YTX although this stabilization effect for the YTX–GpA-TM complex may be derived from the electrostatic interaction between two sulfate esters of YTX and basic amino acids in GpA-TM (e.g., R96 and R97). On the other hand, affinities of tetracyclic and heptacyclic ALPs (2 and 3), a part of which have been published previously,18 were comparable to or higher than that of YTX, while monocyclic ether 1 showed virtually no interaction. These results are roughly consistent with those of SDS-PAGE.18 The higher affinity of 3 suggests that the shape of LSP molecules influences the proximity to transmembrane peptides."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIAcore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GpA-TM (EPEITLIFGVMAGVIGTILLISYGIRRL)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "LSPs including synthetic compounds 1, 2, 3, and natural YTX, as well as desulfated YTX (ds-YTX)",
+                "concentration_range": "0–40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS (10 mM HEPES, 150 mM NaCl, 3 mM EDTA) containing 1% DMSO and 400 μM Tween 20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    }
+}

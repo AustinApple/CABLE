@@ -1,0 +1,65 @@
+{
+    "51576796": {
+        "reactant_set_id": 51576796,
+        "pmid": 38116426,
+        "protein": "E3 ubiquitin-protein ligase TRIM58",
+        "ligand": {
+            "smiles": "CN(C)CCCNc1nc(NCC2CCNCC2)c2cc(ccc2n1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity against N-terminal 6His-tagged TRIM58 (251 to 466 residue) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR binding experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. The N-terminal 6His-tagged TRIM58(251–466) protein was immobilized on a CM5 sensor chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% P20. TRIM-473 was diluted in running buffer to concentrations ranging from 0.3 to 30 μM and injected at a flow rate of 30 μL/min for 120 s, followed by a 300 s dissociation phase. Regeneration was performed with 10 mM glycine, pH 2.0, for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "D) SPR binding experiment for the interaction of TRIM58(251–466)C277S,C278S-Avi with TRIM-473. The equilibrium fit is shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal 6His-tagged TRIM58(251–466)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "TRIM-473",
+                "concentration_range": "0.3 to 30 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    }
+}

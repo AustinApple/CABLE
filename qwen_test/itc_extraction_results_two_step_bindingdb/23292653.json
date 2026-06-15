@@ -1,0 +1,61 @@
+{
+    "51627608": {
+        "reactant_set_id": 51627608,
+        "pmid": 23292653,
+        "protein": "Lethal(3)malignant brain tumor-like protein 3",
+        "ligand": {
+            "smiles": "O=C(CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@@H]21)NCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCOCCNC(=O)c1ccc(Nc2cc(C(=O)N3CCC(N4CCCC4)CC3)ccc2C(=O)N2CCC(N3CCCC3)CC2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 350.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to L3MBTL3 (unknown origin) by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Instruments) at 25 °C. The protein (L3MBTL3 3MBT domain) was dialyzed against 20 mM HEPES, pH 7.5, 150 mM NaCl, 1 mM DTT, and 0.02% NaN3. The ligand (UNC1215) was dissolved in DMSO and diluted in the same buffer. The protein was loaded into the sample cell (200 μL) at a concentration of 10 μM, and the ligand was loaded into the syringe (250 μL) at a concentration of 100 μM. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (MicroCal) with a one-site binding model. The heat of dilution was determined by titrating the ligand into buffer and subtracted from the raw data. The binding affinity (Kd), stoichiometry (n), and enthalpy (ΔH) were calculated from the fitted isotherm. The experiments were performed in triplicate.",
+            "Figure 1 caption": "Figure 1. UNC1215 is a potent antagonist of L3MBTL3 (a) Structure of UNC1021, a nanomolar antagonist of L3MBTL3 methyl-lysine binding activity. UNC1215 is a more potent L3MBTL3 cellular antagonist, and UNC1079 is a structurally similar but significantly less potent antagonist and negative control. (b) ITC analysis of site-directed mutants of L3MBTL3 (3MBT) revealed strong binding of UNC1215 to wild-type protein, but not to domain 2 binding pocket mutant D381A. Domain 1 (D274A) mutant bound to UNC1215 with weaker affinity. (c) Domain architecture of the full length L3MBTL3 protein showing a putative FCS nucleic acid binding domain, a Zinc finger (ZnF), and a SAM (sterile alpha motif) domain, in addition to three MBT repeat sequences (pink, blue, and yellow). Mono- or dimethyl-lysine is represented schematically by a green oval. Mutations made in the aromatic cage of the second MBT domain (D381A) and in the aromatic cage of the first MBT domain (D274A), are represented by stars. See Supplementary Figure 21 for a schematic of all protein constructs and tagged fusion proteins used for in vitro and cellular studies. (d) A surface representation of the of the 3MBT crystal structure (PDB 3UT1), colored as in c, but with the residues composing the conserved (domain 2) or semiconserved (domains 1 & 3) aromatic cage of each repeat in red, dark blue, and orange for domain 1, 2 & 3, respectively. Thus, the three presumed binding sites of 3MBT exist in a triangular arrangement, all on the same surface of the molecule.",
+            "Results section": "The direct binding affinity of UNC1215 was confirmed by isothermal titration calorimetry (ITC), yielding a Kd of 120 nM (Fig. 1b)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "L3MBTL3 3MBT domain",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "UNC1215",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.02% NaN3",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer and subtracted from raw data",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "51592653": {
+        "reactant_set_id": 51592653,
+        "pmid": 38466654,
+        "protein": "Dihydrofolate reductase",
+        "ligand": {
+            "smiles": "CC(C)c1cc(OCC2CC2)c(I)cc1Oc1cnc(N)nc1N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1540.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Staphylococcus aureus DHFR expressed in Escherichia coli BL21 (DE3) assessed dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "In the ITC measurement, 30 μM purified protein SaDHFR and 500 μM compound j9 solutions were prepared in ITC buffer (20 mM Tris pH 7.5, 200 mM NaCl, DMSO concentration in protein solution adjusted to 0.6%). The abovementioned samples were then thoroughly degassed before titration. ITC measurements were performed on a nano ITC instrument (TA Instruments Ltd.). The experiment was conducted with the sample pool heated to 25 °C, the continuous injection time interval being 180 s, and the stirring speed being 300 rpm. The prepared compound was added into the syringe and titrated 20 times with 2.5 μL each time. After measurement, the data were processed with Nano Analyze software (Microcal, LLC ITC 200) and fitted by a binding site prediction model.",
+            "Figure 7 caption": "Figure 7. Target validation experiments for compound j9. (A) Denaturation temperature curves of SaDHFR in the presence or absence of the compound. (B) ITC thermograms and isotherms to assess the binding of j9 to SaDHFR. (C) Potency of compound j9 in combination with SMX against ATCC25923, USA300, and four strains of TMP-resistant strains.",
+            "Figure 7B": "Kd = 1.54 ± 0.24 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "SaDHFR",
+                "location": "cell",
+                "concentration": "30",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound j9",
+                "location": "syringe",
+                "concentration": "500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris, 200 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

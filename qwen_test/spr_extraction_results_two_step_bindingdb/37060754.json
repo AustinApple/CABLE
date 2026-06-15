@@ -1,0 +1,67 @@
+{
+    "51537446": {
+        "reactant_set_id": 51537446,
+        "pmid": 37060754,
+        "protein": "Indoleamine 2,3-dioxygenase 1",
+        "ligand": {
+            "smiles": "COc1ccc2c(c1)oc(c\\c2=N/O)C(=O)N1CCN(CC1)S(=O)(=O)c1ccc(F)c(F)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.11,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant IDO1 assessed as dissociation constant measured for 60 sec by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "D. Gao, Y. Li, Identification and preliminary structure-activity relationships of 1-indole derivatives as novel indoleamine-2,3-dioxygenase 1 (Ido1) inhibitors, Bioorg. Med. Chem. 25 (2017) 3780–3791.",
+        "original_paragraph": {
+            "Materials and Methods": "To provide evidence of direct interaction between compound 10m and IDO1 protein, a surface plasmon resonance (SPR) based binding assay was conducted using a Biacore T200 instrument. This analytic technique facilitates measurement of the kinetic and thermodynamic parameters of ligand-protein complex formation and is widely utilized to investigate enzyme/inhibitor interactions [29]. Kinetic association and dissociation measurements were obtained and the binding affinity of compound 10m for IDO1 determined with the aid of Biacore evaluation software. As shown in Fig. 2, compound 10m efficiently interacted with the immobilized protein, as demonstrated by the concentration-dependent responses for association and dissociation, respectively. The equilibrium dissociation constant (K_D, representing binding affinity) between compound 10m and IDO1 was 1.41 μM, which indicated its strong binding affinity to the target IDO1 protein. In addition, the kinetic dissociation constant (k_d) between compound 10m and IDO1 was 0.011 1/s, suggesting that the 10m-IDO1 complexes formed were stable. The result provided definitive evidence of compound 10m directly binding to IDO1 protein.",
+            "Figure 2 caption": "Fig. 2. SPR analysis of compound 10m with IDO1 protein. Concentration from top to bottom: 25 μM, 12.5 μM, 6.25 μM, 3.12 μM, 1.56 μM, 0.78 μM. The equilibrium dissociation constant (K_D) value is 1.41 μM.",
+            "Table 1": "Table 1 Inhibition against the enzymatic and cellular activity of IDO1 by tested compounds. ... Compound 10m ... Enzymatic assay hIDO1 IC50 (μM) 0.64 ± 0.37 ... Cellular assay HeLa (IDO1) IC50 (μM) 1.04 ± 0.48",
+            "Supporting Information S1": "The biological experimental procedures including enzymatic assays, cellular IDO1 activity assays, cell viability assays, SPR experiments, UV-visible spectra, and in vivo antitumor efficacy were carried out according to our previous work [24,33,34] and described in the Supplementary Information (SI)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "IDO1 protein",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 10m",
+                "concentration_range": "0.78 μM - 25 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore evaluation software"
+            }
+        }
+    }
+}

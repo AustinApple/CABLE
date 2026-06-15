@@ -1,0 +1,266 @@
+{
+    "51629368": {
+        "reactant_set_id": 51629368,
+        "pmid": 33497606,
+        "protein": "Protein-tyrosine kinase 2-beta",
+        "ligand": {
+            "smiles": "CN(c1ncccc1CNc1ccnc(Nc2ccc3c(c2)CC(=O)N3)n1)S(C)(=O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 820.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant PYK2 (amino acids 420-691) expressed in Escherichia coli, BL21 (DE3) assessed as equilibrium dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "SPR measurements were performed on a Biacore 4000 instrument from GE Healthcare. Recombinant FAK [huFAK (410-689)] and PYK2 [huFAK (420-691)] were immobilized on a Biacore CM5 chip at 25°C at a flow rate of 10 μL/min using amine coupling at pH 4.50 and pH 5.0 respectively, according to Biacore’s standard protocol. HBS-N (10 mM Heps pH 7.40, 0.15 M NaCl, 0.05 % Tween-20) served as running buffer during immobilization. FAK and PYK2 were applied at a concentration of 5 μg/mL in a buffer containing a 60-fold excess of PF-431396. An unmodified carboxydextran matrix served as a reference surface. FAK and PYK2 inhibitors stored as 10 mM stock solutions in 100% dimethyl sulfoxide (DMSO) were dissolved in running buffer (20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO) and analyzed using two-fold dilution series. Kinetic titration experiments were performed at 25°C with a flow rate of 30 μL/min, a sample contact time between 300 and 600 s. Data sets were processed and analyzed using the Biacore 4000 Evaluation software, version 1.1. Solvent corrected and double-referenced association and dissociation phase data were fitted to a simple 1:1 interaction model with mass transport limitations.",
+            "Table 1 - PYK2 (SPR) data": "Compound 1: k_on = 130 ± 43 (10^5 M^-1 s^-1), k_off = 7.4 ± 2.5 (10^-2 s^-1), K_D = 5.7 ± 1.0 nM. Compound 2: k_on = 9.0 ± 3.3 (10^5 M^-1 s^-1), k_off = 75 ± 32 (10^-2 s^-1), K_D = 820 ± 96 nM. Compound 3: k_on = 0.37 ± 0.15 (10^5 M^-1 s^-1), k_off = 1.7 ± 0.78 (10^-2 s^-1), K_D = 470 ± 100 nM. Compound 5: k_on = 13 ± 4.8 (10^5 M^-1 s^-1), k_off = 33 ± 11 (10^-2 s^-1), K_D = 250 ± 19 nM. Compound 6: k_on = 17 ± 6.6 (10^5 M^-1 s^-1), k_off = 19 ± 7.8 (10^-2 s^-1), K_D = 110 ± 4.0 nM. Compound 8: k_on = 13 ± 8.4 (10^5 M^-1 s^-1), k_off = 25 ± 11 (10^-2 s^-1), K_D = 230 ± 92 nM. Compound 10: k_on = 58 ± 15 (10^5 M^-1 s^-1), k_off = 4.0 ± 1.2 (10^-2 s^-1), K_D = 6.9 ± 0.54 nM. Compound 11: k_on = 15 ± 3.8 (10^5 M^-1 s^-1), k_off = 3.6 ± 1.1 (10^-2 s^-1), K_D = 24 ± 3.1 nM. Compound 12: k_on = 22 ± 8.1 (10^5 M^-1 s^-1), k_off = 5.5 ± 2.4 (10^-2 s^-1), K_D = 25 ± 3.3 nM.",
+            "Figure 5B caption": "Correlation of the in cellulo potency with the potency determined in vitro by SPR.",
+            "Figure 5C caption": "NanoBRET washout experiments for 1 and 10 in comparison with background data and tracer only (DMSO added instead of test compound). Representative data from at least n = 3 individual experiments.",
+            "STAR Methods - Protein expression and purification": "The human PYK2 kinase domain used for SPR measurements was expressed with an NH2-terminal 6XHis-tag and comprised residues 420-691. PYK2 was cloned into pET28a including an N-terminal HIS-TEV-tag and expressed in Escherichia coli Rosetta 2 (DE3) cells using the Bac Magic kit (Invitrogen Corp.). Cells were harvested by centrifugation and resuspended in lysis buffer (20 mM Na-P, 500 mM NaCl, 0.1% NP 40, 5 mM MgCl2, pH 7.5, 1 mM DTT, benzonase and protease inhibitor cocktail III). Cells were lysed by high pressure homogenization and cleared by centrifugation at 20,400x g for 60 min at 4°C. Subsequent steps were similar to previously described for FAK. The resultant pure recombinant PYK2 was concentrated to 10.7 mg/mL and stored at –80°C in a buffer containing 30 mM HEPES, pH 7.5, 150 mM NaCl, 0.1 mM EGTA, 1 mM DTT."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human recombinant PYK2 (amino acids 420-691)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "5 μg/mL"
+            },
+            "analyte": {
+                "description": "FAK and PYK2 inhibitors (compounds 1, 2, 3, 5, 6, 8, 10, 11, 12)",
+                "concentration_range": "Two-fold dilution series"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified carboxydextran matrix",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "Biacore 4000 Evaluation software, version 1.1"
+            }
+        }
+    },
+    "51629370": {
+        "reactant_set_id": 51629370,
+        "pmid": 33497606,
+        "protein": "Protein-tyrosine kinase 2-beta",
+        "ligand": {
+            "smiles": "O=C1Cc2cc(Nc3ncc(C(F)(F)F)c(Nc4ccc5c(c4)CC(=O)N5)n3)ccc2N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant PYK2 (amino acids 420-691) expressed in Escherichia coli, BL21 (DE3) assessed as equilibrium dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "SPR measurements were performed on a Biacore 4000 instrument from GE Healthcare. Recombinant FAK [huFAK (410-689)] and PYK2 [huFAK (420-691)] were immobilized on a Biacore CM5 chip at 25°C at a flow rate of 10 μL/min using amine coupling at pH 4.50 and pH 5.0 respectively, according to Biacore’s standard protocol. HBS-N (10 mM Heps pH 7.40, 0.15 M NaCl, 0.05 % Tween-20) served as running buffer during immobilization. FAK and PYK2 were applied at a concentration of 5 μg/mL in a buffer containing a 60-fold excess of PF-431396. An unmodified carboxydextran matrix served as a reference surface. FAK and PYK2 inhibitors stored as 10 mM stock solutions in 100% dimethyl sulfoxide (DMSO) were dissolved in running buffer (20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO) and analyzed using two-fold dilution series. Kinetic titration experiments were performed at 25°C with a flow rate of 30 μL/min, a sample contact time between 300 and 600 s. Data sets were processed and analyzed using the Biacore 4000 Evaluation software, version 1.1. Solvent corrected and double-referenced association and dissociation phase data were fitted to a simple 1:1 interaction model with mass transport limitations.",
+            "Table 1 - PYK2 (SPR) data": "Compound 1: k_on = 130 ± 43 (10^5 M^-1 s^-1), k_off = 7.4 ± 2.5 (10^-2 s^-1), K_D = 5.7 ± 1.0 nM. Compound 2: k_on = 9.0 ± 3.3 (10^5 M^-1 s^-1), k_off = 75 ± 32 (10^-2 s^-1), K_D = 820 ± 96 nM. Compound 3: k_on = 0.37 ± 0.15 (10^5 M^-1 s^-1), k_off = 1.7 ± 0.78 (10^-2 s^-1), K_D = 470 ± 100 nM. Compound 5: k_on = 13 ± 4.8 (10^5 M^-1 s^-1), k_off = 33 ± 11 (10^-2 s^-1), K_D = 250 ± 19 nM. Compound 6: k_on = 17 ± 6.6 (10^5 M^-1 s^-1), k_off = 19 ± 7.8 (10^-2 s^-1), K_D = 110 ± 4.0 nM. Compound 8: k_on = 13 ± 8.4 (10^5 M^-1 s^-1), k_off = 25 ± 11 (10^-2 s^-1), K_D = 230 ± 92 nM. Compound 10: k_on = 58 ± 15 (10^5 M^-1 s^-1), k_off = 4.0 ± 1.2 (10^-2 s^-1), K_D = 6.9 ± 0.54 nM. Compound 11: k_on = 15 ± 3.8 (10^5 M^-1 s^-1), k_off = 3.6 ± 1.1 (10^-2 s^-1), K_D = 24 ± 3.1 nM. Compound 12: k_on = 22 ± 8.1 (10^5 M^-1 s^-1), k_off = 5.5 ± 2.4 (10^-2 s^-1), K_D = 25 ± 3.3 nM.",
+            "Figure 5B caption": "Correlation of the in cellulo potency with the potency determined in vitro by SPR.",
+            "Figure 5C caption": "NanoBRET washout experiments for 1 and 10 in comparison with background data and tracer only (DMSO added instead of test compound). Representative data from at least n = 3 individual experiments.",
+            "STAR Methods - Protein expression and purification": "The human PYK2 kinase domain used for SPR measurements was expressed with an NH2-terminal 6XHis-tag and comprised residues 420-691. PYK2 was cloned into pET28a including an N-terminal HIS-TEV-tag and expressed in Escherichia coli Rosetta 2 (DE3) cells using the Bac Magic kit (Invitrogen Corp.). Cells were harvested by centrifugation and resuspended in lysis buffer (20 mM Na-P, 500 mM NaCl, 0.1% NP 40, 5 mM MgCl2, pH 7.5, 1 mM DTT, benzonase and protease inhibitor cocktail III). Cells were lysed by high pressure homogenization and cleared by centrifugation at 20,400x g for 60 min at 4°C. Subsequent steps were similar to previously described for FAK. The resultant pure recombinant PYK2 was concentrated to 10.7 mg/mL and stored at –80°C in a buffer containing 30 mM HEPES, pH 7.5, 150 mM NaCl, 0.1 mM EGTA, 1 mM DTT."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human recombinant PYK2 (amino acids 420-691)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "5 μg/mL"
+            },
+            "analyte": {
+                "description": "FAK and PYK2 inhibitors (compounds 1, 2, 3, 5, 6, 8, 10, 11, 12)",
+                "concentration_range": "Two-fold dilution series"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified carboxydextran matrix",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "Biacore 4000 Evaluation software, version 1.1"
+            }
+        }
+    },
+    "51629371": {
+        "reactant_set_id": 51629371,
+        "pmid": 33497606,
+        "protein": "Protein-tyrosine kinase 2-beta",
+        "ligand": {
+            "smiles": "O=C1Cc2cc(Nc3ncc(C(F)(F)F)c(NCc4cccnc4)n3)ccc2N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 230.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant PYK2 (amino acids 420-691) expressed in Escherichia coli, BL21 (DE3) assessed as equilibrium dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "SPR measurements were performed on a Biacore 4000 instrument from GE Healthcare. Recombinant FAK [huFAK (410-689)] and PYK2 [huFAK (420-691)] were immobilized on a Biacore CM5 chip at 25°C at a flow rate of 10 μL/min using amine coupling at pH 4.50 and pH 5.0 respectively, according to Biacore’s standard protocol. HBS-N (10 mM Heps pH 7.40, 0.15 M NaCl, 0.05 % Tween-20) served as running buffer during immobilization. FAK and PYK2 were applied at a concentration of 5 μg/mL in a buffer containing a 60-fold excess of PF-431396. An unmodified carboxydextran matrix served as a reference surface. FAK and PYK2 inhibitors stored as 10 mM stock solutions in 100% dimethyl sulfoxide (DMSO) were dissolved in running buffer (20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO) and analyzed using two-fold dilution series. Kinetic titration experiments were performed at 25°C with a flow rate of 30 μL/min, a sample contact time between 300 and 600 s. Data sets were processed and analyzed using the Biacore 4000 Evaluation software, version 1.1. Solvent corrected and double-referenced association and dissociation phase data were fitted to a simple 1:1 interaction model with mass transport limitations.",
+            "Table 1 - PYK2 (SPR) data": "Compound 1: k_on = 130 ± 43 (10^5 M^-1 s^-1), k_off = 7.4 ± 2.5 (10^-2 s^-1), K_D = 5.7 ± 1.0 nM. Compound 2: k_on = 9.0 ± 3.3 (10^5 M^-1 s^-1), k_off = 75 ± 32 (10^-2 s^-1), K_D = 820 ± 96 nM. Compound 3: k_on = 0.37 ± 0.15 (10^5 M^-1 s^-1), k_off = 1.7 ± 0.78 (10^-2 s^-1), K_D = 470 ± 100 nM. Compound 5: k_on = 13 ± 4.8 (10^5 M^-1 s^-1), k_off = 33 ± 11 (10^-2 s^-1), K_D = 250 ± 19 nM. Compound 6: k_on = 17 ± 6.6 (10^5 M^-1 s^-1), k_off = 19 ± 7.8 (10^-2 s^-1), K_D = 110 ± 4.0 nM. Compound 8: k_on = 13 ± 8.4 (10^5 M^-1 s^-1), k_off = 25 ± 11 (10^-2 s^-1), K_D = 230 ± 92 nM. Compound 10: k_on = 58 ± 15 (10^5 M^-1 s^-1), k_off = 4.0 ± 1.2 (10^-2 s^-1), K_D = 6.9 ± 0.54 nM. Compound 11: k_on = 15 ± 3.8 (10^5 M^-1 s^-1), k_off = 3.6 ± 1.1 (10^-2 s^-1), K_D = 24 ± 3.1 nM. Compound 12: k_on = 22 ± 8.1 (10^5 M^-1 s^-1), k_off = 5.5 ± 2.4 (10^-2 s^-1), K_D = 25 ± 3.3 nM.",
+            "Figure 5B caption": "Correlation of the in cellulo potency with the potency determined in vitro by SPR.",
+            "Figure 5C caption": "NanoBRET washout experiments for 1 and 10 in comparison with background data and tracer only (DMSO added instead of test compound). Representative data from at least n = 3 individual experiments.",
+            "STAR Methods - Protein expression and purification": "The human PYK2 kinase domain used for SPR measurements was expressed with an NH2-terminal 6XHis-tag and comprised residues 420-691. PYK2 was cloned into pET28a including an N-terminal HIS-TEV-tag and expressed in Escherichia coli Rosetta 2 (DE3) cells using the Bac Magic kit (Invitrogen Corp.). Cells were harvested by centrifugation and resuspended in lysis buffer (20 mM Na-P, 500 mM NaCl, 0.1% NP 40, 5 mM MgCl2, pH 7.5, 1 mM DTT, benzonase and protease inhibitor cocktail III). Cells were lysed by high pressure homogenization and cleared by centrifugation at 20,400x g for 60 min at 4°C. Subsequent steps were similar to previously described for FAK. The resultant pure recombinant PYK2 was concentrated to 10.7 mg/mL and stored at –80°C in a buffer containing 30 mM HEPES, pH 7.5, 150 mM NaCl, 0.1 mM EGTA, 1 mM DTT."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human recombinant PYK2 (amino acids 420-691)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "5 μg/mL"
+            },
+            "analyte": {
+                "description": "FAK and PYK2 inhibitors (compounds 1, 2, 3, 5, 6, 8, 10, 11, 12)",
+                "concentration_range": "Two-fold dilution series"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified carboxydextran matrix",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "Biacore 4000 Evaluation software, version 1.1"
+            }
+        }
+    },
+    "51629375": {
+        "reactant_set_id": 51629375,
+        "pmid": 33497606,
+        "protein": "Protein-tyrosine kinase 2-beta",
+        "ligand": {
+            "smiles": "CN(C)[C@@H]1CCC[C@H]1Nc1nc(Nc2ccc(C(=O)NC3CC3)cc2)ncc1C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant PYK2 (amino acids 420-691) expressed in Escherichia coli, BL21 (DE3) assessed as equilibrium dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance": "SPR measurements were performed on a Biacore 4000 instrument from GE Healthcare. Recombinant FAK [huFAK (410-689)] and PYK2 [huFAK (420-691)] were immobilized on a Biacore CM5 chip at 25°C at a flow rate of 10 μL/min using amine coupling at pH 4.50 and pH 5.0 respectively, according to Biacore’s standard protocol. HBS-N (10 mM Heps pH 7.40, 0.15 M NaCl, 0.05 % Tween-20) served as running buffer during immobilization. FAK and PYK2 were applied at a concentration of 5 μg/mL in a buffer containing a 60-fold excess of PF-431396. An unmodified carboxydextran matrix served as a reference surface. FAK and PYK2 inhibitors stored as 10 mM stock solutions in 100% dimethyl sulfoxide (DMSO) were dissolved in running buffer (20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO) and analyzed using two-fold dilution series. Kinetic titration experiments were performed at 25°C with a flow rate of 30 μL/min, a sample contact time between 300 and 600 s. Data sets were processed and analyzed using the Biacore 4000 Evaluation software, version 1.1. Solvent corrected and double-referenced association and dissociation phase data were fitted to a simple 1:1 interaction model with mass transport limitations.",
+            "Table 1 - PYK2 (SPR) data": "Compound 1: k_on = 130 ± 43 (10^5 M^-1 s^-1), k_off = 7.4 ± 2.5 (10^-2 s^-1), K_D = 5.7 ± 1.0 nM. Compound 2: k_on = 9.0 ± 3.3 (10^5 M^-1 s^-1), k_off = 75 ± 32 (10^-2 s^-1), K_D = 820 ± 96 nM. Compound 3: k_on = 0.37 ± 0.15 (10^5 M^-1 s^-1), k_off = 1.7 ± 0.78 (10^-2 s^-1), K_D = 470 ± 100 nM. Compound 5: k_on = 13 ± 4.8 (10^5 M^-1 s^-1), k_off = 33 ± 11 (10^-2 s^-1), K_D = 250 ± 19 nM. Compound 6: k_on = 17 ± 6.6 (10^5 M^-1 s^-1), k_off = 19 ± 7.8 (10^-2 s^-1), K_D = 110 ± 4.0 nM. Compound 8: k_on = 13 ± 8.4 (10^5 M^-1 s^-1), k_off = 25 ± 11 (10^-2 s^-1), K_D = 230 ± 92 nM. Compound 10: k_on = 58 ± 15 (10^5 M^-1 s^-1), k_off = 4.0 ± 1.2 (10^-2 s^-1), K_D = 6.9 ± 0.54 nM. Compound 11: k_on = 15 ± 3.8 (10^5 M^-1 s^-1), k_off = 3.6 ± 1.1 (10^-2 s^-1), K_D = 24 ± 3.1 nM. Compound 12: k_on = 22 ± 8.1 (10^5 M^-1 s^-1), k_off = 5.5 ± 2.4 (10^-2 s^-1), K_D = 25 ± 3.3 nM.",
+            "Figure 5B caption": "Correlation of the in cellulo potency with the potency determined in vitro by SPR.",
+            "Figure 5C caption": "NanoBRET washout experiments for 1 and 10 in comparison with background data and tracer only (DMSO added instead of test compound). Representative data from at least n = 3 individual experiments.",
+            "STAR Methods - Protein expression and purification": "The human PYK2 kinase domain used for SPR measurements was expressed with an NH2-terminal 6XHis-tag and comprised residues 420-691. PYK2 was cloned into pET28a including an N-terminal HIS-TEV-tag and expressed in Escherichia coli Rosetta 2 (DE3) cells using the Bac Magic kit (Invitrogen Corp.). Cells were harvested by centrifugation and resuspended in lysis buffer (20 mM Na-P, 500 mM NaCl, 0.1% NP 40, 5 mM MgCl2, pH 7.5, 1 mM DTT, benzonase and protease inhibitor cocktail III). Cells were lysed by high pressure homogenization and cleared by centrifugation at 20,400x g for 60 min at 4°C. Subsequent steps were similar to previously described for FAK. The resultant pure recombinant PYK2 was concentrated to 10.7 mg/mL and stored at –80°C in a buffer containing 30 mM HEPES, pH 7.5, 150 mM NaCl, 0.1 mM EGTA, 1 mM DTT."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human recombinant PYK2 (amino acids 420-691)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "5 μg/mL"
+            },
+            "analyte": {
+                "description": "FAK and PYK2 inhibitors (compounds 1, 2, 3, 5, 6, 8, 10, 11, 12)",
+                "concentration_range": "Two-fold dilution series"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES pH 7.50, 150 mM NaCl, 0.05% Tween 20, 1 mM DTT, 0.1 mM EDTA, 2% DMSO",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified carboxydextran matrix",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "Biacore 4000 Evaluation software, version 1.1"
+            }
+        }
+    }
+}

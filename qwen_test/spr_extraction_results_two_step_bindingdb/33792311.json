@@ -1,0 +1,67 @@
+{
+    "51421886": {
+        "reactant_set_id": 51421886,
+        "pmid": 33792311,
+        "protein": "Glutaminase kidney isoform, mitochondrial",
+        "ligand": {
+            "smiles": "O=C1Cc2cccc(OCC\\C=C\\CCOc3cccc(CC(=O)Nc4ccc(CCCCc5nnc(N1)s5)nn4)c3)c2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human GLS1 expressed in Escherichia coli strain BL21 (DE3) assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR)-Based Binding Assay. The SPR binding assays were performed on a Biacore T200 instrument (GE Healthcare). GLS1 protein (1 μM, 200 μL) was covalently coupled on a CMS chip according to the standard procedure. The whole system was equilibrated overnight first with an assay buffer (10 mM Tris pH 8.5, 150 mM NaCl, 0.05% (v/v) surfactant P20, and 0.25% (v/v) dimethyl sulfoxide). Compounds were diluted with assay buffer and then injected at a flow of 30 mL/min for 60 s to contact, followed by dissociation for 400 s. The equilibrium dissociation constants of the compounds were determined by Biacore T200 evaluation software (GE Healthcare).",
+            "Figure 3 caption": "Figure 3. Compound 13b (LL202) directly bound to GLS1. (A) Thermal stability of GLS1 treated with different concentrations of 13b, determined by a standard PTS assay. ΔTm values were obtained from the mean values of three independent assays. (B) SPR-based binding assay of 13b with GLS1. (C) Chemical structure of 13b.",
+            "Figure 3B data": "LL202 SPR Kd = 24.19 nM Concentration (nM): 1000, 500, 250, 125, 62.5, 31.25, 15.6, 7.8, 3.9 Response (RU): [Sensorgram curves shown for each concentration, with association and dissociation phases labeled]",
+            "Table in Figure 3B": "Comp. LL202 Kd (nM) 24.19 Kon (M-1s-1) 20.896 Koff (s-1) 0.003"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GLS1 protein",
+                "strategy": "Other",
+                "density_ru": null,
+                "concentration_for_immobilization": "1 μM"
+            },
+            "analyte": {
+                "description": "Compound 13b (LL202)",
+                "concentration_range": "3.9 nM - 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Tris pH 8.5, 150 mM NaCl, 0.05% (v/v) surfactant P20, and 0.25% (v/v) dimethyl sulfoxide",
+                "pH": 8.5,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 400,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

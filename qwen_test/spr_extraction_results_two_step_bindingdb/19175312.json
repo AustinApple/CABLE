@@ -1,0 +1,197 @@
+{
+    "50505293": {
+        "reactant_set_id": 50505293,
+        "pmid": 19175312,
+        "protein": "Myelin-associated glycoprotein",
+        "ligand": {
+            "smiles": "CC(=O)N[C@@H]1[C@@H](O)C[C@@](O[C@H]2[C@@H](O)[C@@H](CO)O[C@@H](O[C@@H]3CCO[C@H](COc4ccc(cc4)-c4ccccc4)[C@@H]3O)[C@@H]2O)(O[C@H]1[C@@H](O)[C@H](O)CNC(=O)c1ccc(Cl)cc1)C([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2830.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human IgG Fc-domain tagged MAG N-terminal domain expressed in CHO cells by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 37: Rich, R. L.; Myszka, D. G. Advances in Surface Plasmon Resonance Biosensor Analysis. Curr. Opin. Biotechnol. 2000, 11, 54–61. (b) Morton, T. A.; Myszka, D. G. Kinetic Analysis of Macromolecular Interactions Using Surface Plasmon Resonance Biosensors. Methods Enzymol. 1998, 295, 268–294. (c) Nagata, K.; Handa, H. Real-Time Analysis of Biomolecular Interactions: Applications of Biacore; Springer-Verlag: Berlin, 2000.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Experiments (Biacore). Surface plasmon resonance experiments were performed on a Biacore 3000 machine using CM5 chips. Goat antihuman IgG antibody (Fc specific, Sigma) was immobilized following the standard Biacore EDC/NHS immobilization procedure. For this, 2 μL of a Fc-antibody solution of 2.1 mg/mL (in 50 mM phosphate buffer, pH 7.0) was added to 98 μL of 10 mM acetate buffer (pH 5.5). The immobilization yielded between 4000 and 5000 resonance units. A sample and a reference surface were prepared sequentially. For capturing Fc-MAGd1–3 on the sample surface, Fc-MAGd1–3 in HBS-EP buffer (10 mM HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.0005% surfactant P20; Biacore) was injected. Ligands were dissolved in HBS-EP buffer. Eight ligand concentrations of a 2-fold dilution series starting from 50 μM were prepared. The samples were injected in a randomized order. Five blank buffer injections were performed before triplicate measurements and one between each single experiment. The flow rate was 10 μL/min for the immobilization, 1 μL/min for the capturing of MAG, and 20 μL/min for the injection of ligands. For the determination of KD values and for the kinetics analysis, standard Biacore software, version 3.2, was used.",
+            "Figure 4 caption": "Figure 4. Biacore sensorgram (A) and fitting curve (B) of compound 59 binding to MAG (for the immobilization see Experimental Section) for which a kinetics analysis was performed. The sensorgram was fitted to a Langmuir 1:1 binding model utilizing standard Biacore software in the global fitting mode. Eight concentrations for 59 of a 2-fold dilution series starting from 50 μM (top) were used. The global fit yielded the following parameters: KD = 5.00 × 10−6 M, RUmax = 19.4, koff = 1.05 s−1, kon = 2.1 × 105 M−1s−1. From koff, a half-life of 0.66 s is calculated.",
+            "Table 2": "Table 2. Dissociation Constants KD from Surface Plasmon Resonance Experiments (Equilibrium Analysis) Performed at 298 K with Fc-MAGd1–3 Immobilized on a CM5 Chip | ligand | 16 | 59 | 60 | |---|---|---|---| | rIP | 61.5 | 314 | 377 | | KD, μM | 32.6 | 5.00 | 2.83 | | kon, M−1 s−1 | 1.1 × 104 | 2.2 × 105 | 3.1 × 105 | | koff, s−1 | 0.3 | 1.05 | 0.8 | | t1/2, s | 2.3 | 0.67 | 0.87 |",
+            "Results Section": "The interaction between MAG and the MAG-antagonists 16, 59, and 60 has been analyzed by a surface plasmon resonance based biosensor (Biacore) at 25 °C.37 Figure 4 shows the sensorgram for 59, which was used for the kinetics analysis of the binding process. The curve was globally fitted to a Langmuir 1:1 binding model employing standard Biacore software. Association (kon) and dissociation rate constants (koff) as well as affinities (KD) were determined (Table 2). The KDs correspond well with the results obtained in the hapten inhibition assay24 (Table 1). Whereas for trisaccharide 16 a KD of 32 μM was measured, the introduction of the biphenylmethyl moiety in 59 or 60 improved affinities to the low micromolar level. The beneficial effect18d of an additional p-chloro substituent on the benzamide as realized in 60 could also be confirmed. By resolution of the affinities into the individual association and dissociation rate constants, it was possible to reveal the binding kinetics of the three antagonists 16, 59, and 60. The increase in lipophilicity originating from the introduction of the biphenylmethyl moiety (59 and 60) led to a substantial improvement of the association rate constants by a factor of 20 and 30, respectively. Because the three investigated antagonists show rather similar koffs (0.3–1.05 s−1), the improved affinity of 59 and 60 results predominantly from enhanced association rate constants."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "Goat antihuman IgG antibody (Fc specific)",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": "2.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Fc-MAGd1–3 (human IgG Fc-domain tagged MAG N-terminal domain expressed in CHO cells)",
+                "concentration_range": "50 μM to 3.125 μM (2-fold dilution series, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.0005% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared sequentially with no Fc-MAGd1–3 capture",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Standard Biacore software, version 3.2"
+            }
+        }
+    },
+    "50505294": {
+        "reactant_set_id": 50505294,
+        "pmid": 19175312,
+        "protein": "Myelin-associated glycoprotein",
+        "ligand": {
+            "smiles": "CC(=O)N[C@@H]1[C@@H](O)C[C@@](O[C@H]2[C@@H](O)[C@@H](CO)O[C@@H](O[C@@H]3CCO[C@H](COc4ccc(cc4)-c4ccccc4)[C@@H]3O)[C@@H]2O)(O[C@H]1[C@@H](O)[C@H](O)CNC(=O)c1ccccc1)C([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human IgG Fc-domain tagged MAG N-terminal domain expressed in CHO cells by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 37: Rich, R. L.; Myszka, D. G. Advances in Surface Plasmon Resonance Biosensor Analysis. Curr. Opin. Biotechnol. 2000, 11, 54–61. (b) Morton, T. A.; Myszka, D. G. Kinetic Analysis of Macromolecular Interactions Using Surface Plasmon Resonance Biosensors. Methods Enzymol. 1998, 295, 268–294. (c) Nagata, K.; Handa, H. Real-Time Analysis of Biomolecular Interactions: Applications of Biacore; Springer-Verlag: Berlin, 2000.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Experiments (Biacore). Surface plasmon resonance experiments were performed on a Biacore 3000 machine using CM5 chips. Goat antihuman IgG antibody (Fc specific, Sigma) was immobilized following the standard Biacore EDC/NHS immobilization procedure. For this, 2 μL of a Fc-antibody solution of 2.1 mg/mL (in 50 mM phosphate buffer, pH 7.0) was added to 98 μL of 10 mM acetate buffer (pH 5.5). The immobilization yielded between 4000 and 5000 resonance units. A sample and a reference surface were prepared sequentially. For capturing Fc-MAGd1–3 on the sample surface, Fc-MAGd1–3 in HBS-EP buffer (10 mM HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.0005% surfactant P20; Biacore) was injected. Ligands were dissolved in HBS-EP buffer. Eight ligand concentrations of a 2-fold dilution series starting from 50 μM were prepared. The samples were injected in a randomized order. Five blank buffer injections were performed before triplicate measurements and one between each single experiment. The flow rate was 10 μL/min for the immobilization, 1 μL/min for the capturing of MAG, and 20 μL/min for the injection of ligands. For the determination of KD values and for the kinetics analysis, standard Biacore software, version 3.2, was used.",
+            "Figure 4 caption": "Figure 4. Biacore sensorgram (A) and fitting curve (B) of compound 59 binding to MAG (for the immobilization see Experimental Section) for which a kinetics analysis was performed. The sensorgram was fitted to a Langmuir 1:1 binding model utilizing standard Biacore software in the global fitting mode. Eight concentrations for 59 of a 2-fold dilution series starting from 50 μM (top) were used. The global fit yielded the following parameters: KD = 5.00 × 10−6 M, RUmax = 19.4, koff = 1.05 s−1, kon = 2.1 × 105 M−1s−1. From koff, a half-life of 0.66 s is calculated.",
+            "Table 2": "Table 2. Dissociation Constants KD from Surface Plasmon Resonance Experiments (Equilibrium Analysis) Performed at 298 K with Fc-MAGd1–3 Immobilized on a CM5 Chip | ligand | 16 | 59 | 60 | |---|---|---|---| | rIP | 61.5 | 314 | 377 | | KD, μM | 32.6 | 5.00 | 2.83 | | kon, M−1 s−1 | 1.1 × 104 | 2.2 × 105 | 3.1 × 105 | | koff, s−1 | 0.3 | 1.05 | 0.8 | | t1/2, s | 2.3 | 0.67 | 0.87 |",
+            "Results Section": "The interaction between MAG and the MAG-antagonists 16, 59, and 60 has been analyzed by a surface plasmon resonance based biosensor (Biacore) at 25 °C.37 Figure 4 shows the sensorgram for 59, which was used for the kinetics analysis of the binding process. The curve was globally fitted to a Langmuir 1:1 binding model employing standard Biacore software. Association (kon) and dissociation rate constants (koff) as well as affinities (KD) were determined (Table 2). The KDs correspond well with the results obtained in the hapten inhibition assay24 (Table 1). Whereas for trisaccharide 16 a KD of 32 μM was measured, the introduction of the biphenylmethyl moiety in 59 or 60 improved affinities to the low micromolar level. The beneficial effect18d of an additional p-chloro substituent on the benzamide as realized in 60 could also be confirmed. By resolution of the affinities into the individual association and dissociation rate constants, it was possible to reveal the binding kinetics of the three antagonists 16, 59, and 60. The increase in lipophilicity originating from the introduction of the biphenylmethyl moiety (59 and 60) led to a substantial improvement of the association rate constants by a factor of 20 and 30, respectively. Because the three investigated antagonists show rather similar koffs (0.3–1.05 s−1), the improved affinity of 59 and 60 results predominantly from enhanced association rate constants."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "Goat antihuman IgG antibody (Fc specific)",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": "2.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Fc-MAGd1–3 (human IgG Fc-domain tagged MAG N-terminal domain expressed in CHO cells)",
+                "concentration_range": "50 μM to 3.125 μM (2-fold dilution series, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.0005% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared sequentially with no Fc-MAGd1–3 capture",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Standard Biacore software, version 3.2"
+            }
+        }
+    },
+    "50505295": {
+        "reactant_set_id": 50505295,
+        "pmid": 19175312,
+        "protein": "Myelin-associated glycoprotein",
+        "ligand": {
+            "smiles": "CC(=O)N[C@@H]1[C@@H](O)C[C@@](O[C@H]2[C@@H](O)[C@@H](CO)O[C@@H](O[C@H]3[C@@H](O)[C@@H](CO)O[C@@H](OCC[Si](C)(C)C)[C@@H]3O)[C@@H]2O)(O[C@H]1[C@@H](O)[C@H](O)CNC(=O)c1ccccc1)C([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human IgG Fc-domain tagged MAG N-terminal domain expressed in CHO cells by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 37: Rich, R. L.; Myszka, D. G. Advances in Surface Plasmon Resonance Biosensor Analysis. Curr. Opin. Biotechnol. 2000, 11, 54–61. (b) Morton, T. A.; Myszka, D. G. Kinetic Analysis of Macromolecular Interactions Using Surface Plasmon Resonance Biosensors. Methods Enzymol. 1998, 295, 268–294. (c) Nagata, K.; Handa, H. Real-Time Analysis of Biomolecular Interactions: Applications of Biacore; Springer-Verlag: Berlin, 2000.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Experiments (Biacore). Surface plasmon resonance experiments were performed on a Biacore 3000 machine using CM5 chips. Goat antihuman IgG antibody (Fc specific, Sigma) was immobilized following the standard Biacore EDC/NHS immobilization procedure. For this, 2 μL of a Fc-antibody solution of 2.1 mg/mL (in 50 mM phosphate buffer, pH 7.0) was added to 98 μL of 10 mM acetate buffer (pH 5.5). The immobilization yielded between 4000 and 5000 resonance units. A sample and a reference surface were prepared sequentially. For capturing Fc-MAGd1–3 on the sample surface, Fc-MAGd1–3 in HBS-EP buffer (10 mM HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.0005% surfactant P20; Biacore) was injected. Ligands were dissolved in HBS-EP buffer. Eight ligand concentrations of a 2-fold dilution series starting from 50 μM were prepared. The samples were injected in a randomized order. Five blank buffer injections were performed before triplicate measurements and one between each single experiment. The flow rate was 10 μL/min for the immobilization, 1 μL/min for the capturing of MAG, and 20 μL/min for the injection of ligands. For the determination of KD values and for the kinetics analysis, standard Biacore software, version 3.2, was used.",
+            "Figure 4 caption": "Figure 4. Biacore sensorgram (A) and fitting curve (B) of compound 59 binding to MAG (for the immobilization see Experimental Section) for which a kinetics analysis was performed. The sensorgram was fitted to a Langmuir 1:1 binding model utilizing standard Biacore software in the global fitting mode. Eight concentrations for 59 of a 2-fold dilution series starting from 50 μM (top) were used. The global fit yielded the following parameters: KD = 5.00 × 10−6 M, RUmax = 19.4, koff = 1.05 s−1, kon = 2.1 × 105 M−1s−1. From koff, a half-life of 0.66 s is calculated.",
+            "Table 2": "Table 2. Dissociation Constants KD from Surface Plasmon Resonance Experiments (Equilibrium Analysis) Performed at 298 K with Fc-MAGd1–3 Immobilized on a CM5 Chip | ligand | 16 | 59 | 60 | |---|---|---|---| | rIP | 61.5 | 314 | 377 | | KD, μM | 32.6 | 5.00 | 2.83 | | kon, M−1 s−1 | 1.1 × 104 | 2.2 × 105 | 3.1 × 105 | | koff, s−1 | 0.3 | 1.05 | 0.8 | | t1/2, s | 2.3 | 0.67 | 0.87 |",
+            "Results Section": "The interaction between MAG and the MAG-antagonists 16, 59, and 60 has been analyzed by a surface plasmon resonance based biosensor (Biacore) at 25 °C.37 Figure 4 shows the sensorgram for 59, which was used for the kinetics analysis of the binding process. The curve was globally fitted to a Langmuir 1:1 binding model employing standard Biacore software. Association (kon) and dissociation rate constants (koff) as well as affinities (KD) were determined (Table 2). The KDs correspond well with the results obtained in the hapten inhibition assay24 (Table 1). Whereas for trisaccharide 16 a KD of 32 μM was measured, the introduction of the biphenylmethyl moiety in 59 or 60 improved affinities to the low micromolar level. The beneficial effect18d of an additional p-chloro substituent on the benzamide as realized in 60 could also be confirmed. By resolution of the affinities into the individual association and dissociation rate constants, it was possible to reveal the binding kinetics of the three antagonists 16, 59, and 60. The increase in lipophilicity originating from the introduction of the biphenylmethyl moiety (59 and 60) led to a substantial improvement of the association rate constants by a factor of 20 and 30, respectively. Because the three investigated antagonists show rather similar koffs (0.3–1.05 s−1), the improved affinity of 59 and 60 results predominantly from enhanced association rate constants."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "Goat antihuman IgG antibody (Fc specific)",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": "2.1 mg/mL"
+            },
+            "analyte": {
+                "description": "Fc-MAGd1–3 (human IgG Fc-domain tagged MAG N-terminal domain expressed in CHO cells)",
+                "concentration_range": "50 μM to 3.125 μM (2-fold dilution series, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES pH 7.4, 0.15 M NaCl, 3 mM EDTA, 0.0005% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference surface prepared sequentially with no Fc-MAGd1–3 capture",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Standard Biacore software, version 3.2"
+            }
+        }
+    }
+}

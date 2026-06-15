@@ -1,0 +1,551 @@
+{
+    "51458207": {
+        "reactant_set_id": 51458207,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc2nc(oc2c1)-c1cc(Cl)cc(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9.9,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to first binding site of wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | | :--- | :--- | :--- | :--- | :--- | | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR. ᵇCorrespond to the values for the second binding site of TTR.",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | | :--- | :--- | :--- | :--- | :--- | | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458215": {
+        "reactant_set_id": 51458215,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "OC(=O)c1ccc2nc(oc2c1)-c1cc(Cl)cc(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 260.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to second binding site of wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry. The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before. A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | K_d (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | | :--- | :--- | :--- | :--- | :--- | | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9^a | -10.9^a | -6.0^a | -4.9^a | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ^aCorrespond to the values for the first binding site of TTR. ^bCorrespond to the values for the second binding site of TTR.",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | K_d (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | | :--- | :--- | :--- | :--- | :--- | | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458208": {
+        "reactant_set_id": 51458208,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Oc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 31.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458209": {
+        "reactant_set_id": 51458209,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458210": {
+        "reactant_set_id": 51458210,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Oc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1ccc(cc1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 310.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458211": {
+        "reactant_set_id": 51458211,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Oc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1cc(Cl)cc(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 85.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458212": {
+        "reactant_set_id": 51458212,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Oc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1cc(F)cc(F)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 26.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458213": {
+        "reactant_set_id": 51458213,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Oc1cc(F)cc(c1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as dissociation constant by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    },
+    "51458214": {
+        "reactant_set_id": 51458214,
+        "pmid": 36306808,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild type TTR (unknown origin) assessed as gibbs free energy change by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 44: Verona, G.; Mangione, P. P.; Raimondi, S.; Giorgetti, S.; Faravelli, G.; Porcari, R.; Corazza, M.; Gillmore, J. D.; Hawkins, P. N.; Pepys, M. B.; Taylor, G. W.; Bellotti, V. Inhibition of the mechanoenzymatic amyloidogenesis of transthyretin: role of ligand affinity, binding cooperativity and occupancy of the inner channel. Sci. Rep. 2017, 7, 182.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "The thermodynamic parameters that characterize the binding of TTR ligands to WT-TTR were determined using a MicroCal Auto-iTC200 Calorimeter (MicroCal, Malvern-Panalytical) as detailed before.44 A 100 μM solution of the compound (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO) was titrated into an ITC cell containing a 5 μM solution of WT-TTR in the same buffer at 25 °C. A stirring speed of 750 rpm and 2 μL injections were programmed, with a 150 s equilibration period between each injection to allow the calorimetric signal (thermal power) to return to baseline and a 10 μcal/s reference power. Two independent titrations were done for each TTR ligand. The experimental data were analyzed with a general model for a protein with two ligand-binding sites implemented in Origin 7.0 (OriginLab) accounting for cooperative and noncooperative binding. The best fit of the binding isotherm was attained with a model considering two identical binding sites (i.e., no cooperativity) for tolcapone and its derivatives.",
+            "Figure 4 caption": "Figure 4. In vitro characterization of halogenated tolcapone analogues, M-14, and M-17. (A) Interaction of WT-TTR with tolcapone, M-14, and M-17 as assessed by ITC. Tafamidis was tested as a reference. The top panels represent the raw data (thermogram), while the lower panels correspond to the integrated heat changes upon binding plotted against the ligand/TTR concentration ratio (binding isotherm). The solid line describes the best fit according to a two-site binding model (with or without cooperativity) for each test compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of tolcapone, M-14, or M-17 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values refer to mean ± SEM (n = 3).",
+            "Figure 5 caption": "Figure 5. In vitro characterization of demethylated 3,5-disubstituted and halogenated tolcapone analogues, M-20, M-21, and M-23. (A) Interaction of WT-TTR with M-20, M-21, and M-23 as assessed by ITC. The top and the lower panels correspond to the thermogram and the binding isotherm, respectively. The solid line describes the best fit according to a two-site binding model without cooperativity for each compound. (B) WT-TTR (1.8 μM) urea-induced tetramer dissociation (6 M urea) in the absence or presence of M-20, M-21, or M-23 (at 3.6 μM), as measured by Trp fluorescence. The values correspond to mean ± SEM (n = 3). (C) Acid-mediated TTR (at a final assay concentration of 3.6 μM) aggregation as a function of inhibitor concentration determined by turbidity at 340 nm. The values represent mean ± SEM (n = 3).",
+            "Table 2": "Table 2. Thermodynamic Parameters Determined by ITC for the Binding of M-14 and M-17 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | tafamidis | 9.9ᵃ | -10.9ᵃ | -6.0ᵃ | -4.9ᵃ | | M-14 | 310 | -8.9 | -9.2 | 0.3 | | M-17 | 31 | -10.3 | -14.0 | 3.7 | ᵃCorrespond to the values for the first binding site of TTR.ᵇCorrespond to the values for the second binding site of TTR.",
+            "Table 4": "Table 4. Thermodynamic Parameters Determined by ITC for the Binding of M-20, M-21, and M-23 to WT-TTR | compound | Kd (nM) | ΔG (kcal mol⁻¹) | ΔH (kcal mol⁻¹) | -TΔS (kcal mol⁻¹) | |---|---|---|---|---| | tolcapone | 34 | -10.2 | -12.8 | 2.6 | | M-20 | 85 | -9.7 | -11.7 | 2.0 | | M-21 | 26 | -10.4 | -11.3 | 0.9 | | M-23 | 6.2 | -11.2 | -16.6 | 5.4 |"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "WT-TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "two-sites"
+            }
+        }
+    }
+}

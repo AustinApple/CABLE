@@ -1,0 +1,185 @@
+{
+    "51589472": {
+        "reactant_set_id": 51589472,
+        "pmid": 38995734,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@@H](O[C@@H]5O[C@@H](C(=O)O)[C@@H](O[C@@H]6O[C@@H](C(=O)O)[C@@H](O[C@@H]7O[C@@H](C(=O)O)[C@@H](OS(=O)(=O)O)[C@H](O)[C@H]7OS(=O)(=O)O)[C@H](O)[C@H]6OS(=O)(=O)O)[C@H](O)[C@H]5OS(=O)(=O)O)CC[C@]4(C)[C@H]3CC[C@]12C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9180.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RBD domain of SARS-CoV-2 spike protein assessed as dissociation constant by Isothermal Titration Calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry. The thermodynamic analysis of heparinoids and the spike protein (SAE1000, Sigma-Aldrich) was conducted using an isothermal titration calorimeter (ITC 200, USA). The titration cell contained spike protein (10 μM) and was titrated with heparinoids (1 mM of 2 μL) in a tris buffer (10 mM Tris, 50 mM NaCl, pH 7.5). Each experiment comprised 18 injections with a consecutive time interval of 100 s between two injections. To ensure thorough mixing of the solutions, the stirring speed was maintained at 1000 rotations/min. The cell temperature was held constant at 298 K, and nearly three successive titrations were averaged to obtain the ITC curves (Figure S1).",
+            "Results and Discussion": "The final compound obtained was MC-5a, the α-anomeric analogue of hexasaccharide conjugate MC-5b. While TiCl4-mediated anomerization of 64 was a viable option, we had earlier prepared the peracetylated maltohexosyl trichloroacetimidate donor 69 due to the commercial availability of maltohexose peracetate. An attempt to glycosylate cholestanol with 69 resulted in the isolation of 73 as the major product (50%) along with 20% of the desired β-glycoside 72. Compound 73 presumably arose due to the loss of the participating acetate protecting group at C-2. We were able to profit from this result by converting 73 into MC-5a via the standard deprotection-sulfation sequence.",
+            "Figure 3 caption": "Figure 3. (A) Ribbon diagram of heparanase (PDB ID: 5E9C) colored blue to red from the N- to C-terminal with key residues involved in binding labeled. The top scoring complex obtained from docking with GlycoTorch Vina of (B) IAC-3, (C) IDC-3, and (D) MC-5a. The surfaces (B–D) are in the same orientation as the ribbon diagram in (A). The enzyme surface is rendered using UCSF Chimera, wherein the hydrophobic regions of the surface are in tan and the hydrophilic in blue.",
+            "Table 2": "Table 2. ITC Data for Selected Compounds compound K_D (μM) ΔH (cal/mol) ΔS (cal/mol/deg) PG545 1.56 ± 0.03 9.12 ± 1.44 −8554 ± 196 12.4 ± 0.3 IAC-3 1.73 ± 0.12 9.18 ± 2.91 −8143 ± 107 13.2 ± 0.12 IDC-3 1.53 ± 0.05 2.11 ± 1.73 −4452 ± 114 11.8 ± 0.4 MC-5a 1.46 ± 0.02 1.87 ± 1.12 −3064 ± 134 12.1 ± 0.4 aData are the average of 3 titrations ± SD.",
+            "Results and Discussion (ITC)": "MC-5a were selected based on their similar or higher potency to PG545 in the PRNT and heparanase assays. The ITC measurements showed that all compounds bound the RBD with dissociation constants (K_D) ranging from 1.87 to 9.18 μM (Figure S3 and Table 2). IDC-3 bound the RGD with similar affinity to PG545; however, MC-5a and IDC-3 displayed 4- to 5-fold stronger binding than PG545. These results suggest that MC-5a and IDC-4 warrant further investigation as potential SARS-CoV-2 antivirals, particularly MC-5a, which is also the more potent inhibitor of heparanase."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "spike protein (SAE1000, Sigma-Aldrich)",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "heparinoids",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM Tris, 50 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "100",
+                    "total_count": "18"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "51589473": {
+        "reactant_set_id": 51589473,
+        "pmid": 38995734,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@@H](O[C@@H]5O[C@@H](COS(=O)(=O)O)[C@@H](O[C@@H]6O[C@@H](COS(=O)(=O)O)[C@@H](O[C@@H]7O[C@@H](COS(=O)(=O)O)[C@@H](OS(=O)(=O)O)[C@H](O)[C@H]7OS(=O)(=O)O)[C@H](O)[C@H]6OS(=O)(=O)O)[C@H](O)[C@H]5OS(=O)(=O)O)CC[C@]4(C)[C@H]3CC[C@]12C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RBD domain of SARS-CoV-2 spike protein assessed as dissociation constant by Isothermal Titration Calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry. The thermodynamic analysis of heparinoids and the spike protein (SAE1000, Sigma-Aldrich) was conducted using an isothermal titration calorimeter (ITC 200, USA). The titration cell contained spike protein (10 μM) and was titrated with heparinoids (1 mM of 2 μL) in a tris buffer (10 mM Tris, 50 mM NaCl, pH 7.5). Each experiment comprised 18 injections with a consecutive time interval of 100 s between two injections. To ensure thorough mixing of the solutions, the stirring speed was maintained at 1000 rotations/min. The cell temperature was held constant at 298 K, and nearly three successive titrations were averaged to obtain the ITC curves (Figure S1).",
+            "Results and Discussion": "The final compound obtained was MC-5a, the α-anomeric analogue of hexasaccharide conjugate MC-5b. While TiCl4-mediated anomerization of 64 was a viable option, we had earlier prepared the peracetylated maltohexosyl trichloroacetimidate donor 69 due to the commercial availability of maltohexose peracetate. An attempt to glycosylate cholestanol with 69 resulted in the isolation of 73 as the major product (50%) along with 20% of the desired β-glycoside 72. Compound 73 presumably arose due to the loss of the participating acetate protecting group at C-2. We were able to profit from this result by converting 73 into MC-5a via the standard deprotection-sulfation sequence.",
+            "Figure 3 caption": "Figure 3. (A) Ribbon diagram of heparanase (PDB ID: 5E9C) colored blue to red from the N- to C-terminal with key residues involved in binding labeled. The top scoring complex obtained from docking with GlycoTorch Vina of (B) IAC-3, (C) IDC-3, and (D) MC-5a. The surfaces (B–D) are in the same orientation as the ribbon diagram in (A). The enzyme surface is rendered using UCSF Chimera, wherein the hydrophobic regions of the surface are in tan and the hydrophilic in blue.",
+            "Table 2": "Table 2. ITC Data for Selected Compounds compound K_D (μM) ΔH (cal/mol) ΔS (cal/mol/deg) PG545 1.56 ± 0.03 9.12 ± 1.44 −8554 ± 196 12.4 ± 0.3 IAC-3 1.73 ± 0.12 9.18 ± 2.91 −8143 ± 107 13.2 ± 0.12 IDC-3 1.53 ± 0.05 2.11 ± 1.73 −4452 ± 114 11.8 ± 0.4 MC-5a 1.46 ± 0.02 1.87 ± 1.12 −3064 ± 134 12.1 ± 0.4 aData are the average of 3 titrations ± SD.",
+            "Results and Discussion (ITC)": "MC-5a were selected based on their similar or higher potency to PG545 in the PRNT and heparanase assays. The ITC measurements showed that all compounds bound the RBD with dissociation constants (K_D) ranging from 1.87 to 9.18 μM (Figure S3 and Table 2). IDC-3 bound the RGD with similar affinity to PG545; however, MC-5a and IDC-3 displayed 4- to 5-fold stronger binding than PG545. These results suggest that MC-5a and IDC-4 warrant further investigation as potential SARS-CoV-2 antivirals, particularly MC-5a, which is also the more potent inhibitor of heparanase."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "spike protein (SAE1000, Sigma-Aldrich)",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "heparinoids",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM Tris, 50 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "100",
+                    "total_count": "18"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "51589474": {
+        "reactant_set_id": 51589474,
+        "pmid": 38995734,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@@H](O[C@H]5O[C@H](COS(=O)(=O)[O-])[C@@H](O[C@H]6O[C@H](COS(=O)(=O)[O-])[C@@H](O[C@H]7O[C@H](COS(=O)(=O)[O-])[C@@H](O[C@H]8O[C@H](COS(=O)(=O)[O-])[C@@H](O[C@H]9O[C@H](COS(=O)(=O)[O-])[C@@H](O[C@H]%10O[C@H](COS(=O)(=O)[O-])[C@@H](OS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@H]%10OS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@H]9OS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@H]8OS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@H]7OS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@H]6OS(=O)(=O)[O-])[C@H](OS(=O)(=O)[O-])[C@H]5OS(=O)(=O)[O-])CC[C@]4(C)[C@H]3CC[C@]12C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1870.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RBD domain of SARS-CoV-2 spike protein assessed as dissociation constant by Isothermal Titration Calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry. The thermodynamic analysis of heparinoids and the spike protein (SAE1000, Sigma-Aldrich) was conducted using an isothermal titration calorimeter (ITC 200, USA). The titration cell contained spike protein (10 μM) and was titrated with heparinoids (1 mM of 2 μL) in a tris buffer (10 mM Tris, 50 mM NaCl, pH 7.5). Each experiment comprised 18 injections with a consecutive time interval of 100 s between two injections. To ensure thorough mixing of the solutions, the stirring speed was maintained at 1000 rotations/min. The cell temperature was held constant at 298 K, and nearly three successive titrations were averaged to obtain the ITC curves (Figure S1).",
+            "Results and Discussion": "The final compound obtained was MC-5a, the α-anomeric analogue of hexasaccharide conjugate MC-5b. While TiCl4-mediated anomerization of 64 was a viable option, we had earlier prepared the peracetylated maltohexosyl trichloroacetimidate donor 69 due to the commercial availability of maltohexose peracetate. An attempt to glycosylate cholestanol with 69 resulted in the isolation of 73 as the major product (50%) along with 20% of the desired β-glycoside 72. Compound 73 presumably arose due to the loss of the participating acetate protecting group at C-2. We were able to profit from this result by converting 73 into MC-5a via the standard deprotection-sulfation sequence.",
+            "Figure 3 caption": "Figure 3. (A) Ribbon diagram of heparanase (PDB ID: 5E9C) colored blue to red from the N- to C-terminal with key residues involved in binding labeled. The top scoring complex obtained from docking with GlycoTorch Vina of (B) IAC-3, (C) IDC-3, and (D) MC-5a. The surfaces (B–D) are in the same orientation as the ribbon diagram in (A). The enzyme surface is rendered using UCSF Chimera, wherein the hydrophobic regions of the surface are in tan and the hydrophilic in blue.",
+            "Table 2": "Table 2. ITC Data for Selected Compounds compound K_D (μM) ΔH (cal/mol) ΔS (cal/mol/deg) PG545 1.56 ± 0.03 9.12 ± 1.44 −8554 ± 196 12.4 ± 0.3 IAC-3 1.73 ± 0.12 9.18 ± 2.91 −8143 ± 107 13.2 ± 0.12 IDC-3 1.53 ± 0.05 2.11 ± 1.73 −4452 ± 114 11.8 ± 0.4 MC-5a 1.46 ± 0.02 1.87 ± 1.12 −3064 ± 134 12.1 ± 0.4 aData are the average of 3 titrations ± SD.",
+            "Results and Discussion (ITC)": "MC-5a were selected based on their similar or higher potency to PG545 in the PRNT and heparanase assays. The ITC measurements showed that all compounds bound the RBD with dissociation constants (K_D) ranging from 1.87 to 9.18 μM (Figure S3 and Table 2). IDC-3 bound the RGD with similar affinity to PG545; however, MC-5a and IDC-3 displayed 4- to 5-fold stronger binding than PG545. These results suggest that MC-5a and IDC-4 warrant further investigation as potential SARS-CoV-2 antivirals, particularly MC-5a, which is also the more potent inhibitor of heparanase."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "spike protein (SAE1000, Sigma-Aldrich)",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "heparinoids",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM Tris, 50 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "100",
+                    "total_count": "18"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

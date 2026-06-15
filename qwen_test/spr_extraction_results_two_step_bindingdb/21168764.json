@@ -1,0 +1,73 @@
+{
+    "51628095": {
+        "reactant_set_id": 51628095,
+        "pmid": 21168764,
+        "protein": "Macrophage migration inhibitory factor",
+        "ligand": {
+            "smiles": "O=c1nc(-c2ccccn2)sc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 88.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BTZO-12 sensor chip immobilized human MIF expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Lopez, F., Pichereaux, C., Burlet-Schiltz, O., Pradayrol, L., Monsarrat, B., and Esteve, J.P. (2003). Improved sensitivity of biomolecular interaction analysis mass spectrometry for the identification of interacting molecules. Proteomics 3, 402–412.",
+        "original_paragraph": {
+            "SPR Analysis": "Interactions of MIF with BTZO-12 or BTZO-13 were examined using the BIACORE 3000 system (GE Healthcare UK Limited) at 25°C. BTZO-12 and BTZO-13 were each immobilized on the activated sensor chip CM5 (BTZO-12-type chip, BTZO-13-type chip). Binding data were analyzed using the BIACORE-3000 control software and the BIA evaluation software (GE Healthcare UK Limited).",
+            "Figure 3C caption": "Analytical biosensor analysis of rat heart protein extracts using immobilized BTZO-1 derivatives. BTZO-12 was used as a positive compound, and BTZO-13 was used as a negative compound.",
+            "Figure 3E caption": "Direct binding of rMIF to the BTZO-12-type sensor chip. No rMIF binding signal was detected by the BTZO-13-type sensor chip.",
+            "Figure 4C caption": "Evaluation of specific binding of hMIF and various mutants to the BTZO-12-type sensor chip.",
+            "Figure 4G caption": "Sensorgram showing binding of BTZO-1 or BTZO-14 to immobilized hMIF on a sensor chip CM5 using a SPR biosensor.",
+            "Figure 4H caption": "The electron density map shows a well-ordered BTZO-14 in complex with the MIF monomer (green); however, in the other MIF monomers (cyan and magenta) of the trimer, the BTZO-14 thiazine ring is bound in a skewed conformation. BTZO-14 also bound to the area between the symmetry-related MIF molecules (BTZO-14 in purple).",
+            "Figure 4I caption": "BTZO-14 bound to the vicinity of Pro1 in each MIF monomer. BTZO-14 is shown in yellow, the MIF molecule is highlighted in green, and the neighboring molecule in the trimer is shown in cyan. Hydrogen bonds and other distinct interactions are indicated by red-dashed lines.",
+            "Figure 4J caption": "BTZO-14 was also positioned between aromatic side chains of Trp108 and Tyr36 from both two adjacent MIF molecules. See also Figure S2.",
+            "Results section (page 1285)": "We used a surface plasmon resonance (SPR) biosensor technique to further identify possible target protein(s) of BTZO-1 (Lopez et al., 2003). In this experiment, aminohexamylcarbonyl variants of BTZO-1 derivatives (BTZO-12 and BTZO-13) were used. BTZO-12 and BTZO-13 are structurally similar to BTZO-1 and BTZO-3, respectively; BTZO-12 retained ARE-activation activity equivalent to that of BTZO-1, whereas BTZO-13 was less potent due to introduction of a methyl group to the eight position of the 1,3-benzothiazin-4-one (Table 1). BTZO-12 and BTZO-13 were each immobilized with a surface density of 655 resonance units (RU) and 816 RU, respectively, on the activated sensor chip CM5 (BTZO-12-type sensor chip and BTZO-13-type sensor chip). The BTZO-12-type sensor chip, but not the BTZO-13-type sensor chip, gave a strong binding signal when protein extract from rat heart was analyzed (Figure 3C).",
+            "Results section (page 1289)": "The Kd of BTZO-1 with the 6-His-tagged rat MIF protein (MIF-His) was 157 nM (Figure S2D). The Kd of BTZO-1 with hMIF, measured by SPR analysis using the BTZO-12-type sensor chip, was 88 nM (Figure S2E)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare UK Limited",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare UK Limited"
+            },
+            "immobilization": {
+                "ligand_name": "BTZO-12 or BTZO-13",
+                "strategy": "Amine coupling",
+                "density_ru": 655,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "human MIF (hMIF) or rat MIF (rMIF) protein",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "BIACORE-3000 control software and BIA evaluation software"
+            }
+        }
+    }
+}

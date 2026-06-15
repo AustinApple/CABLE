@@ -1,0 +1,185 @@
+{
+    "51310764": {
+        "reactant_set_id": 51310764,
+        "pmid": 30707839,
+        "protein": "Urokinase-type plasminogen activator",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@H](NC(=O)CNC1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse uPA expressed in HEK2936E cells by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Andersen, L. M.; Wind, T.; Hansen, H. D.; Andreasen, P. A. A cyclic peptidyl inhibitor of murine urokinase-type plasminogen activator: changing species specificity by substitution of a single residue. Biochem. J. 2008, 412, 447–457. Reference 36: Sørensen, H. P.; Xu, P.; Jiang, L. G.; Kromann-Hansen, T.; Jensen, K. J.; Huang, M. D.; Andreasen, P. A. Selection of high-affinity peptidic serine protease inhibitors with increased binding entropy from a back-flip library of peptide-protease fusions. J. Mol. Biol. 2015, 427, 3110–3122.",
+        "original_paragraph": {
+            "Materials and Methods": "The thermodynamic parameters of the peptide–uPA binding were determined with isothermal titration calorimetry (ITC) and surface plasmon resonance (SPR), respectively (Tables 2 and 3). The K_D values determined by ITC and SPR were mostly consistent with the K_i values determined via the chromogenic assays, providing further validation of our data. ITC data (Table 3 and Figure S10) showed that all peptides bound to uPA with an entropic penalty, suggesting the reduced flexibility of peptides upon binding to uPA. The lower K_D values corresponded to the higher ΔH values, which were partially compensated by the entropic penalty, indicating that the peptide:uPA binding is enthalpy-driven rather than entropy-driven. SPR data (Table 2) showed that the higher affinity of IG-1, compared to that of LD-1, was due to the higher association rate (k_on) and the lower dissociation rate (k_off). However, the improved affinity going from IG-1 to IG-2 was solely due to the lower dissociation rate, which was consistent with the tighter binding of IG-2 due to the extra salt bridges between the C-terminus in IG-2 and the amine side chain of Lys192 in uPA indicated by the MD structures. Additionally, we calculated the thermodynamic parameters of these complexes using the molecular mechanics/generalized Born surface area (MM/GBSA) method based on the equilibrium MD trajectories. Notably, the binding free energies (ΔG_bind) of the peptide:uPA complexes determined by ITC, SPR, and MM/GBSA were linearly dependent (Table S5 and Figure 2F), indicating the high reliability of our MD simulations performed here. We further decomposed the calculated ΔG_bind into different energy components (Table S6). The results showed that, in agreement with the above structural analysis, the solute electrostatic interactions (ΔE_ele) were pivotal for the binding of the peptides to uPA, and their contributions in the IG-2:uPA complex were much stronger than the others, possibly due to the formation of an additional salt bridge between the C-terminus in IG-2 and the amine side-chain Lys192 in uPA. In addition, both van der Waals interactions (ΔE_vdW) and the nonpolar part of solvation free energy (ΔG_nonpolar) contributed considerably to the binding of all three peptides, while the polar part of the latter (ΔG_polar) was energetically unfavorable to the binding affinities of the complexes. Our study is a nice example demonstrating the agreement between experimental data and structural analysis.",
+            "Table 3": "Table 3. Thermodynamic Parameters of Peptide Inhibitors Binding to muPA Determined by ITC^a | peptide | N | K_D (nM) | ΔG (kJ/mol) | ΔH (kJ/mol) | TΔS (kJ/mol) | | :--- | :--- | :--- | :--- | :--- | :--- | | LD-1 | 0.83 ± 0.1 (3)* | 354 ± 132 (3)* | -37.0 ± 0.9 (3)* | -49.6 ± 6.3 (3)* | -12.6 ± 7.2 (3)* | | IG-1 | 0.78 ± 0.03 (3) | 42.1 ± 3.35 (3) | -42.1 ± 0.20 (3) | -79.7 ± 1.4 (3) | -37.6 ± 1.6 (3) | | IG-2 | 1.1 ± 0.06 (3) | 10.6 ± 1.4 (3) | -45.5 ± 0.03 (3) | -91.4 ± 15.8 (3) | -45.9 ± 15.7 (3) | ^aData with asterisk are from our previous studies.35,36",
+            "Figure 2 caption": "Figure 2. Crystal structures and MD simulation of peptide inhibitors in complexes with uPA. (A) Overall crystal structures of IG-1 (green sticks) and IG-2 (magenta sticks) in complexes with uPA (wheat surface) (PDB codes: 6A8G and 6A8N). (B) Schematic representation of polar interactions between IG-2 (black) and uPA (blue). Intramolecular and intermolecular polar interactions are presented in black and blue dash lines, respectively. (C) Time-dependent root-mean-square deviation (RMSD) of the backbone atoms of peptide inhibitors with respect to the starting conformation during the 1200 ns-MD simulation. (D) Alignment of the backbones of IG-2 in the crystal structure (magenta cartoon) and the MD simulation (cyan cartoon). (E and F) Alignment of the backbones of LD-1 (cyan cartoon), IG-1 (green cartoon), and IG-2 (magenta cartoon) in the MD simulation-derived structures. The C_α atoms are presented as spheres. The distances between the atoms are presented as black dash lines. uPAs are presented as the wheat surface. The critical residues are presented as sticks. (G) Correlations of the binding free energy of peptide–uPA complexes calculated from MD trajectories (ΔG_MD) with the ones determined by experiments (ΔG_exp). The correlation coefficients (R²) between ΔG_MD and ΔG_exp determined by isothermal titration calorimetry (ITC) (green line) and surface plasmon resonance (SPR) (blue line) are 0.97 and 0.99, respectively.",
+            "Figure 2G": "Figure 2G shows a scatter plot with a green line (ITC vs. MD) and a blue line (SPR vs. MD). The green line has an R² value of 0.97, and the blue line has an R² value of 0.99. The x-axis is labeled 'ΔG_exp (kJ/mol)' and the y-axis is labeled 'ΔG_MD (kJ/mol)'. The data points are labeled with the peptides: LD-1, IG-1, and IG-2.",
+            "Supporting Information": "The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/acs.jmedchem.8b01908. Additional experimental section, HPLC chromatographs and mass spectra of peptides, characterization of the recombinant proteins, raw enzymatic data, crystallographic parameters, potential polar interactions between peptides and uPA in crystal structures and MD simulations, raw ITC data, stability of peptides against plasma proteases, daily changes of body weights of cancer-grafted mice with and without treatments, and other supporting data (PDF) Molecular-formula strings (CSV) PDB-formatted coordinates for computational models (MD-derived LD-1-muPA.pdb, MD-derived IG-1-muPA.pdb, and MD-derived IG-2-muPA.pdb) (PDB) (PDB)"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": null
+            },
+            "protein": {
+                "name": "mouse uPA",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "peptide inhibitors (LD-1, IG-1, IG-2)",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51310772": {
+        "reactant_set_id": 51310772,
+        "pmid": 30707839,
+        "protein": "Urokinase-type plasminogen activator",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CSSC[C@H](NC(=O)CNC1=O)C(N)=O)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 42.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse uPA expressed in HEK2936E cells by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Andersen, L. M.; Wind, T.; Hansen, H. D.; Andreasen, P. A. A cyclic peptidyl inhibitor of murine urokinase-type plasminogen activator: changing species specificity by substitution of a single residue. Biochem. J. 2008, 412, 447–457. Reference 36: Sørensen, H. P.; Xu, P.; Jiang, L. G.; Kromann-Hansen, T.; Jensen, K. J.; Huang, M. D.; Andreasen, P. A. Selection of high-affinity peptidic serine protease inhibitors with increased binding entropy from a back-flip library of peptide-protease fusions. J. Mol. Biol. 2015, 427, 3110–3122.",
+        "original_paragraph": {
+            "Materials and Methods": "The thermodynamic parameters of the peptide–uPA binding were determined with isothermal titration calorimetry (ITC) and surface plasmon resonance (SPR), respectively (Tables 2 and 3). The K_D values determined by ITC and SPR were mostly consistent with the K_i values determined via the chromogenic assays, providing further validation of our data. ITC data (Table 3 and Figure S10) showed that all peptides bound to uPA with an entropic penalty, suggesting the reduced flexibility of peptides upon binding to uPA. The lower K_D values corresponded to the higher ΔH values, which were partially compensated by the entropic penalty, indicating that the peptide:uPA binding is enthalpy-driven rather than entropy-driven. SPR data (Table 2) showed that the higher affinity of IG-1, compared to that of LD-1, was due to the higher association rate (k_on) and the lower dissociation rate (k_off). However, the improved affinity going from IG-1 to IG-2 was solely due to the lower dissociation rate, which was consistent with the tighter binding of IG-2 due to the extra salt bridges between the C-terminus in IG-2 and the amine side chain of Lys192 in uPA indicated by the MD structures. Additionally, we calculated the thermodynamic parameters of these complexes using the molecular mechanics/generalized Born surface area (MM/GBSA) method based on the equilibrium MD trajectories. Notably, the binding free energies (ΔG_bind) of the peptide:uPA complexes determined by ITC, SPR, and MM/GBSA were linearly dependent (Table S5 and Figure 2F), indicating the high reliability of our MD simulations performed here. We further decomposed the calculated ΔG_bind into different energy components (Table S6). The results showed that, in agreement with the above structural analysis, the solute electrostatic interactions (ΔE_ele) were pivotal for the binding of the peptides to uPA, and their contributions in the IG-2:uPA complex were much stronger than the others, possibly due to the formation of an additional salt bridge between the C-terminus in IG-2 and the amine side-chain Lys192 in uPA. In addition, both van der Waals interactions (ΔE_vdW) and the nonpolar part of solvation free energy (ΔG_nonpolar) contributed considerably to the binding of all three peptides, while the polar part of the latter (ΔG_polar) was energetically unfavorable to the binding affinities of the complexes. Our study is a nice example demonstrating the agreement between experimental data and structural analysis.",
+            "Table 3": "Table 3. Thermodynamic Parameters of Peptide Inhibitors Binding to muPA Determined by ITC^a | peptide | N | K_D (nM) | ΔG (kJ/mol) | ΔH (kJ/mol) | TΔS (kJ/mol) | | :--- | :--- | :--- | :--- | :--- | :--- | | LD-1 | 0.83 ± 0.1 (3)* | 354 ± 132 (3)* | -37.0 ± 0.9 (3)* | -49.6 ± 6.3 (3)* | -12.6 ± 7.2 (3)* | | IG-1 | 0.78 ± 0.03 (3) | 42.1 ± 3.35 (3) | -42.1 ± 0.20 (3) | -79.7 ± 1.4 (3) | -37.6 ± 1.6 (3) | | IG-2 | 1.1 ± 0.06 (3) | 10.6 ± 1.4 (3) | -45.5 ± 0.03 (3) | -91.4 ± 15.8 (3) | -45.9 ± 15.7 (3) | ^aData with asterisk are from our previous studies.35,36",
+            "Figure 2 caption": "Figure 2. Crystal structures and MD simulation of peptide inhibitors in complexes with uPA. (A) Overall crystal structures of IG-1 (green sticks) and IG-2 (magenta sticks) in complexes with uPA (wheat surface) (PDB codes: 6A8G and 6A8N). (B) Schematic representation of polar interactions between IG-2 (black) and uPA (blue). Intramolecular and intermolecular polar interactions are presented in black and blue dash lines, respectively. (C) Time-dependent root-mean-square deviation (RMSD) of the backbone atoms of peptide inhibitors with respect to the starting conformation during the 1200 ns-MD simulation. (D) Alignment of the backbones of IG-2 in the crystal structure (magenta cartoon) and the MD simulation (cyan cartoon). (E and F) Alignment of the backbones of LD-1 (cyan cartoon), IG-1 (green cartoon), and IG-2 (magenta cartoon) in the MD simulation-derived structures. The C_α atoms are presented as spheres. The distances between the atoms are presented as black dash lines. uPAs are presented as the wheat surface. The critical residues are presented as sticks. (G) Correlations of the binding free energy of peptide–uPA complexes calculated from MD trajectories (ΔG_MD) with the ones determined by experiments (ΔG_exp). The correlation coefficients (R²) between ΔG_MD and ΔG_exp determined by isothermal titration calorimetry (ITC) (green line) and surface plasmon resonance (SPR) (blue line) are 0.97 and 0.99, respectively.",
+            "Figure 2G": "Figure 2G shows a scatter plot with a green line (ITC vs. MD) and a blue line (SPR vs. MD). The green line has an R² value of 0.97, and the blue line has an R² value of 0.99. The x-axis is labeled 'ΔG_exp (kJ/mol)' and the y-axis is labeled 'ΔG_MD (kJ/mol)'. The data points are labeled with the peptides: LD-1, IG-1, and IG-2.",
+            "Supporting Information": "The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/acs.jmedchem.8b01908. Additional experimental section, HPLC chromatographs and mass spectra of peptides, characterization of the recombinant proteins, raw enzymatic data, crystallographic parameters, potential polar interactions between peptides and uPA in crystal structures and MD simulations, raw ITC data, stability of peptides against plasma proteases, daily changes of body weights of cancer-grafted mice with and without treatments, and other supporting data (PDF) Molecular-formula strings (CSV) PDB-formatted coordinates for computational models (MD-derived LD-1-muPA.pdb, MD-derived IG-1-muPA.pdb, and MD-derived IG-2-muPA.pdb) (PDB) (PDB)"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": null
+            },
+            "protein": {
+                "name": "mouse uPA",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "peptide inhibitors (LD-1, IG-1, IG-2)",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51310773": {
+        "reactant_set_id": 51310773,
+        "pmid": 30707839,
+        "protein": "Urokinase-type plasminogen activator",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CSSC[C@H](NC(=O)[C@H](CC(O)=O)NC1=O)C(N)=O)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 354.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse uPA expressed in HEK2936E cells by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Andersen, L. M.; Wind, T.; Hansen, H. D.; Andreasen, P. A. A cyclic peptidyl inhibitor of murine urokinase-type plasminogen activator: changing species specificity by substitution of a single residue. Biochem. J. 2008, 412, 447–457. Reference 36: Sørensen, H. P.; Xu, P.; Jiang, L. G.; Kromann-Hansen, T.; Jensen, K. J.; Huang, M. D.; Andreasen, P. A. Selection of high-affinity peptidic serine protease inhibitors with increased binding entropy from a back-flip library of peptide-protease fusions. J. Mol. Biol. 2015, 427, 3110–3122.",
+        "original_paragraph": {
+            "Materials and Methods": "The thermodynamic parameters of the peptide–uPA binding were determined with isothermal titration calorimetry (ITC) and surface plasmon resonance (SPR), respectively (Tables 2 and 3). The K_D values determined by ITC and SPR were mostly consistent with the K_i values determined via the chromogenic assays, providing further validation of our data. ITC data (Table 3 and Figure S10) showed that all peptides bound to uPA with an entropic penalty, suggesting the reduced flexibility of peptides upon binding to uPA. The lower K_D values corresponded to the higher ΔH values, which were partially compensated by the entropic penalty, indicating that the peptide:uPA binding is enthalpy-driven rather than entropy-driven. SPR data (Table 2) showed that the higher affinity of IG-1, compared to that of LD-1, was due to the higher association rate (k_on) and the lower dissociation rate (k_off). However, the improved affinity going from IG-1 to IG-2 was solely due to the lower dissociation rate, which was consistent with the tighter binding of IG-2 due to the extra salt bridges between the C-terminus in IG-2 and the amine side chain of Lys192 in uPA indicated by the MD structures. Additionally, we calculated the thermodynamic parameters of these complexes using the molecular mechanics/generalized Born surface area (MM/GBSA) method based on the equilibrium MD trajectories. Notably, the binding free energies (ΔG_bind) of the peptide:uPA complexes determined by ITC, SPR, and MM/GBSA were linearly dependent (Table S5 and Figure 2F), indicating the high reliability of our MD simulations performed here. We further decomposed the calculated ΔG_bind into different energy components (Table S6). The results showed that, in agreement with the above structural analysis, the solute electrostatic interactions (ΔE_ele) were pivotal for the binding of the peptides to uPA, and their contributions in the IG-2:uPA complex were much stronger than the others, possibly due to the formation of an additional salt bridge between the C-terminus in IG-2 and the amine side-chain Lys192 in uPA. In addition, both van der Waals interactions (ΔE_vdW) and the nonpolar part of solvation free energy (ΔG_nonpolar) contributed considerably to the binding of all three peptides, while the polar part of the latter (ΔG_polar) was energetically unfavorable to the binding affinities of the complexes. Our study is a nice example demonstrating the agreement between experimental data and structural analysis.",
+            "Table 3": "Table 3. Thermodynamic Parameters of Peptide Inhibitors Binding to muPA Determined by ITC^a | peptide | N | K_D (nM) | ΔG (kJ/mol) | ΔH (kJ/mol) | TΔS (kJ/mol) | | :--- | :--- | :--- | :--- | :--- | :--- | | LD-1 | 0.83 ± 0.1 (3)* | 354 ± 132 (3)* | -37.0 ± 0.9 (3)* | -49.6 ± 6.3 (3)* | -12.6 ± 7.2 (3)* | | IG-1 | 0.78 ± 0.03 (3) | 42.1 ± 3.35 (3) | -42.1 ± 0.20 (3) | -79.7 ± 1.4 (3) | -37.6 ± 1.6 (3) | | IG-2 | 1.1 ± 0.06 (3) | 10.6 ± 1.4 (3) | -45.5 ± 0.03 (3) | -91.4 ± 15.8 (3) | -45.9 ± 15.7 (3) | ^aData with asterisk are from our previous studies.35,36",
+            "Figure 2 caption": "Figure 2. Crystal structures and MD simulation of peptide inhibitors in complexes with uPA. (A) Overall crystal structures of IG-1 (green sticks) and IG-2 (magenta sticks) in complexes with uPA (wheat surface) (PDB codes: 6A8G and 6A8N). (B) Schematic representation of polar interactions between IG-2 (black) and uPA (blue). Intramolecular and intermolecular polar interactions are presented in black and blue dash lines, respectively. (C) Time-dependent root-mean-square deviation (RMSD) of the backbone atoms of peptide inhibitors with respect to the starting conformation during the 1200 ns-MD simulation. (D) Alignment of the backbones of IG-2 in the crystal structure (magenta cartoon) and the MD simulation (cyan cartoon). (E and F) Alignment of the backbones of LD-1 (cyan cartoon), IG-1 (green cartoon), and IG-2 (magenta cartoon) in the MD simulation-derived structures. The C_α atoms are presented as spheres. The distances between the atoms are presented as black dash lines. uPAs are presented as the wheat surface. The critical residues are presented as sticks. (G) Correlations of the binding free energy of peptide–uPA complexes calculated from MD trajectories (ΔG_MD) with the ones determined by experiments (ΔG_exp). The correlation coefficients (R²) between ΔG_MD and ΔG_exp determined by isothermal titration calorimetry (ITC) (green line) and surface plasmon resonance (SPR) (blue line) are 0.97 and 0.99, respectively.",
+            "Figure 2G": "Figure 2G shows a scatter plot with a green line (ITC vs. MD) and a blue line (SPR vs. MD). The green line has an R² value of 0.97, and the blue line has an R² value of 0.99. The x-axis is labeled 'ΔG_exp (kJ/mol)' and the y-axis is labeled 'ΔG_MD (kJ/mol)'. The data points are labeled with the peptides: LD-1, IG-1, and IG-2.",
+            "Supporting Information": "The Supporting Information is available free of charge on the ACS Publications website at DOI: 10.1021/acs.jmedchem.8b01908. Additional experimental section, HPLC chromatographs and mass spectra of peptides, characterization of the recombinant proteins, raw enzymatic data, crystallographic parameters, potential polar interactions between peptides and uPA in crystal structures and MD simulations, raw ITC data, stability of peptides against plasma proteases, daily changes of body weights of cancer-grafted mice with and without treatments, and other supporting data (PDF) Molecular-formula strings (CSV) PDB-formatted coordinates for computational models (MD-derived LD-1-muPA.pdb, MD-derived IG-1-muPA.pdb, and MD-derived IG-2-muPA.pdb) (PDB) (PDB)"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": null
+            },
+            "protein": {
+                "name": "mouse uPA",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "peptide inhibitors (LD-1, IG-1, IG-2)",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

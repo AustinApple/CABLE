@@ -1,0 +1,136 @@
+{
+    "51130821": {
+        "reactant_set_id": 51130821,
+        "pmid": 30107970,
+        "protein": "Amyloid-beta precursor protein",
+        "ligand": {
+            "smiles": "C[n+]1c2CCC(=C/c3cccc4ccccc34)C(=O)c2c(N)c2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to amyloid beta (1 to 42) (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR measurements were performed on a ProteOn® XPR36 Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA) using a GLH sensor chip. In a typical experiment, Aβ1-42 and tau were folded in the filtered and degassed running buffer (20 mM PBS, pH = 7.4, 0.005% Tween-20) and 100 μg/mL. The protein samples were captured in flow cells, and a blank cell was set as a control. Compound solutions were prepared within the running buffer by serial dilutions from stock solution and injected simultaneously at a flow rate of 25 μL/min for 5 min for associating, followed by 5 min of dissociation at 25 °C. The final graphs were obtained by subtracting blank sensorgrams from the duplex or quadruplex sensorgrams. The data were analyzed with ProteOn® manager software, using the Langmuir model to fit the kinetic data.",
+            "Figure 6 caption": "Fig. 6. SPR studies for binding of 30 to Aβ1-42 and tau. (A) SPR sensorgrams for binding of 30 to Aβ1-42; the equilibrium binding constant (K_D) for the binding of 30 with Aβ1-42 was 1.60 × 10⁻⁵ mol/L. (B) SPR sensorgrams for the binding of resveratrol (Res) to Aβ1-42; the equilibrium binding constants (K_D) for the binding of Res with Aβ1-42 was 3.85 × 10⁻⁵ mol/L. (C) SPR sensorgrams for the binding of 30 to tau; the equilibrium binding constant (K_D) for the binding of 30 with tau was 3.37 × 10⁻⁵ mol/L. (D) SPR sensorgrams for the binding of methylene blue (MB) to tau; the equilibrium binding constant (K_D) for the binding of MB with tau was 2.82 × 10⁻⁵ mol/L.",
+            "Figure 6A sensorgram data": "The sensorgram in Figure 6A shows the response (RU) over time (s) for different concentrations of compound 30 (0, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM) binding to Aβ1-42. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 25 μM. The fitted curve yields K_D = 1.60E-05.",
+            "Figure 6B sensorgram data": "The sensorgram in Figure 6B shows the response (RU) over time (s) for different concentrations of resveratrol (Res) (0, 0.78, 1.56, 3.13, 6.25, 12.5, 25, 35, 40 μM) binding to Aβ1-42. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 40 μM. The fitted curve yields K_D = 3.85E-05.",
+            "Figure 6C sensorgram data": "The sensorgram in Figure 6C shows the response (RU) over time (s) for different concentrations of compound 30 (0, 1.56, 3.13, 6.25, 12.5, 25, 35, 40 μM) binding to tau. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 40 μM. The fitted curve yields K_D = 3.37E-05.",
+            "Figure 6D sensorgram data": "The sensorgram in Figure 6D shows the response (RU) over time (s) for different concentrations of methylene blue (MB) (0, 0.78, 1.56, 3.13, 6.25, 12.5, 25, 35, 36 μM) binding to tau. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 36 μM. The fitted curve yields K_D = 2.82E-05."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn® XPR36 Protein Interaction Array System"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "Aβ1-42 and tau",
+                "strategy": "Other",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 30, resveratrol (Res), methylene blue (MB)",
+                "concentration_range": "0 to 40 μM (for 30 and Res to Aβ1-42; 30 to tau; MB to tau), 0 to 25 μM (for 30 to Aβ1-42)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM PBS, pH = 7.4, 0.005% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 100,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank cell",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn® manager software"
+            }
+        }
+    },
+    "51130822": {
+        "reactant_set_id": 51130822,
+        "pmid": 30107970,
+        "protein": "Amyloid-beta precursor protein",
+        "ligand": {
+            "smiles": "Oc1ccc(\\C=C\\c2cc(O)cc(O)c2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 38500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to amyloid beta (1 to 42) (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR measurements were performed on a ProteOn® XPR36 Protein Interaction Array System (Bio-Rad Laboratories, Hercules, CA) using a GLH sensor chip. In a typical experiment, Aβ1-42 and tau were folded in the filtered and degassed running buffer (20 mM PBS, pH = 7.4, 0.005% Tween-20) and 100 μg/mL. The protein samples were captured in flow cells, and a blank cell was set as a control. Compound solutions were prepared within the running buffer by serial dilutions from stock solution and injected simultaneously at a flow rate of 25 μL/min for 5 min for associating, followed by 5 min of dissociation at 25 °C. The final graphs were obtained by subtracting blank sensorgrams from the duplex or quadruplex sensorgrams. The data were analyzed with ProteOn® manager software, using the Langmuir model to fit the kinetic data.",
+            "Figure 6 caption": "Fig. 6. SPR studies for binding of 30 to Aβ1-42 and tau. (A) SPR sensorgrams for binding of 30 to Aβ1-42; the equilibrium binding constant (K_D) for the binding of 30 with Aβ1-42 was 1.60 × 10⁻⁵ mol/L. (B) SPR sensorgrams for the binding of resveratrol (Res) to Aβ1-42; the equilibrium binding constants (K_D) for the binding of Res with Aβ1-42 was 3.85 × 10⁻⁵ mol/L. (C) SPR sensorgrams for the binding of 30 to tau; the equilibrium binding constant (K_D) for the binding of 30 with tau was 3.37 × 10⁻⁵ mol/L. (D) SPR sensorgrams for the binding of methylene blue (MB) to tau; the equilibrium binding constant (K_D) for the binding of MB with tau was 2.82 × 10⁻⁵ mol/L.",
+            "Figure 6A sensorgram data": "The sensorgram in Figure 6A shows the response (RU) over time (s) for different concentrations of compound 30 (0, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM) binding to Aβ1-42. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 25 μM. The fitted curve yields K_D = 1.60E-05.",
+            "Figure 6B sensorgram data": "The sensorgram in Figure 6B shows the response (RU) over time (s) for different concentrations of resveratrol (Res) (0, 0.78, 1.56, 3.13, 6.25, 12.5, 25, 35, 40 μM) binding to Aβ1-42. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 40 μM. The fitted curve yields K_D = 3.85E-05.",
+            "Figure 6C sensorgram data": "The sensorgram in Figure 6C shows the response (RU) over time (s) for different concentrations of compound 30 (0, 1.56, 3.13, 6.25, 12.5, 25, 35, 40 μM) binding to tau. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 40 μM. The fitted curve yields K_D = 3.37E-05.",
+            "Figure 6D sensorgram data": "The sensorgram in Figure 6D shows the response (RU) over time (s) for different concentrations of methylene blue (MB) (0, 0.78, 1.56, 3.13, 6.25, 12.5, 25, 35, 36 μM) binding to tau. The association phase lasts from 0 to 100 s, and the dissociation phase from 100 to 250 s. The concentration range is 0 to 36 μM. The fitted curve yields K_D = 2.82E-05."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn® XPR36 Protein Interaction Array System"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "Bio-Rad Laboratories"
+            },
+            "immobilization": {
+                "ligand_name": "Aβ1-42 and tau",
+                "strategy": "Other",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 30, resveratrol (Res), methylene blue (MB)",
+                "concentration_range": "0 to 40 μM (for 30 and Res to Aβ1-42; 30 to tau; MB to tau), 0 to 25 μM (for 30 to Aβ1-42)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM PBS, pH = 7.4, 0.005% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 100,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank cell",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn® manager software"
+            }
+        }
+    }
+}

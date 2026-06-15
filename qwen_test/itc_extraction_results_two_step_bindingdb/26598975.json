@@ -1,0 +1,60 @@
+{
+    "324058": {
+        "reactant_set_id": 324058,
+        "pmid": 26598975,
+        "protein": "Protein arginine N-methyltransferase 6",
+        "ligand": {
+            "smiles": "CC(C)Oc1ccc(cc1)-c1c[nH]cc1CN(C)CCN"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Isothermal titration calorimetry (ITC) was performed at 25 °C in a Nano ITC instrument (TA Instruments, USA). The cell was loaded with 25 &#956;M PRMT6, 100 &#956;M SAMand 2.5% DMSO in 50 mM Tris-HCl (pH 8.5) containing 150 mM NaCl. The syringe wasloaded with 200 &#956;M MS023, 100 &#956;M SAM and 2.5% DMSO prepared in the same buffer. 2 &#956;L volumes were injected at 180 seconds intervals (25 injections in total). The data was analyzed using \"Nano Analyze\" software supplied by the manufacturer and fit to a one binding site model. Differential scanning fluorimetry was carried out as described previously.6 The experiments were done with 100 mM HEPES buffer (pH 7.4) containing 150 mM NaCl, 0.1 mg mL-1 PRMT6, and 5X Sypro Orange.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 6: Yang, Y. Z., and Bedford, M. T. (2013) Protein arginine methyltransferases and cancer. Nat. Rev. Cancer 13, 37–50.",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) was performed at 25 °C in a Nano ITC instrument (TA Instruments, USA). The cell was loaded with 25 μM PRMT6, 100 μM SAM and 2.5% DMSO in 50 mM Tris-HCl (pH 8.5) containing 150 mM NaCl. The syringe was loaded with 200 μM MS023, 100 μM SAM and 2.5% DMSO prepared in the same buffer. 2 μL volumes were injected at 180 seconds intervals (25 injections in total). The data was analyzed using \"Nano Analyze\" software supplied by the manufacturer and fit to a one binding site model. Differential scanning fluorimetry was carried out as described previously.6 The experiments were done with 100 mM HEPES buffer (pH 7.4) containing 150 mM NaCl, 0.1 mg mL-1 PRMT6, and 5X Sypro Orange.",
+            "Figure 2 caption": "Figure 2. Characterization of MS023 in biochemical and biophysical assays. (A) IC50 determination for MS023 against PRMTs. (B) Isothermal titration calorimetry (ITC) was used to assess binding of PRMT6 to MS023 (Kd = 6 nM). (C) Differential scanning fluorimetry (DSF) was used to confirm the binding of PRMT6 to MS023. Experiments were performed for PRMT6 (●) in the absence of any compound as a control (Tm = 52 °C), and in the presence of (○) 100 μM SAM (ΔTm = 1.6 °C), (▲) 200 μM MS023 (ΔTm = 20 °C), and (□) 100 μM SAM plus 200 μM MS023 (ΔTm = 22 °C). The inflection point of each transition curve is considered melting temperature (Tm), and the increase in Tm is an indication of binding. (D) The selectivity of MS023 was determined against a panel of 25 PKMTs and DNMTs and three histone lysine demethylases at two compound concentrations of 1 μM and 10 μM. No change was observed in the IC50 values when determined under different peptide (E) and SAM (F) concentrations for PRMT6, indicating a noncompetitive pattern of inhibition."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "PRMT6",
+                "location": "cell",
+                "concentration": "25",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "MS023",
+                "location": "syringe",
+                "concentration": "200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM Tris-HCl, 150 mM NaCl",
+                "pH": "8.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

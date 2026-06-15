@@ -1,0 +1,1322 @@
+{
+    "50500142": {
+        "reactant_set_id": 50500142,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "Cc1nc(cs1)-c1ccc2N(CCc2c1)S(=O)(=O)c1ccc(CCC(O)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500143": {
+        "reactant_set_id": 50500143,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "OC(=O)Cc1coc2cc(OS(=O)(=O)c3ccc(Cl)cc3F)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500144": {
+        "reactant_set_id": 50500144,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "OC(=O)C1CCN(CC1)C(=O)c1cc(nc2ccccc12)-c1ccc(Cl)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500145": {
+        "reactant_set_id": 50500145,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COC(=O)CN1C(=O)S\\C(=C\\c2ccc(o2)-c2cccc(C(O)=O)c2C)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500146": {
+        "reactant_set_id": 50500146,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "CCCN1C(=S)N\\C(=C/c2ccc(OCC(O)=O)c(Cl)c2)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500147": {
+        "reactant_set_id": 50500147,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "CCOc1cc(\\C=C2/SC(=S)N(Cc3ccccc3)C2=O)ccc1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500148": {
+        "reactant_set_id": 50500148,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COc1cc(\\C=C2/SC(=O)N(Cc3ccccc3Cl)C2=O)cc(Cl)c1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500149": {
+        "reactant_set_id": 50500149,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "CCOc1cc(\\C=C2/Sc3ccccc3C2=O)cc(Br)c1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500150": {
+        "reactant_set_id": 50500150,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COc1cc(\\C=C2/Sc3ccccc3C2=O)ccc1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500151": {
+        "reactant_set_id": 50500151,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COC(=O)COc1ccc(\\C=C2/Sc3ccccc3C2=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) assessed as dissociation rate by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid 'on rate', or high ka), and the stability of complex formation (slow 'off rate', or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702-06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500138": {
+        "reactant_set_id": 50500138,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COC(=O)COc1ccc(\\C=C2/Sc3ccccc3C2=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 783000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500152": {
+        "reactant_set_id": 50500152,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "CCOc1cc(\\C=C2/Sc3ccccc3C2=O)cc(Br)c1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500153": {
+        "reactant_set_id": 50500153,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COc1cc(\\C=C2/SC(=O)N(Cc3ccccc3Cl)C2=O)cc(Cl)c1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 68400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500154": {
+        "reactant_set_id": 50500154,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "CCOc1cc(\\C=C2/SC(=S)N(Cc3ccccc3)C2=O)ccc1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 38300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500155": {
+        "reactant_set_id": 50500155,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "CCCN1C(=S)N\\C(=C/c2ccc(OCC(O)=O)c(Cl)c2)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 152000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500156": {
+        "reactant_set_id": 50500156,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COC(=O)CN1C(=O)S\\C(=C\\c2ccc(o2)-c2cccc(C(O)=O)c2C)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 251000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500157": {
+        "reactant_set_id": 50500157,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "OC(=O)C1CCN(CC1)C(=O)c1cc(nc2ccccc12)-c1ccc(Cl)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 311000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500158": {
+        "reactant_set_id": 50500158,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "OC(=O)Cc1coc2cc(OS(=O)(=O)c3ccc(Cl)cc3F)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 139000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500159": {
+        "reactant_set_id": 50500159,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "Cc1nc(cs1)-c1ccc2N(CCc2c1)S(=O)(=O)c1ccc(CCC(O)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 62400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    },
+    "50500160": {
+        "reactant_set_id": 50500160,
+        "pmid": 27112452,
+        "protein": "Segment polarity protein dishevelled homolog DVL-1",
+        "ligand": {
+            "smiles": "COc1cc(\\C=C2/Sc3ccccc3C2=O)ccc1OCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 268000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Dvl-1 PDZ domain (247 to 337 residues) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Shan, J.; Zheng, J. J. Comput. Aided Mol. Des. 2009, 23, 37.",
+        "original_paragraph": {
+            "Materials and Methods - SPR analysis": "Studies on the interaction between compounds and the Dvl-1 protein were performed using the ProteOn™ XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Inc., CA, USA). Purified Dvl-1 protein was immobilized on the ProteOn GLH sensor chip. The tested compounds were diluted by 1× phosphate-buffered saline with Tween 20 and 1% DMSO at different concentrations and then flowed over the chip at a flow rate of 100 μl/min. The data were analyzed with the ProteOn Manager Software 2.0 using the standard Langmuir model for fitting kinetic data. The rate of complex formation is represented by the association constant (ka, in the unit of M−1 s−1) and the rate of complex decay is represented by the dissociation constant (kd, in the unit of s−1), as given by Eq. 1: A + B ⇌ AB (1) A high-affinity interaction is characterized by a low dissociation constant (KD), rapid recognition and binding of the interactants (rapid ‘on rate’, or high ka), and the stability of complex formation (slow ‘off rate’, or low kd) as shown in the equation, KD = kd/ka.",
+            "Figure 4 caption": "Figure 4. SPR data analysis. (A) Sensorgram of BMD4702 binding to the immobilized Dvl PDZ domain. (B) Equilibrium binding analysis of BMD4702. In the SPR experiment, the Dvl PDZ domain was immobilized onto vertical channels of a NeutrAvidin-precoated ProteOn GLH sensor chip. Compound BMD4702 was injected into horizontal channels of the sensor chip at different concentration, 0 μM, 0.5 μM, 1 μM, 2 μM, 5 μM, 10 μM, 20 μM, 50 μM, and 100 μM.",
+            "Table 1": "The kinetic parameters determined by the SPR analysis of the virtual hit compounds Compound ka, M−1 s−1 kd, s−1 KD, μM BMD4702 5.12E+04 5.75E−01 11.2 BMD4703 1.86E+03 1.27E−01 68.4 BMD4704 5.14E+03 1.97E−01 38.3 BMD4705 2.50E+03 3.81E−01 152 BMD4706 4.68E+06 1.17E+03 251 BMD4707 5.47E+04 1.70E+01 311 BMD4714 1.04E+04 1.45E+00 139 BMD4716 5.12E+04 3.19E+00 62.4",
+            "Results - Binding studies with virtual hits to the Dvl PDZ domain": "SPR analysis was performed for the 19 virtual hits to determine whether these compounds bind to the Dvl PDZ domain. Notably, eight of these compounds (BMD4702–06, 11, 14, 16; Table 1) were observed to induce a change in the refractive index, as well as a change in the mass concentration on the sensor surface, when injected at the Dvl PDZ domain immobilized sensor surface. Sensorgrams of these compounds are shown in Supplementary Figure S1. This result indicates that these eight compounds are able to bind to the Dvl PDZ domain. A high-affinity interaction is characterized by a low KD value, the rapid recognition and binding of the interactants (high ka value), and the stability of the complex formation (low kd value). Here, BMD4706 had the highest ka value, likely due to the presence of two carbonyl groups (the other compounds had only one). This finding further supported the observation that carboxylic acid derivatives play a significant role for small-molecule binders to recognize the Dvl PDZ domain.",
+            "Results - SPR data analysis": "The compounds BMD4702, 03, 04, and 05 had lower kd values (less than 1 s−1) when confronted with other compounds (Table 1), suggesting that these four compounds have a slower rate of dissociation and thus form more stable complexes with the Dvl PDZ domain than the other compounds in the series. Interestingly, the compounds BMD4702, 03, 04, and 05 possessed a phenoxyacetic acid core structure (Fig. 3, structure in red color), indicating that the phenoxyacetic acid group can have a high binding affinity for the Dvl PDZ domain. The SPR sensorgrams for the binding of BMD4702 with the Dvl PDZ domain are shown in Figure 4. In these experiments, BMD4702 behaved as a potent Dvl PDZ domain binder with a fast on rate and a slow off rate. The KD value of BMD4702 was determined to have the highest binding affinity (KD = 11.2 μM). This result was consistent with the observation from a previous structural study35 that both the carboxyl group and the hydrophobic group next to it were important for binding to the Dvl PDZ domain. To learn more about the binding characteristics of BMD4702 to the Dvl PDZ domain, we performed a fluorescence spectroscopy experiment. In the initial stage, the Dvl PDZ domain was scanned to determine the wavelengths with the highest excitation and fluorescence spectra which were collected for 300–450 nm emission values using a 280 nm excitation value. The fluorescence intensity decreased regularly as the amount of BMD4702 was progressively increased to a molar ratio of 1:15. The KD value of the Dvl PDZ/BMD4702 complex was calculated to be 0.186 μM, using Eq. 2."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn™ XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "ProteOn GLH",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "Dvl-1 protein (His-tagged Dvl-1 PDZ domain, residues 247 to 337)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Virtual hit compounds (e.g., BMD4702, BMD4703, etc.)",
+                "concentration_range": "0 μM to 100 μM (specific concentrations: 0, 0.5, 1, 2, 5, 10, 20, 50, 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1× phosphate-buffered saline with Tween 20 and 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 100,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager Software 2.0"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "50104659": {
+        "reactant_set_id": 50104659,
+        "pmid": 24844139,
+        "protein": "Tryptophan 5-hydroxylase 1",
+        "ligand": {
+            "smiles": "CCOC(=O)CNC(=O)[C@]12CC[C@@H](C)[C@H](C)[C@H]1C1=CC[C@@H]3[C@@]4(C)Cc5nc6ccccc6nc5C(C)(C)[C@@H]4CC[C@@]3(C)[C@]1(C)CC2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6820.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TPH-1 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Affinity of Compound 9a with Tph-1. All experiments were carried out on a Biacore T200 instrument (GE Healthcare, Uppsala, Sweden) at 15 °C. Tph-1 was covalently immobilized on parallel channels of a CM5 sensor chip according to the manufacturer’s protocol. The sensor chip surface was activated by a 5 min injection of 0.4 M N-ethyl-N’-(3-(dimethylamino)propyl) carbodiimide and 0.1 M N-hydroxysuccinimide. The compound 9a was serially diluted in the running buffer AMF (containing 10 mM Heps (pH 7.4), 3 mM EDTA, 150 mM NaCl, 0.005% Surfactant P20, 10 μM GDP, 4 mM MgCl2, 1 mM dithiothreitol, 10 mM NaF, 10 mM MgCl2) supplemented with 0.1% DMSO. The solution of 9a was injected for 40 s at the flow rate of 5.0 μL/min, and the dissociation was allowed for 90 s at 15 °C. Furthermore, buffer blanks were used as the positive control and double referencing. All data were corrected for nonspecific binding and Global fitting using the BIA-evaluation program. The experiments were performed more than three times.",
+            "Figure 2 caption": "Figure 2. SPR analysis of the binding of compound 9a to Tph-1. Sensorgrams were obtained by injecting five different concentrations in running buffer: 50.00, 12.50, 6.25, 3.12, and 1.56 μM at the flow rate of 30 μL/min. The concentration of Tph-1 was approximately 5.00 μM. RU: resonance units.",
+            "Results section": "The results revealed that 9a efficiently interacted with the immobilized Tph-1 and demonstrated a concentration dependent response (Figure 2) and a clearly discernible exponential curve during both the association and dissociation phases (Supporting Information Figure 3). The sensorgram obtained for the 9a interacting with Tph-1 was fitted to a single-site biomolecular interaction model (A + B = AB) with rapid association rates and rapid dissociation rates. The binding affinity was represented to be a K_D (6.82 μM), most probably due to the capability of specifically recognizing the immobilized"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Tph-1",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 9a",
+                "concentration_range": "1.56 μM - 50.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Heps (pH 7.4), 3 mM EDTA, 150 mM NaCl, 0.005% Surfactant P20, 10 μM GDP, 4 mM MgCl2, 1 mM dithiothreitol, 10 mM NaF, 10 mM MgCl2, 0.1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 15,
+                "association_time_s": 40,
+                "dissociation_time_s": 90,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Buffer blanks",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Other",
+                "software": "BIA-evaluation program"
+            }
+        }
+    }
+}

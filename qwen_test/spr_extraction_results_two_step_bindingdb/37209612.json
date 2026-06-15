@@ -1,0 +1,66 @@
+{
+    "51566308": {
+        "reactant_set_id": 51566308,
+        "pmid": 37209612,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "C[C@@H]1O[C@@H](O[C@H]2[C@H](O)[C@@H](O[C@@H]3O[C@@H](C)[C@H](O)[C@@H](O)[C@H]3O)[C@H](O[C@H]3CC[C@@]4(C)[C@@H](CC[C@]5(C)[C@@H]4CC[C@@H]4[C@H]6[C@@H](CC[C@@]6(CC[C@@]54C)C(=O)Nc4ccc5ccccc5c4)C(C)=C)C3(C)C)O[C@@H]2CO)[C@H](O)[C@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3260.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminal 6His-tagged SARS-COV-2 recombinant S protein (Val16 to Arg685 residues) expressed in mammalian expression system assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "33. Y.X. Liao, Y.L. Ye, S.M. Li, Y.L. Zhuang, L.Y. Chen, J.X. Chen, Z.N. Liu, L.J. Huo, S. W. Liu, G.P. Song, Synthesis and SARs of dopamine derivatives as potential inhibitors of influenza virus PAN endonuclease, Eur. J. Med. Chem. 189 (2020), 112048.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) measurement": "Compound S-10 was fixed on the chip by photo-crosslinking, then recombinant SARS-CoV-2 S-trimer protein (DRA 47, Novoprotein Inc. Shanghai) at indicated concentrations was injected sequentially into the chamber in buffer PBST (0.1% Tween 20, pH 7.4). The interaction of S-trimer with compound S-10 fixed was detected by PlexArrayTM HT SPRi (Seattle, US). The reaction temperature was controlled at 4 °C, binding time was 600 s, dissociation time was 360 s, flow rate was 0.5 μL/s. The chip was regenerated with Glycine Hydrochloride (pH 2.0), binding data of interaction signals was retrieved and analyzed with PlexeraDE software [33].",
+            "Figure 4 caption": "Fig. 4. (A) Dose-response curves and EC50 of S-10 on inhibiting the entry of SARS-CoV-2 PsV and VSV-G in 293T-ACE2 cells. (B) Evaluation of S-10 on cytotoxicity against 293T Cells. (C) SPR analysis of the interaction between S-10 with SARS-CoV-2 S. (D) Dose-response curves and EC50 of S-10 on inhibiting the entry of other SARS-CoV-2 variants PsV.",
+            "Figure 4C sensorgram data": "The SPR sensorgram in Figure 4C shows the interaction between S-10 and SARS-CoV-2 S protein. The x-axis represents time (s) from 0 to 1000. The y-axis represents the response units (RU). The curves are labeled with concentrations: 2 μM, 4 μM, 8 μM, 16 μM, 32 μM. The sensorgram shows association (increasing RU) and dissociation (decreasing RU) phases. The text within the plot indicates the calculated dissociation constant: K_D = 3.26 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "PlexArray",
+                "model": "HT SPRi"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Compound S-10",
+                "strategy": "Photo-crosslinking",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Recombinant SARS-CoV-2 S-trimer protein (DRA 47, Novoprotein Inc. Shanghai)",
+                "concentration_range": "2 μM - 32 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (0.1% Tween 20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30.0,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 4,
+                "association_time_s": 600,
+                "dissociation_time_s": 360,
+                "regeneration_solution": "Glycine Hydrochloride (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "PlexeraDE"
+            }
+        }
+    }
+}

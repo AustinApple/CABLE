@@ -1,0 +1,67 @@
+{
+    "51221415": {
+        "reactant_set_id": 51221415,
+        "pmid": 31026162,
+        "protein": "Myoferlin",
+        "ligand": {
+            "smiles": "CCc1nc(-c2ncc(OC)cn2)n(n1)-c1cccc(c1)C(=O)NCCCCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 94.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Reversible binding affinity to recombinant human GST-tagged MYOF C2 domain (3445 to 3912 residues) expressed in Escherichia coli BL21 (DE3) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Experiments were performed at 25 °C with a Biacore T200 instrument (GE Healthcare) as previously described. GST-tagged MYOF-C2D protein in sodium acetate buffer (pH 4.5) was immobilized on the sensor chip (CM5) for 7 min using the standard amine coupling kit (GE Healthcare). To deactivate the unreacted esters and remove the unbound protein, the surface of the flow cell was then blocked with ethanolamine for 7 min. A blank flow cell was activated and deactivated in the same manner with GST-tagged peptide immobilization. Gradient concentrations of compounds that were dissolved in degassed and filter-sterilized PBS were injected into the channel and analyzed at 25 °C. The bulk effects were corrected with solvent correction, and the reference and blank were subtracted from the binding response curves. Data processing and affinity analysis were performed using BIA evaluation software in a 1:1 Langmuir binding model.",
+            "Figure 4 caption": "Figure 4. SPR sensorgrams for the binding between the MYOF-C2D protein and each of the three representative compounds. The corresponding calculated K_D values (at the bottom of each sensorgram) are indicated.",
+            "Figure 4 sensorgram data": "The sensorgrams show the response over time (x-axis: Time (Second), ranging from 0 to 120 for 6k and 6p, and 0 to 90 for 6y) for different concentrations of compounds 6k, 6p, and 6y. The concentrations are labeled on the curves: for 6k: 0.3125 μM, 0.625 μM, 1.25 μM, 2.5 μM, 5 μM, 10 μM; for 6p: 0.03125 μM, 0.0625 μM, 0.125 μM, 0.25 μM, 0.5 μM; for 6y: 0.03125 μM, 0.0625 μM, 0.125 μM, 0.25 μM, 0.5 μM, 1 μM. The calculated K_D values are shown below each sensorgram: K_D (μM): 0.85 for 6k, K_D (μM): 0.079 for 6p, and K_D (μM): 0.094 for 6y.",
+            "Results section - Binding Affinity between Compounds and MYOF in SPR Experiments": "To explore the possible targets of this series of compounds, the SPR-based biosensor assay of the MYOF-C2D domain interaction with three representative compounds was performed based on our previous results of the target identification of 2b (Figure 2). Compound 6k, as the first identified 1,2,4-triazole derivative with the IC50 value below 1 μM against the migration assay of the PANC1 cell line, was included in SPR experiments. Since the substitution of ethyl in ring C resulted in an about 4-fold increase in biological activities (6p vs 6k), compound 6p was added to help us observe the corresponding binding affinity change. Compound 6y, possessing the best antimigration and anti-invasion activities and the most favorable physicochemical properties, was also selected for evaluation. As illustrated in Figure 4, the modification from methyl to ethyl substitution on the 1,2,4-triazole resulted in over 10-fold improvement in the binding affinity (Figure 4, 6p vs 6k), consistent with the increase in antimigration activities (Tables 1 and 2, 6p vs 6k). Compound 6y also showed concentration-dependent and reversible binding with the MYOF-C2D protein, with a K_D value of 0.094 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "GST-tagged MYOF-C2D protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 6k, 6p, and 6y",
+                "concentration_range": "0.03125 μM - 10 μM (varied by compound)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Degassed and filter-sterilized PBS",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank flow cell activated and deactivated in the same manner with GST-tagged peptide immobilization",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "399558": {
+        "reactant_set_id": 399558,
+        "pmid": 24634219,
+        "protein": "Tumor necrosis factor",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1cc(N\\N=C2\\C(=O)N(N=C2c2ccccc2)c2nc(cs2)-c2ccccc2)ccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Surface plasmon resonance (SPR) assays were carried out on a BIAcore 3000 instrument (Biacore, Inc). Briefly, purified hTNF&#945; was dissolved at 320 &#956;g/ml in PBS, pH 7.0, and coupled to a carboxyl surface (HR-5 chip from HRBio, Inc.) by following the manufacturer&#39;s instructions. For the equilibrium-binding experiments, the flow rate was set to 10 &#956;l min^-1, and 50&#956;l of the compound sample was injected. For the kinetic experiments, the flow rate was also 10 &#956;l min^-1, and 50 &#956;l was injected for kinetic assay.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Assay": "SPR Assay—Human TNFα was purified with an anti-E tag affinity chromatography (GE Healthcare) using the RPAS Purification Module (Amersham Biosciences), and its biological activities were determined by using cytotoxicity assay with commercial available human TNFα (hTNFα) as control (Miltenyi Biotec). Surface plasmon resonance (SPR) assays were carried out on a BIAcore 3000 instrument (Biacore, Inc). Briefly, purified hTNFα was dissolved at 320 μg/ml in PBS, pH 7.0, and coupled to a carboxyl surface (HR-5 chip from HRBio, Inc.) by following the manufacturer’s instructions. For the equilibrium-binding experiments, the flow rate was set to 10 μl min−1, and 50 μl of the compound sample was injected. For the kinetic experiments, the flow rate was also 10 μl min−1, and 50 μl was injected for kinetic assay. A global analysis using the BIAEVALUATION software (version 3.0; Biacore, Inc.) and Igor (version 6.0, WaveMetrics, Inc.) was used to determine the kinetic curves. Briefly, the integrated rate equation describing a 1:1 Langmuir interaction was fit simultaneously to the entire concentration range for each compound. This fit yielded the association rate (ka), the dissociation rate (kd), and the dissociation constant (assuming the relationship KD = kd/ka). The goodness of fit was determined by the χ2 values, as well as the magnitude and distribution of the residuals.",
+            "Figure 6 caption": "FIGURE 6. The mechanism of the hTNFα-antagonistic activity of C87. A, SPR binding kinetic curve was determined with different concentration of C87 and control compound (A8). hTNFα was coupled to HRBio chips, and C87 was applied from 2 to 16 μM. RU, resonance unit. B, C87 failed to inhibit the binding of hTNFα and hTNFR1/2 in vitro. An ELISA was used to measure inhibition of solution-phase hTNFR1/2-His tag binding to hTNFα immobilized on a microtiter plate by serial dilutions of C87 and an anti-TNFα antibody as the positive control.",
+            "Figure 6A data": "In Figure 6A, the SPR sensorgrams show the response (RU) over time (s) for compound A8 (left panel) and C87 (right panel) at concentrations of 1, 2, 4, 6, and 500 μM for A8, and 2, 4, 8, 12, and 16 μM for C87. The KD values are reported as 9 μM for A8 and 110 nM for C87.",
+            "Figure 6B data": "In Figure 6B, the ELISA data shows OD450 values for C87 and anti-TNFα antibody at various concentrations. For C87, concentrations range from 0.1 to 1000 μM. For the anti-TNFα antibody, concentrations range from 0.1 to 100000 ng/ml. The graph shows that C87 does not inhibit binding to TNFR1 or TNFR2, while the anti-TNFα antibody does."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore, Inc.",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": "HR-5",
+                "manufacturer": "HRBio, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "hTNFα",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "320 μg/ml"
+            },
+            "analyte": {
+                "description": "Compound C87 and control compound A8",
+                "concentration_range": "C87: 2 to 16 μM; A8: 1 to 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAEVALUATION software (version 3.0; Biacore, Inc.) and Igor (version 6.0, WaveMetrics, Inc.)"
+            }
+        }
+    },
+    "399559": {
+        "reactant_set_id": 399559,
+        "pmid": 24634219,
+        "protein": "Tumor necrosis factor",
+        "ligand": {
+            "smiles": "OC(=O)c1cc(ccc1O)\\N=N\\c1ccc(cc1)S(=O)(=O)Nc1ccccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Surface plasmon resonance (SPR) assays were carried out on a BIAcore 3000 instrument (Biacore, Inc). Briefly, purified hTNF&#945; was dissolved at 320 &#956;g/ml in PBS, pH 7.0, and coupled to a carboxyl surface (HR-5 chip from HRBio, Inc.) by following the manufacturer&#39;s instructions. For the equilibrium-binding experiments, the flow rate was set to 10 &#956;l min^-1, and 50&#956;l of the compound sample was injected. For the kinetic experiments, the flow rate was also 10 &#956;l min^-1, and 50 &#956;l was injected for kinetic assay.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Assay": "SPR Assay—Human TNFα was purified with an anti-E tag affinity chromatography (GE Healthcare) using the RPAS Purification Module (Amersham Biosciences), and its biological activities were determined by using cytotoxicity assay with commercial available human TNFα (hTNFα) as control (Miltenyi Biotec). Surface plasmon resonance (SPR) assays were carried out on a BIAcore 3000 instrument (Biacore, Inc). Briefly, purified hTNFα was dissolved at 320 μg/ml in PBS, pH 7.0, and coupled to a carboxyl surface (HR-5 chip from HRBio, Inc.) by following the manufacturer’s instructions. For the equilibrium-binding experiments, the flow rate was set to 10 μl min−1, and 50 μl of the compound sample was injected. For the kinetic experiments, the flow rate was also 10 μl min−1, and 50 μl was injected for kinetic assay. A global analysis using the BIAEVALUATION software (version 3.0; Biacore, Inc.) and Igor (version 6.0, WaveMetrics, Inc.) was used to determine the kinetic curves. Briefly, the integrated rate equation describing a 1:1 Langmuir interaction was fit simultaneously to the entire concentration range for each compound. This fit yielded the association rate (ka), the dissociation rate (kd), and the dissociation constant (assuming the relationship KD = kd/ka). The goodness of fit was determined by the χ2 values, as well as the magnitude and distribution of the residuals.",
+            "Figure 6 caption": "FIGURE 6. The mechanism of the hTNFα-antagonistic activity of C87. A, SPR binding kinetic curve was determined with different concentration of C87 and control compound (A8). hTNFα was coupled to HRBio chips, and C87 was applied from 2 to 16 μM. RU, resonance unit. B, C87 failed to inhibit the binding of hTNFα and hTNFR1/2 in vitro. An ELISA was used to measure inhibition of solution-phase hTNFR1/2-His tag binding to hTNFα immobilized on a microtiter plate by serial dilutions of C87 and an anti-TNFα antibody as the positive control.",
+            "Figure 6A data": "In Figure 6A, the SPR sensorgrams show the response (RU) over time (s) for compound A8 (left panel) and C87 (right panel) at concentrations of 1, 2, 4, 6, and 500 μM for A8, and 2, 4, 8, 12, and 16 μM for C87. The KD values are reported as 9 μM for A8 and 110 nM for C87.",
+            "Figure 6B data": "In Figure 6B, the ELISA data shows OD450 values for C87 and anti-TNFα antibody at various concentrations. For C87, concentrations range from 0.1 to 1000 μM. For the anti-TNFα antibody, concentrations range from 0.1 to 100000 ng/ml. The graph shows that C87 does not inhibit binding to TNFR1 or TNFR2, while the anti-TNFα antibody does."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore, Inc.",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": "HR-5",
+                "manufacturer": "HRBio, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "hTNFα",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "320 μg/ml"
+            },
+            "analyte": {
+                "description": "Compound C87 and control compound A8",
+                "concentration_range": "C87: 2 to 16 μM; A8: 1 to 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, pH 7.0",
+                "pH": 7.0,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAEVALUATION software (version 3.0; Biacore, Inc.) and Igor (version 6.0, WaveMetrics, Inc.)"
+            }
+        }
+    }
+}

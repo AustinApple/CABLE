@@ -1,0 +1,126 @@
+{
+    "51342321": {
+        "reactant_set_id": 51342321,
+        "pmid": 32832027,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CNC(=O)c1cc(cc2[C@@H]([C@@H](CF)Oc12)c1ccccc1)C(=O)N[C@H]1[C@H]2COC[C@@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BRD4 BD1 (unknown origin) by SPR assay",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Methods": "SPR Methods: Surface plasmon resonance (SPR)-based ligand binding assays were performed using a Biacore S200 instrument (GE Healthcare) on CM5 chips (GE Healthcare) at 25 °C. Proteins were immobilised using standard amine coupling chemistry (7 minutes activation with EDC/NHS, protein injection, then quenching with 1 M ethanolamine pH 8.5 for 7 min), with a running buffer of 0.01 M HEPES pH 7.4, 0.15 M NaCl, 3mM EDTA,0.005% v/v Tween 20. Two proteins (1) 6His-Thr-Brd4(1-477) Y390A, which tests for binding to the N-terminal bromodomain of BRD4, BRD4-BD1 and (2) His-tagged cleaved BRD4 (347-463), which tests for the binding to the C-terminal bromodomain of BRD4, BRD4-BD2, were immobilised to typically ~7-10kRU for 6His-Thr-Brd4(1-477) Y390A and ~2-3kRU for BRD4 (347-463) using injections of 50-60 μg/ml of protein in 10 mM Na acetate pH 5.5 and 5.0 respectively in the presence of 50μM of a nanomolar inhibitor. These two proteins were always immobilised onto the same CM5 to allow simultaneously affinity data to be obtained for BRD4-BD1 and BRD4-BD2 binding. Binding assays were performed in 10mM HEPES,150mM NaCl, 3mM EDTA, 0.005% Tween 20, 1% DMSO, pH 7.4, with a 30 μg/min flow-rate. Ligands were injected in a dose-response series (11-point 3-fold serial dilutions), with solvent correction and positive/negative control cycles being used throughout assays to control for differences in response to bulk refractive index changes and loss of binding activity from the surface respectively. The positive control was 5μM iBET-151 and the negative control was 1.5% DMSO without any inhibitor present. An injection time of 90s was used with dissociation time of 270s and temperature of 25°C. Dose-response data (from reference- subtracted curves) were fitted to a steady-state 1:1 binding model to determine K_D with the BIAevaluation software. Dose response titrations were run from two top concentrations of 100μM and 300nM to allow characterisation of the high affinity to the BD2 domain and provide an estimate for the low affinity to the BD1 domain. K_d against BRD4 BD2 and BD1 of 34 nM and >3000 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "6His-Thr-Brd4(1-477) Y390A and His-tagged cleaved BRD4 (347-463)",
+                "strategy": "Amine coupling",
+                "density_ru": "7-10kRU for 6His-Thr-Brd4(1-477) Y390A and ~2-3kRU for BRD4 (347-463)",
+                "concentration_for_immobilization": "50-60 μg/ml"
+            },
+            "analyte": {
+                "description": "Ligands tested in dose-response series (not specified in text)",
+                "concentration_range": "11-point 3-fold serial dilutions from 100μM to 300nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10mM HEPES, 150mM NaCl, 3mM EDTA, 0.005% Tween 20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 270,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference-subtracted curves (implied by solvent correction and control cycles)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "51342320": {
+        "reactant_set_id": 51342320,
+        "pmid": 32832027,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CNC(=O)c1cc(cc2[C@@H]([C@@H](CF)Oc12)c1ccccc1)C(=O)N[C@H]1[C@H]2COC[C@@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BRD4 BD2 (unknown origin) by SPR assay",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Methods": "SPR Methods: Surface plasmon resonance (SPR)-based ligand binding assays were performed using a Biacore S200 instrument (GE Healthcare) on CM5 chips (GE Healthcare) at 25 °C. Proteins were immobilised using standard amine coupling chemistry (7 minutes activation with EDC/NHS, protein injection, then quenching with 1 M ethanolamine pH 8.5 for 7 min), with a running buffer of 0.01 M HEPES pH 7.4, 0.15 M NaCl, 3mM EDTA,0.005% v/v Tween 20. Two proteins (1) 6His-Thr-Brd4(1-477) Y390A, which tests for binding to the N-terminal bromodomain of BRD4, BRD4-BD1 and (2) His-tagged cleaved BRD4 (347-463), which tests for the binding to the C-terminal bromodomain of BRD4, BRD4-BD2, were immobilised to typically ~7-10kRU for 6His-Thr-Brd4(1-477) Y390A and ~2-3kRU for BRD4 (347-463) using injections of 50-60 μg/ml of protein in 10 mM Na acetate pH 5.5 and 5.0 respectively in the presence of 50μM of a nanomolar inhibitor. These two proteins were always immobilised onto the same CM5 to allow simultaneously affinity data to be obtained for BRD4-BD1 and BRD4-BD2 binding. Binding assays were performed in 10mM HEPES,150mM NaCl, 3mM EDTA, 0.005% Tween 20, 1% DMSO, pH 7.4, with a 30 μg/min flow-rate. Ligands were injected in a dose-response series (11-point 3-fold serial dilutions), with solvent correction and positive/negative control cycles being used throughout assays to control for differences in response to bulk refractive index changes and loss of binding activity from the surface respectively. The positive control was 5μM iBET-151 and the negative control was 1.5% DMSO without any inhibitor present. An injection time of 90s was used with dissociation time of 270s and temperature of 25°C. Dose-response data (from reference- subtracted curves) were fitted to a steady-state 1:1 binding model to determine K_D with the BIAevaluation software. Dose response titrations were run from two top concentrations of 100μM and 300nM to allow characterisation of the high affinity to the BD2 domain and provide an estimate for the low affinity to the BD1 domain. K_d against BRD4 BD2 and BD1 of 34 nM and >3000 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "6His-Thr-Brd4(1-477) Y390A and His-tagged cleaved BRD4 (347-463)",
+                "strategy": "Amine coupling",
+                "density_ru": "7-10kRU for 6His-Thr-Brd4(1-477) Y390A and ~2-3kRU for BRD4 (347-463)",
+                "concentration_for_immobilization": "50-60 μg/ml"
+            },
+            "analyte": {
+                "description": "Ligands tested in dose-response series (not specified in text)",
+                "concentration_range": "11-point 3-fold serial dilutions from 100μM to 300nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10mM HEPES, 150mM NaCl, 3mM EDTA, 0.005% Tween 20, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 270,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference-subtracted curves (implied use of reference surface for subtraction)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    }
+}

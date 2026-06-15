@@ -1,0 +1,60 @@
+{
+    "296626": {
+        "reactant_set_id": 296626,
+        "pmid": 25590533,
+        "protein": "TP53-binding protein 1",
+        "ligand": {
+            "smiles": "CC(C)(C)NCCCNC(=O)c1cccc(c1)Br"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 22000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "All ITC measurements were recorded at 25 °C with an AutoITC200 microcalorimeter (MicroCal Inc.). All protein and compound stock samples were in the target buffer (25 mM Tris-HCl, pH 8, 150 mM NaCl, and 2 mM &#946;-mercaptoethanol), and then diluted in the same buffer to achieve the desired concentrations: 90 200 &#956;M protein and 1 2 mM compound depending on the expected dissociation constant. The concentration of protein stock solutions were established using the Edelhoch method, whereas 10 mM compound stock solutions were prepared gravimetrically based on molecular weight. A typical experiment included a single 0.2 &#956;L compound injection into a 200 &#956;L cell filled with protein, followed by 25 subsequent 1.5 &#956;L injections of compound. Injections were performed with a spacing of 180 seconds and a reference power of 8 &#956;cal/sec.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Frye, S. V., et al. (2010) The art of the chemical probe. Nat. Chem. Biol. 6, 159–161.",
+        "original_paragraph": {
+            "Materials and Methods": "ITC experiments were performed as previously described.37 In brief, purified 53BP1 tandem tudor domain (TTD) was dialyzed into 25 mM Tris-HCl, pH 8.0, 150 mM NaCl, 2 mM β-mercaptoethanol, and 0.05% Tween-20. UNC2170 was dissolved in DMSO and diluted into the same buffer. ITC measurements were recorded at 25 °C with an AutoITC200 microcalorimeter (MicroCal Inc.). All protein and compound stock samples were in the target buffer (25 mM Tris-HCl, pH 8, 150 mM NaCl, and 2 mM β-mercaptoethanol), and then diluted in the same buffer to achieve the desired concentrations: 90–200 μM protein and 1–2 mM compound depending on the expected dissociation constant. The concentration of protein stock solutions were established using the Edelhoch method, whereas 10 mM compound stock solutions were prepared gravimetrically based on molecular weight. A typical experiment included a single 0.2 μL compound injection into a 200 μL cell filled with protein, followed by 25 subsequent 1.5 μL injections of compound. Injections were performed with a spacing of 180 seconds and a reference power of 8 μcal/sec. Data were analyzed using Origin 7.0 software (MicroCal Inc.) with a one-site binding model. The reported Kd values are the average of at least two independent experiments.",
+            "Figure 1 caption": "Figure 1. ITC analysis of 53BP1 binding to UNC2170 (1), revealing a Kd of 22 ± 2.5 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "53BP1 tandem tudor domain (TTD)",
+                "location": "cell",
+                "concentration": "90-200",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "UNC2170",
+                "location": "syringe",
+                "concentration": "1000-2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM Tris-HCl, 150 mM NaCl, 2 mM β-mercaptoethanol",
+                "pH": "8.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "1.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "26"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

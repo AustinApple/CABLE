@@ -1,0 +1,66 @@
+{
+    "50074165": {
+        "reactant_set_id": 50074165,
+        "pmid": 22380680,
+        "protein": "DNA repair protein RAD51 homolog 1",
+        "ligand": {
+            "smiles": "O=c1n(Cc2ccccc2)c(\\C=C\\c2cccnc2)nc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human RAD51 in absence of ATP by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measurement of 1 Binding to RAD51 by SPR. Experiments were performed using the ProteOn XPR36 SPR array system with ProteOn Manager software, version 3.0 (Bio-Rad), as described in Supporting Information.",
+            "Figure 2 caption": "Figure 2. Compound 1 binds directly to RAD51. 1 (50 μM) was injected onto a sensor chip to which Rad51 or RecA had been immobilized. The running buffer S was supplemented with ATP (100 μM). Responses to 1 were normalized to the theoretical maximum response of the surface (Rmax), assuming a 1:1 interaction. Experiments were repeated at least three times. Error bars represent SD.",
+            "Results section": "Using the surface plasmon resonance (SPR) technique, we demonstrated that 1 (6.25–50 μM) binds to RAD51 but not to RecA (Figure 2, Supporting Information Figure 2). For 1 binding to RAD51 in the absence of ATP, kinetic values are as follows: ka = (4.5 ± 0.3) × 10³ M⁻¹ s⁻¹; kd = (2.5 ± 0.3) × 10⁻² s⁻¹; Kd = 5.6 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "RAD51",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 1",
+                "concentration_range": "6.25–50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Buffer S supplemented with ATP (100 μM)",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn Manager software, version 3.0"
+            }
+        }
+    }
+}

@@ -1,0 +1,782 @@
+{
+    "51610193": {
+        "reactant_set_id": 51610193,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "CC(=O)OC[C@H]1O[C@@H](NC(=O)c2ccccc2)C(=O)CC1Sc1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C18, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610194": {
+        "reactant_set_id": 51610194,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "CC(=O)OC[C@H]1O[C@@H](NC(=O)c2ccc3c(c2)OCO3)C(=O)CC1Sc1ccc(C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C18, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610195": {
+        "reactant_set_id": 51610195,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "COc1ccc(SC2CC(=O)[C@H](NC(=O)c3ccc4c(c3)OCO4)O[C@@H]2COC(C)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 35800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C18, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610196": {
+        "reactant_set_id": 51610196,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "COc1ccc(SC2CC(=O)[C@H](NC(=O)c3ccc4c(c3)OCO4)O[C@@H]2COC(C)=O)cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C18, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610197": {
+        "reactant_set_id": 51610197,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "CC(=O)OC[C@H]1O[C@@H](NC(=O)c2ccc3c(c2)OCO3)C(=O)CC1SCc1ccco1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C18, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610198": {
+        "reactant_set_id": 51610198,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "COc1ccc(SC2CC(=O)[C@H](NC(=O)c3ccc(OC)cc3)O[C@@H]2COC(C)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C18, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610186": {
+        "reactant_set_id": 51610186,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "CC(=O)OC[C@H]1O[C@@H](NC(=O)c2ccccc2)C(=O)CC1Sc1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation rate constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610187": {
+        "reactant_set_id": 51610187,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "CC(=O)OC[C@H]1O[C@@H](NC(=O)c2ccc3c(c2)OCO3)C(=O)CC1Sc1ccc(C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation rate constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610188": {
+        "reactant_set_id": 51610188,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "COc1ccc(SC2CC(=O)[C@H](NC(=O)c3ccc4c(c3)OCO4)O[C@@H]2COC(C)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation rate constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610189": {
+        "reactant_set_id": 51610189,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "COc1ccc(SC2CC(=O)[C@H](NC(=O)c3ccc4c(c3)OCO4)O[C@@H]2COC(C)=O)cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation rate constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610190": {
+        "reactant_set_id": 51610190,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "CC(=O)OC[C@H]1O[C@@H](NC(=O)c2ccc3c(c2)OCO3)C(=O)CC1SCc1ccco1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation rate constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    },
+    "51610191": {
+        "reactant_set_id": 51610191,
+        "pmid": 39083980,
+        "protein": "Pachytene checkpoint protein 2 homolog",
+        "ligand": {
+            "smiles": "COc1ccc(SC2CC(=O)[C@H](NC(=O)c3ccc(OC)cc3)O[C@@H]2COC(C)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TRIP13 (unknown origin) assessed as dissociation rate constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assays": "SPR assays were carried out as in previous experiments. The TRIP13 protein was dissolved in 10 mM sodium acetate (pH 4.5), and then 200 μg/mL protein was immobilized on a CM5 sensor chip until 20,000 RU was reached. Subsequently, tested compounds were diluted with a PBS buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA) using two-fold dilution steps, to give 10 concentration gradients in a range between (0.049–25 μM). Furthermore, 10 μM different concentrations of samples were flowed over the chip at the rate of 30 mL/minute. The binding Kinetics of compounds were recorded at 25 °C on the Biacore™ 8 K instrument (Cytiva), and affinity (K_D), association rate constant (k_a), and dissociation rate constant (k_d) were calculated using a 1:1 interaction model via Biacore™ 8 K evaluation software (Cytiva).",
+            "Figure 4 caption": "Fig. 4. (A-D) Kinetics of tested compounds binding to TRIP13 analyzed by SPR. The TRIP13 protein was immobilized on a CM5 sensor chip using a Biacore™ 8 K instrument and a gradient of ligand concentrations (0.049–25 μM), injected at the rate of 30 mL/min at 25°C. The data was calculated using a 1:1 interaction model and presented in Table 2.",
+            "Table 2": "Table 2 Kinetic information (k_a, association rate constant; k_d, dissociation rate constant; K_D, affinity) of 1-amido-2-one-4-thio-deoxypyranose and TRIP13 interactions, the data were calculated from the SPR assay. | Entry | Compounds | R¹ | R² | Log P | k_a (M⁻¹.s⁻¹) | k_d (s⁻¹) | K_D (μM) | |---|---|---|---|---|---|---|---| | 1 | C6 | | | 3.32 | 1.99 × 10³ | 1.35 × 10⁻² | 6.8 | | 2 | C16 | | | 3.03 | 1.26 × 10³ | 3.53 × 10⁻² | 28.0 | | 3 | C18 | | | 2.42 | 7.44 × 10² | 2.66 × 10⁻² | 35.8 | | 4 | C20 | | | 2.29 | 8.52 × 10² | 9.06 × 10⁻³ | 10.6 | | 5 | C26 | | | 1.23 | 9.10 × 10² | 1.22 × 10⁻² | 13.4 | | 6 | C32 | | | 2.51 | 9.73 × 10² | 2.00 × 10⁻² | 20.6 | | 7 | DCZ0415 | | | 2.68 | 3.08 × 10³ | 2.65 × 10⁻² | 8.6 |",
+            "Figure 4 A-D": "Figure 4A: C6 (KD=6.8 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4B: C20 (KD=10.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM. Figure 4C: C26 (KD=13.4 μM) - Response (RU) vs. Time (s) with concentrations: 0.39, 0.78, 1.56, 3.13, 6.25, 12.5 μM. Figure 4D: DCZ0415 (KD=8.6 μM) - Response (RU) vs. Time (s) with concentrations: 0.049, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, 12.5, 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore™ 8 K"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "TRIP13",
+                "strategy": "Amine coupling",
+                "density_ru": "20000",
+                "concentration_for_immobilization": "200 μg/mL"
+            },
+            "analyte": {
+                "description": "Tested compounds (e.g., C6, C16, C20, C26, C32, DCZ0415)",
+                "concentration_range": "0.049–25 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 3 mM EDTA",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore™ 8 K evaluation software (Cytiva)"
+            }
+        }
+    }
+}

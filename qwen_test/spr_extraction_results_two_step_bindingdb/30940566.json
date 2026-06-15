@@ -1,0 +1,554 @@
+{
+    "51285152": {
+        "reactant_set_id": 51285152,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Cn1c(NN=C2C(=O)NC(=O)NC2=O)nc2n(C)c(=O)n(C)c(=O)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285158": {
+        "reactant_set_id": 51285158,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "O=C(NC1=CC=CC2C1OC(=CC2=O)c1nn[nH]n1)c1ccc(OCCCCc2ccccc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285159": {
+        "reactant_set_id": 51285159,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "OC(=O)c1cc(ccc1O)\\N=N\\c1ccc(cc1)S(=O)(=O)Nc1ccccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285160": {
+        "reactant_set_id": 51285160,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "COCC(=O)\\C=C1/Sc2ccccc2N1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285161": {
+        "reactant_set_id": 51285161,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Cc1cc(C)n(c(=O)n1)S(=O)(=O)c1ccc(N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285162": {
+        "reactant_set_id": 51285162,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Oc1ccc(C=O)cc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 220000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285163": {
+        "reactant_set_id": 51285163,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "OC(=O)c1cc(\\C=C\\c2ccc(cc2)N2CCOCC2)nc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    },
+    "51285167": {
+        "reactant_set_id": 51285167,
+        "pmid": 30940566,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Cc1ccc(C)c(CSc2nc(C3CCCCC3)c(C#N)c(=O)[nH]2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MERS-CoV papain-like protease by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Determination of dissociation equilibrium constant (K_D) by SPR": "The MERS-PL^pro enzyme was diluted to 50 μg/mL with 10 mM sodium acetate (pH 5.5) and immobilized on a CM5 sensor chip by standard amine-coupling with running buffer PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) using a Biacore T200 instrument. MERS-PL^pro enzyme was immobilized to flow cells 2 and 4, and immobilization levels were ~10,000 RU for both flow cells. Unmodified flow cells 1 and 3 were used as controls. Compound solutions with a series of increasing concentrations (0–50 μM at 2-fold dilution) were applied to all four channels in SPR binding buffer (PBSP + 0.5 mM TCEP and 2% DMSO) at a 30 μL/min flow rate at 25 °C. Data were double-referenced with both reference cell RU values and zero concentration (2% DMSO) signals, and sensorgrams were analyzed using the Biacore T200 evaluation software 3.0. Response units at each concentration were measured during the equilibrium phase for steady-state affinity fittings, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve Eq. (2), where y is the response, y_max is the maximum response and x is the compound concentration. y = y_max * x / (K_D + x) (2) Kinetic rate constants were determined by fitting globally to the 1:1 Langmuir model embedded in the Biacore T200 evaluation software v3.0.",
+            "Figure 2 caption": "Fig. 2. Hit validation. (A) IC50 fitting curve of compounds 1 and 6 using the Hill equation in SigmaPlot 12.0. IC50 values of 1 and 6 were determined to be 25.0 μM and 20.0 μM, respectively. (The IC50 values in this series refer to the inhibition of the MERS-PLpro protease activity rather than inhibitory activity of MERS-CoV replication.) (B) Sensorgrams of compound 6 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (C) Bar graphs and structures of 7 selected compounds inhibitory activities (IC50) and binding affinities (K_D) to MERS-PLpro.",
+            "Figure 2B sensorgram labels": "k_a = 3.2 x 10^3 (M^-1s^-1), k_d = 3.0 x 10^-2 (s^-1), K_D = 9.3 μM",
+            "Figure 6 caption": "Fig. 6. Binding analysis by SPR. (A) Sensorgrams of compound ZT626 at a series of increasing concentrations are shown in different colors. Black dotted lines are fitted curves from kinetics fitting using a 1:1 Langmuir binding model. (B) Sensorgrams of compound 6 at in the presence of 200 μM ZT626. Response of 200 μM ZT626 was subtracted from each concentration of 6.",
+            "Figure 6A sensorgram labels": "k_a = 1.88 x 10^2 (M^-1s^-1), k_d = 4.18 x 10^-2 (s^-1), K_D = 220 μM",
+            "Figure 6B sensorgram labels": "k_a = 1.7 x 10^3 (M^-1s^-1), k_d = 1.9 x 10^-2 (s^-1), K_D = 10.8 μM",
+            "Table 3": "Table 3 The energy components for binding affinity of AH of compound 6 with MERS-PL^pro by MM/PBSA calculation. | | ΔE_vdw^a (kcal mol^-1) | ΔE_elec^b (kcal mol^-1) | ΔG_pol^c (kcal mol^-1) | ΔG_nonpol^d (kcal mol^-1) | ΔH_bind^e (kcal mol^-1) | |---|---|---|---|---|---| | Compd 6 Pose 1 alone | -28.4 ± 3.3 | -8.4 ± 6.7 | 23.7 ± 5.9 | -2.6 ± 0.2 | -15.8 ± 3.0 | | Compd 6 Pose 2 alone | -19.4 ± 2.4 | -11.8 ± 5.1 | 20.6 ± 4.4 | -2.0 ± 0.2 | -12.5 ± 4.0 | | Compd 6 Pose 3 alone | -17.7 ± 3.5 | -17.2 ± 9.6 | 26.4 ± 6.8 | -2.1 ± 0.2 | -10.6 ± 6.5 | | Compd 6 Pose 1 + ZT626 Pose 1 | -29.0 ± 3.1 | -20.3 ± 5.9 | 34.8 ± 4.9 | -2.9 ± 0.1 | -17.4 ± 3.0 | | Compd 6 Pose 1 + ZT626 Pose 2 | -28.1 ± 3.2 | -6.8 ± 8.1 | 23.7 ± 7.3 | -2.7 ± 0.2 | -13.8 ± 3.5 | a van der Waals contribution. b Electrostatic energy. c Polar solvation free energy. d Nonpolar solvation free energy. e Binding enthalpy. The data are shown in average ± SD.",
+            "Figure 7 caption": "Fig. 7. Molecular docking for compound 6 and ZT626. (A) The three predicted binding poses of compound 6 (pose-1: colored in cyan; pose-2: colored in magenta; pose-3: colored in orange) with MERS-PL^pro. (B) The two predicted binding poses of fragment ZT626 (pose-1: colored in dark blue; pose-2: colored in pink) with the pose-1 binding position of compound 6 in MERS-PL^pro. The pictures of binding modes of compound 6 and ZT626 with MERS-PL^pro were made from Chimera1.10.24. Catalytic residues of C111, H278, and D293 are colored in green with only sidechains shown."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "MERS-PL^pro enzyme",
+                "strategy": "Amine coupling",
+                "density_ru": "10000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound solutions (including compound 6, ZT626, and others)",
+                "concentration_range": "0–50 μM at 2-fold dilution"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBSP (10 mM phosphate, pH 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% surfactant P-20) + 0.5 mM TCEP and 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified flow cells 1 and 3",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software 3.0"
+            }
+        }
+    }
+}

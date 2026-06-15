@@ -1,0 +1,60 @@
+{
+    "51097805": {
+        "reactant_set_id": 51097805,
+        "pmid": 29969259,
+        "protein": "B-cell lymphoma 6 protein",
+        "ligand": {
+            "smiles": "CN1CCN(Cc2cn(CC(=O)N3CCOCC3)c3cc(NC(=S)NCCc4c[nH]c5ccccc45)ccc23)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 36000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal thioredoxin-His6 tag with N-terminal thrombin-cleavage site containing recombinant BCL6 BTB domain C8Q/C67R/C84N/E99V mutant ( 1 to 129 residues) (unknown origin) expressed in Escherichia coli by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Isothermal-Titration Calorimetry": "Isothermal-Titration Calorimetry. BCL6BTB was dialyzed repeatedly against 50 mM phosphate buffer (pH 7.5), 150 mM NaCl, and 1 mM TCEP (referred to herein as ITC buffer) at 4 °C. Compound 15f was dissolved in DMSO and diluted to 1 mM in ITC buffer containing 5% DMSO. Additionally, 5% DMSO was added to the protein and buffer (reference) solutions. Titrations were performed using a VP-ITC titration calorimetric system (MicroCal) at 25 °C. The calorimetric cell, containing 100 μM BCL6BTB, was titrated with 15f at 1 mM in 10 μL aliquots at 300 s intervals. Data were analyzed by Origin 7.0 (OriginLab) to obtain the KD and stoichiometry.",
+            "Figure 4 caption": "Figure 4. Characterization of the binding of 15a and 15f to BCL6BTB. (A) Chemical structures of 15a and 15f. (B) NMR-titration experiment to determine the KD values for the binding of 15a and 15f to BCL6BTB. (C) Binding affinity of 15f to BCL6BTB, determined using isothermal-titration calorimetry. (D) Crystal structure of the BCL6BTB–15a complex (PDB 6CQ1). The 2mFo-DFc electron-density map contoured at 1.0σ is shown for 15a, and selected protein residues involved in the interactions with 15a are shown as sticks. (E) Crystal structure of the BCL6BTB–15f complex (PDB 6C3L). The 2mFo-DFc electron-density map contoured at 1.0σ is shown for 15f, and selected protein residues involved in the interactions with 15f are shown as sticks. (F) Superposition of compounds 7CCS (magenta), 15a (yellow), and 15f (cyan) from the BCL6BTB-complex crystal structures. The HDCH site is labeled."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "BCL6BTB",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "15f",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM phosphate, 150 mM NaCl, 1 mM TCEP",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": "buffer containing 5% DMSO",
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "10",
+                    "duration": null,
+                    "spacing": "300",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

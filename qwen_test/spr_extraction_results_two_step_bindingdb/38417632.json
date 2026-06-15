@@ -1,0 +1,69 @@
+{
+    "51603955": {
+        "reactant_set_id": 51603955,
+        "pmid": 38417632,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "CCOc1cc(C(=O)N(C)Cc2cccc3cn[nH]c23)ccc1-c1cccc(F)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 104.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to streptavidin sensor chip-immobilized biotinylated recombinant human NLRP3 NACHT domain extracted from Sf9 insect cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance spectroscopy": "SPR experiments were performed using a Biacore 8 K instrument (GE Healthcare) operated at 25 °C and flushed with running buffer (10 mM HEPES pH 7.4, 200 mM NaCl, 0.5 mM ADP, 0.5 mM tris(2-carboxyethyl) phosphine (TCEP), 2 mM MgCl2, 1 g/L carboxymethyl dextran hydrogel (CMD), 0.05 % Tween20, 2 % DMSO). Biotinylated NLRP3NACHT protein was expressed in Sf9 insect cells and after purification immobilized on a streptavidin sensor chip (Cytiva). After equilibration for 2 h, different concentrations of test compounds were injected in single-cycle kinetics mode (30 μL/min, association phase 240 s, dissociation phase 60 / 360 s). Data were collected at a rate of 10 Hz. The binding data were double referenced by blank cycle and reference flow cell subtraction. Data were corrected by a 4-point solvent correction. Processed data were fitted to a 1:1 interaction model using the Biacore Insight Evaluation Software (version 3.0.12.15655).",
+            "Figure 3 caption": "Fig. 3. Compound 3 (BAL-0028) binds to the NLRP3 NACHT domain with high affinity.",
+            "Figure 3 - Sensorgram for MCC950": "MCC950 k_a = 4.82 x 10^4 M^-1 s^-1 k_d = 8.32 x 10^-3 s^-1 K_D = 1.73 x 10^-4 M residence = 2.0 min",
+            "Figure 3 - Sensorgram for BAL-0028": "BAL-0028 k_a = 1.23 x 10^6 M^-1 s^-1 k_d = 1.51 x 10^-2 s^-1 K_D = 1.23 x 10^-7 M residence = 1.1 min",
+            "Figure 3 - Equilibrium binding curve for MCC950": "K_D = 1.93 x 10^-4 M",
+            "Figure 3 - Equilibrium binding curve for BAL-0028": "K_D = 1.04 x 10^-7 M"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated recombinant human NLRP3 NACHT domain",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Test compounds (including MCC950 and BAL-0028)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES pH 7.4, 200 mM NaCl, 0.5 mM ADP, 0.5 mM tris(2-carboxyethyl) phosphine (TCEP), 2 mM MgCl2, 1 g/L carboxymethyl dextran hydrogel (CMD), 0.05 % Tween20, 2 % DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "blank cycle and reference flow cell",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore Insight Evaluation Software (version 3.0.12.15655)"
+            }
+        }
+    }
+}

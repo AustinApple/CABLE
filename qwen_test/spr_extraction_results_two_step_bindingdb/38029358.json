@@ -1,0 +1,66 @@
+{
+    "51569412": {
+        "reactant_set_id": 51569412,
+        "pmid": 38029358,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "CCCNS(=O)(=O)c1ccc2CC(Cc2c1)N(Cc1cc(Cl)ccc1OCCOC)C(=O)c1cc2ccccc2o1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 103.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human NLRP3 assessed as equilibrium dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Assay. The binding affinity of 15z with the human NLRP3 protein (40741, BPS Bioscience) was investigated by SPR assay using a surface plasmon resonance based biosensor instrument (BiacoreT200, GE Healthcare). The NLRP3 protein was diluted in 10 mM sodium acetate buffer (pH 4.0) to the final concentration of 10 μg/mL. The diluted NLRP3 was covalently immobilized on CMS chip by a standard amine coupling procedure with EDC and NHS. After the chip was equilibrated in PBS-P buffer (pH 7.4), compounds were serially diluted in PBS-P buffer containing and 10% DMSO buffer and injected for 60 s at a flow rate of 30 μL/min. RU values were recorded and the K_D values determined by BiacoreT200 Evaluation software (GE Healthcare).",
+            "Figure 7 caption": "Figure 7. Compound 15z blocks the assembly of NLRP3 inflammasome and binds directly to human NLRP3 protein. (A) Binding affinity of the 15z to the human NLRP3 protein was determined by the surface plasmon resonance (SPR) assay. The K_D values were determined by Biacore Evaluation Software as mean ± SEM from three independent experiments. (B, C) Co-immunoprecipitation and immunoblot of endogenous ASC-NLRP3 interaction (B) and NEK7-NLRP3 interaction (C) in LPS/ATP-stimulated J774A.1 cells treated with compound 15z (3 and 10 μM).",
+            "Figure 7A": "Binding of 15z to NLRP3 K_D=102.7 ± 2.8 nM Response Unit (RU) Time (s) -100 -50 0 50 100 150 -5 0 5 10 15 20 15z 6.25 μM 15z 3.13 μM 15z 1.56 μM 15z 0.78 μM 15z 0.39 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human NLRP3 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 15z",
+                "concentration_range": "0.39 μM - 6.25 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P buffer (pH 7.4) containing 10% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BiacoreT200 Evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

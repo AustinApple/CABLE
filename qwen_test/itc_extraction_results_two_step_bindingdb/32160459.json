@@ -1,0 +1,63 @@
+{
+    "51293911": {
+        "reactant_set_id": 51293911,
+        "pmid": 32160459,
+        "protein": "Nuclear receptor subfamily 1 group I member 2",
+        "ligand": {
+            "smiles": "C\\C(CC\\C=C(/C)C(O)=O)=C/CC\\C(C)=C\\CC[C@]1(C)CCc2cc(O)cc(C)c2O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 330.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged PXR-LBD (unknown origin) expressed in Escherichia coli BL21 Gold by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC was performed using a VP-ITC microcalorimeter from MicroCal/Malvern Instruments (Northampton, MA). The protein and the ligands (in DMSO, 8% vol/vol final concentration) were prepared in 25 mM Hepes, pH 7.5 with 150 mM NaCl. In all of the experiments, the ligand solution was injected in 10-μL aliquots into the calorimetric cell containing PXR-LBD [3 μM] at 37 °C. The respective concentrations of GA (1), 2, and 5 in the syringe were 60 μM each. The heat evolved upon each injection of the ligands was obtained from the integral of the calorimetric signal. The heat associated with binding to PXR-LBD in the cell was obtained by subtracting the heat of dilution from the heat of reaction. The individual heats were plotted against the molar ratio, and the enthalpy change (ΔH), association constant (Ka = 1/Kd), and stoichiometry were obtained by nonlinear regression of the data.",
+            "Figure 1 caption": "Figure 1. PXR agonist activity and binding properties of GA. Binding activity of GA (1) was assessed by the AlphaScreen test at 10 μM compound concentration (A) and during a dose-dependent experiment (B). Comparisons were made with a series of vitamin E compounds and the PXR agonist 0.05 μM T0901317 (see Table S1). Calorimetric titrations of GA binding to PXR-LBD (C) were investigated in comparison with compounds 2 and 5 dissolved in DMSO and then further diluted to 60 μM final concentration in 25 mM Hepes buffer, pH 7.5, containing 150 mM NaCl. The final concentration of PXR-LBD in the reaction mixture was 3 μM, and DMSO was 8% v/v.",
+            "Results - 2.3. Calorimetric Titration of Garcinolic Acid Binding to the PXR Ligand Binding Domain": "To obtain direct proof of interaction with the hPXR ligand binding domain (LBD), we performed an isothermal titration calorimetry (ITC) experiment using His-tagged hPXR LBD protein in solution (Figure 1C). ITC measures the affinity, Ka, the Gibbs energy (ΔG = −RT ln Ka), and the changes in enthalpy, ΔH, and entropy, ΔS, associated with the binding of the FKK compounds (ΔG = −RT ln K = ΔH − TΔS). Enthalpic and entropic contributions to binding affinity define the nature of the forces that drive the binding reaction. GA (1) binds to a single site in LBD (Ka = 330 nM, ΔG = −8.8 kcal/mol, ΔH = −6.4 kcal/mol, −TΔS = −2.4 kcal/mol, N = 0.9) (Figure 1C, left panel). In contrast, the other PXR inactive analogues, δ-tocotrienol (5) and α-tocopherol 13′-carboxylic acid (2), do not show any detectable binding to PXR LBD in this assay (Figure 1C, middle and right panels, respectively).",
+            "Figure 1C - Left Panel (GA 1)": "The left panel of Figure 1C shows the ITC thermogram and binding isotherm for GA (1). The thermogram (top) displays the heat released (negative peaks) upon injection of GA into the PXR-LBD solution. The binding isotherm (bottom) plots the integrated heat per mole of injectant (Q, kcal/mol of injectant) against the molar ratio of GA to PXR-LBD. The curve is fitted to a single-site binding model, yielding the following parameters: Ka = 330 nM, ΔG = −8.8 kcal/mol, ΔH = −6.4 kcal/mol, −TΔS = −2.4 kcal/mol, N = 0.9.",
+            "Figure 1C - Middle and Right Panels (Compounds 5 and 2)": "The middle and right panels of Figure 1C show the ITC thermograms and binding isotherms for δ-tocotrienol (5) and α-tocopherol 13′-carboxylic acid (2), respectively. Both panels show no significant heat release (flat thermograms) and no binding curve, indicating no detectable interaction with PXR-LBD."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "His-tagged PXR-LBD",
+                "location": "cell",
+                "concentration": "3",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "GA (1)",
+                "location": "syringe",
+                "concentration": "60"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM Hepes, 150 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "10",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "51050505": {
+        "reactant_set_id": 51050505,
+        "pmid": 23199482,
+        "protein": "GRB10-interacting GYF protein 2",
+        "ligand": {
+            "smiles": "CCC(=C(c1ccc(OCCN2CCCC2)cc1)c1ccc(OCCN2CCCC2)cc1)c1cccc(OC(=O)CCCCCNC(=O)CCCC[C@@H]2SC[C@@H]3NC(=O)N[C@H]23)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 186.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged Grb10 interacting GYF protein 2 (745-1030 amino acids) (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance assay": "SPR analysis was performed on a Biacore® 3000 (GE Healthcare). The purified GIGYF2(745–1030) was buffer exchanged into PBS (67 mM Na2HPO4, 12.5 mM KH2PO4, 70 mM NaCl, pH 7.4) and the concentration was quantified using DC protein assay kit (Bio-Rad Laboratories, Hercules, CA). Solutions of bovine serum albumin (BSA) at different concentrations were used as standards for this assay. After immobilization of Bio-RID-B and biotin on an SA sensor chip, appropriate concentrations of GIGYF2(745–1030) were injected over the flow cells. Binding analyses were carried out in PBS at a flow rate of 20 μL/min at 25 °C. The bulk effects of DMSO were subtracted using reference flow cells. Kinetic parameters were determined by analyzing the data using BIAevaluation 4.1 software (GE Healthcare).",
+            "Figure 3 caption": "Figure 3. Direct interaction of RID-B with GIGYF2. (A) Schematic representation of the engineered full length or truncated GIGYF2 protein. (B) Interaction of RID-B or RID-D with Flag-tagged GIGYF2. Bio-RID-B, Bio-RID-D or biotin was fixed onto avidin beads and then incubated with cell extracts containing GIGYF2. After extensive washing, the bound GIGYF2 was detected by Western blot analysis. (C) Purified recombinant GIGYF2(745–1030). Recombinant GIGYF2(745–1030) from a bacterial expression system was purified to apparent homogeneity. The purity of the GIGYF2(745–1030) preparation was confirmed by SDS-PAGE analysis followed by staining with CBB. (D–F) A sensorgram obtained from SPR analysis between biotinylated ridaifen derivative and GIGYF2(745–1030). Bio-RID-B (D, E) or Bio-RID-D (F) was immobilized on a SA sensor chip. Solutions of purified GIGYF2(745–1030) at various concentrations (from top to bottom: 5.0, 4.0, 2.0, 1.0, 0.5 or 0.25 μM) were injected over the surface of the sensor chip. The binding responses (in RU) were recorded as a function of time (in sec). The estimated Kd value of interaction between RID-B and GIGYF2(745–1030) was 186 nM.",
+            "Results - Interaction analysis between RID-B and GIGYF2": "We further elucidated the interaction and estimated the dissociation constant (Kd) between GIGYF2 and RID-B using surface plasmon resonance (SPR) analysis. We engineered a His-tagged truncated form of GIGYF2 corresponding to the 745–1030 region of GIGYF2 (GIGYF2(745–1030)) that is, the region displayed on the RID-B-binding phage (Fig. 3A and C). The recombinant protein was then purified over the surface of the SA sensor chip on which Bio-RID-B had been immobilized through the interaction between biotin and avidin. GIGYF2(745–1030) bound to RID-B in a dose-dependent manner and global fitting gave a Kd value of 186 nM. These results indicate that RID-B strongly interacts with the 745–1030 a.a. region in GIGYF2 (Fig. 3D)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Bio-RID-B",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "recombinant His-tagged GIGYF2(745–1030)",
+                "concentration_range": "0.25 μM - 5.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (67 mM Na2HPO4, 12.5 mM KH2PO4, 70 mM NaCl, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "reference flow cells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation 4.1"
+            }
+        }
+    }
+}

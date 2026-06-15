@@ -1,0 +1,61 @@
+{
+    "51133437": {
+        "reactant_set_id": 51133437,
+        "pmid": 29275228,
+        "protein": "TYR_PHOSPHATASE_2 domain-containing protein",
+        "ligand": {
+            "smiles": "CC(C)=CCc1c(oc2c([C@@H]3C=C(C)C[C@@H]([C@H]3C(=O)c3ccc(O)cc3O)c3ccc(O)cc3O)c(O)cc(O)c2c1=O)-c1ccc(O)cc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Mycobacterium tuberculosis PtpB by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "Isothermal titration calorimetry (ITC) measurements of inhibitor binding to protein were recorded at 25 °C using a VP-ITC microcalorimeter (Microcal, GE Healthcare) in 20 mM Tris-HCl, pH 7.4, 50 mM NaCl, 2% (v/v) glycerol and 1 mM 2-mercaptoethanol using an ultrafiltration device (Amicon Ultra-15 Millipore 10 kDa). Protein concentration was determined by absorbance at 280 nm, using the calculated molar absorption coefficient of 14,440 M−1 cm−1. DMSO concentration in the protein solution was adjusted to 5% (v/v) before binding experiments were performed. Final ligand solution was obtained by dilution 1:50 (v/v) in the same buffer resulting in a final DMSO concentration of 5% (v/v). The titrations were performed using 10 μM PtpB solution in the sample cell and 200 μM compound solution in the syringe. A typical experiment consisted of 28 injections under the following parameters: one injection of 2 μL (for 4 s) followed by 27 injections of 10 μL (for 20 s); 150 s spacing between injections; 351 rpm stirring speed; and reference power set to 15 μcal s−1. The heat of dilution of the ligand into the buffer was analyzed independently and the signal of the last injection was used as the background heat signal. The experimental data were analyzed using the Origin 7.0 software, provided by MicroCal, and fitted using the one-site binding model. All the final values were the average obtained from two independent experiments. Values of ΔG° and Ka were calculated using the thermodynamic relationships ΔG° = −RT lnKa, and Ka = 1/Kd.",
+            "Figure 4 caption": "Fig. 4. Isothermal titration calorimetry (ITC) of Kuwanon G binding to PtpB. Inset, the thermodynamic profile of the binding. The titration was performed at 25 °C with 10 μM PtpB in the cell and 200 μM Kuwanon G in the syringe. In the representative figure (two independent experiments) the upper panel displays the raw ITC data, and the normalized data, corrected for the control dilution heat, is shown in the lower panel.",
+            "Table 3": "Table 3 Thermodynamic parameters for the binding of Kuwanon G to PtpB. N, sites Ka, M−1 ΔH, kcal mol−1 ΔS, cal mol−1 K−1 ΔG, kcal mol−1 0.9 ± 0.1 3.5 ± 0.5 × 105 −13.7 ± 0.7 −20.8 ± 2.6 −7.5 ± 0.1 10 μM of PtpB titrated with 200 μM Kuwanon G at 25 °C. *ΔG = −RTlnKa. The data presented are the average, with standard deviations, from two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "PtpB",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "Kuwanon G",
+                "location": "syringe",
+                "concentration": "200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 50 mM NaCl, 2% (v/v) glycerol, 1 mM 2-mercaptoethanol",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "351",
+                "reference_cell_content": null,
+                "control_method": "The heat of dilution of the ligand into the buffer was analyzed independently and the signal of the last injection was used as the background heat signal.",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "10",
+                    "duration": "4",
+                    "spacing": "150",
+                    "total_count": "28"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

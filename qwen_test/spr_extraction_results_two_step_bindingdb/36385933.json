@@ -1,0 +1,66 @@
+{
+    "51470620": {
+        "reactant_set_id": 51470620,
+        "pmid": 36385933,
+        "protein": "NAD kinase",
+        "ligand": {
+            "smiles": "Oc1cc(O)c2C[C@@H](OC(=O)c3cc(O)c(O)c(O)c3)[C@H](Oc2c1)c1cc(O)c(O)c(O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1780.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal full length NADK (unknown origin) expressed in Escherichia coli BL21(DE3) cells assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Hoxhaj, G.; Ben-Sahra, I.; Lockwood, S. E.; Timson, R. J.; Veling, V.; Henning, G. T.; Gao, P.; Sefors, L. M.; Asara, J. M.; Manning, B. D. Direct Stimulation of NADP+ Synthesis through Akt-Mediated Phosphorylation of NAD Kinase. Science 2019, 363 (6431), 1088–1092.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) assay was performed using a Biacore T200 instrument (GE Healthcare). The NADK protein was immobilized on a CM5 sensor chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, containing 150 mM NaCl, 0.05% P20, and 0.005% Tween 20. EGCG was diluted in the running buffer to concentrations ranging from 0.1 to 12.5 μM. The association phase lasted 120 s, and the dissociation phase lasted 300 s. The regeneration solution was 10 mM glycine-HCl, pH 2.0. Data were analyzed using Biacore T200 evaluation software.",
+            "Figure 3D caption": "Determination of the affinity of EGCG and NADK by the SPR assay. The sensorgram shows the response units (RU) over time for different concentrations of EGCG (0.10, 0.20, 0.39, 0.78, 1.56, 3.13, 6.25, and 12.5 μM). The KD value was calculated to be 1.78 ± 1.15 μM.",
+            "Supporting Information S1": "The SPR assay was performed as described previously (Reference 20)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NADK protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "EGCG",
+                "concentration_range": "0.1 to 12.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, containing 150 mM NaCl, 0.05% P20, and 0.005% Tween 20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "10 mM glycine-HCl, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

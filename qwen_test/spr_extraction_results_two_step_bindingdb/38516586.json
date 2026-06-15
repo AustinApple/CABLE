@@ -1,0 +1,67 @@
+{
+    "51548961": {
+        "reactant_set_id": 51548961,
+        "pmid": 38516586,
+        "protein": "DNA polymerase beta",
+        "ligand": {
+            "smiles": "Cc1cc2c(SC(\\N=C(\\N)Nc3cccc4ccccc34)=NS2(=O)=O)cc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to DNA polymerase beta (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "72 Q. Fang, J. Andrews, N. Sharma, A. Wilk, J. Clark, J. Slyskova, C. A. Koczo, H. Lans, A. Prakash and R. W. Sobol, Nucleic Acids Res., 2019, 47, 6269–6286.",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) binding": "4.2.1.8 Surface plasmon resonance (SPR) binding. Binding affinity measurements were conducted on a Reichert2SPR instrument (Ametek) at room temperature. Seven μg Polβ proteins were directly immobilized onto the 500000 Da carboxymethyl dextran sensor chip at pH 5.0 using the standard amine coupling approach.72 After achieving a stable baseline, small molecule ligands were injected at a flow rate of 25 μL min−1 at different concentrations in the running buffer (25 mM HEPES pH 8.0, 150 mM NaCl, 200 mM MgCl2, 0.1% v/v Tween-20, 1 mM tris(2-carboxyethyl)phosphine hydrochloride (TCEP) and 1% DMSO). The association and dissociation time were 2 min and 5 min, respectively. Sensorgram data was processed using Excel and dissociation constant (Kd) was calculated by GraphPad Prism9.",
+            "Figure 14 caption": "Fig. 14 Characterization of NSC compound 11a (NSC-666719) and NSC-analog 10e binding mode using surface plasmon resonance (SPR). (A) Sensorgram of Polβ binding comparison of 40 μM NSC compound 11a and NSC-analog 10e; (B) concentration gradient testing of NSC-analog 10e; (C) Kd measurement of compound 10e.",
+            "Figure 14C plot": "Kd = 20.11 ± 4.412 μM",
+            "Results section - Binding characteristics of Polβ and compound 10e by surface plasmon resonance (SPR) assay": "2.2.10 Binding characteristics of Polβ and compound 10e by surface plasmon resonance (SPR) assay. A SPR sensorgram study was done (Fig. 14A). Both the compounds 11a and 10e showed non-covalently reversible binding to Polβ. Then, concentration gradient tests were performed using both the compounds. The binding signal of the NSC-analog 10e dose-dependently increased with higher binding affinity and Kd = 20.11 ± 4.412 μM (Fig. 14B and C). Meanwhile, the binding signal of the NSC compound 11a was found non-related to compound concentrations. In addition, the negative SPR signal observed for compounds 11a and 10e binding to Polβ may be due to a non-oriented functionalization of Polβ to the biosensor. It is likely that after binding with compounds 11a and 10e the Polβ protein goes through conformational change and produces negative SPR response. In previous studies, a similar negative SPR response was observed with other proteins and their ligand interactions.66–68 Thus, the results of our studies suggest that the NSC analog 10e possess higher Polβ-binding efficiency than the original NSC compound (11a). In addition, the study provides evidence that conformational transitions of free and complexed proteins are important dynamic features involved in Polβ activity regulation."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Ametek",
+                "model": "Reichert2SPR"
+            },
+            "sensor_chip": {
+                "type": "500000 Da carboxymethyl dextran",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Polβ proteins",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "7 μg"
+            },
+            "analyte": {
+                "description": "Small molecule ligands (NSC compound 11a and NSC-analog 10e)",
+                "concentration_range": "40 μM (for 11a and 10e comparison), concentration gradient for 10e (not specified range)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "25 mM HEPES pH 8.0, 150 mM NaCl, 200 mM MgCl2, 0.1% v/v Tween-20, 1 mM tris(2-carboxyethyl)phosphine hydrochloride (TCEP), 1% DMSO",
+                "pH": 8.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "GraphPad Prism9"
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "51581884": {
+        "reactant_set_id": 51581884,
+        "pmid": 38728572,
+        "protein": "Interleukin-1 beta",
+        "ligand": {
+            "smiles": "Cc1ccc2c(c1)NC(=O)[C@@]2(c1cn[nH]c1)c1cc(-c2ccc(C(=O)O)cc2C(=O)O)ccc1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminally avi-tagged human IL-1 beta assessed as dissociation constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C. Human IL-1β (17–269) was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization was performed using 100 μL of 100 mM NaHCO3, pH 8.5, as coupling buffer. The protein was immobilized at a level of 1000–1500 response units (RU). The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% Tween 20. The analyte (compound) was injected at concentrations ranging from 0.1 to 100 μM in the running buffer. The association phase lasted 120 s, followed by a 120 s dissociation phase. The chip was regenerated with 10 mM glycine, pH 2.0, for 30 s. The data were analyzed using Biacore T200 Evaluation Software (GE Healthcare). The binding affinity was determined by fitting the sensorgrams to a 1:1 Langmuir binding model. The dissociation constant (KD) was calculated as the ratio of the dissociation rate constant (koff) to the association rate constant (kon).",
+            "Figure 4 caption": "Figure 4. (A) Chemical structure and SPR binding characterization of (S)-2. (B) The crystal structure of (S)-2 in complex with IL-1β (PDB ID: 8C3U) overlaid to (S)-1 crystallographic pose (green). Hydrogen bonds are shown as dashed black lines, and water molecules are shown as red spheres. The SPR data for (S)-2 are: SPR KD = 1.1 μM, SPR kon = 1.2 × 10^5 M−1 s−1, SPR koff = 0.12 s−1 (tres = 8.3 s)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human IL-1β (17–269)",
+                "strategy": "Amine coupling",
+                "density_ru": "1000-1500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound (S)-2",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% Tween 20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software (GE Healthcare)"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "51599697": {
+        "reactant_set_id": 51599697,
+        "pmid": 38679872,
+        "protein": "Peroxiredoxin-1",
+        "ligand": {
+            "smiles": "COC(=O)C1(NC(=O)N[C@]2(C)CC[C@]3(C)CC[C@]4(C)C5=CC=C6C(=CC(=O)C(O)=C6C)[C@]5(C)CC[C@@]4(C)[C@@H]3C2)CCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 370.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 sensor chip-immobilized recombinant PRDX1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assay. The SPR binding assay was performed on a Biacore T200 (GE Healthcare) using commercially available CM5 sensor chips at 25 °C according to the manufacturer’s instructions. The running buffer contained 20 mM HEPES (pH 7.0), 150 mM NaCl, and 1% Tween-20. Recombinant PRDX1 protein was immobilized on the sensor chip via amine coupling. Compound 15 was injected at a flow rate of 30 μL/min to bind with the recombinant PRDX1 protein for 120 s and dissociated for 180 s each cycle. The dissociation constant value of 15 against PRDX1 protein was finally calculated by the Biacore T200 software Version 1.0 to evaluate the binding affinity. Data were plotted using GraphPad Prism (version 8.0).",
+            "Figure 4 caption": "Figure 4. Derivative 15 was identified as a selective and covalent inhibitor against the peroxidase activity of PRDX1. (A) Peroxidase inhibitory activity of PRDX1 with 15 incubation. Celastrol was incubated with recombinant PRDX1 for 0.5 h at different concentrations. The inhibition rate was calculated from the initial reaction slope of each assay well. The IC50 value of 15 against PRDX1 is 0.35 μM. Peroxidase activity inhibition of PRDX2 (B), PRDX3 (C), PRDX4 (D), PRDX5 (E), and PRDX6 (F) with 15 incubation. Derivative 15 was incubated with recombinant PRDX2–6, and the inhibition rates were calculated from the initial reaction slope as in panel (A). The IC50 values of 15 for PRDX2–6 were all greater than 50 μM. The inhibitions of peroxidase activity by 15 were calculated from triplicate experiments. (G) The binding affinity of 15 with recombinant PRDX1 was determined by the SPR assay. (H) PRDX1 thermal shift assays. The changes in the thermodynamic stability of PRDX1 upon binding of 15. The fluorescence signals of protein thermal shift assays were normalized and plotted as a function of the temperature. (I) Mass spectral analysis of recombinant PRDX1 before and after 15 binding. The upper spectra were the sample of PRDX1 incubated with DMSO, while the lower spectra were the sample of PRDX1 incubated with 15 overnight. The main mass peak of ligand-free PRDX1 was shown in red, while the peak of the PRDX1–15 complex was shown in green. The exact mass of 15 is 576.36.",
+            "Figure 4G": "The binding affinity of 15 with recombinant PRDX1 was determined by the SPR assay. The sensorgram shows the response units (RU) over time for different concentrations of compound 15 (0.8, 1.2, 1.8, 2.7, and 4.05 μM). The KD value is indicated as 0.37 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant PRDX1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 15",
+                "concentration_range": "0.8, 1.2, 1.8, 2.7, and 4.05 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.0), 150 mM NaCl, and 1% Tween-20",
+                "pH": 7.0,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 software Version 1.0"
+            }
+        }
+    }
+}

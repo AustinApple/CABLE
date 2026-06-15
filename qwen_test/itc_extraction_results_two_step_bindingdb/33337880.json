@@ -1,0 +1,61 @@
+{
+    "51377288": {
+        "reactant_set_id": 51377288,
+        "pmid": 33337880,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CN(C)C(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal titration calorimetry experiments were carried out on a MicroCal ITC-200 system (GE Healthcare) using Keap1 protein (Kelch domain = aa321–aa609) that had been passed through a PD-10 column (GE Healthcare) equilibrated with 10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1 mM TCEP, pH 7.40, and 1% DMSO. Complete titration of 60 μM Keap1 was typically achieved by injecting 19 × 2 μL aliquots of a 0.6 mM compound at a temperature of 25 °C and a spacing interval of 90 s between injections. The thermodynamic binding parameters were extracted by nonlinear regression analysis of the binding isotherms (Microcal Origin version 7.0 software package). A single site binding model was applied, yielding binding enthalpy (ΔH), stoichiometry (n), entropy (ΔS), and association constant (K_a).",
+            "Figure 2 caption - ITC data": "Determination of the dissociation constant (K_D) for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation.",
+            "Figure 2c - ITC thermogram and binding isotherm": "The left panel shows the raw heat signals (DP in μcal/sec) over time (min) for the titration. The right panel shows the integrated binding isotherm, plotting the binding enthalpy (kcal/mol of injectant) against the molar ratio of ligand to protein. The fitted curve yields a K_D of 3.7 ± 0.8 μM. The insert shows the thermodynamic parameters: ΔG = -10.0 kcal/mol, ΔH = -12.0 kcal/mol, and TΔS = +2.0 kcal/mol."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal ITC-200"
+            },
+            "protein": {
+                "name": "Keap1",
+                "location": "cell",
+                "concentration": "60",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "14",
+                "location": "syringe",
+                "concentration": "600"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1 mM TCEP, 1% DMSO",
+                "pH": "7.40",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "90",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

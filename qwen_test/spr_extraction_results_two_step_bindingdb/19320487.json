@@ -1,0 +1,380 @@
+{
+    "57516": {
+        "reactant_set_id": 57516,
+        "pmid": 19320487,
+        "protein": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+        "ligand": {
+            "smiles": "Nc1ccn([C@H]2O[C@@H](CO)[C@H]3OP(O)(=O)O[C@@H]23)c(=O)n1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20500000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "An SPR assay was used to determine the binding affinities of compounds. Experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry with readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 uL min-1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 deg C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 uL min-1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Studies": "SPR experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry. Briefly, the sensor chip surface was activated with three 6 min injections at 5 μL min−1 of a mixture of N-hydroxysuccinimide at 115 mM and 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride at 750 mM. EcIspF was diluted with 10 mM acetate buffer pH 5.5 to a final concentration of approximately 100 μg mL−1 and applied to the chip so that readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 μL min−1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 °C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 μL min−1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. A concentration series, ranging from 0.1 μM to 10 mM, of ligand was typically run in these experiments. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+            "Figure 4 caption": "Figure 4. Representative binding sensorgrams of CDP (a) and CMP (b) to covalently immobilized EcIspF. Reference-corrected SPR binding curves for various concentrations of CDP and CMP monitored on a surface with ~5000 RU of amine coupled EcIspF. The data were globally fitted using a kinetic model where a 1:1 complex is formed between EcIspF and CDP or CMP. The small graphs show the steady state (equilibrium) RU after fitting vs the concentrations of CDP or CMP. Running buffer was 50 mM sodium phosphate (pH 7), 2 mM MgCl2, and 0.005% surfactant P20. In graph (a), curve a = 25 μM CDP; b = 50 μM CDP; c = 100 μM CDP; d = 200 μM CDP; e = 400 μM CDP; f = 800 μM CDP; g = 1.6 mM CDP. In graph (b), curve a = 78.1 μM CMP; b = 156.2 μM CMP; c = 312.5 μM CMP; d = 625 μM CMP; e = 1.25 mM CMP; f = 2.5 mM CMP; g = 5 mM CMP. Insets in (a) and (b): Nonlinear steady-state affinity analysis for the corresponding interaction. The curve drawn is the best-fit curve to a single-site binding equation with the program GraphPad Prism. This provides an apparent Kd of 96.59 ± 6.45 μM for CDP and 903.63 ± 10.77 μM for CMP."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "EcIspF",
+                "strategy": "Amine coupling",
+                "density_ru": "4500-5500",
+                "concentration_for_immobilization": "approximately 100 μg mL−1"
+            },
+            "analyte": {
+                "description": "CDP and CMP",
+                "concentration_range": "0.1 μM to 10 mM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate pH 7, 2 mM MgCl2, 0.005% surfactant P20",
+                "pH": 7,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference-corrected SPR binding curves",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "57517": {
+        "reactant_set_id": 57517,
+        "pmid": 19320487,
+        "protein": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+        "ligand": {
+            "smiles": "Nc1ccn([C@@H]2O[C@@H]3COP(O)(=O)O[C@H]3[C@H]2O)c(=O)n1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 900000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "An SPR assay was used to determine the binding affinities of compounds. Experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry with readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 uL min-1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 deg C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 uL min-1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Studies": "SPR experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry. Briefly, the sensor chip surface was activated with three 6 min injections at 5 μL min−1 of a mixture of N-hydroxysuccinimide at 115 mM and 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride at 750 mM. EcIspF was diluted with 10 mM acetate buffer pH 5.5 to a final concentration of approximately 100 μg mL−1 and applied to the chip so that readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 μL min−1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 °C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 μL min−1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. A concentration series, ranging from 0.1 μM to 10 mM, of ligand was typically run in these experiments. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+            "Figure 4 caption": "Figure 4. Representative binding sensorgrams of CDP (a) and CMP (b) to covalently immobilized EcIspF. Reference-corrected SPR binding curves for various concentrations of CDP and CMP monitored on a surface with ~5000 RU of amine coupled EcIspF. The data were globally fitted using a kinetic model where a 1:1 complex is formed between EcIspF and CDP or CMP. The small graphs show the steady state (equilibrium) RU after fitting vs the concentrations of CDP or CMP. Running buffer was 50 mM sodium phosphate (pH 7), 2 mM MgCl2, and 0.005% surfactant P20. In graph (a), curve a = 25 μM CDP; b = 50 μM CDP; c = 100 μM CDP; d = 200 μM CDP; e = 400 μM CDP; f = 800 μM CDP; g = 1.6 mM CDP. In graph (b), curve a = 78.1 μM CMP; b = 156.2 μM CMP; c = 312.5 μM CMP; d = 625 μM CMP; e = 1.25 mM CMP; f = 2.5 mM CMP; g = 5 mM CMP. Insets in (a) and (b): Nonlinear steady-state affinity analysis for the corresponding interaction. The curve drawn is the best-fit curve to a single-site binding equation with the program GraphPad Prism. This provides an apparent Kd of 96.59 ± 6.45 μM for CDP and 903.63 ± 10.77 μM for CMP."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "EcIspF",
+                "strategy": "Amine coupling",
+                "density_ru": "4500-5500",
+                "concentration_for_immobilization": "approximately 100 μg mL−1"
+            },
+            "analyte": {
+                "description": "CDP and CMP",
+                "concentration_range": "0.1 μM to 10 mM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate pH 7, 2 mM MgCl2, 0.005% surfactant P20",
+                "pH": 7,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference-corrected SPR binding curves",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "57520": {
+        "reactant_set_id": 57520,
+        "pmid": 19320487,
+        "protein": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+        "ligand": {
+            "smiles": "C1=CN(C(=O)N=C1N)[C@H]2[C@H]([C@@H]([C@H](O2)COP(=O)(O)O)O)O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18910000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "An SPR assay was used to determine the binding affinities of compounds. Experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry with readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 uL min-1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 deg C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 uL min-1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Studies": "SPR experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry. Briefly, the sensor chip surface was activated with three 6 min injections at 5 μL min−1 of a mixture of N-hydroxysuccinimide at 115 mM and 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride at 750 mM. EcIspF was diluted with 10 mM acetate buffer pH 5.5 to a final concentration of approximately 100 μg mL−1 and applied to the chip so that readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 μL min−1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 °C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 μL min−1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. A concentration series, ranging from 0.1 μM to 10 mM, of ligand was typically run in these experiments. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+            "Figure 4 caption": "Figure 4. Representative binding sensorgrams of CDP (a) and CMP (b) to covalently immobilized EcIspF. Reference-corrected SPR binding curves for various concentrations of CDP and CMP monitored on a surface with ~5000 RU of amine coupled EcIspF. The data were globally fitted using a kinetic model where a 1:1 complex is formed between EcIspF and CDP or CMP. The small graphs show the steady state (equilibrium) RU after fitting vs the concentrations of CDP or CMP. Running buffer was 50 mM sodium phosphate (pH 7), 2 mM MgCl2, and 0.005% surfactant P20. In graph (a), curve a = 25 μM CDP; b = 50 μM CDP; c = 100 μM CDP; d = 200 μM CDP; e = 400 μM CDP; f = 800 μM CDP; g = 1.6 mM CDP. In graph (b), curve a = 78.1 μM CMP; b = 156.2 μM CMP; c = 312.5 μM CMP; d = 625 μM CMP; e = 1.25 mM CMP; f = 2.5 mM CMP; g = 5 mM CMP. Insets in (a) and (b): Nonlinear steady-state affinity analysis for the corresponding interaction. The curve drawn is the best-fit curve to a single-site binding equation with the program GraphPad Prism. This provides an apparent Kd of 96.59 ± 6.45 μM for CDP and 903.63 ± 10.77 μM for CMP."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "EcIspF",
+                "strategy": "Amine coupling",
+                "density_ru": "4500-5500",
+                "concentration_for_immobilization": "approximately 100 μg mL−1"
+            },
+            "analyte": {
+                "description": "CDP and CMP",
+                "concentration_range": "0.1 μM to 10 mM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate pH 7, 2 mM MgCl2, 0.005% surfactant P20",
+                "pH": 7,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference-corrected SPR binding curves",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "57521": {
+        "reactant_set_id": 57521,
+        "pmid": 19320487,
+        "protein": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+        "ligand": {
+            "smiles": "Nc1nc(=O)n(cc1F)[C@@H]1O[C@H](CO)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2020000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "An SPR assay was used to determine the binding affinities of compounds. Experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry with readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 uL min-1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 deg C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 uL min-1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Studies": "SPR experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry. Briefly, the sensor chip surface was activated with three 6 min injections at 5 μL min−1 of a mixture of N-hydroxysuccinimide at 115 mM and 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride at 750 mM. EcIspF was diluted with 10 mM acetate buffer pH 5.5 to a final concentration of approximately 100 μg mL−1 and applied to the chip so that readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 μL min−1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 °C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 μL min−1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. A concentration series, ranging from 0.1 μM to 10 mM, of ligand was typically run in these experiments. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+            "Figure 4 caption": "Figure 4. Representative binding sensorgrams of CDP (a) and CMP (b) to covalently immobilized EcIspF. Reference-corrected SPR binding curves for various concentrations of CDP and CMP monitored on a surface with ~5000 RU of amine coupled EcIspF. The data were globally fitted using a kinetic model where a 1:1 complex is formed between EcIspF and CDP or CMP. The small graphs show the steady state (equilibrium) RU after fitting vs the concentrations of CDP or CMP. Running buffer was 50 mM sodium phosphate (pH 7), 2 mM MgCl2, and 0.005% surfactant P20. In graph (a), curve a = 25 μM CDP; b = 50 μM CDP; c = 100 μM CDP; d = 200 μM CDP; e = 400 μM CDP; f = 800 μM CDP; g = 1.6 mM CDP. In graph (b), curve a = 78.1 μM CMP; b = 156.2 μM CMP; c = 312.5 μM CMP; d = 625 μM CMP; e = 1.25 mM CMP; f = 2.5 mM CMP; g = 5 mM CMP. Insets in (a) and (b): Nonlinear steady-state affinity analysis for the corresponding interaction. The curve drawn is the best-fit curve to a single-site binding equation with the program GraphPad Prism. This provides an apparent Kd of 96.59 ± 6.45 μM for CDP and 903.63 ± 10.77 μM for CMP."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "EcIspF",
+                "strategy": "Amine coupling",
+                "density_ru": "4500-5500",
+                "concentration_for_immobilization": "approximately 100 μg mL−1"
+            },
+            "analyte": {
+                "description": "CDP and CMP",
+                "concentration_range": "0.1 μM to 10 mM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate pH 7, 2 mM MgCl2, 0.005% surfactant P20",
+                "pH": 7,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference-corrected SPR binding curves",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "57522": {
+        "reactant_set_id": 57522,
+        "pmid": 19320487,
+        "protein": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+        "ligand": {
+            "smiles": "Nc1ccn(C[C@@H](CO)OCP(O)(O)=O)c(=O)n1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 40000000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "An SPR assay was used to determine the binding affinities of compounds. Experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry with readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 uL min-1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 deg C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 uL min-1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Studies": "SPR experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry. Briefly, the sensor chip surface was activated with three 6 min injections at 5 μL min−1 of a mixture of N-hydroxysuccinimide at 115 mM and 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride at 750 mM. EcIspF was diluted with 10 mM acetate buffer pH 5.5 to a final concentration of approximately 100 μg mL−1 and applied to the chip so that readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 μL min−1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 °C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 μL min−1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. A concentration series, ranging from 0.1 μM to 10 mM, of ligand was typically run in these experiments. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+            "Figure 4 caption": "Figure 4. Representative binding sensorgrams of CDP (a) and CMP (b) to covalently immobilized EcIspF. Reference-corrected SPR binding curves for various concentrations of CDP and CMP monitored on a surface with ~5000 RU of amine coupled EcIspF. The data were globally fitted using a kinetic model where a 1:1 complex is formed between EcIspF and CDP or CMP. The small graphs show the steady state (equilibrium) RU after fitting vs the concentrations of CDP or CMP. Running buffer was 50 mM sodium phosphate (pH 7), 2 mM MgCl2, and 0.005% surfactant P20. In graph (a), curve a = 25 μM CDP; b = 50 μM CDP; c = 100 μM CDP; d = 200 μM CDP; e = 400 μM CDP; f = 800 μM CDP; g = 1.6 mM CDP. In graph (b), curve a = 78.1 μM CMP; b = 156.2 μM CMP; c = 312.5 μM CMP; d = 625 μM CMP; e = 1.25 mM CMP; f = 2.5 mM CMP; g = 5 mM CMP. Insets in (a) and (b): Nonlinear steady-state affinity analysis for the corresponding interaction. The curve drawn is the best-fit curve to a single-site binding equation with the program GraphPad Prism. This provides an apparent Kd of 96.59 ± 6.45 μM for CDP and 903.63 ± 10.77 μM for CMP."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "EcIspF",
+                "strategy": "Amine coupling",
+                "density_ru": "4500-5500",
+                "concentration_for_immobilization": "approximately 100 μg mL−1"
+            },
+            "analyte": {
+                "description": "CDP and CMP",
+                "concentration_range": "0.1 μM to 10 mM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate pH 7, 2 mM MgCl2, 0.005% surfactant P20",
+                "pH": 7,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference-corrected SPR binding curves",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "57523": {
+        "reactant_set_id": 57523,
+        "pmid": 19320487,
+        "protein": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+        "ligand": {
+            "smiles": "c1ccc2c(c1)c(c[nH]2)C[C@@H](C(=O)NO)N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1920.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "An SPR assay was used to determine the binding affinities of compounds. Experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry with readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 uL min-1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 deg C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 uL min-1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Biosensor Studies": "SPR experiments were performed on a Biacore 3000 (Biacore, Uppsala, Sweden) instrument with CM5 research grade chips (Biacore, Uppsala, Sweden). Sensorgrams were recorded at a frequency of 2.5 Hz. EcIspF was immobilized using amine-coupling chemistry. Briefly, the sensor chip surface was activated with three 6 min injections at 5 μL min−1 of a mixture of N-hydroxysuccinimide at 115 mM and 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride at 750 mM. EcIspF was diluted with 10 mM acetate buffer pH 5.5 to a final concentration of approximately 100 μg mL−1 and applied to the chip so that readings between 4500 and 5500 response units were obtained. After immobilization, a 6 min injection at 5 μL min−1 of 1 M ethanolamine was used to quench excess active succinamide ester groups. SPR binding experiments with EcIspF were performed at 10 °C in 50 mM sodium phosphate pH 7 and 2 mM MgCl2 at a flow rate of 30 μL min−1. The sensor surface was regenerated between experiments by applying the running buffer for 20 min to dissociate any ligand complex. This was followed by a further 20 min stabilization period. The 40 min total regeneration time between experiments helped to eliminate any carry-over of EcIspF bound to ligand. A concentration series, ranging from 0.1 μM to 10 mM, of ligand was typically run in these experiments. Each injection at a given concentration was repeated three times. Blank injections were included for each measurement series and subtracted from the data. The equilibrium (steady state) binding curves were analyzed by nonlinear regression and fit to a one-to-one Langmuir binding model. All ligands assessed by SPR were greater than 95% purity as established by high-performance liquid chromatography or combustion analysis.",
+            "Figure 4 caption": "Figure 4. Representative binding sensorgrams of CDP (a) and CMP (b) to covalently immobilized EcIspF. Reference-corrected SPR binding curves for various concentrations of CDP and CMP monitored on a surface with ~5000 RU of amine coupled EcIspF. The data were globally fitted using a kinetic model where a 1:1 complex is formed between EcIspF and CDP or CMP. The small graphs show the steady state (equilibrium) RU after fitting vs the concentrations of CDP or CMP. Running buffer was 50 mM sodium phosphate (pH 7), 2 mM MgCl2, and 0.005% surfactant P20. In graph (a), curve a = 25 μM CDP; b = 50 μM CDP; c = 100 μM CDP; d = 200 μM CDP; e = 400 μM CDP; f = 800 μM CDP; g = 1.6 mM CDP. In graph (b), curve a = 78.1 μM CMP; b = 156.2 μM CMP; c = 312.5 μM CMP; d = 625 μM CMP; e = 1.25 mM CMP; f = 2.5 mM CMP; g = 5 mM CMP. Insets in (a) and (b): Nonlinear steady-state affinity analysis for the corresponding interaction. The curve drawn is the best-fit curve to a single-site binding equation with the program GraphPad Prism. This provides an apparent Kd of 96.59 ± 6.45 μM for CDP and 903.63 ± 10.77 μM for CMP."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "EcIspF",
+                "strategy": "Amine coupling",
+                "density_ru": "4500-5500",
+                "concentration_for_immobilization": "approximately 100 μg mL−1"
+            },
+            "analyte": {
+                "description": "CDP and CMP",
+                "concentration_range": "0.1 μM to 10 mM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium phosphate pH 7, 2 mM MgCl2, 0.005% surfactant P20",
+                "pH": 7,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "running buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Reference-corrected SPR binding curves",
+                "subtraction_method": "Blank subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    }
+}

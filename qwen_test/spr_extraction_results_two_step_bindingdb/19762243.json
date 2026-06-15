@@ -1,0 +1,322 @@
+{
+    "50907103": {
+        "reactant_set_id": 50907103,
+        "pmid": 19762243,
+        "protein": "Asialoglycoprotein receptor 1",
+        "ligand": {
+            "smiles": "CC(=O)N[C@H]1C(OC(C)=O)O[C@H](COC(C)=O)[C@H](OC(C)=O)[C@@H]1OC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 150000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant ASGPR1 carbohydrate recognition domain expressed in Escherichia coli AD494 by surface plasmon resonance spectroscopy",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Connolly, D. T.; Townsends, R. R.; Kawaguchi, K.; Bell, W. R.; Lee, Y. C. J. Biol. Chem. 1982, 257, 939.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Experiments (Biacore)": "The analyses were performed on a Biacore 3000 machine (Biacore AB, Uppsala, Sweden) using CM5 chips. After activating the surface of the chip for 5–10 min at a flow rate of 5 μL/min using a standard amine coupling procedure, H1-CRD, diluted in 10 mM acetate buffer pH 4.5 to a final concentration of 20 μg/mL, was injected for 15–15 min and the surface was deactivated for a time corresponding to the activation phase. The obtained surface densities ranged from 1800 to 2500 RUs. HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl) was used as running buffer. The screening of the compounds was performed by the injection of twofold serial dilutions between 5 mM and 5 μM as randomized triplicates. Each sample was injected for 30 s with an undisturbed dissociation phase of 20 s and 50 μL/min. No regeneration or washing steps were applied. Five buffer blanks were injected at the beginning and one between the triplicate series. Signals of an untreated flow cell and averaged blank injections were subtracted from the sample sensorgrams. Since referenced sensorgrams showed negative SPR signals, the whole data set was mirrored by multiplication of each data point with –1. Mirrored steady state data were evaluated between 10 and 20 s of the injection period and were fitted to a single site-binding model. Data processing and equilibrium binding constant determinations were accomplished with SCRUBBER software Version 2.",
+            "Figure 3 caption": "Figure 3. (A) Specificity of the binding assay. Comparison of H1-CRD binding of β-D-GalNAc-PAA and β-D-Gal-PAA and the negative controls β-D-Glc-PAA and sLe^a-PAA; (B) effect of EDTA on β-D-GalNAc-PAA binding to H1-CRD.",
+            "Table 1": "Table 1 Affinity data obtained by the competitive binding assay (IC50) and surface plasmon resonance (KD) | Monosaccharides | Competitive binding assay* (human H1) | Surface plasmon resonance (human H1) | Literature data16 (rabbit ASGP-R) | |---|---|---|---| | | IC50 ± SD [μM] | rIC50 | KD ± SD [μM] | rKD | IC50 [μM] | rIC50 | | D-GalNAc | 113 ± 13 | 1 | 150 ± 0.9 | 1 | 90 | 1 | | D-Gal | 1049 ± 101 | 9.3 | 1460 ± 10 | 9.7 | 1700 | 18.9 | | β-D-GalOMe | 1828 ± 169 | 16 | 2200 ± 40 | 14.7 | 1000 | 11.1 | | α-D-GalOMe | 2831 ± 140 | 25 | 2760 ± 60 | 18 | 1600 | 17.8 | | D-Glc | >30,000 | n.d. | >10,000 | n.d. | 60,000 | 667 | IC50 defines the molar concentration of the test compound that reduces the maximal specific binding of D-GalNAc-PAA to H1-CRD by 50%. The relative IC50 (rIC50) is the ratio of the IC50 of the test compound to the IC50 of the reference compound D-GalNAc. SD: standard deviation. Literature data describe the inhibition of 125I-asialoorosomucoid binding to isolated rabbit hepatic lectin.16 * Compounds tested in triplicates, each at six different concentrations. The coefficient of variation, which is defined as the standard deviation divided by the mean, was 13.8% for unspecific binding and 4.8% for specific binding. These results demonstrate the low variability of the assay, making it suitable for the characterization of H1-CRD ligands."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "H1-CRD",
+                "strategy": "Amine coupling",
+                "density_ru": "1800 to 2500",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested in screening, including β-D-GalNAc-PAA, β-D-Gal-PAA, β-D-Glc-PAA, sLe^a-PAA, and monosaccharides (D-GalNAc, D-Gal, β-D-GalOMe, α-D-GalOMe, D-Glc)",
+                "concentration_range": "5 mM to 5 μM (twofold serial dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 30,
+                "dissociation_time_s": 20,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Untreated flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SCRUBBER software Version 2"
+            }
+        }
+    },
+    "50907104": {
+        "reactant_set_id": 50907104,
+        "pmid": 19762243,
+        "protein": "Asialoglycoprotein receptor 1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1460000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant ASGPR1 carbohydrate recognition domain expressed in Escherichia coli AD494 by surface plasmon resonance spectroscopy",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Connolly, D. T.; Townsends, R. R.; Kawaguchi, K.; Bell, W. R.; Lee, Y. C. J. Biol. Chem. 1982, 257, 939.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Experiments (Biacore)": "The analyses were performed on a Biacore 3000 machine (Biacore AB, Uppsala, Sweden) using CM5 chips. After activating the surface of the chip for 5–10 min at a flow rate of 5 μL/min using a standard amine coupling procedure, H1-CRD, diluted in 10 mM acetate buffer pH 4.5 to a final concentration of 20 μg/mL, was injected for 15–15 min and the surface was deactivated for a time corresponding to the activation phase. The obtained surface densities ranged from 1800 to 2500 RUs. HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl) was used as running buffer. The screening of the compounds was performed by the injection of twofold serial dilutions between 5 mM and 5 μM as randomized triplicates. Each sample was injected for 30 s with an undisturbed dissociation phase of 20 s and 50 μL/min. No regeneration or washing steps were applied. Five buffer blanks were injected at the beginning and one between the triplicate series. Signals of an untreated flow cell and averaged blank injections were subtracted from the sample sensorgrams. Since referenced sensorgrams showed negative SPR signals, the whole data set was mirrored by multiplication of each data point with –1. Mirrored steady state data were evaluated between 10 and 20 s of the injection period and were fitted to a single site-binding model. Data processing and equilibrium binding constant determinations were accomplished with SCRUBBER software Version 2.",
+            "Figure 3 caption": "Figure 3. (A) Specificity of the binding assay. Comparison of H1-CRD binding of β-D-GalNAc-PAA and β-D-Gal-PAA and the negative controls β-D-Glc-PAA and sLe^a-PAA; (B) effect of EDTA on β-D-GalNAc-PAA binding to H1-CRD.",
+            "Table 1": "Table 1 Affinity data obtained by the competitive binding assay (IC50) and surface plasmon resonance (KD) | Monosaccharides | Competitive binding assay* (human H1) | Surface plasmon resonance (human H1) | Literature data16 (rabbit ASGP-R) | |---|---|---|---| | | IC50 ± SD [μM] | rIC50 | KD ± SD [μM] | rKD | IC50 [μM] | rIC50 | | D-GalNAc | 113 ± 13 | 1 | 150 ± 0.9 | 1 | 90 | 1 | | D-Gal | 1049 ± 101 | 9.3 | 1460 ± 10 | 9.7 | 1700 | 18.9 | | β-D-GalOMe | 1828 ± 169 | 16 | 2200 ± 40 | 14.7 | 1000 | 11.1 | | α-D-GalOMe | 2831 ± 140 | 25 | 2760 ± 60 | 18 | 1600 | 17.8 | | D-Glc | >30,000 | n.d. | >10,000 | n.d. | 60,000 | 667 | IC50 defines the molar concentration of the test compound that reduces the maximal specific binding of D-GalNAc-PAA to H1-CRD by 50%. The relative IC50 (rIC50) is the ratio of the IC50 of the test compound to the IC50 of the reference compound D-GalNAc. SD: standard deviation. Literature data describe the inhibition of 125I-asialoorosomucoid binding to isolated rabbit hepatic lectin.16 * Compounds tested in triplicates, each at six different concentrations. The coefficient of variation, which is defined as the standard deviation divided by the mean, was 13.8% for unspecific binding and 4.8% for specific binding. These results demonstrate the low variability of the assay, making it suitable for the characterization of H1-CRD ligands."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "H1-CRD",
+                "strategy": "Amine coupling",
+                "density_ru": "1800 to 2500",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested in screening, including β-D-GalNAc-PAA, β-D-Gal-PAA, β-D-Glc-PAA, sLe^a-PAA, and monosaccharides (D-GalNAc, D-Gal, β-D-GalOMe, α-D-GalOMe, D-Glc)",
+                "concentration_range": "5 mM to 5 μM (twofold serial dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 30,
+                "dissociation_time_s": 20,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Untreated flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SCRUBBER software Version 2"
+            }
+        }
+    },
+    "50907106": {
+        "reactant_set_id": 50907106,
+        "pmid": 19762243,
+        "protein": "Asialoglycoprotein receptor 1",
+        "ligand": {
+            "smiles": "COC[C@H]1O[C@@H](OC)[C@H](OC)[C@@H](OC)[C@H]1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2200000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant ASGPR1 carbohydrate recognition domain expressed in Escherichia coli AD494 by surface plasmon resonance spectroscopy",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Connolly, D. T.; Townsends, R. R.; Kawaguchi, K.; Bell, W. R.; Lee, Y. C. J. Biol. Chem. 1982, 257, 939.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Experiments (Biacore)": "The analyses were performed on a Biacore 3000 machine (Biacore AB, Uppsala, Sweden) using CM5 chips. After activating the surface of the chip for 5–10 min at a flow rate of 5 μL/min using a standard amine coupling procedure, H1-CRD, diluted in 10 mM acetate buffer pH 4.5 to a final concentration of 20 μg/mL, was injected for 15–15 min and the surface was deactivated for a time corresponding to the activation phase. The obtained surface densities ranged from 1800 to 2500 RUs. HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl) was used as running buffer. The screening of the compounds was performed by the injection of twofold serial dilutions between 5 mM and 5 μM as randomized triplicates. Each sample was injected for 30 s with an undisturbed dissociation phase of 20 s and 50 μL/min. No regeneration or washing steps were applied. Five buffer blanks were injected at the beginning and one between the triplicate series. Signals of an untreated flow cell and averaged blank injections were subtracted from the sample sensorgrams. Since referenced sensorgrams showed negative SPR signals, the whole data set was mirrored by multiplication of each data point with –1. Mirrored steady state data were evaluated between 10 and 20 s of the injection period and were fitted to a single site-binding model. Data processing and equilibrium binding constant determinations were accomplished with SCRUBBER software Version 2.",
+            "Figure 3 caption": "Figure 3. (A) Specificity of the binding assay. Comparison of H1-CRD binding of β-D-GalNAc-PAA and β-D-Gal-PAA and the negative controls β-D-Glc-PAA and sLe^a-PAA; (B) effect of EDTA on β-D-GalNAc-PAA binding to H1-CRD.",
+            "Table 1": "Table 1 Affinity data obtained by the competitive binding assay (IC50) and surface plasmon resonance (KD) | Monosaccharides | Competitive binding assay* (human H1) | Surface plasmon resonance (human H1) | Literature data16 (rabbit ASGP-R) | |---|---|---|---| | | IC50 ± SD [μM] | rIC50 | KD ± SD [μM] | rKD | IC50 [μM] | rIC50 | | D-GalNAc | 113 ± 13 | 1 | 150 ± 0.9 | 1 | 90 | 1 | | D-Gal | 1049 ± 101 | 9.3 | 1460 ± 10 | 9.7 | 1700 | 18.9 | | β-D-GalOMe | 1828 ± 169 | 16 | 2200 ± 40 | 14.7 | 1000 | 11.1 | | α-D-GalOMe | 2831 ± 140 | 25 | 2760 ± 60 | 18 | 1600 | 17.8 | | D-Glc | >30,000 | n.d. | >10,000 | n.d. | 60,000 | 667 | IC50 defines the molar concentration of the test compound that reduces the maximal specific binding of D-GalNAc-PAA to H1-CRD by 50%. The relative IC50 (rIC50) is the ratio of the IC50 of the test compound to the IC50 of the reference compound D-GalNAc. SD: standard deviation. Literature data describe the inhibition of 125I-asialoorosomucoid binding to isolated rabbit hepatic lectin.16 * Compounds tested in triplicates, each at six different concentrations. The coefficient of variation, which is defined as the standard deviation divided by the mean, was 13.8% for unspecific binding and 4.8% for specific binding. These results demonstrate the low variability of the assay, making it suitable for the characterization of H1-CRD ligands."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "H1-CRD",
+                "strategy": "Amine coupling",
+                "density_ru": "1800 to 2500",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested in screening, including β-D-GalNAc-PAA, β-D-Gal-PAA, β-D-Glc-PAA, sLe^a-PAA, and monosaccharides (D-GalNAc, D-Gal, β-D-GalOMe, α-D-GalOMe, D-Glc)",
+                "concentration_range": "5 mM to 5 μM (twofold serial dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 30,
+                "dissociation_time_s": 20,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Untreated flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SCRUBBER software Version 2"
+            }
+        }
+    },
+    "50907107": {
+        "reactant_set_id": 50907107,
+        "pmid": 19762243,
+        "protein": "Asialoglycoprotein receptor 1",
+        "ligand": {
+            "smiles": "COC[C@H]1O[C@H](OC)[C@H](OC)[C@@H](OC)[C@H]1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2760000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant ASGPR1 carbohydrate recognition domain expressed in Escherichia coli AD494 by surface plasmon resonance spectroscopy",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Connolly, D. T.; Townsends, R. R.; Kawaguchi, K.; Bell, W. R.; Lee, Y. C. J. Biol. Chem. 1982, 257, 939.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Experiments (Biacore)": "The analyses were performed on a Biacore 3000 machine (Biacore AB, Uppsala, Sweden) using CM5 chips. After activating the surface of the chip for 5–10 min at a flow rate of 5 μL/min using a standard amine coupling procedure, H1-CRD, diluted in 10 mM acetate buffer pH 4.5 to a final concentration of 20 μg/mL, was injected for 15–15 min and the surface was deactivated for a time corresponding to the activation phase. The obtained surface densities ranged from 1800 to 2500 RUs. HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl) was used as running buffer. The screening of the compounds was performed by the injection of twofold serial dilutions between 5 mM and 5 μM as randomized triplicates. Each sample was injected for 30 s with an undisturbed dissociation phase of 20 s and 50 μL/min. No regeneration or washing steps were applied. Five buffer blanks were injected at the beginning and one between the triplicate series. Signals of an untreated flow cell and averaged blank injections were subtracted from the sample sensorgrams. Since referenced sensorgrams showed negative SPR signals, the whole data set was mirrored by multiplication of each data point with –1. Mirrored steady state data were evaluated between 10 and 20 s of the injection period and were fitted to a single site-binding model. Data processing and equilibrium binding constant determinations were accomplished with SCRUBBER software Version 2.",
+            "Figure 3 caption": "Figure 3. (A) Specificity of the binding assay. Comparison of H1-CRD binding of β-D-GalNAc-PAA and β-D-Gal-PAA and the negative controls β-D-Glc-PAA and sLe^a-PAA; (B) effect of EDTA on β-D-GalNAc-PAA binding to H1-CRD.",
+            "Table 1": "Table 1 Affinity data obtained by the competitive binding assay (IC50) and surface plasmon resonance (KD) | Monosaccharides | Competitive binding assay* (human H1) | Surface plasmon resonance (human H1) | Literature data16 (rabbit ASGP-R) | |---|---|---|---| | | IC50 ± SD [μM] | rIC50 | KD ± SD [μM] | rKD | IC50 [μM] | rIC50 | | D-GalNAc | 113 ± 13 | 1 | 150 ± 0.9 | 1 | 90 | 1 | | D-Gal | 1049 ± 101 | 9.3 | 1460 ± 10 | 9.7 | 1700 | 18.9 | | β-D-GalOMe | 1828 ± 169 | 16 | 2200 ± 40 | 14.7 | 1000 | 11.1 | | α-D-GalOMe | 2831 ± 140 | 25 | 2760 ± 60 | 18 | 1600 | 17.8 | | D-Glc | >30,000 | n.d. | >10,000 | n.d. | 60,000 | 667 | IC50 defines the molar concentration of the test compound that reduces the maximal specific binding of D-GalNAc-PAA to H1-CRD by 50%. The relative IC50 (rIC50) is the ratio of the IC50 of the test compound to the IC50 of the reference compound D-GalNAc. SD: standard deviation. Literature data describe the inhibition of 125I-asialoorosomucoid binding to isolated rabbit hepatic lectin.16 * Compounds tested in triplicates, each at six different concentrations. The coefficient of variation, which is defined as the standard deviation divided by the mean, was 13.8% for unspecific binding and 4.8% for specific binding. These results demonstrate the low variability of the assay, making it suitable for the characterization of H1-CRD ligands."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "H1-CRD",
+                "strategy": "Amine coupling",
+                "density_ru": "1800 to 2500",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested in screening, including β-D-GalNAc-PAA, β-D-Gal-PAA, β-D-Glc-PAA, sLe^a-PAA, and monosaccharides (D-GalNAc, D-Gal, β-D-GalOMe, α-D-GalOMe, D-Glc)",
+                "concentration_range": "5 mM to 5 μM (twofold serial dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 30,
+                "dissociation_time_s": 20,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Untreated flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SCRUBBER software Version 2"
+            }
+        }
+    },
+    "50907111": {
+        "reactant_set_id": 50907111,
+        "pmid": 19762243,
+        "protein": "Asialoglycoprotein receptor 1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant ASGPR1 carbohydrate recognition domain expressed in Escherichia coli AD494 by surface plasmon resonance spectroscopy",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "16. Connolly, D. T.; Townsends, R. R.; Kawaguchi, K.; Bell, W. R.; Lee, Y. C. J. Biol. Chem. 1982, 257, 939.",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Experiments (Biacore)": "The analyses were performed on a Biacore 3000 machine (Biacore AB, Uppsala, Sweden) using CM5 chips. After activating the surface of the chip for 5–10 min at a flow rate of 5 μL/min using a standard amine coupling procedure, H1-CRD, diluted in 10 mM acetate buffer pH 4.5 to a final concentration of 20 μg/mL, was injected for 15–15 min and the surface was deactivated for a time corresponding to the activation phase. The obtained surface densities ranged from 1800 to 2500 RUs. HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl) was used as running buffer. The screening of the compounds was performed by the injection of twofold serial dilutions between 5 mM and 5 μM as randomized triplicates. Each sample was injected for 30 s with an undisturbed dissociation phase of 20 s and 50 μL/min. No regeneration or washing steps were applied. Five buffer blanks were injected at the beginning and one between the triplicate series. Signals of an untreated flow cell and averaged blank injections were subtracted from the sample sensorgrams. Since referenced sensorgrams showed negative SPR signals, the whole data set was mirrored by multiplication of each data point with –1. Mirrored steady state data were evaluated between 10 and 20 s of the injection period and were fitted to a single site-binding model. Data processing and equilibrium binding constant determinations were accomplished with SCRUBBER software Version 2.",
+            "Figure 3 caption": "Figure 3. (A) Specificity of the binding assay. Comparison of H1-CRD binding of β-D-GalNAc-PAA and β-D-Gal-PAA and the negative controls β-D-Glc-PAA and sLe^a-PAA; (B) effect of EDTA on β-D-GalNAc-PAA binding to H1-CRD.",
+            "Table 1": "Table 1 Affinity data obtained by the competitive binding assay (IC50) and surface plasmon resonance (KD) | Monosaccharides | Competitive binding assay* (human H1) | Surface plasmon resonance (human H1) | Literature data16 (rabbit ASGP-R) | |---|---|---|---| | | IC50 ± SD [μM] | rIC50 | KD ± SD [μM] | rKD | IC50 [μM] | rIC50 | | D-GalNAc | 113 ± 13 | 1 | 150 ± 0.9 | 1 | 90 | 1 | | D-Gal | 1049 ± 101 | 9.3 | 1460 ± 10 | 9.7 | 1700 | 18.9 | | β-D-GalOMe | 1828 ± 169 | 16 | 2200 ± 40 | 14.7 | 1000 | 11.1 | | α-D-GalOMe | 2831 ± 140 | 25 | 2760 ± 60 | 18 | 1600 | 17.8 | | D-Glc | >30,000 | n.d. | >10,000 | n.d. | 60,000 | 667 | IC50 defines the molar concentration of the test compound that reduces the maximal specific binding of D-GalNAc-PAA to H1-CRD by 50%. The relative IC50 (rIC50) is the ratio of the IC50 of the test compound to the IC50 of the reference compound D-GalNAc. SD: standard deviation. Literature data describe the inhibition of 125I-asialoorosomucoid binding to isolated rabbit hepatic lectin.16 * Compounds tested in triplicates, each at six different concentrations. The coefficient of variation, which is defined as the standard deviation divided by the mean, was 13.8% for unspecific binding and 4.8% for specific binding. These results demonstrate the low variability of the assay, making it suitable for the characterization of H1-CRD ligands."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "H1-CRD",
+                "strategy": "Amine coupling",
+                "density_ru": "1800 to 2500",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds tested in screening, including β-D-GalNAc-PAA, β-D-Gal-PAA, β-D-Glc-PAA, sLe^a-PAA, and monosaccharides (D-GalNAc, D-Gal, β-D-GalOMe, α-D-GalOMe, D-Glc)",
+                "concentration_range": "5 mM to 5 μM (twofold serial dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-N buffer (10 mM HEPES pH 7.4, 50 mM NaCl)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 30,
+                "dissociation_time_s": 20,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Untreated flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "SCRUBBER software Version 2"
+            }
+        }
+    }
+}

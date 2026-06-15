@@ -1,0 +1,66 @@
+{
+    "51572311": {
+        "reactant_set_id": 51572311,
+        "pmid": 36786612,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "Cc1cccc2c3C(=O)C(=O)c4c5CCN(CCCN6CCOCC6)Cc5oc4-c3ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5870.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CMS sensor chip immobilized His-SUMO-tagged mouse NLRP3 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance Assay. Series S Sensor Chip CMS and Zeba Spin Desalting Columns were prepared before the experiment. The SPR assay was applied with a Biacore T200 instrument (BIAcore T200, GE Healthcare, USA). NLRP3 protein (HY-P71598, MCE, USA) was immobilized on a CMS sensor chip, and a blank channel was employed as a negative control for each assay. A concentration of 100 μM 5j was used for the primary screening. Then, 0.488–31.25 μM of 5j were diluted with the running buffer and flowed through the chip. The KD value was calculated with a steady affinity state model by BIAcore T200 analysis software.",
+            "Figure 6 caption": "Figure 6. Mechanistic studies. (A) Exploration of the expression of ASC, NLRP3, pro-caspase-1, and pro-IL-1β in LPS/ATP-induced PMs upon treatment of 5j, 12a, 12d, and MCC950. (B) Immunofluorescence assay for detecting ASC oligomerization, and ASC oligomerizations were signed with a white arrow. Scale bars, 100 μm (panel) and 25 μm (inset). (C) SPR to determine the binding affinity (KD value) of the NLRP3 protein with compound 5j. (D) CETSA of the NLRP3 protein with compound 5j.",
+            "Figure 6C": "The result showed that compound 5j exhibited a significant affinity with NLRP3 protein (KD = 5.87 μM, Figure 6C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "His-SUMO-tagged mouse NLRP3",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 5j",
+                "concentration_range": "0.488–31.25 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "blank channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 analysis software"
+            }
+        }
+    }
+}

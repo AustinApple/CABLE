@@ -1,0 +1,63 @@
+{
+    "51623846": {
+        "reactant_set_id": 51623846,
+        "pmid": 34154424,
+        "protein": "Histone-lysine N-methyltransferase SMYD3",
+        "ligand": {
+            "smiles": "C[C@H]1CC(=O)Nc2cc(C(=O)NCCC3CC3)ccc2N1C(=O)N1CC2CC2C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 133.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human SMYD3 expressed in Escherichia coli assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Eight injections of 4 μL each in 180 s intervals were performed. The heat production appears during the first few injections. In the syringe were 20 mM HEPES (pH 7.4), 150 mM NaCl, and 0.005% Tween 20, 0.3 mM compound concentration and 2.5% DMSO concentration.",
+            "Figure 6 caption": "Figure 6. Characterization of BAY-6035. Confirmation of binding activity by (A) ITC assay and (B) SPR. (A) ITC of BAY-6035 indicating a submicromolar binding constant (Kd = 133 nM) and a high enthalpic contribution to the binding energy. (B) SPR analysis of BAY-6035 binding to SMYD3 in the presence of SAM (50 μM). A representative sensogram (solid green) is shown with the kinetic fit (black dots). The steady-state response (black circles) is shown with the steady state being 1:1. (C) Mode of action analysis of BAY-6035. IC50 values were determined for compound BAY-6035 at varying concentrations of 3H-SAM (up to 3.5 μM) and a fixed peptide MAP3K2 (249–273) concentration (50 μM), or at varying concentrations of substrate MAP3K2 (up to 150 μM) and a fixed SAM concentration (3.5 μM). The experiments were performed in triplicate. (D) Selectivity profiling with a set of methyltransferase enzymes.",
+            "Figure 6A text": "Kd = 133 ± 46 nM n = 0.8 ΔH (kcal/mol) = -4.2 ΔS (cal/mol·K) = 17",
+            "Figure 6A text (binding isotherm)": "Normalized Fit (kcal/mol) 0.0 -2.0 -4.0 -6.0 0.0 0.5 1.0 1.5 2.0 2.5 Mole Ratio",
+            "Figure 6B text (kinetic fitting)": "From kinetic fitting: Kd: 97 ± 5 nM kon: 3.1 ± 0.3 × 10^5 M^-1 s^-1 koff: 3.0 ± 0.2 × 10^-2 s^-1"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": null
+            },
+            "protein": {
+                "name": "recombinant human SMYD3",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "BAY-6035",
+                "location": "syringe",
+                "concentration": "300"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 150 mM NaCl, 0.005% Tween 20",
+                "pH": "7.4",
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "8"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

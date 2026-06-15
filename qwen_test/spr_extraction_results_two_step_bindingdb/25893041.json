@@ -1,0 +1,128 @@
+{
+    "50342033": {
+        "reactant_set_id": 50342033,
+        "pmid": 25893041,
+        "protein": "Methylosome protein 50/Protein arginine N-methyltransferase 5",
+        "ligand": {
+            "smiles": "CCNC(=O)NCCSC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human full length PRMT5-MEP50 complex by Surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C. Human full-length PRMT5-MEP50 complex was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization level was approximately 1000 response units (RU). DS-437 was diluted in HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20) and injected at concentrations ranging from 0.1 to 100 μM at a flow rate of 30 μL/min. The association phase lasted 120 s, followed by a 120 s dissociation phase. Regeneration was achieved with 10 mM glycine-HCl, pH 2.0, for 30 s. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. Inhibition profile of DS-437. (A) DS-437 inhibits the PRMT5–MEP50 complex with an IC50 of 5.9 ± 1.4 μM. (B) Out of 31 human methyltransferases tested, DS-437 also significantly inhibited PRMT7, with an IC50 of 6 ± 0.5 μM (C).",
+            "Supporting Information S3": "Supplementary Figure 3. Surface plasmon resonance (SPR) analysis of DS-437 binding to human full-length PRMT5-MEP50 complex. Sensorgrams show the binding response at different concentrations of DS-437 (0.1, 0.3, 1, 3, 10, 30, 100 μM). The association phase is 120 s, and the dissociation phase is 120 s. The KD value was calculated to be 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Human full-length PRMT5-MEP50 complex",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DS-437",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50342034": {
+        "reactant_set_id": 50342034,
+        "pmid": 25893041,
+        "protein": "Protein arginine N-methyltransferase 7",
+        "ligand": {
+            "smiles": "CCNC(=O)NCCSC[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 37000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human full length PRMT7 by Surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "The compound was able to inhibit methylation of an H2B[23–37] substrate by PRMT7 in a dose-dependent manner, with an IC50 value of 6.0 ± 0.5 μM (Figure 2C). Reflecting similarities in IC50 values, DS-437 had similar binding affinities for PRMT5–MEP50 and PRMT7 as measured by surface plasmon resonance (KD values of 25 and 37 μM, respectively, Supplementary Figure 3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DS-437",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

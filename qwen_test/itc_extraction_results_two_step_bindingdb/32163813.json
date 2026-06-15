@@ -1,0 +1,61 @@
+{
+    "51364756": {
+        "reactant_set_id": 51364756,
+        "pmid": 32163813,
+        "protein": "NAD-dependent protein deacylase sirtuin-5, mitochondrial",
+        "ligand": {
+            "smiles": "CC(C)c1ccccc1Cc1cc(C(=O)Nc2ccc(cc2)S(=O)(=O)c2ccccc2C(C)(C)C)c(O)c(O)c1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4630.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human N-terminal His-tagged SIRT5 (34 to 302 residues) expressed in Escherichia coli at 600 uM by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "O. Trott, A.J. Olson, AutoDock Vina: Improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading, J. Comput. Chem. 31 (2010) 455–461.",
+        "original_paragraph": {
+            "Materials and Methods - ITC analysis": "The ITC analysis was carried out using a MicroCal ITC200 calorimeter (Malvern Panalytical) at 25 °C. Compound TW-37 (600 μM) was titrated with SIRT5 (60 μM) using a buffer of 20 mM Tris, 150 mM NaCl, pH 8.0, and 5% glycerol. The test system was equilibrated until the cell temperature reached 25 °C, and an additional delay of 60 s was applied. All titrations were conducted using a preliminary injection of 0.5 μL of 600 μM TW-37 and then a series of 18 individual injections of 2 μL at time intervals of 150 s. The titration cell was stirred continuously at 750 rpm and the reference power was 5 μcal/sec. The obtained curves were fitted to a single binding site model by the ITC data analysis module.",
+            "Figure 5 caption": "Fig. 5. The Bcl-2 inhibitor TW-37 shows inhibitory activity to SIRT5. (a) Chemical structure of TW-37 and reported potencies to the Bcl-2 family members. (b) The IC50 curves of TW-37 inhibiting SIRT5 determined by using P13, P15 and P16. (c) The ITC analyses reveal that the binding of TW-37 to SIRT5 is likely driven by enthalpy with a binding affinity of 4.63 μM.",
+            "Results - ITC analysis": "To further investigate the binding of TW37 to SIRT5, we determined the binding constants and thermodynamic parameters (e.g. enthalpy/entropy contributions) by using isothermal titration calorimetry (ITC) analysis. The obtained curve of molar ratio to thermal effects are shown in Fig. 5c. The equilibrium dissociation constant Kd of the binding of TW-37 with SIRT5 was 2.16 × 10^5 ± 5.86 × 10^4 M−1 (Fig. 5c), and the calculated binding affinity Kd (1/Kd) was 4.63 μM (Fig. 5c). The ITC analysis revealed that the enthalpy change (ΔH) of TW-37 binding to SIRT5 was −16.26 ± 0.81 kJ mol−1, the entropy change (−T·ΔS) was −14.21 kJ mol−1, and the calculated binding free energy ΔG (ΔH − T·ΔS) was −30.47 ± 0.81 kJ mol−1 (Fig. 5c). Because of |ΔH| > |−T·ΔS|, the binding of TW-37 to SIRT5 was likely driven by enthalpy. In addition, the possible binding mode of TW-37 with SIRT5 predicted by using Autodock Vina program [37] indicated that it may bind to occupy the NAD+ and acyl-lysine binding pocket (Fig. S17). These results further validated the usefulness of sensitive substrates in inhibitor screening, and may also provide useful information for the development of SIRT5 inhibitors."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "SIRT5",
+                "location": "cell",
+                "concentration": "60",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "TW-37",
+                "location": "syringe",
+                "concentration": "600"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris, 150 mM NaCl, 5% glycerol",
+                "pH": "8.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.5",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

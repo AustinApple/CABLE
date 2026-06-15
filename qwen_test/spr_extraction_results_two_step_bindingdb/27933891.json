@@ -1,0 +1,67 @@
+{
+    "51382285": {
+        "reactant_set_id": 51382285,
+        "pmid": 27933891,
+        "protein": "LanC-like protein 2",
+        "ligand": {
+            "smiles": "O=C(N1CCN(CC1)C(=O)c1cccc(n1)-c1nc2ccccc2[nH]1)c1cccc(n1)-c1nc2ccccc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to LANCL2 (unknown origin) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Studies": "Surface Plasmon Resonance Studies. Direct binding between LANCL2 proteins and the analogues was measured by SPR on a Biacore T-200 instrument. Experiments were performed at the Biacore Molecular Interactions Shared Resource of Georgetown University, Washington, DC. All experiments were done at 25 °C. LANCL2 was immobilized on a CM4 chip by an amine coupling method (~4000 RU). MOPS (25 mM MOPS, 150 mM NaCl, 1% DMSO, and 0.05% Tween 20, pH 6.5) buffer was used the running buffer. For example, 7 was injected over the protein-coated surface at 5 different concentrations (0, 1.25, 2.5, 5.0, 10, 20 μM) in triplicate. Each injection was 60 s with 300 s stabilization time. The experiment did not require any regeneration buffer. Double reference subtraction was performed by using an empty reference flow cell and buffer only injections over protein-coated surfaces. Data analysis was done by using steady state affinity model in BioEvaluation software.",
+            "Figure 1 caption": "Figure 1. Analogue 7 binds to LANCL2 and engages the anti-inflammatory pathway driven by cAMP. (A) Cartoon representation of the LANCL2 pathway, which upon binding activates adenylyl cyclase (AC), following cAMP, CREB, and PKA activation. (B) SPR sensorgrams, analogue 7 was injected over LANCL2-coated surfaces at five different concentrations in triplicate. (C) Curve fitting of binding versus concentration of 7 to determine K_D.",
+            "Figure 1C plot": "K_D: 7.7 μM",
+            "Figure 1B plot": "Time (s) from 0 to 70, Binding (RU) from 0 to 25. Sensorgrams show binding response over time for different concentrations of analogue 7."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T-200"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "LANCL2",
+                "strategy": "Amine coupling",
+                "density_ru": "4000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Analogue 7",
+                "concentration_range": "0, 1.25, 2.5, 5.0, 10, 20 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "25 mM MOPS, 150 mM NaCl, 1% DMSO, 0.05% Tween 20, pH 6.5",
+                "pH": 6.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty reference flow cell and buffer only injections over protein-coated surfaces",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "BioEvaluation"
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "51030318": {
+        "reactant_set_id": 51030318,
+        "pmid": 29407955,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](CO)NC(=O)CNC(=O)CNC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(C)=O)[C@@H](C)O)C(=O)N[C@@H](CC(O)=O)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 23.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Keap1 (322 to 609 residues) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 39: M.-C. Lu, S.-J. Tan, J.-A. Ji, Z.-Y. Chen, Z.-W. Yuan, Q.-D. You, Z.-Y. Jiang, Polar recognition group study of Keap1-Nrf2 protein–protein interaction inhibitors, ACS Med. Chem. Lett. 7 (2016) 835–840. Reference 40: M.-C. Lu, J.-A. Ji, Z.-Y. Jiang, Z.-Y. Chen, Z.-W. Yuan, Q.-D. You, Z.-Y. Jiang, An inhibitor of the Keap1-Nrf2 protein-protein interaction protects NCM460 colonic cells and alleviates experimental colitis, Sci. Rep. 6 (2016) 26585.",
+        "original_paragraph": {
+            "Materials and Methods - 4.3. Isothermal titration calorimetry": "The Isothermal titration calorimetry (ITC) was performed at 25 °C with the ITC200 system (MicroCal). The Keap1 Kelch domain and the Tau protein were lyophilized. Both the protein samples and the peptide PROTAC were dissolved in 10 mM HEPES buffer (pH 7.4). 2 μL aliquots of 0.05 mM peptide were injected 19 times at 2.5 min intervals from a stirring syringe (750 rpm) into the sample cell containing 220 μL of 0.005 mM Keap1 Kelch domain or 0.005 mM Tau protein. The data were analyzed with the computer program Origin, version 7.0, supplied by MicroCal.",
+            "Figure 3 caption": "Fig. 3. The measured affinities of ITC assay between peptide 1 and Keap1 or Tau. (A) ITC titration profile of Keap1 Kelch domain with peptide 1. (B) ITC titration profile of Tau with peptide 1.",
+            "Table 1 - Thermodynamic parameters of the interactions between Peptide 1 and Keap1 or Tau determined by ITC Assay": "Protein N Kd (nM) ΔH (kcal·mol-1) TΔS (kcal·mol-1) ΔG (kcal·mol-1) Keap1 1.1 ± 0.01 22.8 -7.36 3.07 -10.43 Tau 1.0 ± 0.05 763 -9.71 -1.36 -8.35 *N is the stoichiometric coefficient. Kd is the binding constant. ΔH, ΔS and ΔG refer to the changes in binding enthalpy, entropy and total Gibbs free energy, respectively. ΔG is calculated according to the equation ΔG = ΔH - TΔS, with T the absolute temperature set up for the ITC experiment.",
+            "Results and Discussion - 2.2. Peptide 1 can interact with Keap1 and Tau": "Firstly, the isothermal titration calorimetry (ITC) assay was carried out to assess whether peptide 1 retained its binding affinity to Keap1 [39,40] and Tau. As shown in Fig. 3, peptide 1 retained its strong binding to Keap1 with a Kd value of 22.8 nM, and to the target protein Tau with a Kd value of 763 nM, suggesting that peptide 1 can induce the formation of a ternary complex comprising E3 ligase and POI."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "Keap1 Kelch domain or Tau protein",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": "220"
+            },
+            "ligand": {
+                "name": "peptide 1",
+                "location": "syringe",
+                "concentration": "50"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51030319": {
+        "reactant_set_id": 51030319,
+        "pmid": 29407955,
+        "protein": "Microtubule-associated protein tau",
+        "ligand": {
+            "smiles": "CC(C)C[C@H](NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](CO)NC(=O)CNC(=O)CNC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](Cc1ccc(O)cc1)NC(C)=O)[C@@H](C)O)C(=O)N[C@@H](CC(O)=O)C(=O)N1CCC[C@H]1C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(=O)N[C@H](CCCNC(N)=N)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 763.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human Tau (1 to 441 residues) by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 39: M.-C. Lu, S.-J. Tan, J.-A. Ji, Z.-Y. Chen, Z.-W. Yuan, Q.-D. You, Z.-Y. Jiang, Polar recognition group study of Keap1-Nrf2 protein–protein interaction inhibitors, ACS Med. Chem. Lett. 7 (2016) 835–840. Reference 40: M.-C. Lu, J.-A. Ji, Z.-Y. Jiang, Z.-Y. Chen, Z.-W. Yuan, Q.-D. You, Z.-Y. Jiang, An inhibitor of the Keap1-Nrf2 protein-protein interactions NCMA460 colonic cells and alleviates experimental colitis, Sci. Rep. 6 (2016) 26585.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal titration calorimetry": "The Isothermal titration calorimetry (ITC) was performed at 25 °C with the ITC200 system (MicroCal). The Keap1 Kelch domain and the Tau protein were lyophilized. Both the protein samples and the peptide PROTAC were dissolved in 10 mM HEPES buffer (pH 7.4). 2 μL aliquots of 0.05 mM peptide were injected 19 times at 2.5 min intervals from a stirring syringe (750 rpm) into the sample cell containing 220 μL of 0.005 mM Keap1 Kelch domain or 0.005 mM Tau protein. The data were analyzed with the computer program Origin, version 7.0, supplied by MicroCal.",
+            "Figure 3 caption": "Fig. 3. The measured affinities of ITC assay between peptide 1 and Keap1 or Tau. (A) ITC titration profile of Keap1 Kelch domain with peptide 1. (B) ITC titration profile of Tau with peptide 1.",
+            "Table 1 - Thermodynamic parameters of the interactions between Peptide 1 and Keap1 or Tau determined by ITC Assay": "Protein N Kd (nM) ΔH (kcal·mol-1) TΔS (kcal·mol-1) ΔG (kcal·mol-1) Keap1 1.1 ± 0.01 22.8 -7.36 3.07 -10.43 Tau 1.0 ± 0.05 763 -9.71 -1.36 -8.35 *N is the stoichiometric coefficient. Kd is the binding constant. ΔH, ΔS and ΔG refer to the changes in binding enthalpy, entropy and total Gibbs free energy, respectively. ΔG is calculated according to the equation ΔG = ΔH - TΔS, with T the absolute temperature set up for the ITC experiment.",
+            "Results and Discussion - 2.2. Peptide 1 can interact with Keap1 and Tau": "Firstly, the isothermal titration calorimetry (ITC) assay was carried out to assess whether peptide 1 retained its binding affinity to Keap1 [39,40] and Tau. As shown in Fig. 3, peptide 1 retained its strong binding to Keap1 with a Kd value of 22.8 nM, and to the target protein Tau with a Kd value of 763 nM, suggesting that peptide 1 can induce the formation of a ternary complex comprising E3 ligase and POI."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "Tau (1 to 441 residues)",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": "220"
+            },
+            "ligand": {
+                "name": "peptide 1",
+                "location": "syringe",
+                "concentration": "50"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

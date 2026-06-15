@@ -1,0 +1,61 @@
+{
+    "51491870": {
+        "reactant_set_id": 51491870,
+        "pmid": 36105334,
+        "protein": "Bromodomain adjacent to zinc finger domain protein 2A",
+        "ligand": {
+            "smiles": "CCc1c([nH]c(C)c1C(C)=O)-c1csc(n1)N1CCNCC1C(=O)NCCc1ccno1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7070.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His6-tagged BAZ2A (unknown origin) (1796 to 1899 residues) by isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 8: Spiliotopoulos, D.; Wamhoff, E. C.; Lolli, G.; Rademacher, C.; Caflisch, A. Discovery of BAZ2A bromodomain ligands. Eur. J. Med. Chem. 2017, 139, 564–572. Reference 11: Dalle Vedove, A.; Spiliotopoulos, D.; D’Agostino, V. G.; Marchand, J. R.; Unzue, A.; Nevado, C.; Lolli, G.; Caflisch, A. Structural Analysis of Small-Molecule Binding to the BAZ2A and BAZ2B Bromodomains. ChemMedChem. 2018, 13, 1479–1487. Reference 17: Dalle Vedove, A.; Cazzanelli, G.; Corsi, J.; Sedykh, M.; D’Agostino, V. G.; Caflisch, A.; Lolli, G. Identification of a BAZ2A bromodomain hit compound by fragment joining. ACS Bio & Med. Chem. Au 2021, 1, 5–10.",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical) at 25 °C. The BAZ2A protein (1796–1899) was dialyzed against 20 mM HEPES, 100 mM NaCl, 1 mM DTT, pH 7.5, and concentrated to 100 μM. The compound was dissolved in DMSO and diluted in the same buffer to a final concentration of 1.5 mM. The protein was loaded into the sample cell (200 μL), and the compound was loaded into the syringe (250 μL). The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (MicroCal) with a one-site binding model. The binding isotherm was fitted to the equation: Q = (n * ΔH * [L] * [P]) / (Kd + [L]), where Q is the heat of injection, n is the stoichiometry, ΔH is the enthalpy change, [L] is the ligand concentration, [P] is the protein concentration, and Kd is the dissociation constant. The experiments were performed in triplicate, and the data are presented as mean ± SD.",
+            "Figure 5 caption": "Figure 5. (a) Tails of compounds 111 and 113 provide additional contacts with Leu1826 and Val1827. (b) Compounds 104 and 109 form a hydrogen bond with the Asn1823 main chain. (c) An intramolecular stacking is observed in 104, as similarly obtained with BAZ2-ICR (PDB 7BL8) and the triazole compound 21 of ref 16. (d) ITC titration for compound 104 showing an enthalpically driven binding restricted to a single enantiomer. (e, f) Compound 104’s tail is oriented differently with respect to those of previously developed acetylpyrrole inhibitors directed against BRD4 (e) and CREBBP (f).",
+            "Results section": "The thermodynamic parameters for compound 104 binding to the BAZ2A bromodomain were finally characterized by isothermal titration calorimetry (ITC). ITC confirmed the observed enantioselectivity showing that the active fraction is about half of the racemic mixture (Figure 5d). The equilibrium dissociation constant (Kd) of 7.1 μM is in good agreement with the IC50 of 4.0 μM measured by AlphaScreen. The presence of 0.25% DMSO in the ITC experiment leads to a slightly less favorable Kd value as DMSO competes for binding to the conserved Asn. Binding is dominated by a relevant enthalpic contribution partially counteracted by an entropic penalty in accordance with the various interactions observed in the crystal structure combined with the freezing of the ethyl-isoxazole tail. Finally, 104 shows good selectivity over the closely related BAZ2B bromodomain, and the highest achieved so far, with an IC50 of 33.5 μM, as determined by AlphaScreen (Figure S6). As compared with previous screening campaigns,8,11,17 such selectivity was obtained in the context of a reasonable LE and optimal log P, D, and LLE."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "BAZ2A (1796–1899)",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 104",
+                "location": "syringe",
+                "concentration": "1500"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

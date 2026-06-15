@@ -1,0 +1,66 @@
+{
+    "51420463": {
+        "reactant_set_id": 51420463,
+        "pmid": 34371464,
+        "protein": "Baculoviral IAP repeat-containing protein 5",
+        "ligand": {
+            "smiles": "Oc1c(CN2CCCCC2)cc(Cn2ncc(n2)-c2ccc(cc2)C(F)(F)F)c2cccnc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4270.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human survivin expressed in Escherichia coli BL21 assessed as dissociation constant measured by Surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) for to measure binding affinity of 12b for survivin": "The binding affinity of survivin was analyzed using SPR technology using a PlexArray HT system equipped with a bare gold-coated (thickness 47 nm) PlexArray® Nanocapture® Sensor Chip (Plexera Bioscience, Woodinville, WA). Biotin bioprinting was used to manually print recombinant biotinylated survivin protein (in water) at various concentrations onto the sensor chip at 40 % humidity via avidin-biotin conjugation. Each spot contained 0.2 μL of 12b solution and each concentration was printed in triplicate. The chip was incubated overnight at 4 °C in 80 % humidity, then rinsed for 10 min with 10 × phosphate buffered saline with Tween 20 detergent (PBST), 10 min with 1 × PBST, and twice for 10 min each in deionized water. The chip was blocked at RT overnight with 5 % (w/v) non-fat milk in MilliQ water, and washed for 10 min each in 10 × PBST, 10 min in 1 × PBST, and twice for 10 min each in deionized water, then dried under a stream of nitrogen. SPR measurements were performed using the PlexArray HT system (Plexera Bioscience, Seattle, WA). Collimated light of wavelength 660 nm passes through a coupling prism, reflects off the gold surface of the chip, is received by an integrated CCD camera. A nonpulsatile piston pump was used to inject samples and buffers into a 30 μL flowcell mounted on the coupling prism. All measurements were performed at RT (25 °C). Each measurement cycle involved 1) washing with running buffer (PBST) at a constant rate (2 μL/s) to obtain a stable baseline, 2) injection of the 12b solution (5 μL/s for binding), 3) washing of the surface with PBST for 300 s (2 μL/s), and 4) regeneration with 0.5 % (v/v) H3PO4 for 300 s (2 μL/s). Changes in signal after binding and washing were recorded as the assay values (in AU). We analyzed selected protein-grafted regions in the SPR images and the average reflectivity variations of the selected areas were plotted as a function of time. Real-time binding signals were collected and analyzed using the PlexArray® Analysis Software Package (Plexera Bioscience). Kinetic analysis was performed using BIAevaluation 4.1 software (Biacore, Inc., a division of Cytiva, Uppsala, Sweden).",
+            "Figure 4 caption": "Fig. 4. Kinetics of binding survivin protein by compound 12b at 25, 50, 100, 200, 400 nM. Binding of compound 12b to survivin protein was measured using SPR technology. Resonance was measured in arbitrary units at each concentration and plotted as a function of incubation time.",
+            "Results - Binding kinetics of compound 12b to survivin": "To determine if 12b suppresses survivin expression by directly interacting with the survivin protein, we used a PlexArray HT system (Plexera Bioscience, Woodinville, WA) that employs surface plasmon resonance (SPR) technology to evaluate the interaction and measure its affinity. Biotinylated survivin protein was expressed in E.coli BL21 (DE3) strains (Invitrogen; Thermo Fisher Scientific) and immobilized to a gold-coated sensor chip via avidin-biotin conjugation and compound 12b added at different concentrations for detection of binding in relative resonance units (RU) and determination of affinity of 12b for survivin. Resonance values for 12b increased in a concentration-dependent manner (Fig. 4). We used a steady-state fitting model to calculate the equilibrium dissociation constant (KD) of compound 12b binding to survivin at 4.27 μM. Although preliminary and the exact binding site on survivin protein is yet to be determined, this result demonstrates that 12b directly interact with survivin. We are currently working with a CRO (Creative Biostuctures, Inc) to optimize the crystallization condition in order to obtain the crystal structures of survivin protein in complexes with this scaffold and will report the results in the future."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Plexera Bioscience",
+                "model": "PlexArray HT"
+            },
+            "sensor_chip": {
+                "type": "PlexArray® Nanocapture® Sensor Chip",
+                "manufacturer": "Plexera Bioscience"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated survivin protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 12b",
+                "concentration_range": "25 nM - 400 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (phosphate buffered saline with Tween 20 detergent)",
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 120,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "0.5 % (v/v) H3PO4"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation 4.1"
+            }
+        }
+    }
+}

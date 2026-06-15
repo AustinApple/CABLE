@@ -1,0 +1,317 @@
+{
+    "51146432": {
+        "reactant_set_id": 51146432,
+        "pmid": 29120638,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1ncc(-c2ccc3c(Nc4cc(Oc5cc(F)cc(F)c5)cc(c4)C(O)=O)c(cnc3c2)S(=O)(=O)NC2CC2)c(OC)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged LDHA in absence of NADH by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Analysis. Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) using a CM5 sensor chip. Human His-tagged LDHA (100 μg/mL) was immobilized on the chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20. Compounds were diluted in running buffer and injected at concentrations ranging from 0.1 to 100 μM. The association phase was 120 s, and the dissociation phase was 300 s. Regeneration was achieved with 10 mM glycine, pH 2.0. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Results Section": "For the initial study, four compounds (2, 33, 61, and 63) were chosen based on their biochemical potency and differential activity in the cell-based lactate output assay. Compounds from the internal chemical series displayed more potent binding affinities and longer off-rates (koff) in the presence of saturating NADH (500 μM) than without, supporting the hypothesis that arose from the initial crystallography studies. However, 2 was found to have greater binding affinity in the absence of NADH (KD = 1.7 nM versus 59 nM with NADH), in agreement with its reported NADH competitive mechanism of inhibition. Because inhibition of LDH in cells results in increased intracellular concentrations of NADH, a mechanism of inhibition that produces increased affinity for LDH and greater duration of target occupancy when NADH concentrations are elevated should be a more efficacious mechanism than a NADH-competitive one. The KD values for three representative compounds and a comparator (2, 33, 61, and 63) in the presence of NADH were 59 nM, 370 nM, 0.33 nM, and 0.11 nM, respectively. Interestingly, the off-rates and corresponding residence times (τ) [calculated as 1/koff (s−1)] tracked well with the cellular potency [2 (τ = 8 s), 33 (τ = 0.5 s), 61 (τ = 470 s), and 63 (τ = 1200 s)]. While rational optimization of drug–target residence time has been reported, it can be difficult to delineate such structure–activity relationships, as minor structural changes may lead to surprisingly large differences in binding properties. As such, SPR analysis of binding kinetics will be incorporated into our future SAR efforts as an important optimization parameter and compound attribute, alongside biochemical potency, cell-based potency, and ADME properties."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (e.g., 2, 33, 61, 63) tested for binding to LDHA",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50785031": {
+        "reactant_set_id": 50785031,
+        "pmid": 29120638,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "NS(=O)(=O)c1ccc(Cc2c(O)n(nc2-c2ccc(F)c(F)c2)-c2nc(cs2)C(O)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 370.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged LDHA in presence of NADH by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Analysis. Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) using a CM5 sensor chip. Human His-tagged LDHA (100 μg/mL) was immobilized on the chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20. Compounds were diluted in running buffer and injected at concentrations ranging from 0.1 to 100 μM. The association phase was 120 s, and the dissociation phase was 180 s. Regeneration was performed with 10 mM glycine, pH 2.0. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Results Section": "For the initial study, four compounds (2, 33, 61, and 63) were chosen based on their biochemical potency and differential activity in the cell-based lactate output assay. Compounds from the internal chemical series displayed more potent binding affinities and longer off-rates (koff) in the presence of saturating NADH (500 μM) than without, supporting the hypothesis that arose from the initial crystallography studies. However, 2 was found to have greater binding affinity in the absence of NADH (KD = 1.7 nM versus 59 nM with NADH), in agreement with its reported NADH competitive mechanism of inhibition. Because inhibition of LDH in cells results in increased intracellular concentrations of NADH, a mechanism of inhibition that produces increased affinity for LDH and greater duration of target occupancy when NADH concentrations are elevated should be a more efficacious mechanism than a NADH-competitive one. The KD values for three representative compounds and a comparator (2, 33, 61, and 63) in the presence of NADH were 59 nM, 370 nM, 0.33 nM, and 0.11 nM, respectively. Interestingly, the off-rates and corresponding residence times (τ) [calculated as 1/koff (s−1)] tracked well with the cellular potency [2 (τ = 8 s), 33 (τ = 0.5 s), 61 (τ = 470 s), and 63 (τ = 1200 s)]. While rational optimization of drug–target residence time has been reported, it can be difficult to delineate such structure–activity relationships, as minor structural changes may lead to surprisingly large differences in binding properties. As such, SPR analysis of binding kinetics will be incorporated into our future SAR efforts as an important optimization parameter and compound attribute, alongside biochemical potency, cell-based potency, and ADME properties."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (2, 33, 61, 63) tested for binding to LDHA",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50785162": {
+        "reactant_set_id": 50785162,
+        "pmid": 29120638,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "NS(=O)(=O)c1ccc(Cc2c(nn(-c3nc(cs3)C(O)=O)c2C2CC2)-c2cccc(c2)-c2ccccc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.33,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged LDHA in presence of NADH by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Analysis. Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) using a CM5 sensor chip. Human His-tagged LDHA (100 μg/mL) was immobilized on the chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20. Compounds were diluted in running buffer and injected at concentrations ranging from 0.1 to 100 μM. The association phase was 120 s, and the dissociation phase was 180 s. Regeneration was performed with 10 mM glycine, pH 2.0. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Results Section": "For the initial study, four compounds (2, 33, 61, and 63) were chosen based on their biochemical potency and differential activity in the cell-based lactate output assay. Compounds from the internal chemical series displayed more potent binding affinities and longer off-rates (koff) in the presence of saturating NADH (500 μM) than without, supporting the hypothesis that arose from the initial crystallography studies. However, 2 was found to have greater binding affinity in the absence of NADH (KD = 1.7 nM versus 59 nM with NADH), in agreement with its reported NADH competitive mechanism of inhibition. Because inhibition of LDH in cells results in increased intracellular concentrations of NADH, a mechanism of inhibition that produces increased affinity for LDH and greater duration of target occupancy when NADH concentrations are elevated should be a more efficacious mechanism than a NADH-competitive one. The KD values for three representative compounds and a comparator (2, 33, 61, and 63) in the presence of NADH were 59 nM, 370 nM, 0.33 nM, and 0.11 nM, respectively. Interestingly, the off-rates and corresponding residence times (τ) [calculated as 1/koff (s−1)] tracked well with the cellular potency [2 (τ = 8 s), 33 (τ = 0.5 s), 61 (τ = 470 s), and 63 (τ = 1200 s)]. While rational optimization of drug–target residence time has been reported, it can be difficult to delineate such structure–activity relationships, as minor structural changes may lead to surprisingly large differences in binding properties. As such, SPR analysis of binding kinetics will be incorporated into our future SAR efforts as an important optimization parameter and compound attribute, alongside biochemical potency, cell-based potency, and ADME properties."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (2, 33, 61, 63) tested for binding to LDHA",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50785272": {
+        "reactant_set_id": 50785272,
+        "pmid": 29120638,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COc1ncc(-c2ccc3c(Nc4cc(Oc5cc(F)cc(F)c5)cc(c4)C(O)=O)c(cnc3c2)S(=O)(=O)NC2CC2)c(OC)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 59.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged LDHA in presence of NADH by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Analysis. Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) using a CM5 sensor chip. Human His-tagged LDHA (100 μg/mL) was immobilized on the chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20. Compounds were diluted in running buffer and injected at concentrations ranging from 0.1 to 100 μM. The association phase was 120 s, and the dissociation phase was 180 s. Regeneration was performed with 10 mM glycine, pH 2.0. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Results Section": "For the initial study, four compounds (2, 33, 61, and 63) were chosen based on their biochemical potency and differential activity in the cell-based lactate output assay. Compounds from the internal chemical series displayed more potent binding affinities and longer off-rates (koff) in the presence of saturating NADH (500 μM) than without, supporting the hypothesis that arose from the initial crystallography studies. However, 2 was found to have greater binding affinity in the absence of NADH (KD = 1.7 nM versus 59 nM with NADH), in agreement with its reported NADH competitive mechanism of inhibition. Because inhibition of LDH in cells results in increased intracellular concentrations of NADH, a mechanism of inhibition that produces increased affinity for LDH and greater duration of target occupancy when NADH concentrations are elevated should be a more efficacious mechanism than a NADH-competitive one. The KD values for three representative compounds and a comparator (2, 33, 61, and 63) in the presence of NADH were 59 nM, 370 nM, 0.33 nM, and 0.11 nM, respectively. Interestingly, the off-rates and corresponding residence times (τ) [calculated as 1/koff (s−1)] tracked well with the cellular potency [2 (τ = 8 s), 33 (τ = 0.5 s), 61 (τ = 470 s), and 63 (τ = 1200 s)]. While rational optimization of drug–target residence time has been reported, it can be difficult to delineate such structure–activity relationships, as minor structural changes may lead to surprisingly large differences in binding properties. As such, SPR analysis of binding kinetics will be incorporated into our future SAR efforts as an important optimization parameter and compound attribute, alongside biochemical potency, cell-based potency, and ADME properties."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (2, 33, 61, 63) tested for binding to LDHA",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "50785319": {
+        "reactant_set_id": 50785319,
+        "pmid": 29120638,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "NS(=O)(=O)c1ccc(Cc2c(CC3CC3)n(nc2-c2cccc(c2)-c2ccccc2)-c2nc(cs2)C(O)=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.11,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged LDHA in presence of NADH by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Analysis. Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) using a CM5 sensor chip. Human His-tagged LDHA (100 μg/mL) was immobilized on the chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20. Compounds were diluted in running buffer and injected at concentrations ranging from 0.1 to 100 μM. The association phase was 120 s, and the dissociation phase was 180 s. Regeneration was performed with 10 mM glycine, pH 2.0. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Results Section": "For the initial study, four compounds (2, 33, 61, and 63) were chosen based on their biochemical potency and differential activity in the cell-based lactate output assay. Compounds from the internal chemical series displayed more potent binding affinities and longer off-rates (koff) in the presence of saturating NADH (500 μM) than without, supporting the hypothesis that arose from the initial crystallography studies. However, 2 was found to have greater binding affinity in the absence of NADH (KD = 1.7 nM versus 59 nM with NADH), in agreement with its reported NADH competitive mechanism of inhibition. Because inhibition of LDH in cells results in increased intracellular concentrations of NADH, a mechanism of inhibition that produces increased affinity for LDH and greater duration of target occupancy when NADH concentrations are elevated should be a more efficacious mechanism than a NADH-competitive one. The KD values for three representative compounds and a comparator (2, 33, 61, and 63) in the presence of NADH were 59 nM, 370 nM, 0.33 nM, and 0.11 nM, respectively. Interestingly, the off-rates and corresponding residence times (τ) [calculated as 1/koff (s−1)] tracked well with the cellular potency [2 (τ = 8 s), 33 (τ = 0.5 s), 61 (τ = 470 s), and 63 (τ = 1200 s)]. While rational optimization of drug–target residence time has been reported, it can be difficult to delineate such structure–activity relationships, as minor structural changes may lead to surprisingly large differences in binding properties. As such, SPR analysis of binding kinetics will be incorporated into our future SAR efforts as an important optimization parameter and compound attribute, alongside biochemical potency, cell-based potency, and ADME properties."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (2, 33, 61, 63) tested for binding to LDHA",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

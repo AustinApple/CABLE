@@ -1,0 +1,67 @@
+{
+    "51552172": {
+        "reactant_set_id": 51552172,
+        "pmid": 35728508,
+        "protein": "Cholinesterase",
+        "ligand": {
+            "smiles": "Nc1nonc1-c1nc2ccccc2n1CC(=O)Nc1cc(cc(c1)[N+]([O-])=O)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human BChE assessed as dissociation constant by Surface Plasmon Resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) assay": "SPR experiments were carried out on a Biacore T200 instrument (GE Healthcare). hBChE (EC 3.1.1.8, derived from human B4186) was bought from Sigma-Aldrich (St. Louis, MO, USA). CM5 chip used for protein immobilization (29-1049-88), amine coupling kit (BR-1000-50), ammonium acetate coupling buffer (28-1003-50), PBS-P+ buffer (28-9950-84) and 96-well plates (BR-1005-03) were all purchased from GE Healthcare. DMSO was a pure domestic analytical reagent. The compound 7 was prepared into a 0.01 M solution with DMSO, which was further diluted to 500 μM with PBS-P+ buffer. Then the solution was diluted to 5 different solutions with 1 × PBS-P+ buffer containing 5% DMSO. In order to eliminate the interference of DMSO on the experimental results, a 5% DMSO solution was prepared for solvent calibration. hBChE was prepared in deionized water to prepare a concentration of 200 μg/mL, and diluted to 30 μg/mL with ammonium acetate coupling buffers of different pH (4.0, 4.5, 5.0). The protein diluents of different pH were coupled to lane 2 through the “pH scouting” program to select the optimal pH value for coupling according to the characteristics of the real-time sensor graph. Then the two lanes were washed with 50 mM NaOH solution to remove the protein on the surface of chip. Proteins were immobilized on lanes 2 using ammonium acetate coupling buffer (pH 4.5) with the amine coupling kit as per the instructions. The lanes 1 was used as the reference lane. Next, the two lanes were rinsed with ethanolamine solution to activate the chip surface and inactivate the portion not bound to the protein. After the baseline was stable during the rinsing of buffer to ensure that the solidified protein will not be washed away, the compound solutions of different concentrations were injected to continuously detect in multiple cycles. The DMSO diluents of different concentrations were used for solvent calibration. Kinetic data were analyzed utilizing the Biacore T100 Analysis software. K_D value was obtained using an interaction model and a kinetic fit, and the curves were exported and replotted in GraphPad Prism 6.0.",
+            "Figure 2 caption": "Fig. 2. Binding affinities of hBChE for analog 7, determined by surface plasmon resonance (SPR) assay. The response-time curves were determined using several concentrations (0.3125, 1.25, 5, 20, 40 nM) of the tested compound. The response values were corrected by subtracting it of the empty channel.",
+            "Figure 2A": "Response units (nm) vs. Time (s). Curves for concentrations: 0.3125 nM, 1.25 nM, 5 nM, 20 nM, 40 nM. The x-axis ranges from 0 to 300 s. The y-axis ranges from -1 to 5 nm. The plot shows association and dissociation phases. The text 'BChE-Cpd. 7' and 'K_D = 3.09 nM' are labeled on the plot.",
+            "Figure 2B": "Response units (nm) vs. Concentration (M). The x-axis is logarithmic, ranging from 1×10⁻⁹ to 5×10⁻⁸ M. The y-axis ranges from 0 to 5 nm. The plot shows a saturation curve. The text 'BChE-Cpd. 7' and 'K_D = 3.09 nM' are labeled on the plot."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "hBChE",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "30 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 7",
+                "concentration_range": "0.3125 nM - 40 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P+ buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Lane 1 (empty channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T100 Analysis software"
+            }
+        }
+    }
+}

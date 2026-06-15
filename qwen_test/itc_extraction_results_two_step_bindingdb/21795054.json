@@ -1,0 +1,474 @@
+{
+    "50654956": {
+        "reactant_set_id": 50654956,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cn([C@H]2C[C@H](OP(N)(=O)OC[C@@H]3C[C@@H](OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)[C@@H](O3)n3cnc4c3nc(N)[nH]c4=O)[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COC(=O)CCCC[C@@H]3SC[C@@H]4NC(=O)N[C@H]34)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)O2)c(=O)[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 47.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654957": {
+        "reactant_set_id": 50654957,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cn([C@H]2C[C@H](OP(N)(=O)OC[C@@H]3C[C@@H](OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)[C@@H](O3)n3cnc4c3nc(N)[nH]c4=O)[C@@H](COP(N)(=O)OC[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COC(=O)CCCC[C@@H]3SC[C@@H]4NC(=O)N[C@H]34)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CN3CCNCC3)n3ccc(=O)[nH]c3=O)O2)c(=O)[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654958": {
+        "reactant_set_id": 50654958,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cc(=O)[nH]c(=O)n1[C@H]1C[C@H](OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@@H]2C[C@@H](OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3O)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)n3cc(C)c(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CN3CCNCC3)n3ccc(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)[C@@H](O2)n2cnc3c2nc(N)[nH]c3=O)n2cc(C)c(=O)[nH]c2=O)[C@@H](COP(N)(=O)O[C@H]2C[C@@H](O[C@@H]2COP(N)(=O)O[C@H]2C[C@@H](O[C@@H]2COC(=O)CCCC[C@@H]2SC[C@@H]3NC(=O)N[C@H]23)n2cnc3c2nc(N)[nH]c3=O)n2cnc3c2nc(N)[nH]c3=O)O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 52.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654959": {
+        "reactant_set_id": 50654959,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cc(=O)[nH]c(=O)n1[C@H]1C[C@H](OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2O)n2cnc3c2nc(N)[nH]c3=O)n2cnc3c2nc(N)[nH]c3=O)n2cc(C)c(=O)[nH]c2=O)O[C@H](CN2CCNCC2)n2ccc(=O)[nH]c2=O)n2cnc3c2nc(N)[nH]c3=O)n2cnc3c2nc(N)[nH]c3=O)n2cc(C)c(=O)[nH]c2=O)n2cnc3c2nc(N)[nH]c3=O)[C@@H](COP(N)(=O)O[C@H]2C[C@@H](O[C@@H]2COP(N)(=O)O[C@@H]2C[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COC(=O)CCCC[C@@H]3SC[C@@H]4NC(=O)N[C@H]34)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)n3cc(C)c(=O)[nH]c3=O)O[C@H]2n2cnc3c2nc(N)[nH]c3=O)n2cnc3c2nc(N)[nH]c3=O)O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654960": {
+        "reactant_set_id": 50654960,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cn([C@H]2C[C@H](OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3O)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)[C@@H](COP(N)(=O)OC[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)OC[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@@H]3C[C@@H](COP(N)(=O)O[C@H]4C[C@@H](O[C@@H]4COP(N)(=O)O[C@H]4C[C@@H](O[C@@H]4COP(N)(=O)O[C@H]4C[C@@H](O[C@@H]4COP(N)(=O)O[C@H]4C[C@@H](O[C@@H]4COC(=O)CCCC[C@@H]4SC[C@@H]5NC(=O)N[C@H]45)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cc(C)c(=O)[nH]c4=O)O[C@H]3n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CO)n3ccc(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CO)n3ccc(=O)[nH]c3=O)O2)c(=O)[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654961": {
+        "reactant_set_id": 50654961,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cn([C@H]2C[C@H](OP(N)(=O)OC[C@@H]3C[C@@H](OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)O[C@H](CO)n4ccc(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)[C@@H](O3)n3cnc4c3nc(N)[nH]c4=O)[C@@H](COP(N)(=O)OC[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COC(=O)CCCC[C@@H]3SC[C@@H]4NC(=O)N[C@H]34)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CO)n3ccc(=O)[nH]c3=O)O2)c(=O)[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654962": {
+        "reactant_set_id": 50654962,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cn([C@H]2C[C@H](OP(N)(=O)OC[C@@H]3C[C@@H](OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4OP(N)(=O)OC[C@H]4O[C@H](C[C@@H]4O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)n4cnc5c4nc(N)[nH]c5=O)n4cc(C)c(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)O[C@H](CO)n4ccc(=O)[nH]c4=O)n4cnc5c4nc(N)[nH]c5=O)[C@@H](O3)n3cnc4c3nc(N)[nH]c4=O)[C@@H](COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3COP(N)(=O)O[C@H]3C[C@@H](O[C@@H]3CO)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)O2)c(=O)[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 37.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50654963": {
+        "reactant_set_id": 50654963,
+        "pmid": 21795054,
+        "protein": "Prothrombin",
+        "ligand": {
+            "smiles": "Cc1cc(=O)[nH]c(=O)n1[C@H]1C[C@H](OP(N)(=O)OC[C@H]2O[C@H](C[C@@H]2OP(N)(=O)OC[C@@H]2C[C@@H](OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H](COP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3OP(N)(=O)OC[C@H]3O[C@H](C[C@@H]3O)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)n3cc(C)c(=O)[nH]c3=O)n3cc(C)c(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CO)n3ccc(=O)[nH]c3=O)O[C@H](CO)n3cnc4c3nc(N)[nH]c4=O)O[C@H](CO)n3ccc(=O)[nH]c3=O)n3cnc4c3nc(N)[nH]c4=O)[C@@H](O2)n2cnc3c2nc(N)[nH]c3=O)n2cc(C)c(=O)[nH]c2=O)[C@@H](COP(N)(=O)O[C@H]2C[C@@H](O[C@@H]2COP(N)(=O)O[C@H]2C[C@@H](O[C@@H]2COC(=O)CCCC[C@@H]2SC[C@@H]3NC(=O)N[C@H]23)n2cnc3c2nc(N)[nH]c3=O)n2cnc3c2nc(N)[nH]c3=O)O1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to thrombin at 37 degC by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "32. Henriksen, J. R.; Andresen, T. L.; Feldborg, L. N.; Duelund, L.; Ipsen, J. H. Biophys. J. 2010, 98, 2199.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5. Isothermal titration calorimetry": "The binding affinity between thrombin and aptamer was measured by isothermal titration calorimetry (ITC200, Microcal, GE). The experiments were conducted at 37 °C by injecting 100 μM aptamer in 10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4; pH 7.4) into a 5 μM solution of thrombin. Examples of ITC heat traces are shown in Figure 3 for the aptamers ON1, ON2 and ON3. The heat of dilution was measured by injecting 100 μM aptamer into buffer and was subsequently subtracted in the data analysis. All ITC experiments include a single pre-injection of 0.2 μL, which was discarded from the analysis, followed by 19 × 2 μL injections. The ITC heat trace was processed by custom made software as described previously32 and fitted to a single site binding model based on the equation: AT = A + T, which is governed by the equilibrium dissociation constant, Kd. The results are compiled in Table 2.",
+            "Figure 3 caption": "Figure 3. ITC binding affinity study of thrombin and aptamer conducted at 37 °C (a) examples of ITC heat traces of 100 μM aptamer (ON1, ON2 and ON3) titrated into 5 μM thrombin (b) the corresponding heat of reaction. The data was analyzed using a single site binding model and the best fits are given by the solid lines in (b).",
+            "Table 2": "Table 2 Binding affinity and biological effect of TBA modified TBA variants Namea Kd b (nM) T-time/antithrombin effectc (s) TBA 47.6 32.6/13.6 ON1 1600 21.3/2.3 ON2 52.6 31.2/12.2 ON3 1000 22.5/3.5 ON4 n.d. 19.4/0.4 ON5 300 28.7/9.7 ON6 1300 31.2/12.2 ON7 n.d. 19.5/0.5 ON8 1500 20.5/1.5 ON9 n.d. 19.0/0.0 a 5′-Biotinylated oligonucleotides. b The relative errors for Kd values are below 27%, Kd value for 5′GGTTGGTGTGGTGG is 37.0 nM. c T-time is the time required for a clot formation in the plasma from a blood sample; Antithrombin effect is the T-time in the presence of an aptamer minus the T-time in the absence of an aptamer; no oligo added resulted in 18.9 and 19.0 s clotting times in two experimental sets and constitute reference values in the antithrombin effect calculations. Non-biotin conjugated TBA results in 34.4 s clotting time. n.d. stands for not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "thrombin",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "aptamer",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM phosphate buffered saline (138 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.76 mM KH2PO4)",
+                "pH": "7.4",
+                "temperature_c": "37",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of aptamer into buffer; heat of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

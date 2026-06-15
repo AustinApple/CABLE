@@ -1,0 +1,954 @@
+{
+    "51347433": {
+        "reactant_set_id": 51347433,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "COc1ccccc1N(Cc1ccccc1[N+]([O-])=O)C(=O)\\C=C\\c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 112.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347434": {
+        "reactant_set_id": 51347434,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccccc1CN(Cc1ccccc1)C(=O)\\C=C\\c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 105.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347435": {
+        "reactant_set_id": 51347435,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccccc1CN(Cc1ccco1)C(=O)\\C=C\\c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347436": {
+        "reactant_set_id": 51347436,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccccc1CN(C(=O)\\C=C\\c1ccc(cc1)C#N)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 439.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347437": {
+        "reactant_set_id": 51347437,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccccc1CN(CCc1ccccc1)C(=O)\\C=C\\c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 116.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347438": {
+        "reactant_set_id": 51347438,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "COc1ccc(CN(Cc2ccccc2)C(=O)\\C=C\\c2ccc(cc2)C#N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 565.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347439": {
+        "reactant_set_id": 51347439,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "O=C(\\C=C\\c1ccc(cc1)C#N)N(Cc1ccccc1)Cc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 107.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347440": {
+        "reactant_set_id": 51347440,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "CC(C)(C)NC(=O)c1ccc(\\C=C\\C(=O)N(Cc2ccccc2)Cc2ccccc2[N+]([O-])=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 344.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347441": {
+        "reactant_set_id": 51347441,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "Clc1cccc(CN(Cc2ccccc2)C(=O)\\C=C\\c2ccc(cc2)C(=O)N2CCOCC2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 872.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347442": {
+        "reactant_set_id": 51347442,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccc(F)cc1CN(Cc1ccccc1)C(=O)\\C=C\\c1ccc(cc1)C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 485.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347443": {
+        "reactant_set_id": 51347443,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccc(F)cc1CN(Cc1ccco1)C(=O)\\C=C\\c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347444": {
+        "reactant_set_id": 51347444,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccc(F)cc1CN(Cc1ccccc1)C(=O)\\C=C\\c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347445": {
+        "reactant_set_id": 51347445,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "[O-][N+](=O)c1ccccc1CN(Cc1ccccc1)C(=O)\\C=C\\c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 47.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51347446": {
+        "reactant_set_id": 51347446,
+        "pmid": 32081628,
+        "protein": "Alpha-synuclein",
+        "ligand": {
+            "smiles": "COc1ccccc1CN(Cc1cc(F)ccc1[N+]([O-])=O)C(=O)\\C=C\\c1ccc(F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 332.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wlid-type alpha-synuclein by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Preparation of α-syn fibrils": "A free α-syn (10 μM) in a Tris-HCl buffer (30 mM, pH = 7.4) containing 5% hexafluoroisopropanol (HFIP) and NaCl (150 mM) was incubated for 36 h at 37 °C in 180 rpm. After 20 μL of incubation solution was added to 200 μL of 20 μM ThT solution, the mixture was placed in a cuvette and was detected for the fluorescence (excitation at 440 nm/emission at 485 nm) with Spectra Max M5 microplate reader.",
+            "Materials and Methods - Protein fixation on-chip": "All experiments were performed on the GE Biacore T200 surface plasmon resonance protein analyzer using the Xantec CMD 500 M chip. Firstly, pre-enrichment experiments were carried out to find out the best NaAc buffer. After carboxyl groups on the surface of the chip were activated by 1-ethyl-3-(3-dimethyl aminopropyl) carbodiimide (EDC)/N-hydroxysuccinimide (NHS) buffer, the protein sample was injected into the analyzer to couple on the surface of the chip and the chemically non-bonded protein was washed out by the mobile phase. This process was repeated several times until the amount of coupling protein reached the expected level. Unreacted carboxyl groups on the surface of the chip were blocked with ethanolamine hydrochloride solution.",
+            "Materials and Methods - Screen of small molecules by SPR": "The tested compounds were accurately weighed and dissolved in DMSO to be a 10 mM preservation solution. The mobile phase buffer of SPR system was applied to make a plurality of concentration gradients for the testing solution. Different concentrations of the compound were injected to the SPR system for 1 min at a flow rate of 60 μL/min, followed with regeneration by HBS buffer for 3 min. According to the kinetic binding curves under different concentration gradients, the K_D values were obtained by instrument fitting.",
+            "Figure 4 caption": "Fig. 4. Kinetic binding curve of 5-41 by SPR analysis.",
+            "Table 1": "Structure of N, N-dibenzylcinnamamide derivatives and their binding affinity. ... Binding (RU)a K_D (nM) ... 5-13 3-6 2-NO2 CN 9.0 N.D. ... 5-14 3-7 2-FuranylCH2 2-NO2 CN 380.8 8.21 ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Table 2": "Structure of F-labeled NBC probes and their binding affinity. ... Binding (RU) K_D (nM) ... 5-41 3-24 F furan-2-yl F 570.8 1.03",
+            "Results and discussion": "The K_D values were further determined by SPR kinetic analysis for nine compounds with RU over 200 (Table 1). The K_D values were in a range of from 10^-3 μM to 10^-1 μM. The best compound 5-14 showed a high affinity with a K_D value of 8.21 nM. In addition, some compounds with an ortho-nitro group in ring A, and/or a cyano group in ring C (Fig. 3) showed high binding ability, indicating that H-bond acceptor substituents might be a key factor for keeping binding activity. ... The K_D values were further measured for five high binding compounds (RU over 400). The compound 5-41 got the best binding activity of 1.03 nM (K_D) from the kinetic analysis (Fig. 4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMD 500 M",
+                "manufacturer": "Xantec"
+            },
+            "immobilization": {
+                "ligand_name": "human wild-type alpha-synuclein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Small molecules (N,N-dibenzylcinnamamide derivatives and F-labeled NBC probes)",
+                "concentration_range": "Multiple concentration gradients (not specified, but tested in SPR system)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS buffer (composition not fully specified, but used for regeneration and mobile phase)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 60,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": "HBS buffer"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    }
+}

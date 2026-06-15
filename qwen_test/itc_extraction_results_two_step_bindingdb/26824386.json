@@ -1,0 +1,63 @@
+{
+    "50485232": {
+        "reactant_set_id": 50485232,
+        "pmid": 26824386,
+        "protein": "Protein arginine N-methyltransferase 6",
+        "ligand": {
+            "smiles": "NCCN1CCC(Cc2ccccc2)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 970.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Inhibition of N-terminal hexa-His tagged human PRMT6 expressed in Sf9 cells by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 20: Murray, C. W.; Verdonk, M. L. The consequences of translational and rotational entropy lost by small molecules on binding to proteins. J. Comput.-Aided Mol. Des. 2002, 16, 741–53.",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal titration calorimetry (ITC) was performed at 25 °C in a Nano ITC instrument (TA Instruments, USA). The cell was loaded with 33 μM PRMT6 and 3.3% DMSO in PBS buffer. The syringe was loaded with 100 μM fragment 7 and 3.3% DMSO in PBS. 2 μL volumes were injected at 180 s intervals (25 injections in total). The data were analyzed using “Nano Analyze” software supplied by the instrument manufacturer and fit to a one binding site independent model.",
+            "Figure 2 caption": "Figure 2. (A) Isothermal titration calorimetry data showing the titration of fragment 7 into PRMT6 (top) and fit curve (bottom). (B) Thermodynamic signatures of the PRMT6–7 complex, with Gibbs free energy of binding (ΔG), enthalpy (ΔH), and entropy (−TΔS).",
+            "Results section - ITC experiment description": "The binding of this fragment was further confirmed by isothermal titration calorimetry (ITC), revealing a dissociation constant (K_D) of 0.97 μM (Figure 2A). The ITC experiment also provided the thermodynamic signature of 7 binding to PRMT6 (Figure 2B), characterized by a favorable change in enthalpy (ΔH = −17.2 kcal/mol) and a large, unfavorable entropic component (−TΔS = 9.0 kcal/mol) due to loss of translational and rotational movement of the unbound fragment.20 This profile is consistent with binding being driven by enthalpy, indicating the formation of strong polar and hydrophobic interactions with the pocket.",
+            "Figure 2B data": "Figure 2B shows the thermodynamic signatures: ΔG = -8.2 kcal/mol, ΔH = -17.2 kcal/mol, and -TΔS = 9.0 kcal/mol.",
+            "Table 2 - Fragment 7 data": "Table 2 lists the biochemical characterization of fragment 7, including IC50 = 0.3 ± 0.04 μM, Hill slope = 1.0, HA = 16, LE = 0.56, and logD = -0.11."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "PRMT6",
+                "location": "cell",
+                "concentration": "33",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "fragment 7",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "PBS buffer",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "25"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

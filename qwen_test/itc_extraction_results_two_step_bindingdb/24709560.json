@@ -1,0 +1,62 @@
+{
+    "50093751": {
+        "reactant_set_id": 50093751,
+        "pmid": 24709560,
+        "protein": "Menin",
+        "ligand": {
+            "smiles": "NCC1O[C@@H](O[C@@H]2[C@@H](CO)O[C@@H](O[C@H]3[C@H](O)[C@@H](N)C[C@@H](N)[C@@H]3O[C@H]3O[C@H](CN)[C@@H](O)[C@H](O)[C@H]3N)[C@@H]2O)[C@@H](N)[C@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to menin (unknown origin) by isothermal titration calorimetry analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "To precisely validate our conclusion, we performed isothermal titration calorimetry (Supplementary data) using a Microcal iTC200 isothermal titration calorimeter (GE Healthcare). Freshly purified menin (50 μM) was titrated with 1 mM neomycin and tobramycin in a buffer comprising 50 mM Tris–HCl (pH 7.5) and 150 mM NaCl at 25 °C. The equilibrium dissociation constants (Kd) were fitted using Origin 7 software (Originlab).",
+            "Figure 2 caption": "Figure 2. Isothermal titration calorimetry experiment confirms the interaction between neomycin and menin with 1:1 stoichiometry.",
+            "Results section": "As shown in Figure 2, the Kd between menin and neomycin was 15.6 μM. This result indicates that the binding is specific. The binding interaction is driven cooperatively by entropy and enthalpy (ΔH = −2.6 kcal/mol, TΔS = 3.95 kcal/mol). Kd cannot be determined for tobramycin because of its weak affinity (data not shown).",
+            "Figure 2 data": "Kd=15.6μM, N=0.871, ΔH=-2.6kcal/mol, TΔS=3.95kcal/mol"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "menin",
+                "location": "cell",
+                "concentration": "50",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "neomycin",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM Tris–HCl, 150 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

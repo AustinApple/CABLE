@@ -1,0 +1,641 @@
+{
+    "50924261": {
+        "reactant_set_id": 50924261,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "COc1nc(Cl)c(Cl)nc1NS(=O)(=O)c1ccc(Cl)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 after 1 min by SPR assay",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected compounds (200 selected for screen, later confirmed hits)",
+                "concentration_range": "0.1 μM - 10 μM (screening); 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot and blocked CCR5 (spot 5 blocked with 5 μM maraviroc)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924262": {
+        "reactant_set_id": 50924262,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "COc1nc(Br)cnc1NS(=O)(=O)c1ccc(Cl)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 after 1 min by SPR assay",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Selected compounds (200 selected for screen, later confirmed hits)",
+                "concentration_range": "0.1 μM - 10 μM (screening); 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot and blocked CCR5 (spot 5 blocked with 5 μM maraviroc)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924260": {
+        "reactant_set_id": 50924260,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "COc1ccc(Br)cc1CN1CCCC(C1)C(=O)N1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 49000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924264": {
+        "reactant_set_id": 50924264,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "CC(C)NCc1cc(Br)ccc1OCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924265": {
+        "reactant_set_id": 50924265,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "Brc1ccc(OCc2ccccc2)c(CNCc2ccccn2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924266": {
+        "reactant_set_id": 50924266,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "CC(C)(CO)NCc1cc(Br)ccc1OCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924267": {
+        "reactant_set_id": 50924267,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "Brc1ccc(OCc2ccccc2)c(CNCC2CCCO2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924268": {
+        "reactant_set_id": 50924268,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "COc1nc(Cl)c(Cl)nc1NS(=O)(=O)c1ccc(Cl)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    },
+    "50924269": {
+        "reactant_set_id": 50924269,
+        "pmid": 21765967,
+        "protein": "C-C chemokine receptor type 5",
+        "ligand": {
+            "smiles": "COc1nc(Br)cnc1NS(=O)(=O)c1ccc(Cl)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 22600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to C-terminus C9-tagged immobilized CCR5 by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": [
+            "10. Navratilova, I.; Sodroski, J.; Myszka, D. G., Solubilization, stabilization, and purification of chemokine receptors using biosensor technology. Anal. Biochem. 2005, 339, (2), 271-281.",
+            "11. Navratilova, I.; Pancera, M.; Wyatt, R. T.; Myszka, D. G., A biosensor-based approach toward purification and crystallization of G protein-coupled receptors. Anal. Biochem. 2006, 353, (2), 278-283.",
+            "12. Navratilova, I.; Dioszegi, M.; Myszka, D. G., Analyzing ligand and small molecule binding activity of solubilized GPCRs using biosensor technology. Anal. Biochem. 2006, 355, (1), 132-139."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Assay": "Surface Plasmon Resonance Assay: 1D4 mAb was immobilised using standard amine coupling on all spots. The monoclonal antibody 1D4 was immobilized on a CM4 sensor chip using standard amine-coupling chemistry. Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) was used as the running buffer. The carboxymethyl dextran surface was activated with a 7-min injection of a 1:1 ratio of 0.4M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride) and 0.1M NHS (N-hydroxysuccinimide). The antibody was coupled to the surface with a 7-min injection of 1D4 diluted in 10mM sodium acetate (pH 5.0). Remaining activated groups were blocked with a 7-min injection of 1M ethanolamine (pH 8.5). CCR5 and CXCR4 was obtained from National Cell Culture Centre (USA), solubilised as described previously 10-12 and captured in running buffer composed of 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate and 5% glycerol and captured at flow rate 10 ul/min over spot 1 and 5. Approximately 4,000 - 5,000 RU of receptor was immobilised on each detection spot. Spot 5 was blocked by injection of 5 μM maraviroc. Maraviroc injections were repeated during the run to maintain receptor blocked. Two hundred selected compounds selected for the screen were injected at three concentrations 0.1 μM, 1 μM and 10 μM at flow rate 30 ml/min. Association was measured for 1 minute and dissociation for 2 minutes. The control compound UK 107,543 was injected at the beginning and end of the screen in concentration series 0.0045 μM – 10 μM. Both positive (UK-107,543) and negative (sulpiride) controls were injected during the run at 5 mM concentration. Confirmation of selected hits was run at 5 concentrations in three-fold dilution series on Biacore T100 at concentrations 0.3 μM – 25 μM. Association and dissociation was measured for 1 and 2 minutes respectively at flow rate 30 ul/min. All data were processed and analysed using Scrubber 2 (BioLogic software) and responses normalised for MW of compounds.",
+            "Supporting Information S4 - Supplementary Figure 1 caption": "Supplementary Figure 1: Overlay of sensorgrams for one flow cell and 50 compounds binding to active CCR5, reference spot and blocked CCR5. Report points for the injection of each compound and three concentrations 0.1 μM, 1 μM and 10 μM are showed in the right column. Green and pink report points at the beginning and end of the screen represent injection of positive control at concentration series 0.041 μM – 10 μM. Orange and blue report points represent repeated injections of positive and negative controls during the screen.",
+            "Supporting Information S5 - Supplementary Figure 2 caption": "Supplementary Figure 2: Sensorgrams for compounds A-E identified as hits binding to active and blocked CCR5 and CXCR4. Each compound is injected in duplicates at 3-fold concentration series 0.3 μM – 25 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM4",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "1D4 mAb",
+                "strategy": "Amine coupling",
+                "density_ru": "4000-5000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "200 selected compounds (including hits confirmed at 5 concentrations)",
+                "concentration_range": "0.1 μM - 10 μM (screening), 0.3 μM - 25 μM (confirmation)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Hepes-buffered saline (HBS-N) buffer (10mM Hepes, 0.15M NaCl, pH 7.4) for immobilization; for analyte capture: 50 mM Hepes, 150 mM NaCl, 0.5% DMSO, 0.1% Dodecyl Maltoside, 0.1% CHAPS, 0.02% Cholesteryl Hemi Succinate, 5% glycerol",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference spot (spot 1) and blocked CCR5 (spot 5)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": null,
+                "software": "Scrubber 2 (BioLogic software)"
+            }
+        }
+    }
+}

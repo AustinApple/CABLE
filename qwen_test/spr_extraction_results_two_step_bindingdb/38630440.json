@@ -1,0 +1,66 @@
+{
+    "51599445": {
+        "reactant_set_id": 51599445,
+        "pmid": 38630440,
+        "protein": "Tumor necrosis factor ligand superfamily member 11",
+        "ligand": {
+            "smiles": "CC(C)(OCC(F)(F)F)C([Se]c1ccccc1)C(=O)Nc1ccncc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse RANKL assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "4.14. Surface Plasmon Resonance Assay. The binding affinity of 4aa with RANKL was determined using a Biacore T200 instrument (Cytiva; Marlborough, MA, USA) with a CM5 sensor chip (Cytiva). Briefly, a target protein was loaded onto the sensors using an Amine Coupling Kit (Cytiva). The 4aa samples (at concentrations of 15.63, 31.25, 62.5, 125, and 500 μM) were prepared with running buffer (PBS, 0.5% P20, 5% DMSO). Sensor and sample plates were placed on the instrument, and the 4aa samples were flowed over the blank and target sensors. Five concentrations were injected successively at a flow rate of 30 μL/min for a 200 s association phase, which was followed by a 200 s dissociation phase at 25 °C. The final graphs were obtained by subtracting blank sensors and blank samples from the duplex. The data were analyzed with Biacore T200 software EV. The dissociation constant (Kd) was calculated by global fitting of the kinetics data from various concentrations of 4aa using a 1:1 Langmuir binding model.",
+            "Results Section": "S3A,B, the resonance units (RU) values increased significantly with incremental increases in 4aa dose from 15.63 to 500 μM, and the Kd value for the 4aa is 2.68 × 10⁻⁴ M. These results indicate that 4aa probably bound with RANKL. To further understand the potential interaction between 4aa and RANKL, a molecular docking analysis was performed using a reported crystal structure (PDB ID: 3ME2). As described in Figure 11, 4aa may bind in a cavity of RANKL through three hydrogen bonds with N294, Y234, and S178, and π–π interaction between pyridine of 4aa and benzene of Y234.",
+            "Figure 11 Caption": "Figure 11. Molecular docking of the 4aa-RANKL (PDB ID: 3ME2) complex. Image in secondary structure indicating the potential binding sites of RANKL (hydrogen bonds are represented as the red dotted lines, π–π interaction is represented as the gray dotted line)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "RANKL",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "4aa",
+                "concentration_range": "15.63 μM - 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.5% P20, 5% DMSO",
+                "pH": null,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 200,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "blank sensors",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 software EV"
+            }
+        }
+    }
+}

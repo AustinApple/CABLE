@@ -1,0 +1,62 @@
+{
+    "51331394": {
+        "reactant_set_id": 51331394,
+        "pmid": 31158755,
+        "protein": "Adenomatous polyposis coli protein",
+        "ligand": {
+            "smiles": "Fc1ccc(cc1)C1=NN(C(C1)c1cccc2ccccc12)c1ccc(cc1)C(=O)N1CCOCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to APC (unknown origin) by isothermal titration calorimetry assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC Measurements": "ITC experiments were done on the MicroCal ITC200 system (GE Healthcare) at 30 °C. The APC protein or Asef protein used in the ITC assay. The buffer contained 50 mM HEPES, pH 7.5, 300 mM NaCl, and 1 mM EDTA. The proteins were centrifuged and degassed before the experiment. The calorimetric APC or Asef (concentration range, 15–20 μM) was titrated with the peptide (concentration range, 150–200 μM) and injected 20 times in 2-μL aliquots. We fit the data with a nonlinear least-squares routine, using a single-site binding model with Origin for ITC version 7.0 (MicroCal), and varying the stoichiometry (N), the enthalpy of the reaction (ΔH), and the association constant (K).",
+            "Figure 5 caption": "Fig. 5. ITC titration curve (A) ITC experiments for the binding of compound 7g-APC (B) ITC experiments for the binding of compound 7g-Asef.",
+            "Table 5": "Table 5 Binding constants of compound 7g-APC. S C S/C ratio KD (μM) ΔH (kcal/mol) TΔS (kcal/mol) 7g APC 1.51 ± 0.04 12.8 −4.351 ± 0.29 2.37",
+            "Results section - ITC experiments": "Specific experimental data are shown in Fig. 5 and Table 5. The experimental results showed that the titration results of compound 7g-Asef tended to be disordered with poor binding. In contrast, compound 7g can be effectively combined with the APC protein, Experiments of KD, ΔH and TΔS value is 12.8 μM, −4.351 ± 0.29 kcal/mol and 2.37 kcal/mol, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "APC",
+                "location": "cell",
+                "concentration": "15-20",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 7g",
+                "location": "syringe",
+                "concentration": "150-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 300 mM NaCl, 1 mM EDTA",
+                "pH": "7.5",
+                "temperature_c": "30",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

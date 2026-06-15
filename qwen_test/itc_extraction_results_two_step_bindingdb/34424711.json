@@ -1,0 +1,62 @@
+{
+    "51456881": {
+        "reactant_set_id": 51456881,
+        "pmid": 34424711,
+        "protein": "Nicotinamide N-methyltransferase",
+        "ligand": {
+            "smiles": "N[C@@H](CCN(C\\C=C\\c1ccc(cc1)C#N)C[C@H]1O[C@H]([C@H](O)[C@@H]1O)n1cnc2c(N)ncnc12)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human NNMT assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Isothermal Titration Calorimetry. All binding experiments are performed using a MicroCal PEAQ-ITC automated microcalorimeter (Malvern). The samples are equilibrated at 20 °C prior to the measurement. The hNNMT enzyme (8.4 mg/mL in 50 mM NaH2PO4, pH 8, 300 mM NaCl, 200 mM imidazole, 0.5 mM DTT, 1 mM PMSF, and 20% glycerol) was diluted with 20 mM Tris HCl, pH 7.0, to reach a final concentration of 11.4 μM. Compound 17u was diluted to a final concentration of 114 μM in 20 mM Tris HCl, pH 7.0, with the addition of enzyme buffer to avoid any buffer mismatch during titration. Compound 17u (114 μM) was titrated into hNNMT (11.4 μM). The titrations are conducted at 25 °C under constant stirring at 750 rpm. Each binding experiment consisted of an initial injection of 0.4 μL followed by 18 separate injections of 2.0 μL into the 200 μL sample cell. The time between each injection is 150 s, and the measurements are performed with the reference power set at 10 μcal/s, and the feedback mode was set at \"high\". The calorimetric data obtained were analyzed using MicroCal PEAQ-ITC Analysis software ver. 1.20. ITC data fitting was made based on the \"one set of sites\" fitting model of the software. The best fit is defined by χ²-minimization. All thermodynamic parameters and thermograms of the measurements of the three independent experiments are reported in the Supporting Information (Table S3 and Figure S5).",
+            "Figure 8 caption": "Figure 8. ITC thermogram of compound 17u, including the thermodynamic binding parameters obtained from three independent titration experiments with human wild-type NNMT.",
+            "Figure 8 data": "N: 0.89 ± 0.01 Kd: 21.23 ± 6.12 nM ΔH: -5.37 ± 0.10 kcal/mol -TΔS: -5.09 kcal/mol",
+            "Results section - NNMT Inhibitor Binding Studies": "The binding of the most potent inhibitor 17u with NNMT was further characterized using isothermal titration calorimetry (ITC) (Figure 8). The dissociation constant (Kd) thus obtained for compound 17u was determined to be 21.23 ± 6.12 nM, demonstrating a strong binding affinity as reflected by the potent NNMT inhibition measured in the biochemical assay. Furthermore, in keeping with the bisubstrate inhibitor's capacity to simultaneously compete with both the cofactor SAM and the substrate NA, the ITC experiment also confirmed a 1:1 stoichiometry between the ligand and the enzyme. Details and additional thermograms of compound 17u and NNMT as well as control titrations are provided in the Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "hNNMT",
+                "location": "cell",
+                "concentration": "11.4",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 17u",
+                "location": "syringe",
+                "concentration": "114"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris HCl",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "51596183": {
+        "reactant_set_id": 51596183,
+        "pmid": 38207096,
+        "protein": "Huntingtin",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)CNC(=O)[C@@H]1CCCN1C(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](N)CO)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(=O)O)C(=O)O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HTT (unknown origin) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "74. Joshi, A. S.; Singh, V.; Gahane, A.; Thakur, A. K. Biodegradable Delivery System Containing a Peptide Inhibitor of Polyglutamine Aggregation: A Step toward Therapeutic Development in Huntington’s Disease. J. Pept. Sci. 2014, 20 (8), 630–639.",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed using a Biacore T200 instrument (GE Healthcare). The HTT peptide (100 μg/mL) was immobilized on a CM5 sensor chip via amine coupling. The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). The analyte peptides were diluted in the running buffer to concentrations ranging from 0.1 to 100 μM. Association and dissociation phases were performed at a flow rate of 30 μL/min for 180 s and 300 s, respectively. Regeneration was achieved using 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 evaluation software. The dissociation constant (Kd) was calculated from the sensorgrams using a 1:1 Langmuir binding model.",
+            "Figure 13 caption": "Figure 13. (A) Synthesis of peptide-loaded PLGA NPs, adapted with permission from ref 74, and (B) Schematic showing advantages of using NPs to inhibit mHTT for improving motor performance in larval and adult HD Drosophila.",
+            "Table 1, Entry 14": "QBP1 inhibits mHTT aggregation by interacting with the PolyQ domain surface plasmon resonance (SPR) with Q62 Kd = 5.7 μM IC50 = 5.0 μM 87"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "HTT peptide",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptide analytes (not specified in text, but implied from context)",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

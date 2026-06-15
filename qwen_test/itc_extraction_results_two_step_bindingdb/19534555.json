@@ -1,0 +1,61 @@
+{
+    "50461913": {
+        "reactant_set_id": 50461913,
+        "pmid": 19534555,
+        "protein": "Betaine--homocysteine S-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(CCSCC[C@H](N)C(O)=O)CC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 83.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant BHMT expressed in Escherichia coli by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Garrow, T. A.; Ludvig, M. L. Betaine-homocysteine methyltransferase. In a distorted barrel. Structure 2002, 10, 1159–1171.",
+        "original_paragraph": {
+            "ITC Measurements": "Isothermal Titration Calorimetry (ITC). The binding of inhibitor 21 to BHMT was monitored using a VP-ITC microcalorimeter (MicroCal Inc., Northampton, MA) at 25 °C. The solutions of reactants were prepared in 50 mM HEPES/NaOH, ACES/NaOH, and Tris/HCl buffers, at pH 7.5, containing 5 mM β-mercaptoethanol. The concentration of BHMT protein (calculated for a BHMT monomer with a relative molecular weight of 45 kDa) was determined by amino acid analysis after thorough dialysis against the respective buffer. The concentration of inhibitor 21 was determined based on elemental analysis. Typically, 9 μL aliquots of 50 μM compound 21 (calculated for the S-enantiomer) were stepwise injected into the sample cell containing 1.43 mL of 5.1 μM protein until saturation was achieved. The assay was accompanied by a control experiment in which compound 21 was injected into buffer alone. The thermodynamic parameters were estimated using MicroCal Origin software.",
+            "Figure 1 caption": "Figure 1. Isothermal titration of inhibitor 21 with BHMT. Titration was performed at 25 °C in 50 mM HEPES/NaOH, pH 7.5, containing 5 mM 2-mercaptoethanol. Upper graph: experimental data. Lower graph: fit (line) to the integrated heats (full circles) from each injection of compound 21, corrected for the heat of dilution of this inhibitor. For details, see Experimental Section.",
+            "Results section (page 6)": "The stoichiometry of the main interaction was estimated to be 1.1 ± 0.1, which is in a good agreement with the previous finding that one molecule of the similar inhibitor 1 binds to one BHMT monomer subunit (four inhibitor molecules per BHMT tetramer).7 Inhibitor 21 (S-enantiomer) binds to BHMT with a dissociation constant (Kd) of about 51 nM (calculated from an association constant Ka = (2.0 ± 0.6) × 107 M−1), which corresponds to a total Gibbs free energy change ΔG = −10.0 ± 0.2 kcal·mol−1. It is decomposed into enthalpic (ΔH = −29.5 ± 1.2 kcal·mol−1) and entropic (−TΔS = 19.6 ± 1.3 kcal·mol−1) contributions. This considerably large and favorable enthalpic contribution suggests a strong and direct interaction of the inhibitor with the enzyme via hydrogen bonds or ionic interactions. On the other hand, a large and positive entropic contribution is unfavorable and may reflect possible conformational changes of the enzyme upon binding of the inhibitor."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "BHMT",
+                "location": "cell",
+                "concentration": "5.1",
+                "solution_volume": "1430"
+            },
+            "ligand": {
+                "name": "inhibitor 21",
+                "location": "syringe",
+                "concentration": "50"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES/NaOH, ACES/NaOH, and Tris/HCl, 5 mM β-mercaptoethanol",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of compound 21 into buffer alone",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "9",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

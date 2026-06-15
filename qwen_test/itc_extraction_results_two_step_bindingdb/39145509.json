@@ -1,0 +1,187 @@
+{
+    "51605167": {
+        "reactant_set_id": 51605167,
+        "pmid": 39145509,
+        "protein": "Serine/threonine-protein phosphatase 5",
+        "ligand": {
+            "smiles": "N=c1oc2cc(F)cc(F)c2cc1C(N)=S"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 811.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged human PP5 phosphatase domain extracted from Escherichia coli BL21 assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC": "The binding affinities between DDO-3733 and protein (full-length, TPR domain, phosphatase domain, or mutants of PP5) were evaluated by ITC (MicroCal iTC200). The temperature of the whole measurement process was set to 25 °C. 350 μL of protein (30 μM) in 1X PBS buffer was injected into the titration cells, small molecule (400 μM, with less than 4% DMSO) in syringes was dropped at the rate of 1 drop/90 s, with a total of 19 injections of 2 μL per drop, and a stirring speed of 750 rpm was used for the entire injection procedure. In addition, the first 0.5 μL of the ligand solution was titrated to prevent initial interference. The Origin software package (version 7.0, MicroCal) was used for data analysis, including the association constant K_a, enthalpy change (ΔH), and entropy change (ΔS). The final affinity constant K_d is calculated according to the formula K_d = 1/K_a.",
+            "Figure 4 caption - ITC": "As shown in Figure 4B, the affinity K_d value of DDO-3733 for full-length PP5 binding was 1.14 μM, reconfirming the binding of DDO-3733 to PP5. In addition, DDO-3733 exhibited binding affinity comparable to that of the phosphatase domain (K_d = 0.811 μM), but not to the TPR domain, indicating a TPR-independent mechanism (Figure 4C,D and Figure S1A).",
+            "Figure 4B": "K_d = 1.14 μM",
+            "Figure 4C": "K_d = 0.811 μM",
+            "Figure 4D": "K_d = NA"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "His-tagged human PP5 phosphatase domain",
+                "location": "cell",
+                "concentration": "30",
+                "solution_volume": "350"
+            },
+            "ligand": {
+                "name": "DDO-3733",
+                "location": "syringe",
+                "concentration": "400"
+            },
+            "assay_conditions": {
+                "buffer_composition": "1X PBS",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.5",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "90",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    },
+    "51605172": {
+        "reactant_set_id": 51605172,
+        "pmid": 39145509,
+        "protein": "Serine/threonine-protein phosphatase 5",
+        "ligand": {
+            "smiles": "N=c1oc2cc(F)cc(F)c2cc1C(N)=S"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 37200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PP5 K430A mutant (unknown origin) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC": "The binding affinities between DDO-3733 and protein (full-length, TPR domain, phosphatase domain, or mutants of PP5) were evaluated by ITC (MicroCal iTC200). The temperature of the whole measurement process was set to 25 °C. 350 μL of protein (30 μM) in 1X PBS buffer was injected into the titration cells, small molecule (400 μM, with less than 4% DMSO) in syringes was dropped at the rate of 1 drop/90 s, with a total of 19 injections of 2 μL per drop, and a stirring speed of 750 rpm was used for the entire injection procedure. In addition, the first 0.5 μL of the ligand solution was titrated to prevent initial interference. The Origin software package (version 7.0, MicroCal) was used for data analysis, including the association constant Ka, enthalpy change (ΔH), and entropy change (ΔS). The final affinity constant Kd is calculated according to the formula Kd = 1/Ka.",
+            "Figure 5 caption": "Figure 5. DDO-3733 activates PP5 in an allosteric manner. (A) Molecular docking of DDO-3733 to PP5 (PDB ID: 4JA9) based on Discovery Studio 2022 (full flexible docking). DDO-3733 (yellow stick) located in a pocket formed by E45, R74, T75, E76, K399, E428, V429, K430, A431, and M455. A hydrogen bond (yellow dashed line) formed between the carboxylate side chain of E428 and the imino group of DDO-3733. Blue surface represents the TPR domain, and red surface represents the phosphatase domain. Orange ball represents Mn2+. (B) Intramolecular hydrogen bond analysis of PP5 without (apo) or with DDO-3733 binding based on Amber 22 during 1000 ns MD simulation (CHARMM-modified TIP3P water model; the system has equilibrated at 200 ns, Figure S2A). The key hydrogen bonds involved in maintaining autoinhibitory conformation of PP5, E76-R275/Y451, and Y313-L109 disappeared (E76-Y451 and Y313-L109) and significantly decreased (E76-R275), respectively. (C) PP5-DDO-3733 contact analysis during a 1000 ns molecular dynamic simulation. E428, V429, and K430 have the largest binding contributions, involving water bridges, ionic and hydrophobic interaction, and hydrogen bond. (D–F) Binding affinity changes upon mutation analysis. Three variants PP5E428A, PP5V429A, and PP5K430A were obtained by alanine-scanning mutagenesis via changing E428, V429, and K430 to alanine, respectively. Binding affinities of DDO-3733 to proteins were determined by ITC analysis. DDO-3733 exhibited weak binding affinity to PP5K430A (Kd = 37.2 μM, Figure 5D and Figure S1A) compared with that of PP5WT (wild type, Kd = 1.14 μM), while the binding affinities completely disappeared on PP5E428A and PP5V429A (Figure 5E,F), evidencing that E428 and V429 were the key residues to interact with DDO-3733. Moreover, compared with PP5WT, the basal phosphatase activity of PP5V429A was significantly increased by approximately 2.5-fold, whereas the basal phosphatase activities of PP5E428A and PP5K430A were significantly decreased by twofold, demonstrating that E428, V429, and K430 are important for phosphatase function. Error bars represent the standard deviation (S.D.) of three independent experiments. Paired two-tailed t-tests were performed, and P < 0.05 was considered statistically significant (ns: not significant; ***P < 0.001; ****P < 0.0001). (G) Enzyme activity determinations of PP5WT, PP5E428A, PP5V429A, and PP5K430A. Compared with PP5WT, the basal phosphatase activity of PP5V429A was significantly increased (approximately 2.5-fold), and the basal phosphatase activities of PP5E428A and PP5K430A were significantly decreased, demonstrating that E428, V429, and K430 are important for phosphatase function. Error bars represent the standard deviation (S.D.) of three independent experiments. Paired two-tailed t-tests were performed, and P < 0.05 was considered statistically significant (ns: not significant; ***P < 0.001; ****P < 0.0001). (H) Dose-dependent effects of DDO-3733 on the activation of PP5WT, PP5E428A, PP5V429A, and PP5K430A, determined by the pNPP assay. Error bars represent the standard deviation (S.D.) of three independent experiments. Paired two-tailed t-tests were performed, and P < 0.05 was considered statistically significant (ns: no significant; ***P < 0.001; ****P < 0.0001).",
+            "Figure 5D caption": "D–F) Binding affinity changes upon mutation analysis. Three variants PP5E428A, PP5V429A, and PP5K430A were obtained by alanine-scanning mutagenesis via changing E428, V429, and K430 to alanine, respectively. Binding affinities of DDO-3733 to proteins were determined by ITC analysis. DDO-3733 exhibited weak binding affinity to PP5K430A (Kd = 37.2 μM, Figure 5D and Figure S1A) compared with that of PP5WT (wild type, Kd = 1.14 μM), while the binding affinities completely disappeared on PP5E428A and PP5V429A (Figure 5E,F), evidencing that E428 and V429 were the key residues to interact with DDO-3733.",
+            "Figure 5D graph": "Figure 5D shows the ITC thermogram and binding isotherm for DDO-3733 binding to PP5K430A. The thermogram (top) displays the heat released per injection. The binding isotherm (bottom) plots the enthalpy change (ΔH) against the molar ratio. The curve is fitted to a single-site binding model, and the calculated dissociation constant (Kd) is 37.2 μM, as indicated in the graph.",
+            "Figure 5E graph": "Figure 5E shows the ITC thermogram and binding isotherm for DDO-3733 binding to PP5E428A. The thermogram (top) shows no significant heat release, indicating no binding. The binding isotherm (bottom) is flat, and the Kd is reported as 'NA' (not applicable).",
+            "Figure 5F graph": "Figure 5F shows the ITC thermogram and binding isotherm for DDO-3733 binding to PP5V429A. The thermogram (top) shows no significant heat release, indicating no binding. The binding isotherm (bottom) is flat, and the Kd is reported as 'NA' (not applicable)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "PP5 K430A mutant",
+                "location": "cell",
+                "concentration": "30",
+                "solution_volume": "350"
+            },
+            "ligand": {
+                "name": "DDO-3733",
+                "location": "syringe",
+                "concentration": "400"
+            },
+            "assay_conditions": {
+                "buffer_composition": "1X PBS",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.5",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "90",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51605166": {
+        "reactant_set_id": 51605166,
+        "pmid": 39145509,
+        "protein": "Serine/threonine-protein phosphatase 5",
+        "ligand": {
+            "smiles": "N=c1oc2cc(F)cc(F)c2cc1C(N)=S"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1140.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length His-tagged human PP5 extracted from Escherichia coli BL21 assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ITC": "ITC. The binding affinities between DDO-3733 and protein (full-length, TPR domain, phosphatase domain, or mutants of PP5) were evaluated by ITC (MicroCal iTC200). The temperature of the whole measurement process was set to 25 °C. 350 μL of protein (30 μM) in 1X PBS buffer was injected into the titration cells, small molecule (400 μM, with less than 4% DMSO) in syringes was dropped at the rate of 1 drop/90 s, with a total of 19 injections of 2 μL per drop, and a stirring speed of 750 rpm was used for the entire injection procedure. In addition, the first 0.5 μL of the ligand solution was titrated to prevent initial interference. The Origin software package (version 7.0, MicroCal) was used for data analysis, including the association constant K_a, enthalpy change (ΔH), and entropy change (ΔS). The final affinity constant K_d is calculated according to the formula K_d = 1/K_a.",
+            "Figure 4 caption - ITC": "As shown in Figure 4B, the affinity K_d value of DDO-3733 for full-length PP5 binding was 1.14 μM, reconfirming the binding of DDO-3733 to PP5. In addition, DDO-3733 exhibited binding affinity comparable to that of the phosphatase domain (K_d = 0.811 μM), but not to the TPR domain, indicating a TPR-independent mechanism (Figure 4C,D and Figure S1A).",
+            "Figure 4B description": "ITC analysis of the binding of DDO-3733 to full-length PP5. Signals are labeled according to the atom numbers shown in the scheme. (B–D) ITC analysis of the binding of DDO-3733 to full-length (B), phosphatase domain (C), and TPR domain (D) of PP5, respectively. DDO-3733 showed comparable binding affinities for full-length PP5 and phosphatase domain with K_d values of 1.14 and 0.811 μM, respectively, and did not bind to the TPR domain.",
+            "Figure 4B data": "K_d = 1.14 μM",
+            "Figure 4C data": "K_d = 0.811 μM",
+            "Figure 4D data": "K_d = NA"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "full-length PP5",
+                "location": "cell",
+                "concentration": "30",
+                "solution_volume": "350"
+            },
+            "ligand": {
+                "name": "DDO-3733",
+                "location": "syringe",
+                "concentration": "400"
+            },
+            "assay_conditions": {
+                "buffer_composition": "1X PBS",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.5",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "90",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

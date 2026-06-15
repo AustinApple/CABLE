@@ -1,0 +1,61 @@
+{
+    "51587206": {
+        "reactant_set_id": 51587206,
+        "pmid": 38412237,
+        "protein": "V-type immunoglobulin domain-containing suppressor of T-cell activation",
+        "ligand": {
+            "smiles": "CCN(c1ccccc1)c1n/c(=N/Cc2ccc(-c3ccccc3)o2)ss1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 247.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human VISTA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Binding Affinity—BLI. The binding affinity between compounds and hVISTA protein was investigated using Octet Red96 instrument (ForteBio). In this label-free assay, all steps were performed in 96-well black assay plates containing 200 μL sample per well at 30 °C and 1000 rpm. The Ni-NTA biosensors (Sartorius, Cat#2305024811) were dipped in assay buffer for at least 10 min before use. The baseline step of 120 s was performed in assay buffer, then the purified hVISTA protein (50 μg/mL) was loaded for 600 s onto Ni-NTA biosensors. The biosensors were transferred to a well containing diluted compound for 60 s, and then the biosensors were transferred to the assay buffer for dissociation for 120 s. Recorded data were corrected by subtracting the signals from a reference sensor immobilized with hVISTA but without any analyte. The data were analyzed using the Octet Data Analysis HT software version 11.0, considering the analyte concentration as the compound concentration and fitted using a 1:1 interaction model and a global fit. The exported data were plotted using GraphPad Prism 9.0 software."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "ForteBio",
+                "model": "Octet Red96"
+            },
+            "sensor_chip": {
+                "type": "Ni-NTA",
+                "manufacturer": "Sartorius"
+            },
+            "immobilization": {
+                "ligand_name": "hVISTA protein",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "compounds (analytes being tested)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "assay buffer (composition not specified)",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 30,
+                "association_time_s": 60,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "reference sensor immobilized with hVISTA but without any analyte",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Octet Data Analysis HT software version 11.0"
+            }
+        }
+    }
+}

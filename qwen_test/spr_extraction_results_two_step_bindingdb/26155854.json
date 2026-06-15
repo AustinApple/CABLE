@@ -1,0 +1,194 @@
+{
+    "50351597": {
+        "reactant_set_id": 50351597,
+        "pmid": 26155854,
+        "protein": "ATPase family AAA domain-containing protein 2",
+        "ligand": {
+            "smiles": "Cc1cc2c(cnc(NC3CCNCC3)c2[nH]c1=O)-c1cncc(N)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FLAG-6His-Tev-ATAD2 (950 to 1148) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ATAD2 Surface Plasmon Resonance (SPR)": "SPR-based ligand binding assays were performed using a Biacore 4000 instrument (GE Healthcare) on CMS chips (GE Healthcare) at 25 °C. Proteins were immobilized using standard amine coupling chemistry (10 min of activation with EDC/NHS, protein injection, and then quenching with 1 M ethanolamine, pH 8.5, for 7 min), with a running buffer of 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 200 μM tris(2-carboxyethyl)phosphine (TCEP), pH 7.4. 6His-FLAG-Tev-ATAD2(950–1148) was immobilized for 5 min at 75 μg/mL, immediately after 10-fold dilution into 10 mM sodium acetate, pH 5.5. The active-site double-mutant protein 6His-FLAG-Tev-ATAD2(950–1148/Y1021A/N1064A) was similarly immobilized, but for 7 min, resulting in 7–9 kRU immobilization for each protein. A third surface was activated and quenched without protein addition, and was used as a reference surface. Binding assays were then performed in 10 mM HEPES, 500 mM NaCl, 3 mM EDTA, 0.005% Tween 20, 1 mM DTT, and 1% DMSO, pH 7.4, at a 30 μL/min flow rate. Ligands were injected in a dose–response series (10 3-fold dilutions from 100 μM down), with solvent correction and positive/negative control cycles being used throughout the assays to control for differences in response to bulk refractive index changes and loss of binding activity from the surface, respectively. Dose–response data (from reference-subtracted curves) were fitted to a steady-state 1:1 binding model to determine K_D, and the results were compared to those from the active-site mutant protein to check for active-site binding.",
+            "Figure 8 caption": "Figure 8. Surface plasmon resonance responses of 25 (blue) and 57 (red) at 11 concentrations in tripling dilution from 100 μM over the wild-type (solid lines) and acetyl-lysine site mutated (Y1021A/N1064A, dashed lines) protein. (A) Equilibrium response as a function of the concentration. (B–E) Sensorgrams of the compounds.",
+            "Table 6": "Table 6. Properties of Compounds 57 and 60^a | | 57 | 60 | |---|---|---| | ATAD2 peptide FRET pIC50/LE | 5.9(4)/0.31 | 5.9(4)/0.30 | | ATAD2 SPR K_d/LE | 2.5 μM/0.30 | not determined | | BRD2 BD1/BD2 pIC50 | 5.2/4.7 | 5.4/4.7 | | BRD3 BD1/BD2 pIC50 | 5.1/4.7 | 5.2/4.7 | | BRD4 BD1/BD2 pIC50 | 5.6/4.8 | 5.9/4.8 | | BRDT BD1/BD2 pIC50 | 5.1/4.5 | 5.2/4.6 | | CLND solubility (μM) | ≥207 | 250 | | log D (pH 7.4)/log P | 1.2/2.4 | 1.1/2.7 | | artificial membrane permeability (nm/s, pH 7.4) | <3 | <3 | | IL-6 PBMC pIC50 | 5.4(2) ± 0.1 | 5.4(1) | ^aBET pIC50 values are means of at least two replicates, SD ≤ 0.1."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "6His-FLAG-Tev-ATAD2(950–1148)",
+                "strategy": "Amine coupling",
+                "density_ru": "7-9",
+                "concentration_for_immobilization": "75 μg/mL"
+            },
+            "analyte": {
+                "description": "Ligands (compounds 25, 57, etc.)",
+                "concentration_range": "100 μM down to 10 3-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 500 mM NaCl, 3 mM EDTA, 0.005% Tween 20, 1 mM DTT, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "A third surface was activated and quenched without protein addition, used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50351598": {
+        "reactant_set_id": 50351598,
+        "pmid": 26155854,
+        "protein": "ATPase family AAA domain-containing protein 2",
+        "ligand": {
+            "smiles": "Cc1cncc(c1)-c1cnc(NC2CCNCC2)c2[nH]c(=O)c(C)cc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FLAG-6His-Tev-ATAD2 (950 to 1148) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ATAD2 Surface Plasmon Resonance (SPR)": "SPR-based ligand binding assays were performed using a Biacore 4000 instrument (GE Healthcare) on CMS chips (GE Healthcare) at 25 °C. Proteins were immobilized using standard amine coupling chemistry (10 min of activation with EDC/NHS, protein injection, and then quenching with 1 M ethanolamine, pH 8.5, for 7 min), with a running buffer of 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 200 μM tris(2-carboxyethyl)phosphine (TCEP), pH 7.4. 6His-FLAG-Tev-ATAD2(950–1148) was immobilized for 5 min at 75 μg/mL, immediately after 10-fold dilution into 10 mM sodium acetate, pH 5.5. The active-site double-mutant protein 6His-FLAG-Tev-ATAD2(950–1148/Y1021A/N1064A) was similarly immobilized, but for 7 min, resulting in 7–9 kRU immobilization for each protein. A third surface was activated and quenched without protein addition, and was used as a reference surface. Binding assays were then performed in 10 mM HEPES, 500 mM NaCl, 3 mM EDTA, 0.005% Tween 20, 1 mM DTT, and 1% DMSO, pH 7.4, at a 30 μL/min flow rate. Ligands were injected in a dose–response series (10 3-fold dilutions from 100 μM down), with solvent correction and positive/negative control cycles being used throughout the assays to control for differences in response to bulk refractive index changes and loss of binding activity from the surface, respectively. Dose–response data (from reference-subtracted curves) were fitted to a steady-state 1:1 binding model to determine K_D, and the results were compared to those from the active-site mutant protein to check for active-site binding.",
+            "Figure 8 caption": "Figure 8. Surface plasmon resonance responses of 25 (blue) and 57 (red) at 11 concentrations in tripling dilution from 100 μM over the wild-type (solid lines) and acetyl-lysine site mutated (Y1021A/N1064A, dashed lines) protein. (A) Equilibrium response as a function of the concentration. (B–E) Sensorgrams of the compounds.",
+            "Table 6": "Table 6. Properties of Compounds 57 and 60^a | | 57 | 60 | |---|---|---| | ATAD2 peptide FRET pIC50/LE | 5.9(4)/0.31 | 5.9(4)/0.30 | | ATAD2 SPR K_d/LE | 2.5 μM/0.30 | not determined | | BRD2 BD1/BD2 pIC50 | 5.2/4.7 | 5.4/4.7 | | BRD3 BD1/BD2 pIC50 | 5.1/4.7 | 5.2/4.7 | | BRD4 BD1/BD2 pIC50 | 5.6/4.8 | 5.9/4.8 | | BRDT BD1/BD2 pIC50 | 5.1/4.5 | 5.2/4.6 | | CLND solubility (μM) | ≥207 | 250 | | log D (pH 7.4)/log P | 1.2/2.4 | 1.1/2.7 | | artificial membrane permeability (nm/s, pH 7.4) | <3 | <3 | | IL-6 PBMC pIC50 | 5.4(2) ± 0.1 | 5.4(1) | ^aBET pIC50 values are means of at least two replicates, SD ≤ 0.1."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "6His-FLAG-Tev-ATAD2(950–1148)",
+                "strategy": "Amine coupling",
+                "density_ru": "7-9",
+                "concentration_for_immobilization": "75 μg/mL"
+            },
+            "analyte": {
+                "description": "Ligands (compounds 25, 57, etc.)",
+                "concentration_range": "100 μM down to 10 3-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 500 mM NaCl, 3 mM EDTA, 0.005% Tween 20, 1 mM DTT, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "A third surface was activated and quenched without protein addition, used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "50351599": {
+        "reactant_set_id": 50351599,
+        "pmid": 26155854,
+        "protein": "ATPase family AAA domain-containing protein 2",
+        "ligand": {
+            "smiles": "Cc1cc2ccnc(NC3CCNCC3)c2[nH]c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to FLAG-6His-Tev-ATAD2 (950 to 1148) (unknown origin) expressed in Escherichia coli BL21 (DE3) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - ATAD2 Surface Plasmon Resonance (SPR)": "SPR-based ligand binding assays were performed using a Biacore 4000 instrument (GE Healthcare) on CMS chips (GE Healthcare) at 25 °C. Proteins were immobilized using standard amine coupling chemistry (10 min of activation with EDC/NHS, protein injection, and then quenching with 1 M ethanolamine, pH 8.5, for 7 min), with a running buffer of 10 mM HEPES, 150 mM NaCl, 3 mM EDTA, and 200 μM tris(2-carboxyethyl)phosphine (TCEP), pH 7.4. 6His-FLAG-Tev-ATAD2(950–1148) was immobilized for 5 min at 75 μg/mL, immediately after 10-fold dilution into 10 mM sodium acetate, pH 5.5. The active-site double-mutant protein 6His-FLAG-Tev-ATAD2(950–1148/Y1021A/N1064A) was similarly immobilized, but for 7 min, resulting in 7–9 kRU immobilization for each protein. A third surface was activated and quenched without protein addition, and was used as a reference surface. Binding assays were then performed in 10 mM HEPES, 500 mM NaCl, 3 mM EDTA, 0.005% Tween 20, 1 mM DTT, and 1% DMSO, pH 7.4, at a 30 μL/min flow rate. Ligands were injected in a dose–response series (10 3-fold dilutions from 100 μM down), with solvent correction and positive/negative control cycles being used throughout the assays to control for differences in response to bulk refractive index changes and loss of binding activity from the surface, respectively. Dose–response data (from reference-subtracted curves) were fitted to a steady-state 1:1 binding model to determine K_D, and the results were compared to those from the active-site mutant protein to check for active-site binding.",
+            "Figure 8 caption": "Figure 8. Surface plasmon resonance responses of 25 (blue) and 57 (red) at 11 concentrations in tripling dilution from 100 μM over the wild-type (solid lines) and acetyl-lysine site mutated (Y1021A/N1064A, dashed lines) protein. (A) Equilibrium response as a function of the concentration. (B–E) Sensorgrams of the compounds.",
+            "Table 6": "Table 6. Properties of Compounds 57 and 60^a | | 57 | 60 | |---|---|---| | ATAD2 peptide FRET pIC50/LE | 5.9(4)/0.31 | 5.9(4)/0.30 | | ATAD2 SPR K_d/LE | 2.5 μM/0.30 | not determined | | BRD2 BD1/BD2 pIC50 | 5.2/4.7 | 5.4/4.7 | | BRD3 BD1/BD2 pIC50 | 5.1/4.7 | 5.2/4.7 | | BRD4 BD1/BD2 pIC50 | 5.6/4.8 | 5.9/4.8 | | BRDT BD1/BD2 pIC50 | 5.1/4.5 | 5.2/4.6 | | CLND solubility (μM) | ≥207 | 250 | | log D (pH 7.4)/log P | 1.2/2.4 | 1.1/2.7 | | artificial membrane permeability (nm/s, pH 7.4) | <3 | <3 | | IL-6 PBMC pIC50 | 5.4(2) ± 0.1 | 5.4(1) | ^aBET pIC50 values are means of at least two replicates, SD ≤ 0.1."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 4000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "6His-FLAG-Tev-ATAD2(950–1148)",
+                "strategy": "Amine coupling",
+                "density_ru": "7-9",
+                "concentration_for_immobilization": "75 μg/mL"
+            },
+            "analyte": {
+                "description": "Ligands (compounds 25, 57, etc.)",
+                "concentration_range": "100 μM down to 10 3-fold dilutions"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 500 mM NaCl, 3 mM EDTA, 0.005% Tween 20, 1 mM DTT, 1% DMSO, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "A third surface was activated and quenched without protein addition, used as a reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

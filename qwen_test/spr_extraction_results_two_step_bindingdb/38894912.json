@@ -1,0 +1,652 @@
+{
+    "51594262": {
+        "reactant_set_id": 51594262,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccccc2)NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H]([C@@H](C)O)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 270.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594263": {
+        "reactant_set_id": 51594263,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CS)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccccc2)NC(=O)CNC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CS)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 160.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594264": {
+        "reactant_set_id": 51594264,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 390.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594265": {
+        "reactant_set_id": 51594265,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CS)NC(=O)[C@H](CO)NC(=O)[C@H](CC(C)C)NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CS)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 330.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594266": {
+        "reactant_set_id": 51594266,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC(=O)[C@H](C(C)C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594267": {
+        "reactant_set_id": 51594267,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccccc2)NC(=O)CNC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 750.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594268": {
+        "reactant_set_id": 51594268,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CS)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)CNC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CS)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594269": {
+        "reactant_set_id": 51594269,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CS)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CS)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594270": {
+        "reactant_set_id": 51594270,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)CNC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@H](CO)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    },
+    "51594271": {
+        "reactant_set_id": 51594271,
+        "pmid": 38894912,
+        "protein": "Hepatitis A virus cellular receptor 2",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)CNC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CO)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)O)NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged human TIM-3 expressed in HEK293 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (Cytiva) at 25 °C. Recombinant His-tagged human TIM-3 (Sino Biological, Cat. #10002-H08H) was immobilized on a CM5 sensor chip (Cytiva) via amine coupling. The immobilization level was approximately 1000 response units (RU). The running buffer was HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4). Peptides were diluted in the running buffer and injected at concentrations ranging from 0.1 to 1000 nM at a flow rate of 30 μL/min. Association was allowed for 120 s, followed by a 120 s dissociation phase. Regeneration was performed with 10 mM glycine-HCl (pH 2.0) for 30 s. Data were analyzed using Biacore T200 Evaluation Software v3.0. The dissociation constant (K_D) was determined by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Figure 2. (A) Dose–response curve of P2 binding to TIM-3 using SPR. (B) Dose–response curve of P2 binding to TIM-3 using MST. Error bars represent standard deviation (n = 3).",
+            "Table 2": "Table 2. Sequences of the Top Nine Peptides from Design Round 2 Evaluated in 1 μs MD Simulation along with K_D Values for TIM-3 Binding Using SPR^a Design # Average rank Sequence SPR K_D (μM)^a 1 2.0 SWTSSAGFSTYI 0.27 ± 0.04 2 2.0 SYCSSSGFSCYI 0.16 ± 0.01 3 3.5 SFTSSAGYSTYI 0.39 ± 0.05 4 4.5 SYCSSAGLSCYI 0.33 ± 0.06 5 5.5 SYTSSAGISTYV 1.9 ± 0.08 6 6.5 SYTSSSGFSTYI 0.75 ± 0.06 7 7.5 SWCSSSGHSCYI 4.1 ± 0.24 8 8.5 SYCSSAGHSCYI 2.7 ± 0.15 9 9.5 SHTSSAGYSTYI 4.8 ± 0.32 ^aValues are represented ± standard deviation (n = 3). ^bAll peptides were terminally cyclized via the amide bond.",
+            "Results section": "Peptides 9 and 14 both bound to TIM-3 with equilibrium dissociation constants (K_D) values of 10.1 ± 1.9 μM and 9.7 ± 1.8 μM, respectively, as measured by surface plasmon resonance (SPR) in triplicate (Figures S2 and S3)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant His-tagged human TIM-3",
+                "strategy": "Amine coupling",
+                "density_ru": "1000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides",
+                "concentration_range": "0.1 to 1000 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software v3.0"
+            }
+        }
+    }
+}

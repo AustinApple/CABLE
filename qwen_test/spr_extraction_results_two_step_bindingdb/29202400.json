@@ -1,0 +1,68 @@
+{
+    "50995925": {
+        "reactant_set_id": 50995925,
+        "pmid": 29202400,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "Cc1ncsc1\\C=C\\C(=O)NC(Cc1ccc(O)cc1)C(=O)OC(C)(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant MD2 by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) analysis": "The binding affinity of 10s was detected using ProteOn XPR36 Protein Interaction Array system (Bio-Rad Laboratories, Hercules, CA) with a GLH sensor chip (ProteOn, #1765013). Briefly, MD2 or TLR4 protein (in acetate acid buffer) was immobilized on the sensor after the activation by 40 mM EDC and 10 mM sNHS in water solution. Then 10s at different concentrations was dissolved in running buffer (PBS, 0.01% SDS and 0.05% Tween-20) with added 5% DMSO. The compounds were captured in rotate channel 2 and 3, taking the first channel as a reference channel. Compounds at different concentrations were injected simultaneously at a flow rate of 30 μL/min for 120s of association phase, followed with 120s of dissociation phase at 25 °C. Data were analyzed by ProteOn manager software. The KD value was calculated by global fitting of the kinetic data from various concentrations of 10s using 1:1 Langmuir binding model.",
+            "Figure 4 caption - SPR analysis": "Surface plasmon resonance (SPR) analysis (Materials and Methods) of the binding kinetics of 10s with rhMD2 and with TLR4 (D).",
+            "Figure 4C - Sensorgram data": "Kd (M): 0.0000320, Rmax (RU): 117.56, Chi2(RU): 34.77",
+            "Figure 4C - Concentrations": "100 μM, 50 μM, 25 μM, 12.5 μM, 6.25 μM",
+            "Figure 4D - Sensorgram data": "Response (RU) vs. Times (s), with no significant response for 10s-TLR4 interaction."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories",
+                "model": "ProteOn XPR36 Protein Interaction Array system"
+            },
+            "sensor_chip": {
+                "type": "GLH",
+                "manufacturer": "ProteOn"
+            },
+            "immobilization": {
+                "ligand_name": "MD2 or TLR4 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "10s",
+                "concentration_range": "6.25 μM - 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.01% SDS, 0.05% Tween-20, 5% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "First channel as reference channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software"
+            }
+        }
+    }
+}

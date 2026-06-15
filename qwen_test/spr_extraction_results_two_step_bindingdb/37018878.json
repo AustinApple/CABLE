@@ -1,0 +1,66 @@
+{
+    "51526421": {
+        "reactant_set_id": 51526421,
+        "pmid": 37018878,
+        "protein": "Cysteine protease ATG4B",
+        "ligand": {
+            "smiles": "S=C(Nc1ccc2nc(-c3ccco3)c(nc2c1)-c1ccco1)N1CCCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14330.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal His6/SUMO-tagged full length human ATG4B expressed in Escherichia coli BL21 (DE3) cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.7. Surface plasmon resonance (SPR) assay": "The SPR assay was performed to measure the binding affinity of ATG4B and DC-ATG4in on a Biacore T200 instrument (GE Healthcare) at 25 °C. The ATG4B protein was coupled to the CM5 chip (GE Healthcare) to attain an optical density of 8000 RU based on a standard amine coupling protocol at a flow rate of 30 μL/min. The path without coupled ATG4B protein serves as a control reference. The compound of DC-ATG4in was dissolved in SPR buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 0.5 % v/v DMSO) and diluted in different concentrations ranging from 5.2 μM to 200 μM. The last concentration of 0 μM serves as a compound control. Then the DC-ATG4in compound was injected at a flow rate of 30 μL/min to bind with immobilized protein for 180 s and dissociated for 250 s. Finally, the Kd value of DC-ATG4in against ATG4B protein was obtained by Biacore T200 software Version 1.0 to evaluate the binding affinity.",
+            "Figure 2 caption - F": "SPR sensorgram showing the direct binding activity between DC-ATG4in with ATG4B protein.",
+            "Figure 2F": "The SPR sensorgram (Figure 2F) shows the response units (RU) over time (s) for different concentrations of DC-ATG4in: 5.2 μM, 7.8 μM, 11.7 μM, 17.6 μM, 39.5 μM, 59.3 μM, 133.3 μM, and 200 μM. The x-axis ranges from -200 to 600 seconds, and the y-axis (Response Unit(RU)) ranges from 0 to 150. The Kd value is reported as 14.33 ± 1.52 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal His6/SUMO-tagged full length human ATG4B",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DC-ATG4in",
+                "concentration_range": "5.2 μM to 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES pH 7.4, 150 mM NaCl, 0.5 % v/v DMSO",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 180,
+                "dissociation_time_s": 250,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Path without coupled ATG4B protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 software Version 1.0"
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+{
+    "51606459": {
+        "reactant_set_id": 51606459,
+        "pmid": 38925013,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COC(=O)C(CC(=O)Nc1ccc(C(=O)c2nccn2C)cc1)c1ccc(C(F)(F)F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 132.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged LDHA (unknown origin) assessed as dissociation constant in absence of NADPH by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance binding assay": "The binding affinity was calculated by SPR using the Biacore T200 instrument (Cytiva). His-tagged LDHA was immobilized on a CM5 sensor chip by standard amine-coupling. pH scouting was first performed to determine the appropriate pH for the amine coupling of protein to the chip surface. From scouting, pH 5.0 was chosen as the optimal pH for immobilization. The dextran matrix was activated with an injection of a mixture of 1-ethyl-3-(3-dimethyl-aminopropyl) carbodiimide and N-hydroxysuccinimide. The ligand was then passed over the activated surface to link the ligand to dextran. Finally, ethanolamine is passed over the sensor surface to deactivate any remaining esters. One flow cell of the CM5 chip is reserved as the control blank. R_max is calculated from immobilized ligand levels. Calculated R_max = (analyte MW/ligand MW) x immobilization amount x stoichiometric ratio). The final immobilized level for flow cell two (his-hLDHA) was 6454.2 RU, and for flow cell one (reference) was 143.6 RU. Compound solutions with increasing concentrations (0, 10 μM, 50 μM, 125 μM, 250 μM, and 500 μM), in triplicate, were applied to all active and reference channels in SPR binding buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, and 0.05% Tween-20, 0.5 mM TCEP, and 2% DMSO) at a 50 μL/min flow rate at 25 °C. Samples were injected for 30 s, and a 180-s dissociation phase was recorded. Sensograms were double referenced with a reference channel and zero concentration responses, and reference subtracted sensograms were fitted with a 1 to 1 Langmuir kinetic model producing two rate constants (k_a and k_d), which were used to determine the equilibrium dissociation constants (K_D). For steady-state affinity fittings, response units at each concentration were measured during the equilibration plateau phase, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve equation.",
+            "Results - Binding affinity by SPR": "resonance (SPR). SPR measures the interaction between molecules in real time, in this case, by immobilizing the LDHA protein to the sensor chip surface and injecting a range of compound concentrations over the chip. The binding of compound to the protein generates a response (RU) that is proportional to the bound mass by measuring a change in the refractive index at the chip surface. The affinity constant (K_D) was determined by kinetic fitting of the association and dissociation (on- and off-rate) signals or by plotting the level of steady-state binding for each concentration (equilibrium fitting) (Fig. S4). The kinetics was determined using the 1:1 Langmuir model. Compound 6 binds to LDHA with a fast association rate (k_on of 1.17 × 105 M⁻¹s⁻¹) and showed a dissociation k_off of 1.68 × 10⁻³ s⁻¹, though the kinetic constants could not be uniquely determined. The kinetic parameters may be approximate if the sensogram does not show sufficient curvature during the dissociation phase. However, for compound 6, the kinetic K_D of 14.5 nM aligned more closely with the observed biochemical IC50 value of 44 nM for LDHA. Molecules with a fast on-rate have a much higher tendency to rebind to the receptor after dissociation, may show improved in vivo efficacy, and are advantageous since a low dose may be required and may help if the bioavailability of the drug is low. Slower dissociation rates may be essential to extend the duration of action, particularly if the compound has rapid clearance. The compound binds with greater affinity in the presence of NADH (K_D = 14.5 nM) than in the absence of NADH (K_D = 132 nM). For steady-state requirement, the sensograms must reach a steady state during sample injection, i.e., the compound should show a stable binding level at the time point used for calculation before the end of the injection and the compound’s subsequent dissociation. As expected, the steady-state binding affinity was significantly more potent (K_D = 523 nM) in the presence of NAHD than in the absence of NADH (K_D = 52.2 μM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": "6454.2",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6",
+                "concentration_range": "0, 10 μM, 50 μM, 125 μM, 250 μM, 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 0.5 mM TCEP, 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell reserved as control blank (reference channel)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51606461": {
+        "reactant_set_id": 51606461,
+        "pmid": 38925013,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COC(=O)C(CC(=O)Nc1ccc(C(=O)c2nccn2C)cc1)c1ccc(C(F)(F)F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 52200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged LDHA (unknown origin) assessed as dissociation constant in absence of NADPH under steady state condition by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance binding assay": "The binding affinity was calculated by SPR using the Biacore T200 instrument (Cytiva). His-tagged LDHA was immobilized on a CM5 sensor chip by standard amine-coupling. pH scouting was first performed to determine the appropriate pH for the amine coupling of protein to the chip surface. From scouting, pH 5.0 was chosen as the optimal pH for immobilization. The dextran matrix was activated with an injection of a mixture of 1-ethyl-3-(3-dimethyl-aminopropyl) carbodiimide and N-hydroxysuccinimide. The ligand was then passed over the activated surface to link the ligand to dextran. Finally, ethanolamine is passed over the sensor surface to deactivate any remaining esters. One flow cell of the CM5 chip is reserved as the control blank. R_max is calculated from immobilized ligand levels. Calculated R_max = (analyte MW/ligand MW) x immobilization amount x stoichiometric ratio). The final immobilized level for flow cell two (his-hLDHA) was 6454.2 RU, and for flow cell one (reference) was 143.6 RU. Compound solutions with increasing concentrations (0, 10 μM, 50 μM, 125 μM, 250 μM, and 500 μM), in triplicate, were applied to all active and reference channels in SPR binding buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, and 0.05% Tween-20, 0.5 mM TCEP, and 2% DMSO) at a 50 μL/min flow rate at 25 °C. Samples were injected for 30 s, and a 180-s dissociation phase was recorded. Sensograms were double referenced with a reference channel and zero concentration responses, and reference subtracted sensograms were fitted with a 1 to 1 Langmuir kinetic model producing two rate constants (k_a and k_d), which were used to determine the equilibrium dissociation constants (K_D). For steady-state affinity fittings, response units at each concentration were measured during the equilibration plateau phase, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve equation.",
+            "Results - Binding affinity by SPR": "resonance (SPR). SPR measures the interaction between molecules in real time, in this case, by immobilizing the LDHA protein to the sensor chip surface and injecting a range of compound concentrations over the chip. The binding of compound to the protein generates a response (RU) that is proportional to the bound mass by measuring a change in the refractive index at the chip surface. The affinity constant (K_D) was determined by kinetic fitting of the association and dissociation (on- and off-rate) signals or by plotting the level of steady-state binding for each concentration (equilibrium fitting) (Fig. S4). The kinetics was determined using the 1:1 Langmuir model. Compound 6 binds to LDHA with a fast association rate (k_on of 1.17 × 105 M⁻¹s⁻¹) and showed a dissociation k_off of 1.68 × 10⁻³ s⁻¹, though the kinetic constants could not be uniquely determined. The kinetic parameters may be approximate if the sensogram does not show sufficient curvature during the dissociation phase. However, for compound 6, the kinetic K_D of 14.5 nM aligned more closely with the observed biochemical IC50 value of 44 nM for LDHA. Molecules with a fast on-rate have a much higher tendency to rebind to the receptor after dissociation, may show improved in vivo efficacy, and are advantageous since a low dose may be required and may help if the bioavailability of the drug is low. Slower dissociation rates may be essential to extend the duration of action, particularly if the compound has rapid clearance. The compound binds with greater affinity in the presence of NADH (K_D = 14.5 nM) than in the absence of NADH (K_D = 132 nM). For steady-state requirement, the sensograms must reach a steady state during sample injection, i.e., the compound should show a stable binding level at the time point used for calculation before the end of the injection and the compound’s subsequent dissociation. As expected, the steady-state binding affinity was significantly more potent (K_D = 523 nM) in the presence of NAHD than in the absence of NADH (K_D = 52.2 μM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": "6454.2",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6",
+                "concentration_range": "0, 10 μM, 50 μM, 125 μM, 250 μM, 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 0.5 mM TCEP, 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell reserved as control blank (reference channel)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "51606458": {
+        "reactant_set_id": 51606458,
+        "pmid": 38925013,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COC(=O)C(CC(=O)Nc1ccc(C(=O)c2nccn2C)cc1)c1ccc(C(F)(F)F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged LDHA (unknown origin) assessed as dissociation constant in presence of NADPH by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance binding assay": "The binding affinity was calculated by SPR using the Biacore T200 instrument (Cytiva). His-tagged LDHA was immobilized on a CM5 sensor chip by standard amine-coupling. pH scouting was first performed to determine the appropriate pH for the amine coupling of protein to the chip surface. From scouting, pH 5.0 was chosen as the optimal pH for immobilization. The dextran matrix was activated with an injection of a mixture of 1-ethyl-3-(3-dimethyl-aminopropyl) carbodiimide and N-hydroxysuccinimide. The ligand was then passed over the activated surface to link the ligand to dextran. Finally, ethanolamine is passed over the sensor surface to deactivate any remaining esters. One flow cell of the CM5 chip is reserved as the control blank. R_max is calculated from immobilized ligand levels. Calculated R_max = (analyte MW/ligand MW) x immobilization amount x stoichiometric ratio). The final immobilized level for flow cell two (his-hLDHA) was 6454.2 RU, and for flow cell one (reference) was 143.6 RU. Compound solutions with increasing concentrations (0, 10 μM, 50 μM, 125 μM, 250 μM, and 500 μM), in triplicate, were applied to all active and reference channels in SPR binding buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, and 0.05% Tween-20, 0.5 mM TCEP, and 2% DMSO) at a 50 μL/min flow rate at 25 °C. Samples were injected for 30 s, and a 180-s dissociation phase was recorded. Sensograms were double referenced with a reference channel and zero concentration responses, and reference subtracted sensograms were fitted with a 1 to 1 Langmuir kinetic model producing two rate constants (k_a and k_d), which were used to determine the equilibrium dissociation constants (K_D). For steady-state affinity fittings, response units at each concentration were measured during the equilibration plateau phase, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve equation.",
+            "Results - Binding affinity by SPR": "resonance (SPR). SPR measures the interaction between molecules in real time, in this case, by immobilizing the LDHA protein to the sensor chip surface and injecting a range of compound concentrations over the chip. The binding of compound to the protein generates a response (RU) that is proportional to the bound mass by measuring a change in the refractive index at the chip surface. The affinity constant (K_D) was determined by kinetic fitting of the association and dissociation (on- and off-rate) signals or by plotting the level of steady-state binding for each concentration (equilibrium fitting) (Fig. S4). The kinetics was determined using the 1:1 Langmuir model. Compound 6 binds to LDHA with a fast association rate (k_on of 1.17 × 105 M⁻¹s⁻¹) and showed a dissociation k_off of 1.68 × 10⁻³ s⁻¹, though the kinetic constants could not be uniquely determined. The kinetic parameters may be approximate if the sensogram does not show sufficient curvature during the dissociation phase. However, for compound 6, the kinetic K_D of 14.5 nM aligned more closely with the observed biochemical IC50 value of 44 nM for LDHA. Molecules with a fast on-rate have a much higher tendency to rebind to the receptor after dissociation, may show improved in vivo efficacy, and are advantageous since a low dose may be required and may help if the bioavailability of the drug is low. Slower dissociation rates may be essential to extend the duration of action, particularly if the compound has rapid clearance. The compound binds with greater affinity in the presence of NADH (K_D = 14.5 nM) than in the absence of NADH (K_D = 132 nM). For steady-state requirement, the sensograms must reach a steady state during sample injection, i.e., the compound should show a stable binding level at the time point used for calculation before the end of the injection and the compound’s subsequent dissociation. As expected, the steady-state binding affinity was significantly more potent (K_D = 523 nM) in the presence of NAHD than in the absence of NADH (K_D = 52.2 μM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": "6454.2",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6",
+                "concentration_range": "0, 10 μM, 50 μM, 125 μM, 250 μM, 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 0.5 mM TCEP, 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell reserved as control blank (reference channel)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "51606460": {
+        "reactant_set_id": 51606460,
+        "pmid": 38925013,
+        "protein": "L-lactate dehydrogenase A chain",
+        "ligand": {
+            "smiles": "COC(=O)C(CC(=O)Nc1ccc(C(=O)c2nccn2C)cc1)c1ccc(C(F)(F)F)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 523.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged LDHA (unknown origin) assessed as dissociation constant in presence of NADPH under steady state condition by surface plasmon resonance",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance binding assay": "The binding affinity was calculated by SPR using the Biacore T200 instrument (Cytiva). His-tagged LDHA was immobilized on a CM5 sensor chip by standard amine-coupling. pH scouting was first performed to determine the appropriate pH for the amine coupling of protein to the chip surface. From scouting, pH 5.0 was chosen as the optimal pH for immobilization. The dextran matrix was activated with an injection of a mixture of 1-ethyl-3-(3-dimethyl-aminopropyl) carbodiimide and N-hydroxysuccinimide. The ligand was then passed over the activated surface to link the ligand to dextran. Finally, ethanolamine is passed over the sensor surface to deactivate any remaining esters. One flow cell of the CM5 chip is reserved as the control blank. R_max is calculated from immobilized ligand levels. Calculated R_max = (analyte MW/ligand MW) x immobilization amount x stoichiometric ratio). The final immobilized level for flow cell two (his-hLDHA) was 6454.2 RU, and for flow cell one (reference) was 143.6 RU. Compound solutions with increasing concentrations (0, 10 μM, 50 μM, 125 μM, 250 μM, and 500 μM), in triplicate, were applied to all active and reference channels in SPR binding buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, and 0.05% Tween-20, 0.5 mM TCEP, and 2% DMSO) at a 50 μL/min flow rate at 25 °C. Samples were injected for 30 s, and a 180-s dissociation phase was recorded. Sensorgrams were double referenced with a reference channel and zero concentration responses, and reference subtracted sensorgrams were fitted with a 1 to 1 Langmuir kinetic model producing two rate constants (k_a and k_d), which were used to determine the equilibrium dissociation constants (K_D). For steady-state affinity fittings, response units at each concentration were measured during the equilibration plateau phase, and the K_D values were determined by fitting the data to a single rectangular hyperbolic curve equation.",
+            "Results - Binding affinity by SPR": "resonance (SPR). SPR measures the interaction between molecules in real time, in this case, by immobilizing the LDHA protein to the sensor chip surface and injecting a range of compound concentrations over the chip. The binding of compound to the protein generates a response (RU) that is proportional to the bound mass by measuring a change in the refractive index at the chip surface. The affinity constant (K_D) was determined by kinetic fitting of the association and dissociation (on- and off-rate) signals or by plotting the level of steady-state binding for each concentration (equilibrium fitting) (Fig. S4). The kinetics was determined using the 1:1 Langmuir model. Compound 6 binds to LDHA with a fast association rate (k_on of 1.17 × 105 M⁻¹s⁻¹) and showed a dissociation k_off of 1.68 × 10⁻³ s⁻¹, though the kinetic constants could not be uniquely determined. The kinetic parameters may be approximate if the sensogram does not show sufficient curvature during the dissociation phase. However, for compound 6, the kinetic K_D of 14.5 nM aligned more closely with the observed biochemical IC50 value of 44 nM for LDHA. Molecules with a fast on-rate have a much higher tendency to rebind to the receptor after dissociation, may show improved in vivo efficacy, and are advantageous since a low dose may be required and may help if the bioavailability of the drug is low. Slower dissociation rates may be essential to extend the duration of action, particularly if the compound has rapid clearance. The compound binds with greater affinity in the presence of NADH (K_D = 14.5 nM) than in the absence of NADH (K_D = 132 nM). For steady-state requirement, the sensorgrams must reach a steady state during sample injection, i.e., the compound should show a stable binding level at the time point used for calculation before the end of the injection and the compound’s subsequent dissociation. As expected, the steady-state binding affinity was significantly more potent (K_D = 523 nM) in the presence of NAHD than in the absence of NADH (K_D = 52.2 μM)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged LDHA",
+                "strategy": "Amine coupling",
+                "density_ru": "6454.2",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 6",
+                "concentration_range": "0, 10 μM, 50 μM, 125 μM, 250 μM, 500 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% Tween-20, 0.5 mM TCEP, 2% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 30,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell reserved as control blank (reference channel)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

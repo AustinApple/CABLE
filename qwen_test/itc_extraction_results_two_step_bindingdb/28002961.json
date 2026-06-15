@@ -1,0 +1,60 @@
+{
+    "51361904": {
+        "reactant_set_id": 51361904,
+        "pmid": 28002961,
+        "protein": "N-lysine methyltransferase SMYD2",
+        "ligand": {
+            "smiles": "Cc1ccccc1-c1cc(C(=O)NCCCN2CCCC2)c2cn[nH]c2n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1730.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SMYD2 (unknown origin) by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "ITC. ITC experiments were conducted using a Microcal ITC200 at 23 °C in 25 mM Tris (pH 8.5), 50 mM NaCl, and 2% DMSO. Approximately 300 μL of a 15 μM SMYD2 protein solution was loaded into the sample cell, and a 200 μM compound solubilized in DMSO was loaded into the injection syringe. Then eight 4 μL injections of compound were sequentially added to the sample cell, producing a final compound-to-protein molar ratio of approximately 1.4:1. Thermodynamic parameters N (stoichiometric constant), K_a (association constant), and ΔH° (enthalpic change) were obtained by nonlinear least-squares fitting using Origin software.",
+            "Figure 3 caption": "Figure 3. ITC titration of compound 5: 34 μM SMYD2 protein solution and 400 μM compound 5 were used; K_d of 1.73 μM, ΔH° = −6.90 kcal/mol, TΔS° = 3.14 kcal/mol, and N = 0.92."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "SMYD2",
+                "location": "cell",
+                "concentration": "34",
+                "solution_volume": "300"
+            },
+            "ligand": {
+                "name": "compound 5",
+                "location": "syringe",
+                "concentration": "400"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM Tris, 50 mM NaCl, 2% DMSO",
+                "pH": "8.5",
+                "temperature_c": "23",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "4",
+                    "subsequent_volume": "4",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "8"
+                }
+            },
+            "data_analysis": {
+                "binding_model": null
+            }
+        }
+    }
+}

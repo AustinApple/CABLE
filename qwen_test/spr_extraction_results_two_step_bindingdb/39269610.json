@@ -1,0 +1,67 @@
+{
+    "51605618": {
+        "reactant_set_id": 51605618,
+        "pmid": 39269610,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "COc1ccccc1CCNC(=O)/C(=C/c1ccc(Br)cc1)CS(=O)(=O)CCC#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1050.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human NLRP3 assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Assay": "4.14. SPR Assay. Series S Sensor Chip CMS was prepared before the experiment. The SPR assay was applied with a BLAcore T200 instrument (BLAcore T200, GE Healthcare, USA). NLRP3 protein (Cusabio, CSB-EP822275HU3) was immobilized on a CMS sensor chip, and a blank channel was employed as a negative control for each assay. A concentration of 20 μM Z48 was used for the primary screening. Then, 0–2.5 μM of Z48 were diluted with the running buffer and flowed through the chip. The K_D value was calculated with a steady affinity state model by BLAcore T200 analysis software.",
+            "Figure 8 caption": "Figure 8. Compound Z48 binds directly to the human NLRP3 protein, and its inhibitory effects are reversible. (A) SPR to determine the binding affinity (K_D value) of the NLRP3 protein with compound Z48. (B) CETSA of the NLRP3 protein with compound Z48. (C) ELISA of IL-1β in supernatants from LPS-primed PMA-differentiated THP-1 cells that were treated Ori (5 μM) or CY-09 (5 μM) or Z48 (5 μM) for 15 min and washed 3 times, then left stimulated with nigericin. Data are presented as the mean SEM, n = 3; ****P < 0.0001; ns, not significant.",
+            "Figure 8A - Sensorgram plot": "The sensorgram in Figure 8A shows the relative response over time (x-axis: Time, s) for different concentrations of Z48. The concentrations are labeled in the legend: 0.030625 μM, 0.078125 μM, 0.15625 μM, 0.3125 μM, 0.625 μM, and 2.5 μM. The plot also includes a curve for the K_D value, which is explicitly labeled as K_D = 1.05 μM.",
+            "Results Section - Binding Affinity": "To ascertain the direct binding capability of compound Z48 to the NLRP3 protein, we evaluated the binding affinity (K_D value) and capacity of compound Z48 using surface plasmon resonance (SPR) and cellular thermal shift assay (CETSA). The results revealed a significant affinity of compound Z48 for the NLRP3 protein (K_D = 1.05 μM, Figure 8A)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BLAcore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "NLRP3 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound Z48",
+                "concentration_range": "0.030625 μM - 2.5 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BLAcore T200 analysis software"
+            }
+        }
+    }
+}

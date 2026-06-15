@@ -1,0 +1,633 @@
+{
+    "51561369": {
+        "reactant_set_id": 51561369,
+        "pmid": 37499118,
+        "protein": "BRCA1-associated protein",
+        "ligand": {
+            "smiles": "COc1ccccc1CN(C)C(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 92000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged BRAP (304 to 390 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP31131–290, USP13183–307, USP1625–185, USP201–141, USP3336–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated BRAP304–390",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (not specified)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561361": {
+        "reactant_set_id": 51561361,
+        "pmid": 37499118,
+        "protein": "Histone deacetylase 6",
+        "ligand": {
+            "smiles": "COc1ccccc1CNC(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 84.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged HDAC6 UBD (1109 to 1215 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1215, HDAC61109–1215 R1155A, Y1184A, HDAC61109–1215, USP31–131, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software.",
+            "Table 4 - Summary of Biophysical Characterization of 25 and 32": "Compound Structure FP K_diss (μM) ITC K_D (μM) SPR K_D (μM) FP K_diss (μM) SPR K_D (μM) 25 [Structure of 25] 0.095 ± 0.018 0.080 ± 0.023 0.084 ± 0.020 0.44 ± 0.093 0.26 ± 0.15 32 [Structure of 32] 33 ± 6.4 NT 32 ± 7.3 NT NT",
+            "Table 5 - Selectivity of 25 and 32 against a Panel of UBDs by SPR": "UBD K_D (μM) 25 K_D (μM) 32 fold selectivity of 25 [UBD K_D / HDAC6 K_D] USP3 11 ± 1.5 47 ± 4.4 130 USP5 4.5 ± 1.9 6.3 ± 2.1 53 USP13 NB NB NC USP16 1.3 ± 0.04 4.9 ± 0.26 15 USP20 NB NB NC USP33 NB NB NC USP39 NB NB NC USP49 NB NB NC USP51 NB NB NC BRAP NB 92 ± 10 NC HDAC6 0.084 ± 0.020 32 ± 7.3 NC"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (HDAC61109–1215, HDAC61109–1215 R1155A, Y1184A, HDAC61109–1215, USP31–131, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (e.g., 25 and 32)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561362": {
+        "reactant_set_id": 51561362,
+        "pmid": 37499118,
+        "protein": "Histone deacetylase 6",
+        "ligand": {
+            "smiles": "COc1ccccc1CN(C)C(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged HDAC6 UBD (1109 to 1215 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1215, HDAC61109–1215 R1155A, Y1184A, HDAC61109–1215, USP31–131, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software.",
+            "Table 4 - Summary of Biophysical Characterization of 25 and 32": "Compound Structure FP K_diss (μM) ITC K_D (μM) SPR K_D (μM) FP K_diss (μM) SPR K_D (μM) 25 [Structure of 25] 0.095 ± 0.018 0.080 ± 0.023 0.084 ± 0.020 0.44 ± 0.093 0.26 ± 0.15 32 [Structure of 32] 33 ± 6.4 NT 32 ± 7.3 NT NT",
+            "Table 5 - Selectivity of 25 and 32 against a Panel of UBDs by SPR": "UBD K_D (μM) 25 K_D (μM) 32 fold selectivity of 25 [UBD K_D / HDAC6 K_D] USP3 11 ± 1.5 47 ± 4.4 130 USP5 4.5 ± 1.9 6.3 ± 2.1 53 USP13 NB NB NC USP16 1.3 ± 0.04 4.9 ± 0.26 15 USP20 NB NB NC USP33 NB NB NC USP39 NB NB NC USP49 NB NB NC USP51 NB NB NC BRAP NB 92 ± 10 NC HDAC6 0.084 ± 0.020 32 ± 7.3 NC"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (HDAC61109–1215, HDAC61109–1215 R1155A, Y1184A, HDAC61109–1215, USP31–131, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (e.g., 25 and 32)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561367": {
+        "reactant_set_id": 51561367,
+        "pmid": 37499118,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 16",
+        "ligand": {
+            "smiles": "COc1ccccc1CNC(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged USP16 (25 to 185 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3336–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software.",
+            "Table 5 - Selectivity of 25 and 32 against a Panel of UBDs by SPR": "Table 5. Selectivity of 25 and 32 against a Panel of UBDs by SPR | UBD | K_D (μM) a 25 | K_D (μM) a 32 | fold selectivity of 25 [UBD K_D / HDAC6 K_D] | |---|---|---|---| | USP3 | 11 ± 1.5 | 47 ± 4.4 | 130 | | USP5 | 4.5 ± 1.9 | 6.3 ± 2.1 | 53 | | USP13 | NB | NB | NC | | USP16 | 1.3 ± 0.04 | 4.9 ± 0.26 | 15 | | USP20 | NB | NB | NC | | USP33 | NB | NB | NC | | USP39 | NB | NB | NC | | USP49 | NB | NB | NC | | USP51 | NB | NB | NC | | BRAP | NB | 92 ± 10 | NC | | HDAC6 | 0.084 ± 0.020 | 32 ± 7.3 | NC | aK_D determination experiments were performed with N ≥ 3, and the values are presented as mean ± SD, reported to 2 significant figures. NB = K_D greater than the highest concentration of the compound tested. NC = not calculated as no K_D determined due to NB.",
+            "Figure 5 caption": "Figure 5. Assessment of cell-based target engagement of 25 and 32. (a) Schematic of NanoBRET assay, which measures the BRET from the interaction between HDAC6 or USP16 tagged with the NanoLuc donor and ISG15 tagged with acceptor HaloTag (HT) in the presence of the HaloTag NanoBRET 618 Ligand (HL). (b) 25 inhibited interaction of HDAC6 and ISG15 (EC50 = 1.9 ± 0.61 μM) and USP16 and ISG15 (EC50 = 20 ± 2.7 μM) in HEK293T cells, while 32 was inactive. 3 μM is the recommended concentration (highlighted in green) to achieve selectivity for HDAC6 over USP16 for 25 in cells. Experimental triplicates of mean corrected NanoBRET ratios normalized to DMSO control are presented. (c) (i) The structure of compound 33 (the biotin derivative of 25). (ii) Western blot analysis of proteins pulled down from lysates by 33 after pretreatment with DMSO, of 10 μM of 32, or 25. Replicate experiments show that pretreatment with 25, but not 32, inhibits HDAC6 pull-down with 33. (d) Selectivity profiling by label-free chemical proteomics in the cytoplasmic fraction. The volcano plot is annotated with significantly enriched proteins where log2(Fold Change) < -2 and p-value ≤ 0.05 (n = 3 independent replicates). Data analysis was completed using the Bioconductor packages DEP.31 Parallel analysis using proDA32 gave the output in Supporting Data Files."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (including USP1625–185)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (e.g., 25 and 32)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561368": {
+        "reactant_set_id": 51561368,
+        "pmid": 37499118,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 16",
+        "ligand": {
+            "smiles": "COc1ccccc1CN(C)C(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged USP16 (25 to 185 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3336–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software.",
+            "Table 5 - Selectivity of 25 and 32 against a Panel of UBDs by SPR": "Table 5. Selectivity of 25 and 32 against a Panel of UBDs by SPR | UBD | K_D (μM) a 25 | K_D (μM) a 32 | fold selectivity of 25 [UBD K_D / HDAC6 K_D] | |---|---|---|---| | USP3 | 11 ± 1.5 | 47 ± 4.4 | 130 | | USP5 | 4.5 ± 1.9 | 6.3 ± 2.1 | 53 | | USP13 | NB | NB | NC | | USP16 | 1.3 ± 0.04 | 4.9 ± 0.26 | 15 | | USP20 | NB | NB | NC | | USP33 | NB | NB | NC | | USP39 | NB | NB | NC | | USP49 | NB | NB | NC | | USP51 | NB | NB | NC | | BRAP | NB | 92 ± 10 | NC | | HDAC6 | 0.084 ± 0.020 | 32 ± 7.3 | NC | aK_D determination experiments were performed with N ≥ 3, and the values are presented as mean ± SD, reported to 2 significant figures. NB = K_D greater than the highest concentration of the compound tested. NC = not calculated as no K_D determined due to NB.",
+            "Figure 5 caption": "Figure 5. Assessment of cell-based target engagement of 25 and 32. (a) Schematic of NanoBRET assay, which measures the BRET from the interaction between HDAC6 or USP16 tagged with the NanoLuc donor and ISG15 tagged with acceptor HaloTag (HT) in the presence of the HaloTag NanoBRET 618 Ligand (HL). (b) 25 inhibited interaction of HDAC6 and ISG15 (EC50 = 1.9 ± 0.61 μM) and USP16 and ISG15 (EC50 = 20 ± 2.7 μM) in HEK293T cells, while 32 was inactive. 3 μM is the recommended concentration (highlighted in green) to achieve selectivity for HDAC6 over USP16 for 25 in cells. Experimental triplicates of mean corrected NanoBRET ratios normalized to DMSO control are presented. (c) (i) The structure of compound 33 (the biotin derivative of 25). (ii) Western blot analysis of proteins pulled down from lysates by 33 after pretreatment with DMSO, of 10 μM of 32, or 25. Replicate experiments show that pretreatment with 25, but not 32, inhibits HDAC6 pull-down with 33. (d) Selectivity profiling by label-free chemical proteomics in the cytoplasmic fraction. The volcano plot is annotated with significantly enriched proteins where log2(Fold Change) < -2 and p-value ≤ 0.05 (n = 3 independent replicates). Data analysis was completed using the Bioconductor packages DEP.31 Parallel analysis using proDA32 gave the output in Supporting Data Files."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (including USP1625–185)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (e.g., 25 and 32)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561334": {
+        "reactant_set_id": 51561334,
+        "pmid": 37499118,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 3",
+        "ligand": {
+            "smiles": "COc1ccccc1CNC(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged USP3 (1 to 131 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (not specified)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561335": {
+        "reactant_set_id": 51561335,
+        "pmid": 37499118,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 3",
+        "ligand": {
+            "smiles": "COc1ccccc1CN(C)C(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 47000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged USP3 (1 to 131 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (not specified)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561365": {
+        "reactant_set_id": 51561365,
+        "pmid": 37499118,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 5",
+        "ligand": {
+            "smiles": "COc1ccccc1CNC(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged USP5 (171 to 290 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (including USP5171–290)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (not specified)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561366": {
+        "reactant_set_id": 51561366,
+        "pmid": 37499118,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 5",
+        "ligand": {
+            "smiles": "COc1ccccc1CN(C)C(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal Avi-tagged and C-terminal His6-tagged USP5 (171 to 290 residues) (unknown origin) expressed in Escherichia coli BirA assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1213, HDAC61109–1213 R1155A, Y1184A, HDAC61109–1213, USP3171–290, USP13183–307, USP1625–185, USP201–141, USP3339–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (including USP5171–290)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (not specified)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51561363": {
+        "reactant_set_id": 51561363,
+        "pmid": 37499118,
+        "protein": "Histone deacetylase 6",
+        "ligand": {
+            "smiles": "COc1ccccc1CNC(=O)Cn1c(CCC(O)=O)nc2c(Cl)cccc2c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 260.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length HDAC6 (1 to 1215 residues) (unknown origin) expressed in Sf9 cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. Studies were performed using a Biacore T200 (GE Health Sciences). A SA chip was primed with 3 × 60 s injection with 50 mM NaOH, followed by approx. 500–6000 response units (RU) of biotinylated protein (HDAC61109–1215, HDAC61109–1215 R1155A, Y1184A, HDAC61109–1215, USP31–131, USP13183–307, USP1625–185, USP201–141, USP3336–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390) diluted in assay buffer (20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)) coupling to flow channels, with an empty flow channel used for reference subtraction. Following protein capture, the assay buffer was flowed over the chip until a stable baseline was achieved. Compound dilutions were prepared in assay buffer, and experiments were performed using multicycle kinetics with 60–400 s contact time, 60–400 s dissociation time, and 20–30 μL/minute flow rate at 20 °C. K_D values were calculated using steady-state affinity fitting with the Biacore T200 evaluation software.",
+            "Table 4 - Summary of Biophysical Characterization of 25 and 32": "Table 4. Summary of Biophysical Characterization of 25 and 32 a,b | Compound | Structure | HDAC6-UBD | Full-Length HDAC6 | | :--- | :--- | :--- | :--- | | | | FP K_disp (μM) a | ITC K_D (μM) b | SPR K_D (μM) b | FP K_disp (μM) a | SPR K_D (μM) b | | 25 | [Structure of 25] | 0.095 ± 0.018 | 0.080 ± 0.023 | 0.084 ± 0.020 | 0.44 ± 0.093 | 0.26 ± 0.15 | | 32 | [Structure of 32] | 33 ± 6.4 | NT | 32 ± 7.3 | NT | NT |",
+            "Table 5 - Selectivity of 25 and 32 against a Panel of UBDs by SPR": "Table 5. Selectivity of 25 and 32 against a Panel of UBDs by SPR | UBD | K_D (μM) a 25 | K_D (μM) a 32 | fold selectivity of 25 [UBD K_D / HDAC6 K_D] | | :--- | :--- | :--- | :--- | | USP3 | 11 ± 1.5 | 47 ± 4.4 | 130 | | USP5 | 4.5 ± 1.9 | 6.3 ± 2.1 | 53 | | USP13 | NB | NB | NC | | USP16 | 1.3 ± 0.04 | 4.9 ± 0.26 | 15 | | USP20 | NB | NB | NC | | USP33 | NB | NB | NC | | USP39 | NB | NB | NC | | USP49 | NB | NB | NC | | USP51 | NB | NB | NC | | BRAP | NB | 92 ± 10 | NC | | HDAC6 | 0.084 ± 0.020 | 32 ± 7.3 | NC |",
+            "Results - In Vitro Characterization of 25 and 32": "In Vitro Characterization of 25 and 32. 25 and 32 were selected as candidate probe and negative control compounds, respectively, both warranting further characterization by orthogonal biophysical assays (Figures 4 and S2, and Table 4). Both were characterized by SPR and isothermal calorimetry (ITC). 25 binds potently to HDAC6-UBD with K_D values of 0.084 and 0.080 μM as measured by SPR and ITC, respectively. In contrast, 32 was shown to bind weakly with a K_D of 32 μM as determined by SPR. Binding parameters of 25 were also determined for full-length HDAC6 using FP and SPR, yielding K_disp and K_D values of 0.44 and 0.26 μM for these assays, respectively. As we determined with the C-terminal ubiquitin peptide substrate (Table S1), 25 binds more potently to the isolated HDAC6-UBD than the full-length protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Health Sciences",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Health Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated protein (HDAC61109–1215, HDAC61109–1215 R1155A, Y1184A, HDAC61109–1215, USP31–131, USP13183–307, USP1625–185, USP201–141, USP3336–134, USP3984–194, USP491–115, USP51176–305, and BRAP304–390)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound dilutions (e.g., 25 and 32)",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM TCEP, 0.005% Tween-20 (v/v), and 1% DMSO (v/v)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": 60,
+                "dissociation_time_s": 60,
+                "regeneration_solution": "50 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "empty flow channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "399904": {
+        "reactant_set_id": 399904,
+        "pmid": 28376304,
+        "protein": "Na(+)/H(+) exchange regulatory cofactor NHE-RF1 [1-140]",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H]1CCCN1C(=O)[C@@H]1CCCN1C(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CS)NC(=O)[C@H](CO)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)[C@@H](C)O)C(C)C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "SPR measurements were performed with a Biacore X100 instrument (GE Healthcare Life Sciences, Piscataway, NJ) at 15.0 &deg;C. The biotinylated PTHRct-22 ligand was immobilized on an SA streptavidin sensor chip (GE Healthcare Life Sciences) usingthe manufacturer's protocol until the desired response target was reached. PDZ1 or PDZ2 analyte, dissolved in 10 mM HEPES buffer (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% surfactant polysorbate 20, was injected on the PTHRct-coated sensor surface at increasing concentrations from 10 nM to 100 &mu;M. At the end of each ligand injection&minus;dissociation cycle, the sensor chip was regenerated with 4.0 M MgCl2, 50 mM triethylamine (pH 9.15), and HBS-EP buffer.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR)": "Surface Plasmon Resonance (SPR). SPR measurements were performed with a Biacore X100 instrument (GE Healthcare Life Sciences, Piscataway, NJ) at 15.0 °C. The biotinylated PTHRct-22 ligand was immobilized on an SA streptavidin sensor chip (GE Healthcare Life Sciences) using the manufacturer's protocol until the desired response target was reached. PDZ1 or PDZ2 analyte, dissolved in 10 mM HEPES buffer (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% surfactant polysorbate 20, was injected on the PTHRct-coated sensor surface at increasing concentrations from 10 nM to 100 μM. At the end of each ligand injection–dissociation cycle, the sensor chip was regenerated with 4.0 M MgCl2, 50 mM triethylamine (pH 9.15), and HBS-EP buffer. The response curves were obtained by subtracting the background signal, generated from a control cell injected with the same analyte but without ligand coating of the hydrogel matrix to remove the effects of bulk refractive index and nonspecific binding. The data were further corrected by subtracting the signal generated from buffer alone. Background-corrected response curves were fit to the nonlinear equation R_eq = CR_max/(C + K_D), where R_max is the maximal binding response and K_D is the dissociation constant.",
+            "Figure 3 caption": "Figure 3. Binding curve (left) and sensorgrams (right) from SPR experiments for b-PTHRct-22-bound PDZ1 and PDZ2 with the affinity reported in Table 2. SPR experiments were performed three times; standard errors are listed in Table 2.",
+            "Table 2": "Table 2. Binding Affinities of PDZ Domains for C-Terminal PTHR Peptides Determined by FP, ITC, and SPR | PDZ domain | FP^a | ITC^b | SPR^c | | :--- | :--- | :--- | :--- | | | K_i (μM) | ΔG° (kcal/mol) | K_D (μM) | ΔG° (kcal/mol) | K_D (μM) | ΔG° (kcal/mol) | | PDZ1 | not measured | not measured | 11.7 ± 0.8 | -6.7 ± 0.2 | 16.0 ± 0.5 | -6.3 ± 0.0 | | PDZ2 | 7.0 ± 0.5 | -7.0 ± 0.1 | 9.7 ± 1.1 | -6.9 ± 0.4 | 11.5 ± 0.4 | -6.5 ± 0.0 | ^a b-PTHRct-22. ^b PTHRct-8. K_D and K_i values represent means ± SEM (n = 3).",
+            "Figure 3 sensorgram x-axis": "The sensorgrams (right) show time (sec) on the x-axis, ranging from 0 to 300 for PDZ1 and 0 to 250 for PDZ2. The association phase occurs from 0 to approximately 180-200 sec, followed by a dissociation phase from 180-200 sec to 300 sec.",
+            "Figure 3 binding curve x-axis": "The binding curves (left) show concentration (M) on the x-axis, ranging from 0 to 1e-004 (0.0001 M) for both PDZ1 and PDZ2, with data points at 10 nM, 20 nM, 40 nM, 60 nM, 80 nM, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Life Sciences",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare Life Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated PTHRct-22",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PDZ1 or PDZ2",
+                "concentration_range": "10 nM to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES buffer (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% surfactant polysorbate 20",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 15.0,
+                "association_time_s": 180,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "4.0 M MgCl2, 50 mM triethylamine (pH 9.15), and HBS-EP buffer"
+            },
+            "data_analysis": {
+                "reference_description": "control cell injected with the same analyte but without ligand coating of the hydrogel matrix",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "399905": {
+        "reactant_set_id": 399905,
+        "pmid": 28376304,
+        "protein": "Na(+)/H(+) exchange regulatory cofactor NHE-RF1 [133-300]",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@@H]1CCCN1C(=O)[C@@H]1CCCN1C(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H]1CCCN1C(=O)[C@H](CS)NC(=O)[C@H](CO)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)[C@@H](C)O)C(C)C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 11500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "SPR measurements were performed with a Biacore X100 instrument (GE Healthcare Life Sciences, Piscataway, NJ) at 15.0 &deg;C. The biotinylated PTHRct-22 ligand was immobilized on an SA streptavidin sensor chip (GE Healthcare Life Sciences) usingthe manufacturer's protocol until the desired response target was reached. PDZ1 or PDZ2 analyte, dissolved in 10 mM HEPES buffer (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% surfactant polysorbate 20, was injected on the PTHRct-coated sensor surface at increasing concentrations from 10 nM to 100 &mu;M. At the end of each ligand injection&minus;dissociation cycle, the sensor chip was regenerated with 4.0 M MgCl2, 50 mM triethylamine (pH 9.15), and HBS-EP buffer.",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR)": "Surface Plasmon Resonance (SPR). SPR measurements were performed with a Biacore X100 instrument (GE Healthcare Life Sciences, Piscataway, NJ) at 15.0 °C. The biotinylated PTHRct-22 ligand was immobilized on an SA streptavidin sensor chip (GE Healthcare Life Sciences) using the manufacturer's protocol until the desired response target was reached. PDZ1 or PDZ2 analyte, dissolved in 10 mM HEPES buffer (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% surfactant polysorbate 20, was injected on the PTHRct-coated sensor surface at increasing concentrations from 10 nM to 100 μM. At the end of each ligand injection–dissociation cycle, the sensor chip was regenerated with 4.0 M MgCl2, 50 mM triethylamine (pH 9.15), and HBS-EP buffer. The response curves were obtained by subtracting the background signal, generated from a control cell injected with the same analyte but without ligand coating of the hydrogel matrix to remove the effects of bulk refractive index and nonspecific binding. The data were further corrected by subtracting the signal generated from buffer alone. Background-corrected response curves were fit to the nonlinear equation R_eq = CR_max/(C + K_D), where R_max is the maximal binding response and K_D is the dissociation constant.",
+            "Figure 3 caption": "Figure 3. Binding curve (left) and sensorgrams (right) from SPR experiments for b-PTHRct-22-bound PDZ1 and PDZ2 with the affinity reported in Table 2. SPR experiments were performed three times; standard errors are listed in Table 2.",
+            "Table 2": "Table 2. Binding Affinities of PDZ Domains for C-Terminal PTHR Peptides Determined by FP, ITC, and SPR | PDZ domain | FP^a | ITC^b | SPR^c | | :--- | :--- | :--- | :--- | | | K_i (μM) | ΔG° (kcal/mol) | K_D (μM) | ΔG° (kcal/mol) | K_D (μM) | ΔG° (kcal/mol) | | PDZ1 | not measured | not measured | 11.7 ± 0.8 | -6.7 ± 0.2 | 16.0 ± 0.5 | -6.3 ± 0.0 | | PDZ2 | 7.0 ± 0.5 | -7.0 ± 0.1 | 9.7 ± 1.1 | -6.9 ± 0.4 | 11.5 ± 0.4 | -6.5 ± 0.0 | ^a b-PTHRct-22. ^b PTHRct-8. K_D and K_i values represent means ± SEM (n = 3).",
+            "Figure 3 sensorgram x-axis": "The sensorgrams (right) show time (sec) on the x-axis, ranging from 0 to 300 for PDZ1 and 0 to 250 for PDZ2. The association phase occurs from 0 to approximately 180-200 sec, followed by a dissociation phase from 180-200 sec to 300 sec.",
+            "Figure 3 binding curve x-axis": "The binding curves (left) show concentration (M) on the x-axis, ranging from 0 to 1e-004 (0.0001 M) for both PDZ1 and PDZ2, with data points at 10 nM, 20 nM, 40 nM, 60 nM, 80 nM, and 100 nM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Life Sciences",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare Life Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated PTHRct-22",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PDZ1 or PDZ2",
+                "concentration_range": "10 nM to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES buffer (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% surfactant polysorbate 20",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 15.0,
+                "association_time_s": 180,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "4.0 M MgCl2, 50 mM triethylamine (pH 9.15), and HBS-EP buffer"
+            },
+            "data_analysis": {
+                "reference_description": "control cell injected with the same analyte but without ligand coating of the hydrogel matrix",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "51536634": {
+        "reactant_set_id": 51536634,
+        "pmid": 37669317,
+        "protein": "Frizzled-7",
+        "ligand": {
+            "smiles": "Fc1ccc(cc1)C(=O)Nc1ccc(SCC(=O)Nc2nc(cs2)-c2ccccc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 160.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Antagonist activity at his-tagged FZD7 transmembrane domain (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. The test of binding affinity was performed at 10 °C using a Biacore T200 machine (GE Healthcare) equilibrated with running buffer (25 mM HEPES, pH 7.5, 500 mM NaCl, 2% glycerol, 0.01% LMNG, and 0.1% DMSO) and equipped with nickel-charged NTA chips. The purified, His-tagged FZD7-TMD and SMO proteins were coupled on the NTA sensor chip (GE Healthcare) to densities of >6000 resonance units. Then, the analyte compounds were tested using a 2- or 5-fold serial dilution. The response was plotted against the analyte concentration and fitted by nonlinear regression to a one-site saturation binding model (Graphpad Prism 8.1 software).",
+            "Figure 2 caption": "Figure 2. Validation of F7H Binding in FZD7-TMD. (A) Chemical structure of the selected hit compound F7H. (B) F7H is a potent antagonist for FZD7 in the TOPFlash assay. (C) F7H binding in FZD-TMD. K_D determined by SPR. Data are presented as the mean ± SEM of at least 3 independent experiments in triplicate.",
+            "Figure 2C sensorgram data": "The sensorgram in Figure 2C shows response (RU) over time (s). The x-axis ranges from 0 to 250 s. The y-axis ranges from -5 to 20 RU. The curves are labeled with concentrations: 1000 nM, 500 nM, 250 nM, 125 nM, 62.5 nM, 25 nM, and 2.5 nM. The text in the figure states: 'K_D = 0.16 ± 0.05 μM'.",
+            "Supporting Information S1": "The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acs.jmedchem.2c01795. Sequence identity and structural similarity between FZD4 and FZD7; SPR of F7H in SMO protein; inhibition activity of the analogs compared to compound F7H; inhibition activity of two intermediate compounds compared to compound F7H; three repeats of MD simulations of pose 1; three repeats of MD simulations of pose 2; three repeats of MD simulations of pose 3; three repeats of MD simulations of pose 4; three repeats of MD simulations of pose 5; 27 compounds used in XFEP calculations; FEP results distributions for pose 1 for compounds with different categories of bioactivity data; FEP results distributions for pose 2 for compounds with different categories of bioactivity data; FEP results distributions for pose 3 for compounds with different categories of bioactivity data; FEP results distributions for pose 4 for compounds with different categories of bioactivity data; FEP results distributions for pose 5 for compounds with different categories of bioactivity data; overlap between representative structures in MD simulations with PDB structures; partial charges calculated via RESP charge fitting; images of the 3D conformations of several compounds; ligand interaction diagrams of several compounds; and NMR spectra and HPLC profile of representative compounds (PDF)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "NTA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "His-tagged FZD7-TMD",
+                "strategy": "NTA-His capture",
+                "density_ru": ">6000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound F7H (antagonist)",
+                "concentration_range": "2.5 nM - 1000 nM (2- or 5-fold serial dilution)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "25 mM HEPES, pH 7.5, 500 mM NaCl, 2% glycerol, 0.01% LMNG, and 0.1% DMSO",
+                "pH": 7.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 10,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": "Graphpad Prism 8.1"
+            }
+        }
+    }
+}

@@ -1,0 +1,287 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/rba_experiment_conditions.schema.json",
+  "title": "Radioligand Binding Assay Experiment Conditions",
+  "description": "A schema to store experimental conditions for a Radioligand Binding Assay (RBA), based on published literature.",
+  "type": "object",
+  "properties": {
+    "pmid": {
+      "description": "The PubMed ID of the publication.",
+      "type": "string"
+    },
+    "biological_preparation": {
+      "description": "Details about the biological source containing the target receptor.",
+      "type": "object",
+      "properties": {
+        "source_type": {
+          "description": "The type of biological material used.",
+          "type": "string",
+          "enum": ["Membrane homogenate", "Whole cells", "Tissue section", "Purified protein", "Cell lysate", "Tissue homogenate", "Other"]
+        },
+        "tissue_or_cell_line": {
+          "description": "The tissue, cell line, or expression system used.",
+          "type": "string",
+          "examples": ["Rat striatal membranes", "CHO-K1 cells stably expressing hD2R", "HEK293 cells transfected with hMOR", "Guinea pig brain cortex", "Sf9 insect cells expressing hA2A"]
+        },
+        "species": {
+          "description": "The species origin of the biological preparation.",
+          "type": "string",
+          "examples": ["Human", "Rat", "Mouse", "Guinea pig", "Bovine"]
+        },
+        "target_protein": {
+          "description": "The receptor or protein target being studied, including isoform or subunit composition if specified.",
+          "type": "string",
+          "examples": ["Dopamine D2 receptor", "GABAA (α1β2γ2)", "Muscarinic M1 receptor", "Opioid mu receptor (MOR)", "Adenosine A2A receptor"]
+        },
+        "protein_concentration": {
+          "description": "The concentration of membrane protein or cells per well/tube, including units. Heterogeneous field: may be mass-based (ug/well, ug/tube, ug/mL) or cell-count-based (cells/well). Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": "string",
+          "examples": ["50 ug/well", "20 ug protein/tube", "100,000 cells/well", "15 ug membrane protein"]
+        }
+      },
+      "required": ["source_type", "tissue_or_cell_line", "species", "target_protein", "protein_concentration"]
+    },
+    "radioligand": {
+      "description": "Details about the radiolabeled probe used in the assay.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the radioligand, including the isotope label.",
+          "type": "string",
+          "examples": ["[3H]-SCH 23390", "[125I]-RTI-55", "[3H]-DPCPX", "[3H]-raclopride", "[3H]-NMS", "[35S]-GTPγS"]
+        },
+        "isotope": {
+          "description": "The radioisotope used for labeling.",
+          "type": "string",
+          "enum": ["3H", "125I", "35S", "14C", "33P", "Other"]
+        },
+        "specific_activity": {
+          "description": "The specific activity of the radioligand.",
+          "type": "object",
+          "properties": {
+            "value": {
+              "description": "Numeric value of the specific activity. Use a string to capture ranges or approximations.",
+              "type": ["string", "number"],
+              "examples": [85.5, "81-86", 2200]
+            },
+            "unit": {
+              "description": "Unit of specific activity.",
+              "type": "string",
+              "enum": ["Ci/mmol", "mCi/mmol", "GBq/mmol", "TBq/mmol"]
+            }
+          },
+          "required": ["value", "unit"]
+        },
+        "concentration_used": {
+          "description": "The concentration of radioligand used in the assay, as a number in nanomolar (nM). Convert from other molar units: pM / 1000, uM × 1000, mM × 1000000. Return null if the paper reports only a qualitative value (e.g., '~Kd concentration') or uses units that cannot be converted to nM. Use ASCII 'u' in unit strings elsewhere in the schema, not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [1, 0.5, 2, null]
+        },
+        "kd_value": {
+          "description": "The known dissociation constant (Kd) of the radioligand for the target, required for Ki calculation via Cheng-Prusoff.",
+          "type": "object",
+          "properties": {
+            "value": {
+              "description": "Kd value as a number in nanomolar (nM). Convert from other units: uM × 1000, pM / 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
+              "type": "number"
+            },
+            "source": {
+              "description": "Whether the Kd was determined in-house or taken from literature.",
+              "type": "string",
+              "enum": ["Determined in this study", "Literature value", "Not specified"]
+            }
+          },
+          "required": ["value", "source"]
+        }
+      },
+      "required": ["name", "isotope", "specific_activity", "concentration_used", "kd_value"]
+    },
+    "test_compound": {
+      "description": "Details about the unlabeled compound(s) being evaluated.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "A general description of the test compound(s).",
+          "type": "string",
+          "examples": ["Small molecules", "Peptides", "Novel D2 antagonists", "Natural product library"]
+        },
+        "concentration_range": {
+          "description": "The range of concentrations tested for the competition curve, as a string with all concentrations normalized to micromolar (uM). Convert from other molar units: nM / 1000, pM / 1000000, mM × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": "string",
+          "examples": ["0.0001-10 uM", "10-point, half-log dilution, top 10 uM", "12 concentrations, 3-fold serial dilution", "Single point at 10 uM"]
+        },
+        "vehicle_solvent": {
+          "description": "The solvent used to dissolve the test compounds and its final assay concentration.",
+          "type": "string",
+          "examples": ["DMSO, final 1%", "DMSO, final 0.1%", "Water", "Ethanol, final 0.5%"]
+        }
+      },
+      "required": ["description", "concentration_range", "vehicle_solvent"]
+    },
+    "nsb_definition": {
+      "description": "How nonspecific binding (NSB) was defined in the assay. This is critical for data interpretation.",
+      "type": "object",
+      "properties": {
+        "compound_name": {
+          "description": "The unlabeled compound used to define 100% displacement (nonspecific binding).",
+          "type": "string",
+          "examples": ["SCH 23390", "Haloperidol", "Naloxone", "Atropine", "NECA"]
+        },
+        "compound_concentration": {
+          "description": "The concentration of the NSB-defining compound as a number in micromolar (uM). Convert from other molar units: nM / 1000, mM × 1000. Return null if the paper uses units that cannot be converted to uM. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [10, 1, 100, null]
+        },
+        "selectivity_rationale": {
+          "description": "Whether the NSB compound is selective for the target, or a broad/non-selective displacer.",
+          "type": "string",
+          "enum": ["Target-selective", "Non-selective", "Not specified"]
+        }
+      },
+      "required": ["compound_name", "compound_concentration", "selectivity_rationale"]
+    },
+    "assay_conditions": {
+      "description": "Conditions during the incubation phase.",
+      "type": "object",
+      "properties": {
+        "assay_format": {
+          "description": "The physical format of the assay.",
+          "type": "string",
+          "examples": ["Filtration (well)", "Filtration (tubes)", "Scintillation Proximity Assay (SPA)", "Centrifugation", "Microplate-based (FlashPlate)", "Microplate-based (Cytostar-T)", "Other"]
+        },
+        "buffer_composition": {
+          "description": "The full composition of the incubation buffer, including salts and additives. Exclude pH here; use the separate pH field.",
+          "type": "string",
+          "examples": ["50 mM Tris-HCl, 120 mM NaCl, 5 mM MgCl2, 1 mM EDTA", "50 mM HEPES, 10 mM MgCl2, 100 mM NaCl"]
+        },
+        "pH": {
+          "description": "The pH of the incubation buffer.",
+          "type": "number",
+          "examples": [7.4, 7.5, 6.8]
+        },
+        "incubation_temperature": {
+          "description": "The temperature during incubation. Use a string to allow for 'room temperature'.",
+          "type": "string",
+          "examples": ["25", "37", "4", "room temperature"]
+        },
+        "incubation_time": {
+          "description": "The duration of incubation as a number in minutes. Convert from other units: h × 60, s / 60. Use a string to capture ranges (e.g., '60-120').",
+          "type": ["string", "number"],
+          "examples": [60, 90, 120, "60-120"]
+        },
+        "equilibrium_confirmed": {
+          "description": "Whether the authors confirmed that binding had reached equilibrium (e.g., via a time course).",
+          "type": "string",
+          "enum": ["Yes", "No", "Not specified"]
+        },
+        "total_assay_volume": {
+          "description": "The total volume of the assay mixture as a number in microliters (uL). Convert from other units: mL × 1000. Use ASCII 'u' in unit strings, not Unicode micro.",
+          "type": "number",
+          "examples": [200, 500, 1000, 250]
+        }
+      },
+      "required": ["assay_format", "buffer_composition", "pH", "incubation_temperature", "incubation_time", "equilibrium_confirmed", "total_assay_volume"]
+    },
+    "separation_and_detection": {
+      "description": "How bound and free radioligand were separated and how radioactivity was measured.",
+      "type": "object",
+      "properties": {
+        "separation_method": {
+          "description": "The method used to separate bound from free radioligand.",
+          "type": "string",
+          "enum": ["Rapid vacuum filtration", "Harvester filtration", "Centrifugation", "SPA (no separation)", "FlashPlate (no separation)", "Other"]
+        },
+        "filter_type": {
+          "description": "The type of filter used, if filtration-based. Null if not applicable.",
+          "type": ["string", "null"],
+          "examples": ["GF/B", "GF/C", "Unifilter-96 GF/B", "Whatman GF/B pretreated with 0.3% PEI"]
+        },
+        "wash_protocol": {
+          "description": "The wash conditions after filtration. Null if not applicable.",
+          "type": ["string", "null"],
+          "examples": ["3 × 3 mL ice-cold 50 mM Tris-HCl pH 7.4", "4 × 1 mL cold wash buffer", "3 × 500 uL ice-cold buffer"]
+        },
+        "detection_instrument": {
+          "description": "The instrument used to measure radioactivity.",
+          "type": "string",
+          "examples": ["Perkin Elmer MicroBeta2", "Beckman LS6500 scintillation counter", "Packard TopCount NXT", "Wallac 1450 MicroBeta"]
+        },
+        "scintillation_cocktail": {
+          "description": "The scintillation cocktail used for liquid scintillation counting. Null if gamma counting or proximity-based.",
+          "type": ["string", "null"],
+          "examples": ["Ultima Gold", "MicroScint-20", "EcoLite", "OptiPhase SuperMix"]
+        }
+      },
+      "required": ["separation_method", "filter_type", "wash_protocol", "detection_instrument", "scintillation_cocktail"]
+    },
+    "data_analysis": {
+      "description": "Details about how the raw data was processed and modeled.",
+      "type": "object",
+      "properties": {
+        "endpoint_reported": {
+          "description": "The primary binding parameter reported in the publication.",
+          "type": "string",
+          "enum": ["Ki", "IC50", "Kd", "Bmax", "Percent inhibition", "pKi", "pIC50", "EC50", "Other"]
+        },
+        "ic50_to_ki_conversion": {
+          "description": "The method used to convert IC50 to Ki, if applicable. Null if Ki was not derived from IC50.",
+          "type": ["string", "null"],
+          "enum": ["Cheng-Prusoff equation", "Munson-Rodbard correction", "Exact solution (Cer & Bhatt)", "Not applicable", "Not specified", null]
+        },
+        "fitting_model": {
+          "description": "The model used to fit competition or saturation binding curves.",
+          "type": "string",
+          "enum": ["One-site competition", "Two-site competition", "Four-parameter logistic", "Saturation binding (one-site)", "Saturation binding (two-site)", "Other"]
+        },
+        "hill_slope_reported": {
+          "description": "Whether a Hill slope (nH) was reported and its value, if available. nH ≠ 1 may indicate cooperativity or binding heterogeneity.",
+          "type": "object",
+          "properties": {
+            "reported": {
+              "type": "string",
+              "enum": ["Yes, fixed to 1", "Yes, variable", "Not reported"]
+            },
+            "value": {
+              "description": "The Hill slope value if reported as variable. Null if fixed or not reported.",
+              "type": ["number", "null"]
+            }
+          },
+          "required": ["reported"]
+        },
+        "software": {
+          "description": "The software used for curve fitting and data analysis.",
+          "type": "string",
+          "examples": ["GraphPad Prism 9", "GraphPad Prism 8", "SigmaPlot", "GeneData Screener", "EBDA/LIGAND", "ActivityBase"]
+        },
+        "replicates": {
+          "description": "The number of replicates and independent experiments.",
+          "type": "object",
+          "properties": {
+            "technical_replicates": {
+              "description": "Number of replicates per concentration within a single experiment (e.g., duplicate, triplicate).",
+              "type": "string",
+              "examples": ["Duplicate", "Triplicate", "Singlicate", "Not specified"]
+            },
+            "independent_experiments": {
+              "description": "Number of independent experiments (n). Use a string to capture ranges.",
+              "type": ["string", "number"],
+              "examples": [3, "2-4", "≥3", "Not specified"]
+            }
+          },
+          "required": ["technical_replicates", "independent_experiments"]
+        }
+      },
+      "required": ["endpoint_reported", "ic50_to_ki_conversion", "fitting_model", "hill_slope_reported", "software", "replicates"]
+    }
+  },
+  "required": [
+    "pmid",
+    "biological_preparation",
+    "radioligand",
+    "test_compound",
+    "nsb_definition",
+    "assay_conditions",
+    "separation_and_detection",
+    "data_analysis"
+  ]
+}

@@ -1,0 +1,912 @@
+{
+    "50214901": {
+        "reactant_set_id": 50214901,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "NC(=N)SCc1c(F)cccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214903": {
+        "reactant_set_id": 50214903,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1ccc2cc(F)ccc2n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1280000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214906": {
+        "reactant_set_id": 50214906,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1ccc2cc(ccc2n1)-c1ccccc1C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 200000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214907": {
+        "reactant_set_id": 50214907,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1ccc2cc(ccc2n1)-c1ccccc1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 39000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214909": {
+        "reactant_set_id": 50214909,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1ccc2ccccc2n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 900000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214910": {
+        "reactant_set_id": 50214910,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Cc1ccc2nc(N)ccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1600000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214915": {
+        "reactant_set_id": 50214915,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1ccc2cc(ccc2n1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3900000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214916": {
+        "reactant_set_id": 50214916,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Fc1cccc(c1)C1NCCc2sccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214917": {
+        "reactant_set_id": 50214917,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1cc(c2ccccc2n1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2900000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214918": {
+        "reactant_set_id": 50214918,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "NC1=Nc2ccccc2Sc2cccc(F)c12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 325000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214919": {
+        "reactant_set_id": 50214919,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Cc1cc(N)nc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1300000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214920": {
+        "reactant_set_id": 50214920,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Nc1ccc2cc(ccc2n1)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 34000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214921": {
+        "reactant_set_id": 50214921,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Cc1ccccc1-c1ccc2nc(N)ccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 25000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    },
+    "50214922": {
+        "reactant_set_id": 50214922,
+        "pmid": 22165820,
+        "protein": "Beta-secretase 1",
+        "ligand": {
+            "smiles": "Fc1cccc(Cl)c1CN1CCNCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2000000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to BACE1 by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Spectroscopy": "Dissociation constant (Kd) measurements were performed on Biacore S51 and T100 instruments (GE Healthcare). BACE-1 protein and inhibitors for Biacore measurements were generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. Glycosylated BACE-1 was reacted with sodium periodate to oxidize cis-diols groups on sugar chains to aldehydes. The oxidized BACE-1 was immobilized at high density (10000–12000 RU) onto CM5 chips using aldehyde coupling chemistry and resulted in surface activities close to 100% based on reference inhibitor binding. The immobilization running buffer consisted of 10 mM HEPES pH 7.4 with 150 mM NaCl and immobilization steps consisted of a 3–4 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl) carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 7 min 5 mM carbohydrazide in water, 7 min 1 M ethanolamine hydrochloride pH 8.5, 10 min 20 μg/mL oxidized BACE-1 in 10 mM sodium acetate pH 4.0, 7 min 100 mM sodium cyanoborohydride in 100 mM sodium acetate pH 4.0, 3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5. The reference spot for all SPR experiments consisted of the carboxymethyl dextran surface of the CM5 chip treated in an identical manner as the other flow cell spot excluding the addition of protein. For Kd measurements the buffer was replaced with 50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005 (v/v) Tween20, and 5% (v/v) DMSO. Compound stocks prepared in DMSO (typically 20 mM) were serially diluted in running buffer and injected over the immobilized BACE-1. Association and dissociation time were typically set to 45 s and 90 s, respectively. The runs were performed at 25 °C with a flow rate from 10 to 90 μL/min and data collection rate of 10 Hz. The data were processed and analyzed using Scrubber-2 analysis software (BioLogic Software, Campbell, Australia). The sample response observed on the reference spot was subtracted from the sample response with immobilized BACE-1 to correct for systematic noise and baseline drift. Data was solvent corrected and the response from blank injections was used to double-reference the binding data. The data were molecular weight normalized and Kd values established using simple steady analysis with one global Rmax (or individual Rmax in cases where complete saturation was achieved).",
+            "Figure 4 caption": "Figure 4. Fast and accurate determination of Kd values using dCSP. Using compound 1 from Table 1, 19F spectra were acquired of samples prepared using 3 μM BACE-1 with (A) 100 μM and (B) 200 μM ligand (red). Traces are scaled for illustration. Chemical shifts were measured with respect to samples containing no protein (black) and Kd was determined using eq 4. (C) Results were confirmed using SPR. Blue traces represent raw sensorgrams for the fragment, and black traces represent raw sensorgrams for the control compound (Kd ~ 400 nM). Binding constants for both compounds were determined using steady-state analysis.",
+            "Table 2": "Table 2. Fragment Compounds: Agreement of NMR and SPR Based Methods of Kd Determination Compound Structure MW (Daltons) Kd(NMR) (μM) Kd(SPR) (μM) Ligand Efficiency* Crystal Structure 1 [Structure] 219 350 300 0.3 Yes 2 [Structure] 229 >1000 >2000 N/A No 3 [Structure] 233 >1000 >2000 N/A No 4 [Structure] 244 400 325 0.28 No 5 [Structure] 162 1000 1280 0.3 Yes *Ligand Efficiency determined using Kd from SPR",
+            "Figure 4C": "Kd(NMR) = 350 +/- 50μM Kd(SPR) = 300μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S51 and T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Glycosylated BACE-1",
+                "strategy": "Aldehyde coupling",
+                "density_ru": "10000-12000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (compounds) tested for binding to BACE-1",
+                "concentration_range": "Serially diluted from 20 mM stock in DMSO, final concentrations not specified but implied to be in μM range (e.g., 300 μM for compound 1)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM sodium acetate pH 5.0, 150 mM NaCl, 0.005% (v/v) Tween20, 5% (v/v) DMSO",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 45,
+                "dissociation_time_s": 90,
+                "regeneration_solution": "3 × 30 s 50 mM glycine pH 9.5 and 3 × 30 s 1 M NaCl in 100 mM NaHCO3 pH 9.5"
+            },
+            "data_analysis": {
+                "reference_description": "Carboxymethyl dextran surface of the CM5 chip treated identically to the active spot but without protein addition",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Scrubber-2 analysis software (BioLogic Software, Campbell, Australia)"
+            }
+        }
+    }
+}

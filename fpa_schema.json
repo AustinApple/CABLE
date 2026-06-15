@@ -1,0 +1,378 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/competitive_fp_fa_experiment_conditions.schema.json",
+  "title": "Competitive Fluorescence Polarization/Anisotropy Binding Assay Experiment Conditions",
+  "description": "A schema to store experimental conditions for a competitive Fluorescence Polarization (FP) or Fluorescence Anisotropy (FA) binding assay, based on published literature.",
+  "type": "object",
+  "properties": {
+    "pmid": {
+      "description": "The PubMed ID of the publication.",
+      "type": "string"
+    },
+    "biological_preparation": {
+      "description": "Details about the biological source containing the target protein.",
+      "type": "object",
+      "properties": {
+        "source_type": {
+          "description": "The type of biological material used.",
+          "type": "string",
+          "examples": ["Purified protein", "Membrane homogenate", "Whole cells", "Cell lysate", "Tissue homogenate", "Other"]
+        },
+        "tissue_or_cell_line": {
+          "description": "The tissue, cell line, or expression system used to produce the protein.",
+          "type": "string",
+          "examples": ["E. coli BL21(DE3) expressing His-tagged hBRD4-BD1", "CHO-K1 cells stably expressing hERα-LBD", "Sf9 insect cells expressing hHsp90α", "HEK293T cells transfected with hMDM2"]
+        },
+        "species": {
+          "description": "The species origin of the target protein.",
+          "type": "string",
+          "examples": ["Human", "Rat", "Mouse", "Bovine", "E. coli (recombinant human)"]
+        },
+        "target_protein": {
+          "description": "The protein target being studied, including domain or construct boundaries if specified.",
+          "type": "string",
+          "examples": ["BRD4 bromodomain 1 (BD1, residues 44–168)", "MDM2 (residues 1–118)", "Hsp90α N-terminal domain", "ERα ligand-binding domain", "XIAP BIR3 domain"]
+        },
+        "protein_concentration": {
+          "description": "The concentration of protein used in the assay, as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000, mM * 1000000. Return null if the paper reports mass units (e.g., mg/mL) without a molecular weight for conversion, or if not stated. Use ASCII 'u', not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [50, 100, 25, 200]
+        },
+        "protein_purity_method": {
+          "description": "The purification method used, if reported.",
+          "type": ["string", "null"],
+          "examples": ["Ni-NTA affinity chromatography followed by SEC", "GST pulldown and TEV cleavage", "Not specified"]
+        }
+      },
+      "required": ["source_type", "tissue_or_cell_line", "species", "target_protein", "protein_concentration"]
+    },
+    "fluorescent_tracer": {
+      "description": "Details about the fluorescently labeled probe used in the assay. Analogous to the radioligand in an RBA.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name or identifier of the fluorescent tracer, including the fluorophore label.",
+          "type": "string",
+          "examples": ["FITC-labeled p53 peptide (residues 15–29)", "TAMRA-JQ1", "FAM-SMAC peptide (AVPIAQK)", "BODIPY-geldanamycin", "Alexa488-labeled BIM BH3 peptide"]
+        },
+        "tracer_type": {
+          "description": "The chemical nature of the tracer.",
+          "type": "string",
+          "examples": ["Labeled peptide", "Labeled small molecule", "Labeled nucleic acid", "Labeled protein fragment", "Other"]
+        },
+        "fluorophore": {
+          "description": "The fluorophore conjugated to the tracer.",
+          "type": "string",
+          "examples": ["Fluorescein (FITC)", "FAM (6-carboxyfluorescein)", "TAMRA", "BODIPY", "Alexa Fluor 488", "Alexa Fluor 647", "Texas Red", "Rhodamine"]
+        },
+        "excitation_wavelength_nm": {
+          "description": "The excitation wavelength used, in nanometers.",
+          "type": ["number", "null"],
+          "examples": [485, 530, 635, 480]
+        },
+        "emission_wavelength_nm": {
+          "description": "The emission wavelength used, in nanometers.",
+          "type": ["number", "null"],
+          "examples": [530, 580, 670, 520]
+        },
+        "concentration_used": {
+          "description": "The concentration of tracer used in the assay, as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000. Return null if only qualitative (e.g., '~Kd concentration') or if not stated. Use ASCII 'u', not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [5, 10, 1, 20]
+        },
+        "kd_value": {
+          "description": "The known dissociation constant (Kd) of the tracer for the target protein, required for Ki calculation via Cheng-Prusoff.",
+          "type": "object",
+          "properties": {
+            "value": {
+              "description": "Kd as a number in nanomolar (nM). Convert from other molar units: uM * 1000, pM / 1000. Use ASCII 'u', not Unicode micro.",
+              "type": ["number", "null"]
+            },
+            "source": {
+              "description": "Whether the tracer Kd was determined in-house or taken from literature.",
+              "type": "string",
+              "examples": ["Determined in this study", "Literature value", "Not specified"]
+            }
+          },
+          "required": ["value", "source"]
+        }
+      },
+      "required": ["name", "tracer_type", "fluorophore", "concentration_used", "kd_value"]
+    },
+    "test_compound": {
+      "description": "Details about the unlabeled competitor compound(s) being evaluated.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "A general description of the test compound(s).",
+          "type": "string",
+          "examples": ["Small molecules", "Peptides", "Novel BRD4 inhibitors", "Stapled peptides targeting MDM2", "Fragment library"]
+        },
+        "concentration_range": {
+          "description": "The range of concentrations tested for the competition curve, as a string with all concentrations normalized to micromolar (uM). Convert from other molar units: mM * 1000, nM / 1000, pM / 1000000. Use ASCII 'u', not Unicode micro.",
+          "type": "string",
+          "examples": ["0.0001-100 uM", "10-point, half-log dilution, top 50 uM", "12 concentrations, 3-fold serial dilution", "Single point at 10 uM"]
+        },
+        "vehicle_solvent": {
+          "description": "The solvent used to dissolve the test compounds and its final assay concentration.",
+          "type": "string",
+          "examples": ["DMSO, final 1%", "DMSO, final 0.5%", "DMSO, final 2%", "Water"]
+        },
+        "dmso_tolerance_tested": {
+          "description": "Whether the authors verified that the final DMSO concentration does not interfere with FP signal or protein-tracer binding.",
+          "type": "string",
+          "enum": ["Yes", "No", "Not specified"]
+        }
+      },
+      "required": ["description", "concentration_range", "vehicle_solvent"]
+    },
+    "assay_controls": {
+      "description": "How the assay window (fully bound and fully displaced signals) was defined. Analogous to NSB definition in RBA.",
+      "type": "object",
+      "properties": {
+        "high_signal_control": {
+          "description": "The condition representing maximum polarization/anisotropy (fully bound tracer).",
+          "type": "string",
+          "examples": ["Protein + tracer, no competitor", "Protein + tracer + DMSO vehicle"]
+        },
+        "low_signal_control": {
+          "description": "The condition representing minimum polarization/anisotropy (fully displaced or free tracer).",
+          "type": "string",
+          "examples": ["Tracer only, no protein", "Tracer + 100 uM unlabeled JQ1", "Tracer + 50 uM reference competitor"]
+        },
+        "positive_control_compound": {
+          "description": "A reference compound of known affinity used to validate the assay.",
+          "type": ["string", "null"],
+          "examples": ["(+)-JQ1", "Nutlin-3a", "17-AAG", "GDC-0152", "Not specified"]
+        },
+        "positive_control_expected_value": {
+          "description": "The expected Ki or IC50 for the positive control compound, including units.",
+          "type": ["string", "null"],
+          "examples": ["Ki = 50 nM", "IC50 = 0.6 uM", "Not specified"]
+        },
+        "z_prime_reported": {
+          "description": "Whether the Z'-factor (assay quality metric) was reported and its value.",
+          "type": "object",
+          "properties": {
+            "reported": {
+              "type": "string",
+              "enum": ["Yes", "No"]
+            },
+            "value": {
+              "description": "The Z'-factor value, if reported. Null otherwise.",
+              "type": ["number", "null"]
+            }
+          },
+          "required": ["reported"]
+        }
+      },
+      "required": ["high_signal_control", "low_signal_control", "z_prime_reported"]
+    },
+    "assay_conditions": {
+      "description": "Conditions during the incubation phase.",
+      "type": "object",
+      "properties": {
+        "assay_format": {
+          "description": "The plate format used.",
+          "type": "string",
+          "enum": ["384-well black plate", "96-well black plate", "384-well low-volume black plate", "1536-well black plate", "Other"]
+        },
+        "plate_type": {
+          "description": "Specific plate information if reported.",
+          "type": ["string", "null"],
+          "examples": ["Corning 3575 (384-well, low-volume, black, flat-bottom)", "Greiner 784076 (384-well, black, flat-bottom)", "PerkinElmer OptiPlate-384", "Not specified"]
+        },
+        "buffer_composition": {
+          "description": "The full composition of the assay buffer, including salts and additives. Exclude pH here; use the separate pH field.",
+          "type": "string",
+          "examples": ["50 mM HEPES, 150 mM NaCl, 0.01% Triton X-100, 1 mM DTT", "100 mM phosphate buffer, 100 mM NaCl, 0.05% CHAPS", "PBS with 0.01% Tween-20 and 0.1 mg/mL BSA"]
+        },
+        "ph": {
+          "description": "The pH of the assay buffer.",
+          "type": "number",
+          "examples": [7.4, 7.5, 7.0]
+        },
+        "detergent_used": {
+          "description": "Whether a detergent was included to reduce compound aggregation or nonspecific binding, and which one.",
+          "type": ["string", "null"],
+          "examples": ["0.01% Triton X-100", "0.05% CHAPS", "0.01% Tween-20", "0.05% Pluronic F-127", "None", "Not specified"]
+        },
+        "incubation_temperature": {
+          "description": "The temperature during incubation. Use a string to allow for 'room temperature'.",
+          "type": "string",
+          "examples": ["25", "37", "4", "room temperature"]
+        },
+        "incubation_time": {
+          "description": "The duration of incubation before reading, as a number in minutes. Convert from other units: h * 60. Use a string for ranges (e.g., '30-60') or qualitative values (e.g., 'overnight').",
+          "type": ["string", "number"],
+          "examples": [30, 60, 120, "30-60", "overnight"]
+        },
+        "equilibrium_confirmed": {
+          "description": "Whether the authors confirmed that binding had reached equilibrium (e.g., via a time course of FP signal).",
+          "type": "string",
+          "enum": ["Yes", "No", "Not specified"]
+        },
+        "total_assay_volume": {
+          "description": "The total volume of the assay mixture per well, as a number in microliters (uL). Convert from other units: mL * 1000. Use ASCII 'u', not Unicode micro.",
+          "type": ["number", "null"],
+          "examples": [20, 25, 50, 100, 10]
+        },
+        "order_of_addition": {
+          "description": "The order in which components were added and any pre-incubation steps.",
+          "type": ["string", "null"],
+          "examples": ["Protein + compound pre-incubated 15 min, then tracer added", "All components added simultaneously", "Compound + tracer added to protein", "Not specified"]
+        }
+      },
+      "required": ["assay_format", "buffer_composition", "ph", "incubation_temperature", "incubation_time", "equilibrium_confirmed", "total_assay_volume"]
+    },
+    "detection": {
+      "description": "How fluorescence polarization or anisotropy was measured. FP/FA is a homogeneous assay with no separation step.",
+      "type": "object",
+      "properties": {
+        "readout_mode": {
+          "description": "Whether the assay reports fluorescence polarization or fluorescence anisotropy.",
+          "type": "string",
+          "enum": ["Fluorescence Polarization (FP)", "Fluorescence Anisotropy (FA)", "Not specified"]
+        },
+        "readout_unit": {
+          "description": "The unit used for the raw readout values.",
+          "type": "string",
+          "enum": ["mP (millipolarization)", "Anisotropy (r)", "Not specified"]
+        },
+        "instrument": {
+          "description": "The plate reader used to measure FP/FA.",
+          "type": "string",
+          "examples": ["BMG PHERAstar FSX", "Tecan Infinite M1000 Pro", "PerkinElmer EnVision", "Molecular Devices SpectraMax Paradigm", "BioTek Synergy H4", "Tecan Spark"]
+        },
+        "g_factor_correction": {
+          "description": "Whether the instrument G-factor was determined and applied to correct for optical bias between detection channels.",
+          "type": "string",
+          "enum": ["Yes", "No", "Not specified"]
+        },
+        "assay_window": {
+          "description": "The dynamic range of the assay, i.e. the difference in mP or anisotropy between fully bound and free tracer.",
+          "type": "object",
+          "properties": {
+            "bound_signal": {
+              "description": "The FP/FA value for the fully bound tracer (high control).",
+              "type": ["string", "number", "null"],
+              "examples": [220, "220 mP", "0.18 r"]
+            },
+            "free_signal": {
+              "description": "The FP/FA value for the free tracer (low control).",
+              "type": ["string", "number", "null"],
+              "examples": [80, "80 mP", "0.05 r"]
+            },
+            "delta": {
+              "description": "The difference between bound and free signal.",
+              "type": ["string", "number", "null"],
+              "examples": [140, "140 mP", "0.13 r"]
+            }
+          }
+        }
+      },
+      "required": ["readout_mode", "readout_unit", "instrument"]
+    },
+    "data_analysis": {
+      "description": "Details about how the raw data was processed and modeled.",
+      "type": "object",
+      "properties": {
+        "endpoint_reported": {
+          "description": "The primary binding parameter reported in the publication.",
+          "type": "string",
+          "enum": ["Ki", "IC50", "Kd", "Percent inhibition", "pKi", "pIC50", "EC50", "Other"]
+        },
+        "ic50_to_ki_conversion": {
+          "description": "The method used to convert IC50 to Ki, if applicable. For FP/FA competition assays, Cheng-Prusoff requires the tracer Kd and tracer concentration.",
+          "type": ["string", "null"],
+          "enum": ["Cheng-Prusoff equation", "Nikolovska-Coleska equation", "Exact solution", "Not applicable", "Not specified", null]
+        },
+        "fitting_model": {
+          "description": "The model used to fit competition curves.",
+          "type": "string",
+          "enum": ["One-site competition", "Two-site competition", "Four-parameter logistic (4PL)", "Three-parameter logistic (3PL, Hill slope fixed to 1)", "Dose-response (variable slope)", "Other"]
+        },
+        "hill_slope_reported": {
+          "description": "Whether a Hill slope (nH) was reported and its value, if available. nH ≠ 1 may indicate compound aggregation, cooperativity, or assay interference.",
+          "type": "object",
+          "properties": {
+            "reported": {
+              "type": "string",
+              "enum": ["Yes, fixed to 1", "Yes, variable", "Not reported"]
+            },
+            "value": {
+              "description": "The Hill slope value if reported as variable. Null if fixed or not reported.",
+              "type": ["number", "null"]
+            }
+          },
+          "required": ["reported"]
+        },
+        "data_normalization": {
+          "description": "How raw FP/FA data was normalized before curve fitting.",
+          "type": ["string", "null"],
+          "enum": ["Percent inhibition relative to controls", "Fraction bound", "Raw mP values fitted directly", "Raw anisotropy values fitted directly", "Not specified", null]
+        },
+        "software": {
+          "description": "The software used for curve fitting and data analysis.",
+          "type": "string",
+          "examples": ["GraphPad Prism 9", "GraphPad Prism 10", "SigmaPlot", "GeneData Screener", "TIBCO Spotfire", "ActivityBase", "CDD Vault"]
+        },
+        "replicates": {
+          "description": "The number of replicates and independent experiments.",
+          "type": "object",
+          "properties": {
+            "technical_replicates": {
+              "description": "Number of replicates per concentration within a single experiment.",
+              "type": "string",
+              "examples": ["Duplicate", "Triplicate", "Singlicate", "Not specified"]
+            },
+            "independent_experiments": {
+              "description": "Number of independent experiments (n). Use a string to capture ranges.",
+              "type": ["string", "number"],
+              "examples": [3, "2-4", "≥3", "Not specified"]
+            }
+          },
+          "required": ["technical_replicates", "independent_experiments"]
+        }
+      },
+      "required": ["endpoint_reported", "ic50_to_ki_conversion", "fitting_model", "hill_slope_reported", "software", "replicates"]
+    },
+    "artifact_controls": {
+      "description": "Controls and checks for common FP/FA artifacts that can produce false positives or inaccurate affinities.",
+      "type": "object",
+      "properties": {
+        "compound_fluorescence_interference": {
+          "description": "Whether the authors checked for intrinsic fluorescence of test compounds at the assay wavelengths, which can artifactually alter FP/FA readings.",
+          "type": "string",
+          "enum": ["Tested and excluded interfering compounds", "Tested, no interference observed", "Counter-screen performed", "Not specified"]
+        },
+        "compound_aggregation_check": {
+          "description": "Whether compound aggregation was assessed (e.g., dynamic light scattering, detergent sensitivity, Hill slope analysis).",
+          "type": "string",
+          "enum": ["Yes, detergent sensitivity tested", "Yes, DLS performed", "Yes, Hill slope monitored", "No", "Not specified"]
+        },
+        "inner_filter_effect": {
+          "description": "Whether the authors checked for inner filter effect (absorption of excitation or emission light by the test compound at high concentrations), which can cause apparent FP changes unrelated to binding.",
+          "type": "string",
+          "enum": ["Tested", "Not tested", "Not specified"]
+        },
+        "orthogonal_assay_confirmation": {
+          "description": "Whether hits were confirmed by an orthogonal (non-FP) binding assay.",
+          "type": ["string", "null"],
+          "examples": ["ITC", "SPR", "TR-FRET", "AlphaScreen", "Thermal shift assay (DSF)", "NMR", "None reported"]
+        }
+      },
+      "required": ["compound_fluorescence_interference"]
+    }
+  },
+  "required": [
+    "pmid",
+    "biological_preparation",
+    "fluorescent_tracer",
+    "test_compound",
+    "assay_controls",
+    "assay_conditions",
+    "detection",
+    "data_analysis"
+  ]
+}

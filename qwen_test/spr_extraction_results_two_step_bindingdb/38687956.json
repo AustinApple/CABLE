@@ -1,0 +1,66 @@
+{
+    "51599808": {
+        "reactant_set_id": 51599808,
+        "pmid": 38687956,
+        "protein": "Pyruvate carboxylase, mitochondrial",
+        "ligand": {
+            "smiles": "C=C(C)[C@@H]1CC[C@]2(C(=O)NCCCCCC(=O)OC)CC[C@]3(C)[C@H](CC[C@@H]4[C@@]5(C)CC[C@H](O[C@@H]6OC[C@H](O)[C@H](O)[C@H]6O[C@@H]6O[C@@H](C)[C@H](O)[C@@H](O)[C@H]6O)[C@@](C)(CO)[C@@H]5CC[C@]43C)[C@@H]12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human pyruvate carboxylase assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.6. Surface Plasmon Resonance (SPR) Analysis. The biomolecular interaction between A3-6 and PC was analyzed by SPR using the Biacore 8K system (GE Healthcare, Uppsala, Sweden) at 25 °C. Briefly, CMS sensor chip was activated by using sulfo-NHS/EDC chemistry and subsequently immobilized with the recombinant human PC protein at a concentration of 10 μg/mL in sodium acetate (pH 4.0) and then blocked with ethanolamine for 7 min. Then, A3-6 (0.975 to 15.6 μM) was added into the running buffer to measure the interaction between A3-6 and PC. Kinetic parameters were computed with Biacore evaluation software.",
+            "Figure 7 caption": "Figure 7. Interaction of A3-6 with PC. (A) Visualization of the PC protein. (B) Two-dimensional (2D) interaction diagram of A3-6 and PC protein. Hydrogen bonds between A3-6 and the binding pocket in the PC were identified and indicated by red lines. (C) Visualization of the binding pocket of PC with A3-6. (D) Interaction between A3-6 (0.975 to 15.6 μM) and recombinant PC protein was analyzed by SPR. (E, F) HepG2 cells were incubated with dimethyl sulfoxide (DMSO) or A3-6 for 1 h, and the cell lysates were obtained by CETSA to determine the stabilization of PC. (G, H) HepG2 cell lysates were incubated with DMSO or different concentrations of A3-6 in the presence or absence of Pronase E (Pronase E: pronase = 1:1500), and then PC was detected by Western blotting. (I, J) HepG2 cell lysates were incubated with DMSO or A3-6 (40 μM) in the presence of different ratios of proteinase E, and then PC was detected by Western blotting. Data are presented as the mean ± SD of at least three separate experiments, **P < 0.01, ***P < 0.001, compared with the DMSO group. n.s. not significant.",
+            "Figure 7D plot": "The sensorgram in Figure 7D shows the relative response over time (s) for A3-6 binding to PC at concentrations of 15.6 μM, 7.8 μM, 3.9 μM, 1.95 μM, and 0.975 μM. The KD value is indicated as 10.1 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human PC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "A3-6",
+                "concentration_range": "0.975 to 15.6 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore evaluation software"
+            }
+        }
+    }
+}

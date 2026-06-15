@@ -1,0 +1,270 @@
+{
+    "51548204": {
+        "reactant_set_id": 51548204,
+        "pmid": 37983615,
+        "protein": "Nuclear receptor subfamily 4 group A member 1",
+        "ligand": {
+            "smiles": "CCN(CC)CCCNC(=O)c1cc2cc(Nc3nccc(n3)-c3sc(NC)nc3C)ccc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 91.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Nur77 ligand binding domain (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.7. Surface Plasmon Resonance (SPR). The binding kinetics between Nur77-LBD and target compounds were performed on a BIAcore T200 instrument (GE Healthcare) at 25 °C. According to the manufacturer’s instructions, nur77-LBD (20 mg/mL in 10 mmol/L sodium acetate, pH 5) was immobilized on the CM5 chip. Then, test compounds were injected into the flow cells in a running buffer (PBS, 0.4% DMSO) at a flow rate of 30 mL/min when all cycles were collected. The results were analyzed using Biacore T200 Evaluation Software.",
+            "Figure 5 caption": "Figure 5. Nur77-binding affinity of ja. (A). SPR analysis of ja binding to purified Nur77-LBD protein. (B). Fluorescence titration analysis of ja binding to purified Nur77-LBD protein. (C). Nur77 transactivation profile of ja. HEK293T cells cotransfected with pG5-Luc and pBind-Nur77-LBD were treated with indicated concentrations of compound ja for 12 h. (D–E). HEK293T cells cotransfected with pG5-Luc and pBind-RXRα (D) or PPARγ (E) were treated with 2 μM ja for 12 h. CD3254 and rosiglitazone (Roz) were used as positive compounds to RXRα and PPARγ, respectively. Data shown are mean ± SEM, n = 3. **p < 0.01, ***p < 0.001, ****p < 0.0001, N.S. = No significance vs. the control group.",
+            "Figure 5A": "Response Units 0 100 200 300 400 500 Time(s) 0.03μM 0.06μM 0.08μM 0.10μM 0.13μM 0.18μM 0.24μM 0.32μM 0.42μM 0.56μM 0.75μM 1.00μM 1.33μM 1.78μM 2.37μM 3.16μM 4.22μM 5.63μM 7.50μM 10.00μM K_D = 91 nM",
+            "Figure 5B": "Intensity (a.u.) 0 200 400 600 800 Wavelength (nm) 300 350 400 450 500 K_D = 154 nM",
+            "Results Section": "2.4. Nur77-Binding Activity. A surface plasmon resonance (SPR) assay was employed to assess the Nur77-binding activity of the synthesized compounds. First, 50.0 μg of His-Nur77-LBD was immobilized on CM5 sensor chips. Then, the interactions of 10 μM target compounds with Nur77 were evaluated in triplicate, with 8b and celastrol as positive compounds. Figure 4 illustrates the Nur77-binding affinity of target compounds, as captured on the sensor chip surface at relative units (RU). The results demonstrated that all synthesized compounds had potential Nur77-binding activity in vitro. Additionally, nine compounds (ad, bb, cd, gc, ha, hb, ja, ka, and ke) bond to Nur77 stronger than the lead compound 8b. Intriguingly, the Nur77-binding performances in the SPR assay were similar to the antiproliferative activity-based SARs against MDA-MB-231 cells. For instance, almost all compounds with better Nur77-binding activity than 8b contained an n = 3 linker (except ka) and an R2 = −N(CH2CH3)2 substituent, implying that n = 3 and R2 = −N(CH2CH3)2 showed optimal Nur77-binding activity. Besides, the electron-donating substituent −OCH3 (cc&cd vs ac&ad) at the benzene ring of R1 is beneficial for the Nur77-binding affinity. Exceptionally, ja showed the best Nur77-binding activity, being superior to those of the lead compound 8b and the reference compound celastrol. It indicates that the moiety R1 of (4-methyl-2-(methylamino)thiazol-5-yl) is also optimal for Nur77-binding activity. Evidently, ja showed potent Nur77-binding activity and excellent antiproliferative activity against breast cancer cell lines (MDA-MB-231 and T47D, IC50 < 1.2 μM), being superior to celastrol and lead compound 8b. Particularly, ja exhibited very low antiproliferative activity against human normal breast MCF-10A cells (IC50 = 48.01 ± 2.86 μM). Thus, ja was selected as a candidate compound for further mechanism of action studies and in vivo efficacy evaluation.",
+            "Results Section (continued)": "2.6. ja Binds to Nur77 and Acts as an Antagonist. The extracellular binding affinity between ja and Nur77-LBD was confirmed by SPR and fluorescent ligand binding assays. As shown in Figure 5A, ja dose-dependently bound to the Nur77-LBD proteins immobilized on the CM5 chip. The calculated KD (equilibrium dissociation constant) value from the SPR assay was around 91 nM. Also, the fluorescence ligand binding assay showed that ja attenuated the fluorescence intensity of Nur77-LBD in a dose-dependent manner, leading to a KD value of approximately 154 nM (Figure 5B). Together, these data demonstrate that ja can bind Nur77-LBD directly and effectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nur77-LBD",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 mg/mL"
+            },
+            "analyte": {
+                "description": "Test compounds (including ja, 8b, celastrol, and other synthesized compounds)",
+                "concentration_range": "0.03 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    },
+    "51548205": {
+        "reactant_set_id": 51548205,
+        "pmid": 37983615,
+        "protein": "Nuclear receptor subfamily 4 group A member 1",
+        "ligand": {
+            "smiles": "CN(C)CCCNC(=O)c1cc2ccc(Nc3nccc(n3)-c3cccnc3)cc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 354.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Nur77 ligand binding domain (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.7. Surface Plasmon Resonance (SPR). The binding kinetics between Nur77-LBD and target compounds were performed on a BIAcore T200 instrument (GE Healthcare) at 25 °C. According to the manufacturer’s instructions, nur77-LBD (20 mg/mL in 10 mmol/L sodium acetate, pH 5) was immobilized on the CM5 chip. Then, test compounds were injected into the flow cells in a running buffer (PBS, 0.4% DMSO) at a flow rate of 30 mL/min when all cycles were collected. The results were analyzed using Biacore T200 Evaluation Software.",
+            "Figure 5 caption": "Figure 5. Nur77-binding affinity of ja. (A). SPR analysis of ja binding to purified Nur77-LBD protein. (B). Fluorescence titration analysis of ja binding to purified Nur77-LBD protein. (C). Nur77 transactivation profile of ja. HEK293T cells cotransfected with pG5-Luc and pBind-Nur77-LBD were treated with indicated concentrations of compound ja for 12 h. (D–E). HEK293T cells cotransfected with pG5-Luc and pBind-RXRα (D) or PPARγ (E) were treated with 2 μM ja for 12 h. CD3254 and rosiglitazone (Roz) were used as positive compounds to RXRα and PPARγ, respectively. Data shown are mean ± SEM, n = 3. **p < 0.01, ***p < 0.001, ****p < 0.0001, N.S. = No significance vs. the control group.",
+            "Figure 5A": "Response Units 0 100 200 300 400 500 Time(s) 0.03μM 0.06μM 0.08μM 0.10μM 0.13μM 0.18μM 0.24μM 0.32μM 0.42μM 0.56μM 0.75μM 1.00μM 1.33μM 1.78μM 2.37μM 3.16μM 4.22μM 5.63μM 7.50μM 10.00μM K_D = 91 nM",
+            "Figure 5B": "Intensity (a.u.) 0 200 400 600 800 Wavelength (nm) 300 350 400 450 500 K_D = 154 nM",
+            "Results Section": "2.4. Nur77-Binding Activity. A surface plasmon resonance (SPR) assay was employed to assess the Nur77-binding activity of the synthesized compounds. First, 50.0 μg of His-Nur77-LBD was immobilized on CM5 sensor chips. Then, the interactions of 10 μM target compounds with Nur77 were evaluated in triplicate, with 8b and celastrol as positive compounds. Figure 4 illustrates the Nur77-binding affinity of target compounds, as captured on the sensor chip surface at relative units (RU). The results demonstrated that all synthesized compounds had potential Nur77-binding activity in vitro. Additionally, nine compounds (ad, bb, cd, gc, ha, hb, ja, ka, and ke) bond to Nur77 stronger than the lead compound 8b. Intriguingly, the Nur77-binding performances in the SPR assay were similar to the antiproliferative activity-based SARs against MDA-MB-231 cells. For instance, almost all compounds with better Nur77-binding activity than 8b contained an n = 3 linker (except ka) and an R2 = −N(CH2CH3)2 substituent, implying that n = 3 and R2 = −N(CH2CH3)2 showed optimal Nur77-binding activity. Besides, the electron-donating substituent −OCH3 (cc&cd vs ac&ad) at the benzene ring of R1 is beneficial for the Nur77-binding affinity. Exceptionally, ja showed the best Nur77-binding activity, being superior to those of the lead compound 8b and the reference compound celastrol. It indicates that the moiety R1 of (4-methyl-2-(methylamino)thiazol-5-yl) is also optimal for Nur77-binding activity. Evidently, ja showed potent Nur77-binding activity and excellent antiproliferative activity against breast cancer cell lines (MDA-MB-231 and T47D, IC50 < 1.2 μM), being superior to celastrol and lead compound 8b. Particularly, ja exhibited very low antiproliferative activity against human normal breast MCF-10A cells (IC50 = 48.01 ± 2.86 μM). Thus, ja was selected as a candidate compound for further mechanism of action studies and in vivo efficacy evaluation.",
+            "Results Section (continued)": "2.6. ja Binds to Nur77 and Acts as an Antagonist. The extracellular binding affinity between ja and Nur77-LBD was confirmed by SPR and fluorescent ligand binding assays. As shown in Figure 5A, ja dose-dependently bound to the Nur77-LBD proteins immobilized on the CM5 chip. The calculated KD (equilibrium dissociation constant) value from the SPR assay was around 91 nM. Also, the fluorescence ligand binding assay showed that ja attenuated the fluorescence intensity of Nur77-LBD in a dose-dependent manner, leading to a KD value of approximately 154 nM (Figure 5B). Together, these data demonstrate that ja can bind Nur77-LBD directly and effectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nur77-LBD",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 mg/mL"
+            },
+            "analyte": {
+                "description": "Test compounds (including ja, 8b, celastrol, and other synthesized compounds)",
+                "concentration_range": "0.03 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    },
+    "51548206": {
+        "reactant_set_id": 51548206,
+        "pmid": 37983615,
+        "protein": "Nuclear receptor subfamily 4 group A member 1",
+        "ligand": {
+            "smiles": "COc1cccc2c(Nc3ccc4[nH]c(cc4c3)C(=O)N\\N=C\\c3ccc(SC)cc3)cc(C)nc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1340.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Nur77 ligand binding domain (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.7. Surface Plasmon Resonance (SPR). The binding kinetics between Nur77-LBD and target compounds were performed on a BIAcore T200 instrument (GE Healthcare) at 25 °C. According to the manufacturer’s instructions, nur77-LBD (20 mg/mL in 10 mmol/L sodium acetate, pH 5) was immobilized on the CM5 chip. Then, test compounds were injected into the flow cells in a running buffer (PBS, 0.4% DMSO) at a flow rate of 30 mL/min when all cycles were collected. The results were analyzed using Biacore T200 Evaluation Software.",
+            "Figure 5 caption": "Figure 5. Nur77-binding affinity of ja. (A). SPR analysis of ja binding to purified Nur77-LBD protein. (B). Fluorescence titration analysis of ja binding to purified Nur77-LBD protein. (C). Nur77 transactivation profile of ja. HEK293T cells cotransfected with pG5-Luc and pBind-Nur77-LBD were treated with indicated concentrations of compound ja for 12 h. (D–E). HEK293T cells cotransfected with pG5-Luc and pBind-RXRα (D) or PPARγ (E) were treated with 2 μM ja for 12 h. CD3254 and rosiglitazone (Roz) were used as positive compounds to RXRα and PPARγ, respectively. Data shown are mean ± SEM, n = 3. **p < 0.01, ***p < 0.001, ****p < 0.0001, N.S. = No significance vs. the control group.",
+            "Figure 5A": "Response Units 0 100 200 300 400 500 Time(s) 0.03μM 0.06μM 0.08μM 0.10μM 0.13μM 0.18μM 0.24μM 0.32μM 0.42μM 0.56μM 0.75μM 1.00μM 1.33μM 1.78μM 2.37μM 3.16μM 4.22μM 5.63μM 7.50μM 10.00μM K_D = 91 nM",
+            "Figure 5B": "Intensity (a.u.) 0 200 400 600 800 Wavelength (nm) 300 350 400 450 500 K_D = 154 nM",
+            "Results Section": "2.4. Nur77-Binding Activity. A surface plasmon resonance (SPR) assay was employed to assess the Nur77-binding activity of the synthesized compounds. First, 50.0 μg of His-Nur77-LBD was immobilized on CM5 sensor chips. Then, the interactions of 10 μM target compounds with Nur77 were evaluated in triplicate, with 8b and celastrol as positive compounds. Figure 4 illustrates the Nur77-binding affinity of target compounds, as captured on the sensor chip surface at relative units (RU). The results demonstrated that all synthesized compounds had potential Nur77-binding activity in vitro. Additionally, nine compounds (ad, bb, cd, gc, ha, hb, ja, ka, and ke) bond to Nur77 stronger than the lead compound 8b. Intriguingly, the Nur77-binding performances in the SPR assay were similar to the antiproliferative activity-based SARs against MDA-MB-231 cells. For instance, almost all compounds with better Nur77-binding activity than 8b contained an n = 3 linker (except ka) and an R2 = −N(CH2CH3)2 substituent, implying that n = 3 and R2 = −N(CH2CH3)2 showed optimal Nur77-binding activity. Besides, the electron-donating substituent −OCH3 (cc&cd vs ac&ad) at the benzene ring of R1 is beneficial for the Nur77-binding affinity. Exceptionally, ja showed the best Nur77-binding activity, being superior to those of the lead compound 8b and the reference compound celastrol. It indicates that the moiety R1 of (4-methyl-2-(methylamino)thiazol-5-yl) is also optimal for Nur77-binding activity. Evidently, ja showed potent Nur77-binding activity and excellent antiproliferative activity against breast cancer cell lines (MDA-MB-231 and T47D, IC50 < 1.2 μM), being superior to celastrol and lead compound 8b. Particularly, ja exhibited very low antiproliferative activity against human normal breast MCF-10A cells (IC50 = 48.01 ± 2.86 μM). Thus, ja was selected as a candidate compound for further mechanism of action studies and in vivo efficacy evaluation.",
+            "Results Section (continued)": "2.6. ja Binds to Nur77 and Acts as an Antagonist. The extracellular binding affinity between ja and Nur77-LBD was confirmed by SPR and fluorescent ligand binding assays. As shown in Figure 5A, ja dose-dependently bound to the Nur77-LBD proteins immobilized on the CM5 chip. The calculated KD (equilibrium dissociation constant) value from the SPR assay was around 91 nM. Also, the fluorescence ligand binding assay showed that ja attenuated the fluorescence intensity of Nur77-LBD in a dose-dependent manner, leading to a KD value of approximately 154 nM (Figure 5B). Together, these data demonstrate that ja can bind Nur77-LBD directly and effectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nur77-LBD",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 mg/mL"
+            },
+            "analyte": {
+                "description": "Test compounds (including ja, 8b, celastrol, and other synthesized compounds)",
+                "concentration_range": "0.03 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    },
+    "51548207": {
+        "reactant_set_id": 51548207,
+        "pmid": 37983615,
+        "protein": "Nuclear receptor subfamily 4 group A member 1",
+        "ligand": {
+            "smiles": "O=C(N\\N=C\\c1ccncc1)c1ccc(Nc2ccnc3ccccc23)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1170.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to His-tagged Nur77 ligand binding domain (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.7. Surface Plasmon Resonance (SPR). The binding kinetics between Nur77-LBD and target compounds were performed on a BIAcore T200 instrument (GE Healthcare) at 25 °C. According to the manufacturer’s instructions, nur77-LBD (20 mg/mL in 10 mmol/L sodium acetate, pH 5) was immobilized on the CM5 chip. Then, test compounds were injected into the flow cells in a running buffer (PBS, 0.4% DMSO) at a flow rate of 30 mL/min when all cycles were collected. The results were analyzed using Biacore T200 Evaluation Software.",
+            "Figure 5 caption": "Figure 5. Nur77-binding affinity of ja. (A). SPR analysis of ja binding to purified Nur77-LBD protein. (B). Fluorescence titration analysis of ja binding to purified Nur77-LBD protein. (C). Nur77 transactivation profile of ja. HEK293T cells cotransfected with pG5-Luc and pBind-Nur77-LBD were treated with indicated concentrations of compound ja for 12 h. (D–E). HEK293T cells cotransfected with pG5-Luc and pBind-RXRα (D) or PPARγ (E) were treated with 2 μM ja for 12 h. CD3254 and rosiglitazone (Roz) were used as positive compounds to RXRα and PPARγ, respectively. Data shown are mean ± SEM, n = 3. **p < 0.01, ***p < 0.001, ****p < 0.0001, N.S. = No significance vs. the control group.",
+            "Figure 5A": "Response Units 0 100 200 300 400 500 Time(s) 0.03μM 0.06μM 0.08μM 0.10μM 0.13μM 0.18μM 0.24μM 0.32μM 0.42μM 0.56μM 0.75μM 1.00μM 1.33μM 1.78μM 2.37μM 3.16μM 4.22μM 5.63μM 7.50μM 10.00μM K_D = 91 nM",
+            "Figure 5B": "Intensity (a.u.) 0 200 400 600 800 Wavelength (nm) 300 350 400 450 500 K_D = 154 nM",
+            "Results Section": "2.4. Nur77-Binding Activity. A surface plasmon resonance (SPR) assay was employed to assess the Nur77-binding activity of the synthesized compounds. First, 50.0 μg of His-Nur77-LBD was immobilized on CM5 sensor chips. Then, the interactions of 10 μM target compounds with Nur77 were evaluated in triplicate, with 8b and celastrol as positive compounds. Figure 4 illustrates the Nur77-binding affinity of target compounds, as captured on the sensor chip surface at relative units (RU). The results demonstrated that all synthesized compounds had potential Nur77-binding activity in vitro. Additionally, nine compounds (ad, bb, cd, gc, ha, hb, ja, ka, and ke) bond to Nur77 stronger than the lead compound 8b. Intriguingly, the Nur77-binding performances in the SPR assay were similar to the antiproliferative activity-based SARs against MDA-MB-231 cells. For instance, almost all compounds with better Nur77-binding activity than 8b contained an n = 3 linker (except ka) and an R2 = −N(CH2CH3)2 substituent, implying that n = 3 and R2 = −N(CH2CH3)2 showed optimal Nur77-binding activity. Besides, the electron-donating substituent −OCH3 (cc&cd vs ac&ad) at the benzene ring of R1 is beneficial for the Nur77-binding affinity. Exceptionally, ja showed the best Nur77-binding activity, being superior to those of the lead compound 8b and the reference compound celastrol. It indicates that the moiety R1 of (4-methyl-2-(methylamino)thiazol-5-yl) is also optimal for Nur77-binding activity. Evidently, ja showed potent Nur77-binding activity and excellent antiproliferative activity against breast cancer cell lines (MDA-MB-231 and T47D, IC50 < 1.2 μM), being superior to celastrol and lead compound 8b. Particularly, ja exhibited very low antiproliferative activity against human normal breast MCF-10A cells (IC50 = 48.01 ± 2.86 μM). Thus, ja was selected as a candidate compound for further mechanism of action studies and in vivo efficacy evaluation.",
+            "Results Section (continued)": "2.6. ja Binds to Nur77 and Acts as an Antagonist. The extracellular binding affinity between ja and Nur77-LBD was confirmed by SPR and fluorescent ligand binding assays. As shown in Figure 5A, ja dose-dependently bound to the Nur77-LBD proteins immobilized on the CM5 chip. The calculated KD (equilibrium dissociation constant) value from the SPR assay was around 91 nM. Also, the fluorescence ligand binding assay showed that ja attenuated the fluorescence intensity of Nur77-LBD in a dose-dependent manner, leading to a KD value of approximately 154 nM (Figure 5B). Together, these data demonstrate that ja can bind Nur77-LBD directly and effectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nur77-LBD",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "20 mg/mL"
+            },
+            "analyte": {
+                "description": "Test compounds (including ja, 8b, celastrol, and other synthesized compounds)",
+                "concentration_range": "0.03 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS, 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "51401743": {
+        "reactant_set_id": 51401743,
+        "pmid": 33440945,
+        "protein": "Serine/threonine-protein kinase Nek7",
+        "ligand": {
+            "smiles": "COc1ccc2cc3-c4cc5OCOc5cc4CC[n+]3cc2c1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to purified recombinant human NEK7 by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface-Plasmon Resonance Assay": "The SPR assay was performed on a BLAcore T200 biosensor system (GE Healthcare Life Sciences, Piscataway, NJ, USA) at 25 °C using a CM5 chip. The binding of NEK7 at different concentrations of BBR was performed in 1 × PBS-P+ (GE Healthcare Life Sciences) at a flow rate of 20 μL/min for 120 s. After each binding reaction, a further dissociation time of 60 s was applied after each injection to allow the signal to return to the baseline.",
+            "Figure 2 caption - part k": "SPR sensorgrams obtained on an NEK7-coated chip at different concentrations of BBR.",
+            "Figure 2k": "The x-axis is labeled 'Time (sec)' with a range from 0 to 200. The y-axis is labeled 'Response'. Four curves are shown, each corresponding to a different concentration of BBR: 3.12 μM (blue), 6.25 μM (red), 12.5 μM (green), and 25 μM (purple). The association phase occurs from 0 to 150 seconds, and the dissociation phase from 150 to 200 seconds."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Life Sciences",
+                "model": "BLAcore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Life Sciences"
+            },
+            "immobilization": {
+                "ligand_name": "NEK7",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BBR",
+                "concentration_range": "3.12 μM - 25 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1 × PBS-P+",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "50950207": {
+        "reactant_set_id": 50950207,
+        "pmid": 22548439,
+        "protein": "cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 10A",
+        "ligand": {
+            "smiles": "COc1cc2nncc(-c3cnc(NC(C)C)c(C)c3)c2cc1OC"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human truncated CM5-labeled PDE10A by surface plasmon resonance method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) Spectroscopy Binding Assay": "Surface Plasmon Resonance (SPR) Spectroscopy Binding Assay. SPR measurements were performed on a Biacore T100 (GE Healthcare). His-PDE10A (442-779) was generated in-house; all other reagents were purchased from GE Healthcare or Sigma-Aldrich. PDE10 (~3000 RU) was coupled to the CM5 chip using standard amine coupling. The immobilization running buffer consisted of 10 mM Heps, pH 7.4, and 150 mM NaCl. Immobilization steps consisted of a 7 min EDC/NHS activation step [200 mM 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide hydrochloride, 50 mM N-hydroxysuccinimide], 0.2 μg/mL PDE10A in 10 mM MES, pH 6.0, and 7 min of 1 M ethanolamine hydrochloride, pH 8.5. Binding measurements were measured with a 20 mM Tris-HCl buffer (pH 7.5) containing 50 mM NaCl, 5 mM MgCl2, and 2% (v/v) DMSO. Stock solution of 5 was prepared at 10 mM in DMSO and diluted with running buffer to 1 μM, 0.2 μM, 40 nM, and 8 nM. Kinetic titration experiments were performed by injecting the low to high compound solutions in 2 min intervals onto the PDE10A surface. All experiments were performed at 25 °C. The data were processed and analyzed using the T100 evaluation software and the CLAMP analysis software package (Center for Biomolecular Interactions, University of Utah, Salt Lake City, UT). The sample response was baseline corrected by subtracting reference flow cell data to correct for systematic noise and baseline drift. The response from blank injections was used to double-reference the binding data. The kinetic parameters were established by fitting the data to a 1:1 binding model which included a mass transfer limitation term.",
+            "Results and Discussion - Surface Plasmon Resonance (SPR) Binding Assay": "Surface Plasmon Resonance (SPR) Binding Assay. The LC–MS/MS results showed a steep drop of 5 concentration over time, suggesting fast in vivo kinetics. To better characterize the PDE10A binding properties of this molecule, we utilized a surface plasmon resonance (SPR) spectroscopy binding assay with purified truncated human PDE10A enzyme (amino acids 442–779) covalently attached to a CM5 (carboxymethyl 5) chip to measure affinity (K_D), on-rate (k_a), and off-rate (k_d). Consistent with its PDE10A inhibition potency (IC_50 = 1.9 nM), 5 showed high affinity to PDE10A with a K_D of 1.2 nM (Figure 3). This molecule exhibited fast on-rate (k_a = 1.4 × 10^8 M^−1 s^−1) and fast off-rate (k_d = 1.7 × 10^−1 s^−1). The derived T_1/2 was only 0.1 min. This fast off-rate in vitro supports the fast washout observed in Figure 2 above.",
+            "Figure 3 caption": "Figure 3. Biacore assay for K_D determination. Unlabeled 5 was tested at 1000, 200, 40, and 8 nM. Kinetic titration experiments were performed by injecting the low to high inhibitor solutions at 2 min intervals onto the PDE10A chip surface (black trace, measured data; red trace, best fit to 1:1 binding model)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "His-PDE10A (442-779)",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": "0.2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 5",
+                "concentration_range": "8 nM - 1 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris-HCl, 50 mM NaCl, 5 mM MgCl2, 2% (v/v) DMSO",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell data",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 binding model with mass transport",
+                "software": "T100 evaluation software and CLAMP analysis software package"
+            }
+        }
+    }
+}

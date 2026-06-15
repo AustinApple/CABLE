@@ -1,0 +1,194 @@
+{
+    "51310774": {
+        "reactant_set_id": 51310774,
+        "pmid": 30707839,
+        "protein": "Urokinase-type plasminogen activator",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CSSC[C@H](NC(=O)[C@H](CC(O)=O)NC1=O)C(N)=O)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 398.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse uPA by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Andersen, L. M.; Wind, T.; Hansen, H. D.; Andreasen, P. A. A cyclic peptidyl inhibitor of murine urokinase-type plasminogen activator: changing species specificity by substitution of a single residue. Biochem. J. 2008, 412, 447–457. Reference 36: Sørensen, H. P.; Xu, P.; Jiang, L. G.; Kromann-Hansen, T.; Jensen, K. J.; Huang, M. D.; Andreasen, P. A. Selection of high-affinity peptidic serine protease inhibitors with increased binding entropy from a back-flip library of peptide-protease fusions. J. Mol. Biol. 2015, 427, 3110–3122.",
+        "original_paragraph": {
+            "Materials and Methods": "The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare, Uppsala, Sweden) at 25 °C. The mouse uPA (muPA) was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization was carried out by injecting 10 μg/mL muPA in 10 mM sodium acetate buffer (pH 4.0) at a flow rate of 5 μL/min. The surface was activated with a mixture of 0.2 M N-ethyl-N'-(3-dimethylaminopropyl)carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS) for 7 min, followed by injection of muPA for 7 min. The surface was then deactivated with 1 M ethanolamine (pH 8.5) for 7 min. The immobilized muPA was blocked with 1 M ethanolamine (pH 8.5) for 7 min. The running buffer was 10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% P20. The peptides were dissolved in the running buffer and injected at concentrations of 0.1, 0.3, 1, 3, 10, and 30 μM at a flow rate of 30 μL/min for 120 s, followed by a dissociation phase of 120 s. The regeneration of the sensor surface was achieved by injecting 10 mM glycine-HCl (pH 2.0) for 30 s. The data were analyzed using Biacore T200 evaluation software. The binding kinetics were determined by fitting the sensorgrams to a 1:1 Langmuir binding model. The dissociation constant (K_D) was calculated from the association rate constant (k_on) and the dissociation rate constant (k_off) using the equation K_D = k_off / k_on. The data were corrected for the response of the reference flow cell and the bulk refractive index changes. The experiments were performed in triplicate.",
+            "Table 2": "Table 2. Kinetic Parameters of Peptide Inhibitors Binding to muPA Determined by SPR | peptide | k_on (M⁻¹ s⁻¹) ×10⁵ | k_off (s⁻¹) ×10⁻³ | K_D (nM) | |---|---|---|---| | LD-1 | 0.91 ± 0.25 (3)* | 3.64 ± 0.07 (3)* | 398 ± 46 (3)* | | IG-1 | 4.48 ± 0.76 (3)* | 0.64 ± 0.07 (3)* | 14.7 ± 1.8 (3)* | | IG-2 | 2.73 ± 0.13 (3) | 0.066 ± 0.019 (3) | 2.40 ± 0.61 (3) | aData with asterisk are from our previous studies.35,36",
+            "Figure 2 caption": "Figure 2. Crystal structures and MD simulation of peptide inhibitors in complexes with uPA. (A) Overall crystal structures of IG-1 (green sticks) and IG-2 (magenta sticks) in complexes with uPA (wheat surface) (PDB codes: 6A8G and 6A8N). (B) Schematic representation of polar interactions between IG-2 (black) and uPA (blue). Intramolecular and intermolecular polar interactions are presented in black and blue dash lines, respectively. (C) Time-dependent root-mean-square deviation (RMSD) of the backbone atoms of peptide inhibitors with respect to the starting conformation during the 1200 ns-MD simulation. (D) Alignment of the backbones of IG-2 in the crystal structure (magenta cartoon) and the MD simulation (cyan cartoon). (E and F) Alignment of the backbones of LD-1 (cyan cartoon), IG-1 (green cartoon), and IG-2 (magenta cartoon) in the MD simulation-derived structures. The Cα atoms are presented as spheres. The distances between the atoms are presented as black dash lines. uPAs are presented as the wheat surface. The critical residues are presented as sticks. (G) Correlations of the binding free energy of peptide–uPA complexes calculated from MD trajectories (ΔG_MD) with the ones determined by experiments (ΔG_exp). The correlation coefficients (R²) between ΔG_MD and ΔG_exp determined by isothermal titration calorimetry (ITC) (green line) and surface plasmon resonance (SPR) (blue line) are 0.97 and 0.99, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "mouse uPA (muPA)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptides (LD-1, IG-1, IG-2)",
+                "concentration_range": "0.1, 0.3, 1, 3, 10, and 30 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51310803": {
+        "reactant_set_id": 51310803,
+        "pmid": 30707839,
+        "protein": "Urokinase-type plasminogen activator",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CSSC[C@H](NC(=O)CNC1=O)C(N)=O)NC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse uPA by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Andersen, L. M.; Wind, T.; Hansen, H. D.; Andreasen, P. A. A cyclic peptidyl inhibitor of murine urokinase-type plasminogen activator: changing species specificity by substitution of a single residue. Biochem. J. 2008, 412, 447–457. Reference 36: Sørensen, H. P.; Xu, P.; Jiang, L. G.; Kromann-Hansen, T.; Jensen, K. J.; Huang, M. D.; Andreasen, P. A. Selection of high-affinity peptidic serine protease inhibitors with increased binding entropy from a back-flip library of peptide-protease fusions. J. Mol. Biol. 2015, 427, 3110–3122.",
+        "original_paragraph": {
+            "Materials and Methods": "The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare, Uppsala, Sweden) at 25 °C. The mouse uPA (muPA) was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization was carried out by injecting 10 μg/mL muPA in 10 mM sodium acetate buffer (pH 4.0) at a flow rate of 5 μL/min. The surface was activated with a mixture of 0.2 M N-ethyl-N'-(3-dimethylaminopropyl)carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS) for 7 min, followed by injection of muPA for 7 min. The surface was then deactivated with 1 M ethanolamine (pH 8.5) for 7 min. The immobilized muPA was blocked with 1 M ethanolamine (pH 8.5) for 7 min. The running buffer was 10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% P20. The peptides were dissolved in the running buffer and injected at concentrations of 0.1, 0.3, 1, 3, 10, and 30 μM at a flow rate of 30 μL/min for 120 s, followed by a dissociation phase of 120 s. The regeneration of the sensor surface was achieved by injecting 10 mM glycine-HCl (pH 2.0) for 30 s. The data were analyzed using Biacore T200 evaluation software. The binding kinetics were determined by fitting the sensorgrams to a 1:1 Langmuir binding model. The dissociation constant (K_D) was calculated from the association rate constant (k_on) and the dissociation rate constant (k_off) using the equation K_D = k_off / k_on. The data were corrected for the response of the reference flow cell and the bulk refractive index changes. The experiments were performed in triplicate.",
+            "Table 2": "Table 2. Kinetic Parameters of Peptide Inhibitors Binding to muPA Determined by SPR | peptide | k_on (M⁻¹ s⁻¹) ×10⁵ | k_off (s⁻¹) ×10⁻³ | K_D (nM) | |---|---|---|---| | LD-1 | 0.91 ± 0.25 (3)* | 3.64 ± 0.07 (3)* | 398 ± 46 (3)* | | IG-1 | 4.48 ± 0.76 (3)* | 0.64 ± 0.07 (3)* | 14.7 ± 1.8 (3)* | | IG-2 | 2.73 ± 0.13 (3) | 0.066 ± 0.019 (3) | 2.40 ± 0.61 (3) | aData with asterisk are from our previous studies.35,36",
+            "Figure 2 caption": "Figure 2. Crystal structures and MD simulation of peptide inhibitors in complexes with uPA. (A) Overall crystal structures of IG-1 (green sticks) and IG-2 (magenta sticks) in complexes with uPA (wheat surface) (PDB codes: 6A8G and 6A8N). (B) Schematic representation of polar interactions between IG-2 (black) and uPA (blue). Intramolecular and intermolecular polar interactions are presented in black and blue dash lines, respectively. (C) Time-dependent root-mean-square deviation (RMSD) of the backbone atoms of peptide inhibitors with respect to the starting conformation during the 1200 ns-MD simulation. (D) Alignment of the backbones of IG-2 in the crystal structure (magenta cartoon) and the MD simulation (cyan cartoon). (E and F) Alignment of the backbones of LD-1 (cyan cartoon), IG-1 (green cartoon), and IG-2 (magenta cartoon) in the MD simulation-derived structures. The Cα atoms are presented as spheres. The distances between the atoms are presented as black dash lines. uPAs are presented as the wheat surface. The critical residues are presented as sticks. (G) Correlations of the binding free energy of peptide–uPA complexes calculated from MD trajectories (ΔG_MD) with the ones determined by experiments (ΔG_exp). The correlation coefficients (R²) between ΔG_MD and ΔG_exp determined by isothermal titration calorimetry (ITC) (green line) and surface plasmon resonance (SPR) (blue line) are 0.97 and 0.99, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "mouse uPA (muPA)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptides (LD-1, IG-1, IG-2)",
+                "concentration_range": "0.1, 0.3, 1, 3, 10, and 30 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51310811": {
+        "reactant_set_id": 51310811,
+        "pmid": 30707839,
+        "protein": "Urokinase-type plasminogen activator",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@H](NC(=O)CNC1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to mouse uPA by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 35: Andersen, L. M.; Wind, T.; Hansen, H. D.; Andreasen, P. A. A cyclic peptidyl inhibitor of murine urokinase-type plasminogen activator: changing species specificity by substitution of a single residue. Biochem. J. 2008, 412, 447–457. Reference 36: Sørensen, H. P.; Xu, P.; Jiang, L. G.; Kromann-Hansen, T.; Jensen, K. J.; Huang, M. D.; Andreasen, P. A. Selection of high-affinity peptidic serine protease inhibitors with increased binding entropy from a back-flip library of peptide-protease fusions. J. Mol. Biol. 2015, 427, 3110–3122.",
+        "original_paragraph": {
+            "Materials and Methods": "The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare, Uppsala, Sweden) at 25 °C. The mouse uPA (muPA) was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The immobilization was carried out by injecting 10 μg/mL muPA in 10 mM sodium acetate buffer (pH 4.0) at a flow rate of 5 μL/min. The surface was activated with a mixture of 0.2 M N-ethyl-N'-(3-dimethylaminopropyl)carbodiimide (EDC) and 0.05 M N-hydroxysuccinimide (NHS) for 7 min, followed by injection of muPA for 7 min. The surface was then deactivated with 1 M ethanolamine (pH 8.5) for 7 min. The immobilized muPA was blocked with 1 M ethanolamine (pH 8.5) for 7 min. The running buffer was 10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% P20. The peptides were dissolved in the running buffer and injected at concentrations of 0.1, 0.3, 1, 3, 10, and 30 μM at a flow rate of 30 μL/min for 120 s, followed by a dissociation phase of 120 s. The regeneration of the sensor surface was achieved by injecting 10 mM glycine-HCl (pH 2.0) for 30 s. The data were analyzed using Biacore T200 evaluation software. The binding kinetics were determined by fitting the sensorgrams to a 1:1 Langmuir binding model. The dissociation constant (K_D) was calculated from the association rate constant (k_on) and the dissociation rate constant (k_off) using the equation K_D = k_off / k_on. The data were corrected for the response of the reference flow cell and the bulk refractive index changes. The experiments were performed in triplicate.",
+            "Table 2": "Table 2. Kinetic Parameters of Peptide Inhibitors Binding to muPA Determined by SPR | peptide | k_on (M⁻¹ s⁻¹) ×10⁵ | k_off (s⁻¹) ×10⁻³ | K_D (nM) | |---|---|---|---| | LD-1 | 0.91 ± 0.25 (3)* | 3.64 ± 0.07 (3)* | 398 ± 46 (3)* | | IG-1 | 4.48 ± 0.76 (3)* | 0.64 ± 0.07 (3)* | 14.7 ± 1.8 (3)* | | IG-2 | 2.73 ± 0.13 (3) | 0.066 ± 0.019 (3) | 2.40 ± 0.61 (3) | aData with asterisk are from our previous studies.35,36",
+            "Figure 2 caption": "Figure 2. Crystal structures and MD simulation of peptide inhibitors in complexes with uPA. (A) Overall crystal structures of IG-1 (green sticks) and IG-2 (magenta sticks) in complexes with uPA (wheat surface) (PDB codes: 6A8G and 6A8N). (B) Schematic representation of polar interactions between IG-2 (black) and uPA (blue). Intramolecular and intermolecular polar interactions are presented in black and blue dash lines, respectively. (C) Time-dependent root-mean-square deviation (RMSD) of the backbone atoms of peptide inhibitors with respect to the starting conformation during the 1200 ns-MD simulation. (D) Alignment of the backbones of IG-2 in the crystal structure (magenta cartoon) and the MD simulation (cyan cartoon). (E and F) Alignment of the backbones of LD-1 (cyan cartoon), IG-1 (green cartoon), and IG-2 (magenta cartoon) in the MD simulation-derived structures. The Cα atoms are presented as spheres. The distances between the atoms are presented as black dash lines. uPAs are presented as the wheat surface. The critical residues are presented as sticks. (G) Correlations of the binding free energy of peptide–uPA complexes calculated from MD trajectories (ΔG_MD) with the ones determined by experiments (ΔG_exp). The correlation coefficients (R²) between ΔG_MD and ΔG_exp determined by isothermal titration calorimetry (ITC) (green line) and surface plasmon resonance (SPR) (blue line) are 0.97 and 0.99, respectively."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "mouse uPA (muPA)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Peptides (LD-1, IG-1, IG-2)",
+                "concentration_range": "0.1, 0.3, 1, 3, 10, and 30 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES (pH 7.4), 150 mM NaCl, 3 mM EDTA, and 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl (pH 2.0)"
+            },
+            "data_analysis": {
+                "reference_description": "Reference flow cell",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "51322123": {
+        "reactant_set_id": 51322123,
+        "pmid": 27563394,
+        "protein": "Histone-lysine N-methyltransferase, H3 lysine-79 specific",
+        "ligand": {
+            "smiles": "CNC(=O)c1cc(c[nH]1)C(=O)c1c(Cl)cccc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 50000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated Avi tagged human DoT1L (2 to 416 residues) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Fragment-based screening using surface plasmon resonance (SPR) was applied to an immobilized DOT1L construct (amino acids 1–416) encompassing the N-terminal catalytic domain. We identified compound 1 as a weak binder with an estimated equilibrium binding constant of K_D ≈ 50 μM. The biochemical activity of this hit was measured by a scintillation proximity assay (SPA), using tritium labeled cofactor SAM at concentration equal to K_M and excess of biotinylated nucleosome as substrate (Supporting Information), and resulted in a moderate inhibition (IC_50 = 320 μM) (Table 1). Further, the compound was confirmed to bind DOT1L by SPR analysis. The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare) using a streptavidin-coated sensor chip (SA sensor chip). The biotinylated Avi-tagged human DoT1L (residues 2–416) was immobilized on the sensor chip. The ligands were injected at concentrations ranging from 0.1 to 100 μM in HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% surfactant P20) at a flow rate of 30 μL/min. The association phase lasted 120 s, followed by a 120 s dissociation phase. The sensorgrams were double-referenced by subtracting the response from a reference flow cell and a blank injection. The data were analyzed using Biacore T200 evaluation software to determine the equilibrium binding constants (K_D)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated Avi-tagged human DoT1L (residues 2–416)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 1",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "reference flow cell and blank injection",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

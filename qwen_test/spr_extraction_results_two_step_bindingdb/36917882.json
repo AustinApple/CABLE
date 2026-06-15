@@ -1,0 +1,258 @@
+{
+    "51550231": {
+        "reactant_set_id": 51550231,
+        "pmid": 36917882,
+        "protein": "CD99 antigen",
+        "ligand": {
+            "smiles": "Nc1nc(nc2n(cnc12)[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1F)-c1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 598.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal biotin-tagged recombinant human CD99 extracellular domain (23 to 122 residues) expressed in Escherichia coli BL21(DE3) assessed as dissociation rate constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.6 Surface plasmon resonance—Surface plasmon resonance (SPR) experiments were done using a Biacore T200 instrument with a CM5 chip. The ligand, bacterially expressed recombinant extracellular domain of CD99, was immobilized onto the chip in 10 mM sodium acetate buffer at pH 4.0 to a level of ~3500 RU by using standard amine coupling chemistry. BK50164 and BK60106 were used as analytes to flow over the immobilized ligand. PBS-P (20 mM phosphate buffer pH 7.4, 137mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) was used as the immobilization running buffer. Overnight kinetics were performed for all analytes binding to the ligand in the presence of PBS-P + 1% DMSO. The flow rate of all analyte solutions was maintained at 50 μL/min. The contact and dissociation times used were 60 s and 300 s, respectively. One 15 s pulse of 1:500 H3PO4:H2O (v/v) was injected for surface regeneration. All compounds were injected in duplicate. The sensorgrams from the overnight kinetics were evaluated using 1:1 kinetics model fitting.",
+            "Figure 6 caption": "Figure 6. BK60106 and BK50164 directly bind CD99. The indicated various concentrations of BK60106 (A) or BK50164 (B) were flowed over the purified recombinant extracellular domain of CD99 protein, immobilized onto a CM5 chip in a Biacore T200 instrument. A kinetics interaction experiment was performed for the analytes (the compounds) binding to the ligand (CD99). The contact and dissociation times used were 60 s and 300 s, respectively. The sensorgrams were evaluated using 1:1 binding model fitting. Colored lines show actual data run in duplicates and black lines show the curve fit. The dissociation constants (KD values) of BK60106 and BK50164 on CD99 were calculated as 1.8 μM and 1.5 μM, respectively. BK50164 (C) was mixed with TC-71 cell lysate at a final concentration of 80 μM and the mixtures were subjected to various temperatures. Thermally stable CD99 protein, remaining in the lysate solution, was assessed by western blot. Relative quantification of protein amounts in BK50164 (D) treated lysates were determined by densitometry analysis of the protein bands in the western blot results in panels C. Data were analyzed by GraphPad Prism software.",
+            "Figure 6 sensorgram data": "Figure 6A: BK60106, k_a = 334.7 M⁻¹s⁻¹, k_d = 598.2 x 10⁻⁶ s⁻¹, K_D = 1.8 μmol/L. Figure 6B: BK50164, k_a = 1701 M⁻¹s⁻¹, k_d = 2467 x 10⁻⁶ s⁻¹, K_D = 1.5 μmol/L. Compound Concentrations: 40 μM, 20 μM, 10 μM, 5 μM, 2.5 μM, 1.25 μM. Time (s) on x-axis: 0 to 400. Binding (Response Unit - RU) on y-axis: 0 to 5.0. Contact time: 60 s. Dissociation time: 300 s. Running buffer: PBS-P (20 mM phosphate buffer pH 7.4, 137mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) + 1% DMSO. Flow rate: 50 μL/min. Surface regeneration: 1:500 H3PO4:H2O (v/v)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant extracellular domain of CD99",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BK50164 and BK60106",
+                "concentration_range": "1.25 μM - 40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate buffer pH 7.4, 137 mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) + 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1:500 H3PO4:H2O (v/v)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "51550232": {
+        "reactant_set_id": 51550232,
+        "pmid": 36917882,
+        "protein": "CD99 antigen",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)nc2n(cnc12)[C@@H]1O[C@H](COC(C(O)=O)C(O)=O)[C@@H](O)[C@@H]1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2467.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal biotin-tagged recombinant human CD99 extracellular domain (23 to 122 residues) expressed in Escherichia coli BL21(DE3) assessed as dissociation rate constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.6 Surface plasmon resonance—Surface plasmon resonance (SPR) experiments were done using a Biacore T200 instrument with a CM5 chip. The ligand, bacterially expressed recombinant extracellular domain of CD99, was immobilized onto the chip in 10 mM sodium acetate buffer at pH 4.0 to a level of ~3500 RU by using standard amine coupling chemistry. BK50164 and BK60106 were used as analytes to flow over the immobilized ligand. PBS-P (20 mM phosphate buffer pH 7.4, 137mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) was used as the immobilization running buffer. Overnight kinetics were performed for all analytes binding to the ligand in the presence of PBS-P + 1% DMSO. The flow rate of all analyte solutions was maintained at 50 μL/min. The contact and dissociation times used were 60 s and 300 s, respectively. One 15 s pulse of 1:500 H3PO4:H2O (v/v) was injected for surface regeneration. All compounds were injected in duplicate. The sensorgrams from the overnight kinetics were evaluated using 1:1 kinetics model fitting.",
+            "Figure 6 caption": "Figure 6. BK60106 and BK50164 directly bind CD99. The indicated various concentrations of BK60106 (A) or BK50164 (B) were flowed over the purified recombinant extracellular domain of CD99 protein, immobilized onto a CM5 chip in a Biacore T200 instrument. A kinetics interaction experiment was performed for the analytes (the compounds) binding to the ligand (CD99). The contact and dissociation times used were 60 s and 300 s, respectively. The sensorgrams were evaluated using 1:1 binding model fitting. Colored lines show actual data run in duplicates and black lines show the curve fit. The dissociation constants (KD values) of BK60106 and BK50164 on CD99 were calculated as 1.8 μM and 1.5 μM, respectively. BK50164 (C) was mixed with TC-71 cell lysate at a final concentration of 80 μM and the mixtures were subjected to various temperatures. Thermally stable CD99 protein, remaining in the lysate solution, was assessed by western blot. Relative quantification of protein amounts in BK50164 (D) treated lysates were determined by densitometry analysis of the protein bands in the western blot results in panels C. Data were analyzed by GraphPad Prism software.",
+            "Figure 6 sensorgram data": "Figure 6A: BK60106, k_a = 334.7 M⁻¹s⁻¹, k_d = 598.2 x 10⁻⁶ s⁻¹, K_D = 1.8 μmol/L. Figure 6B: BK50164, k_a = 1701 M⁻¹s⁻¹, k_d = 2467 x 10⁻⁶ s⁻¹, K_D = 1.5 μmol/L. Compound Concentrations: 40 μM, 20 μM, 10 μM, 5 μM, 2.5 μM, 1.25 μM. Time (s) on x-axis: 0 to 400. Binding (Response Unit - RU) on y-axis: 0 to 5.0. Contact time: 60 s. Dissociation time: 300 s. Running buffer: PBS-P (20 mM phosphate buffer pH 7.4, 137mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) + 1% DMSO. Flow rate: 50 μL/min. Surface regeneration: 1:500 H3PO4:H2O (v/v)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant extracellular domain of CD99",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BK50164 and BK60106",
+                "concentration_range": "1.25 μM - 40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate buffer pH 7.4, 137 mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) + 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1:500 H3PO4:H2O (v/v)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "51550229": {
+        "reactant_set_id": 51550229,
+        "pmid": 36917882,
+        "protein": "CD99 antigen",
+        "ligand": {
+            "smiles": "Nc1nc(nc2n(cnc12)[C@@H]1O[C@H](CO)[C@@H](O)[C@@H]1F)-c1cccnc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal biotin-tagged recombinant human CD99 extracellular domain (23 to 122 residues) expressed in Escherichia coli BL21(DE3) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.6 Surface plasmon resonance—Surface plasmon resonance (SPR) experiments were done using a Biacore T200 instrument with a CM5 chip. The ligand, bacterially expressed recombinant extracellular domain of CD99, was immobilized onto the chip in 10 mM sodium acetate buffer at pH 4.0 to a level of ~3500 RU by using standard amine coupling chemistry. BK50164 and BK60106 were used as analytes to flow over the immobilized ligand. PBS-P (20 mM phosphate buffer pH 7.4, 137mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) was used as the immobilization running buffer. Overnight kinetics were performed for all analytes binding to the ligand in the presence of PBS-P + 1% DMSO. The flow rate of all analyte solutions was maintained at 50 μL/min. The contact and dissociation times used were 60 s and 300 s, respectively. One 15 s pulse of 1:500 H3PO4:H2O (v/v) was injected for surface regeneration. All compounds were injected in duplicate. The sensorgrams from the overnight kinetics were evaluated using 1:1 kinetics model fitting.",
+            "Figure 6 caption": "Figure 6. BK60106 and BK50164 directly bind CD99. The indicated various concentrations of BK60106 (A) or BK50164 (B) were flowed over the purified recombinant extracellular domain of CD99 protein, immobilized onto a CM5 chip in a Biacore T200 instrument. A kinetics interaction experiment was performed for the analytes (the compounds) binding to the ligand (CD99). The contact and dissociation times used were 60 s and 300 s, respectively. The sensorgrams were evaluated using 1:1 binding model fitting. Colored lines show actual data run in duplicates and black lines show the curve fit. The dissociation constants (KD values) of BK60106 and BK50164 on CD99 were calculated as 1.8 μM and 1.5 μM, respectively. BK50164 (C) was mixed with TC-71 cell lysate at a final concentration of 80 μM and the mixtures were subjected to various temperatures. Thermally stable CD99 protein, remaining in the lysate solution, was assessed by western blot. Relative quantification of protein amounts in BK50164 (D) treated lysates were determined by densitometry analysis of the protein bands in the western blot results in panels C. Data were analyzed by GraphPad Prism software.",
+            "Figure 6 sensorgram data": "Figure 6A: BK60106, k_a = 334.7 M⁻¹s⁻¹, k_d = 598.2 x 10⁻⁶ s⁻¹, K_D = 1.8 μmol/L. Figure 6B: BK50164, k_a = 1701 M⁻¹s⁻¹, k_d = 2467 x 10⁻⁶ s⁻¹, K_D = 1.5 μmol/L. Compound Concentrations: 40 μM, 20 μM, 10 μM, 5 μM, 2.5 μM, 1.25 μM. Time (s) on x-axis: 0 to 400. Binding (Response Unit - RU) on y-axis: 0 to 5.0. Figure 6C: Temperature (°C) on x-axis: 51, 55, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99. Figure 6D: Temperature (°C) on x-axis: 50 to 100. Relative Band Intensity on y-axis: 0.4 to 1.3. Data points for BK50164 (black squares) and DMSO (gray circles)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant extracellular domain of CD99",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BK50164 and BK60106",
+                "concentration_range": "1.25 μM - 40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate buffer pH 7.4, 137 mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) + 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1:500 H3PO4:H2O (v/v)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    },
+    "51550230": {
+        "reactant_set_id": 51550230,
+        "pmid": 36917882,
+        "protein": "CD99 antigen",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)nc2n(cnc12)[C@@H]1O[C@H](COC(C(O)=O)C(O)=O)[C@@H](O)[C@@H]1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal biotin-tagged recombinant human CD99 extracellular domain (23 to 122 residues) expressed in Escherichia coli BL21(DE3) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "4.2.6 Surface plasmon resonance—Surface plasmon resonance (SPR) experiments were done using a Biacore T200 instrument with a CM5 chip. The ligand, bacterially expressed recombinant extracellular domain of CD99, was immobilized onto the chip in 10 mM sodium acetate buffer at pH 4.0 to a level of ~3500 RU by using standard amine coupling chemistry. BK50164 and BK60106 were used as analytes to flow over the immobilized ligand. PBS-P (20 mM phosphate buffer pH 7.4, 137mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) was used as the immobilization running buffer. Overnight kinetics were performed for all analytes binding to the ligand in the presence of PBS-P + 1% DMSO. The flow rate of all analyte solutions was maintained at 50 μL/min. The contact and dissociation times used were 60 s and 300 s, respectively. One 15 s pulse of 1:500 H3PO4:H2O (v/v) was injected for surface regeneration. All compounds were injected in duplicate. The sensorgrams from the overnight kinetics were evaluated using 1:1 kinetics model fitting.",
+            "Figure 6 caption": "Figure 6. BK60106 and BK50164 directly bind CD99. The indicated various concentrations of BK60106 (A) or BK50164 (B) were flowed over the purified recombinant extracellular domain of CD99 protein, immobilized onto a CM5 chip in a Biacore T200 instrument. A kinetics interaction experiment was performed for the analytes (the compounds) binding to the ligand (CD99). The contact and dissociation times used were 60 s and 300 s, respectively. The sensorgrams were evaluated using 1:1 binding model fitting. Colored lines show actual data run in duplicates and black lines show the curve fit. The dissociation constants (KD values) of BK60106 and BK50164 on CD99 were calculated as 1.8 μM and 1.5 μM, respectively. BK50164 (C) was mixed with TC-71 cell lysate at a final concentration of 80 μM and the mixtures were subjected to various temperatures. Thermally stable CD99 protein, remaining in the lysate solution, was assessed by western blot. Relative quantification of protein amounts in BK50164 (D) treated lysates were determined by densitometry analysis of the protein bands in the western blot results in panels C. Data were analyzed by GraphPad Prism software.",
+            "Figure 6 sensorgram data": "Figure 6A: BK60106, k_a = 334.7 M⁻¹s⁻¹, k_d = 598.2 x 10⁻⁶ s⁻¹, K_D = 1.8 μmol/L. Figure 6B: BK50164, k_a = 1701 M⁻¹s⁻¹, k_d = 2467 x 10⁻⁶ s⁻¹, K_D = 1.5 μmol/L. Compound Concentrations: 40 μM, 20 μM, 10 μM, 5 μM, 2.5 μM, 1.25 μM. Time (s) on x-axis: 0 to 400. Binding (Response Unit - RU) on y-axis: 0 to 5.0. Figure 6C: Temperature (°C) on x-axis: 51, 55, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99. Figure 6D: Temperature (°C) on x-axis: 50 to 100. Relative Band Intensity on y-axis: 0.4 to 1.3. Data points for BK50164 (black squares) and DMSO (gray circles)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant extracellular domain of CD99",
+                "strategy": "Amine coupling",
+                "density_ru": "3500",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "BK50164 and BK60106",
+                "concentration_range": "1.25 μM - 40 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS-P (20 mM phosphate buffer pH 7.4, 137 mM NaCl, 2.7 mM KCl, 0.05% surfactant P20) + 1% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 60,
+                "dissociation_time_s": 300,
+                "regeneration_solution": "1:500 H3PO4:H2O (v/v)"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "GraphPad Prism"
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "51522188": {
+        "reactant_set_id": 51522188,
+        "pmid": 36332553,
+        "protein": "Trypanothione reductase",
+        "ligand": {
+            "smiles": "C[n+]1nn(cc1CCCCN)-c1ccc(-c2nc(CCc3ccccc3)cs2)c(OCCN2CCNC2=O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Competitive inhibition of HIS-FLAG-tagged recombinant Leishmania infantum TryR expressed in Escherichia coli assessed as dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "M. A. Toro, P. A. Sanchez-Murcia, D. Moreno, M. Ruiz-Santacruz, J. F. Alzate, A. Negri, M. J. Camarasa, F. Gago, S. Velazquez, A. Jimenez-Ruiz, Probing the dimerization interface of Leishmania infantum trypanothione reductase with site-directed mutagenesis and short peptides, ChemBioChem 14 (2013) 1212–1217.",
+        "original_paragraph": {
+            "Materials and Methods": "The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare, Chicago, IL, USA) using a CM5 sensor chip. The immobilization of the HIS-FLAG-tagged recombinant Leishmania infantum TryR was performed as described previously [25]. Briefly, 10 μg/mL of the protein in 10 mM sodium acetate, pH 4.0, was captured on a streptavidin-coated surface using a biotinylated anti-FLAG M2 antibody (Sigma-Aldrich, St. Louis, MO, USA). The surface was blocked with 1 M ethanolamine, pH 8.5, for 10 min. The binding of the inhibitors was assessed in HBS-EP buffer (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4) at 25 °C. The inhibitors were injected at concentrations ranging from 0.1 to 100 μM for 120 s, followed by a 300 s dissociation phase. The sensorgrams were double-referenced by subtracting the signal from a blank flow cell and the signal from a control injection of buffer. The data were analyzed using the Biacore T200 Evaluation Software (GE Healthcare). The dissociation constants (Kd) were calculated by fitting the sensorgrams to a 1:1 Langmuir binding model.",
+            "Figure 2 caption": "Fig. 2. Competitive inhibition of LiTryR by the triazolium salt 4a. (A) Plot of the initial velocities (v) as a function of oxidized trypanothione disulfide (TS2) at seven different concentrations of compound 4a. 2-nitro-5-thiobenzoic acid (TNB) production was monitored by the absorbance at 412 nm. Curves were fitted using Equation 1. (B) Double-reciprocal plot. Data are from results obtained in a representative assay from three independent experiments.",
+            "Supporting Information S1": "The SPR experiments were performed on a Biacore T200 instrument (GE Healthcare, Chicago, IL, USA) using a CM5 sensor chip. The immobilization of the HIS-FLAG-tagged recombinant Leishmania infantum TryR was performed as described previously [25]. Briefly, 10 μg/mL of the protein in 10 mM sodium acetate, pH 4.0, was captured on a streptavidin-coated surface using a biotinylated anti-FLAG M2 antibody (Sigma-Aldrich, St. Louis, MO, USA). The surface was blocked with 1 M ethanolamine, pH 8.5, for 10 min. The binding of the inhibitors was assessed in HBS-EP buffer (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4) at 25 °C. The inhibitors were injected at concentrations ranging from 0.1 to 100 μM for 120 s, followed by a 300 s dissociation phase. The sensorgrams were double-referenced by subtracting the signal from a blank flow cell and the signal from a control injection of buffer. The data were analyzed using the Biacore T200 Evaluation Software (GE Healthcare). The dissociation constants (Kd) were calculated by fitting the sensorgrams to a 1:1 Langmuir binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "HIS-FLAG-tagged recombinant Leishmania infantum TryR",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (competitive inhibitors of LiTryR)",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (10 mM HEPES, 150 mM NaCl, 3 mM EDTA, 0.005% P20, pH 7.4)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Blank flow cell and control injection of buffer",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software (GE Healthcare)"
+            }
+        }
+    }
+}

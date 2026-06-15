@@ -1,0 +1,1109 @@
+{
+    "51604037": {
+        "reactant_set_id": 51604037,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(Br)cc2c2cc(Br)ccc21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 40.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604038": {
+        "reactant_set_id": 51604038,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(I)cc2c2cc(I)ccc21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 35.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604039": {
+        "reactant_set_id": 51604039,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc2c(c1)c1cc(C(C)(C)C)ccc1n2CC(C(=O)O)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 55.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604040": {
+        "reactant_set_id": 51604040,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc2c(c1)c1cc(C(C)(C)C)ccc1n2C[C@@H](C(=O)O)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 56.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604041": {
+        "reactant_set_id": 51604041,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc2c(c1)c1cc(C(C)(C)C)ccc1n2C[C@H](C(=O)O)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 49.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604042": {
+        "reactant_set_id": 51604042,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(Cl)cc2c2cc(Cl)cc(Cl)c21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 37.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604043": {
+        "reactant_set_id": 51604043,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@H](Cn1c2ccc(Cl)cc2c2cc(Cl)cc(Cl)c21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 36.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604044": {
+        "reactant_set_id": 51604044,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@@H](Cn1c2ccc(Cl)cc2c2cc(Cl)cc(Cl)c21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604045": {
+        "reactant_set_id": 51604045,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(Br)cc2c2cc(Br)ccc21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1162.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604046": {
+        "reactant_set_id": 51604046,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(I)cc2c2cc(I)ccc21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 145.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604047": {
+        "reactant_set_id": 51604047,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc2c(c1)c1cc(C(C)(C)C)ccc1n2CC(C(=O)O)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 841.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604048": {
+        "reactant_set_id": 51604048,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc2c(c1)c1cc(C(C)(C)C)ccc1n2C[C@@H](C(=O)O)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 679.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604049": {
+        "reactant_set_id": 51604049,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc2c(c1)c1cc(C(C)(C)C)ccc1n2C[C@H](C(=O)O)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 666.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604050": {
+        "reactant_set_id": 51604050,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(Cl)cc2c2cc(Cl)cc(Cl)c21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 160.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604051": {
+        "reactant_set_id": 51604051,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@H](Cn1c2ccc(Cl)cc2c2cc(Cl)cc(Cl)c21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 183.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604052": {
+        "reactant_set_id": 51604052,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)[C@@H](Cn1c2ccc(Cl)cc2c2cc(Cl)cc(Cl)c21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 127.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 expressed in Escherichia coli assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein. Furthermore, the observation that 7t, bearing a trichlorocarbazol-9-yl group, exhibited higher binding activity than the",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions, 8 concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    },
+    "51604061": {
+        "reactant_set_id": 51604061,
+        "pmid": 38823264,
+        "protein": "DNA (cytosine-5)-methyltransferase 1",
+        "ligand": {
+            "smiles": "O=C(O)C(Cn1c2ccc(Br)cc2c2cc(Br)ccc21)N1C(=O)c2ccccc2C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4090.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human DNMT1 in presence of 10 uM SAM by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR assay": "The SPR analysis was conducted using a Biacore T200 instrument, controlled with Biacore T200 control software (version 2.0, GE Healthcare, USA), and evaluated using Biacore T200 evaluation software (version 2.0, GE Healthcare, USA). HBS-EP+ served as the experimental buffer, and series S Sensor Chip CM5 was bought from GE Healthcare. DNMT1 protein was diluted in 10 mM sodium acetate buffer to final concentrations of 51.0 μg/mL at pH 5.0, 4.5, and 4.0, respectively. The binding capacity of this protein to the CM5 chip surface was determined under the different pH conditions mentioned above. The optimal coupling pH was determined to be 4.5 based on experimental results. Using an amine coupling kit (mixing of 100 μL EDC and 100 μL NHS), the protein was coupled to the Fc2 channel of the CM5 chip with Fc1 as the reference channel. DNMT1 protein (diluted to 51.0 μg/mL) yielded a binding signal of approximately 8000 RU on the chip. After surface blocking with 1 M ethanolamine for 900 s, compounds at various concentrations (diluted in a two-fold series starting from 5 μM, resulting in eight different concentrations) were injected into the Fc1 and Fc2 channels of the chip, followed by a 75 s binding and an 85 s dissociation phase. Data analysis was performed using Biacore T200 evaluation software, subtracting the background signal from Fc1 with 0 nM as the blank concentration. Finally, the kinetics or affinity analysis was carried out using an affinity model. Chip regeneration was performed for 30 s at a flow rate of 30 L/min using HBS-EP+.",
+            "Results - Affinity determination of 7j-t with DNMT1 by SPR assay": "The affinity of compounds 7k-t with DNMT1 was evaluated using SPR assay, following the same protocol as compounds 7a-j. Results revealed that di- and tri-substituted carbazole derivatives 7n-t exhibited notably stronger affinity compared to those without substituents or with mono-substituents (7j-m) in the primary screening at 10 μM (refer to Fig. S5 and Table S2). Fig. 4A depicts the real-time affinity of compound 7n with DNMT1 with concentrations ranging from 0.08 to 2.5 μM. The result showed that 7n demonstrated rapid binding and dissociation kinetics with the protein, with the response value increasing proportionally to the compound concentration. The equilibrium dissociation constant (KD) value of 7n to DNMT1 was calculated as 1.16 μM using Biacore T200 Evaluation software, representing a significant enhancement compared to that of RG108 (KD = 94.6 μM, Fig. S2). Additionally, the KD value of 7n was calculated in the presence of 10 μM SAM, revealing a three-fold increase compared to that in the absence of SAM (Fig. 4B), implying that compound 7n competitively binds to DNMT1 at the same site as SAM. As shown in Table S2, at the concentration of 10 μM, the RU values for 7o, 7r and 7t were 57.9, 52.7 and 65.5 respectively, suggesting optimal affinity for the protein among compounds in the same series. To further assess their affinity, compounds 7o, 7r, and 7t, along with their optical isomers, were tested at six concentrations ranging from 2.5 to 0.08 μM as same as 7n to measure RU values and calculate KD values (Fig. S6). As presented in Table 1, the data of the racemic compounds were 0.145, 0.841, and 0.160 μM, respectively, which were more than 600-fold lower than the KD value of RG108, suggesting that they may serve as effective DNMT1 inhibitors. Interestingly, the KD values of 7r, 7r-S and 7r-R were 0.841, 0.679, and 0.666 μM respectively, and of 7t, 7t-S and 7t-R were 0.160, 0.183, and 0.127 μM respectively, suggesting the racemate and the two enantiomers possess similar affinity with the protein.",
+            "Figure 4 caption": "Fig. 4. Graphs of the real-time affinity of 7n with DNMT1. (A) 7n at concentrations ranging from 0.08 to 2.5 μM, and (B) 7n at concentrations ranging from 0.16 to 1.25 μM with 10 μM of SAM.",
+            "Figure 4A": "The graph shows sensorgrams for compound 7n at concentrations of 0.08, 0.16, 0.31, 0.63, 1.25, and 2.5 μM. The x-axis is Time (s) from -20 to 220, and the y-axis is Response (RU) from -5 to 35. The title is '7n KD = 1.16 μM'.",
+            "Figure 4B": "The graph shows sensorgrams for compound 7n in the presence of 10 μM SAM at concentrations of 0.16, 0.31, 0.63, and 1.25 μM. The x-axis is Time (s) from -20 to 220, and the y-axis is Response (RU) from -20 to 45. The title is '7n + SAM (10 μM) KD = 4.09 μM'.",
+            "Table 1": "Table 1 KD values of compounds 7n, 7o, 7r, and 7t with DNMT1 (see Fig. S6). Comps Ka (1/mM.s) Kd (1/ks) KD (μM) 7n 34.04 39.55 1.162 7o 239.2 34.84 0.145 7r 65.58 55.15 0.841 7r-S 81.77 55.51 0.679 7r-R 73.67 49.07 0.666 7t 219.4 37.22 0.160 7t-S 193.9 35.63 0.183 7t-R 218.4 27.89 0.127"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DNMT1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "51.0 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 7j-t (including 7n, 7o, 7r, 7t and their enantiomers)",
+                "concentration_range": "0.08 μM - 2.5 μM (two-fold dilutions), with additional testing at 2.5 to 0.08 μM for 7o, 7r, 7t and their isomers"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30000000,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 75,
+                "dissociation_time_s": 85,
+                "regeneration_solution": "HBS-EP+"
+            },
+            "data_analysis": {
+                "reference_description": "Fc1 channel (reference channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "Biacore T200 evaluation software (version 2.0)"
+            }
+        }
+    }
+}

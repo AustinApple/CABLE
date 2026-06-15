@@ -1,0 +1,72 @@
+{
+    "51419287": {
+        "reactant_set_id": 51419287,
+        "pmid": 34531951,
+        "protein": "Interleukin-17A",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(C)=O)C(=O)N[C@@H](Cc1cnc[nH]1)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H]([C@@H](C)O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N1CCC[C@H]1C(=O)N[C@@H](C)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CCCCN)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated human IL-17A by SPR analysis",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": "S2. Liu, S., Desharnais, J., Sahasrabudhe, P. V., Jin, P., Li, W., Oates, B. D., Shanker, S., Banker, M. E., Chrunyk, B. A., Song, X., Feng, X., Griffor, M., Jimenez, J., Chen, G., Tumelty, D., Bhat, A., Bradshaw, C. W., Woodnutt, G., Lappe, R. W., Thorarensen, A., Qiu, X., Withka, J. M., Wood, L. D. Inhibiting complex IL-17A and IL-17RA interactions with a linear peptide. Sci. Rep. 2016, 6, 26071.",
+        "original_paragraph": {
+            "SPR measurement (Materials and Methods)": "SPR biosensing experiments were performed on a Biacore T200 (Cytiva, U.S.A.) using a single-cycle kinetics method, according to Biacore T200 control software. For all matuement, HBS-EP+ (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% surfactant P20) was used as the running buffer. Biotinylated IL-17A was diluted in HBS-EP+ and immobilized on a Biotin CAPture chip (Cytiva, U.S.A.) yielding typical levels of approximately 550 RUs. Peptides were injected at 6.1, 18.5, 55.6, 166.7, and 500 nM at a flow rate of 30 μL/min for 120 sec, and subsequent dissociation was followed for up to 600 sec. Data processing and analysis were performed using Biacore T200 evaluation software (Cytiva, U.S.A.). Obtained sensorgrams were double referenced against the signal of target non-immobilized path as well as that of no peptide control, before global fitting of the concentration series to the heterogeneous ligand binding model.",
+            "Figure S7 caption": "Figure S7. Binding of peptide 3 (top left), 4 (top right), 5 (middle left), 6 (middle right), and HAP (positive control, bottom left) against IL-17A, evaluated by SPR. The binding constant of HAP was 6.2 nM, which is approximately the same as the reported value (2.6 nM) in reference S2. Red lines are experimental data, and black lines are curve-fitted data.",
+            "Table S1": "Table S1. Top read sequences in NGS and their binding affinities to human IL-17A. ... K_D [nM]^c ... IL17-1^d ... 12.3 ...",
+            "Table S3": "Table S3. Effect of crosslinking agents on the affinities of IL17-1 peptide-linkers against human IL17-A. Letters shown in red represent consensus sequence. ... Crosslinker ... Peptide sequence ... K_D [nM] ... DBX^a ... CELLTFLGYPVYC ... 12.3 ... BMOE^b ... CELLTFLGYPVYC ... 1.7 ... DMSO (disulfide) ... CELLTFLGYPVYC ... 4.4 ... IL17-1-Ser ... SELLTFLGYPVYS ... 1.0^c ... IL17-1(Bzl) ... C (Bzl) ELLTFLGYPVYC (Bzl) ... 13.0 ...",
+            "Table S2": "Table S2. Selectivity of IL17-1 to human IL17-A. ... Peptide ... Target ... K_D [nM] ... IL17-1^a ... IL17-A (human) ... 12.3 ... IL17-1^a ... IL17-A (mouse) ... 122 ... IL17-1^a ... IL17-F (human) ... N.D.^b ...",
+            "Supporting References S2": "S2. Liu, S., Desharnais, J., Sahasrabudhe, P. V., Jin, P., Li, W., Oates, B. D., Shanker, S., Banker, M. E., Chrunyk, B. A., Song, X., Feng, X., Griffor, M., Jimenez, J., Chen, G., Tumelty, D., Bhat, A., Bradshaw, C. W., Woodnutt, G., Lappe, R. W., Thorarensen, A., Qiu, X., Withka, J. M., Wood, L. D. Inhibiting complex IL-17A and IL-17RA interactions with a linear peptide. Sci. Rep. 2016, 6, 26071."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Biotin CAPture",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Biotinylated human IL-17A",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "550",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptides (including IL17-1, peptide 3-6, HAP)",
+                "concentration_range": "6.1, 18.5, 55.6, 166.7, and 500 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP+ (10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Target non-immobilized path and no peptide control",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "Heterogeneous binding model",
+                "software": "Biacore T200 evaluation software (Cytiva, U.S.A.)"
+            }
+        }
+    }
+}

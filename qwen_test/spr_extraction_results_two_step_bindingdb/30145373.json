@@ -1,0 +1,66 @@
+{
+    "51146963": {
+        "reactant_set_id": 51146963,
+        "pmid": 30145373,
+        "protein": "Histone acetyltransferase KAT8",
+        "ligand": {
+            "smiles": "CCN(CC)S(=O)(=O)c1ccc(\\C=C\\c2nc3cc(F)ccc3s2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged MOF by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) based binding assays": "The SPR binding assays were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C as described. HMOF protein was covalently immobilized on a CM5 chip using a standard amine-coupling procedure in 10 mM sodium acetate (pH 4.0). The chip was equilibrated with HBS buffer (20 mM HEPES (pH 7.4), 200 mM NaCl, 0.5% (v/v) DMSO). For kinetic measurement, compounds were diluted at concentrations ranging from 5 μM to 100 μM in HBS buffer. The diluted compounds were injected over the chip for 120 s at a flow rate of 30 μL/min and then dissociate for 300 s. The state model of the T200 evaluation software was used to analyze the resulting data to calculate the Kd of the compounds.",
+            "Figure 1B caption": "The Kd of DC_M01 was determined using SPR as 19 μM.",
+            "Results - Surface plasmon resonance (SPR) based binding assay": "To validate DC_M01 as a hMOF inhibitor, we used the SPR-based binding assay to measure the direct interaction between hMOF and DC_M01. The interactions of DC_M01 was dose-dependent and the equilibrium dissociation constant (Kd) is 19 μM (Fig. 1). The Kd of DC_M01 was consistent with the hMOF inhibition activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "HMOF protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "DC_M01",
+                "concentration_range": "5 μM to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM HEPES (pH 7.4), 200 mM NaCl, 0.5% (v/v) DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": "T200 evaluation software"
+            }
+        }
+    }
+}

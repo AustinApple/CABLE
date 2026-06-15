@@ -1,0 +1,197 @@
+{
+    "51522357": {
+        "reactant_set_id": 51522357,
+        "pmid": 36802665,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 21",
+        "ligand": {
+            "smiles": "CC(NC(=O)C1CCCC1)C(=O)Nc1nnc(Cc2ccc(cc2)[N+]([O-])=O)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.9,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6-tagged USP21 (209 to 563 residues) expressed in Escherichia coli BL21 (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. Determination of Kd for screening hit 1: SPR was performed using a Biacore T200 instrument at 15 °C. Recombinant N-terminally His-tagged USP21(aa209–563) diluted to 20 μg/mL into HBS-P+ buffer was injected onto a Tris-20 converted streptavidin sensor chip (Cytiva) with a flow rate of 10 μL/min and a contact time of 500 s to reach a density of ~8000 resonance unit (RU). The screening compound 1 was serially diluted into DMSO with a start concentration of 20 μM in 1:3 dilution steps and transferred to the assay buffer to achieve the final test concentration at a DMSO concentration of 1%. For binding analysis, a multi-cycle protocol was chosen with a contact time of 60 s, a flow rate of 30 μL/min, and a dissociation time of 200 s. Binding constants were calculated using Biacore Insight Evaluation Software on double reference subtracted sensorgrams. Determination of Kd for compounds 18 and 21: SPR was performed using a Biacore S200 instrument for single-cycle experiments. Recombinant USP21 diluted to 1 μg/mL in an early project compound from a different lead series (hUSP21 HTRF IC50 = 324 nM, hUSP21 Ub-rhodamine IC50 = 547 nM) was immobilized by amine coupling with a flow rate of 10 μL/min onto Series S CMS sensor chips (Cytiva). Immobilization levels were kept similar to the above. Single-cycle experiments were used to generate the affinity (Kd) and kinetics of small-molecule binding run in a 1:3 dilution series at a start concentration of 100 nM and six titration steps at a flow rate of 20 μL/min and an association time of 180 s and a dissociation time of up to 1800 s at 15 °C. The running buffer of the duplicate measurements is 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% surfactant P20 further supplemented with 2 mg/mL BSA and 1% DMSO. Affinity and kinetic analysis were performed using Biacore Insight Evaluation Software on double reference subtracted sensorgrams.",
+            "Figure 6 caption": "Figure 6. Binding kinetics for 18 and 21 to USP21. The SPR sensorgram for the single-cycle kinetics analysis of 18 (A) and 21 (B) injected in six steps of threefold dilutions over immobilized USP21 measured at 15 °C.",
+            "Figure 7 caption": "Figure 7. Competitive binding of ubiquitin to USP21 in the presence of compounds 18 and 21. Overlaid SPR sensorgrams for five serial injections of ubiquitin over immobilized USP21 measured at 15 °C in the presence of 1 μM competitor compounds 18 (A) and 21 (B), respectively.",
+            "SPR Competition Assay": "SPR Competition Assay. SPR competition assays were performed using a Biacore S200 instrument and the A–B–A inject function. Recombinant USP21 was immobilized as described before for the Kd measurements using the CMS chip experiments. The A–B–A injection method was used with each of the SMOLs at 1 μM concentration with 30 s contact time of analyte A (SMOLs) followed by ubiquitin titration that was run in a 1:2 dilution series at a start concentration of 25 μM and eight titration steps at a flow rate of 30 μL/min, with an association time of 120 s and a dissociation time of 200 s at 15 °C. Each titration was performed four times, and measurements were analyzed using Biacore Insight Evaluation Software on double reference subtracted sensorgrams."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Tris-20 converted streptavidin",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant N-terminally His-tagged USP21(aa209–563)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Screening compound 1",
+                "concentration_range": "20 μM to 0.00074 μM (1:3 dilution steps)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P+ buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 15,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double reference subtracted sensorgrams",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51522358": {
+        "reactant_set_id": 51522358,
+        "pmid": 36802665,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 21",
+        "ligand": {
+            "smiles": "OC[C@@H](NC(=O)C1(CCCCC1)C(F)(F)F)C(=O)Nc1nnc(Cc2ccc(cc2)C#N)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6-tagged USP21 (209 to 563 residues) expressed in Escherichia coli BL21 (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. Determination of Kd for screening hit 1: SPR was performed using a Biacore T200 instrument at 15 °C. Recombinant N-terminally His-tagged USP21(aa209–563) diluted to 20 μg/mL into HBS-P+ buffer was injected onto a Tris-20 converted streptavidin sensor chip (Cytiva) with a flow rate of 10 μL/min and a contact time of 500 s to reach a density of ~8000 resonance unit (RU). The screening compound 1 was serially diluted into DMSO with a start concentration of 20 μM in 1:3 dilution steps and transferred to the assay buffer to achieve the final test concentration at a DMSO concentration of 1%. For binding analysis, a multi-cycle protocol was chosen with a contact time of 60 s, a flow rate of 30 μL/min, and a dissociation time of 200 s. Binding constants were calculated using Biacore Insight Evaluation Software on double reference subtracted sensorgrams. Determination of Kd for compounds 18 and 21: SPR was performed using a Biacore S200 instrument for single-cycle experiments. Recombinant USP21 diluted to 1 μg/mL in an early project compound from a different lead series (hUSP21 HTRF IC50 = 324 nM, hUSP21 Ub-rhodamine IC50 = 547 nM) was immobilized by amine coupling with a flow rate of 10 μL/min onto Series S CMS sensor chips (Cytiva). Immobilization levels were kept similar to the above. Single-cycle experiments were used to generate the affinity (Kd) and kinetics of small-molecule binding run in a 1:3 dilution series at a start concentration of 100 nM and six titration steps at a flow rate of 20 μL/min and an association time of 180 s and a dissociation time of up to 1800 s at 15 °C. The running buffer of the duplicate measurements is 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% surfactant P20 further supplemented with 2 mg/mL BSA and 1% DMSO. Affinity and kinetic analysis were performed using Biacore Insight Evaluation Software on double reference subtracted sensorgrams.",
+            "Figure 6 caption": "Figure 6. Binding kinetics for 18 and 21 to USP21. The SPR sensorgram for the single-cycle kinetics analysis of 18 (A) and 21 (B) injected in six steps of threefold dilutions over immobilized USP21 measured at 15 °C.",
+            "Figure 7 caption": "Figure 7. Competitive binding of ubiquitin to USP21 in the presence of compounds 18 and 21. Overlaid SPR sensorgrams for five serial injections of ubiquitin over immobilized USP21 measured at 15 °C in the presence of 1 μM competitor compounds 18 (A) and 21 (B), respectively.",
+            "SPR Competition Assay": "SPR Competition Assay. SPR competition assays were performed using a Biacore S200 instrument and the A–B–A inject function. Recombinant USP21 was immobilized as described before for the Kd measurements using the CMS chip experiments. The A–B–A injection method was used with each of the SMOLs at 1 μM concentration with 30 s contact time of analyte A (SMOLs) followed by ubiquitin titration that was run in a 1:2 dilution series at a start concentration of 25 μM and eight titration steps at a flow rate of 30 μL/min, with an association time of 120 s and a dissociation time of 200 s at 15 °C. Each titration was performed four times, and measurements were analyzed using Biacore Insight Evaluation Software on double reference subtracted sensorgrams."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Tris-20 converted streptavidin",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant N-terminally His-tagged USP21(aa209–563)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Screening compound 1",
+                "concentration_range": "20 μM to 0.00074 μM (1:3 dilution steps)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P+ buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 15,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double reference subtracted sensorgrams",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    },
+    "51522359": {
+        "reactant_set_id": 51522359,
+        "pmid": 36802665,
+        "protein": "Ubiquitin carboxyl-terminal hydrolase 21",
+        "ligand": {
+            "smiles": "CC(C)C[C@@H](NC(=O)C1(CCCCC1)C(F)(F)F)C(=O)Nc1nnc(Cc2ccc(cc2)C#N)s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6-tagged USP21 (209 to 563 residues) expressed in Escherichia coli BL21 (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Experiments": "SPR Experiments. Determination of Kd for screening hit 1: SPR was performed using a Biacore T200 instrument at 15 °C. Recombinant N-terminally His-tagged USP21(aa209–563) diluted to 20 μg/mL into HBS-P+ buffer was injected onto a Tris-20 converted streptavidin sensor chip (Cytiva) with a flow rate of 10 μL/min and a contact time of 500 s to reach a density of ~8000 resonance unit (RU). The screening compound 1 was serially diluted into DMSO with a start concentration of 20 μM in 1:3 dilution steps and transferred to the assay buffer to achieve the final test concentration at a DMSO concentration of 1%. For binding analysis, a multi-cycle protocol was chosen with a contact time of 60 s, a flow rate of 30 μL/min, and a dissociation time of 200 s. Binding constants were calculated using Biacore Insight Evaluation Software on double reference subtracted sensorgrams. Determination of Kd for compounds 18 and 21: SPR was performed using a Biacore S200 instrument for single-cycle experiments. Recombinant USP21 diluted to 1 μg/mL in an early project compound from a different lead series (hUSP21 HTRF IC50 = 324 nM, hUSP21 Ub-rhodamine IC50 = 547 nM) was immobilized by amine coupling with a flow rate of 10 μL/min onto Series S CMS sensor chips (Cytiva). Immobilization levels were kept similar to the above. Single-cycle experiments were used to generate the affinity (Kd) and kinetics of small-molecule binding run in a 1:3 dilution series at a start concentration of 100 nM and six titration steps at a flow rate of 20 μL/min and an association time of 180 s and a dissociation time of up to 1800 s at 15 °C. The running buffer of the duplicate measurements is 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.005% surfactant P20 further supplemented with 2 mg/mL BSA and 1% DMSO. Affinity and kinetic analysis were performed using Biacore Insight Evaluation Software on double reference subtracted sensorgrams.",
+            "Figure 6 caption": "Figure 6. Binding kinetics for 18 and 21 to USP21. The SPR sensorgram for the single-cycle kinetics analysis of 18 (A) and 21 (B) injected in six steps of threefold dilutions over immobilized USP21 measured at 15 °C.",
+            "Figure 7 caption": "Figure 7. Competitive binding of ubiquitin to USP21 in the presence of compounds 18 and 21. Overlaid SPR sensorgrams for five serial injections of ubiquitin over immobilized USP21 measured at 15 °C in the presence of 1 μM competitor compounds 18 (A) and 21 (B), respectively.",
+            "SPR Competition Assay": "SPR Competition Assay. SPR competition assays were performed using a Biacore S200 instrument and the A–B–A inject function. Recombinant USP21 was immobilized as described before for the Kd measurements using the CMS chip experiments. The A–B–A injection method was used with each of the SMOLs at 1 μM concentration with 30 s contact time of analyte A (SMOLs) followed by ubiquitin titration that was run in a 1:2 dilution series at a start concentration of 25 μM and eight titration steps at a flow rate of 30 μL/min, with an association time of 120 s and a dissociation time of 200 s at 15 °C. Each titration was performed four times, and measurements were analyzed using Biacore Insight Evaluation Software on double reference subtracted sensorgrams."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Tris-20 converted streptavidin",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant N-terminally His-tagged USP21(aa209–563)",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "8000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Screening compound 1",
+                "concentration_range": "20 μM to 0.00074 μM (1:3 dilution steps)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P+ buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 15,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Double reference subtracted sensorgrams",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore Insight Evaluation Software"
+            }
+        }
+    }
+}

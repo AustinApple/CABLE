@@ -1,0 +1,728 @@
+{
+    "202181": {
+        "reactant_set_id": 202181,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CC(C)(C)NC(=O)[C@@H]1Cc2ccccc2CN1Cc1cc(nc2ccccc12)-c1cccc(Cl)c1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202182": {
+        "reactant_set_id": 202182,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CC(C)(C)NC(=O)[C@@H]1Cc2ccccc2CN1Cc1cc(nc2ccccc12)-c1ccc2ccccc2c1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3070.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202183": {
+        "reactant_set_id": 202183,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "C(N1CCCCC1)c1cc(nc2ccccc12)-c1ccc2ccccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 212.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202184": {
+        "reactant_set_id": 202184,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CCOC(=O)[C@@H]1CCCN(Cc2cc(nc3ccccc23)-c2ccc3ccccc3c2)C1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202185": {
+        "reactant_set_id": 202185,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CCN(CC)C(=O)CNCc1cc(nc2ccccc12)-c1ccc2ccccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3410.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202186": {
+        "reactant_set_id": 202186,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CC(C)CCOC(=O)Nc1cc(nc2ccccc12)-c1ccc2ccccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 76.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202187": {
+        "reactant_set_id": 202187,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "CCOC(=O)[C@H]1CCCN(C1)C(=O)Nc1cc(nc2ccccc12)-c1cccc(Cl)c1 |r|"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 28800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202188": {
+        "reactant_set_id": 202188,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "COC(=O)c1cc(ccc1NCc1ccccc1)C(=O)Nc1cc(nc2ccccc12)-c1cccc(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8180.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202189": {
+        "reactant_set_id": 202189,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "COC(=O)c1cc(ccc1NCc1ccccc1)C(=O)Nc1ccc(cc1)S(=O)(=O)Nc1onc(C)c1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202191": {
+        "reactant_set_id": 202191,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "Cc1noc(NS(=O)(=O)c2ccc(NC(=O)c3ccc4nc(-c5ccco5)c(nc4c3)-c3ccco3)cc2)c1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    },
+    "202193": {
+        "reactant_set_id": 202193,
+        "pmid": 16677001,
+        "protein": "Peptidyl-prolyl cis-trans isomerase A",
+        "ligand": {
+            "smiles": "Cc1cc(C)nc(NS(=O)(=O)c2ccc(NC(=O)c3ccc4nc(-c5ccco5)c(nc4c3)-c3ccco3)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "CypA in vitro were determined by employing surface plasmon resonance (SPR) technology.  ",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "The binding affinities of compounds 1–4 to CypA in vitro were determined by employing surface plasmon resonance (SPR) technology. The measurement was performed using the dual flow cell Biacore 3000 instrument (Biacore AB, Uppsala, Sweden). Immobilization of the CypA to the hydrophilic carboxymethylated dextran matrix of the sensor chip CM5 (Biacore) was carried out by the standard primary amine coupling reaction wizard. The CypA covalently bound to the matrix was diluted in 10 mM sodium acetate buffer (pH 6.0) to a final concentration of 0.035 mg/mL. Equilibration of the baseline was completed by a continuous flow of HBS-EP running buffer (10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip for 1–2 h. All the Biacore data were collected at 25 °C with HBS-EP as running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (K_D values) evaluating the protein–ligand binding affinities were determined by the steady-state affinity fitting analysis of the Biacore data.",
+            "Figure 2 caption": "Figure 2. Sensorgram for compound 4a binding to CypA surface on the CM5 sensor chip. Binding responses are shown for 4a injected at concentrations of 0, 2.4, 3.4, 4.9, 7, and 10 μM (from bottom to top).",
+            "Results - Biological Activities - 1. Binding Affinities of the Synthesized Compounds to CypA": "Because enzymatic assay is time-consuming, surface plasmon resonance (SPR) measurements were used for the primary screening to determine the binding affinity of these 16 candidate molecules to CypA. The biosensor RUs of the 16 compounds were concentration-dependent, and the collected data indicated these 16 compounds can bind to CypA in vitro. Their binding affinities to CypA are in the micromolar range (K_D = 0.076–41.0 μM). These compounds could be designated as binders (or hits) of CypA. Their binding affinities are shown in Table 1, and a sensorgram for compound 4a, as an example, is shown in Figure 2.",
+            "Table 1": "Table 1. Chemical Structures, Docking Binding Energies, SPR Binding Affinities, and PPIase Inhibitory Activities of the 16 Compounds Selected from the Focused Library Using Virtual Screening Compound Structure BE_1^a BE_2^b K_D^c (μM) % inhibition at 10 μM / IC_50 (μM)^d 1a [Structure] -33.01 -8.77 24.3 Inactive 1b [Structure] -33.77 -8.03 3.07 3 1c [Structure] -31.54 -7.57 0.212 2 1d [Structure] -34.32 -6.73 17.2 27 1e [Structure] -45.51 -6.08 3.41 40 2a [Structure] -33.97 -7.67 0.0762 17 2b [Structure] -36.23 -7.54 28.8 10 3a [Structure] -44.59 -7.26 8.18 35 3b [Structure] -43.58 -8.12 10.8 12 4a [Structure] -50.62 -9.29 8.19 91 / 0.25 4b [Structure] -47.42 -7.44 27.3 35 4c [Structure] -50.38 -9.01 41.0 68 / 6.43 4d [Structure] -51.08 -9.27 30.8 22 4e [Structure] -51.86 -10.91 38.7 69 / 2.86 4f [Structure] -49.47 -10.84 22.8 80 / 0.96 4g [Structure] -52.88 -10.88 35.3 87 / 0.78 ^a The binding energy (BE_1) calculated using DOCK. ^b The binding energy (BE_2) calculated using AutoDock. ^c Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. ^d Data are means of three independent experiments.",
+            "Table 1 footnote": "The binding energy (BE_1) calculated using DOCK. The binding energy (BE_2) calculated using AutoDock. Data obtained from SPR-based binding affinity assay. K_D represents the dissociation constant. Data are means of three independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "CypA",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "0.035 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1–4 (and 16 candidate molecules in general)",
+                "concentration_range": "0, 2.4, 3.4, 4.9, 7, and 10 μM (as shown for compound 4a; range for all compounds not explicitly stated but implied to be similar)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM Hepes, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Other",
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

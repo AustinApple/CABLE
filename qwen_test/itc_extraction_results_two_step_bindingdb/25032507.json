@@ -1,0 +1,61 @@
+{
+    "50279917": {
+        "reactant_set_id": 50279917,
+        "pmid": 25032507,
+        "protein": "N-lysine methyltransferase KMT5A",
+        "ligand": {
+            "smiles": "COc1cc2nc(nc(NCCCCCN3CCCC3)c2cc1OC)N1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of SETD8 (unknown origin) catalytic domain expressed in Escherichia coli by ITC assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were performed at 25 °C using an AutoITC200 microcalorimeter (MicroCal/GE Healthcare). The calorimeter cell (volume 200 μL) was loaded with SETD8 protein in the full salt dialysis buffer (150 mM NaCl) at a concentration of 100 μM. The syringe was loaded with compound 1 (dissolved in the same buffer) at a concentration of 1 mM. A typical injection protocol included a single 0.2 μL first injection followed by 26 1.5 μL injections of the compound into the calorimeter cell. The spacing between injections was kept at 180 s and the reference power at 8 μcal/s. A control experiment was performed by titrating compound 1 into buffer under identical settings to determine the heat signals that arose from compound dilution; these were subtracted from the heat signals of protein–compound interaction. The data were analyzed using Origin for ITC, version 7.0, software supplied by the manufacturer and fitted well to a one-site binding model.",
+            "Figure 3 caption": "Figure 3. Compound 1 binds SETD8 with a K_D of 18.3 ± 3.2 μM (n = 3) in ITC studies.",
+            "Figure 3 data": "K_D = 18.3 ± 3.2 μM N = 0.809"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "SETD8",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "200"
+            },
+            "ligand": {
+                "name": "compound 1",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "150 mM NaCl",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of compound 1 into buffer under identical settings to determine the heat signals that arose from compound dilution; these were subtracted from the heat signals of protein–compound interaction",
+                "injection_parameters": {
+                    "first_volume": "0.2",
+                    "subsequent_volume": "1.5",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "27"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

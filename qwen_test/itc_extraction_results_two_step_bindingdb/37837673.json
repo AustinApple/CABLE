@@ -1,0 +1,366 @@
+{
+    "51543502": {
+        "reactant_set_id": 51543502,
+        "pmid": 37837673,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "COc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1cc(O)cc(F)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TTR V122I mutant (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [35]: S. Vega, O. Abian, A. Velazquez-Campoy, A unified framework based on the binding polynomial for characterizing biological systems by isothermal titration calorimetry, Methods 76 (2015) 99–115. Reference [36]: E. Freire, A. Scon, A. Velazquez-Campoy, Isothermal titration calorimetry: general formalism using binding polynomials, Methods Enzymol. 455 (2009) 127–155.",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were carried out with protein and compounds dissolved in the same buffer (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO), and degassed. The ITC measurements were performed at 25 °C using a Nano ITC calorimeter (TA Instruments). Titrations were performed as a set of 20 injections of 100 μM compound into protein (5 μM), programmed as a 2.02 μl injection with 150 s of equilibration period. The NanoAnalyze software (TA Instruments) was used to integrate the peaks and evaluate heat effects per injection. The fittings were performed with a general model for a protein with two-ligand binding sites implemented in Origin 7.0 (OriginLab), which allows to establish if the binding is cooperative or non-cooperative [35,36].",
+            "Recombinant TTR expression and purification": "The cDNA encoding for WT-TTR was cloned into a pET28a vector (Novagen). The vectors encoding for V30M- and V122I-TTR were prepared by classical site-directed mutagenesis protocols using the WT-TTR vector as a template. WT-, V30M- and V122I-TTR were expressed in Escherichia coli BL21 (DE3) and purified as previously described [26]. The purest fractions eluting from the gel filtration chromatography were combined and kept at −20 °C until use. The concentration of protein was determined spectrophotometrically at 280 nm, using a molar extinction coefficient of 77 600 M−1 cm−1.",
+            "Figure 4 caption": "Fig. 4. Interaction of PITB with WT-, V30M- and V122I-TTR. The top panels correspond to the raw data after baseline correction, while the lower panels represent the integrated data as a function of the molar ratio between the concentration of PITB and protein. The solid lines in the bottom panels represent the best fit to the data to acquire the binding parameters.",
+            "Table 2": "Thermodynamic parameters for the interaction of PITB with WT-, V30M- and V122I-TTR determined by ITC. | | PITB | | | Tolcapone | | | |---|---|---|---|---|---|---| | | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | | WT-TTR | 16 | -10.6 | -13.4 | 2.8 | 48 | -10.2 | -13.6 | 3.6 | | V30M-TTR | 36 | -10.2 | -11.0 | 0.8 | 440 | -8.7 | -13.8 | 5.1 | | V122I-TTR | 14 | -10.7 | -16.1 | 5.4 | 50 | -10.0 | -12.2 | 2.2 |",
+            "Results section - 2.4 PITB binds with high affinity to TTR": "To determine the binding parameters of PITB to TTR, we used isothermal titration calorimetry (ITC). Most ligands bind to TTR with negative cooperativity [18,33,34], which implies that occupancy of the first binding site results in a reduced affinity for the second site. To account for this possibility, ITC data was analyzed using two models: one considering independent binding to both sites, and the other assuming cooperative binding [35,36]. Our data revealed that PITB binds with high affinity and no cooperativity to both WT and TTR variants V30M and V122I (Table 2 and Fig. 4). Moreover, PITB binds to WT- and V122I-TTR with an affinity ≥ 3-fold higher than that of tolcapone, and to V30M-TTR with an affinity >12-fold higher. Remarkably, PITB presents a significantly higher affinity for V30M- and V122I-TTR than tafamidis [33,37], the only approved kinetic stabilizer for FAP and FAC. Independently of the tested protein, the binding of PITB was entirely enthalpically driven (ΔH < 0; -TΔS > 0), suggesting the establishment of favorable enthalpic non-covalent interactions (e.g., hydrogen bonds or ionic interactions) at the binding interface."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "TTR V122I mutant",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PITB",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO, PBS",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.02",
+                    "subsequent_volume": "2.02",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51543503": {
+        "reactant_set_id": 51543503,
+        "pmid": 37837673,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 50.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TTR V122I mutant (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [35]: S. Vega, O. Abian, A. Velazquez-Campoy, A unified framework based on the binding polynomial for characterizing biological systems by isothermal titration calorimetry, Methods 76 (2015) 99–115. Reference [36]: E. Freire, A. Scon, A. Velazquez-Campoy, Isothermal titration calorimetry: general formalism using binding polynomials, Methods Enzymol. 455 (2009) 127–155.",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were carried out with protein and compounds dissolved in the same buffer (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO), and degassed. The ITC measurements were performed at 25 °C using a Nano ITC calorimeter (TA Instruments). Titrations were performed as a set of 20 injections of 100 μM compound into protein (5 μM), programmed as a 2.02 μl injection with 150 s of equilibration period. The NanoAnalyze software (TA Instruments) was used to integrate the peaks and evaluate heat effects per injection. The fittings were performed with a general model for a protein with two-ligand binding sites implemented in Origin 7.0 (OriginLab), which allows to establish if the binding is cooperative or non-cooperative [35,36].",
+            "Recombinant TTR expression and purification": "The cDNA encoding for WT-TTR was cloned into a pET28a vector (Novagen). The vectors encoding for V30M- and V122I-TTR were prepared by classical site-directed mutagenesis protocols using the WT-TTR vector as a template. WT-, V30M- and V122I-TTR were expressed in Escherichia coli BL21 (DE3) and purified as previously described [26]. The purest fractions eluting from the gel filtration chromatography were combined and kept at −20 °C until use. The concentration of protein was determined spectrophotometrically at 280 nm, using a molar extinction coefficient of 77 600 M−1 cm−1.",
+            "Figure 4 caption": "Fig. 4. Interaction of PITB with WT-, V30M- and V122I-TTR. The top panels correspond to the raw data after baseline correction, while the lower panels represent the integrated data as a function of the molar ratio between the concentration of PITB and protein. The solid lines in the bottom panels represent the best fit to the data to acquire the binding parameters.",
+            "Table 2": "Thermodynamic parameters for the interaction of PITB with WT-, V30M- and V122I-TTR determined by ITC. | | PITB | | | Tolcapone | | | |---|---|---|---|---|---|---| | | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | | WT-TTR | 16 | -10.6 | -13.4 | 2.8 | 48 | -10.2 | -13.6 | 3.6 | | V30M-TTR | 36 | -10.2 | -11.0 | 0.8 | 440 | -8.7 | -13.8 | 5.1 | | V122I-TTR | 14 | -10.7 | -16.1 | 5.4 | 50 | -10.0 | -12.2 | 2.2 |",
+            "Results section - 2.4 PITB binds with high affinity to TTR": "To determine the binding parameters of PITB to TTR, we used isothermal titration calorimetry (ITC). Most ligands bind to TTR with negative cooperativity [18,33,34], which implies that occupancy of the first binding site results in a reduced affinity for the second site. To account for this possibility, ITC data was analyzed using two models: one considering independent binding to both sites, and the other assuming cooperative binding [35,36]. Our data revealed that PITB binds with high affinity and no cooperativity to both WT and TTR variants V30M and V122I (Table 2 and Fig. 4). Moreover, PITB binds to WT- and V122I-TTR with an affinity ≥ 3-fold higher than that of tolcapone, and to V30M-TTR with an affinity >12-fold higher. Remarkably, PITB presents a significantly higher affinity for V30M- and V122I-TTR than tafamidis [33,37], the only approved kinetic stabilizer for FAP and FAC. Independently of the tested protein, the binding of PITB was entirely enthalpically driven (ΔH < 0; -TΔS > 0), suggesting the establishment of favorable enthalpic non-covalent interactions (e.g., hydrogen bonds or ionic interactions) at the binding interface."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "TTR V122I mutant",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PITB",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO, PBS",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.02",
+                    "subsequent_volume": "2.02",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51543500": {
+        "reactant_set_id": 51543500,
+        "pmid": 37837673,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "COc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1cc(O)cc(F)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 36.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TTR V30M mutant (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [35]: S. Vega, O. Abian, A. Velazquez-Campoy, A unified framework based on the binding polynomial for characterizing biological systems by isothermal titration calorimetry, Methods 76 (2015) 99–115. Reference [36]: E. Freire, A. Scon, A. Velazquez-Campoy, Isothermal titration calorimetry: general formalism using binding polynomials, Methods Enzymol. 455 (2009) 127–155.",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were carried out with protein and compounds dissolved in the same buffer (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO), and degassed. The ITC measurements were performed at 25 °C using a Nano ITC calorimeter (TA Instruments). Titrations were performed as a set of 20 injections of 100 μM compound into protein (5 μM), programmed as a 2.02 μl injection with 150 s of equilibration period. The NanoAnalyze software (TA Instruments) was used to integrate the peaks and evaluate heat effects per injection. The fittings were performed with a general model for a protein with two-ligand binding sites implemented in Origin 7.0 (OriginLab), which allows to establish if the binding is cooperative or non-cooperative [35,36].",
+            "Recombinant TTR expression and purification": "The cDNA encoding for WT-TTR was cloned into a pET28a vector (Novagen). The vectors encoding for V30M- and V122I-TTR were prepared by classical site-directed mutagenesis protocols using the WT-TTR vector as a template. WT-, V30M- and V122I-TTR were expressed in Escherichia coli BL21 (DE3) and purified as previously described [26]. The purest fractions eluting from the gel filtration chromatography were combined and kept at −20 °C until use. The concentration of protein was determined spectrophotometrically at 280 nm, using a molar extinction coefficient of 77 600 M−1 cm−1.",
+            "Figure 4 caption": "Fig. 4. Interaction of PITB with WT-, V30M- and V122I-TTR. The top panels correspond to the raw data after baseline correction, while the lower panels represent the integrated data as a function of the molar ratio between the concentration of PITB and protein. The solid lines in the bottom panels represent the best fit to the data to acquire the binding parameters.",
+            "Table 2": "Table 2 Thermodynamic parameters for the interaction of PITB with WT-, V30M- and V122I-TTR determined by ITC. | | PITB | | | Tolcapone | | | |---|---|---|---|---|---|---| | | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | | WT-TTR | 16 | -10.6 | -13.4 | 2.8 | 48 | -10.2 | -13.6 | 3.6 | | V30M-TTR | 36 | -10.2 | -11.0 | 0.8 | 440 | -8.7 | -13.8 | 5.1 | | V122I-TTR | 14 | -10.7 | -16.1 | 5.4 | 50 | -10.0 | -12.2 | 2.2 |",
+            "Results section - 2.4 PITB binds with high affinity to TTR": "To determine the binding parameters of PITB to TTR, we used isothermal titration calorimetry (ITC). Most ligands bind to TTR with negative cooperativity [18,33,34], which implies that occupancy of the first binding site results in a reduced affinity for the second site. To account for this possibility, ITC data was analyzed using two models: one considering independent binding to both sites, and the other assuming cooperative binding [35,36]. Our data revealed that PITB binds with high affinity and no cooperativity to both WT and TTR variants V30M and V122I (Table 2 and Fig. 4). Moreover, PITB binds to WT- and V122I-TTR with an affinity ≥ 3-fold higher than that of tolcapone, and to V30M-TTR with an affinity >12-fold higher. Remarkably, PITB presents a significantly higher affinity for V30M- and V122I-TTR than tafamidis [33,37], the only approved kinetic stabilizer for FAP and FAC. Independently of the tested protein, the binding of PITB was entirely enthalpically driven (ΔH < 0; -TΔS > 0), suggesting the establishment of favorable enthalpic non-covalent interactions (e.g., hydrogen bonds or ionic interactions) at the binding interface."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "TTR V30M mutant",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PITB",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO, PBS",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.02",
+                    "subsequent_volume": "2.02",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51543501": {
+        "reactant_set_id": 51543501,
+        "pmid": 37837673,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 440.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TTR V30M mutant (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [35]: S. Vega, O. Abian, A. Velazquez-Campoy, A unified framework based on the binding polynomial for characterizing biological systems by isothermal titration calorimetry, Methods 76 (2015) 99–115. Reference [36]: E. Freire, A. Scon, A. Velazquez-Campoy, Isothermal titration calorimetry: general formalism using binding polynomials, Methods Enzymol. 455 (2009) 127–155.",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were carried out with protein and compounds dissolved in the same buffer (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO), and degassed. The ITC measurements were performed at 25 °C using a Nano ITC calorimeter (TA Instruments). Titrations were performed as a set of 20 injections of 100 μM compound into protein (5 μM), programmed as a 2.02 μl injection with 150 s of equilibration period. The NanoAnalyze software (TA Instruments) was used to integrate the peaks and evaluate heat effects per injection. The fittings were performed with a general model for a protein with two-ligand binding sites implemented in Origin 7.0 (OriginLab), which allows to establish if the binding is cooperative or non-cooperative [35,36].",
+            "Recombinant TTR expression and purification": "The cDNA encoding for WT-TTR was cloned into a pET28a vector (Novagen). The vectors encoding for V30M- and V122I-TTR were prepared by classical site-directed mutagenesis protocols using the WT-TTR vector as a template. WT-, V30M- and V122I-TTR were expressed in Escherichia coli BL21 (DE3) and purified as previously described [26]. The purest fractions eluting from the gel filtration chromatography were combined and kept at −20 °C until use. The concentration of protein was determined spectrophotometrically at 280 nm, using a molar extinction coefficient of 77 600 M−1 cm−1.",
+            "Figure 4 caption": "Fig. 4. Interaction of PITB with WT-, V30M- and V122I-TTR. The top panels correspond to the raw data after baseline correction, while the lower panels represent the integrated data as a function of the molar ratio between the concentration of PITB and protein. The solid lines in the bottom panels represent the best fit to the data to acquire the binding parameters.",
+            "Table 2": "Table 2 Thermodynamic parameters for the interaction of PITB with WT-, V30M- and V122I-TTR determined by ITC. | | PITB | | | Tolcapone | | | |---|---|---|---|---|---|---| | | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | | WT-TTR | 16 | -10.6 | -13.4 | 2.8 | 48 | -10.2 | -13.6 | 3.6 | | V30M-TTR | 36 | -10.2 | -11.0 | 0.8 | 440 | -8.7 | -13.8 | 5.1 | | V122I-TTR | 14 | -10.7 | -16.1 | 5.4 | 50 | -10.0 | -12.2 | 2.2 |",
+            "Results section - 2.4 PITB binds with high affinity to TTR": "To determine the binding parameters of PITB to TTR, we used isothermal titration calorimetry (ITC). Most ligands bind to TTR with negative cooperativity [18,33,34], which implies that occupancy of the first binding site results in a reduced affinity for the second site. To account for this possibility, ITC data was analyzed using two models: one considering independent binding to both sites, and the other assuming cooperative binding [35,36]. Our data revealed that PITB binds with high affinity and no cooperativity to both WT and TTR variants V30M and V122I (Table 2 and Fig. 4). Moreover, PITB binds to WT- and V122I-TTR with an affinity ≥ 3-fold higher than that of tolcapone, and to V30M-TTR with an affinity >12-fold higher. Remarkably, PITB presents a significantly higher affinity for V30M- and V122I-TTR than tafamidis [33,37], the only approved kinetic stabilizer for FAP and FAC. Independently of the tested protein, the binding of PITB was entirely enthalpically driven (ΔH < 0; -TΔS > 0), suggesting the establishment of favorable enthalpic non-covalent interactions (e.g., hydrogen bonds or ionic interactions) at the binding interface."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "TTR V30M mutant",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PITB",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO, PBS",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.02",
+                    "subsequent_volume": "2.02",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51543498": {
+        "reactant_set_id": 51543498,
+        "pmid": 37837673,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "COc1cc(cc(c1O)[N+]([O-])=O)C(=O)c1cc(O)cc(F)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild-type TTR (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [35]: S. Vega, O. Abian, A. Velazquez-Campoy, A unified framework based on the binding polynomial for characterizing biological systems by isothermal titration calorimetry, Methods 76 (2015) 99–115. Reference [36]: E. Freire, A. Scon, A. Velazquez-Campoy, Isothermal titration calorimetry: general formalism using binding polynomials, Methods Enzymol. 455 (2009) 127–155.",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were carried out with protein and compounds dissolved in the same buffer (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO), and degassed. The ITC measurements were performed at 25 °C using a Nano ITC calorimeter (TA Instruments). Titrations were performed as a set of 20 injections of 100 μM compound into protein (5 μM), programmed as a 2.02 μl injection with 150 s of equilibration period. The NanoAnalyze software (TA Instruments) was used to integrate the peaks and evaluate heat effects per injection. The fittings were performed with a general model for a protein with two-ligand binding sites implemented in Origin 7.0 (OriginLab), which allows to establish if the binding is cooperative or non-cooperative [35,36].",
+            "Figure 4 caption": "Fig. 4. Interaction of PITB with WT-, V30M- and V122I-TTR. The top panels correspond to the raw data after baseline correction, while the lower panels represent the integrated data as a function of the molar ratio between the concentration of PITB and protein. The solid lines in the bottom panels represent the best fit to the data to acquire the binding parameters.",
+            "Table 2": "Thermodynamic parameters for the interaction of PITB with WT-, V30M- and V122I-TTR determined by ITC. | | PITB | | | Tolcapone | | | |---|---|---|---|---|---|---| | | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | | WT-TTR | 16 | -10.6 | -13.4 | 2.8 | 48 | -10.2 | -13.6 | 3.6 | | V30M-TTR | 36 | -10.2 | -11.0 | 0.8 | 440 | -8.7 | -13.8 | 5.1 | | V122I-TTR | 14 | -10.7 | -16.1 | 5.4 | 50 | -10.0 | -12.2 | 2.2 |",
+            "Results section (ITC data)": "Our data revealed that PITB binds with high affinity and no cooperativity to both WT and TTR variants V30M and V122I (Table 2 and Fig. 4). Moreover, PITB binds to WT- and V122I-TTR with an affinity ≥ 3-fold higher than that of tolcapone, and to V30M-TTR with an affinity >12-fold higher. Remarkably, PITB presents a significantly higher affinity for V30M- and V122I-TTR than tafamidis [33,37], the only approved kinetic stabilizer for FAP and FAC. Independently of the tested protein, the binding of PITB was entirely enthalpically driven (ΔH < 0; -TΔS > 0), suggesting the establishment of favorable enthalpic non-covalent interactions (e.g., hydrogen bonds or ionic interactions) at the binding interface."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PITB",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO, PBS",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.02",
+                    "subsequent_volume": "2.02",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51543499": {
+        "reactant_set_id": 51543499,
+        "pmid": 37837673,
+        "protein": "Transthyretin",
+        "ligand": {
+            "smiles": "Cc1ccc(cc1)C(=O)c1cc(O)c(O)c(c1)[N+]([O-])=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 48.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to wild-type TTR (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference [35]: S. Vega, O. Abian, A. Velazquez-Campoy, A unified framework based on the binding polynomial for characterizing biological systems by isothermal titration calorimetry, Methods 76 (2015) 99–115. Reference [36]: E. Freire, A. Scon, A. Velazquez-Campoy, Isothermal titration calorimetry: general formalism using binding polynomials, Methods Enzymol. 455 (2009) 127–155.",
+        "original_paragraph": {
+            "ITC Measurements": "All ITC measurements were carried out with protein and compounds dissolved in the same buffer (in a PBS buffer pH 7.0 containing 100 mM KCl, 1 mM EDTA and 2.5% DMSO), and degassed. The ITC measurements were performed at 25 °C using a Nano ITC calorimeter (TA Instruments). Titrations were performed as a set of 20 injections of 100 μM compound into protein (5 μM), programmed as a 2.02 μl injection with 150 s of equilibration period. The NanoAnalyze software (TA Instruments) was used to integrate the peaks and evaluate heat effects per injection. The fittings were performed with a general model for a protein with two-ligand binding sites implemented in Origin 7.0 (OriginLab), which allows to establish if the binding is cooperative or non-cooperative [35,36].",
+            "Figure 4 caption": "Fig. 4. Interaction of PITB with WT-, V30M- and V122I-TTR. The top panels correspond to the raw data after baseline correction, while the lower panels represent the integrated data as a function of the molar ratio between the concentration of PITB and protein. The solid lines in the bottom panels represent the best fit to the data to acquire the binding parameters.",
+            "Table 2": "Thermodynamic parameters for the interaction of PITB with WT-, V30M- and V122I-TTR determined by ITC. | | PITB | | | Tolcapone | | | |---|---|---|---|---|---|---| | | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | Kd (nM) | ΔG (kcal/mol) | ΔH (kcal/mol) | -TΔS (kcal/mol) | | WT-TTR | 16 | -10.6 | -13.4 | 2.8 | 48 | -10.2 | -13.6 | 3.6 | | V30M-TTR | 36 | -10.2 | -11.0 | 0.8 | 440 | -8.7 | -13.8 | 5.1 | | V122I-TTR | 14 | -10.7 | -16.1 | 5.4 | 50 | -10.0 | -12.2 | 2.2 |",
+            "Results section (ITC data)": "Our data revealed that PITB binds with high affinity and no cooperativity to both WT and TTR variants V30M and V122I (Table 2 and Fig. 4). Moreover, PITB binds to WT- and V122I-TTR with an affinity ≥ 3-fold higher than that of tolcapone, and to V30M-TTR with an affinity >12-fold higher. Remarkably, PITB presents a significantly higher affinity for V30M- and V122I-TTR than tafamidis [33,37], the only approved kinetic stabilizer for FAP and FAC. Independently of the tested protein, the binding of PITB was entirely enthalpically driven (ΔH < 0; -TΔS > 0), suggesting the establishment of favorable enthalpic non-covalent interactions (e.g., hydrogen bonds or ionic interactions) at the binding interface."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Nano-ITC"
+            },
+            "protein": {
+                "name": "TTR",
+                "location": "cell",
+                "concentration": "5",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "PITB",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "100 mM KCl, 1 mM EDTA, 2.5% DMSO, PBS",
+                "pH": "7.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.02",
+                    "subsequent_volume": "2.02",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,240 @@
+"""
+PDF and document conversion utilities.
+"""
+import os
+import subprocess
+import fitz  # PyMuPDF
+import pypandoc
+from pathlib import Path
+from typing import Optional, List
+from PIL import Image
+
+MINERU_BIN = "/data/mwu11/miniconda3/envs/mineru/bin/mineru"
+
+
+def pdf_to_markdown(
+    pdf_path: Path,
+    cache_dir: Path,
+    cuda_device: Optional[str] = None,
+    timeout: int = 300
+) -> Optional[Path]:
+    """Convert PDF to markdown using MinerU (subprocess call).
+
+    Caches results — if markdown already exists, returns it directly.
+
+    Args:
+        pdf_path: Path to the PDF file
+        cache_dir: Directory to store markdown output
+        cuda_device: CUDA device index (e.g. "0", "4")
+        timeout: Max seconds to wait for MinerU
+
+    Returns:
+        Path to the markdown file, or None if conversion failed
+    """
+    pdf_path = Path(pdf_path)
+    if not pdf_path.exists():
+        return None
+
+    md_path = cache_dir / pdf_path.stem / "auto" / f"{pdf_path.stem}.md"
+    if md_path.exists():
+        return md_path
+
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    env = os.environ.copy()
+    if cuda_device is not None:
+        env["CUDA_VISIBLE_DEVICES"] = cuda_device
+
+    try:
+        subprocess.run(
+            [MINERU_BIN, "-p", str(pdf_path), "-o", str(cache_dir), "-b", "pipeline"],
+            capture_output=True, text=True, timeout=timeout, env=env, check=False
+        )
+    except subprocess.TimeoutExpired:
+        print(f"  MinerU timed out for {pdf_path.name}")
+        return None
+    except FileNotFoundError:
+        print(f"  MinerU not found at {MINERU_BIN}")
+        return None
+    except Exception as e:
+        print(f"  MinerU error for {pdf_path.name}: {e}")
+        return None
+
+    return md_path if md_path.exists() else None
+
+
+def preconvert_pdfs(
+    pmids: List[str],
+    pdf_dir: Path,
+    timeout: int = 300
+) -> None:
+    """Convert PDFs to markdown for all PMIDs using MinerU before loading the main model.
+
+    Call this BEFORE initializing TwoStepAssayExtractionAgent so that MinerU
+    and Qwen never share GPU VRAM at the same time. Results are disk-cached;
+    already-converted PMIDs are skipped.
+
+    Args:
+        pmids: List of PMID strings
+        pdf_dir: Directory containing <pmid>.pdf files (same as agent's pdf_dir)
+        timeout: Max seconds to wait per PDF
+    """
+    pdf_dir = Path(pdf_dir)
+    cache_dir = pdf_dir / "markdown_cache"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+
+    total = len(pmids)
+    print(f"Pre-converting {total} PDFs to markdown via MinerU (before loading Qwen)...")
+
+    for i, pmid in enumerate(pmids, 1):
+        pdf_path = pdf_dir / f"{pmid}.pdf"
+        if not pdf_path.exists():
+            print(f"  [{i}/{total}] PMID {pmid}: PDF not found, skipping")
+            continue
+
+        md_path = cache_dir / pmid / "auto" / f"{pmid}.md"
+        if md_path.exists():
+            print(f"  [{i}/{total}] PMID {pmid}: already cached, skipping")
+            continue
+
+        print(f"  [{i}/{total}] PMID {pmid}: converting...")
+        result = pdf_to_markdown(pdf_path, cache_dir=cache_dir, timeout=timeout)
+        if result:
+            print(f"  [{i}/{total}] PMID {pmid}: done")
+        else:
+            print(f"  [{i}/{total}] PMID {pmid}: conversion failed")
+
+    print("Pre-conversion complete.\n")
+
+
+class DocumentConverter:
+    """Handles PDF and document conversion operations."""
+
+    def __init__(self):
+        """Initialize document converter."""
+        pass
+
+    def pdf_to_images(
+        self,
+        pdf_path: Path,
+        max_pages: Optional[int] = None,
+        label: str = ""
+    ) -> Optional[List[Image.Image]]:
+        """
+        Convert PDF to list of PIL images.
+
+        Args:
+            pdf_path: Path to the PDF file
+            max_pages: Maximum number of pages to convert (None for all)
+            label: Label for logging (e.g., "main", "supplementary")
+
+        Returns:
+            List of PIL images or None if not found
+        """
+        if not pdf_path.exists():
+            print(f"PDF not found at {pdf_path}")
+            return None
+
+        try:
+            print(f"Converting {label} PDF to images: {pdf_path.name}...")
+            doc = fitz.open(str(pdf_path))
+            images = []
+
+            num_pages = len(doc) if max_pages is None else min(max_pages, len(doc))
+            print(f"  Processing {num_pages} pages...")
+
+            for page_num in range(num_pages):
+                page = doc[page_num]
+                pix = page.get_pixmap(dpi=150)
+                img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+                images.append(img)
+
+            doc.close()
+            print(f"  Converted {len(images)} pages to images")
+            return images
+
+        except Exception as e:
+            print(f"Error converting PDF {pdf_path}: {e}")
+            return None
+
+    def docx_to_pdf(self, docx_path: Path) -> Optional[Path]:
+        """
+        Convert DOCX to PDF using pypandoc.
+
+        Args:
+            docx_path: Path to the DOCX file
+
+        Returns:
+            Path to the converted PDF or None if conversion failed
+        """
+        if not docx_path.exists():
+            print(f"DOCX not found at {docx_path}")
+            return None
+
+        pdf_path = docx_path.with_suffix('.pdf')
+
+        if pdf_path.exists():
+            print(f"  Using cached PDF: {pdf_path.name}")
+            return pdf_path
+
+        try:
+            print(f"  Converting DOCX to PDF: {docx_path.name}...")
+
+            pypandoc.convert_file(
+                str(docx_path),
+                'pdf',
+                outputfile=str(pdf_path),
+                extra_args=['--pdf-engine=tectonic']
+            )
+
+            if pdf_path.exists():
+                print(f"  Successfully converted to: {pdf_path.name}")
+                return pdf_path
+            else:
+                print(f"  Conversion completed but PDF not found")
+                return None
+
+        except ImportError:
+            print("  Error: pypandoc not installed. Install with: pip install pypandoc")
+            return None
+        except OSError as e:
+            if "pandoc" in str(e).lower():
+                print("  Error: pandoc not installed. Install with: apt install pandoc")
+            else:
+                print(f"  Error: {e}")
+            return None
+        except Exception as e:
+            print(f"  Error converting DOCX to PDF: {e}")
+            return None
+
+    def file_to_images(
+        self,
+        file_path: Path,
+        max_pages: Optional[int] = None,
+        label: str = ""
+    ) -> Optional[List[Image.Image]]:
+        """
+        Convert a file (PDF or DOCX) to images based on its extension.
+
+        Args:
+            file_path: Path to the file
+            max_pages: Maximum pages
+            label: Label for logging
+
+        Returns:
+            List of PIL images or None
+        """
+        suffix = file_path.suffix.lower()
+
+        if suffix == '.pdf':
+            return self.pdf_to_images(file_path, max_pages=max_pages, label=label)
+        elif suffix == '.docx':
+            pdf_path = self.docx_to_pdf(file_path)
+            if pdf_path:
+                return self.pdf_to_images(pdf_path, max_pages=max_pages, label=label)
+            else:
+                print(f"  Failed to convert DOCX to PDF: {file_path.name}")
+                return None
+        else:
+            print(f"Unsupported file type: {suffix}")
+            return None

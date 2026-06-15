@@ -1,0 +1,766 @@
+{
+    "50331939": {
+        "reactant_set_id": 50331939,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 1",
+        "ligand": {
+            "smiles": "CCCCCCCCO[C@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]1O[C@H]1O[C@H](CO)[C@@H](O)[C@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.144,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF1 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r/rm[P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L where P corresponds to the growth factor protein, L is the ligand, and P·L is the protein:ligand complex, the equilibrium equation is Kd = [P][L]/[P·L] and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total)/2 + √((Kd + [L]total + [P]total)²/4 - [L]total[P]total). The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (pM) | Kd (nM) | Kd (nM) | IC50, μM | IC50, μM | IC50, μM | |---|---|---|---|---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhibin | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Figure 3 caption": "Figure 3. Effect of compounds 1, 6, 7, 11, 14, 17, and 19 on HSV-1 infectivity (A) and HSV-1 cell-to-cell spread (B). For explanations, see the Experimental Section. In panel A, the results are expressed as a percentage of the number of viral plaque forming units (pfu) formed in cells infected with the compound-treated virions relative to mock-treated controls. In panel B, the results are expressed as a percentage of the average area of 20 viral plaques formed in the continuous presence of compound relative to mock-treated control cells."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Ligands for growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50331943": {
+        "reactant_set_id": 50331943,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](CO)O[C@H](O[C@H]3[C@H](O)[C@@H](CO)O[C@H](O[C@H]4[C@H](O)[C@@H](CO)O[C@H](O[C@H]5[C@@H](O)[C@H](O)[C@@H](CO)O[C@@H]5OCc5ccccc5)[C@H]4O)[C@H]3O)[C@H]2O)[C@@H](O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.12,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF1 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r/rm[P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L where P corresponds to the growth factor protein, L is the ligand, and P·L is the protein:ligand complex, the equilibrium equation is Kd = [P][L]/[P·L] and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total)/2 + √((Kd + [L]total + [P]total)²/4 - [L]total[P]total). The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (pM) | Kd (nM) | Kd (nM) | IC50, μM | IC50, μM | IC50, μM | |---|---|---|---|---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhibin | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Figure 3 caption": "Figure 3. Effect of compounds 1, 6, 7, 11, 14, 17, and 19 on HSV-1 infectivity (A) and HSV-1 cell-to-cell spread (B). For explanations, see the Experimental Section. In panel A, the results are expressed as a percentage of the number of viral plaque forming units (pfu) formed in cells infected with the compound-treated virions relative to mock-treated controls. In panel B, the results are expressed as a percentage of the average area of 20 viral plaques formed in the continuous presence of compound relative to mock-treated control cells."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Ligands for growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50331946": {
+        "reactant_set_id": 50331946,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](NC(=O)CCCCCNC(=O)CCCC[C@@H]2SC[C@@H]3NC(=O)N[C@H]23)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O[C@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]5O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.39,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF1 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r/rm[P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L where P corresponds to the growth factor protein, L is the ligand, and P·L is the protein:ligand complex, the equilibrium equation is Kd = [P][L]/[P·L] and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total)/2 + √((Kd + [L]total + [P]total)²/4 - [L]total[P]total). The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (pM) | Kd (nM) | Kd (nM) | IC50, μM | IC50, μM | IC50, μM | |---|---|---|---|---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhibin | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Figure 3 caption": "Figure 3. Effect of compounds 1, 6, 7, 11, 14, 17, and 19 on HSV-1 infectivity (A) and HSV-1 cell-to-cell spread (B). For explanations, see the Experimental Section. In panel A, the results are expressed as a percentage of the number of viral plaque forming units (pfu) formed in cells infected with the compound-treated virions relative to mock-treated controls. In panel B, the results are expressed as a percentage of the average area of 20 viral plaques formed in the continuous presence of compound relative to mock-treated control cells."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Ligands for growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50331954": {
+        "reactant_set_id": 50331954,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 1",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](NC(=O)COc2ccccc2)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O[C@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]5O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.66,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF1 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r/rm[P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L where P corresponds to the growth factor protein, L is the ligand, and P·L is the protein:ligand complex, the equilibrium equation is Kd = [P][L]/[P·L] and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total)/2 + √((Kd + [L]total + [P]total)²/4 - [L]total[P]total). The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (pM) | Kd (nM) | Kd (nM) | IC50, μM | IC50, μM | IC50, μM | |---|---|---|---|---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhibin | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Figure 3 caption": "Figure 3. Effect of compounds 1, 6, 7, 11, 14, 17, and 19 on HSV-1 infectivity (A) and HSV-1 cell-to-cell spread (B). For explanations, see the Experimental Section. In panel A, the results are expressed as a percentage of the number of viral plaque forming units (pfu) formed in cells infected with the compound-treated virions relative to mock-treated controls. In panel B, the results are expressed as a percentage of the average area of 20 viral plaques formed in the continuous presence of compound relative to mock-treated control cells."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Ligands for growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50331940": {
+        "reactant_set_id": 50331940,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 2",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](CO)O[C@H](O[C@H]3[C@H](O)[C@@H](CO)O[C@H](O[C@H]4[C@H](O)[C@@H](CO)O[C@H](O[C@H]5[C@@H](O)[C@H](O)[C@@H](CO)O[C@@H]5OCc5ccccc5)[C@H]4O)[C@H]3O)[C@H]2O)[C@@H](O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 86.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF2 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Footnote": "a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "FGF-1, FGF-2, VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331944": {
+        "reactant_set_id": 50331944,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 2",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](NC(=O)CCCCCNC(=O)CCCC[C@@H]2SC[C@@H]3NC(=O)N[C@H]23)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O[C@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]5O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 84.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF2 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Footnote": "a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "FGF-1, FGF-2, VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331949": {
+        "reactant_set_id": 50331949,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 2",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](NC(=O)COc2ccccc2)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O[C@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]5O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 112.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF2 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Footnote": "a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "FGF-1, FGF-2, VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331951": {
+        "reactant_set_id": 50331951,
+        "pmid": 16366604,
+        "protein": "Fibroblast growth factor 2",
+        "ligand": {
+            "smiles": "CCCCCCCCO[C@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]1O[C@H]1O[C@H](CO)[C@@H](O)[C@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 68.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for FGF2 by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described.6 Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions.35 Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation6 can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14.",
+            "Footnote": "a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "FGF-1, FGF-2, VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331941": {
+        "reactant_set_id": 50331941,
+        "pmid": 16366604,
+        "protein": "Vascular endothelial growth factor A",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](NC(=O)COc2ccccc2)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O[C@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]5O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for VEGF by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described. Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions. Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331945": {
+        "reactant_set_id": 50331945,
+        "pmid": 16366604,
+        "protein": "Vascular endothelial growth factor A",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](CO)O[C@H](O[C@H]3[C@H](O)[C@@H](CO)O[C@H](O[C@H]4[C@H](O)[C@@H](CO)O[C@H](O[C@H]5[C@@H](O)[C@H](O)[C@@H](CO)O[C@@H]5OCc5ccccc5)[C@H]4O)[C@H]3O)[C@H]2O)[C@@H](O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for VEGF by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described. Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions. Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331947": {
+        "reactant_set_id": 50331947,
+        "pmid": 16366604,
+        "protein": "Vascular endothelial growth factor A",
+        "ligand": {
+            "smiles": "OC[C@H]1O[C@H](NC(=O)CCCCCNC(=O)CCCC[C@@H]2SC[C@@H]3NC(=O)N[C@H]23)[C@@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O[C@H]5O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]5O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H](O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for VEGF by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described. Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions. Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    },
+    "50331952": {
+        "reactant_set_id": 50331952,
+        "pmid": 16366604,
+        "protein": "Vascular endothelial growth factor A",
+        "ligand": {
+            "smiles": "CCCCCCCCO[C@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]1O[C@H]1O[C@H](CO)[C@@H](O)[C@H](O[C@H]2O[C@H](CO)[C@@H](O)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](O[C@H]4O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]4O)[C@@H]3O)[C@@H]2O)[C@@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity for VEGF by BIAcore solution affinity assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Cochran, S.; Li, C.; Fairweather, J. K.; Kett, W. C.; Coombe, D. R.; Ferro, V. Probing the interactions of phosphosulfomannans with angiogenic growth factors by surface plasmon resonance. J. Med. Chem. 2003, 46, 4601–4608.",
+        "original_paragraph": {
+            "Materials and Methods": "Binding affinities of ligands for the growth factors FGF-1, FGF-2, and VEGF were measured using a surface plasmon resonance solution affinity assay performed on a BIAcore 3000 (BIAcore, Uppsala, Sweden) operated using the BIAcore Control Software, as previously described. Sensorgram data were analyzed using the BIAevaluation software (BIAcore). Background sensorgrams were subtracted from experimental sensorgrams to produce curves of specific binding, and baselines were subsequently adjusted to zero for all curves. Standard curves relating the relative response value to the injected protein concentration were linear, indicating that the binding response was proportional to the protein concentration, and thus suggesting that the binding experiments were conducted under mass transport conditions. Therefore, the relative binding response for each injection can be converted to free protein concentration using the equation [P] = r / rm [P]total where r is the relative binding response and rm is the maximal binding response. Binding equilibria established in solution prior to injection were assumed to be of 1:1 stoichiometry. Therefore, for the equilibrium P + L ⇌ P·L and the binding equation can be expressed as [P] = [P]total - (Kd + [L]total + [P]total) / 2 + √((Kd + [L]total + [P]total)² / 4 - [L]total[P]total) The Kd values given are the values fitted, using the binding equation, to a plot of [P] versus [L]total. Where Kd values were measured in duplicate, the values represent the average of the duplicate measurements. The results are presented in Table 1.",
+            "Table 1": "Table 1. Growth Factor Binding, Inhibition of Heparanase, Inhibition of HSV-1 Infectivity, and Inhibition of Cell-to-Cell Spread of HSV-1 by Compound 1 and Analogues | compd | Kd (nM) | IC50, μM | |---|---|---| | | FGF-1 | FGF-2 | VEGF | heparanase inhib | HSV-1 infectivity | HSV-1 cell-to-cell spread | | 1 | 281–444a | 82–140a | 1.9–6.9a | 0.98 ± 0.11 | 2b | 1b | | 6 | 120 ± 25 | 86 ± 7 | 1.7 ± 0.2 | 1.83 ± 0.48 | 2 | 1 | | 7 | 144 ± 8 | 68 ± 3 | 1.7 ± 0.1 | 1.64 ± 0.41 | 1 | 0.4 | | 11 | 361 ± 28 | 150 ± 9 | 8.1 ± 0.6 | 6.03 ± 1.05 | not tested | 11 | | 14 | 88 ± 17 | 114 ± 13 | 3.5 ± 0.8 | 2.12 ± 0.15 | 10 | 7 | | 17 | 660 ± 40 | 112 ± 9 | 7.1 ± 0.6 | 2.02 ± 0.28 | 7 | 5 | | 19 | 390 ± 70 | 84 ± 8 | 7.2 ± 0.6 | 1.85 ± 0.31 | 2 | 3 | a Data from ref 6. b Data from ref 14."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore 3000"
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": null,
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Growth factors FGF-1, FGF-2, and VEGF",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Background subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation"
+            }
+        }
+    }
+}

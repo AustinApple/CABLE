@@ -1,0 +1,66 @@
+{
+    "51545584": {
+        "reactant_set_id": 51545584,
+        "pmid": 37017305,
+        "protein": "Pyruvate kinase PKM",
+        "ligand": {
+            "smiles": "C[C@@]12CC[C@H]3C(F)(F)[C@@]3(C)CC[C@@H]3[C@H](OC(=O)C3=C)[C@@H]1O2"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.8,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PKM2 (unknown origin) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay": "SPR Assay. The SPR assay was performed on a Biacore T200 instrument (GE Healthcare, Chicago, IL) to test if D5 bound to PKM2. First, the two flow cells of a CM5 sensor chip (GE Healthcare, Chicago, IL) were activated by freshly prepared 50 mM of NHS and 200 mM of carbodiimide hydrochloride (EDC, Sigma-Aldrich, St. Louis, MO) for 420 s. Afterward, the PKM2 protein was diluted in 10 mM of NaAC (pH = 5.0) and immobilized on CM5 sensor chips for 10 min. After completion of the amine-coupling reaction, the remaining sites were blocked by 1 M ethanolamine hydrochloride (pH = 8.5). The D5 was used at concentrations ranging from 0 to 25 μM (0, 0.156, 0.3125, 0.625, 1.25, 2.5, 5, 12.5, 25 μM). The assay was then performed according to the instructions provided by GE Healthcare. The parameters of SPR were set as follows: temperature, 25 °C; flow rate, 20 μL/min; contact time, 300 s; and dissociation time, 600 s. The equilibrium dissociation constant (Kd) for D5 was obtained to evaluate the binding affinity by using the BIA evaluation 2.0 (GE Healthcare), supposing a 1:1 binding ratio.",
+            "Figure 4 caption": "Figure 4. D5 covalently interacts with PKM2. (A, B) The stabilization of PKM2 was detected by cellular thermal shift assay (CETSA) and solvent-induced protein precipitation (SIP) assay. (C) The direct interaction between D5 and PKM2 was detected by surface plasmon resonance (SPR) assay. (D) Liquid chromatography and tandem mass spectrometry (LC-MS/MS) analysis of D5 adducted peptide CC (D5) SGAIIVLTK of PKM2. Cys424 was identified as a residue modified by D5.",
+            "Figure 4C data": "The SPR sensorgram in Figure 4C shows the response (RU) over time (s) for D5 at concentrations of 0.098 μM, 0.39 μM, 0.78 μM, 3.12 μM, 6.25 μM, 12.5 μM, and 25 μM. The calculated binding parameters are: ka (1/Ms) = 9.65E+04, kd (1/s) = 0.001778, Kd (M) = 1.84E-08, and Chi² (R²) = 0.373."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "PKM2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "D5",
+                "concentration_range": "0 to 25 μM (0, 0.156, 0.3125, 0.625, 1.25, 2.5, 5, 12.5, 25 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 300,
+                "dissociation_time_s": 600,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation 2.0"
+            }
+        }
+    }
+}

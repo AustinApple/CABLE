@@ -1,0 +1,581 @@
+{
+    "51480073": {
+        "reactant_set_id": 51480073,
+        "pmid": 35084181,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 3CL protease at 1.875 to 50 uM by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Assay of Compounds. The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH = 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E-H shows sensorgrams for the SPR assay. The x-axis (time) ranges from 0 to 300 seconds. The y-axis (response) is in R.U. (Response Units). The legend indicates the concentrations used: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams for compounds 3 and 4 (Figures 5E and 5F) and baicalein (Figure 5H) show association (increasing response) and dissociation (decreasing response) phases. The concentration of 1.875 μM is explicitly labeled on the legend for all three sensorgrams (E, F, H).",
+            "Table 2": "Table 2. Predicted Active Sites and Activities of Test Compounds compound(s) ligand binding sites^a Kd (μM) IC50 (μM, mean ± SD) EC50 in Vero E6 cells (μM, mean ± SD) ClogP^b 3+4 12.0 5.6 ± 0.8 6.8 ± 1.6 3 PHE140, ASN142, MET165, GLU166, ARG188, GLN192 16.6 7.5 ± 2.1 4.5 ± 1.7 5.41 4 THR24, THR25, HIS41, SER46, MET165, PRO168, ASP187, ARG188, GLN192 14.3 8.1 ± 2.0 12.1 ± 2.3 5.41 baicalein HIS41, MET49, LEU141, CYS145, GLU166 31.3 5.1 ± 1.2 3.19 ^aMolecular docking was performed with AutoDock4.2 to create an interaction model and identify the essential amino acid residues of 3CLpro. The binding sites of baicalein were determined from the PDB file (6M2N). ^bThe octanol–water partition coefficient (ClogP) was obtained using the ALOGPS 2.1 program."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480074": {
+        "reactant_set_id": 51480074,
+        "pmid": 35084181,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 3CL protease at 1.875 to 50 uM by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Assay of Compounds. The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH = 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E-H shows sensorgrams for the SPR assay. The x-axis (time) ranges from 0 to 300 seconds. The y-axis (response) is in R.U. (Response Units). The legend indicates the concentrations used: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams for compounds 3 and 4 (Figures 5E and 5F) and baicalein (Figure 5H) show association (increasing response) and dissociation (decreasing response) phases. The concentration of 1.875 μM is explicitly labeled on the legend for all three sensorgrams (E, F, H).",
+            "Table 2": "Table 2. Predicted Active Sites and Activities of Test Compounds compound(s) ligand binding sites^a Kd (μM) IC50 (μM, mean ± SD) EC50 in Vero E6 cells (μM, mean ± SD) ClogP^b 3+4 12.0 5.6 ± 0.8 6.8 ± 1.6 3 PHE140, ASN142, MET165, GLU166, ARG188, GLN192 16.6 7.5 ± 2.1 4.5 ± 1.7 5.41 4 THR24, THR25, HIS41, SER46, MET165, PRO168, ASP187, ARG188, GLN192 14.3 8.1 ± 2.0 12.1 ± 2.3 5.41 baicalein HIS41, MET49, LEU141, CYS145, GLU166 31.3 5.1 ± 1.2 3.19 ^aMolecular docking was performed with AutoDock4.2 to create an interaction model and identify the essential amino acid residues of 3CLpro. The binding sites of baicalein were determined from the PDB file (6M2N). ^bThe octanol–water partition coefficient (ClogP) was obtained using the ALOGPS 2.1 program."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480075": {
+        "reactant_set_id": 51480075,
+        "pmid": 35084181,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "Oc1cc2oc(cc(=O)c2c(O)c1O)-c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 31300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 3CL protease at 1.875 to 50 uM by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Assay of Compounds. The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH = 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E-H shows sensorgrams for the SPR assay. The x-axis (time) ranges from 0 to 300 seconds. The y-axis (response) is in R.U. (Response Units). The legend indicates the concentrations used: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams for compounds 3 and 4 (Figures 5E and 5F) and baicalein (Figure 5H) show association (increasing response) and dissociation (decreasing response) phases. The concentration of 1.875 μM is explicitly labeled on the legend for all three sensorgrams (E, F, H).",
+            "Table 2": "Table 2. Predicted Active Sites and Activities of Test Compounds compound(s) ligand binding sites^a Kd (μM) IC50 (μM, mean ± SD) EC50 in Vero E6 cells (μM, mean ± SD) ClogP^b 3+4 12.0 5.6 ± 0.8 6.8 ± 1.6 3 PHE140, ASN142, MET165, GLU166, ARG188, GLN192 16.6 7.5 ± 2.1 4.5 ± 1.7 5.41 4 THR24, THR25, HIS41, SER46, MET165, PRO168, ASP187, ARG188, GLN192 14.3 8.1 ± 2.0 12.1 ± 2.3 5.41 baicalein HIS41, MET49, LEU141, CYS145, GLU166 31.3 5.1 ± 1.2 3.19 ^aMolecular docking was performed with AutoDock4.2 to create an interaction model and identify the essential amino acid residues of 3CLpro. The binding sites of baicalein were determined from the PDB file (6M2N). ^bThe octanol–water partition coefficient (ClogP) was obtained using the ALOGPS 2.1 program."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480077": {
+        "reactant_set_id": 51480077,
+        "pmid": 35084181,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 3CL protease at 1.875 to 50 uM in presence of wallichins C by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay of Compounds": "The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH = 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H sensorgram labels": "Figure 5E: response (R.U.) vs time (sec) for mixed 3+4 at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM. Figure 5F: response (R.U.) vs time (sec) for pure 3 at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM. Figure 5G: response (R.U.) vs time (sec) for pure 4 at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM. Figure 5H: response (R.U.) vs time (sec) for baicalein at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 4.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480076": {
+        "reactant_set_id": 51480076,
+        "pmid": 35084181,
+        "protein": "Replicase polyprotein 1ab",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 12000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 3CL protease at 1.875 to 50 uM in presence of wallichins D by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay of Compounds": "The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH = 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H sensorgram labels": "Figure 5E: response (R.U.) vs time (sec) for mixed 3+4 at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM. Figure 5F: response (R.U.) vs time (sec) for pure 3 at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM. Figure 5G: response (R.U.) vs time (sec) for pure 4 at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM. Figure 5H: response (R.U.) vs time (sec) for baicalein at concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, 1.875 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": 4.0,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480083": {
+        "reactant_set_id": 51480083,
+        "pmid": 35084181,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 91700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 Spike glycoprotein receptor-binding domain at 1.875 to 50 uM by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay of Compounds": "The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E–H shows the SPR sensorgrams for the binding of mixed 3 and 4, pure 3 and 4, and baicalein to 3CLpro. The x-axis represents time (sec) from 0 to 300, and the y-axis represents response (R.U.). The curves are labeled with concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams show association (increasing response) and dissociation (decreasing response) phases for each compound at the specified concentrations."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480084": {
+        "reactant_set_id": 51480084,
+        "pmid": 35084181,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 67900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 Spike glycoprotein receptor-binding domain at 1.875 to 50 uM by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Assay of Compounds": "The binding affinity of compounds 3 and 4 and baicalein for 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E–H shows the SPR sensorgrams for the binding of mixed 3 and 4, pure 3 and 4, and baicalein to 3CLpro. The x-axis represents time (sec) from 0 to 300, and the y-axis represents response (R.U.). The curves are labeled with concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams show association (increasing response) and dissociation (decreasing response) phases for each compound at the specified concentrations."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480086": {
+        "reactant_set_id": 51480086,
+        "pmid": 35084181,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 64700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 Spike glycoprotein receptor-binding domain at 1.875 to 50 uM in presence of wallichins C by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Assay of Compounds. The binding affinity of compounds 3 and 4 and baicalein to 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E–H shows sensorgrams for the SPR assay. The x-axis (time) ranges from 0 to 300 seconds. The y-axis (response) ranges from -500 to 2000 R.U. (Response Units). The curves are labeled with concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams show association (increasing response) and dissociation (decreasing response) phases. The pH of the running buffer is not specified in the figure or caption, but the methods state 'pH 4.0 acetic acid solution' for immobilization, and 'PBS' for regeneration, implying the running buffer is likely PBS (pH ~7.4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS (pH ~7.4, implied from regeneration solution and standard SPR practice)",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    },
+    "51480085": {
+        "reactant_set_id": 51480085,
+        "pmid": 35084181,
+        "protein": "Spike glycoprotein",
+        "ligand": {
+            "smiles": "CCCC(=O)c1c(O)c(CC2C(O)C(C)(C)C(O)=C(C(C)=O)C2=O)c(O)c2CC[C@H](Oc12)C(\\C)=C\\C[C@@H]1C(=C)CC[C@H]2[C@@]1(C)CCC[C@]2(C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 64700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to SARS-CoV-2 Spike glycoprotein receptor-binding domain at 1.875 to 50 uM in presence of wallichins D by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Assay of Compounds. The binding affinity of compounds 3 and 4 and baicalein to 3CLpro was analyzed using a Biacore S200 system (GE Healthcare). Briefly, 100 μg of 3CLpro was immobilized on a CM5 sensor chip using a pH 4.0 acetic acid solution. Compounds 3 and 4 and baicalein at different concentrations (50, 40, 30, 15, 7.5, 3.75, and 1.875 μM) were injected for 120 s at a flow rate of 40 μL/min. A cleaning solution of PBS with 50% DMSO was used to regenerate the CM5 chip. All response values were collected at 25 °C. Biacore Evaluation Software 2.0 was used to generate Kd values.",
+            "Figure 5 caption": "Figure 5. Activities of 1–4 against SARS-CoV-2. (A) The % inhibition of SARS-CoV-2 was measured at a final concentration of 10 μM (n = 3, independent experiments). (B) Vero E6 cells at an MOI of 0.01 were infected with SARS-CoV-2 and treated with a series of concentrations of the indicated antivirals for 24 h p.i. (n = 3). (C) Calu-3 cells were infected with SARS-CoV-2 at an MOI of 0.05 and treated with different doses of the indicated antivirals for 24 h p.i. (n = 3). (D) Representative inhibition curves for baicalein, a mixture of compounds 3 and 4, and pure 3 and 4 against 3CLpro (n = 3). (E–H) Affinities of mixed 3 and 4, pure 3 and 4, and baicalein for 3CLpro analyzed using an SPR assay.",
+            "Figure 5E-H": "Figure 5E-H shows sensorgrams for the SPR assay. The x-axis (time) ranges from 0 to 300 seconds. The y-axis (response) is in R.U. (Response Units). The legend indicates concentrations: 50 μM, 40 μM, 30 μM, 15 μM, 7.5 μM, 3.75 μM, and 1.875 μM. The sensorgrams show association (increasing response) and dissociation (decreasing response) phases for compounds 3 and 4, and baicalein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "3CLpro",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "100 μg"
+            },
+            "analyte": {
+                "description": "Compounds 3 and 4 and baicalein",
+                "concentration_range": "1.875 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Not explicitly stated",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 40,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": null,
+                "regeneration_solution": "PBS with 50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore Evaluation Software 2.0"
+            }
+        }
+    }
+}

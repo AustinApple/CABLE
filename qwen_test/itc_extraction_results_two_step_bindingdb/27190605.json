@@ -1,0 +1,63 @@
+{
+    "50500469": {
+        "reactant_set_id": 50500469,
+        "pmid": 27190605,
+        "protein": "CREB-binding protein",
+        "ligand": {
+            "smiles": "C[C@@H]1CC(=O)Nc2cccc(-c3ccc4n(C)nc(-c5cnn(C)c5)c4c3)c2N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human CBP at 17 uM by isothermal titration calorimetry",
+        "search_path": [
+            "main",
+            "supplementary"
+        ],
+        "supplementary_source": [
+            "main"
+        ],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "ITC measurements were made on a MicroCal ITC200 instrument (GE Healthcare). CBP was dialyzed overnight against 50 mM HEPES (pH 7.5), 150 mM NaCl, 0.2% v/v DMSO, clarified by passage through a 0.22 μm Spin-X tube (Corning, Inc), and the protein concentration determined by A280 on a NanoDrop instrument (Thermo Scientific). CPI-637 was equilibrated in the cell (17 μM, 200 μL volume, 25.0°C, stirrer speed 1000 rpm, 11 μcal/sec reference power) and CBP was added (170 μM) in the same buffer in a series of seventeen 2.4 μL injections (4.8 s each) with an equilibration time of 120 s between each injection. The resulting data were fitted using the instrument’s Origin 7.0 software.",
+            "SI Figure 1 caption": "SI Figure 1. ITC thermodynamic data for compound CPI-637: Kd = 0.03 ± 0.01 μM, N=0.968, ΔH = 7000 ± 100 cal/mol, ΔS = 10.9 cal/mol/deg."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "CBP",
+                "location": "syringe",
+                "concentration": "170",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "CPI-637",
+                "location": "cell",
+                "concentration": "17"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM HEPES, 150 mM NaCl, 0.2% v/v DMSO",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2.4",
+                    "subsequent_volume": "2.4",
+                    "duration": "4.8",
+                    "spacing": "120",
+                    "total_count": "17"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

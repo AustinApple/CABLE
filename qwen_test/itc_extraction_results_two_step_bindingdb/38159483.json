@@ -1,0 +1,62 @@
+{
+    "51590837": {
+        "reactant_set_id": 51590837,
+        "pmid": 38159483,
+        "protein": "3-oxoacyl-[acyl-carrier-protein] synthase 3",
+        "ligand": {
+            "smiles": "COC(=O)c1c[nH]c2cc(NC(=O)c3ccc4c(c3)OCCCO4)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Escherichia coli FabH assessed as dissociation constant by Isothermal titration calorimetry method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "In each ITC assay, 2 μL aliquots of Compound 25 (400 μM) were incrementally added to the sample cell containing E. coli FabH (volume: 370 μL, concentration: 30 μM). This titration consisted of 19 injections, each separated by a 150-s gap and an inter-injection interval of 60 s, while maintaining a stirring rate of 750 rpm. To account for any non-specific heat changes, a control experiment was conducted by titrating the compound into Tris buffer, thus enabling the differentiation of heat changes attributable to compound dilution. The calorimetric response during each titration was continuously recorded. The acquired ITC data were subsequently analyzed using the MicroCal PEAQ-ITC Analysis software (Malvern Panalytical Ltd). This analysis allowed for the determination of key binding parameters, including Gibbs free energy (ΔG), and changes in enthalpy (ΔH) and entropy (ΔS).",
+            "Figure 9 caption": "Fig. 9. ITC titration data describing the binding of compound 25 with FabH. A) The thermogram (thermal power vs time) after baseline correction. B) The binding isotherm (normalized heat vs molar ratio of reactants). C) Thermodynamic parameters determined by ITC.",
+            "Results section - ITC studies": "In our recent investigation, we utilized ITC, conducted at a controlled temperature of 25 °C, to evaluate the binding affinity of compound 25 towards the enzyme FabH. The representative isotherms from this analysis are presented in Fig. 9. Our findings indicate that compound 25 exhibits a notable affinity for FabH, as evidenced by a dissociation constant (Kd) of 21.5 μM in a 1:1 ratio. This value is indicative of a robust interaction between the compound and the enzyme. Additionally, the binding isotherm reveals a downward trend, characteristic of an exothermic reaction. The thermodynamic analysis further reveals a negative enthalpy change (ΔH = −80 kcal/mol) and a negative entropy change (ΔS, with TAS = 73.6 kcal/mol), suggesting that van der Waals interactions and hydrogen bonding are the primary forces driving this binding. These thermodynamic insights align with the results obtained from computational docking studies, reinforcing the validity of the observed interaction. Moreover, the reaction’s spontaneity is underscored by a negative Gibbs free energy change (ΔG = −6.4 kcal/mol), corroborating the favorable nature of the binding process.",
+            "Table 4": "Table 4 E. coli FabH inhibitory activity and biocompatibility of synthesized compounds. Compound E. coli FabH IC50 [μM] Hemolysis LC50 [mg/mL] Cytotoxicity IC50 [μM] 10 38.2 ± 0.29 >10 175.3 ± 5.9 15 17.5 ± 0.13 >10 132.1 ± 7.6 17 8.6 ± 0.19 >10 203.6 ± 16.0 18 46.4 ± 0.37 >10 128.1 ± 5.4 19 26.8 ± 0.22 >10 147.3 ± 8.6 24 13.1 ± 0.24 >10 198.2 ± 12.5 25 2.0 ± 0.11 >10 141.6 ± 3.7 35 4.9 ± 0.24 >10 115.3 ± 10.8 38 19.6 ± 0.15 >10 161.4 ± 9.4 a The compounds tested for FabH inhibitory activity are consistent with the description in the Experimental Section. b Lytic concentration 30 %."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "E. coli FabH",
+                "location": "cell",
+                "concentration": "30",
+                "solution_volume": "370"
+            },
+            "ligand": {
+                "name": "Compound 25",
+                "location": "syringe",
+                "concentration": "400"
+            },
+            "assay_conditions": {
+                "buffer_composition": "Tris buffer",
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Titration of compound into Tris buffer to account for non-specific heat changes and compound dilution",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "19"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

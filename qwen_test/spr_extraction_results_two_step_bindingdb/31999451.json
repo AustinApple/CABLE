@@ -1,0 +1,199 @@
+{
+    "51275461": {
+        "reactant_set_id": 51275461,
+        "pmid": 31999451,
+        "protein": "Signal transducer and activator of transcription 3",
+        "ligand": {
+            "smiles": "COc1cc(NC(=O)[C@@H](Cc2ccccc2)NC2=C\\C(=N\\O)c3ccccc3C2=O)cc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 530.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to STAT3 in human SKOV3 cells assessed as equilibrium dissociation constant after 200 sec by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang, X.; Yue, P.; Fletcher, S.; Zhao, W.; Gunning, P. T.; Turkson, J. A novel small-molecule disrupts stat3 SH2 domain–phosphotyrosine interactions and stat3-dependent tumor processes. Biochem. Pharmacol. 2010, 79, 1398–1409.",
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR Experiments. Surface plasmon resonance experiments were performed with a Biacore T200 instrument at 25 °C. Sensor chips, buffer stock solutions, and immobilization reagents were from GE Healthcare. Recombinant human IDO1 was Novoprotein. Other reagents were obtained from Sigma. For immobilization, PBS was used as the running buffer. The four flow cells were treated in the same manner to optimize throughput. In summary, by using a CMS chip, spots 1 and 2 were activated with the coupling reagents EDC and NHS for 10 min. IDO1 at a concentration of 20 μg/mL in 10 mM sodium acetate, pH 5, was injected onto the surface for 10 and 5 min at spots 1 and 2, respectively, to generate surfaces with high and low densities. The immobilization levels ranged from 2302 to 1823 RU at spot 1 and from 948 to 1112 RU at spot 2. The unmodified spot 3 was used as a reference. For kinetics and affinity measurements, PBS (containing 0.05% DMSO) was used as the running buffer and sample dilution buffer. Dose–response relationships were determined with a twofold sample dilution from 0 to 500 μM and an injection time of 60 s. For data processing, binding curves were corrected for variations in DMSO concentration and normalized by molecular weight. The K_D values reported were derived from steady-state binding responses and therefore correspond to the equilibrium binding affinities of the compounds.",
+            "Figure 2 caption": "Figure 2. (A) Proposed binding mode of compound 8u in the active site of IDO1 (PDB: 4PKS). Heme is reported as a cyan stick, IDO1 structure is shown as a cartoon. (B) Key hydrogen bond interactions of compound 8u in the active site of IDO1. Compound 8u, IDO1 residues, and HEM are shown as gray stick, yellow stick, and cyan stick, respectively. The red dashed lines indicate the H-bond interaction between 8u and IDO1. (C) Biophysical binding data supports the interaction of compound 8u with human IDO1 protein. Dose–response curve determined by surface plasmon resonance (SPR) for the binding of IDO1 with 8u is shown.",
+            "Figure 4 caption": "Figure 4. Compound 8u targeted STAT3. (A) Western blot analysis of p-STAT3(Y705), p-STAT3(S727), and total STAT3 after treatment of SKOV3 cells with 8u at the indicated concentrations and for the indicated times. (B) Western blots of STAT1 and STAT5 from whole-cell lysates from cells were treated with 8u. β-actin antibody was used as reference control. (C) Effects of compound 8u (0.5 μM) on the nuclear translocation of the p-STAT3 protein induced by cytokine IL-6. After serum-free overnight treatment, SKOV3 cells were pretreated with 8u for 8 h, followed by IL-6 (50 ng/mL) for 30 min, and then processed for STAT3 nuclear translocation detection by immunofluorescence staining. (D) SPR analysis of compound 8u with STAT3 protein. The equilibrium dissociation constant (KD) value is 0.53 μM.",
+            "Results and Discussion - SPR Analysis": "The SPR binding assay was performed to further examine direct binding between 8u and STAT3. In the BLAcore sensorgram, resonance curves exhibited strong binding patterns between the two molecules in a dose-dependent manner (Figure 4D). The kinetic parameter, dissociation constant (K_D), determined using BIACore evaluation software, was 0.53 μM, indicative of a high binding affinity.63 Our collective data supported the hypothesis that 8u specifically binds STAT3 protein with high affinity, thus indicating that STAT3 was also the potential target of 8u."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "IDO1",
+                "strategy": "Amine coupling",
+                "density_ru": "2302-1823 RU (spot 1), 948-1112 RU (spot 2)",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 8u",
+                "concentration_range": "0 to 500 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing 0.05% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Unmodified spot 3",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore evaluation software"
+            }
+        }
+    },
+    "51275447": {
+        "reactant_set_id": 51275447,
+        "pmid": 31999451,
+        "protein": "Indoleamine 2,3-dioxygenase 1",
+        "ligand": {
+            "smiles": "COc1cc(NC(=O)[C@@H](Cc2ccccc2)NC2=C\\C(=N\\O)c3ccccc3C2=O)cc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 80.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human IDO1 assessed as equilibrium dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR Experiments. Surface plasmon resonance experiments were performed with a Biacore T200 instrument at 25 °C. Sensor chips, buffer stock solutions, and immobilization reagents were from GE Healthcare. Recombinant human IDO1 was Novoprotein. Other reagents were obtained from Sigma. For immobilization, PBS was used as the running buffer. The four flow cells were treated in the same manner to optimize throughput. In summary, by using a CMS chip, spots 1 and 2 were activated with the coupling reagents EDC and NHS for 10 min. IDO1 at a concentration of 20 μg/mL in 10 mM sodium acetate, pH 5, was injected onto the surface for 10 and 5 min at spots 1 and 2, respectively, to generate surfaces with high and low densities. The immobilization levels ranged from 2302 to 1823 RU at spot 1 and from 948 to 1112 RU at spot 2. The unmodified spot 3 was used as a reference. For kinetics and affinity measurements, PBS (containing 0.05% DMSO) was used as the running buffer and sample dilution buffer. Dose–response relationships were determined with a twofold sample dilution from 0 to 500 μM and an injection time of 60 s. For data processing, binding curves were corrected for variations in DMSO concentration and normalized by molecular weight. The K_D values reported were derived from steady-state binding responses and therefore correspond to the equilibrium binding affinities of the compounds.",
+            "Figure 2 caption": "Figure 2. (A) Proposed binding mode of compound 8u in the active site of IDO1 (PDB: 4PKS). Heme is reported as a cyan stick, IDO1 structure is shown as a cartoon. (B) Key hydrogen bond interactions of compound 8u in the active site of IDO1. Compound 8u, IDO1 residues, and HEM are shown as gray stick, yellow stick, and cyan stick, respectively. The red dashed lines indicate the H-bond interaction between 8u and IDO1. (C) Biophysical binding data supports the interaction of compound 8u with human IDO1 protein. Dose–response curve determined by surface plasmon resonance (SPR) for the binding of IDO1 with 8u is shown.",
+            "Results and Discussion - Surface Plasmon Resonance Assays": "Surface Plasmon Resonance Assays. To obtain definitive evidence of direct binding to IDO1, a surface plasmon resonance (SPR)-based binding assay was performed using a Biacore T200 instrument. This analytic technique facilitates measurement of the kinetic and thermodynamic parameters of ligand–protein complex formation and is widely utilized to investigate enzyme/inhibitor interactions. Kinetic association and dissociation measurements were obtained, and the binding affinity of compound 8u for IDO1 was determined with the aid of Biacore evaluation software. Compound 8u efficiently interacted with the immobilized protein (Figure 2C), as demonstrated by the concentration-dependent responses for association and dissociation, respectively, and the clearly discernible exponential curves, indicative of binding to and dissociation from the IDO1 protein, with an equilibrium dissociation constant (K_D, representing binding affinity) of 0.08 μM. Notably, the kinetic dissociation constant (k_d) between compound 8u and IDO1 was 0.0045 s−1, suggesting that the 8u–IDO1 complexes formed were extremely stable. Our data provided definitive evidence of direct binding of derivatives of 2-amino-1,4-naphthoquinone aromatic amide-oxime derivatives to IDO1.",
+            "Figure 2C Sensorgram Data": "The sensorgram in Figure 2C shows dose-response curves for compound 8u binding to IDO1. The concentrations used are: 0.03 μM (green), 0.06 μM (blue), 0.12 μM (purple), 0.24 μM (orange), 0.48 μM (pink), 0.96 μM (light blue), and 1.92 μM (dark green). The x-axis represents time (s) from -50 to 300, and the y-axis represents response (RU) from -100 to 400. The curves show association (rising phase) and dissociation (falling phase) phases.",
+            "Supporting Information": "The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acs.jmedchem.9b01386. Binding modes of 8u in complex with IDO1 (PDB ID: 4PKS); UV spectra of ferric IDO1 without and with compound 8u; effects of the indicated treatments of 8u on B16-F10 melanoma tumor xenografts in C57BL/6 mice; inhibition of tumor growth for compound 8u and doxorubicin (DOX) in nude mice bearing HepG2 xenograft model; inhibitory effects of 8u on STATs; table of docking scores (kcal/mol) for all studied compounds; table of STAT3 binding affinities of selected 2-amino-1,4-naphthoquinone derivatives; and 1H NMR, 13C NMR, HR-MS, and HPLC of target compounds (PDF) Molecular formula strings and some data (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human IDO1",
+                "strategy": "Amine coupling",
+                "density_ru": "2302-1823 RU (spot 1), 948-1112 RU (spot 2)",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "compound 8u",
+                "concentration_range": "0.03 μM to 1.92 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing 0.05% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "unmodified spot 3",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore evaluation software"
+            }
+        }
+    },
+    "51275448": {
+        "reactant_set_id": 51275448,
+        "pmid": 31999451,
+        "protein": "Indoleamine 2,3-dioxygenase 1",
+        "ligand": {
+            "smiles": "COc1cc(NC(=O)[C@@H](Cc2ccccc2)NC2=C\\C(=N\\O)c3ccccc3C2=O)cc(OC)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.0045,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human IDO1 assessed as kinetic dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Experiments": "SPR Experiments. Surface plasmon resonance experiments were performed with a Biacore T200 instrument at 25 °C. Sensor chips, buffer stock solutions, and immobilization reagents were from GE Healthcare. Recombinant human IDO1 was Novoprotein. Other reagents were obtained from Sigma. For immobilization, PBS was used as the running buffer. The four flow cells were treated in the same manner to optimize throughput. In summary, by using a CMS chip, spots 1 and 2 were activated with the coupling reagents EDC and NHS for 10 min. IDO1 at a concentration of 20 μg/mL in 10 mM sodium acetate, pH 5, was injected onto the surface for 10 and 5 min at spots 1 and 2, respectively, to generate surfaces with high and low densities. The immobilization levels ranged from 2302 to 1823 RU at spot 1 and from 948 to 1112 RU at spot 2. The unmodified spot 3 was used as a reference. For kinetics and affinity measurements, PBS (containing 0.05% DMSO) was used as the running buffer and sample dilution buffer. Dose–response relationships were determined with a twofold sample dilution from 0 to 500 μM and an injection time of 60 s. For data processing, binding curves were corrected for variations in DMSO concentration and normalized by molecular weight. The K_D values reported were derived from steady-state binding responses and therefore correspond to the equilibrium binding affinities of the compounds.",
+            "Figure 2 caption": "Figure 2. (A) Proposed binding mode of compound 8u in the active site of IDO1 (PDB: 4PKS). Heme is reported as a cyan stick, IDO1 structure is shown as a cartoon. (B) Key hydrogen bond interactions of compound 8u in the active site of IDO1. Compound 8u, IDO1 residues, and HEM are shown as gray stick, yellow stick, and cyan stick, respectively. The red dashed lines indicate the H-bond interaction between 8u and IDO1. (C) Biophysical binding data supports the interaction of compound 8u with human IDO1 protein. Dose–response curve determined by surface plasmon resonance (SPR) for the binding of IDO1 with 8u is shown.",
+            "Results and Discussion - Surface Plasmon Resonance Assays": "Surface Plasmon Resonance Assays. To obtain definitive evidence of direct binding to IDO1, a surface plasmon resonance (SPR)-based binding assay was performed using a Biacore T200 instrument. This analytic technique facilitates measurement of the kinetic and thermodynamic parameters of ligand–protein complex formation and is widely utilized to investigate enzyme/inhibitor interactions. Kinetic association and dissociation measurements were obtained, and the binding affinity of compound 8u for IDO1 was determined with the aid of Biacore evaluation software. Compound 8u efficiently interacted with the immobilized protein (Figure 2C), as demonstrated by the concentration-dependent responses for association and dissociation, respectively, and the clearly discernible exponential curves, indicative of binding to and dissociation from the IDO1 protein, with an equilibrium dissociation constant (K_D, representing binding affinity) of 0.08 μM. Notably, the kinetic dissociation constant (k_d) between compound 8u and IDO1 was 0.0045 s−1, suggesting that the 8u–IDO1 complexes formed were extremely stable. Our data provided definitive evidence of direct binding of derivatives of 2-amino-1,4-naphthoquinone aromatic amide-oxime derivatives to IDO1.",
+            "Figure 2C Sensorgram Data": "The sensorgram in Figure 2C shows dose-response curves for compound 8u binding to IDO1. The concentrations used are: 0.03 μM (green), 0.06 μM (blue), 0.12 μM (purple), 0.24 μM (orange), 0.48 μM (pink), 0.96 μM (light blue), and 1.92 μM (dark green). The x-axis represents time (s) from -50 to 300, and the y-axis represents response (RU) from -100 to 400. The curves show association (rising phase) and dissociation (falling phase) phases for each concentration.",
+            "Supporting Information": "The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acs.jmedchem.9b01386. Binding modes of 8u in complex with IDO1 (PDB ID: 4PKS); UV spectra of ferric IDO1 without and with compound 8u; effects of the indicated treatments of 8u on B16-F10 melanoma tumor xenografts in C57BL/6 mice; inhibition of tumor growth for compound 8u and doxorubicin (DOX) in nude mice bearing HepG2 xenograft model; inhibitory effects of 8u on STATs; table of docking scores (kcal/mol) for all studied compounds; table of STAT3 binding affinities of selected 2-amino-1,4-naphthoquinone derivatives; and 1H NMR, 13C NMR, HR-MS, and HPLC of target compounds (PDF) Molecular formula strings and some data (CSV)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human IDO1",
+                "strategy": "Amine coupling",
+                "density_ru": "2302-1823 RU (spot 1), 948-1112 RU (spot 2)",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "compound 8u",
+                "concentration_range": "0.03 μM to 1.92 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS containing 0.05% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "unmodified spot 3",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore evaluation software"
+            }
+        }
+    }
+}

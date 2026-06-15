@@ -1,0 +1,132 @@
+{
+    "50328979": {
+        "reactant_set_id": 50328979,
+        "pmid": 25730130,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "O=C(C1C(=O)N(Cc2ccccc2)C(=O)N(Cc2ccccc2)C1=O)c1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant P300 catalytic domain by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR analyses were performed on a Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (Biacore AB). Recombinant p300/KAT3B (Enzo Life Sciences, catalogue no. BML-SE451; GenBank accession no. NM_001429) HAT domain was immobilized (10 μg/mL in 100 mM sodium acetate, pH 4.5) at a flow rate of 10 μL/min by using standard amine-coupling protocols to obtain densities of 8–9 kRU. Myoglobin was used as negative control, and one flow cell was left empty for background subtractions. All compounds were dissolved in DMSO (100%) to obtain 50 mM solutions and diluted in HBS-P (10 mM HEPES 7.4, 0.15 M NaCl, 0.005% surfactant P20), always maintaining a final 0.2% DMSO concentration. Binding experiments were performed at 25 °C by using a flow rate of 30 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Regeneration of the surfaces was performed, when necessary, by a 10 s injection of 5 mM NaOH. The simple 1:1 Langmuir binding fit model of the BIAevaluation software was used for determining equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants by using eqs 1 and 2: dR/dt = k_a × C × (R_max − R) − k_d × R (1) where R represents the response unit, C is the concentration of the analyte, and K_D = k_d/k_a (2)",
+            "Figure 5 caption": "Figure 5. Sensorgrams obtained from subsequent injections (after 2, 10, and 15 min) of a 10 μM solution of compound 7b on immobilized hKAT3B/p300 (catalytic domain, aa 1284–1673).",
+            "Figure 6 caption": "Figure 6. (A) Chemical structure and apparent permeability (P_app, calculated using PAMPA) of derivative 7h. (B) Sensorgrams obtained from the SPR interaction analysis of compound 7h to immobilized hKAT3B/p300 (catalytic domain, aa 1284–1673, top row). Compound was injected at 0.5, 1, 5, and 10 μM, giving the concentration-dependent signals shown. (C–D) Concentration–response inhibition of p300 (left panel) and CBP (right panel) by compound 7h. The compound was tested in 10-concentration IC50 mode with 3-fold serial dilutions starting at 100 μM. Data were analyzed using GraphPad Prism software (version 6.0) for curve fitting, using a sigmoidal concentration–response with a variable slope equation.",
+            "Results and Discussion - SPR-Based Binding Assays": "SPR-Based Binding Assays. Benzylidenbarbituric acid derivatives 7–9, together with compounds 1a and 4a, chosen as the best inhibitors among the benzoylbarbiturates A and the benzylbarbiturates B, respectively (Figure 3), were tested by surface plasmon resonance (SPR) assays to establish whether their inhibitor effects were due to direct binding to p300. Toward this aim, the human recombinant KAT3B (aa 1284–1673) catalytic domain was immobilized (up to approximately 10000 RU, response units) on a sensor chip, and tested ligands were injected at different concentrations over the protein surface. To reduce false positives from detergent-sensitive, nonspecific aggregation-based binding, 0.005% NP20 was added to the running buffer in all experiments. In addition, to evaluate potential nonspecific binding, all compounds were injected on immobilized myoglobin. Equilibrium dissociation constant (K_D) values were derived from the ratio between the kinetic dissociation (k_d) and association (k_a) constants obtained by fitting data from all the injections at different concentrations of each compound using the simple 1:1 Langmuir binding fit model in the BIAevaluation software. All compounds were shown to interact with the immobilized recombinant p300/KAT3B HAT domain, even if a K_D measurement was possible only for derivatives 4a (K_D = (1.1 ± 0.7) × 10−6) and 1a (K_D = (2.4 ± 1.3) × 10−7). For the benzylidenbarbituric inhibitors of type C, while setting up the injection conditions, we observed an unexpected SPR response for subsequent injections at the same concentration. Specifically, all derivatives gave a high SPR signal for the first injection immediately after dilution from the stock solution in DMSO (the time passed from the dilution to the real contact of the molecule with the sensor chip was estimated to be 2 min), while subsequent injections of the same dilution (after 10 and 15 min) gave a strongly reduced signal. The SPR response of the binding of compound 7b, taken as representative of the series, to immobilized hKAT3B/p300 is shown in Figure 5, whereas all the other sensorgrams are displayed in Figure S1 (Supporting Information). On the other hand, a fresh dilution from stock produced, again, a high signal superimposable on the first injection (data not shown)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant p300/KAT3B (HAT domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "8-9 kRU",
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Benzylidenbarbituric acid derivatives 7–9, compounds 1a and 4a",
+                "concentration_range": "0.5, 1, 5, and 10 μM (as shown for compound 7h; other compounds tested at various concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P (10 mM HEPES, pH 7.4, 0.15 M NaCl, 0.005% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell left empty for background subtraction; myoglobin used as negative control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation software"
+            }
+        }
+    },
+    "50328980": {
+        "reactant_set_id": 50328980,
+        "pmid": 25730130,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "O=C1C(Cc2ccccc2)C(=O)N(Cc2ccccc2)C(=O)N1Cc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant P300 catalytic domain by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "SPR analyses were performed on a Biacore 3000 optical biosensor equipped with research-grade CMS sensor chips (Biacore AB). Recombinant p300/KAT3B (Enzo Life Sciences, catalogue no. BML-SE451; GenBank accession no. NM_001429) HAT domain was immobilized (10 μg/mL in 100 mM sodium acetate, pH 4.5) at a flow rate of 10 μL/min by using standard amine-coupling protocols to obtain densities of 8–9 kRU. Myoglobin was used as negative control, and one flow cell was left empty for background subtractions. All compounds were dissolved in DMSO (100%) to obtain 50 mM solutions and diluted in HBS-P (10 mM HEPES 7.4, 0.15 M NaCl, 0.005% surfactant P20), always maintaining a final 0.2% DMSO concentration. Binding experiments were performed at 25 °C by using a flow rate of 30 μL/min, with 60 s monitoring of association and 200 s monitoring of dissociation. Regeneration of the surfaces was performed, when necessary, by a 10 s injection of 5 mM NaOH. The simple 1:1 Langmuir binding fit model of the BIAevaluation software was used for determining equilibrium dissociation constants (K_D) and kinetic dissociation (k_d) and association (k_a) constants by using eqs 1 and 2: dR/dt = k_a × C × (R_max − R) − k_d × R (1) where R represents the response unit, C is the concentration of the analyte, and K_D = k_d/k_a (2)",
+            "Figure 5 caption": "Figure 5. Sensorgrams obtained from subsequent injections (after 2, 10, and 15 min) of a 10 μM solution of compound 7b on immobilized hKAT3B/p300 (catalytic domain, aa 1284–1673).",
+            "Figure 6 caption": "Figure 6. (A) Chemical structure and apparent permeability (P_app, calculated using PAMPA) of derivative 7h. (B) Sensorgrams obtained from the SPR interaction analysis of compound 7h to immobilized hKAT3B/p300 (catalytic domain, aa 1284–1673, top row). Compound was injected at 0.5, 1, 5, and 10 μM, giving the concentration-dependent signals shown. (C–D) Concentration–response inhibition of p300 (left panel) and CBP (right panel) by compound 7h. The compound was tested in 10-concentration IC50 mode with 3-fold serial dilutions starting at 100 μM. Data were analyzed using GraphPad Prism software (version 6.0) for curve fitting, using a sigmoidal concentration–response with a variable slope equation.",
+            "Results and Discussion - SPR-Based Binding Assays": "SPR-Based Binding Assays. Benzylidenbarbituric acid derivatives 7–9, together with compounds 1a and 4a, chosen as the best inhibitors among the benzoylbarbiturates A and the benzylbarbiturates B, respectively (Figure 3), were tested by surface plasmon resonance (SPR) assays to establish whether their inhibitor effects were due to direct binding to p300. Toward this aim, the human recombinant KAT3B (aa 1284–1673) catalytic domain was immobilized (up to approximately 10000 RU, response units) on a sensor chip, and tested ligands were injected at different concentrations over the protein surface. To reduce false positives from detergent-sensitive, nonspecific aggregation-based binding, 0.005% NP20 was added to the running buffer in all experiments. In addition, to evaluate potential nonspecific binding, all compounds were injected on immobilized myoglobin. Equilibrium dissociation constant (K_D) values were derived from the ratio between the kinetic dissociation (k_d) and association (k_a) constants obtained by fitting data from all the injections at different concentrations of each compound using the simple 1:1 Langmuir binding fit model in the BIAevaluation software. All compounds were shown to interact with the immobilized recombinant p300/KAT3B HAT domain, even if a K_D measurement was possible only for derivatives 4a (K_D = (1.1 ± 0.7) × 10−6) and 1a (K_D = (2.4 ± 1.3) × 10−7). For the benzylidenbarbituric inhibitors of type C, while setting up the injection conditions, we observed an unexpected SPR response for subsequent injections at the same concentration. Specifically, all derivatives gave a high SPR signal for the first injection immediately after dilution from the stock solution in DMSO (the time passed from the dilution to the real contact of the molecule with the sensor chip was estimated to be 2 min), while subsequent injections of the same dilution (after 10 and 15 min) gave a strongly reduced signal. The SPR response of the binding of compound 7b, taken as representative of the series, to immobilized hKAT3B/p300 is shown in Figure 5, whereas all the other sensorgrams are displayed in Figure S1 (Supporting Information). On the other hand, a fresh dilution from stock produced, again, a high signal superimposable on the first injection (data not shown)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant p300/KAT3B (HAT domain)",
+                "strategy": "Amine coupling",
+                "density_ru": "8-9 kRU",
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "Benzylidenbarbituric acid derivatives 7–9, compounds 1a and 4a",
+                "concentration_range": "0.5, 1, 5, and 10 μM (as shown for compound 7h; other compounds tested at various concentrations)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P (10 mM HEPES, pH 7.4, 0.15 M NaCl, 0.005% surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "One flow cell left empty for background subtraction; myoglobin used as negative control",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation software"
+            }
+        }
+    }
+}

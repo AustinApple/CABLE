@@ -1,0 +1,67 @@
+{
+    "51238282": {
+        "reactant_set_id": 51238282,
+        "pmid": 30366617,
+        "protein": "Methylosome protein 50/Protein arginine N-methyltransferase 5",
+        "ligand": {
+            "smiles": "Brc1cccc(NC(=O)CCN2CCc3ccccc3C2)c1C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PRMT5 (unknown origin)/MEP50 (unknown origin) by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Mechanism of action and binding mode analysis": "The direct binding of compound 4b14 to PRMT5 was confirmed by surface plasmon resonance (SPR) assay with a Kd (equilibrium dissociation constant) value of 10.8 ± 3.2 μM (Fig. 3A). The mechanism of action (MOA) of 4b14 was assessed by determining the IC50 values in the presence of various concentrations of SAM and peptide. As shown in Fig. 3B, 4b14 displayed competitive inhibition with peptide while noncompetitive with SAM. These results indicated that 4b14 was a substrate binding site inhibitor of PRMT5. To probe the probable binding mode of 4b14 with PRMT5, molecular docking and molecular dynamics simulation were performed. The putative binding mode and the detailed interactions between 4b14 and PRMT5 were shown in Fig. 3C and D, respectively. As indicated in Fig. 3D, although there are a few polar interactions, the most are from hydrophobic, π-π stacking and cation-π interactions as expected.",
+            "Figure 3 caption": "Fig. 3. Mechanism of action and binding mode prediction of 4b14. (A) Binding of 4b14 to PRMT5 was confirmed by SPR. (B) Mechanism of action (MOA) of 4b14. MOA was assessed by determining the IC50 values in the presence of various concentrations of peptide and SAM. Experiments were performed in triplicate. (C) The proposed binding mode of 4b14 with PRMT5. (D) The detailed interactions between 4b14 and PRMT5.",
+            "Figure 3A sensorgram data": "The sensorgram in Fig. 3A shows response units (RU) over time (sec) for compound 4b14 at concentrations of 25.00 μM, 12.50 μM, 6.25 μM, 3.13 μM, and 1.56 μM. The plot also includes a curve fit with the equation Kd = 10.8 ± 3.2 μM, showing response units (RU) versus compound 4b14 concentration (μM).",
+            "Figure 3B data": "The plots in Fig. 3B show IC50 (μM) versus [SAM] (μM) and IC50 (μM) versus [Peptide] / Km. The x-axis for the left plot ranges from 0 to 12 μM for [SAM], and the x-axis for the right plot ranges from 0 to 15 for [Peptide] / Km. The y-axis for both plots ranges from 0 to 50 μM for IC50."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "PRMT5",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "compound 4b14",
+                "concentration_range": "1.56 μM - 25.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": null
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "51489322": {
+        "reactant_set_id": 51489322,
+        "pmid": 35318165,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "CN1Cc2cc(NS(=O)(=O)c3ccc(F)c(C)c3)ccc2NC1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human BRD4 BD1 (44 to 168 residues) expressed in Escherichia coli BL21 (DE3) by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Picaud S, Da Costa D, Thanassopoulou A, et al. PFI-1, a highly selective protein interaction inhibitor, targeting BET bromodomains. Cancer Res. 2013;73(11): 3336–3346.",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed using a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK). The BRD4 BD1 domain (residues 44–168) was expressed in Escherichia coli BL21 (DE3) and purified as described previously [26]. The protein was dialyzed against 20 mM HEPES (pH 7.4), 150 mM NaCl, 1 mM DTT, and 0.02% NaN3. The concentration of BRD4 BD1 was determined by UV absorbance at 280 nm using the extinction coefficient calculated from the amino acid sequence. Compound 5i was dissolved in DMSO and diluted in the same buffer as the protein. ITC experiments were performed at 25 °C with a stirring speed of 750 rpm. The protein (10–15 μM) was loaded into the sample cell, and the compound (100–200 μM) was loaded into the syringe. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. A blank experiment was performed by titrating the compound into buffer to correct for the heat of dilution. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model.",
+            "Figure 4 caption": "Fig. 4. Binding affinity of 5i to BRD4 and co-crystal structure of 5i and BRD4. a) Isothermal titration calorimetry (ITC) measurement of 5i binding to BRD4. The ITC titration curves are shown in the upper panel. The reference titration curve in which BRD4 protein was titrated into buffer is above the BRD4-5i titration curve. The ITC data fitting is shown in the bottom panel. The final parameters of the analysis are shown in the box. b) The binding of compound 5i in the crystal structure of BRD4 (PDB ID 7T3F). BRD4 structure is shown in gray cartoon. Compound 5i is shown in green sticks. All residues of BRD4 involved in the binding are shown in stick. c) Comparison of PFI and compound 5i in the BRD4 crystal structure. PFI is shown in yellow stick while compound 5i is in green stick.",
+            "ITC Data Box in Figure 4": "N = 0.8, Kd = 1.0 μM, ΔH = -7.8 kcal/mol, ΔS = -0.1 kcal/mol, ΔG = -7.9 kcal/mol"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "BRD4 BD1",
+                "location": "cell",
+                "concentration": "10-15",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 5i",
+                "location": "syringe",
+                "concentration": "100-200"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.02% NaN3",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": "Titration of compound into buffer to correct for the heat of dilution",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "50444463": {
+        "reactant_set_id": 50444463,
+        "pmid": 26704264,
+        "protein": "Dual specificity mitogen-activated protein kinase kinase 3",
+        "ligand": {
+            "smiles": "NC(=O)c1nnc2ccccc2c1N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MKK3 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "15 SPR work conducted under contract at BIOSensor Tools LLC. See Supporting Information.",
+        "original_paragraph": {
+            "Materials and Methods": "An internal library of 11,012 fragments (heavy atom count between 11-19 atoms) was screened at 100μM against phosphorylated MKK3 using a Caliper-based biochemical probe. From the primary screen, single-point inhibition values were used to calculate approximate pIC50 (ApIC50) values for each fragment. These values were then used to estimate ligand efficiency (LE) and lipophilic ligand efficiency (LLE) values for each compound that exhibited >30% inhibition. Using this criteria, 93 fragments were identified with LE ≥ 0.35 and an LLE ≥4. A subset of these fragments was then evaluated by full dose response curves against both MKK3 and MKK6, and direct binding was measured using surface plasmon resonance. One fragment of interest, compound 1, was a highly efficient inhibitor of both MKK3 (37μM; LE = 0.44, LLE = 4.21) and MKK6 (16μM; LE = 0.47, LLE = 4.8) and demonstrated direct binding to MKK3 with a Kd of 2μM (Shown in Figure 1).",
+            "Figure 1 caption": "Figure 1. Structure and SPR isotherm of 1 binding to MKK3.",
+            "Figure 1 sensorgram description": "The sensorgram in Figure 1 shows the response (RU) over time (s) for compound 1 binding to MKK3. The x-axis ranges from 0 to 35 seconds, and the y-axis ranges from 0 to 45 RU. Multiple curves are shown, representing different concentrations of compound 1, with the highest concentration curve reaching approximately 40 RU. The association phase occurs from 0 to 20 seconds, followed by a dissociation phase from 20 to 35 seconds. The figure includes a chemical structure of compound 1 with the following data: MKK3 IC50 = 37μM, MKK3 Kd = 2μM, MKK6 IC50 = 16μM.",
+            "Reference 15": "SPR work conducted under contract at BIOSensor Tools LLC. See Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Caliper",
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "phosphorylated MKK3",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 1",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 20,
+                "dissociation_time_s": 15,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": null
+            }
+        }
+    }
+}

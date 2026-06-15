@@ -1,0 +1,1172 @@
+{
+    "51600425": {
+        "reactant_set_id": 51600425,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "CN(C)CCN1C(=O)c2cccc3c(S(=O)(=O)NCc4ccccc4)ccc(c23)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16770.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600426": {
+        "reactant_set_id": 51600426,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "CN(C)CCN1C(=O)c2cccc3c(S(=O)(=O)NCc4ccc(F)cc4)ccc(c23)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 290.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600427": {
+        "reactant_set_id": 51600427,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "COc1ccc(CNS(=O)(=O)c2ccc3c4c(cccc24)C(=O)N(CCN(C)C)C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8060.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600428": {
+        "reactant_set_id": 51600428,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "CN(C)CCN1C(=O)c2cccc3c(S(=O)(=O)NCc4ccc(C(F)(F)F)cc4)ccc(c23)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5260.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600429": {
+        "reactant_set_id": 51600429,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "Cc1ccc(CNS(=O)(=O)c2ccc3c4c(cccc24)C(=O)N(CCN(C)C)C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 14220.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600430": {
+        "reactant_set_id": 51600430,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "CN(C)CCN1C(=O)c2cccc3c(S(=O)(=O)NCc4ccccc4F)ccc(c23)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2790.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600431": {
+        "reactant_set_id": 51600431,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "CN(C)CCN1C(=O)c2cccc3c(S(=O)(=O)NCc4cccc(F)c4)ccc(c23)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17540.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600432": {
+        "reactant_set_id": 51600432,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(S(=O)(=O)NCc4ccccc4)ccc(c23)C(=O)N1CCN1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 19190.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600433": {
+        "reactant_set_id": 51600433,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(S(=O)(=O)NCc4ccc(F)cc4)ccc(c23)C(=O)N1CCN1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2150.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600434": {
+        "reactant_set_id": 51600434,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "COc1ccc(CNS(=O)(=O)c2ccc3c4c(cccc24)C(=O)N(CCN2CCCC2)C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16780.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600435": {
+        "reactant_set_id": 51600435,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(S(=O)(=O)NCc4ccc(C(F)(F)F)cc4)ccc(c23)C(=O)N1CCN1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7360.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600436": {
+        "reactant_set_id": 51600436,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "Cc1ccc(CNS(=O)(=O)c2ccc3c4c(cccc24)C(=O)N(CCN2CCCC2)C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600437": {
+        "reactant_set_id": 51600437,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(S(=O)(=O)NCc4ccccc4)ccc(c23)C(=O)N1CCN1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2030.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600438": {
+        "reactant_set_id": 51600438,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(S(=O)(=O)NCc4ccc(F)cc4)ccc(c23)C(=O)N1CCN1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3950.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600439": {
+        "reactant_set_id": 51600439,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "COc1ccc(CNS(=O)(=O)c2ccc3c4c(cccc24)C(=O)N(CCN2CCCCC2)C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20090.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600440": {
+        "reactant_set_id": 51600440,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(S(=O)(=O)NCc4ccc(C(F)(F)F)cc4)ccc(c23)C(=O)N1CCN1CCCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4240.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600441": {
+        "reactant_set_id": 51600441,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "Cc1ccc(CNS(=O)(=O)c2ccc3c4c(cccc24)C(=O)N(CCN2CCCCC2)C3=O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20930.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    },
+    "51600442": {
+        "reactant_set_id": 51600442,
+        "pmid": 38657480,
+        "protein": "Serine/threonine-protein kinase PLK1",
+        "ligand": {
+            "smiles": "O=C1c2cccc3c(Sc4ccc([N+](=O)[O-])cc4)ccc(c23)C(=O)N1CCN1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant PLK1 (unknown origin) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "SPR experiments were performed using a Biacore T200 instrument (Cytiva) with running buffer (10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO) at 25 °C. Recombinant PLK1 protein in sodium acetate buffer (pH 5.0) was immobilized on the Fc2 (16000 response unit) surfaces of a sensor chip CM5 at a concentration of 20 μg/mL. Data was analyzed using Biacore analysis software and Fig.s generated using Origin 8.0. Results are the mean of two independent experiments.",
+            "Figure 3 caption": "Fig. 3. Assess of 4Bb as a PLK1 inhibitors. (A) Ribbon structure display of 4Bb binding to active sites of PLK1 PBD (PDB code: 3FVH). 4Bb is shown in green and protein residues involved in 4Bb binding are highlighted in pink. (B and C) Interaction of compounds with PLK1 protein detected by surface plasmon resonance. Determination of the kinetics and affinity of volasertib (B), 4Bb (C) binding to PLK1 protein, respectively. Plots of the equilibrium response unit responses versus concentrations of volasertib and 4Bb. Results are the mean of two independent experiments. (D) Protein abundance of PLK1 and p-PLK1 after 4Bb treatment. Lysates from A549 cells after 48 h of 4Bb treatment were detected by western blotting and quantified using imageJ. Data is expressed as mean ± SD. (n = 3) **p < 0.01 and ***p < 0.001. (E) IC50 values of 4Bb against A549 and A549/DDP cell lines. Data is expressed as mean ± SD. (n = 3) (F and G) Effect of 4Bb on cell cycle in A549 cells and A549/DDP cells. After treated with 4Bb for 48 h, PI staining was used to examine the cell cycle of A549 cells (F) and A549/DDP cells (G). Data is expressed as mean ± SD. (n = 3) (H) Morphological changes in the nucleus of A549 cells after 4Bb treatment at 48 h. Arrows indicate multinucleated cells.",
+            "Figure 3B and 3C": "Figure 3B shows the SPR sensorgram for volasertib with concentrations ranging from 0.16 to 10.00 μM. Figure 3C shows the SPR sensorgram for 4Bb with concentrations ranging from 0.16 to 10.00 μM. The equilibrium response unit (RU) is plotted against time (s). The inset in Figure 3C shows the equilibrium response unit (RU) plotted against the concentration of 4Bb (μM), with a fitted curve indicating a Kd value of approximately 0.29 μM.",
+            "Results Section - 2.4 Evaluation of 4Bb as a PLK1 inhibitor": "To verify the rationality of our design strategy, we first adopted molecular docking with the PLK1-phosphopeptide complex (PDB:3 FVH) to test the ability of 4Bb binding with PLK1. As shown in Fig. 3A, in the binding mode of 4Bb, 4-sulfonamide and amide group play an important role. The amide groups of 1,8-naphthalimide form two hydrogen bond to residue TYR445 and LEU508. And the 4-sulfonamide forms a hydrogen bond to residue GLY502. Unlike previous PBD inhibitors, the binding site of 4Bb and PLK1 is predominantly localized on a secondary linker region (L2, residue 480–502) with PB1 and PB2, thereby limiting its movement, and inhibiting PLK1 activity [39]. Additionally, the ability of 4Bb binding with PLK1 was performed with a commercially available PLK1 protein by SPR assay. As a validation test, the affinity (Kd) for volasertib (BI 6727), an oral effective PLK1 inhibitor, binding to PLK1 is about 0.90 μM (Fig. 3B), which is equivalent to the reported affinity, indicating that the PLK1 protein is in active form. The result showed that compound 4Bb was more active, with a Kd value of 0.29 μM (Fig. 3C)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant PLK1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "16000",
+                "concentration_for_immobilization": "20 μg/mL"
+            },
+            "analyte": {
+                "description": "Volasertib and 4Bb",
+                "concentration_range": "0.16 μM - 10.00 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM PBS (pH 7.2–7.4), 136 mM NaCl, 2.6 mM KCl, and 5 % DMSO",
+                "pH": 7.3,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Fc2 surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore analysis software"
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "51587783": {
+        "reactant_set_id": 51587783,
+        "pmid": 38546708,
+        "protein": "Prolyl endopeptidase",
+        "ligand": {
+            "smiles": "O=C(C1CCCC1)[C@@H]1CCCN1C(=O)[C@@H]1CCCN1C(=O)CCCc1ccccc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 520.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human wildype PREP assessed as binding constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "Reference 17: Kilpeläinen, T. P.; Pätsi, H. T.; Svarcbahs, R.; Julku, U. H.; Eteläinen, T. S.; Cui, H.; Auno, S.; Sipari, N.; Norrbacka, S.; Leino, T. O.; et al. Nonpeptidic Oxazole-Based Prolyl Oligopeptidase Ligands with Disease-Modifying Effects on α-Synuclein Mouse Models of Parkinson’s Disease. J. Med. Chem. 2023, 66 (11), 7475–7496.",
+            "Reference 32: Wallén, E. A. A.; Christiansen, J. A.; Jarho, E. M.; Forsberg, M. M.; Venäläinen, J. I.; Männistö, P. T.; Gynther, J. 4-Phenylbutanoyl-2(S)-acylpyrrolidines and 4-phenylbutanoyl-L-prolyl-2(S)-acylpyrrolidines as prolyl oligopeptidase inhibitors. Bioorg. Med. Chem. 2002, 10 (7), 2199–2206."
+        ],
+        "original_paragraph": {
+            "Materials and Methods": "The binding affinity of HUP-46, KYP-2091, and KYP-2112 to human wild-type PREP was assessed by isothermal titration calorimetry (ITC) as described previously.17,32 Briefly, the experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, U.K.) at 25 °C. The protein (10 μM) was loaded into the sample cell, and the ligand (100 μM) was loaded into the syringe. The buffer used was 20 mM Tris-HCl (pH 7.4) containing 150 mM NaCl. The stirring speed was set to 300 rpm. The titration consisted of 20 injections of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, U.S.A.) with a one-site binding model. The binding constant (Kd) was calculated from the binding isotherm. The experiments were performed in triplicate, and the results are presented as mean ± SEM."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "human wild-type PREP",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "HUP-46, KYP-2091, KYP-2112",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 150 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+{
+    "51143378": {
+        "reactant_set_id": 51143378,
+        "pmid": 29902720,
+        "protein": "Peregrin",
+        "ligand": {
+            "smiles": "Cn1c2cc(NS(=O)(=O)c3ccc4CCCCc4c3)c(cc2n(C)c(=O)c1=O)N1CCOCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2500.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal GST-tagged BRPF1 (unknown origin) expressed in Escherichia coli by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: H. Zhao, G. Piszczek, P. Schuck, SEDPHAT—a platform for global ITC analysis and global multi-method analysis of molecular interactions, Methods 76 (2015) 137–148. Reference 54: H. Zhao, G. Piszczek, P. Schuck, SEDPHAT—a platform for global ITC analysis and global multi-method analysis of molecular interactions, Methods 76 (2015) 137–148. Reference 55: C.A. Brautigam, H. Zhao, C. Vargas, S. Keller, P. Schuck, Integration and global analysis of isothermal titration calorimetry data for studying macromolecular interactions, Nat. Protoc. 11 (2016) 882–894.",
+        "original_paragraph": {
+            "Materials and Methods - ITC experiments": "ITC experiments were carried out on a Microcal iTC200 instrument (GE Healthcare) at 25° with a reference power of 10 μCal/s, while stirring at a speed of 1000 rpm. Compounds were dissolved in DMSO and were diluted into the ITC buffer at appropriate concentrations and equivalent amount of DMSO was added to protein sample. Bromodomains at a concentration of 350–400 μM were injected into cell containing 20–40 μM compounds (reverse titration). An initial control injection of 0.4 μL was applied and 150 s spacing time between injections was set during titrations. Raw data were integrated and baseline corrected using NITPIC [53] and were analyzed with SEDPHAT [54] using a single-site binding model. Thermographs were plotted with GUSSI [55]. Thermodynamic parameters were calculated according to ΔG = ΔH – TΔS, where ΔG, ΔH, and TΔS are changes in free energy, enthalpy, and entropy of binding, respectively.",
+            "Figure 5 caption": "Fig. 5. Selectivity profile of compound 21. (A) Structural comparison of BRPF1/21 (white) with apo BRPF2 PDB code 3RCW (salmon). Dashed lines emphasize van der Waals contacts with the side chain of Pro658 in BRPF1 which corresponds to Ser592 in BRPF2 (see text). (B) Structural comparison of BRPF1/21 (white) and fit BRD4(1) structure 2OSS (pink). (C) Thermodynamic characterization of interactions of 21 with BRPF1 (black) and BRPF2 (red) by ITC. Thermographs, fit of integrated data and fit residuals are shown in the top, middle and bottom panel, respectively. (D) Compound 21 was tested by means of AlphaScreen on bromodomains of BRPF1, BRPF2, BRPF3, ATAD2, BRD9, BRD4(1) and CREBBP. Error bars indicate SEM. Binding is not observed for the off-targets even at a 200 μM concentration of compound 21. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Figure 8 caption": "Fig. 8. Co-crystal structures of BRPF1 bound to 42 (A, B) and 43 (C). BRPF1/42 was crystallized in P2₁ (A) and C2 (B) space groups. The conserved water molecules and other water molecules involved in ligand binding are shown as pink and red spheres, respectively, while hydrogen bonds are shown by dashed lines. The 2Fo – Fc electron density maps are shown in blue mesh at a contour level of 1.0 sigma. (D) Structural comparison of BRPF1/42 (white) with apo BRPF2 structure 3RCW (salmon). (E) Structural comparison of BRPF1/42 (white) with apo BRD4(1) structure 2OSS (pink). (F) Thermodynamic characterization of interaction of 42 with BRPF1 (black) and BRPF2 (red) by ITC. Thermographs, fit of integrated data and fit residuals are shown in the top, middle and bottom panel, respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 3": "Table 3 Derivatives of 2,4-dimethyl-oxazole identified in the second pharmacophore search. Cpd 2D structure BROMOscan Kp (μM) AlphaScreen IC50 (μM) ITC Kp (μM) cLogP [LiPE] LE PDB code BRPF1 TRIM24 BRD4(1) BRPF1 BRD4(1) BRPF1 42 3.5 (n = 2) >50 >50 30.6 (n = 2) >200 10.9 2.13 [2.83] 0.29 50WA 6EKQ 43 >75 (n = 2) ND ND ND ND ND – – 505H a Calculated with ChemAxon. b Lipophilic efficiency is calculated as LiPE = pIC50–cLogP, according to the ITC data. c Ligand efficiency is calculated as LE = (14/HA) × pKp, according to the ITC data. ND indicates data not acquired.",
+            "Figure 5C": "The thermogram for compound 21 with BRPF1 shows a Kp of 2.7 μM. The thermogram for compound 21 with BRPF2 shows a Kp of 2.5 μM.",
+            "Figure 8F": "The thermogram for compound 42 with BRPF1 shows a Kp of 10.9 μM. The thermogram for compound 42 with BRPF2 shows a Kp of 30 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "N-terminal GST-tagged BRPF1",
+                "location": "syringe",
+                "concentration": "350-400",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 21 or compound 42",
+                "location": "cell",
+                "concentration": "20-40"
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": "Initial control injection of 0.4 μL",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51143386": {
+        "reactant_set_id": 51143386,
+        "pmid": 29902720,
+        "protein": "Peregrin",
+        "ligand": {
+            "smiles": "CC(C)Cc1ccc(cc1)S(=O)(=O)Nc1cc2n(C)c(=O)c(=O)n(C)c2cc1N1CCOCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal GST-tagged BRPF1 (unknown origin) expressed in Escherichia coli by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: H. Zhao, G. Piszczek, P. Schuck, SEDPHAT—a platform for global ITC analysis and global multi-method analysis of molecular interactions, Methods 76 (2015) 137–148. Reference 54: H. Zhao, G. Piszczek, P. Schuck, SEDPHAT—a platform for global ITC analysis and global multi-method analysis of molecular interactions, Methods 76 (2015) 137–148. Reference 55: C.A. Brautigam, H. Zhao, C. Vargas, S. Keller, P. Schuck, Integration and global analysis of isothermal titration calorimetry data for studying macromolecular interactions, Nat. Protoc. 11 (2016) 882–894.",
+        "original_paragraph": {
+            "Materials and Methods - ITC experiments": "ITC experiments were carried out on a Microcal iTC200 instrument (GE Healthcare) at 25° with a reference power of 10 μCal/s, while stirring at a speed of 1000 rpm. Compounds were dissolved in DMSO and were diluted into the ITC buffer at appropriate concentrations and equivalent amount of DMSO was added to protein sample. Bromodomains at a concentration of 350–400 μM were injected into cell containing 20–40 μM compounds (reverse titration). An initial control injection of 0.4 μL was applied and 150 s spacing time between injections was set during titrations. Raw data were integrated and baseline corrected using NITPIC [53] and were analyzed with SEDPHAT [54] using a single-site binding model. Thermographs were plotted with GUSSI [55]. Thermodynamic parameters were calculated according to ΔG = ΔH – TΔS, where ΔG, ΔH, and TΔS are changes in free energy, enthalpy, and entropy of binding, respectively.",
+            "Figure 5 caption": "Fig. 5. Selectivity profile of compound 21. (A) Structural comparison of BRPF1/21 (white) with apo BRPF2 PDB code 3RCW (salmon). Dashed lines emphasize van der Waals contacts with the side chain of Pro658 in BRPF1 which corresponds to Ser592 in BRPF2 (see text). (B) Structural comparison of BRPF1/21 (white) and fit BRD4(1) structure 2OSS (pink). (C) Thermodynamic characterization of interactions of 21 with BRPF1 (black) and BRPF2 (red) by ITC. Thermographs, fit of integrated data and fit residuals are shown in the top, middle and bottom panel, respectively. (D) Compound 21 was tested by means of AlphaScreen on bromodomains of BRPF1, BRPF2, BRPF3, ATAD2, BRD9, BRD4(1) and CREBBP. Error bars indicate SEM. Binding is not observed for the off-targets even at a 200 μM concentration of compound 21. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Figure 8 caption": "Fig. 8. Co-crystal structures of BRPF1 bound to 42 (A, B) and 43 (C). BRPF1/42 was crystallized in P2₁ (A) and C2 (B) space groups. The conserved water molecules and other water molecules involved in ligand binding are shown as pink and red spheres, respectively, while hydrogen bonds are shown by dashed lines. The 2Fo – Fc electron density maps are shown in blue mesh at a contour level of 1.0 sigma. (D) Structural comparison of BRPF1/42 (white) with apo BRPF2 structure 3RCW (salmon). (E) Structural comparison of BRPF1/42 (white) with apo BRD4(1) structure 2OSS (pink). (F) Thermodynamic characterization of interaction of 42 with BRPF1 (black) and BRPF2 (red) by ITC. Thermographs, fit of integrated data and fit residuals are shown in the top, middle and bottom panel, respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 3": "Table 3 Derivatives of 2,4-dimethyl-oxazole identified in the second pharmacophore search. Cpd 2D structure BROMOscan Kp (μM) AlphaScreen IC50 (μM) ITC Kp (μM) cLogP [LiPE] LE PDB code BRPF1 TRIM24 BRD4(1) BRPF1 BRD4(1) BRPF1 42 3.5 (n = 2) >50 >50 30.6 (n = 2) >200 10.9 2.13 [2.83] 0.29 50WA 6EKQ 43 >75 (n = 2) ND ND ND ND ND – – 505H a Calculated with ChemAxon. b Lipophilic efficiency is calculated as LiPE = pIC50–cLogP, according to the ITC data. c Ligand efficiency is calculated as LE = (14/HA) × pKp, according to the ITC data. ND indicates data not acquired.",
+            "Figure 5C": "The thermogram for compound 21 with BRPF1 shows a Kp of 2.7 μM. The thermogram for compound 21 with BRPF2 shows a Kp of 2.5 μM.",
+            "Figure 8F": "The thermogram for compound 42 with BRPF1 shows a Kp of 10.9 μM. The thermogram for compound 42 with BRPF2 shows a Kp of 30 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "N-terminal GST-tagged BRPF1",
+                "location": "syringe",
+                "concentration": "350-400",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 21 or compound 42",
+                "location": "cell",
+                "concentration": "20-40"
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": "Initial control injection of 0.4 μL",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51143413": {
+        "reactant_set_id": 51143413,
+        "pmid": 29902720,
+        "protein": "Peregrin",
+        "ligand": {
+            "smiles": "CC1CC(C)CN(Cc2csc(NC(=O)c3oc(C)nc3C)n2)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal GST-tagged BRPF1 (unknown origin) expressed in Escherichia coli by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 53: H. Zhao, G. Piszczek, P. Schuck, SEDPHAT—a platform for global ITC analysis and global multi-method analysis of molecular interactions, Methods 76 (2015) 137–148. Reference 54: H. Zhao, G. Piszczek, P. Schuck, SEDPHAT—a platform for global ITC analysis and global multi-method analysis of molecular interactions, Methods 76 (2015) 137–148. Reference 55: C.A. Brautigam, H. Zhao, C. Vargas, S. Keller, P. Schuck, Integration and global analysis of isothermal titration calorimetry data for studying macromolecular interactions, Nat. Protoc. 11 (2016) 882–894.",
+        "original_paragraph": {
+            "Materials and Methods - ITC experiments": "ITC experiments were carried out on a Microcal iTC200 instrument (GE Healthcare) at 25° with a reference power of 10 μCal/s, while stirring at a speed of 1000 rpm. Compounds were dissolved in DMSO and were diluted into the ITC buffer at appropriate concentrations and equivalent amount of DMSO was added to protein sample. Bromodomains at a concentration of 350–400 μM were injected into cell containing 20–40 μM compounds (reverse titration). An initial control injection of 0.4 μL was applied and 150 s spacing time between injections was set during titrations. Raw data were integrated and baseline corrected using NITPIC [53] and were analyzed with SEDPHAT [54] using a single-site binding model. Thermographs were plotted with GUSSI [55]. Thermodynamic parameters were calculated according to ΔG = ΔH – TΔS, where ΔG, ΔH, and TΔS are changes in free energy, enthalpy, and entropy of binding, respectively.",
+            "Figure 5 caption": "Fig. 5. Selectivity profile of compound 21. (A) Structural comparison of BRPF1/21 (white) with apo BRPF2 PDB code 3RCW (salmon). Dashed lines emphasize van der Waals contacts with the side chain of Pro658 in BRPF1 which corresponds to Ser592 in BRPF2 (see text). (B) Structural comparison of BRPF1/21 (white) and fit BRD4(1) structure 2OSS (pink). (C) Thermodynamic characterization of interactions of 21 with BRPF1 (black) and BRPF2 (red) by ITC. Thermographs, fit of integrated data and fit residuals are shown in the top, middle and bottom panel, respectively. (D) Compound 21 was tested by means of AlphaScreen on bromodomains of BRPF1, BRPF2, BRPF3, ATAD2, BRD9, BRD4(1) and CREBBP. Error bars indicate SEM. Binding is not observed for the off-targets even at a 200 μM concentration of compound 21. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Figure 8 caption": "Fig. 8. Co-crystal structures of BRPF1 bound to 42 (A, B) and 43 (C). BRPF1/42 was crystallized in P2₁ (A) and C2 (B) space groups. The conserved water molecules and other water molecules involved in ligand binding are shown as pink and red spheres, respectively, while hydrogen bonds are shown by dashed lines. The 2Fo – Fc electron density maps are shown in blue mesh at a contour level of 1.0 sigma. (D) Structural comparison of BRPF1/42 (white) with apo BRPF2 structure 3RCW (salmon). (E) Structural comparison of BRPF1/42 (white) with apo BRD4(1) structure 2OSS (pink). (F) Thermodynamic characterization of interaction of 42 with BRPF1 (black) and BRPF2 (red) by ITC. Thermographs, fit of integrated data and fit residuals are shown in the top, middle and bottom panel, respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 3": "Table 3 Derivatives of 2,4-dimethyl-oxazole identified in the second pharmacophore search. Cpd 2D structure BROMOscan Kp (μM) AlphaScreen IC50 (μM) ITC Kp (μM) cLogP [LiPE] LE PDB code BRPF1 TRIM24 BRD4(1) BRPF1 BRD4(1) BRPF1 42 3.5 (n = 2) >50 >50 30.6 (n = 2) >200 10.9 2.13 [2.83] 0.29 50WA 6EKQ 43 >75 (n = 2) ND ND ND ND ND – – 505H a Calculated with ChemAxon. b Lipophilic efficiency is calculated as LiPE = pIC50–cLogP, according to the ITC data. c Ligand efficiency is calculated as LE = (14/HA) × pKp, according to the ITC data. ND indicates data not acquired.",
+            "Figure 5C": "The thermogram for compound 21 with BRPF1 shows a Kp of 2.7 μM. The thermogram for compound 21 with BRPF2 shows a Kp of 2.5 μM.",
+            "Figure 8F": "The thermogram for compound 42 with BRPF1 shows a Kp of 10.9 μM. The thermogram for compound 42 with BRPF2 shows a Kp of 30 μM."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "N-terminal GST-tagged BRPF1",
+                "location": "syringe",
+                "concentration": "350-400",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 21 or compound 42",
+                "location": "cell",
+                "concentration": "20-40"
+            },
+            "assay_conditions": {
+                "buffer_composition": null,
+                "pH": null,
+                "temperature_c": "25",
+                "stirring_speed": "1000",
+                "reference_cell_content": null,
+                "control_method": "Initial control injection of 0.4 μL",
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

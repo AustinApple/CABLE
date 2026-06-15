@@ -1,0 +1,60 @@
+{
+    "50866287": {
+        "reactant_set_id": 50866287,
+        "pmid": 17568739,
+        "protein": "Glutamate racemase",
+        "ligand": {
+            "smiles": "CC(C)Cn1c2nn(Cc3cccc4ccccc34)c(-c3ccncc3)c2c(=O)n(C)c1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Helicobacter pylori MurI by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal VP-ITC instrument (MicroCal, Northampton, MA, USA) at 25 °C. The protein (H. pylori MurI, 100 μM) was dialysed against 20 mM Tris–HCl, pH 7.5, 100 mM NaCl, 1 mM DTT, and 0.01% Tween 20. The inhibitor (compound A) was dissolved in the same buffer. The protein was loaded into the sample cell (1.4 ml), and the inhibitor was loaded into the syringe (250 μl). The syringe was programmed to inject 20 μl of inhibitor into the protein solution in 20 injections, with 180 s between injections. The data were corrected for the heat of dilution of the inhibitor into the buffer, which was measured in a separate experiment. The data were fitted to a one-site binding model using Origin software (MicroCal).",
+            "Figure 2 caption": "Figure 2 | Inhibitor characterization. a, Structure of the pyrazolopyrimidinedione inhibitor with in vitro activities. IC50, half-maximal inhibitory concentration. MIC, minimal inhibitory concentration to prevent bacterial growth. b, Kinetic data of enzymatic turnover inhibition were collected, simultaneously varying d-glutamate (2.5–50 μM) and compound A (0 μM (black symbols) to 3.5 μM (white open symbols), serial dilutions), and globally fitted to several models incorporating substrate inhibition. The best fit was found for the scheme shown, with inhibitor (I) binding to both the productive enzyme–substrate complex (E(D-Glu)) and the substrate-inhibited form of the enzyme (F(D-Glu)). RFU, relative fluorescence units. c, Two-dimensional TROSY 1H,15N NMR spectrum of 0.3 mM H. pylori MurI with 1.8 mM d-glutamate (black) and with 1.8 mM d-glutamate and 0.4 mM compound A (red). Spectral differences indicate compound binding. Backbone peak assignments to selected amino acids are indicated by residue primary sequence number. Tryptophan indole ring resonances are denoted for clarity."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "H. pylori MurI",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": "1400"
+            },
+            "ligand": {
+                "name": "compound A",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris–HCl, 100 mM NaCl, 1 mM DTT, 0.01% Tween 20",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer; heats of dilution subtracted",
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": "20",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

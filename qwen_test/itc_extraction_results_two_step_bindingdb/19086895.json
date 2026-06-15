@@ -1,0 +1,182 @@
+{
+    "50876625": {
+        "reactant_set_id": 50876625,
+        "pmid": 19086895,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "CC(C)=CC[C@@H](C[C@@]12C[C@@H](CC=C(C)C)C(C)(C)[C@@](CC=C(C)C)(C(=O)C(C(=O)c3ccc(O)c(O)c3)C1=O)C2=O)C(C)=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HAT p300 catalytic domain by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC) experiments were carried out in a VP-ITC system (Microcal LLC) at 20 °C. Samples were centrifuged and degassed prior to titration. Titration of HAT inhibitors (HATi) against the protein (p300HD) was carried out by injecting 30–35 μM HATi in 20 mM Tris-HCl of pH 7.5, 0.2 mM EDTA, and 100 mM KCl buffer against 3 μM p300HD. A 2 min interval was allowed between injections for equilibration, sufficient for the return of the heat signal to baseline. A total of 35 injections were carried out to ensure complete titration. The protein concentration was chosen to achieve sufficiently high heat signals with a minimum enthalpy of dilution. To minimize the error associated with diffusion from the syringe during baseline equilibration, the first injection was only 1 μL and the associated small heat change was not considered for data analysis. Blank experiments involving the titration of HATi against the buffer and the buffer against buffer were carried out and used for subtraction of the background heat. The corrected heat change was plotted against molar ratio of the titrated products and analyzed using the manufacturer’s software which yielded the stoichiometry n (in terms of number of molecule of HATi/protein) and equilibrium constant (Ka). From the relationship ΔG° = –RT ln Ka and the Gibbs–Helmholtz equation, the free energy of binding and the entropy of association (ΔS°) were calculated.",
+            "Figure 4 caption": "Figure 4. Calorimetric titration of different HAT inhibitors with p300HD. Parts a, b, and c show the integrated heat change for the corresponding injections along with one set of sites-binding model fit of garcinol, IG, and 1 with p300HD at 20 °C, respectively.",
+            "Table 2": "Table 2. Thermodynamic Parameters for the Interaction of HAT Inhibitors with p300HD system N Ka (μM) ΔG (kcal/mol) ΔH (kcal/mol) ΔS (eu) HAT + garcinol 1.87 ± 0.06 6.6 ± 0.2 –7.03 ± 0.15 –21.1 ± 0.89 –48.2 ± 1.25 HAT + IG 2.1 ± 0.09 5.9 ± 0.1 –7.8 ± 0.09 –23 ± 0.95 –57.9 ± 1.65 HAT + 1 1.08 ± 0.08 9.1 ± 0.2 –6.3 ± 0.10 –18.2 ± 0.98 –37.7 ± 1.23",
+            "Results section - Isothermal Titration Calorimetry (ITC) Studies of the HAT Inhibitors with p300HD": "In order to have insights regarding the molecular nature of the interaction between the inhibitors and the protein, isothermal titration calorimetry was performed. Representative binding isotherms for all three are shown in Figure 4, and the results are summarized in Table 2. Dissociation constants agree to a reasonable degree with the value obtained from the fluorescence method. In addition to the associated thermodynamic parameters, isothermal titration calorimetry indicated an important difference in the binding modes for garcinol, IG, and 1. It is clear from Table 2 that only one molecule of 1 binds to the p300HD. In contrast, two molecules of garcinol and IG bind to the protein. These results are consistent with the stoichiometry obtained from the fluorescence titration curve obtained from the progressive addition of the ligands to the protein (Figure 3b). The affinity constant values could be grouped similarly into two classes. Garcinol and IG have relatively higher affinity than 1. All interactions are enthalpy driven. It implies that the complex formation takes place because of enthalpy driven noncovalent interactions like H-bonding and/or stacking interactions. This is partially compensated by a negative entropy change. The unusually high negative value of ΔH in the range 18–22 kcal/mol for garcinol and IG (Table 2) could be ascribed to the following parsing of enthalpy: ΔHtotal = ΔHsite1 + ΔHsite2, the subscripts referring to the enthalpy change associated with the first and second binding site, respectively. A similar explanation could also account for the high negative entropy change. In the reported crystal structure of the complex of PCAF HAT domain and acetyl-CoA, multiple hydrogen bonds have been observed to stabilize the association. Large values of negative entropy changes might originate from the ordering of water molecules at the protein–ligand binding interface. As reported in the crystal structure of a ternary complex, the HAT domain of tetrahymanal GCN5 (tGCN5) bound with its physiologically relevant ligands coenzyme A (Co A) and a histone H3 peptide, water mediated hydrogen bonds are a potential source of localization of water molecule. Conformational change of the small ligands, another potential source of negative entropy, could also be possible. In terms of the enthalpy and entropy changes, 1 exhibits a difference from garcinol and IG. The lower value of enthalpy change in this case could be ascribed to the absence of two binding sites. Relatively lower value of negative entropy change also characterizes the 1 and protein association."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "p300HD",
+                "location": "cell",
+                "concentration": "3",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "HAT inhibitors (HATi)",
+                "location": "syringe",
+                "concentration": "30-35"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 0.2 mM EDTA, 100 mM KCl",
+                "pH": "7.5",
+                "temperature_c": "20",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Blank experiments involving the titration of HATi against the buffer and the buffer against buffer were carried out and used for subtraction of the background heat.",
+                "injection_parameters": {
+                    "first_volume": "1",
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "35"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50876626": {
+        "reactant_set_id": 50876626,
+        "pmid": 19086895,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "COc1ccc(cc1O)C(=O)C1=C2OC(C)(C)[C@@H](CC=C(C)C)C[C@@]22C[C@@H](CC=C(C)C)C(C)(C)[C@](CC=C(C)C)(C2)C1=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 9100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HAT p300 catalytic domain by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC) experiments were carried out in a VP-ITC system (Microcal LLC) at 20 °C. Samples were centrifuged and degassed prior to titration. Titration of HAT inhibitors (HATi) against the protein (p300HD) was carried out by injecting 30–35 μM HATi in 20 mM Tris-HCl of pH 7.5, 0.2 mM EDTA, and 100 mM KCl buffer against 3 μM p300HD. A 2 min interval was allowed between injections for equilibration, sufficient for the return of the heat signal to baseline. A total of 35 injections were carried out to ensure complete titration. The protein concentration was chosen to achieve sufficiently high heat signals with a minimum enthalpy of dilution. To minimize the error associated with diffusion from the syringe during baseline equilibration, the first injection was only 1 μL and the associated small heat change was not considered for data analysis. Blank experiments involving the titration of HATi against the buffer and the buffer against buffer were carried out and used for subtraction of the background heat. The corrected heat change was plotted against molar ratio of the titrated products and analyzed using the manufacturer’s software which yielded the stoichiometry n (in terms of number of molecule of HATi/protein) and equilibrium constant (Ka). From the relationship ΔG° = –RT ln Ka and the Gibbs–Helmholtz equation, the free energy of binding and the entropy of association (ΔS°) were calculated.",
+            "Figure 4 caption": "Figure 4. Calorimetric titration of different HAT inhibitors with p300HD. Parts a, b, and c show the integrated heat change for the corresponding injections along with one set of sites-binding model fit of garcinol, IG, and 1 with p300HD at 20 °C, respectively.",
+            "Table 2": "Table 2. Thermodynamic Parameters for the Interaction of HAT Inhibitors with p300HD system N Ka (μM) ΔG (kcal/mol) ΔH (kcal/mol) ΔS (eu) HAT + garcinol 1.87 ± 0.06 6.6 ± 0.2 –7.03 ± 0.15 –21.1 ± 0.89 –48.2 ± 1.25 HAT + IG 2.1 ± 0.09 5.9 ± 0.1 –7.8 ± 0.09 –23 ± 0.95 –57.9 ± 1.65 HAT + 1 1.08 ± 0.08 9.1 ± 0.2 –6.3 ± 0.10 –18.2 ± 0.98 –37.7 ± 1.23",
+            "Results section - Isothermal Titration Calorimetry (ITC) Studies of the HAT Inhibitors with p300HD": "In order to have insights regarding the molecular nature of the interaction between the inhibitors and the protein, isothermal titration calorimetry was performed. Representative binding isotherms for all three are shown in Figure 4, and the results are summarized in Table 2. Dissociation constants agree to a reasonable degree with the value obtained from the fluorescence method. In addition to the associated thermodynamic parameters, isothermal titration calorimetry indicated an important difference in the binding modes for garcinol, IG, and 1. It is clear from Table 2 that only one molecule of 1 binds to the p300HD. In contrast, two molecules of garcinol and IG bind to the protein. These results are consistent with the stoichiometry obtained from the fluorescence titration curve obtained from the progressive addition of the ligands to the protein (Figure 3b). The affinity constant values could be grouped similarly into two classes. Garcinol and IG have relatively higher affinity than 1. All interactions are enthalpy driven. It implies that the complex formation takes place because of enthalpy driven noncovalent interactions like H-bonding and/or stacking interactions. This is partially compensated by a negative entropy change. The unusually high negative value of ΔH in the range 18–22 kcal/mol for garcinol and IG (Table 2) could be ascribed to the following parsing of enthalpy: ΔHtotal = ΔHsite1 + ΔHsite2, the subscripts referring to the enthalpy change associated with the first and second binding site, respectively. A similar explanation could also account for the high negative entropy change. In the reported crystal structure of the complex of PCAF HAT domain and acetyl-CoA, multiple hydrogen bonds have been observed to stabilize the association. Large values of negative entropy changes might originate from the ordering of water molecules at the protein–ligand binding interface. As reported in the crystal structure of a ternary complex, the HAT domain of tetrahymanal GCN5 (tGCN5) bound with its physiologically relevant ligands coenzyme A (Co A) and a histone H3 peptide, water mediated hydrogen bonds are a potential source of localization of water molecule. Conformational change of the small ligands, another potential source of negative entropy, could also be possible. In terms of the enthalpy and entropy changes, 1 exhibits a difference from garcinol and IG. The lower value of enthalpy change in this case could be ascribed to the absence of two binding sites. Relatively lower value of negative entropy change also characterizes the 1 and protein association."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "p300HD",
+                "location": "cell",
+                "concentration": "3",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "HAT inhibitors (HATi)",
+                "location": "syringe",
+                "concentration": "30-35"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 0.2 mM EDTA, 100 mM KCl",
+                "pH": "7.5",
+                "temperature_c": "20",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Blank experiments involving the titration of HATi against the buffer and the buffer against buffer were carried out and used for subtraction of the background heat.",
+                "injection_parameters": {
+                    "first_volume": "1",
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "35"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "50876627": {
+        "reactant_set_id": 50876627,
+        "pmid": 19086895,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "CC(C)=CC[C@H]1C[C@@]23C[C@@H](CC=C(C)C)C(C)(C)[C@@](CC=C(C)C)(C(=O)C(C(=O)c4ccc(O)c(O)c4)=C2OC1(C)C)C3=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HAT p300 catalytic domain by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC) experiments were carried out in a VP-ITC system (Microcal LLC) at 20 °C. Samples were centrifuged and degassed prior to titration. Titration of HAT inhibitors (HATi) against the protein (p300HD) was carried out by injecting 30–35 μM HATi in 20 mM Tris-HCl of pH 7.5, 0.2 mM EDTA, and 100 mM KCl buffer against 3 μM p300HD. A 2 min interval was allowed between injections for equilibration, sufficient for the return of the heat signal to baseline. A total of 35 injections were carried out to ensure complete titration. The protein concentration was chosen to achieve sufficiently high heat signals with a minimum enthalpy of dilution. To minimize the error associated with diffusion from the syringe during baseline equilibration, the first injection was only 1 μL and the associated small heat change was not considered for data analysis. Blank experiments involving the titration of HATi against the buffer and the buffer against buffer were carried out and used for subtraction of the background heat. The corrected heat change was plotted against molar ratio of the titrated products and analyzed using the manufacturer’s software which yielded the stoichiometry n (in terms of number of molecule of HATi/protein) and equilibrium constant (Ka). From the relationship ΔG° = –RT ln Ka and the Gibbs–Helmholtz equation, the free energy of binding and the entropy of association (ΔS°) were calculated.",
+            "Figure 4 caption": "Figure 4. Calorimetric titration of different HAT inhibitors with p300HD. Parts a, b, and c show the integrated heat change for the corresponding injections along with one set of sites-binding model fit of garcinol, IG, and 1 with p300HD at 20 °C, respectively.",
+            "Table 2": "Table 2. Thermodynamic Parameters for the Interaction of HAT Inhibitors with p300HD system N Ka (μM) ΔG (kcal/mol) ΔH (kcal/mol) ΔS (eu) HAT + garcinol 1.87 ± 0.06 6.6 ± 0.2 –7.03 ± 0.15 –21.1 ± 0.89 –48.2 ± 1.25 HAT + IG 2.1 ± 0.09 5.9 ± 0.1 –7.8 ± 0.09 –23 ± 0.95 –57.9 ± 1.65 HAT + 1 1.08 ± 0.08 9.1 ± 0.2 –6.3 ± 0.10 –18.2 ± 0.98 –37.7 ± 1.23",
+            "Results section - Isothermal Titration Calorimetry (ITC) Studies of the HAT Inhibitors with p300HD": "In order to have insights regarding the molecular nature of the interaction between the inhibitors and the protein, isothermal titration calorimetry was performed. Representative binding isotherms for all three are shown in Figure 4, and the results are summarized in Table 2. Dissociation constants agree to a reasonable degree with the value obtained from the fluorescence method. In addition to the associated thermodynamic parameters, isothermal titration calorimetry indicated an important difference in the binding modes for garcinol, IG, and 1. It is clear from Table 2 that only one molecule of 1 binds to the p300HD. In contrast, two molecules of garcinol and IG bind to the protein. These results are consistent with the stoichiometry obtained from the fluorescence titration curve obtained from the progressive addition of the ligands to the protein (Figure 3b). The affinity constant values could be grouped similarly into two classes. Garcinol and IG have relatively higher affinity than 1. All interactions are enthalpy driven. It implies that the complex formation takes place because of enthalpy driven noncovalent interactions like H-bonding and/or stacking interactions. This is partially compensated by a negative entropy change. The unusually high negative value of ΔH in the range 18–22 kcal/mol for garcinol and IG (Table 2) could be ascribed to the following parsing of enthalpy: ΔHtotal = ΔHsite1 + ΔHsite2, the subscripts referring to the enthalpy change associated with the first and second binding site, respectively. A similar explanation could also account for the high negative entropy change. In the reported crystal structure of the complex of PCAF HAT domain and acetyl-CoA, multiple hydrogen bonds have been observed to stabilize the association. Large values of negative entropy changes might originate from the ordering of water molecules at the protein–ligand binding interface. As reported in the crystal structure of a ternary complex, the HAT domain of tetrahymanal GCN5 (tGCN5) bound with its physiologically relevant ligands coenzyme A (Co A) and a histone H3 peptide, water mediated hydrogen bonds are a potential source of localization of water molecule. Conformational change of the small ligands, another potential source of negative entropy, could also be possible. In terms of the enthalpy and entropy changes, 1 exhibits a difference from garcinol and IG. The lower value of enthalpy change in this case could be ascribed to the absence of two binding sites. Relatively lower value of negative entropy change also characterizes the 1 and protein association."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "p300HD",
+                "location": "cell",
+                "concentration": "3",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "HAT inhibitors (HATi)",
+                "location": "syringe",
+                "concentration": "30-35"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM Tris-HCl, 0.2 mM EDTA, 100 mM KCl",
+                "pH": "7.5",
+                "temperature_c": "20",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Blank experiments involving the titration of HATi against the buffer and the buffer against buffer were carried out and used for subtraction of the background heat.",
+                "injection_parameters": {
+                    "first_volume": "1",
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "35"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

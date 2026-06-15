@@ -1,0 +1,66 @@
+{
+    "51615288": {
+        "reactant_set_id": 51615288,
+        "pmid": 37651874,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "NS(=O)(=O)c1ccc(-n2nc(-c3ccc(C(F)(F)F)cc3O)nc2-c2ccccc2O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16470.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CM5 chip immobilized KEAP1 Kelch domain (unknown origin) assessed as dissociation equilibrium constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR)": "The Keap1 Kelch fragment was covalently bounded to the CM5 chip using coupling; the amines of the side chains of Keap1 reacted with the carbonyl group on dextran. We used an immobilizing buffer NBD (10 mg/mL, 1:20, pH 5.0) for immobilizing 1 mg/mL of Keap1 Kelch fragment protein. The SPR assay was performed at 25 °C on a Biacore instrument. The response values of the two channels Ch1 and Ch2 of the immobilized Keap1 protein were 4935.1 and 4929.3 RU (Resonance Units), respectively. Using PBS with 5% DMSO as a running buffer, we serially diluted the compounds six times by halving the concentration each time. The flow rate over the immobilized Keap1 protein surface was 30 μL/min. We analyzed the data using the instrument software.",
+            "Results - Interaction of compound 9 with the Keap1 protein": "We directly immobilized the Kelch domain on a CM5 chip, and the maximum immobilization response reached ~5000 RU. We prepared six separate solutions of the tested compounds (20, 10, 5, 2.5, 1.25, and 0.625 μM) and passed them through the chip successively. Fig. 8 shows the SPR results. The Kelch domain fragment has a certain interaction with compound 9, and the curve was fitted according to the 1:1 kinetic interaction model; the dissociation equilibrium constant KD value was 16.47 μM.",
+            "Figure 8 caption": "SPR sensorgrams of compound 9 interacting with immobilized Keap1 Kelch domain. Compound 24 were tested over immobilized Kelch domain. Compounds were evaluated in 2-fold serial dilutions (1.25 μM, 2.5 μM, 5 μM, 10 μM, 20 μM). The data was fitted to 1:1 interaction model and the KD was calculated."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore"
+            },
+            "immobilization": {
+                "ligand_name": "Keap1 Kelch fragment",
+                "strategy": "Amine coupling",
+                "density_ru": "4935.1",
+                "concentration_for_immobilization": "1 mg/mL"
+            },
+            "analyte": {
+                "description": "Compound 9",
+                "concentration_range": "0.625 μM - 20 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS with 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Ch2 (second channel)",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Instrument software"
+            }
+        }
+    }
+}

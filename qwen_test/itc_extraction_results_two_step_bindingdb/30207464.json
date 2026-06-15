@@ -1,0 +1,59 @@
+{
+    "51225401": {
+        "reactant_set_id": 51225401,
+        "pmid": 30207464,
+        "protein": "Tyrosine-protein phosphatase non-receptor type 5",
+        "ligand": {
+            "smiles": "NC(=N)Nc1cc(cc(c1)C(F)(F)F)C1CCNCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 800000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human STEP PTP domain (281 to 563 residues) expressed in Escherichia coli BL21(DE3) by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC (Isothermal Titration Calorimetry) Analysis": "Experiments using isothermal titration calorimetry were conducted on a MicroCal auto iTC200 instrument with hSTEP PTP domain that had been passed through a PD-10 desalting column (GE Healthcare) equilibrated with 10 mM HEPES, 200 mM NaCl, and 0.5 mM TCEP, pH 7.5. Complete saturation of 200 μM of hSTEP was typically achieved by injecting 18 × 2 μL aliquots of 2 mM BI-0314 at 25 °C. The thermodynamic binding parameters were extracted by nonlinear regression analysis of the binding isotherms (MicroCal Origin software, version 7.0). A single-site binding model was applied yielding the binding enthalpy (ΔH), stoichiometry (n), entropy (ΔS), and association constant (Ka). Data are mean values from three independent titrations with calculated standard deviation."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "hSTEP PTP domain",
+                "location": "cell",
+                "concentration": "200",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "BI-0314",
+                "location": "syringe",
+                "concentration": "2000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM HEPES, 200 mM NaCl, 0.5 mM TCEP",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "18"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

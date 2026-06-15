@@ -1,0 +1,327 @@
+{
+    "51541075": {
+        "reactant_set_id": 51541075,
+        "pmid": 36446206,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "C[C@H]1C(=O)O[C@H]2[C@@H](Cl)C(=C)[C@H]3O[C@@]12[C@@H](OC(C)=O)[C@H]1[C@@]2(CO2)CC[C@H](OC(C)=O)[C@]1(C)[C@@H](OC(C)=O)[C@@H]3OC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human Keap1 assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) assay": "To estimate whether praelolide and its analogues bound to KEAP1, SPR assay was performed using the Biacore TM T200 instrument (GE Healthcare). Recombinant human KEAP1 fusion protein (Proteintech) was immobilized on the surface of a CM5 chip (GE Healthcare) via an EDC/NHS-mediated crosslinking reaction. Praelolide was 2-fold diluted in PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) at concentrations from 0.2 to 50 μM continuously flowing over the sensor chip surface. For binding studies, the parameters were set as follows: temperature, 25 °C; flow rate, 30 μL/min contact time, 60 s; dissociation time, 150 s. A steady-state affinity model was used to perform affinity curve fitting and calculate the disassociation constant Kd via Biacore T200 Evaluation Software (Version 1.0).",
+            "Figure 10 caption": "Fig. 10. Praelolide interfered the interaction between Keap1 and Nrf2 by binding to Keap1 protein. (A) SPR assay for interaction of praelolide with Keap1 protein. Keap1 recombinant proteins were immobilized in CM5 chip with praelolide flowing through the chip at the concentration of 0.2, 1.56, 3.12, 6.25, 12.5, 25, 50 μM. Equilibrium dissociation constant (Kd) was calculated with Biacore T200 Evaluation Software. (B) RAW264.7 cell lysates were treated with praelolide or vehicle (0.1% DMSO) and followed by cellular thermal shift assay (n = 3). (C) Docking results of praelolide interacted with the kelch domain of Keap1 protein (PDB ID:5FNQ) and enlarged image. (D) 2D binding mode of praelolide with residues of Keap1. Hydrogen bond being depicted as pink arrow. (E) BLI assay for Nrf2-Keap1 interaction treated with 0, 20, 50, 100 μM praelolide. (F) Co-immunoprecipitation (Co-IP) was performed with anti-Keap1 antibody and then protein G beads followed by western blotting with indicated antibodies. The relative protein expression was normalized to control group which contained RANKL (n = 3). Data represented the mean ± SD. *p < 0.05, **p < 0.01 versus cells treated with RANKL (Control group).",
+            "Figure 10A sensorgram": "The sensorgram in Figure 10A shows SPR Response (R.U.) on the y-axis and Time (sec) on the x-axis. The x-axis ranges from -20 to 80 seconds. The y-axis ranges from 0 to 8 R.U. The legend indicates different concentrations of praelolide: 0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, and 50 μM. The plot shows the association phase (0-60 sec) and dissociation phase (60-80 sec) for each concentration. The equilibrium dissociation constant (Kd) is labeled as 8.4 μM.",
+            "Figure 10A legend": "0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, 50 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human KEAP1 fusion protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Praelolide",
+                "concentration_range": "0.2 to 50 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5",
+                "pH": 4.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (Version 1.0)"
+            }
+        }
+    },
+    "51541076": {
+        "reactant_set_id": 51541076,
+        "pmid": 36446206,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CCOC/C1=C/[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@@]3(CO3)[C@@H](C[C@H](OC(=O)CC(C)C)[C@]2(C)[C@@H](OC(C)=O)/C=C\\1)OC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 100000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human Keap1 assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) assay": "To estimate whether praelolide and its analogues bound to KEAP1, SPR assay was performed using the Biacore TM T200 instrument (GE Healthcare). Recombinant human KEAP1 fusion protein (Proteintech) was immobilized on the surface of a CM5 chip (GE Healthcare) via an EDC/NHS-mediated crosslinking reaction. Praelolide was 2-fold diluted in PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) at concentrations from 0.2 to 50 μM continuously flowing over the sensor chip surface. For binding studies, the parameters were set as follows: temperature, 25 °C; flow rate, 30 μL/min contact time, 60 s; dissociation time, 150 s. A steady-state affinity model was used to perform affinity curve fitting and calculate the disassociation constant Kd via Biacore T200 Evaluation Software (Version 1.0).",
+            "Figure 10 caption": "Fig. 10. Praelolide interfered the interaction between Keap1 and Nrf2 by binding to Keap1 protein. (A) SPR assay for interaction of praelolide with Keap1 protein. Keap1 recombinant proteins were immobilized in CM5 chip with praelolide flowing through the chip at the concentration of 0.2, 1.56, 3.12, 6.25, 12.5, 25, 50 μM. Equilibrium dissociation constant (Kd) was calculated with Biacore T200 Evaluation Software. (B) RAW264.7 cell lysates were treated with praelolide or vehicle (0.1% DMSO) and followed by cellular thermal shift assay (n = 3). (C) Docking results of praelolide interacted with the kelch domain of Keap1 protein (PDB ID:5FNQ) and enlarged image. (D) 2D binding mode of praelolide with residues of Keap1. Hydrogen bond being depicted as pink arrow. (E) BLI assay for Nrf2-Keap1 interaction treated with 0, 20, 50, 100 μM praelolide. (F) Co-immunoprecipitation (Co-IP) was performed with anti-Keap1 antibody and then protein G beads followed by western blotting with indicated antibodies. The relative protein expression was normalized to control group which contained RANKL (n = 3). Data represented the mean ± SD. *p < 0.05, **p < 0.01 versus cells treated with RANKL (Control group).",
+            "Figure 10A sensorgram": "The sensorgram in Figure 10A shows SPR Response (R.U.) on the y-axis and Time (sec) on the x-axis. The x-axis ranges from -20 to 80 seconds. The y-axis ranges from 0 to 8 R.U. The legend indicates different concentrations of praelolide: 0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, and 50 μM. The plot shows the association phase (0-60 sec) and dissociation phase (60-80 sec) for each concentration. The equilibrium dissociation constant (Kd) is labeled as 8.4 μM.",
+            "Figure 10A legend": "0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, 50 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human KEAP1 fusion protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Praelolide",
+                "concentration_range": "0.2 to 50 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5",
+                "pH": 4.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (Version 1.0)"
+            }
+        }
+    },
+    "51541077": {
+        "reactant_set_id": 51541077,
+        "pmid": 36446206,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CCOC/C1=C/[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@@]3(CO3)[C@@H](C[C@H](OC(C)=O)[C@]2(C)[C@@H](OC(C)=O)/C=C\\1)OC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6200.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human Keap1 assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) assay": "To estimate whether praelolide and its analogues bound to KEAP1, SPR assay was performed using the Biacore TM T200 instrument (GE Healthcare). Recombinant human KEAP1 fusion protein (Proteintech) was immobilized on the surface of a CM5 chip (GE Healthcare) via an EDC/NHS-mediated crosslinking reaction. Praelolide was 2-fold diluted in PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) at concentrations from 0.2 to 50 μM continuously flowing over the sensor chip surface. For binding studies, the parameters were set as follows: temperature, 25 °C; flow rate, 30 μL/min contact time, 60 s; dissociation time, 150 s. A steady-state affinity model was used to perform affinity curve fitting and calculate the disassociation constant Kd via Biacore T200 Evaluation Software (Version 1.0).",
+            "Figure 10 caption": "Fig. 10. Praelolide interfered the interaction between Keap1 and Nrf2 by binding to Keap1 protein. (A) SPR assay for interaction of praelolide with Keap1 protein. Keap1 recombinant proteins were immobilized in CM5 chip with praelolide flowing through the chip at the concentration of 0.2, 1.56, 3.12, 6.25, 12.5, 25, 50 μM. Equilibrium dissociation constant (Kd) was calculated with Biacore T200 Evaluation Software. (B) RAW264.7 cell lysates were treated with praelolide or vehicle (0.1% DMSO) and followed by cellular thermal shift assay (n = 3). (C) Docking results of praelolide interacted with the kelch domain of Keap1 protein (PDB ID:5FNQ) and enlarged image. (D) 2D binding mode of praelolide with residues of Keap1. Hydrogen bond being depicted as pink arrow. (E) BLI assay for Nrf2-Keap1 interaction treated with 0, 20, 50, 100 μM praelolide. (F) Co-immunoprecipitation (Co-IP) was performed with anti-Keap1 antibody and then protein G beads followed by western blotting with indicated antibodies. The relative protein expression was normalized to control group which contained RANKL (n = 3). Data represented the mean ± SD. *p < 0.05, **p < 0.01 versus cells treated with RANKL (Control group).",
+            "Figure 10A sensorgram": "The sensorgram in Figure 10A shows SPR Response (R.U.) on the y-axis and Time (sec) on the x-axis. The x-axis ranges from -20 to 80 seconds. The y-axis ranges from 0 to 8 R.U. The legend indicates different concentrations of praelolide: 0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, and 50 μM. The plot shows the association phase (0-60 sec) and dissociation phase (60-80 sec) for each concentration. The equilibrium dissociation constant (Kd) is labeled as 8.4 μM.",
+            "Figure 10A legend": "0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, 50 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human KEAP1 fusion protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Praelolide",
+                "concentration_range": "0.2 to 50 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5",
+                "pH": 4.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (Version 1.0)"
+            }
+        }
+    },
+    "51541078": {
+        "reactant_set_id": 51541078,
+        "pmid": 36446206,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CC(C)CC(=O)OCC(=O)O[C@H]1\\C=C/C(/CO)=C\\[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@@](O)(CO)CC[C@H](OC(C)=O)[C@]12C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 100000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human Keap1 assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) assay": "To estimate whether praelolide and its analogues bound to KEAP1, SPR assay was performed using the Biacore TM T200 instrument (GE Healthcare). Recombinant human KEAP1 fusion protein (Proteintech) was immobilized on the surface of a CM5 chip (GE Healthcare) via an EDC/NHS-mediated crosslinking reaction. Praelolide was 2-fold diluted in PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) at concentrations from 0.2 to 50 μM continuously flowing over the sensor chip surface. For binding studies, the parameters were set as follows: temperature, 25 °C; flow rate, 30 μL/min contact time, 60 s; dissociation time, 150 s. A steady-state affinity model was used to perform affinity curve fitting and calculate the disassociation constant Kd via Biacore T200 Evaluation Software (Version 1.0).",
+            "Figure 10 caption": "Fig. 10. Praelolide interfered the interaction between Keap1 and Nrf2 by binding to Keap1 protein. (A) SPR assay for interaction of praelolide with Keap1 protein. Keap1 recombinant proteins were immobilized in CM5 chip with praelolide flowing through the chip at the concentration of 0.2, 1.56, 3.12, 6.25, 12.5, 25, 50 μM. Equilibrium dissociation constant (Kd) was calculated with Biacore T200 Evaluation Software. (B) RAW264.7 cell lysates were treated with praelolide or vehicle (0.1% DMSO) and followed by cellular thermal shift assay (n = 3). (C) Docking results of praelolide interacted with the kelch domain of Keap1 protein (PDB ID:5FNQ) and enlarged image. (D) 2D binding mode of praelolide with residues of Keap1. Hydrogen bond being depicted as pink arrow. (E) BLI assay for Nrf2-Keap1 interaction treated with 0, 20, 50, 100 μM praelolide. (F) Co-immunoprecipitation (Co-IP) was performed with anti-Keap1 antibody and then protein G beads followed by western blotting with indicated antibodies. The relative protein expression was normalized to control group which contained RANKL (n = 3). Data represented the mean ± SD. *p < 0.05, **p < 0.01 versus cells treated with RANKL (Control group).",
+            "Figure 10A sensorgram": "The sensorgram in Figure 10A shows SPR Response (R.U.) on the y-axis and Time (sec) on the x-axis. The x-axis ranges from -20 to 80 seconds. The y-axis ranges from 0 to 8 R.U. The legend indicates different concentrations of praelolide: 0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, and 50 μM. The plot shows the association phase (0-60 sec) and dissociation phase (60-80 sec) for each concentration. The equilibrium dissociation constant (Kd) is labeled as 8.4 μM.",
+            "Figure 10A legend": "0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, 50 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human KEAP1 fusion protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Praelolide",
+                "concentration_range": "0.2 to 50 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5",
+                "pH": 4.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (Version 1.0)"
+            }
+        }
+    },
+    "51541079": {
+        "reactant_set_id": 51541079,
+        "pmid": 36446206,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "C[C@H]1C(=O)O[C@H]2\\C=C(\\CO)/C=C\\[C@H](OC(C)=O)[C@@]3(C)[C@H](CC[C@](O)(CO)[C@@H]3[C@H](OC(C)=O)[C@]12O)OC(C)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human Keap1 assessed as equilibrium dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface plasmon resonance (SPR) assay": "To estimate whether praelolide and its analogues bound to KEAP1, SPR assay was performed using the Biacore TM T200 instrument (GE Healthcare). Recombinant human KEAP1 fusion protein (Proteintech) was immobilized on the surface of a CM5 chip (GE Healthcare) via an EDC/NHS-mediated crosslinking reaction. Praelolide was 2-fold diluted in PBS-P (10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5) at concentrations from 0.2 to 50 μM continuously flowing over the sensor chip surface. For binding studies, the parameters were set as follows: temperature, 25 °C; flow rate, 30 μL/min contact time, 60 s; dissociation time, 150 s. A steady-state affinity model was used to perform affinity curve fitting and calculate the disassociation constant Kd via Biacore T200 Evaluation Software (Version 1.0).",
+            "Figure 10 caption": "Fig. 10. Praelolide interfered the interaction between Keap1 and Nrf2 by binding to Keap1 protein. (A) SPR assay for interaction of praelolide with Keap1 protein. Keap1 recombinant proteins were immobilized in CM5 chip with praelolide flowing through the chip at the concentration of 0.2, 1.56, 3.12, 6.25, 12.5, 25, 50 μM. Equilibrium dissociation constant (Kd) was calculated with Biacore T200 Evaluation Software. (B) RAW264.7 cell lysates were treated with praelolide or vehicle (0.1% DMSO) and followed by cellular thermal shift assay (n = 3). (C) Docking results of praelolide interacted with the kelch domain of Keap1 protein (PDB ID:5FNQ) and enlarged image. (D) 2D binding mode of praelolide with residues of Keap1. Hydrogen bond being depicted as pink arrow. (E) BLI assay for Nrf2-Keap1 interaction treated with 0, 20, 50, 100 μM praelolide. (F) Co-immunoprecipitation (Co-IP) was performed with anti-Keap1 antibody and then protein G beads followed by western blotting with indicated antibodies. The relative protein expression was normalized to control group which contained RANKL (n = 3). Data represented the mean ± SD. *p < 0.05, **p < 0.01 versus cells treated with RANKL (Control group).",
+            "Figure 10A sensorgram": "The sensorgram in Figure 10A shows SPR Response (R.U.) on the y-axis and Time (sec) on the x-axis. The x-axis ranges from -20 to 80 seconds. The y-axis ranges from 0 to 8 R.U. The legend indicates different concentrations of praelolide: 0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, and 50 μM. The plot shows the association phase (0-60 sec) and dissociation phase (60-80 sec) for each concentration. The equilibrium dissociation constant (Kd) is labeled as 8.4 μM.",
+            "Figure 10A legend": "0.2 μM, 1.56 μM, 3.12 μM, 6.25 μM, 12.5 μM, 25 μM, 50 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human KEAP1 fusion protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Praelolide",
+                "concentration_range": "0.2 to 50 μM (2-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM phosphate buffer with 2.7 mM KCl and 137 mM NaCl, 0.05% Surfactant P20, pH 4.5",
+                "pH": 4.5,
+                "assay_type": "Single Cycle Steady-State Affinity",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 150,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 Evaluation Software (Version 1.0)"
+            }
+        }
+    }
+}

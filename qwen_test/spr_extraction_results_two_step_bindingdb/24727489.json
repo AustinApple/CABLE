@@ -1,0 +1,67 @@
+{
+    "50082832": {
+        "reactant_set_id": 50082832,
+        "pmid": 24727489,
+        "protein": "Advanced glycosylation end product-specific receptor",
+        "ligand": {
+            "smiles": "CCCCOc1cc(OCCCN(CC)CC)ccc1NC(=O)c1cc(nn1C)-c1ccc(Oc2ccc(F)cc2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 43000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to biotinylated human RAGE by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 19: Y.T. Han, G.-I. Choi, D. Son, N.-J. Kim, H. Yun, S. Lee, D.-J. Chang, H.-S. Hong, H. Kim, H.-J. Ha, Y.-H. Kim, N.-J. Park, J. Lee, Y.-G. Suh, Ligand-based design, synthesis and biological evaluation of 2-aminopyrimidines, a novel series of RAGE (receptor for advanced glycation end products) inhibitors, Journal of Medicinal Chemistry 55 (2012) 9120–9135. Reference 25: S. Matsumoto, T. Yoshida, H. Murata, S. Harada, N. Fujita, S. Nakamura, Y. Yamashita, T. Watanabe, H. Yonekura, T. Yamamoto, T. Kobayashi, Solution structure of the variable-type domain of the receptor for advanced glycation end products: new insight into AGE-RAGE interaction, Biochemistry 47 (47) (2008) 12299–12311.",
+        "original_paragraph": {
+            "Materials and Methods": "4.5. Biological study 4.5.1. Preparation of biotinylated-human-RAGE and human Aβ1–42 [19] Biotinylated-human-RAGE proteins and Aβ were prepared according to published protocols. The Aβ stock in DMSO was diluted directly into phosphate-buffered saline (PBS) prior to use, and 10 μM Aβ in a PBS solution was incubated for 24 h at 4 °C to generate oligomeric aggregates. 4.5.2. ELISA test One microgram of purified biotinylated-human-RAGE, 1 μL of 10 μM Aβ solution and 20 μM of the compound in 100 μL of TBS-T containing 2.5% BSA were incubated on a streptavidin-coated plate for 60 min at ambient temperature. After washing the plate with TBS-T, a horseradish-peroxidase conjugated 4G8 antibody (4G8-HRP, 1:1000 dilution) in 100 μL of TBS-T containing 2.5% BSA was incubated for 60 min at ambient temperature. After washing with TBS-T, the plate was developed using TMB substrate and the reaction was stopped with sulfuric acid. The absorbance was read on a Sunrise plate reader (TECHAN) at 450 nm.",
+            "SPR Analysis": "2.4. Studies of direct binding of the pyrazole-5-carboxamide analog with RAGE As described above, we developed a novel series of RAGE-inhibitory pyrazole-5-carboxamides by identifying a new scaffold and conducting an SAR study. In addition, several N-methyl pyrazole-5-carboxamides including the most active analogs 39 and 40, exhibited higher inhibitory activities than the previously reported 4,6-disubstituted 2-aminopyrimidines [19]. We were also interested in determining the binding affinities of the pyrazole-5-carboxamide analogs with RAGE, which may be related to the improved inhibitory activities. Thus, we examined the interaction between a representative analog 40, which is less hydrophobic than 39, and RAGE. As shown in Fig. 2, we observed a direct interaction between 40 and RAGE, with a K_D value of 4.34 × 10⁻⁵ M. The binding affinity of pyrazole-5-carboxamide 40 was higher than that of 2-aminopyrimidine 1 (K_D = 1.02 × 10⁻⁴ M) [19,25]. This result shows that the increased potency of 40 is primarily due to its improved RAGE-binding affinity.",
+            "Figure 2 caption": "Fig. 2. SPR study of the binding of analog 40 to RAGE. The real-time interaction of 40 with biotinylated RAGE was assessed by measuring the surface plasmon resonance (SPR). RU, resonance units. Typical SPR response curves were measured using a series of concentrations of the tested compounds. The response values were normalized by subtracting the response value of the empty channel. The kinetic and equilibrium constants, listed in the text, were obtained by a global fit, using the Langmuir 1:1 bimolecular kinetic model.",
+            "Table 2": "Table 2 (continued) Analog R1 R2 R3 Inhibition (%)a IC50 (μM)b 43 F 19.9 ± 2.4 ND 44 Cl 36.5 ± 6.1 5.3 45 MeO 34.1 ± 0.0 ND a % inhibition values were determined in duplicate experiments using 20 μM concentration of the analogs and are expressed as the means ± standard deviation. b The IC50 values were determined from a serial dilution test using Sigma Plot (Systat Software Inc., CA). c Not active. d Not determined."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated-human-RAGE",
+                "strategy": "SA-Biotin capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "pyrazole-5-carboxamide analog 40",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "empty channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

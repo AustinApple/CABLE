@@ -1,0 +1,60 @@
+{
+    "50886184": {
+        "reactant_set_id": 50886184,
+        "pmid": 26261308,
+        "protein": "Histone acetyltransferase p300",
+        "ligand": {
+            "smiles": "COc1ccc(CCc2nc3cc(ccc3n2C[C@H](C)N2CCOCC2)-c2c(C)noc2C)cc1Cl"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 31847134.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Reverse ITC (compound as receptor). Domain start/stop: A1040-S1171",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "43. Fedorov O, Nielsen H, Knapp S (2012) Kinase inhibitor selectivity profiling using differential scanning fluorimetry. Methods Mol Biol 795:109–118.",
+        "original_paragraph": {
+            "Materials and Methods": "ITC and Thermal Shift Assay. Experiments were carried out on a VP-ITC microcalorimeter (MicroCal) at 15 °C in 50 mM Hepes, pH 7.5, 150 mM NaCl, using an initial injection of 2 μL, followed by 34 identical injections of 8 μL. The dilution heats, measured separately, were subtracted from the titration data. Thermodynamic parameters were calculated using ΔG = ΔH − TΔS = −RTlnKd, where ΔG, ΔH, and ΔS are the changes in free energy, enthalpy, and entropy of binding respectively. In all cases, a single binding site model was used. Thermal melting experiments were carried out using an Mx3005p Real Time PCR machine (Stratagene) as described (43).",
+            "Figure 1 caption": "Fig. 1. CBP30 is a selective and potent inhibitor of CBP/p300. (A) Chemical structure of CBP30. (B) Temperature shift data covering 45 human bromodomains. Screened targets are highlighted in black and targets that have not been screened in gray. Temperature shifts are represented by spheres. The gene name CREBBP corresponds to CBP protein, and EP300 to the protein p300. (C) Isothermal titration calorimetry measuring the binding of CBP30 to BRD4(1) (blue), CBP (red), and p300 (black). (Upper) Raw injection heats for BRD4(1) and p300. (Lower) Normalized binding heats [BRD4(1), CBP, p300]. Nonlinear least squares fits to a single binding site model are shown as solid lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "CBP30",
+                "location": "cell",
+                "concentration": null,
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "CBP30",
+                "location": "syringe",
+                "concentration": null
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM Hepes, 150 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "15",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": "Dilution heats, measured separately, were subtracted from the titration data",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "8",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "35"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

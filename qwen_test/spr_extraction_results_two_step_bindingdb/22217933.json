@@ -1,0 +1,206 @@
+{
+    "50977975": {
+        "reactant_set_id": 50977975,
+        "pmid": 22217933,
+        "protein": "Signal transducer and activator of transcription 6",
+        "ligand": {
+            "smiles": "CC(C)[C@@H](C)NC(=O)c1cc(cc(n1)C(=O)NCCc1ccccn1)-c1cc2ccccc2s1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 701.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity at human recombinant STAT6 by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.4.3. STAT6-inhibitor binding assay using SPR": "The experiments were performed on a BIAcore T100, using Sensor Chip CM5 (Series S), amine coupling kit, and PBS buffer from BIAcore. Immobilization of STAT6 was performed at 25 °C on sensor chip CM5 (series S) in PBS running buffer (20 mM sodium phosphate, 150 mM sodium chloride, pH 7.4), at a flow rate of 10 μL/min. Flow cells were activated for 7 min by injecting a mixture of 50 mM NHS and 200 mM EDC (70 μL). To prepare a high-capacity surface, 70 μL of STAT6 solution (25 μg/mL) in sodium acetate buffer (pH 5.0) was injected for 7 min, followed by injection of 70 μL ethanolamine to block any remaining surface-activated groups. Typical immobilization levels ranged from 12,000 to 14,000 RU. Non-derivatized flow cells served as reference surfaces. All the assays were performed at 25 °C on the sensor chip described above. All compounds were stored as 10 mM stock solutions in dimethyl sulfoxide (DMSO). After dilution to 2 mM with DMSO, each sample was mixed with 1.05-fold concentrated assay buffer and DMSO to yield a 100 μM compound solution in pH 7.4 buffer with a final composition of 20 mM sodium phosphate, 150 mM sodium chloride, and 5% DMSO, which was also used as the instrument running buffer and sample dilution buffer. All assays were run at a flow rate of 30 μL/min and a data collection rate of 10 Hz. Each run was started with five start-up cycles in which running buffer was injected instead of sample, followed by sample injection cycles. A duplicate sample and a zero concentration sample were used as a positive and negative control. A typical analysis cycle consisted of a 60 s sample injection, 600 s of buffer flow (dissociation phase), followed by a wash with 25% DMSO and buffer, and finally a 30 s buffer injection to check for sample carryover. Between sample series, several solvent correction cycles were run to adjust for referencing errors due to refractive index mismatches between running buffer and samples. Calculated equilibrium dissociation constants (K_D), association rate (k_a), and dissociation rate (k_d) were obtained by global fitting of SPR sensorgrams to a 1:1 Langmuir binding model. The χ² value represents the sum of squared differences between the experimental data and reference data at each point of the fit.",
+            "Figure 4 caption": "Figure 4. SPR sensorgrams of STAT6 binding by small molecule inhibitors (R)-84, (R)-76, and 7Z.",
+            "Figure 4 (A) sensorgram labels": "Concentrations for (R)-84: 10uM, 1.25uM, 625nM, 156nM, 78nM, 39nM, 20nM, 10nM",
+            "Figure 4 (B) sensorgram labels": "Concentrations for (R)-76: 5uM, 625nM, 156nM, 39nM, 20nM, 5.0nM",
+            "Figure 4 (C) sensorgram labels": "Concentrations for 7Z: 100uM, 50uM, 10uM, 5.0uM, 1.0uM, 500nM, 100nM",
+            "Table 1": "Table 1 Equilibrium dissociation constant (K_D), association rate (k_a), and dissociation rate (k_d), and χ² value obtained by global fitting of SPR sensorgrams to a 1:1 Langmuir binding model Inhibitor k_a (1/Ms) k_d (1/s) K_D (μM) χ² (R)-84 2.546 × 10⁴ 0.01669 0.6556 0.769 (R)-76 2.892 × 10⁴ 0.02028 0.7014 2.56 7Z 2.611 × 10⁴ 0.001931 73.97 0.775",
+            "Results - 2.5. SPR analysis of STAT6-inhibitor interactions": "To characterize the interactions between STAT6 and the inhibitors, surface plasmon resonance (SPR) technology was applied. Recombinant STAT6 was immobilized to a BIAcore Series S Sensor Chip CM5 by direct conjugation (amide formation) using an amine coupling kit. Each analyte, (R)-76, (R)-84, or 7Z, was injected in the mobile phase, and the binding of each compound to surface-bound STAT6 was detected as a change of SPR response measured in resonance units (RU). The resulting SPR sensorgrams corresponding to complex formation and dissociation were recorded (Fig. 4), from which kinetic association rate (k_a) and dissociation rate (k_d) constants were derived by global fitting of data to 1:1 Langmuir binding model. Based on the k_a and k_d values, the equilibrium dissociation constant (K_D = k_d/k_a) can be calculated. As summarized in Table 1, (R)-76 and (R)-84 exhibited very similar binding kinetics and binding affinity to STAT6, whereas 7Z showed a slower dissociation rate and a significantly slower association rate than others, resulting in a much weaker binding affinity. It is also notable that the K_D values are similar to the IC50 values observed for compounds (R)-76 and (R)-84 in the STAT6 reporter assays (Fig. 2D). This correlation suggests that direct STAT6 binding may be the major contributing factor to the inhibition of STAT6 activity in the cell based assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5 (Series S)",
+                "manufacturer": "BIAcore"
+            },
+            "immobilization": {
+                "ligand_name": "STAT6",
+                "strategy": "Amine coupling",
+                "density_ru": "12,000 to 14,000",
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Small molecule inhibitors (R)-84, (R)-76, and 7Z",
+                "concentration_range": "39 nM - 100 μM (varied per compound: (R)-84: 10 nM - 10 μM; (R)-76: 5.0 nM - 5 μM; 7Z: 100 nM - 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM sodium phosphate, 150 mM sodium chloride, pH 7.4, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "25% DMSO and buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Non-derivatized flow cells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50977976": {
+        "reactant_set_id": 50977976,
+        "pmid": 22217933,
+        "protein": "Signal transducer and activator of transcription 6",
+        "ligand": {
+            "smiles": "CN(CCc1ccccc1)C(=O)c1csc2C(CCCc12)N=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 73970.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity at human recombinant STAT6 by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.4.3. STAT6-inhibitor binding assay using SPR": "The experiments were performed on a BIAcore T100, using Sensor Chip CM5 (Series S), amine coupling kit, and PBS buffer from BIAcore. Immobilization of STAT6 was performed at 25 °C on sensor chip CM5 (series S) in PBS running buffer (20 mM sodium phosphate, 150 mM sodium chloride, pH 7.4), at a flow rate of 10 μL/min. Flow cells were activated for 7 min by injecting a mixture of 50 mM NHS and 200 mM EDC (70 μL). To prepare a high-capacity surface, 70 μL of STAT6 solution (25 μg/mL) in sodium acetate buffer (pH 5.0) was injected for 7 min, followed by injection of 70 μL ethanolamine to block any remaining surface-activated groups. Typical immobilization levels ranged from 12,000 to 14,000 RU. Non-derivatized flow cells served as reference surfaces. All the assays were performed at 25 °C on the sensor chip described above. All compounds were stored as 10 mM stock solutions in dimethyl sulfoxide (DMSO). After dilution to 2 mM with DMSO, each sample was mixed with 1.05-fold concentrated assay buffer and DMSO to yield a 100 μM compound solution in pH 7.4 buffer with a final composition of 20 mM sodium phosphate, 150 mM sodium chloride, and 5% DMSO, which was also used as the instrument running buffer and sample dilution buffer. All assays were run at a flow rate of 30 μL/min and a data collection rate of 10 Hz. Each run was started with five start-up cycles in which running buffer was injected instead of sample, followed by sample injection cycles. A duplicate sample and a zero concentration sample were used as a positive and negative control. A typical analysis cycle consisted of a 60 s sample injection, 600 s of buffer flow (dissociation phase), followed by a wash with 25% DMSO and buffer, and finally a 30 s buffer injection to check for sample carryover. Between sample series, several solvent correction cycles were run to adjust for referencing errors due to refractive index mismatches between running buffer and samples. Calculated equilibrium dissociation constants (K_D), association rate (k_a), and dissociation rate (k_d) were obtained by global fitting of SPR sensorgrams to a 1:1 Langmuir binding model. The χ² value represents the sum of squared differences between the experimental data and reference data at each point of the fit.",
+            "Figure 4 caption": "Figure 4. SPR sensorgrams of STAT6 binding by small molecule inhibitors (R)-84, (R)-76, and 7Z.",
+            "Figure 4 (A) sensorgram labels": "Concentrations for (R)-84: 10uM, 1.25uM, 625nM, 156nM, 78nM, 39nM, 20nM, 10nM",
+            "Figure 4 (B) sensorgram labels": "Concentrations for (R)-76: 5uM, 625nM, 156nM, 39nM, 20nM, 5.0nM",
+            "Figure 4 (C) sensorgram labels": "Concentrations for 7Z: 100uM, 50uM, 10uM, 5.0uM, 1.0uM, 500nM, 100nM",
+            "Table 1": "Table 1 Equilibrium dissociation constant (K_D), association rate (k_a), and dissociation rate (k_d), and χ² value obtained by global fitting of SPR sensorgrams to a 1:1 Langmuir binding model Inhibitor k_a (1/Ms) k_d (1/s) K_D (μM) χ² (R)-84 2.546 × 10⁴ 0.01669 0.6556 0.769 (R)-76 2.892 × 10⁴ 0.02028 0.7014 2.56 7Z 2.611 × 10⁴ 0.001931 73.97 0.775",
+            "Results - 2.5. SPR analysis of STAT6-inhibitor interactions": "To characterize the interactions between STAT6 and the inhibitors, surface plasmon resonance (SPR) technology was applied. Recombinant STAT6 was immobilized to a BIAcore Series S Sensor Chip CM5 by direct conjugation (amide formation) using an amine coupling kit. Each analyte, (R)-76, (R)-84, or 7Z, was injected in the mobile phase, and the binding of each compound to surface-bound STAT6 was detected as a change of SPR response measured in resonance units (RU). The resulting SPR sensorgrams corresponding to complex formation and dissociation were recorded (Fig. 4), from which kinetic association rate (k_a) and dissociation rate (k_d) constants were derived by global fitting of data to 1:1 Langmuir binding model. Based on the k_a and k_d values, the equilibrium dissociation constant (K_D = k_d/k_a) can be calculated. As summarized in Table 1, (R)-76 and (R)-84 exhibited very similar binding kinetics and binding affinity to STAT6, whereas 7Z showed a slower dissociation rate and a significantly slower association rate than others, resulting in a much weaker binding affinity. It is also notable that the K_D values are similar to the IC50 values observed for compounds (R)-76 and (R)-84 in the STAT6 reporter assays (Fig. 2D). This correlation suggests that direct STAT6 binding may be the major contributing factor to the inhibition of STAT6 activity in the cell based assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5 (Series S)",
+                "manufacturer": "BIAcore"
+            },
+            "immobilization": {
+                "ligand_name": "STAT6",
+                "strategy": "Amine coupling",
+                "density_ru": "12,000 to 14,000",
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Small molecule inhibitors (R)-84, (R)-76, and 7Z",
+                "concentration_range": "39 nM - 100 μM (varied per compound: (R)-84: 10 nM - 10 μM; (R)-76: 5.0 nM - 5 μM; 7Z: 100 nM - 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM sodium phosphate, 150 mM sodium chloride, pH 7.4, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "25% DMSO and buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Non-derivatized flow cells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    },
+    "50977977": {
+        "reactant_set_id": 50977977,
+        "pmid": 22217933,
+        "protein": "Signal transducer and activator of transcription 6",
+        "ligand": {
+            "smiles": "CC(C)[C@@H](C)NC(=O)c1cc(cc(n1)C(=O)NCCc1ccccn1)-c1cc2ccccc2n1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 655.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity at human recombinant STAT6 by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.4.3. STAT6-inhibitor binding assay using SPR": "The experiments were performed on a BIAcore T100, using Sensor Chip CM5 (Series S), amine coupling kit, and PBS buffer from BIAcore. Immobilization of STAT6 was performed at 25 °C on sensor chip CM5 (series S) in PBS running buffer (20 mM sodium phosphate, 150 mM sodium chloride, pH 7.4), at a flow rate of 10 μL/min. Flow cells were activated for 7 min by injecting a mixture of 50 mM NHS and 200 mM EDC (70 μL). To prepare a high-capacity surface, 70 μL of STAT6 solution (25 μg/mL) in sodium acetate buffer (pH 5.0) was injected for 7 min, followed by injection of 70 μL ethanolamine to block any remaining surface-activated groups. Typical immobilization levels ranged from 12,000 to 14,000 RU. Non-derivatized flow cells served as reference surfaces. All the assays were performed at 25 °C on the sensor chip described above. All compounds were stored as 10 mM stock solutions in dimethyl sulfoxide (DMSO). After dilution to 2 mM with DMSO, each sample was mixed with 1.05-fold concentrated assay buffer and DMSO to yield a 100 μM compound solution in pH 7.4 buffer with a final composition of 20 mM sodium phosphate, 150 mM sodium chloride, and 5% DMSO, which was also used as the instrument running buffer and sample dilution buffer. All assays were run at a flow rate of 30 μL/min and a data collection rate of 10 Hz. Each run was started with five start-up cycles in which running buffer was injected instead of sample, followed by sample injection cycles. A duplicate sample and a zero concentration sample were used as a positive and negative control. A typical analysis cycle consisted of a 60 s sample injection, 600 s of buffer flow (dissociation phase), followed by a wash with 25% DMSO and buffer, and finally a 30 s buffer injection to check for sample carryover. Between sample series, several solvent correction cycles were run to adjust for referencing errors due to refractive index mismatches between running buffer and samples. Calculated equilibrium dissociation constants (K_D), association rate (k_a), and dissociation rate (k_d) were obtained by global fitting of SPR sensorgrams to a 1:1 Langmuir binding model. The χ² value represents the sum of squared differences between the experimental data and reference data at each point of the fit.",
+            "Figure 4 caption": "Figure 4. SPR sensorgrams of STAT6 binding by small molecule inhibitors (R)-84, (R)-76, and 7Z.",
+            "Figure 4 (A) sensorgram labels": "Concentrations for (R)-84: 10uM, 1.25uM, 625nM, 156nM, 78nM, 39nM, 20nM, 10nM",
+            "Figure 4 (B) sensorgram labels": "Concentrations for (R)-76: 5uM, 625nM, 156nM, 39nM, 20nM, 5.0nM",
+            "Figure 4 (C) sensorgram labels": "Concentrations for 7Z: 100uM, 50uM, 10uM, 5.0uM, 1.0uM, 500nM, 100nM",
+            "Table 1": "Table 1 Equilibrium dissociation constant (K_D), association rate (k_a), and dissociation rate (k_d), and χ² value obtained by global fitting of SPR sensorgrams to a 1:1 Langmuir binding model Inhibitor k_a (1/Ms) k_d (1/s) K_D (μM) χ² (R)-84 2.546 × 10⁴ 0.01669 0.6556 0.769 (R)-76 2.892 × 10⁴ 0.02028 0.7014 2.56 7Z 2.611 × 10⁴ 0.001931 73.97 0.775",
+            "Results - 2.5. SPR analysis of STAT6-inhibitor interactions": "To characterize the interactions between STAT6 and the inhibitors, surface plasmon resonance (SPR) technology was applied. Recombinant STAT6 was immobilized to a BIAcore Series S Sensor Chip CM5 by direct conjugation (amide formation) using an amine coupling kit. Each analyte, (R)-76, (R)-84, or 7Z, was injected in the mobile phase, and the binding of each compound to surface-bound STAT6 was detected as a change of SPR response measured in resonance units (RU). The resulting SPR sensorgrams corresponding to complex formation and dissociation were recorded (Fig. 4), from which kinetic association rate (k_a) and dissociation rate (k_d) constants were derived by global fitting of data to 1:1 Langmuir binding model. Based on the k_a and k_d values, the equilibrium dissociation constant (K_D = k_d/k_a) can be calculated. As summarized in Table 1, (R)-76 and (R)-84 exhibited very similar binding kinetics and binding affinity to STAT6, whereas 7Z showed a slower dissociation rate and a significantly slower association rate than others, resulting in a much weaker binding affinity. It is also notable that the K_D values are similar to the IC50 values observed for compounds (R)-76 and (R)-84 in the STAT6 reporter assays (Fig. 2D). This correlation suggests that direct STAT6 binding may be the major contributing factor to the inhibition of STAT6 activity in the cell based assays."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore",
+                "model": "BIAcore T100"
+            },
+            "sensor_chip": {
+                "type": "CM5 (Series S)",
+                "manufacturer": "BIAcore"
+            },
+            "immobilization": {
+                "ligand_name": "STAT6",
+                "strategy": "Amine coupling",
+                "density_ru": "12,000 to 14,000",
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Small molecule inhibitors (R)-84, (R)-76, and 7Z",
+                "concentration_range": "39 nM - 100 μM (varied per compound: (R)-84: 10 nM - 10 μM; (R)-76: 5.0 nM - 5 μM; 7Z: 100 nM - 100 μM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM sodium phosphate, 150 mM sodium chloride, pH 7.4, 5% DMSO",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "25% DMSO and buffer"
+            },
+            "data_analysis": {
+                "reference_description": "Non-derivatized flow cells",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

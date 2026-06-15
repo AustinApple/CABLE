@@ -1,0 +1,587 @@
+{
+    "51471437": {
+        "reactant_set_id": 51471437,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCNC(=O)COCCOCCNC(=O)COCCOCCNC(=O)CC[C@@H](NC(=O)CCCCCCCCCCCCCCCCC(O)=O)C(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)NC(=O)[C@@H](N)Cc1c[nH]cn1)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)NCC(=O)N[C@@H](CCCNC(N)=N)C(=O)NCC(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 441.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471438": {
+        "reactant_set_id": 51471438,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CCCCCCCCCCCCCCCC(=O)N[C@@H](CCC(=O)NCCCC[C@H](NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@@H](N)Cc1cnc[nH]1)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)NCC(=O)N[C@@H](CCCNC(N)=N)C(=O)NCC(O)=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 6270.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471439": {
+        "reactant_set_id": 51471439,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3750.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471440": {
+        "reactant_set_id": 51471440,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCCOCCOCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 994.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471441": {
+        "reactant_set_id": 51471441,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCCOCCOCC(=O)NCCOCCOCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 911.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471442": {
+        "reactant_set_id": 51471442,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCCCCCCCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471443": {
+        "reactant_set_id": 51471443,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCCCCCCCCCCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1460.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471444": {
+        "reactant_set_id": 51471444,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCCCCCCCC(=O)NCCOCCOCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 532.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    },
+    "51471445": {
+        "reactant_set_id": 51471445,
+        "pmid": 35358863,
+        "protein": "Glucagon-like peptide 1 receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](C)NC(=O)[C@H](CCC(N)=O)NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@H](CCC(O)=O)NC(=O)C(C)(C)N)[C@@H](C)O)[C@@H](C)O)C(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](Cc1c[nH]c2ccccc12)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)NCC(=O)NCCCCCCCCCCC(=O)NCCOCCOCC(=O)NCC(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1490.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to GLP-1 receptor (unknown origin) assessed as equlibrium constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Zhang J, Dong Y, Ju D, Feng J. Design, synthesis and biological evaluation of double fatty chain-modified glucagon-like peptide-1 conjugates. Bioorg Med Chem. 2021;44, 116291.",
+        "original_paragraph": {
+            "Materials and Methods - 4.5. GLP-1R affinity determined by SPR": "The GLP-1 receptor affinity assay was performed in our previous publication16. Compounds 0-VI, and semaglutide were diluted in running buffer from 10 μmol/L to 78.1 nmol/L twice (the running buffer consisted of 100 mL of 10 × PBS, 895 mL of water and 5 mL of P20, and was prepared and used immediately). The collected data were analysed using BioEvaluation Software 2.0. The Langmuir 1:1 model was used to analyse the data, and the binding rate constant (ka), dissociation rate constant (kd), and equilibrium constant (Kd) were calculated.",
+            "Figure 3 caption": "Fig. 3. GLP-1R binding activity of a) compounds 0, b) compounds I, c) compounds II, d) compounds III, e) compounds IV, f) compounds V, g) compounds VI, h) semaglutide and i) liraglutide. GLP-1 analogs were applied in PBS-P20 to a carboxydextran-coated sensorchip charged with ~3000 RU of human GLP-1R using a Biacore T200 instrument. The signals for the different GLP-1 analogs concentrations are depicted as colored lines whereas curve fits according to a 1:1 Langmuir model are shown in gray. The resulting affinity parameters for GLP-1 analogs are listed in Table 3.",
+            "Table 3": "Table 3. Kinetic constants of semaglutide and compounds 0 and IV. Compounds ka (1/Ms) kd (1/s) Kd (M) Semaglutide 7.26 × 10⁴ 3.20 × 10⁻² 4.41 × 10⁻⁷ Liraglutide 1.82 × 10⁴ 1.14 × 10⁻² 6.27 × 10⁻⁷ 0 2.99 × 10⁵ 1.12 × 10⁻² 3.75 × 10⁻⁸ I 1.95 × 10⁴ 1.94 × 10⁻² 9.94 × 10⁻⁷ II 3.57 × 10⁴ 3.25 × 10⁻² 9.12 × 10⁻⁷ III 2.01 × 10⁴ 1.41 × 10⁻² 7.00 × 10⁻⁷ IV 7.53 × 10³ 1.10 × 10⁻² 1.46 × 10⁻⁶ V 3.11 × 10⁴ 1.65 × 10⁻² 5.32 × 10⁻⁷ VI 1.32 × 10⁴ 1.97 × 10⁻² 1.49 × 10⁻⁶",
+            "Figure 3 sensorgram data": "Figure 3 (a-i) shows sensorgrams for GLP-1R binding. The x-axis (Time) ranges from -100 to 350 seconds. The y-axis (Response) is in RU (Response Units). The sensorgrams display association (0-180s) and dissociation (180-350s) phases. The different colored lines represent different concentrations of the compound, with the highest concentration typically showing the highest response. The gray lines represent the curve fits according to a 1:1 Langmuir model. The concentration range is from 10 μmol/L to 78.1 nmol/L, as stated in the methods section."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "carboxydextran-coated",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "human GLP-1R",
+                "strategy": "Amine coupling",
+                "density_ru": "3000",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds 0-VI and semaglutide",
+                "concentration_range": "78.1 nmol/L to 10 μmol/L"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "100 mL of 10 × PBS, 895 mL of water, and 5 mL of P20",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 180,
+                "dissociation_time_s": 170,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BioEvaluation Software 2.0"
+            }
+        }
+    }
+}

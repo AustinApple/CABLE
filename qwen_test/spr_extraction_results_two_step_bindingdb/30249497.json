@@ -1,0 +1,800 @@
+{
+    "51104611": {
+        "reactant_set_id": 51104611,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC(C)[C@H](N)C(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 43.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of C-terminal His-tagged 7 kDa RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005.",
+            "11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30.",
+            "53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459.",
+            "7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "C-terminal His-tagged 7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104612": {
+        "reactant_set_id": 51104612,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@@H](N)CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 32.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of C-terminal His-tagged 7 kDa RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005.",
+            "11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30.",
+            "53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459.",
+            "7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "C-terminal His-tagged 7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104613": {
+        "reactant_set_id": 51104613,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)CNC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](N)CCC(O)=O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 202.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of C-terminal His-tagged 7 kDa RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005.",
+            "11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30.",
+            "53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459.",
+            "7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "C-terminal His-tagged 7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104614": {
+        "reactant_set_id": 51104614,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)CN)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 265.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of C-terminal His-tagged 7 kDa RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005.",
+            "11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30.",
+            "53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459.",
+            "7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "C-terminal His-tagged 7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104615": {
+        "reactant_set_id": 51104615,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(O)=O)C(=O)N[C@@H](CC(O)=O)C(=O)NCC(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 289.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of C-terminal His-tagged 7 kDa RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005.",
+            "11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30.",
+            "53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459.",
+            "7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "C-terminal His-tagged 7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104616": {
+        "reactant_set_id": 51104616,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1ccccc1)[C@@H](C)O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 21.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of C-terminal His-tagged 7 kDa RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": [
+            "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005.",
+            "11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30.",
+            "53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459.",
+            "7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482."
+        ],
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "C-terminal His-tagged 7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104610": {
+        "reactant_set_id": 51104610,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](C)NC(=O)[C@@H](N)CCC(O)=O)C(=O)N[C@@H](CC(O)=O)C(=O)NCC(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 211.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005. 11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30. 53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459. 7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104617": {
+        "reactant_set_id": 51104617,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC(C)[C@H](N)C(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 24.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005. 11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30. 53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459. 7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104618": {
+        "reactant_set_id": 51104618,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@@H](N)CO)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)NCC(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 331.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005. 11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30. 53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459. 7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104619": {
+        "reactant_set_id": 51104619,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)CNC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](N)CCC(O)=O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 33.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005. 11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30. 53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459. 7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104620": {
+        "reactant_set_id": 51104620,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CC(C)[C@H](NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@H](CCC(O)=O)NC(=O)CN)C(=O)N[C@@H](C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 130.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005. 11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30. 53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459. 7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    },
+    "51104621": {
+        "reactant_set_id": 51104621,
+        "pmid": 30249497,
+        "protein": "Hyaluronan mediated motility receptor",
+        "ligand": {
+            "smiles": "CSCC[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CO)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](NC(=O)[C@@H](N)Cc1ccccc1)[C@@H](C)O)C(=O)N[C@@H](CC(N)=O)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of recombinant RHAMM (unknown origin) binding to HA after 240 secs by SPR method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "44. Turley EA, Moore D, Hayden LJ. Characterization of hyaluronate binding proteins isolated from 3T3 and murine sarcoma virus transformed 3T3 cells. Biochemistry. 1987;26(11):2997–3005. 11. D'Agostino A, et al. Is molecular size a discriminating factor in hyaluronan interaction with human cells? Carbohydr Polym. 2017;157:21–30. 53. Vigetti D, et al. Hyaluronan: Biosynthesis and signaling. Biochim Biophys Acta. 2014;1840(8):2452–2459. 7. Gandhi NS, Mancera RL. The Structure of Glycosaminoglycans and their Interactions with Proteins. Chem Biol Drug Des. 2008;72(6):455–482.",
+        "original_paragraph": {
+            "Materials and Methods - 2.5.1. SPR": "All experiments were carried out on an OpenSPR™ instrument (Nicoya Lifesciences, Waterloo, Canada) at 25 °C, equipped with a 100 μL loading loop. 100 nm gold nanoparticle biosensors were purchased from Nicoya Lifesciences. All experiments were carried out in phosphate buffered saline (PBS) running buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4), pH 7.4. The gold biosensors were incubated with cystamine-functionalized 5–10 kDa HA (3 mg/mL) for 3 days. Available binding sites on the chip surface were blocked with poly(ethylene glycol) methyl ether thiol (2 mg/mL) (Sigma Aldrich) to prevent nonspecific interactions. 7 kDa RHAMM and Ala-7 kDa RHAMM were dissolved in PBS at varying concentrations, and were injected at a flow rate of 25 μL/min when the baseline was stabilized. The association and dissociation times were both 240 s, and regeneration of the chip surface was carried out with 1 M NaCl. The data was retrieved, processed, and analyzed using Tracerware software (Ridgeview Instruments AB). Kinetic parameters were calculated using a local analysis, fitting the data to a one to one model.",
+            "Figure 3 caption": "Fig. 3. 7 kDa RHAMM binds hyaluronan by SPR. SPR signals showing the interactions between immobilized 5–10 kDa HA and 7 kDa RHAMM (A) and a negative control mini-protein, which had no basic residues in the HA binding domains (B). Each signal corresponds to the responses of different HA concentrations and solid lines indicate a linear one to one interaction curve fitting model for the ligand-analyte interaction. K_D was determined to be 8.98 nM for 7 kDa RHAMM and 2.33 μM for the negative control mini-protein.",
+            "Results and Discussion - 3.3. HA-binding": "SPR was used to evaluate the mini-protein-carbohydrate interaction. 5–10 kDa HA was immobilized on the SPR sensor chip surface by a gold-thiol bond. A concentration dependent dose response was observed for the interaction between 7 kDa RHAMM and HA, and in each case, a rapid rate of association, and a stable SPR signal were observed, suggesting a strong interaction between the two compounds (Fig. 3A). Indeed, 7 kDa RHAMM was determined to bind to HA with an average binding affinity of 8.98 nM ± 0.22 nM. The binding affinity between RHAMM protein and HA was originally determined to be approximately 10−8 M44, but no reports have confirmed the accuracy of this affinity range until now. Reports on the increase in RHAMM expression in response to HA fragments ranging from 6 kDa HA to 100 kDa HA11, and the realization that HA fragments that range from 3 to 25 disaccharide units (1.2–10 kDa) have inflammatory and pro-angiogenic properties in vitro53 make the observed binding between 7 kDa RHAMM and 5–10 kDa HA comparable to the cellular receptor. We developed a negative control mini-protein, in which all of the basic residues in both HA binding domains were replaced with alanine, thereby eliminating the characteristic BX2B binding motif of the HA binding domains, and theoretically preventing the majority of HA binding through ionic interactions. This was indeed found to be the result, yielding a binding affinity of 3.22 μM ± 0.61 μM, which is almost a 400X decrease in affinity compared with when the natural sequence is used in the same size protein. In addition, the SPR signal resulting from the interaction between HA and Ala-7 kDa RHAMM had a significantly higher signal to noise ratio than its 7 kDa RHAMM counterpart, as well as a slower association and quicker dissociation, suggesting a weak and less specific interaction. The residual binding that is observed, however, is possibly the result of interactions that are not the predominant ionic interactions of the two molecules, and may include other interactive forces that are common among glycosaminoglycans and the receptors that bind them, such as van der Waals forces, hydrogen bonds and hydrophobic interactions with the carbohydrate backbone7. This stark difference in binding affinity between 7 kDa RHAMM and its alanine counterpart highlights the importance of the basic charges to the RHAMM-HA interaction, and that SPR can be used a successful tool in measuring interactions with the mini-protein."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Nicoya Lifesciences",
+                "model": "OpenSPR™"
+            },
+            "sensor_chip": {
+                "type": "100 nm gold nanoparticle biosensor",
+                "manufacturer": "Nicoya Lifesciences"
+            },
+            "immobilization": {
+                "ligand_name": "cystamine-functionalized 5–10 kDa HA",
+                "strategy": "Thiol coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "3 mg/mL"
+            },
+            "analyte": {
+                "description": "7 kDa RHAMM and Ala-7 kDa RHAMM",
+                "concentration_range": "Varying concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "Phosphate buffered saline (PBS): 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 25,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 240,
+                "dissociation_time_s": 240,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Tracerware software (Ridgeview Instruments AB)"
+            }
+        }
+    }
+}

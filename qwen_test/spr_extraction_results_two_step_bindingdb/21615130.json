@@ -1,0 +1,203 @@
+{
+    "50648072": {
+        "reactant_set_id": 50648072,
+        "pmid": 21615130,
+        "protein": "Transforming protein RhoA",
+        "ligand": {
+            "smiles": "OC(=O)\\C=C\\c1cccc(Nc2nc3ccc(cc3nc2Nc2cccc(\\C=C\\C(O)=O)c2)[N+]([O-])=O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5180.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to rhoA by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 2.3.1. SPR Assay": "Interaction studies between compounds and RhoA were performed with the SPR-based biosensor instrument Biacore 3000 (Biacore AB, Uppsala, Sweden). Each compound was dissolved in dimethyl sulfoxide (DMSO) as a 10 mM stock solution for the Biacore experiments. RhoA was immobilized on the sensor surface by the standard primary amine coupling reaction to the carboxymethylated matrix dextran of a sensor chip CM5 (Biacore AB, Uppsala, Sweden). Equilibration of the baseline was completed by continuous flow of HBS-EP running buffer (10 mM Heps, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip overnight. One of the four serial flow cells was activated for 7 min by injecting a 1:1 fresh mixture of 0.2 M N-ethyl-N′-dimethylaminopropyl carbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS) at 25 °C. RhoA was diluted with 10 mM sodium acetate buffer at pH 4.2 to a concentration of 25 μg/mL and immobilized to the surface of sensor chip CM5. Finally, the unreacted protein was blocked by injecting 1 M ethanolamine-HCl at pH 8.5 for 7 min, resulting in immobilized densities of 7000 response units (RU). After stabilizing the baseline, Biacore data were collected at 25 °C with HBS-EP (containing 0.4% DMSO) as the running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (KDs) evaluating the protein–inhibitor binding affinity were determined by the 1:1 Langmuir binding fitting model using eq 1. The kinetic analysis of RhoA/inhibitors binding by SPR were described in Supporting Information. K_D = k_off / k_on where k_off represents dissociation rate constant, k_on represents the association rate constant.",
+            "Results and Discussion - 3.1. Identification of Binders (Hits) by Virtual Screening": "For kinetic analysis on the Biacore 3000 instrument, various concentrations of these three compounds were injected for 120 min at a flow rate of 30 μL/min to allow for interaction with RhoA immobilized on the sensor surface. For the RhoA, all these three candidate molecules resulted in a significant and dose-dependent increase in SPR RU and presented characteristic fast-binding and slow-dissociation curves. The concentration series of 1, 2, and 3 were fitted by the 1:1 Langmuir binding model in the Biacore3000 evaluation software for binding affinity determination. The collected data indicated that these three compounds can bind to RhoA in vitro and that the dissociation constant (K_D) to RhoA is in the micromolar range (K_D = 4.47–13.1 μM). These compounds could be designated as binders (or hits) of RhoA, and their chemical structures and binding affinities are shown in Figure 2. The kinetic data of three binders 1–3 are listed in Table 1S (Supporting Information). The ranks of three hits (compounds 1–3) identified from the top 3000 docking candidates with Glide GScore for the cocomplexed GNP in the crystal structure of RhoA was also calculated as a reference (Supporting Information, Table 2S).",
+            "Figure 3 caption": "Figure 3. Sensorgrams of compounds 1–3 binding to RhoA measured by SPR. Representative sensorgrams obtained from the injection of compounds 1–3 at concentrations of 1.68, 2.4, 3.43, 4.9, 7.0, and 10.0 μM over RhoA immobilized on the CM5 chip.",
+            "Figure 2 caption": "Figure 2. Structures of 3 binders (or hits) of RhoA selected from the candidates by virtual screening and the SPR-based binding affinity assay.",
+            "Table 4": "Table 4. Inhibitory Activities and IC50 Values of the Compounds Tested | cmpd | inhibitory rate at 2.5 μM a (%) | IC50 b (μM) | cmpd | inhibitory rate at 2.5 μM a (%) | IC50 b (μM) | |------|-------------------------------|-------------|------|-------------------------------|-------------| | 1 | 54.0 | 3.28 ± 0.30 | 14d | 76.1 | 2.05 ± 0.07 | | 12a | 68.5 | 2.58 ± 0.25 | 14e | 68.0 | 2.62 ± 0.59 | | 12j | 72.5 | 2.09 ± 0.34 | 14g | 81.8 | 1.68 ± 0.13 | | 14a | 78.0 | 1.51 ± 0.13 | 14h | 90.3 | 1.24 ± 0.08 | | 14b | 71.7 | 3.00 ± 0.31 | | | | a The inhibition rate of the exoenzyme C3 transferase (C3) as a positive control compound is 117% at 62.5 nM. b Data are the means of three independent experiments.",
+            "Supporting Information": "The kinetic analysis of RhoA/inhibitors binding by SPR were described in Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "RhoA",
+                "strategy": "Amine coupling",
+                "density_ru": "7000",
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1, 2, and 3 (binders/hits of RhoA)",
+                "concentration_range": "1.68, 2.4, 3.43, 4.9, 7.0, and 10.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP (10 mM Heps, 150 mM NaCl, 3 mM EDTA, 0.005% (v/v) surfactant P20, pH 7.4) containing 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 7200,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One of the four serial flow cells was activated for immobilization; the other flow cells were used as reference (implied by 'automatic correction for nonspecific bulk refractive index effects')",
+                "subtraction_method": "Other",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore3000 evaluation software"
+            }
+        }
+    },
+    "50648073": {
+        "reactant_set_id": 50648073,
+        "pmid": 21615130,
+        "protein": "Transforming protein RhoA",
+        "ligand": {
+            "smiles": "OS(=O)(=O)c1ccc2c(NC3=CC(=O)C(=O)c4ccccc34)cccc2c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 13100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to rhoA by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 2.3.1. SPR Assay": "Interaction studies between compounds and RhoA were performed with the SPR-based biosensor instrument Biacore 3000 (Biacore AB, Uppsala, Sweden). Each compound was dissolved in dimethyl sulfoxide (DMSO) as a 10 mM stock solution for the Biacore experiments. RhoA was immobilized on the sensor surface by the standard primary amine coupling reaction to the carboxymethylated matrix dextran of a sensor chip CM5 (Biacore AB, Uppsala, Sweden). Equilibration of the baseline was completed by continuous flow of HBS-EP running buffer (10 mM Heps, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip overnight. One of the four serial flow cells was activated for 7 min by injecting a 1:1 fresh mixture of 0.2 M N-ethyl-N′-dimethylaminopropyl carbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS) at 25 °C. RhoA was diluted with 10 mM sodium acetate buffer at pH 4.2 to a concentration of 25 μg/mL and immobilized to the surface of sensor chip CM5. Finally, the unreacted protein was blocked by injecting 1 M ethanolamine-HCl at pH 8.5 for 7 min, resulting in immobilized densities of 7000 response units (RU). After stabilizing the baseline, Biacore data were collected at 25 °C with HBS-EP (containing 0.4% DMSO) as the running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (KDs) evaluating the protein–inhibitor binding affinity were determined by the 1:1 Langmuir binding fitting model using eq 1. The kinetic analysis of RhoA/inhibitors binding by SPR were described in Supporting Information. K_D = k_off / k_on where k_off represents dissociation rate constant, k_on represents the association rate constant.",
+            "Results and Discussion - 3.1. Identification of Binders (Hits) by Virtual Screening": "For kinetic analysis on the Biacore 3000 instrument, various concentrations of these three compounds were injected for 120 min at a flow rate of 30 μL/min to allow for interaction with RhoA immobilized on the sensor surface. For the RhoA, all these three candidate molecules resulted in a significant and dose-dependent increase in SPR RU and presented characteristic fast-binding and slow-dissociation curves. The concentration series of 1, 2, and 3 were fitted by the 1:1 Langmuir binding model in the Biacore3000 evaluation software for binding affinity determination. The collected data indicated that these three compounds can bind to RhoA in vitro and that the dissociation constant (K_D) to RhoA is in the micromolar range (K_D = 4.47–13.1 μM). These compounds could be designated as binders (or hits) of RhoA, and their chemical structures and binding affinities are shown in Figure 2. The kinetic data of three binders 1–3 are listed in Table 1S (Supporting Information). The ranks of three hits (compounds 1–3) identified from the top 3000 docking candidates with Glide GScore for the cocomplexed GNP in the crystal structure of RhoA was also calculated as a reference (Supporting Information, Table 2S).",
+            "Figure 3 caption": "Figure 3. Sensorgrams of compounds 1–3 binding to RhoA measured by SPR. Representative sensorgrams obtained from the injection of compounds 1–3 at concentrations of 1.68, 2.4, 3.43, 4.9, 7.0, and 10.0 μM over RhoA immobilized on the CM5 chip.",
+            "Figure 2 caption": "Figure 2. Structures of 3 binders (or hits) of RhoA selected from the candidates by virtual screening and the SPR-based binding affinity assay.",
+            "Table 4": "Table 4. Inhibitory Activities and IC50 Values of the Compounds Tested | cmpd | inhibitory rate at 2.5 μM a (%) | IC50 b (μM) | cmpd | inhibitory rate at 2.5 μM a (%) | IC50 b (μM) | |------|-------------------------------|-------------|------|-------------------------------|-------------| | 1 | 54.0 | 3.28 ± 0.30 | 14d | 76.1 | 2.05 ± 0.07 | | 12a | 68.5 | 2.58 ± 0.25 | 14e | 68.0 | 2.62 ± 0.59 | | 12j | 72.5 | 2.09 ± 0.34 | 14g | 81.8 | 1.68 ± 0.13 | | 14a | 78.0 | 1.51 ± 0.13 | 14h | 90.3 | 1.24 ± 0.08 | | 14b | 71.7 | 3.00 ± 0.31 | | | | a The inhibition rate of the exoenzyme C3 transferase (C3) as a positive control compound is 117% at 62.5 nM. b Data are the means of three independent experiments.",
+            "Supporting Information": "The kinetic analysis of RhoA/inhibitors binding by SPR were described in Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "RhoA",
+                "strategy": "Amine coupling",
+                "density_ru": "7000",
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1, 2, and 3 (binders/hits of RhoA)",
+                "concentration_range": "1.68, 2.4, 3.43, 4.9, 7.0, and 10.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP (10 mM Heps, 150 mM NaCl, 3 mM EDTA, 0.005% (v/v) surfactant P20, pH 7.4) containing 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 7200,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One of the four serial flow cells was activated for immobilization; the other flow cells were used as reference (implied by 'automatic correction for nonspecific bulk refractive index effects')",
+                "subtraction_method": "Other",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore3000 evaluation software"
+            }
+        }
+    },
+    "50648075": {
+        "reactant_set_id": 50648075,
+        "pmid": 21615130,
+        "protein": "Transforming protein RhoA",
+        "ligand": {
+            "smiles": "OC(=O)c1cccc(Nc2nc(Nc3ccccc3)nc(Nc3ccccc3)n2)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4470.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to rhoA by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 2.3.1. SPR Assay": "Interaction studies between compounds and RhoA were performed with the SPR-based biosensor instrument Biacore 3000 (Biacore AB, Uppsala, Sweden). Each compound was dissolved in dimethyl sulfoxide (DMSO) as a 10 mM stock solution for the Biacore experiments. RhoA was immobilized on the sensor surface by the standard primary amine coupling reaction to the carboxymethylated matrix dextran of a sensor chip CM5 (Biacore AB, Uppsala, Sweden). Equilibration of the baseline was completed by continuous flow of HBS-EP running buffer (10 mM Heps, 150 mM NaCl, 3 mM EDTA, and 0.005% (v/v) surfactant P20, pH 7.4) through the chip overnight. One of the four serial flow cells was activated for 7 min by injecting a 1:1 fresh mixture of 0.2 M N-ethyl-N′-dimethylaminopropyl carbodiimide (EDC) and 50 mM N-hydroxysuccinimide (NHS) at 25 °C. RhoA was diluted with 10 mM sodium acetate buffer at pH 4.2 to a concentration of 25 μg/mL and immobilized to the surface of sensor chip CM5. Finally, the unreacted protein was blocked by injecting 1 M ethanolamine-HCl at pH 8.5 for 7 min, resulting in immobilized densities of 7000 response units (RU). After stabilizing the baseline, Biacore data were collected at 25 °C with HBS-EP (containing 0.4% DMSO) as the running buffer at a constant flow of 30 μL/min. All the sensorgrams were processed by using automatic correction for nonspecific bulk refractive index effects. The equilibrium constants (KDs) evaluating the protein–inhibitor binding affinity were determined by the 1:1 Langmuir binding fitting model using eq 1. The kinetic analysis of RhoA/inhibitors binding by SPR were described in Supporting Information. K_D = k_off / k_on where k_off represents dissociation rate constant, k_on represents the association rate constant.",
+            "Results and Discussion - 3.1. Identification of Binders (Hits) by Virtual Screening": "For kinetic analysis on the Biacore 3000 instrument, various concentrations of these three compounds were injected for 120 min at a flow rate of 30 μL/min to allow for interaction with RhoA immobilized on the sensor surface. For the RhoA, all these three candidate molecules resulted in a significant and dose-dependent increase in SPR RU and presented characteristic fast-binding and slow-dissociation curves. The concentration series of 1, 2, and 3 were fitted by the 1:1 Langmuir binding model in the Biacore3000 evaluation software for binding affinity determination. The collected data indicated that these three compounds can bind to RhoA in vitro and that the dissociation constant (K_D) to RhoA is in the micromolar range (K_D = 4.47–13.1 μM). These compounds could be designated as binders (or hits) of RhoA, and their chemical structures and binding affinities are shown in Figure 2. The kinetic data of three binders 1–3 are listed in Table 1S (Supporting Information). The ranks of three hits (compounds 1–3) identified from the top 3000 docking candidates with Glide GScore for the cocomplexed GNP in the crystal structure of RhoA was also calculated as a reference (Supporting Information, Table 2S).",
+            "Figure 3 caption": "Figure 3. Sensorgrams of compounds 1–3 binding to RhoA measured by SPR. Representative sensorgrams obtained from the injection of compounds 1–3 at concentrations of 1.68, 2.4, 3.43, 4.9, 7.0, and 10.0 μM over RhoA immobilized on the CM5 chip.",
+            "Figure 2 caption": "Figure 2. Structures of 3 binders (or hits) of RhoA selected from the candidates by virtual screening and the SPR-based binding affinity assay.",
+            "Table 4": "Table 4. Inhibitory Activities and IC50 Values of the Compounds Tested | cmpd | inhibitory rate at 2.5 μM a (%) | IC50 b (μM) | cmpd | inhibitory rate at 2.5 μM a (%) | IC50 b (μM) | |------|-------------------------------|-------------|------|-------------------------------|-------------| | 1 | 54.0 | 3.28 ± 0.30 | 14d | 76.1 | 2.05 ± 0.07 | | 12a | 68.5 | 2.58 ± 0.25 | 14e | 68.0 | 2.62 ± 0.59 | | 12j | 72.5 | 2.09 ± 0.34 | 14g | 81.8 | 1.68 ± 0.13 | | 14a | 78.0 | 1.51 ± 0.13 | 14h | 90.3 | 1.24 ± 0.08 | | 14b | 71.7 | 3.00 ± 0.31 | | | | a The inhibition rate of the exoenzyme C3 transferase (C3) as a positive control compound is 117% at 62.5 nM. b Data are the means of three independent experiments.",
+            "Supporting Information": "The kinetic analysis of RhoA/inhibitors binding by SPR were described in Supporting Information."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore AB",
+                "model": "Biacore 3000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Biacore AB"
+            },
+            "immobilization": {
+                "ligand_name": "RhoA",
+                "strategy": "Amine coupling",
+                "density_ru": "7000",
+                "concentration_for_immobilization": "25 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1, 2, and 3 (binders/hits of RhoA)",
+                "concentration_range": "1.68, 2.4, 3.43, 4.9, 7.0, and 10.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP (10 mM Heps, 150 mM NaCl, 3 mM EDTA, 0.005% (v/v) surfactant P20, pH 7.4) containing 0.4% DMSO",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 7200,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "One of the four serial flow cells was activated for immobilization; the other flow cells were used as reference (implied by 'automatic correction for nonspecific bulk refractive index effects')",
+                "subtraction_method": "Other",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore3000 evaluation software"
+            }
+        }
+    }
+}

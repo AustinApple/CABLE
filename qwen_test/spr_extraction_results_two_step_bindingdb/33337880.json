@@ -1,0 +1,954 @@
+{
+    "51377289": {
+        "reactant_set_id": 51377289,
+        "pmid": 33337880,
+        "protein": "Kelch-like ECH-associated protein 1",
+        "ligand": {
+            "smiles": "CN(C)C(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Keap1 Kelch domain (321 to 609 residues) (unknown origin) by SPR based direct binding assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Direct Binding Assay (DBA)": "SPR Direct Binding Assay (DBA). The SPR DBA was performed as described previously,31 with the difference that HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.4] was used as a continuous flow buffer and that the contact and dissociation times were 45 and 60 s, respectively.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (K_D) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of K_D for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (P_app AB + inh), human microsomal metabolism (Cl_int), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "The left plot in Figure 2b shows sensorgrams for macrocycle 14 at concentrations of 0.2, 0.6, 2.0, 6.0, and 60.0 μM. The x-axis is labeled 'Time (s)' and ranges from -30 to 90. The y-axis is labeled 'Response (AU)' and ranges from 0 to 30. The association phase is from 0 to 30 s, and the dissociation phase is from 30 to 60 s.",
+            "Figure 2b right plot": "The right plot in Figure 2b shows the determination of the dissociation constant (K_D) for 14. The x-axis is labeled 'Concentration (M)' and ranges from 1x10^-7 to 6x10^-6. The y-axis is labeled 'Response (AU)' and ranges from 0 to 30. The fitted curve is labeled 'K_D: 4.1 ± 0.3 μM'.",
+            "Figure 2c left plot": "The left plot in Figure 2c shows the raw heat signals from the exothermic binding reaction for macrocycle 14. The x-axis is labeled 'Time (min)' and ranges from 0 to 50. The y-axis is labeled 'DP (μcal/sec)' and ranges from -1.5 to 0.0. The plot shows a series of peaks corresponding to injections.",
+            "Figure 2c right plot": "The right plot in Figure 2c shows the binding isotherm for macrocycle 14. The x-axis is labeled 'Molar Ratio' and ranges from 0.0 to 1.5. The y-axis is labeled 'kcal/mol of Injectant' and ranges from -15 to 10. The fitted curve is labeled 'K_D: 3.7 ± 0.8 μM'. The insert shows the thermodynamic parameters: ΔG, ΔH, and -TΔS.",
+            "Figure 2d table": "The table in Figure 2d provides characterization data for macrocycle 14: MW (Da) = 491, TPSA (Å) = 125, Solubility (μM) = 805 ± 106, P_app AB + Inh (x10^-6 cm/s) = 1.6 ± 0.42, Cl_int (μL/min/mg) = 36.5 ± 2.5, Nrf2 trans (induction) = 40%."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "Keap1 Kelch domain (321 to 609 residues)",
+                "strategy": null,
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Macrocycle 14",
+                "concentration_range": "0.2, 0.6, 2.0, 6.0, 60.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.4]",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": 45,
+                "dissociation_time_s": 60,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377275": {
+        "reactant_set_id": 51377275,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "COC(=O)[C@@H]1CSCc2ccccc2C(=O)OC[C@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377276": {
+        "reactant_set_id": 51377276,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "COC(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377277": {
+        "reactant_set_id": 51377277,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "COC(=O)[C@@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377278": {
+        "reactant_set_id": 51377278,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "COC(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 237000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377279": {
+        "reactant_set_id": 51377279,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "COC(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377280": {
+        "reactant_set_id": 51377280,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "COC(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2C[C@@H](O)CN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 270000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377281": {
+        "reactant_set_id": 51377281,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CC(=O)N1CCC[C@H]1C(=O)N[C@@H]1COC(=O)c2ccccc2CSC[C@@H](NC1=O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377282": {
+        "reactant_set_id": 51377282,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CNC(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 209000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377283": {
+        "reactant_set_id": 51377283,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CN(C)C(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377284": {
+        "reactant_set_id": 51377284,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CCN(CC)C(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377285": {
+        "reactant_set_id": 51377285,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CSC[C@@H](NC(=O)[C@@H](COC(=O)c1ccccc1)NC(=O)[C@@H]1CCCN1C(C)=O)C(=O)N(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 406000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377286": {
+        "reactant_set_id": 51377286,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CN(C)C(=O)[C@H]1CSCc2ccccc2C(=O)OCC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    },
+    "51377287": {
+        "reactant_set_id": 51377287,
+        "pmid": 33337880,
+        "protein": "Nuclear factor erythroid 2-related factor 2",
+        "ligand": {
+            "smiles": "CN(C)C(=O)[C@H]1CSCc2ccccc2C(=O)OC[C@@H](NC(=O)[C@@H]2CCCN2C(C)=O)C(=O)NCC(=O)N1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 500000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Inhibition of Nrf2 peptide (KKKKAFFAQLQLDEETGEFL) binding to Keap1 Kelch domain (321 to 609 residues) (unknown origin) assessed as dissociation constant by surface plasmon resonance based inhibition in solution assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen, Y.; Inoyama, D.; Kong, A.-N. T.; Beamer, L. J.; Hu, L. Kinetic analysis of Keap1–Nrf2 interaction and determination of the minimal Nrf2 peptide sequence required for Keap1 binding using surface plasmon resonance. Chem. Biol. Drug Des. 2011, 78, 1014–1021.",
+        "original_paragraph": {
+            "SPR Inhibition in Solution Assay (ISA)": "The SPR ISA was performed in analogy to the protocol developed by Chen et al.30 with the following differences. Instead of a biotinylated peptide, a lysine-tagged version of the Nrf2-peptide (KKKKAFFAQLQLDEETGEFL) was utilized for tethering to the sensor surface. For the covalent tethering, a CMS biosensor (GE Healthcare, research grade) was employed using HBS-P [10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40] as the continuous flow buffer at a rate of 10 μL/min at 20 °C on a BIACORE 3000 optical biosensor unit (GE Healthcare). The surface was activated by injecting a mixture of 1-ethyl-3-(3-dimethylaminopropyl)-carbodiimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS) for 7 min, followed by an injection of 50 μM Nrf2-peptide in 10 mM Na-acetate, pH 4.0 for 2 min. Any reactive groups still present on the surface were deactivated by a 7 min injection of 0.1 M ethanolamine hydrochloride-NaOH, pH 8.5. Peptide immobilization levels were typically between 400 and 600 RU to ensure mass transport limitation and thus a protein-concentration-dependent response. For the detection of active compounds, a solution of 25 nM Keap1 (Kelch domain = aa321–aa609) was prepared in running buffer and preincubated with either a constant or varying concentrations. These mixtures were subsequently injected over the peptide-modified biosensor, and control samples devoid of compounds were used to determine the remaining free protein concentration of Keap1 in response to compound binding. For this, the initial association slopes of the binding sensorgrams have been measured (interval 5–15 s after sample injection) for each sample, followed by a regeneration of the sensor for the next cycle through a 45 s injection of 50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5. Results have been reported as KD values for concentration-response experiments. This was achieved by a nonlinear regression analysis of the concentration-response data, which is normalized by the control samples representing 0% inhibition.",
+            "Figure 2 caption": "Figure 2. Characterization of cyclothalidide analogues. (a) Synthesized analogues of the cyclothalidide core that were evaluated as inhibitors of binding of Keap1 to an immobilized peptide derived from Nrf2 by surface plasmon resonance using an inhibition in solution assay (ISA) format. Dissociation constants, reported as mean values ± standard deviation, from three measurements on three distinct samples are given for each analogue. (b) Interaction kinetic analysis of a dilution series of macrocycle 14 in a direct binding assay using immobilized Keap1 (left). Determination of the dissociation constant (KD) for 14 by fitting of the data to a two-parameter sigmoidal equation (right). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (c) Determination of KD for the binding of 14 to Keap1 by isothermal titration calorimetry. The raw heat signals from the exothermic binding reaction (left) have been integrated to yield a binding isotherm (right) from which the thermodynamic parameters were extracted (insert). The dissociation constant was obtained from three measurements on three distinct samples and is reported as the mean value ± standard deviation. (d) Characterization of macrocycle 14 by calculated descriptors (MW and TPSA), solubility in phosphate-buffered saline at 25 °C and pH 7.4, efflux-inhibited permeability across a Caco-2 cell monolayer (Papp AB + inh), human microsomal metabolism ( Clint), and induction of Nrf2 translocation into the nucleus (Nrf2 trans) at 256 μM. The values for solubility, cell permeability, and human microsomal metabolism are mean values ± standard deviation from three measurements on three distinct samples. The Nrf2 translocation into the nucleus is the mean from two measurements on two distinct samples.",
+            "Figure 2b left plot": "Response (AU) vs Time (s) sensorgram for macrocycle 14. Concentrations shown: 0.2 μM (blue), 0.6 μM (green), 2.0 μM (orange), 6.0 μM (red), 20.0 μM (purple), 60.0 μM (black).",
+            "Figure 2b right plot": "Response (AU) vs Concentration (M) plot for macrocycle 14. The fitted curve yields KD: 4.1 ± 0.3 μM.",
+            "Figure 2c left plot": "DP (μcal/sec) vs Time (min) for ITC experiment. The raw heat signals are shown.",
+            "Figure 2c right plot": "kcal/mol of Injectant vs Molar Ratio. The fitted curve yields KD: 3.7 ± 0.8 μM.",
+            "Figure 2d table": "MW (Da): 491, TPSA (Å): 125, Solubility (μM): 805 ± 106, Papp AB + Inh (x10^-6 cm/s): 1.6 ± 0.42, Clint (μL/min/mg): 36.5 ± 2.5, Nrf2 trans (induction %): 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "BIACORE 3000"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Nrf2-peptide (KKKKAFFAQLQLDEETGEFL)",
+                "strategy": "Amine coupling",
+                "density_ru": "400-600",
+                "concentration_for_immobilization": "50 μM"
+            },
+            "analyte": {
+                "description": "Keap1 (Kelch domain = aa321–aa609)",
+                "concentration_range": "25 nM (preincubated with varying concentrations of compounds)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, 150 mM NaCl, 0.05% (v/v) Tween 20, 1.0 mM TCEP, pH 7.40",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "50 mM Tris/Cl, 0.25% SDS, 5 mM TCEP, pH 7.5"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Other",
+                "software": null
+            }
+        }
+    }
+}

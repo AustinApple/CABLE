@@ -1,0 +1,64 @@
+{
+    "51270954": {
+        "reactant_set_id": 51270954,
+        "pmid": 31339316,
+        "protein": "Induced myeloid leukemia cell differentiation protein Mcl-1",
+        "ligand": {
+            "smiles": "CCc1sc2ncnc(O[C@H](Cc3ccccc3)C(O)=O)c2c1-c1ccc(OCCN2CCN(C)CC2)c(Cl)c1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TEV-fused His-tagged human Mcl-1 expressed in Escherichia coliBL21(DE3) pLysS cells by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Analysis. The binding affinity of compounds to TEV-fused His-tagged human Mcl-1 expressed in Escherichia coli BL21(DE3) pLysS cells was measured by SPR analysis using a Biacore T200 instrument (GE Healthcare). The Mcl-1 protein was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, and 0.005% Tween 20. Compounds were diluted in the running buffer and injected at concentrations ranging from 0.1 to 100 μM at a flow rate of 30 μL/min. The association phase lasted 120 s, followed by a 120 s dissociation phase. The chip was regenerated with 10 mM glycine, pH 2.0, for 30 s. Data were analyzed using Biacore T200 evaluation software. The binding affinity (KD) was calculated from the association (ka) and dissociation (kd) rate constants using a 1:1 Langmuir binding model."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "TEV-fused His-tagged human Mcl-1",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds",
+                "concentration_range": "0.1 to 100 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20, and 0.005% Tween 20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

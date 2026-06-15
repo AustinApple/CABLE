@@ -1,0 +1,806 @@
+{
+    "51508104": {
+        "reactant_set_id": 51508104,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCOCC1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508105": {
+        "reactant_set_id": 51508105,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCC(=O)N1CCOCC1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508106": {
+        "reactant_set_id": 51508106,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCNC(=O)C1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 5.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508107": {
+        "reactant_set_id": 51508107,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCS(=O)(=O)CC1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508108": {
+        "reactant_set_id": 51508108,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "CC1(O)CCN(CCOc2ccccc2Cc2cn(nc2-c2cc(Cl)nc(N)n2)C(F)F)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508109": {
+        "reactant_set_id": 51508109,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "COC(=O)[C@@H]1COCCN1CCOc1ccccc1Cc1cn(nc1-c1cc(Cl)nc(N)n1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508110": {
+        "reactant_set_id": 51508110,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "COC(=O)[C@H]1COCCN1CCOc1ccccc1Cc1cn(nc1-c1cc(Cl)nc(N)n1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508111": {
+        "reactant_set_id": 51508111,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCO[C@@H](CO)C1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508112": {
+        "reactant_set_id": 51508112,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCO[C@H](CO)C1)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508113": {
+        "reactant_set_id": 51508113,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCOC[C@@H]1CO)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.3,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508114": {
+        "reactant_set_id": 51508114,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Nc1nc(Cl)cc(n1)-c1nn(cc1Cc1ccccc1OCCN1CCOC[C@H]1CO)C(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    },
+    "51508115": {
+        "reactant_set_id": 51508115,
+        "pmid": 36346696,
+        "protein": "Adenylate cyclase type 10",
+        "ligand": {
+            "smiles": "Cc1c(Cc2ccccc2)c(nn1C)-c1cc(Cl)nc(N)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 176.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant His-tagged ADCY10 assessed as dissociation constant and measured for 600 sec by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Measuring Binding Kinetics via Surface Plasmon Resonance. Association (k_on) and dissociation rate constants (k_off) for the inhibitors were obtained at 25 °C with a Biacore 8K instrument (Cytiva) using a single-cycle kinetics protocol. In PBS-P+ buffer (1 mM KH2PO4, 150 mM NaCl, 6 mM Na2HPO4, 0.05% (w/v) P20 Surfactant), 50 μg/mL of recombinant purified His-tagged sAC protein was covalently immobilized and captured on a Series S Sensor NTA chip (Cytiva) using Ni2+-His-tag capture followed by amine coupling with a 1:1 mixture of 1-ethyl-3-(3-dimethylaminopropyl)carbodiimide and N-hydroxysuccinimide. After coupling, 1 M ethanolamine followed by 350 mM EDTA were, respectively, used to block any remaining reactive groups on the surface of the chip and to strip the Ni2+. Following chip preparation, TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, and 0.05% P20 Surfactant) supplemented with 1% DMSO was flowed over the surface of the chip to establish a stable baseline. After a stable baseline was obtained, five different concentrations of the indicated inhibitors were sequentially injected into a single channel at 120 s at a flow rate of 50 μL/min and then, at the same flow rate, allowed to dissociate for 600 s in the presence of running buffer. For TDI-10229, the following concentrations were used: 5000, 1250, 312.5, 78.125, and 19.53125 nM. For all other inhibitors, the following concentrations were used: 1000, 250, 62.5, 15.625, and 4 nM. All experiments were performed in parallel in reference channels lacking immobilized protein. To process the collected data, responses from the reference channels were subtracted from the responses from the active channels. From the reference-subtracted data, fitted curves and k_on and k_off values were determined using the Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva) using a 1:1 binding kinetics model.",
+            "Table 5": "Table 5. SPR Data for TDI-10229 and TDI-11861: The SPR Data and Example Traces for TDI-10229 and TDI-11861 | Cpd | 1 (TDI-10229) | 33 (TDI-11861) | |---|---|---| | Structure | [Structure of TDI-10229] | [Structure of TDI-11861] | | SPR K_D^a | 175.6 ± 23.7 nM | 1.4 ± 0.3 nM | | SPR k_on^a | 2.4 ± 0.4 x 10^5 M^-1s^-1 | 2.7 ± 0.2 x 10^5 M^-1s^-1 | | SPR k_off^a | 39.8 ± 2.2 x 10^-3 s^-1 | 0.4 ± 0.1 x 10^-3 s^-1 | | SPR Residence Time^a | 25 ± 1 s | 3181 ± 636 s | | Example SPR Trace | [SPR Trace for TDI-10229] | [SPR Trace for TDI-11861] | ^aCompounds were tested in a minimum of three independent assays, and data are reported as mean ± SEM.",
+            "Figure 2 caption": "Figure 2. Jump dilution studies of sAC inhibitors. (a) Conceptual schematic illustrating jump dilution activity recovery assay protocol. (b) Comparison of residence time from SPR and jump dilution. The residence time of TDI-10229 is too short to accurately measure via jump dilution but is included for completeness. (c) Jump dilution plots of cAMP accumulation versus time.",
+            "Figure 2 (b) table": "SPR Residence Time (s) Jump Dilution Residence Time (s) DMSO N/A N/A 1 (TDI-10229) 25 ± 1 N/A 19 1378 ± 185 542 ± 108 20 2244 ± 512 816 ± 130 33 (TDI-11861) 3181 ± 636 1220 ± 111",
+            "Figure 2 (c) plot": "The plot shows Percent Total cAMP (%) on the y-axis and Time (seconds) on the x-axis, ranging from 0 to 4000 seconds. Data points are shown for DMSO (blue), 1 (TDI-10229) (green), 19 (orange), 20 (black), and 33 (TDI-11861) (red). The curves show the recovery of cAMP production over time after a 100x dilution. The red curve (33) shows the slowest recovery, indicating the longest residence time.",
+            "Figure 5 caption": "Figure 5. Crystal structure of sAC complex with TDI-11861. The protein is displayed as a green cartoon with green wires. TDI-11861 is displayed as atom-colored balls, and sticks with cyan carbons. Hydrogen-bonding interactions are shown as dashed yellow lines."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore 8K"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor NTA chip",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant purified His-tagged sAC protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Inhibitors (including TDI-10229 and TDI-11861)",
+                "concentration_range": "19.53125 - 5000 nM for TDI-10229; 4 - 1000 nM for all other inhibitors"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "TBS-P+ running buffer (50 mM Tris, 150 mM NaCl, 0.05% P20 Surfactant) supplemented with 1% DMSO",
+                "pH": null,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 600,
+                "regeneration_solution": "1 M ethanolamine followed by 350 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": "Reference channels lacking immobilized protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore 8K Insight Evaluation Software Version 2.0 (Cytiva)"
+            }
+        }
+    }
+}

@@ -1,0 +1,266 @@
+{
+    "51093193": {
+        "reactant_set_id": 51093193,
+        "pmid": 24417609,
+        "protein": "Signal transducer and activator of transcription 1-alpha/beta",
+        "ligand": {
+            "smiles": "CC(C)=CC[C@@H](C[C@@]12C[C@@H](CC=C(C)C)C(C)(C)[C@@](CC=C(C)C)(C(=O)C(C(=O)c3ccc(O)c(O)c3)C1=O)C2=O)C(C)=C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to STAT1 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analysis": "Interaction of STAT-1 with each compound was examined by surface plasmon resonance using a Biacore 2000 biosensor system (BIAcore Inc., Piscataway, NJ, USA). STAT-1 protein (Biosource, Camarillo, CA, USA), corresponding to 15 000–18 500 as resonance units (RU), was immobilized on the carboxymethyl dextran surface, CMS, by an amine coupling reaction kit (BIAcore Inc., Uppsala, Sweden), according to the manufacturer’s instructions. An injection for 7 min of 0.2 M EDC (N-ethyl-N’-(dimethylaminopropyl)carbodiimide) and 50 mM NHS (N-hydroxysuccinimide) activated the carboxymethyl dextran surface. STAT-1 was coupled to the surface in a protein solution 0.05 mg/mL in 10 mM sodium acetate, pH 4.5. The remaining activated groups were blocked with a 7 min injection of 1.0 M ethanolamine, pH 8.5, HBS-EP buffer (BIAcore Inc.) was used for the analysis and for immobilization. Compounds were analyzed at least three times at different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Each concentration was injected in a volume of 50 μL. The interaction experiments were carried out at a flow rate of 30 μL/min. Each compound was injected into the flow cell containing immobilized STAT-1. A flow cell without STAT-1 was used as control. Apparent rate constants for association (k_a) and dissociation (k_d) of the complexes and the apparent equilibrium dissociation constant (K_D) were obtained by globally fitting the data from all the injections of the different concentrations of each compound, using the BIA evaluation software (BIAcore Inc.) and the simple 1:1 Langmuir binding model.",
+            "Results and Discussion - Detection of Direct Interaction between STAT-1 and Garcinol and Guttiferones K (2) and M (3) by SPR Analysis": "STAT-1 was immobilized on a CM-5 sensor chip, and then the compounds under investigation were injected singly over the protein-modified sensor chip at seven different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Analysis of the sensorgrams suggested a direct interaction between STAT-1 and 1–3. A representative example of a sensorgram obtained in these experiments is shown in Figure 1. The dissociation constants (K_D) of the ligand–STAT-1 complexes were calculated using a 1:1 Langmuir algorithm as summarized in Table 1. The K_D values for STAT-1 complexes involving 1–3 were determined as 16.9 × 10⁻⁶, 20.6 × 10⁻⁶, and 4.67 × 10⁻⁶, respectively. The equilibrium dissociation constants K_D obtained (Table 1) indicated that 1–3 have a good affinity for STAT-1, when compared to that reported for EGCG, a potent and selective inhibitor of STAT-1 activation.",
+            "Figure 1 caption": "Figure 1. Example of sensorgrams indicating the interaction between guttiferone K (2) and STAT-1.",
+            "Figure 1 sensorgram labels": "Concentration of guttiferone K: 50 μM, 25 μM, 15 μM, 10 μM, 5 μM, 2 μM. Time (s): -100 to 250.",
+            "Table 1": "Table 1. Estimated Values of the Dissociation Constant (K_D) of the Test Compounds. compound K_D (M) garcinol (1) 16.9 × 10⁻⁶ guttiferone K (2) 20.6 × 10⁻⁶ guttiferone M (3) 4.67 × 10⁻⁶ EGCG 0.70 × 10⁻⁶ aEach experiment was performed at least three times, and the determined SD was in the range from 3% to 7% for all the measured values."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore Inc.",
+                "model": "Biacore 2000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore Inc."
+            },
+            "immobilization": {
+                "ligand_name": "STAT-1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "15000-18500",
+                "concentration_for_immobilization": "0.05 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1 (garcinol), 2 (guttiferone K), and 3 (guttiferone M)",
+                "concentration_range": "2, 5, 10, 15, 25, 50 μM for 2 and 3; 10, 15, 25, 50, 100 μM for 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 420,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell without STAT-1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    },
+    "51093194": {
+        "reactant_set_id": 51093194,
+        "pmid": 24417609,
+        "protein": "Signal transducer and activator of transcription 1-alpha/beta",
+        "ligand": {
+            "smiles": "CC(C)=CCC[C@@]1(C)[C@H](CC=C(C)C)C[C@@]2(CC=C(C)C)C(=O)C(C(=O)c3ccc(O)c(O)c3)C(=O)[C@]1(CC=C(C)C)C2=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 20600.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to STAT1 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analysis": "Interaction of STAT-1 with each compound was examined by surface plasmon resonance using a Biacore 2000 biosensor system (BIAcore Inc., Piscataway, NJ, USA). STAT-1 protein (Biosource, Camarillo, CA, USA), corresponding to 15 000–18 500 as resonance units (RU), was immobilized on the carboxymethyl dextran surface, CMS, by an amine coupling reaction kit (BIAcore Inc., Uppsala, Sweden), according to the manufacturer’s instructions. An injection for 7 min of 0.2 M EDC (N-ethyl-N’-(dimethylaminopropyl)carbodiimide) and 50 mM NHS (N-hydroxysuccinimide) activated the carboxymethyl dextran surface. STAT-1 was coupled to the surface in a protein solution 0.05 mg/mL in 10 mM sodium acetate, pH 4.5. The remaining activated groups were blocked with a 7 min injection of 1.0 M ethanolamine, pH 8.5, HBS-EP buffer (BIAcore Inc.) was used for the analysis and for immobilization. Compounds were analyzed at least three times at different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Each concentration was injected in a volume of 50 μL. The interaction experiments were carried out at a flow rate of 30 μL/min. Each compound was injected into the flow cell containing immobilized STAT-1. A flow cell without STAT-1 was used as control. Apparent rate constants for association (k_a) and dissociation (k_d) of the complexes and the apparent equilibrium dissociation constant (K_D) were obtained by globally fitting the data from all the injections of the different concentrations of each compound, using the BIA evaluation software (BIAcore Inc.) and the simple 1:1 Langmuir binding model.",
+            "Results and Discussion - Detection of Direct Interaction between STAT-1 and Garcinol and Guttiferones K (2) and M (3) by SPR Analysis": "STAT-1 was immobilized on a CM-5 sensor chip, and then the compounds under investigation were injected singly over the protein-modified sensor chip at seven different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Analysis of the sensorgrams suggested a direct interaction between STAT-1 and 1–3. A representative example of a sensorgram obtained in these experiments is shown in Figure 1. The dissociation constants (K_D) of the ligand–STAT-1 complexes were calculated using a 1:1 Langmuir algorithm as summarized in Table 1. The K_D values for STAT-1 complexes involving 1–3 were determined as 16.9 × 10⁻⁶, 20.6 × 10⁻⁶, and 4.67 × 10⁻⁶, respectively. The equilibrium dissociation constants K_D obtained (Table 1) indicated that 1–3 have a good affinity for STAT-1, when compared to that reported for EGCG, a potent and selective inhibitor of STAT-1 activation.",
+            "Figure 1 caption": "Figure 1. Example of sensorgrams indicating the interaction between guttiferone K (2) and STAT-1.",
+            "Figure 1 sensorgram labels": "Concentration of guttiferone K: 50 μM, 25 μM, 15 μM, 10 μM, 5 μM, 2 μM. Time (s): -100 to 250.",
+            "Table 1": "Table 1. Estimated Values of the Dissociation Constant (K_D) of the Test Compounds. compound K_D (M) garcinol (1) 16.9 × 10⁻⁶ guttiferone K (2) 20.6 × 10⁻⁶ guttiferone M (3) 4.67 × 10⁻⁶ EGCG 0.70 × 10⁻⁶ aEach experiment was performed at least three times, and the determined SD was in the range from 3% to 7% for all the measured values."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore Inc.",
+                "model": "Biacore 2000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore Inc."
+            },
+            "immobilization": {
+                "ligand_name": "STAT-1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "15000-18500",
+                "concentration_for_immobilization": "0.05 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1 (garcinol), 2 (guttiferone K), and 3 (guttiferone M)",
+                "concentration_range": "2, 5, 10, 15, 25, 50 μM for 2 and 3; 10, 15, 25, 50, 100 μM for 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 420,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell without STAT-1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    },
+    "51093195": {
+        "reactant_set_id": 51093195,
+        "pmid": 24417609,
+        "protein": "Signal transducer and activator of transcription 1-alpha/beta",
+        "ligand": {
+            "smiles": "CC(C)=CCC\\C(C)=C\\C[C@@]12C[C@H](CC=C(C)C)C(C)(C)[C@@](CC=C(C)C)(C(=O)C(C(=O)c3ccc(O)c(O)c3)C1=O)C2=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4670.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to STAT1 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analysis": "Interaction of STAT-1 with each compound was examined by surface plasmon resonance using a Biacore 2000 biosensor system (BIAcore Inc., Piscataway, NJ, USA). STAT-1 protein (Biosource, Camarillo, CA, USA), corresponding to 15 000–18 500 as resonance units (RU), was immobilized on the carboxymethyl dextran surface, CMS, by an amine coupling reaction kit (BIAcore Inc., Uppsala, Sweden), according to the manufacturer’s instructions. An injection for 7 min of 0.2 M EDC (N-ethyl-N’-(dimethylaminopropyl)carbodiimide) and 50 mM NHS (N-hydroxysuccinimide) activated the carboxymethyl dextran surface. STAT-1 was coupled to the surface in a protein solution 0.05 mg/mL in 10 mM sodium acetate, pH 4.5. The remaining activated groups were blocked with a 7 min injection of 1.0 M ethanolamine, pH 8.5, HBS-EP buffer (BIAcore Inc.) was used for the analysis and for immobilization. Compounds were analyzed at least three times at different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Each concentration was injected in a volume of 50 μL. The interaction experiments were carried out at a flow rate of 30 μL/min. Each compound was injected into the flow cell containing immobilized STAT-1. A flow cell without STAT-1 was used as control. Apparent rate constants for association (k_a) and dissociation (k_d) of the complexes and the apparent equilibrium dissociation constant (K_D) were obtained by globally fitting the data from all the injections of the different concentrations of each compound, using the BIA evaluation software (BIAcore Inc.) and the simple 1:1 Langmuir binding model.",
+            "Results and Discussion - Detection of Direct Interaction between STAT-1 and Garcinol and Guttiferones K (2) and M (3) by SPR Analysis": "STAT-1 was immobilized on a CM-5 sensor chip, and then the compounds under investigation were injected singly over the protein-modified sensor chip at seven different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Analysis of the sensorgrams suggested a direct interaction between STAT-1 and 1–3. A representative example of a sensorgram obtained in these experiments is shown in Figure 1. The dissociation constants (K_D) of the ligand–STAT-1 complexes were calculated using a 1:1 Langmuir algorithm as summarized in Table 1. The K_D values for STAT-1 complexes involving 1–3 were determined as 16.9 × 10⁻⁶, 20.6 × 10⁻⁶, and 4.67 × 10⁻⁶, respectively. The equilibrium dissociation constants K_D obtained (Table 1) indicated that 1–3 have a good affinity for STAT-1, when compared to that reported for EGCG, a potent and selective inhibitor of STAT-1 activation.",
+            "Figure 1 caption": "Figure 1. Example of sensorgrams indicating the interaction between guttiferone K (2) and STAT-1.",
+            "Figure 1 sensorgram labels": "Concentration of guttiferone K: 50 μM, 25 μM, 15 μM, 10 μM, 5 μM, 2 μM. Time (s): -100 to 250.",
+            "Table 1": "Table 1. Estimated Values of the Dissociation Constant (K_D) of the Test Compounds. compound K_D (M) garcinol (1) 16.9 × 10⁻⁶ guttiferone K (2) 20.6 × 10⁻⁶ guttiferone M (3) 4.67 × 10⁻⁶ EGCG 0.70 × 10⁻⁶ aEach experiment was performed at least three times, and the determined SD was in the range from 3% to 7% for all the measured values."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore Inc.",
+                "model": "Biacore 2000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore Inc."
+            },
+            "immobilization": {
+                "ligand_name": "STAT-1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "15000-18500",
+                "concentration_for_immobilization": "0.05 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1 (garcinol), 2 (guttiferone K), and 3 (guttiferone M)",
+                "concentration_range": "2, 5, 10, 15, 25, 50 μM for 2 and 3; 10, 15, 25, 50, 100 μM for 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 420,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell without STAT-1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    },
+    "51093196": {
+        "reactant_set_id": 51093196,
+        "pmid": 24417609,
+        "protein": "Signal transducer and activator of transcription 1-alpha/beta",
+        "ligand": {
+            "smiles": "Oc1cc(O)c2C[C@@H](OC(=O)c3cc(O)c(O)c(O)c3)[C@H](Oc2c1)c1cc(O)c(O)c(O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to STAT1 (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance Analysis": "Interaction of STAT-1 with each compound was examined by surface plasmon resonance using a Biacore 2000 biosensor system (BIAcore Inc., Piscataway, NJ, USA). STAT-1 protein (Biosource, Camarillo, CA, USA), corresponding to 15 000–18 500 as resonance units (RU), was immobilized on the carboxymethyl dextran surface, CMS, by an amine coupling reaction kit (BIAcore Inc., Uppsala, Sweden), according to the manufacturer’s instructions. An injection for 7 min of 0.2 M EDC (N-ethyl-N’-(dimethylaminopropyl)carbodiimide) and 50 mM NHS (N-hydroxysuccinimide) activated the carboxymethyl dextran surface. STAT-1 was coupled to the surface in a protein solution 0.05 mg/mL in 10 mM sodium acetate, pH 4.5. The remaining activated groups were blocked with a 7 min injection of 1.0 M ethanolamine, pH 8.5, HBS-EP buffer (BIAcore Inc.) was used for the analysis and for immobilization. Compounds were analyzed at least three times at different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Each concentration was injected in a volume of 50 μL. The interaction experiments were carried out at a flow rate of 30 μL/min. Each compound was injected into the flow cell containing immobilized STAT-1. A flow cell without STAT-1 was used as control. Apparent rate constants for association (k_a) and dissociation (k_d) of the complexes and the apparent equilibrium dissociation constant (K_D) were obtained by globally fitting the data from all the injections of the different concentrations of each compound, using the BIA evaluation software (BIAcore Inc.) and the simple 1:1 Langmuir binding model.",
+            "Results and Discussion - Detection of Direct Interaction between STAT-1 and Garcinol and Guttiferones K (2) and M (3) by SPR Analysis": "STAT-1 was immobilized on a CM-5 sensor chip, and then the compounds under investigation were injected singly over the protein-modified sensor chip at seven different concentrations: 2, 5, 10, 15, 25, 50 μM for 2 and 3 and 10, 15, 25, 50, 100 μM for 1. Analysis of the sensorgrams suggested a direct interaction between STAT-1 and 1–3. A representative example of a sensorgram obtained in these experiments is shown in Figure 1. The dissociation constants (K_D) of the ligand–STAT-1 complexes were calculated using a 1:1 Langmuir algorithm as summarized in Table 1. The K_D values for STAT-1 complexes involving 1–3 were determined as 16.9 × 10⁻⁶, 20.6 × 10⁻⁶, and 4.67 × 10⁻⁶, respectively. The equilibrium dissociation constants K_D obtained (Table 1) indicated that 1–3 have a good affinity for STAT-1, when compared to that reported for EGCG, a potent and selective inhibitor of STAT-1 activation.",
+            "Figure 1 caption": "Figure 1. Example of sensorgrams indicating the interaction between guttiferone K (2) and STAT-1.",
+            "Figure 1 sensorgram labels": "Concentration of guttiferone K: 50 μM, 25 μM, 15 μM, 10 μM, 5 μM, 2 μM. Time (s): -100 to 250.",
+            "Table 1": "Table 1. Estimated Values of the Dissociation Constant (K_D) of the Test Compounds. compound K_D (M) garcinol (1) 16.9 × 10⁻⁶ guttiferone K (2) 20.6 × 10⁻⁶ guttiferone M (3) 4.67 × 10⁻⁶ EGCG 0.70 × 10⁻⁶ aEach experiment was performed at least three times, and the determined SD was in the range from 3% to 7% for all the measured values."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "BIAcore Inc.",
+                "model": "Biacore 2000"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "BIAcore Inc."
+            },
+            "immobilization": {
+                "ligand_name": "STAT-1 protein",
+                "strategy": "Amine coupling",
+                "density_ru": "15000-18500",
+                "concentration_for_immobilization": "0.05 mg/mL"
+            },
+            "analyte": {
+                "description": "Compounds 1 (garcinol), 2 (guttiferone K), and 3 (guttiferone M)",
+                "concentration_range": "2, 5, 10, 15, 25, 50 μM for 2 and 3; 10, 15, 25, 50, 100 μM for 1"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer",
+                "pH": 7.4,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 420,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell without STAT-1",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIA evaluation software"
+            }
+        }
+    }
+}

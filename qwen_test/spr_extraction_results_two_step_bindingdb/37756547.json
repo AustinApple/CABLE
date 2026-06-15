@@ -1,0 +1,132 @@
+{
+    "51565361": {
+        "reactant_set_id": 51565361,
+        "pmid": 37756547,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "CC(C)c1nn(Cc2nnc(o2)-c2ccc(nc2Cl)C(F)(F)F)c(=O)c2cc3sc(Cl)cc3n12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant NLRP3 (1 to 1036 residues) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis of Recombinant Protein": "SPR for affinity analysis was conducted with the Biacore T200 (Cytiva, USA). Recombinant human NLRP3 (residues 1–1036) was acquired from CUSABIO (CSB-EP822275HU(A4); China). The running buffer was PBST (PBS contains 0.05% Tween 20, 0.5% DMSO). NLRP3 protein was diluted to 50 μg/mL in sodium acetate (BR-1003-49, Cytiva) of pH 4.0, then protein was immobilized onto the Series S Sensor Chip CMS (BR100530, Cytiva) through amine-coupling chemistry according to the manufacturer’s instructions until to standardize a > 12,000-RU surfaces (Amine Coupling Kit, BR100050, Cytiva) at rate of 10 μL/min. The flow cell 1 was immobilized without protein to enable reference subtraction in PBST, and the flow cell 2 was the detection cell. For the kinetic experiments, we used single-cycle kinetics as it injects increasing concentrations of the compound in the solution, with only one regeneration step performed at the end of the binding cycle. The analyte compounds were prepared using a 5-fold increased concentration gradient in PBST. The equilibrium dissociation constant (K_D) was calculated using Biacore T200 evaluation software, and the data were fitting with a 1:1 Langmuir binding model.",
+            "Figure 9 caption": "Figure 9. Compound L38 directly binds to the NACH domain of NLRP3. (A) Target validation in cells lysis by DARTS assay. THP-1 cells were incubated with LPS for 3 h, and then lysed by NP40 followed by incubation with DMSO or compound L38 (100, 10, and 1 μM) for 50 min, and digested with various concentrations of pronase (1:400, 1:600, 1:1000) for 30 min, and stopped by cocktail, then detected by Western blot. (B) CETSA assay in LPS-primed THP-1 cells lysates after incubation with compound L38 at various temperatures. (C) Sensorgram of the response (resonance units, RU) versus time of the single-cycle kinetics by injecting five increasing concentrations (0.16, 0.8, 4.0, 20, and 100 nM) of L38 over the recombinant human NLRP3 protein (residues 1–1036) by SPR. FIT, fitted curve. (D, F, G) Target validation on purified NLRP3 protein with different domains by DARTS assay. (D) NLRP3-ΔLRR protein (D), NLRP3-PYD protein (F), NLRP3-NACHT protein (G) were performed with various concentration of pronase digestion and then by Western blot analysis. (E) CETSA analysis was performed on purified NLRP3ΔLRR protein. (H) CETSA analysis on purified NLRP3-NACHT protein. The data were expressed as mean ± SD (n = 3) from three independent experiments. Statistics were analyzed by two-way ANOVA. *p < 0.05, **p < 0.01 versus DMSO. ns: not significant.",
+            "Figure 9C": "The sensorgram in Figure 9C shows the response (RU) over time for five increasing concentrations of L38 (0.16, 0.8, 4.0, 20, and 100 nM) injected over the recombinant human NLRP3 protein. The x-axis represents time (s) from -200 to 1000 s, and the y-axis represents Response (RU) from 0 to 30. The fitted curve (FIT) is shown in red. The equilibrium dissociation constant (K_D) is reported as 110 nM in the figure.",
+            "Figure 9C legend": "K_D = 110 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human NLRP3 (residues 1–1036)",
+                "strategy": "Amine coupling",
+                "density_ru": "12000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound L38",
+                "concentration_range": "0.16, 0.8, 4.0, 20, and 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (PBS contains 0.05% Tween 20, 0.5% DMSO)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 immobilized without protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    },
+    "51565362": {
+        "reactant_set_id": 51565362,
+        "pmid": 37756547,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "CC(C)(O)c1coc(c1)S(=O)(=O)NC(=O)Nc1c2CCCc2cc2CCCc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 38.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human recombinant NLRP3 (1 to 1036 residues) by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis of Recombinant Protein": "SPR for affinity analysis was conducted with the Biacore T200 (Cytiva, USA). Recombinant human NLRP3 (residues 1–1036) was acquired from CUSABIO (CSB-EP822275HU(A4); China). The running buffer was PBST (PBS contains 0.05% Tween 20, 0.5% DMSO). NLRP3 protein was diluted to 50 μg/mL in sodium acetate (BR-1003-49, Cytiva) of pH 4.0, then protein was immobilized onto the Series S Sensor Chip CMS (BR100530, Cytiva) through amine-coupling chemistry according to the manufacturer’s instructions until to standardize a > 12,000-RU surfaces (Amine Coupling Kit, BR100050, Cytiva) at rate of 10 μL/min. The flow cell 1 was immobilized without protein to enable reference subtraction in PBST, and the flow cell 2 was the detection cell. For the kinetic experiments, we used single-cycle kinetics as it injects increasing concentrations of the compound in the solution, with only one regeneration step performed at the end of the binding cycle. The analyte compounds were prepared using a 5-fold increased concentration gradient in PBST. The equilibrium dissociation constant (K_D) was calculated using Biacore T200 evaluation software, and the data were fitting with a 1:1 Langmuir binding model.",
+            "Figure 9 caption": "Figure 9. Compound L38 directly binds to the NACH domain of NLRP3. (A) Target validation in cells lysis by DARTS assay. THP-1 cells were incubated with LPS for 3 h, and then lysed by NP40 followed by incubation with DMSO or compound L38 (100, 10, and 1 μM) for 50 min, and digested with various concentrations of pronase (1:400, 1:600, 1:1000) for 30 min, and stopped by cocktail, then detected by Western blot. (B) CETSA assay in LPS-primed THP-1 cells lysates after incubation with compound L38 at various temperatures. (C) Sensorgram of the response (resonance units, RU) versus time of the single-cycle kinetics by injecting five increasing concentrations (0.16, 0.8, 4.0, 20, and 100 nM) of L38 over the recombinant human NLRP3 protein (residues 1–1036) by SPR. FIT, fitted curve. (D, F, G) Target validation on purified NLRP3 protein with different domains by DARTS assay. (D) NLRP3-ΔLRR protein (D), NLRP3-PYD protein (F), NLRP3-NACHT protein (G) were performed with various concentration of pronase digestion and then by Western blot analysis. (E) CETSA analysis was performed on purified NLRP3ΔLRR protein. (H) CETSA analysis on purified NLRP3-NACHT protein. The data were expressed as mean ± SD (n = 3) from three independent experiments. Statistics were analyzed by two-way ANOVA. *p < 0.05, **p < 0.01 versus DMSO. ns: not significant.",
+            "Figure 9C": "The sensorgram in Figure 9C shows the response (RU) over time for five increasing concentrations of L38 (0.16, 0.8, 4.0, 20, and 100 nM) injected over the recombinant human NLRP3 protein. The x-axis represents time (s) from -200 to 1000 s, and the y-axis represents Response (RU) from 0 to 30. The fitted curve (FIT) is shown in red. The equilibrium dissociation constant (K_D) is reported as 110 nM in the figure.",
+            "Figure 9C legend": "K_D = 110 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Recombinant human NLRP3 (residues 1–1036)",
+                "strategy": "Amine coupling",
+                "density_ru": "12000",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound L38",
+                "concentration_range": "0.16, 0.8, 4.0, 20, and 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBST (PBS contains 0.05% Tween 20, 0.5% DMSO)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1 immobilized without protein",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

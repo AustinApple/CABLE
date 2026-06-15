@@ -1,0 +1,514 @@
+{
+    "51286583": {
+        "reactant_set_id": 51286583,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "Nc1nc2ccccc2nc1N1CCCC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286588": {
+        "reactant_set_id": 51286588,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "Nc1nc2ccccc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286589": {
+        "reactant_set_id": 51286589,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "Nc1nc2ncccc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1300.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286590": {
+        "reactant_set_id": 51286590,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "OCc1csc(n1)-c1ccnc2[nH]ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286597": {
+        "reactant_set_id": 51286597,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "Fc1cnccc1-c1ccnc2[nH]ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2400.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286599": {
+        "reactant_set_id": 51286599,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "Nc1nc2cc(Cl)ccc2n1CCCO"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 15000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286603": {
+        "reactant_set_id": 51286603,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "c1cc2cccnc2[nH]1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 96000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51286604": {
+        "reactant_set_id": 51286604,
+        "pmid": 31077996,
+        "protein": "Oxidized purine nucleoside triphosphate hydrolase",
+        "ligand": {
+            "smiles": "Nc1nc2c(ccnc2[nH]1)-c1ccncc1F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 100.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant His-tagged MTH1 (unknown origin) expressed in Escherichia coli BL21(DE3) assessed as dissociation constant by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical, Worcestershire, UK) at 25 °C. The protein (MTH1, 100 μM) was loaded into the sample cell, and the ligand (1000 μM) was loaded into the syringe. The buffer was 20 mM HEPES, 100 mM NaCl, pH 7.4. The stirring speed was set to 300 rpm. The ligand was injected in 20 steps of 2 μL each, with a 120 s spacing between injections. The data were analyzed using Origin 7.0 software (OriginLab, Northampton, MA, USA) with a one-site binding model. The experiments were performed in triplicate, and the data are presented as mean ± SD. The binding affinity was calculated as the dissociation constant (Kd).",
+            "Figure 3 caption": "Fig. 3. Stability of docked pose of fragment 6 and interactions with the Asp-Asp motif. (A) The RMSD of fragment 6 in the five 200-ns trajectories (individual runs separated by vertical red line) was calculated by using non-hydrogen atoms and the crystal structure as reference (PDB code 6EQ2). (B) The average distances of the hydrogen bond between fragment 6 and the MTH1 binding site residues. (C) Time series of the χ1 angle of Asn33 (horizontal lines emphasize the two main orientations of the Asn33 side chain). (D) The two orientations of Asn33 observed in the simulations are shown (colors correspond to those in panel C). (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 caption": "Table 1 MTH1 hits obtained by docking a library of aspartic protease inhibitors. Dissociation constant (Kd) and half maximal inhibitory concentration (IC50) were measured by ITC and colorimetric assay, respectively. 'Ligand efficiency (LE) was calculated as −1.37log(IC50)/HA, where HA is the number of non-hydrogen atoms. 'ClogP was calculated by ChemDraw. 'Lipophilic ligand efficiency (LLE) was calculated as pIC50−ClogP. 'Values for BACE1 inhibition were taken from previous works [29,32,33], except for fragment 6 which was measured by the assay with the fluorogenic substrate (Fig. S13). The PDB codes of the structures of MTH1 in complex with compounds 1, 4, and 6 are 6EQ6, 6EQ5, and, 6EQ2, respectively.",
+            "Table 2 caption": "Table 2 Hit optimization. Nine derivatives of the 7-azaindole 7 were tested in vitro: compounds 8–10 and the six molecules in Table S1. See caption of Table 1 for notes. The PDB codes of the structures of MTH1 in complex with compounds 8 and 9 are 6EQ4 and 6EQ3, respectively.",
+            "Figure 5 caption": "Fig. 5. Design and characterization of the lead compound 11. (A) The overlap of the crystal structures of MTH1 in the complexes with fragment 6 (carbon atoms and electron density in yellow) and fragment 8 (cyan) suggests that the 3-fluoro-pyridine can be substituted also on fragment 6. The two orientations of the fluorine atom of fragment 8 are shown with the corresponding densities. (B) The crystal structure of the complex of MTH1 and the lead compound 11 validates the design. (C) Chemical structures and CETSA results. In the absence of inhibitors, MTH1 unfolds and precipitates at high temperature (>58 °C) in K562 cells. The inhibitors stabilize MTH1 and raise the melting temperature. The amount of unprecipitated protein was quantified by Western Blot. The nanomolar inhibitor TH588 (5 nM in Ref. 6) was used as positive control. (D) The values of affinity of our lead 11 and the inhibitor TH588 in binding assays with recombinant MTH1 are tabulated (see caption of Table 1 for notes), together with the cytotoxic effect on HeLa cells. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)",
+            "Table 1 data": "For compound 1: Kd = 15 μM; For compound 2: Kd = 15 μM; For compound 3: Kd = 15 μM; For compound 4: Kd = 18 μM; For compound 5: Kd = 1.3 μM; For compound 6: Kd = 1.3 μM",
+            "Table 2 data": "For compound 7: Kd = 96 μM; For compound 8: Kd = 2.4 μM; For compound 9: Kd = 0.7 μM; For compound 10: Kd = 0.36 μM",
+            "Table 5 data": "For compound 11: Kd = 0.1 μM; For TH588: Kd = 0.005 μM"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "MTH1",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "300",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

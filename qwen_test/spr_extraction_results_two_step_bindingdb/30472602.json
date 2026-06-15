@@ -1,0 +1,67 @@
+{
+    "51276664": {
+        "reactant_set_id": 51276664,
+        "pmid": 30472602,
+        "protein": "Signal transducer and activator of transcription 3",
+        "ligand": {
+            "smiles": "O=C(NCCN1CCCCC1)c1cc2c(o1)C(=O)c1ccccc1C2=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 110.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant N-terminal His-tagged STAT3 (unknown origin) expressed in baculovirus infected Sf9 insect cells by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - 4.9. Purification of STAT3 and surface plasmon resonance (SPR) analysis": "Full-length STAT3 with N-terminal His-tag was expressed by baculovirus in Sf9 insect cells. Briefly, STAT3 vector was co-transfected with Bac-N-Blue DNA into Sf9 cells. Recombinant virus was amplified in Sf9 cells and expressed in High Five cells. 2–3 d post-infection, cells were spun down and the medium was collected for purification. After filter, concentration and dialysis, protein was purified by Ni-NTA Agarose and gel-filtration columns. Protein purity (>90%) and concentration were determined by SDS-PAGE with Coomassie staining and UV spectrometry. STAT3 and compound 8q binding analyses was performed by using Biacore X100 (GE Healthcare, UK) according to standard methods. Protein was covalently immobilized to the surface of a CM5 sensor chip using a amine coupling kit (GE Healthcare). Compound 8q was diluted with 5% DMSO in PBS buffer. The concentrations were set at 600, 300, 150, 75, 37.5 and 18.75 nM. The equilibrium dissociation constant (KD) was obtained by using the BIAevaluation 2.0 software.",
+            "Figure 8 caption": "Fig. 8. Electrophoretic mobility shift assay (EMSA) and surface plasmon resonance (SPR) analysis. (A) The effects of compound 8q on the DNA binding activity of STAT3 was determined by EMSA with biotin-labeled DNA probe and Flag-tagged STAT3 pull-downed from HEK293T cells transiently transfected with full-length STAT3 cDNA. Ab, antibody; Pro, protein. (B) STAT3 and compound 8q binding analyses with Biacore X100. The concentrations of 8q are varied from 18.75 nM to 600 nM. The equilibrium dissociation constant (KD) was obtained by using the GE BIA evaluation 2.0 software.",
+            "Results - 2.8. Binding of compound 8q with STAT3": "Furthermore, we validate the binding of compound 8q with STAT3 using EMSA and SPR analysis. As shown in Fig. 8A, compound 8q incubation at 100 nM and 200 nM concentration dramatically decreased the binding of STAT3 with biotin-labeled DNA probe. SPR analyses with Biacore X100 also show that compound 8q has a KD of 110.2 nM for full-length STAT3 recombinant protein (Fig. 8B).",
+            "Figure 8B sensorgram data": "The sensorgram in Figure 8B shows response (RU) over time (s). The x-axis ranges from -50 to 250 seconds. The y-axis ranges from -20 to 100 RU. The curves represent different concentrations of compound 8q, labeled as 0, 25, 50, 100, 200 nM. The equilibrium dissociation constant (KD) is explicitly stated as 110.2 nM in the figure caption and text."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X100"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "Full-length STAT3 with N-terminal His-tag",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 8q",
+                "concentration_range": "18.75 nM - 600 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer with 5% DMSO",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "BIAevaluation 2.0"
+            }
+        }
+    }
+}

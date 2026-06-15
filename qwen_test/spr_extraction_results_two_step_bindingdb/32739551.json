@@ -1,0 +1,194 @@
+{
+    "51399977": {
+        "reactant_set_id": 51399977,
+        "pmid": 32739551,
+        "protein": "Eukaryotic translation initiation factor 4E",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)CNC(C)=O)[C@@H](C)O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](Cc1ccccc1)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCSC)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CS)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(N)=O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 17.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human 10His-tagged eIF4E expressed in Escherichia coli BL21 (DE3) cells assessed as binding constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "E.E. Gallagher, J.M. Song, A. Menon, L.D. Mishra, A. Chmiel, A.L. Garner, Consideration of binding kinetics in the design of stapled peptide mimics of the disordered proteins eukaryotic translation initiation factor 4E (eIF4E)-Binding protein 1 (4E-BP1) and eukaryotic translation initiation factor 4G (eIF4G), J. Med. Chem. 62 (2019) 4967–4978.",
+        "original_paragraph": {
+            "Materials and Methods - SPR Analysis": "SPR was performed using a SensiQ Pioneer instrument and a HisCap chip (three-dimensional hydrogel surface) with 3 channels in series as previously described [20]. Channel 1 was activated with NiCl2 and 10 × His-eIF4E was immobilized by injection into the running buffer (10 mM HEPES-NaOH, pH 7.5, 225 mM NaCl, 10 mM imidazole, 0.1% Tween-20, and 5% Glycerol). The concentration was adjusted to about 600 RU. 50 μL of peptide was injected at 50 μL/min over a range of 10 concentrations in duplicate and random order (188 nM–4.0 μM) at 25 °C. The chip was regenerated in between each cycle with injection 500 mM EDTA followed by reactivation with NiCl2 and re-immobilization of 10 × His-eIF4E. The association rate (ka), dissociation rate (kd), and binding constant (Ka) were obtained by fitting to a 1:1 interaction model using global data analysis with the Qdat software, which employs the Levenberg-Marquardt non-linear regression algorithm.",
+            "Figure 2 caption": "Fig. 2. 4E-BP1 stapled peptides. (A) Sequences of 4E-BP1, HCS-4E-BP1 and Lac-4E-BP1 peptides. (B) Peptide helicities as determined via CD spectroscopy in 5 mM sodium phosphate buffer, pH 7.4, 25 °C. (C) In vitro inhibitory activities determined via PPI cat-ELCCA. (D) Tabulated helicity and IC50 values (presented as 95% confidence intervals) and SPR data.",
+            "Table 2D": "Peptide Helicity (%) IC50 (nM) ka x 10^6 (M^-1s^-1) kd x 10^-3 (s^-1) Kd (nM) 4E-BP1 (51R-63) 20 60-84 0.63 ± 0.09 11 ± 2 17 ± 0.2 LacA-4E-BP1 20 22-32 0.58 ± 0.01 4.2 ± 0.03 7.2 ± 0.1 LacB-4E-BP1 40 6.5-9.2 3.1 ± 0.02 6.9 ± 0.01 2.2 ± 0.01"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "HisCap chip",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "10 × His-eIF4E",
+                "strategy": "NTA-His capture",
+                "density_ru": "600",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptide",
+                "concentration_range": "188 nM – 4.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES-NaOH, pH 7.5, 225 mM NaCl, 10 mM imidazole, 0.1% Tween-20, and 5% Glycerol",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "500 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Qdat"
+            }
+        }
+    },
+    "51399978": {
+        "reactant_set_id": 51399978,
+        "pmid": 32739551,
+        "protein": "Eukaryotic translation initiation factor 4E",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@H]1CCCCNC(=O)CC[C@H](NC(=O)[C@H](CCSC)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O)C(=O)N[C@@H](CS)C(=O)N[C@@H](CCCNC(N)=N)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human 10His-tagged eIF4E expressed in Escherichia coli BL21 (DE3) cells assessed as binding constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "E.E. Gallagher, J.M. Song, A. Menon, L.D. Mishra, A. Chmiel, A.L. Garner, Consideration of binding kinetics in the design of stapled peptide mimics of the disordered proteins eukaryotic translation initiation factor 4E (eIF4E)-Binding protein 1 (4E-BP1) and eukaryotic translation initiation factor 4G (eIF4G), J. Med. Chem. 62 (2019) 4967–4978.",
+        "original_paragraph": {
+            "Materials and Methods - SPR Analysis": "SPR was performed using a SensiQ Pioneer instrument and a HisCap chip (three-dimensional hydrogel surface) with 3 channels in series as previously described [20]. Channel 1 was activated with NiCl2 and 10 × His-eIF4E was immobilized by injection into the running buffer (10 mM HEPES-NaOH, pH 7.5, 225 mM NaCl, 10 mM imidazole, 0.1% Tween-20, and 5% Glycerol). The concentration was adjusted to about 600 RU. 50 μL of peptide was injected at 50 μL/min over a range of 10 concentrations in duplicate and random order (188 nM–4.0 μM) at 25 °C. The chip was regenerated in between each cycle with injection 500 mM EDTA followed by reactivation with NiCl2 and re-immobilization of 10 × His-eIF4E. The association rate (ka), dissociation rate (kd), and binding constant (Ka) were obtained by fitting to a 1:1 interaction model using global data analysis with the Qdat software, which employs the Levenberg-Marquardt non-linear regression algorithm.",
+            "Figure 2 caption": "Fig. 2. 4E-BP1 stapled peptides. (A) Sequences of 4E-BP1, HCS-4E-BP1 and Lac-4E-BP1 peptides. (B) Peptide helicities as determined via CD spectroscopy in 5 mM sodium phosphate buffer, pH 7.4, 25 °C. (C) In vitro inhibitory activities determined via PPI cat-ELCCA. (D) Tabulated helicity and IC50 values (presented as 95% confidence intervals) and SPR data.",
+            "Table 2D": "Peptide Helicity (%) IC50 (nM) ka x 10^6 (M^-1s^-1) kd x 10^-3 (s^-1) Kd (nM) 4E-BP1 (51R-63) 20 60-84 0.63 ± 0.09 11 ± 2 17 ± 0.2 LacA-4E-BP1 20 22-32 0.58 ± 0.01 4.2 ± 0.03 7.2 ± 0.1 LacB-4E-BP1 40 6.5-9.2 3.1 ± 0.02 6.9 ± 0.01 2.2 ± 0.01"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "HisCap chip",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "10 × His-eIF4E",
+                "strategy": "NTA-His capture",
+                "density_ru": "600",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptide",
+                "concentration_range": "188 nM – 4.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES-NaOH, pH 7.5, 225 mM NaCl, 10 mM imidazole, 0.1% Tween-20, and 5% Glycerol",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "500 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Qdat"
+            }
+        }
+    },
+    "51399979": {
+        "reactant_set_id": 51399979,
+        "pmid": 32739551,
+        "protein": "Eukaryotic translation initiation factor 4E",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](CCCNC(N)=N)NC(C)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@H]1CCC(=O)NCCCC[C@H](NC(=O)[C@H](CCSC)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O)C(=O)N[C@@H](CS)C(=O)N[C@@H](CCCNC(N)=N)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.2,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human 10His-tagged eIF4E expressed in Escherichia coli BL21 (DE3) cells assessed as binding constant by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "E.E. Gallagher, J.M. Song, A. Menon, L.D. Mishra, A. Chmiel, A.L. Garner, Consideration of binding kinetics in the design of stapled peptide mimics of the disordered proteins eukaryotic translation initiation factor 4E (eIF4E)-Binding protein 1 (4E-BP1) and eukaryotic translation initiation factor 4G (eIF4G), J. Med. Chem. 62 (2019) 4967–4978.",
+        "original_paragraph": {
+            "Materials and Methods - SPR Analysis": "SPR was performed using a SensiQ Pioneer instrument and a HisCap chip (three-dimensional hydrogel surface) with 3 channels in series as previously described [20]. Channel 1 was activated with NiCl2 and 10 × His-eIF4E was immobilized by injection into the running buffer (10 mM HEPES-NaOH, pH 7.5, 225 mM NaCl, 10 mM imidazole, 0.1% Tween-20, and 5% Glycerol). The concentration was adjusted to about 600 RU. 50 μL of peptide was injected at 50 μL/min over a range of 10 concentrations in duplicate and random order (188 nM–4.0 μM) at 25 °C. The chip was regenerated in between each cycle with injection 500 mM EDTA followed by reactivation with NiCl2 and re-immobilization of 10 × His-eIF4E. The association rate (ka), dissociation rate (kd), and binding constant (Ka) were obtained by fitting to a 1:1 interaction model using global data analysis with the Qdat software, which employs the Levenberg-Marquardt non-linear regression algorithm.",
+            "Figure 2 caption": "Fig. 2. 4E-BP1 stapled peptides. (A) Sequences of 4E-BP1, HCS-4E-BP1 and Lac-4E-BP1 peptides. (B) Peptide helicities as determined via CD spectroscopy in 5 mM sodium phosphate buffer, pH 7.4, 25 °C. (C) In vitro inhibitory activities determined via PPI cat-ELCCA. (D) Tabulated helicity and IC50 values (presented as 95% confidence intervals) and SPR data.",
+            "Table 2D": "Peptide Helicity (%) IC50 (nM) ka x 10^6 (M^-1s^-1) kd x 10^-3 (s^-1) Kd (nM) 4E-BP1 (51R-63) 20 60-84 0.63 ± 0.09 11 ± 2 17 ± 0.2 LacA-4E-BP1 20 22-32 0.58 ± 0.01 4.2 ± 0.03 7.2 ± 0.1 LacB-4E-BP1 40 6.5-9.2 3.1 ± 0.02 6.9 ± 0.01 2.2 ± 0.01"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "SensiQ",
+                "model": "Pioneer"
+            },
+            "sensor_chip": {
+                "type": "HisCap chip",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "10 × His-eIF4E",
+                "strategy": "NTA-His capture",
+                "density_ru": "600",
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Peptide",
+                "concentration_range": "188 nM – 4.0 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES-NaOH, pH 7.5, 225 mM NaCl, 10 mM imidazole, 0.1% Tween-20, and 5% Glycerol",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 50,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "500 mM EDTA"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Qdat"
+            }
+        }
+    }
+}

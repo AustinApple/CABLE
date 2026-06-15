@@ -1,0 +1,67 @@
+{
+    "51587654": {
+        "reactant_set_id": 51587654,
+        "pmid": 38488882,
+        "protein": "Platelet-derived growth factor receptor alpha/beta",
+        "ligand": {
+            "smiles": "CC(C)n1nnc2ccc(-c3ccnc(Nc4cc(C(=O)N5CCCN(C)CC5)ccn4)c3)cc21"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 26420.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to CDK9/Cyclin T1 (unknown origin) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance (SPR) experiments were performed on a Biacore T200 instrument (GE Healthcare) at 25 °C. CDK9/Cyclin T1 (10 μg/mL) was immobilized on a CM5 sensor chip (GE Healthcare) via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20. The analyte (CLZX-205) was diluted in the running buffer to concentrations of 12.5, 25, 50, 100, and 200 μM. The association phase was 120 s, and the dissociation phase was 180 s. The regeneration solution was 10 mM glycine, pH 2.0. Data were analyzed using Biacore T200 evaluation software.",
+            "Figure 4 caption": "Figure 4. (A) Binding mode of CLZX-205 and CDK9/Cyclin T1 (PDB:4BCF); (B) 2D protein–ligand interaction between CLZX-205 and CDK9/Cyclin T1; (C) root-mean-square deviation (RMSD) values in molecular dynamics simulation studies (0–100 ns). The RMSD values of protein and ligand are represented by blue and red lines, respectively; (D) ligand torsions plot summarizes the conformational evolution of every rotatable bond in the ligand throughout the simulation trajectory. The top panel shows the 2D schematic of a ligand with color-coded rotatable bonds. Each rotatable bond torsion is accompanied by a dial plot and bar plots of the same color. (E) Binding affinity of CLZX-205 and CDK9/Cyclin T1.",
+            "Figure 4E": "Kd = 26.42 μM",
+            "Figure 4E sensorgram": "KDM: 2.642E-5, Rmax: 280.3"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "CDK9/Cyclin T1",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "CLZX-205",
+                "concentration_range": "12.5 μM - 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 0.05% P20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "10 mM glycine, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

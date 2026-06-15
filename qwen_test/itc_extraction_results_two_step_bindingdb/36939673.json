@@ -1,0 +1,60 @@
+{
+    "51572508": {
+        "reactant_set_id": 51572508,
+        "pmid": 36939673,
+        "protein": "Syntenin-1",
+        "ligand": {
+            "smiles": "C[C@H](NC(=O)[C@H](Cc1ccc(cc1)-c1cc(ccc1F)C(C)=O)N1Cc2cc(Br)ccc2C1=O)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to full length N-terminal GST-tagged human syntenin-1 expressed in Escherichia coli ER2566 assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry": "Syntenin samples prepared for crystallography experiments were directly used for isothermal titration calorimetry (ITC) after an additional step of buffer exchange in 10 mM Hepes, 150 mM NaCl, pH 7.5 using a PD10 column (GE Healthcare). The compound from a 50mM stock solution in 100% DMSO was directly diluted in the buffer exchange buffer. Titrations were carried out on a MicroCal ITC200 microcalorimeter (MALVERN) and each experiment was designed using various titrant/analyte concentrations as shown Table S2 and using 15 syringe injections of 2.3μL SYNTi. An additional first 0.4 μL injection was included in the titration protocol to remove air bubbles trapped in the syringe prior to titration and to take into account syringe predilution in the cell during equilibration. Raw data were scaled after setting the zero to the titration saturation heat value. Integrated raw ITC data were fitted to a one-site nonlinear least squares fit model using the MicroCal Origin plugin as implemented in Origin 7 (Origin Lab). Finally, ΔG and TΔS values were calculated from the fitted ΔH and Ka values using the equations ΔG = -R.T.ln(KA) and ΔG = ΔH - TΔS. The final KD value was calculated from averaging the 3 performed independent experiments.",
+            "Figure 4 caption": "Figure 4. Representative ITC experiment of the Syntenin/SYNTi interaction at 25°C. For this titration experiment, Syntenin (cell) and SYNTi (syringe) were used at 100μM and 1000μM respectively. The thermodynamics parameters (ΔH (blue), -TΔS (red) and ΔG (green)) measured/deduced from this experiment are shown at the bottom right of the figure. The full details of this experiment are listed Table S2 along with the two other performed experiments used to calculate the interaction KD (Figure S6)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "Syntenin",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "SYNTi",
+                "location": "syringe",
+                "concentration": "1000"
+            },
+            "assay_conditions": {
+                "buffer_composition": "10 mM Hepes, 150 mM NaCl",
+                "pH": "7.5",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "0.4",
+                    "subsequent_volume": "2.3",
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": "15"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "51367118": {
+        "reactant_set_id": 51367118,
+        "pmid": 33571875,
+        "protein": "TP53-binding protein 1",
+        "ligand": {
+            "smiles": "CCN(CC)c1cc(C)c2cc(NC(=O)\\C=C\\c3ccco3)ccc2n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human N-terminal His6-tagged 53BP1 TTD (1484 to1603 residues) expressed in Escherichia coli BL21 (DE3) cells by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Chen S, Wang Y, Zhou W, et al. Identifying novel selective non-nucleoside DNA methyltransferase 1 inhibitors through docking-based virtual screening. J Med Chem. 2014;57(21):9028–9041. https://doi.org/10.1021/jm501134e.",
+        "original_paragraph": {
+            "Materials and Methods - 3.8. Surface plasmon resonance (SPR)-binding assay": "The SPR assays were also performed to test the binding affinity of 53BP1-TTD protein and the compounds on a Biacore T200 instrument (GE Healthcare) at 25 °C.37 The 53BP1-TTD protein was coupled to the CM5 chip (GE Healthcare) to attain an optical density of 5000 RU base on a standard amine coupling protocol after dissolved in 10 mM sodium acetate (pH 4.0). The chip that connects the protein was first equilibrated with HBS-EP buffer (20 mM Heps pH 7.5, 150 mM NaCl, 0.2% v/v DMSO) for 2 h. The compounds were diluted in HBS buffer at concentrations ranging from 2.00 μM to 66.66 μM. The time parameters that the compounds were injected to bind with the protein and dissociate were set at 150 s and 180 s. Finally, the Kd values of the compounds against 53BP1-TTD protein were obtained by Biacore T200 evaluation software (GE Healthcare).",
+            "Figure 3 caption": "Fig. 3. Directing interaction between DP308 and 53BP1-TTD protein. (A) MST assay to determine the equilibrium dissociation constant (Kd) of DP308 binding to 53BP1-TTD protein. (B) SPR binding assay to determine the binding kinetics between DP308 and 53BP1-TTD protein.",
+            "Figure 3B sensorgram": "The SPR binding assay (Fig. 3B) shows sensorgrams for DP308 at concentrations of 2.60 μM, 5.85 μM, 8.77 μM, 13.17 μM, 29.63 μM, and 66.67 μM. The x-axis represents Time (s) from -80 to 240, and the y-axis represents Response Unit (RU). The binding affinity is reported as Kd = 2.71 μM.",
+            "Results - 1.3. Biophysical binding assays": "Moreover, Surface Plasmon Resonance analysis also obtained a binding affinity Kd of 2.71 μM (Fig. 3B), which was similar to that of MST."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "53BP1-TTD protein",
+                "strategy": "Amine coupling",
+                "density_ru": 5000,
+                "concentration_for_immobilization": "10 mM sodium acetate (pH 4.0)"
+            },
+            "analyte": {
+                "description": "Compounds (including DP308)",
+                "concentration_range": "2.00 μM to 66.66 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM Heps pH 7.5, 150 mM NaCl, 0.2% v/v DMSO)",
+                "pH": 7.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 150,
+                "dissociation_time_s": 180,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

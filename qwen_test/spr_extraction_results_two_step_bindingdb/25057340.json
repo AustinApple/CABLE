@@ -1,0 +1,65 @@
+{
+    "51211484": {
+        "reactant_set_id": 51211484,
+        "pmid": 25057340,
+        "protein": "Retinoic acid receptor RXR-alpha",
+        "ligand": {
+            "smiles": "Cc1cc(=O)oc2c(\\C=N\\NC(=O)CSc3nc4ccccc4s3)c(O)ccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 488.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RXRalpha ligand binding domain (unknown origin) expressed in human HEK293T cells by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "By using Biacore’s Surface plasmon resonance (SPR) technology, we found that 23 could bind to RXRα with a Kd of 4.88 × 10⁻⁷ M (Figure 2B). The binding of 23 to RXRα is unlikely due to its binding to the RXRα LBP, as it failed to compete with [³H]9-cis-RA for binding to RXRα (Figure 2C).",
+            "Figure 2 caption": "Figure 2. RXRα antagonist 23 binds RXRα at a site other than LBP. (A) Dose-dependent effect of 23 on inhibiting RXRα transactivation. HEK293T cells cotransfected with pG5-Luc and pBind-RXRα-LBD were treated with 9-cis-RA (10⁻⁷ M) alone or together with the indicated concentration of 23 for 18 h. (B) SPR assay. Gradient concentrations of 23 were injected through flow cells immobilized with RXRα-LBD. The kinetic profiles are shown. The dissociation constant (Kd) of the 23/RXRα-LBD complex was calculated to be 4.881 × 10⁻⁷ M. (C) Compound 23 fails to compete with 9-cis-RA for binding to RXRα LBP. The bacterially expressed His-tagged RXRα-LBD was incubated with 7.5 nM [³H]-9-cis-RA in the presence or absence of the indicated concentrations of 9-cis-RA or 23. The RXRα LBD was captured by nickel-coated beads. Bound [³H]-9-cis-RA was quantitated by liquid scintillation counting. Data shown are mean ± SD."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore",
+                "model": null
+            },
+            "sensor_chip": {
+                "type": null,
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "RXRα-LBD",
+                "strategy": "NTA-His capture",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 23",
+                "concentration_range": "Gradient concentrations (not specified)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

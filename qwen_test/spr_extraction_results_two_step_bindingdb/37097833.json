@@ -1,0 +1,65 @@
+{
+    "51546001": {
+        "reactant_set_id": 51546001,
+        "pmid": 37097833,
+        "protein": "Transcription factor MafG",
+        "ligand": {
+            "smiles": "CC[C@H](C)C(NC(=O)CCCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@]1(C)CCC\\C=C/CCC[C@@](C)(NC(=O)[C@H](CC(O)=O)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(O)=O)NC1=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(O)=O)C(=O)N[C@@H](CCC(O)=O)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCC(O)=O)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 337.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human His-tagged MafG assessed as dissociation constant incubated for 10 mins by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "SPR. A Biacore100-Instrument (Biacore-GE) was used for all SPR-binding measurements. Binding between MafG and biotin-labeled peptides was performed by first immobilizing the biotin peptide on a SA chip (Cytiva). The binding buffer used was 150 mM NaCl, 10 mM HEPES, pH 7.5, 1 mM MgCl2, 1 mM CaCl2, and 0.05% P-20. Biotin peptide (1 μM) was injected at a rate of 10 μL min−1 for 10 min, immobilizing approximately 500–1000 response units. Increasing concentrations of MafG (two-fold dilutions between 4 and 0.100 μM, including two blanks) were subsequently passed over the biotin-N1S functionalized chip as well as a streptavidin reference surface. Multiple cycle analysis was carried out without regenerating the chip between different MafG concentrations. Binding data were reference normalized and processed using GraphPad Prism 9 software. A one-site binding model was applied to the processed data set to determine the binding parameters of MafG binding to the peptide.",
+            "Figure 3 caption": "Figure 3. Target validation. (A) Split-luciferase assay with purified MafG and Nrf2 demonstrates that N1S directly inhibits MafG-Nrf2 heterodimerization. Data from three independent experiments with the standard deviation indicated are shown. *p < 0.05, **p < 0.01, ***p < 0.001, student’s t-test compared to dimethylsulfoxide (DMSO). (B) Equilibrium binding response curve using the one-site binding model generated from the SPR data (see Figure S4D for response data). Data from three independent experiments with the standard error are shown. CI = Confidence interval. (C) Relative mRNA levels of genes under the control of Nrf2 after treatment with 50 μM N1S or the vehicle control for 72 h. Data from three independent experiments with the standard deviation indicated are shown. t-test compared to DMSO. (D) Top: Western blot for expression levels of TrxR1 by A549 cells treated with various concentrations of N1S or a DMSO control. Representative data from three independent experiments are shown. Bottom: Quantification of Trx1 expression levels relative to actin. Data from three independent experiments with the standard deviation are shown. Quantification was performed using ImageJ. (E) GSH quantification from the 24 h treatment of A549 cells with the indicated concentrations of N1S or a DMSO control. Data from three independent experiments with the standard deviation are shown. Statistics were performed via one-way ANOVA. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Biacore-GE",
+                "model": "Biacore100"
+            },
+            "sensor_chip": {
+                "type": "SA",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "biotin-labeled peptides",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500-1000",
+                "concentration_for_immobilization": "1 μM"
+            },
+            "analyte": {
+                "description": "human His-tagged MafG",
+                "concentration_range": "4 to 0.100 μM (two-fold dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "150 mM NaCl, 10 mM HEPES, pH 7.5, 1 mM MgCl2, 1 mM CaCl2, and 0.05% P-20",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 600,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "streptavidin reference surface",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "Other",
+                "software": "GraphPad Prism 9"
+            }
+        }
+    }
+}

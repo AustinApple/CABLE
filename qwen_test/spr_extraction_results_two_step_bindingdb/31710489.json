@@ -1,0 +1,627 @@
+{
+    "51236095": {
+        "reactant_set_id": 51236095,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "O=C(CN1CC[C@H](C1)C(=O)Nc1ccc2[nH]nc(-c3ccncc3)c2c1)N1CCN(CC1)c1ccc(cc1)-c1ncccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MEK-activated phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately, 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236097": {
+        "reactant_set_id": 51236097,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "CC(C)Nc1cc(-c2c[nH]c(c2)C(=O)N[C@H](CO)c2cccc(Cl)c2)c(Cl)cn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.316228,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MEK-activated phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately, 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236100": {
+        "reactant_set_id": 51236100,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "COC[C@H]1Cn2cc(nc2C(=O)N1Cc1ccc(F)c(F)c1)-c1nc(Nc2ccnn2C)ncc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.050119,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MEK-activated phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately, 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236105": {
+        "reactant_set_id": 51236105,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "C[C@@H]1Cn2cc(cc2C(=O)N1Cc1cccc(C)n1)-c1nc(Nc2ccnn2C)ncc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.158489,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MEK-activated phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately, 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236107": {
+        "reactant_set_id": 51236107,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "Cn1nccc1Nc1nccc(n1)-c1ccn([C@H](CO)c2ccc(Cl)c(F)c2)c(=O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to MEK-activated phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately, 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236093": {
+        "reactant_set_id": 51236093,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "COC[C@H]1Cn2cc(nc2C(=O)N1Cc1ccc(F)c(F)c1)-c1nc(Nc2ccnn2C)ncc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to non-phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236102": {
+        "reactant_set_id": 51236102,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "CC(C)Nc1cc(-c2c[nH]c(c2)C(=O)N[C@H](CO)c2cccc(Cl)c2)c(Cl)cn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 10.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to non-phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236106": {
+        "reactant_set_id": 51236106,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "Cn1nccc1Nc1nccc(n1)-c1ccn([C@H](CO)c2ccc(Cl)c(F)c2)c(=O)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.6,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to non-phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236108": {
+        "reactant_set_id": 51236108,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "C[C@@H]1Cn2cc(cc2C(=O)N1Cc1cccc(C)n1)-c1nc(Nc2ccnn2C)ncc1C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.794328,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to non-phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    },
+    "51236116": {
+        "reactant_set_id": 51236116,
+        "pmid": 31710489,
+        "protein": "Mitogen-activated protein kinase 1",
+        "ligand": {
+            "smiles": "O=C(CN1CC[C@H](C1)C(=O)Nc1ccc2[nH]nc(-c3ccncc3)c2c1)N1CCN(CC1)c1ccc(cc1)-c1ncccn1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.050119,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to non-phosphorylated biotinylated ERK2 (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface Plasmon Resonance (SPR) Binding Assays. Unphosphorylated biotinylated-ERK2 protein and MEK-activated (diphosphorylated) biotinylated-ERK2 protein were both expressed and purified in-house. A streptavidin Biacore chip (#BR100531, GE Healthcare) was docked into a Biacore T200 instrument. Assay buffer consisting of 20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP (tris-(2-carboxyethyl)phosphine), 0.005% (v/v) Tween-20 (polyoxyethylene(20)sorbitan monolaurate), and 1% DMSO (dimethyl sulfoxide) was equilibrated at 25 °C (room temperature) on the T200 instrument and used to dilute compounds. Flow cell 1 was used as a reference. Biotinylated avi-tagged ERK2 protein (2 μg/mL) was prepared in assay buffer, and approximately 500 RU of biotinylated protein was immobilized onto flow cell 2 (unphosphorylated ERK2) or flow cells 3 and 4 (diphosphorylated ERK2) of the streptavidin biacore chip using the “aim for” method in the T200 Control Software (GE Healthcare). Unbound sites were blocked with 50 μM amino-PEG in biotin (#21346, ThermoFisher). Compounds were prepared in assay buffer in a 384-well plate (#781201, Greiner). Binding was determined using the “Single Cycle Kinetics” method in the Biacore T200 Evaluation software, including solvent correction and a 50% DMSO wash between samples. The injection time was 260 s, and the dissociation time was 3000 s. Blanks were run before and after compound injections, and data were double-referenced. Data was analyzed, and rate constants/affinities were calculated using the Biacore T200 Evaluation software (GE Healthcare).",
+            "Table 5": "Table 5. Surface Plasma Resonance (SPR) Data on a Set of ERK1/2 Inhibitorsa compound pRSK A375 mean IC50 (μM) pERK A375 mean IC50 (μM) ERK2 binding mean (pKa) (ph/non-ph) ERK2 kon mean (M−1 s−1) (ph/non-ph) ERK2 koff mean (1/s) (ph/non-ph) ERK2 t1/2 mean (min) (ph/non-ph) 1 (SCH772984) 0.012 0.0025 10/10.3 1.3E06/9.4E05 1.0 × 10−04/4.4 × 10−05 127/291 3 (BVD-523) 0.15 3.1 9.5/8 1.3E06/7.5E05 4.1 × 10−04/7.4 × 10−03 35/2 4 (GDC-0994) 0.086 0.031 8.8/8.8 9.8E06/6.2E06 1.6 × 10−02/9.9 × 10−03 0.8/1.2 7 0.044 0.012 8.8/9.1 1.9E06/1.3E06 3.2 × 10−04/1.0 × 10−03 37/119 15 0.0057 0.0017 10.3/10 8.9 × 10−05/6.5E05 4.5 × 10−05/6.0 × 10−05 277/194 aAll data reported are a mean of at least three independent measurements. Ph = phosphorylated, non-ph = non-phosphorylated.",
+            "Figure 7 caption": "Figure 7. Monotherapy antitumor activity of 15 in a Calu 6 (KRAS Q61H, panel A) mouse model and end of study PD/PK analysis (panel B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "streptavidin",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "biotinylated avi-tagged ERK2 protein",
+                "strategy": "SA-Biotin capture",
+                "density_ru": "500",
+                "concentration_for_immobilization": "2 μg/mL"
+            },
+            "analyte": {
+                "description": "Compounds (inhibitors) tested for binding to ERK2",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "20 mM Tris (pH 7.7), 150 mM NaCl, 10 mM MgCl2, 0.5 mM TCEP, 0.005% (v/v) Tween-20, 1% DMSO",
+                "pH": 7.7,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": null,
+                "temperature_c": 25,
+                "association_time_s": 260,
+                "dissociation_time_s": 3000,
+                "regeneration_solution": "50% DMSO"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1",
+                "subtraction_method": "Double referenced",
+                "fitting_model": null,
+                "software": "Biacore T200 Evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

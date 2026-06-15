@@ -1,0 +1,67 @@
+{
+    "51607434": {
+        "reactant_set_id": 51607434,
+        "pmid": 39169676,
+        "protein": "NACHT, LRR and PYD domains-containing protein 3",
+        "ligand": {
+            "smiles": "OCCN1CCC[C@@H](Nc2nnc(-c3ccc4occc4c3O)c3c2C2CCC3CC2)C1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 18.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to human NLRP3 by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "SPR Assay. The SPR assay was performed on a Biacore T200 instrument (GE Healthcare, USA). The human NLRP3 protein (10 μg/mL) was immobilized on a CM5 sensor chip via amine coupling. The running buffer was 10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, and 0.005% P20. The compounds were dissolved in DMSO and diluted with running buffer to the desired concentrations. The compounds were injected at a flow rate of 30 μL/min for 120 s, followed by a dissociation phase of 120 s. The regeneration solution was 10 mM glycine-HCl, pH 2.0. The data were analyzed using Biacore evaluation software.",
+            "Figure 9 caption": "Figure 9. P33 directly binds to the NLRP3 protein. (A, B) Binding affinity of the P33 to the human NLRP3 protein was determined by the SPR assay. The Kd values were determined by Biacore evaluation software. (C) Target validation on purified NLRP3 protein by DARTS assay. (D, E) CETSA analysis was performed NLRP3 protein by DARTS assay. The data were expressed as mean ± SD (n = 3) from three independent experiments. Statistics were analyzed by two-way ANOVA. *p < 0.05, **p < 0.01, ***p < 0.001 versus DMSO. ns: not significant.",
+            "Figure 9A": "Binding of P33 to NLRP3 Response (RU) Time (s) -50 0 50 100 150 200 0.0 0.4 0.8 1.2 1.6 2.0 0.27 nM 0.82 nM 2.47 nM 7.41 nM 22.22 nM 66.67 nM",
+            "Figure 9B": "Response (RU) 0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 0.0E+0 2.0E-8 4.0E-8 6.0E-8 P33 Concentration (M) Kd = 17.5 nM"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "human NLRP3 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "10 μg/mL"
+            },
+            "analyte": {
+                "description": "P33",
+                "concentration_range": "0.27 nM - 66.67 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "10 mM HEPES, pH 7.4, 150 mM NaCl, 3 mM EDTA, and 0.005% P20",
+                "pH": 7.4,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "10 mM glycine-HCl, pH 2.0"
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore evaluation software"
+            }
+        }
+    }
+}

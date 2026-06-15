@@ -1,0 +1,66 @@
+{
+    "50521489": {
+        "reactant_set_id": 50521489,
+        "pmid": 27690432,
+        "protein": "Dipeptidyl peptidase 1",
+        "ligand": {
+            "smiles": "Cn1c2cc(ccc2oc1=O)-c1ccc(C[C@H](NC(=O)[C@@H]2CNCCCO2)C#N)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.5,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Reversible inhibition of human recombinant DPP1 by surface plasmon resonance direct binding assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "The binding kinetics for compound 30 were characterized using a surface plasmon resonance direct binding assay (SPR DBA), which confirmed that the compound is a reversible inhibitor of DPP1 (sensorgram available in Supporting Information). The interaction could be described with a simple 1:1 interaction model resulting in an on-rate (kon) of 1.5 × 10^6 M−1 s−1 and an off-rate (koff) of 4.0 × 10−3 s−1, giving a pKd value of 8.6. The residence time at the DPP1 enzyme, as determined by half-life, was 3 min.",
+            "SPR Analysis": "The SPR DBA experiments were run on a Biacore T200 instrument (GE Healthcare) at 20 °C. The buffer used (running buffer) was 25 mM NaAc, pH 5.0, 50 mM NaCl, 0.005% Triton X-100, and 5 mM DTT. A CM7 sensor chip (GE Healthcare) was docked in the instrument, and the surface was activated using a 10 min injection of NHS/EDC followed by a 5 min injection of 120 μg/mL DPP1 diluted in running buffer. All surfaces were then deactivated using 1 M ethanolamine, pH 8.5. Compound interaction experiments were performed in running buffer supplemented with 1% DMSO. Compound was diluted from a 10 mM DMSO stock solution to 1 μM and then serially diluted to 250 nM, 63 nM, 16 nM, and 4 nM. All five compound concentrations were injected in quick succession after one another (“single-cycle kinetics”), and the resulting sensorgram was reference subtracted, blank subtracted, and solvent corrected. Data fitting to corrected sensorgrams was conducted using the Biacore T200 evaluation software (GE Healthcare) and the 1:1 binding model.",
+            "Supporting Information": "Compound sensorgram from characterization of binding kinetics for compound 30 using a surface plasmon resonance direct binding assay (SPR DBA); experimental information on assays used to generate profiling data in Tables 2, 4, and 6 (PDF)"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM7",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "DPP1",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "120 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 30",
+                "concentration_range": "4 nM - 1 μM (serial dilutions)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "25 mM NaAc, pH 5.0, 50 mM NaCl, 0.005% Triton X-100, 5 mM DTT, supplemented with 1% DMSO for compound injections",
+                "pH": 5.0,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": 20,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 evaluation software (GE Healthcare)"
+            }
+        }
+    }
+}

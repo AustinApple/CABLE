@@ -1,0 +1,66 @@
+{
+    "51597062": {
+        "reactant_set_id": 51597062,
+        "pmid": 38301128,
+        "protein": "Transcription factor p65",
+        "ligand": {
+            "smiles": "Cc1cccc([C@H](C)C[C@H](C)CO)c1/C=C/C=C/C(=O)O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 44660.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to NF-kappaB p65 in mouse RAW264.7 cells assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance": "Surface Plasmon Resonance. The SPR assay was carried out using a Biacore T200 (Cytiva, Massachusetts). p65 protein was diluted in sodium acetate buffer at pH 4.5 and immobilized to a sensor chip (CM5) using the amine coupling method according to standard protocols. Then, various concentrations of 2 with PBS as a buffer were injected as analytes at a flow rate of 10 μL/min at 25 °C. Binding affinity constants were obtained using Biacore T200 evaluation software.",
+            "Figure 7 caption - SPR analysis": "Thermal stabilization of the intracellular p65 protein was enhanced by 4 h' treatment of 2 as measured by CETSA analysis. (C, D). SPR analysis of interactions between 2 and p65 (SPR assay) (E). The effect of 2 on RANKL-induced activation of NFATc1. RAW264.7NFATc1 luc (LV-NC), RAW264.7NFATc1 luc (LC-sh1), and RAW264.7NFATc1 luc (LV-sh2) cells, with knocked-down expression of p65 using lentivirus shRNA targeting p65, were treated with 2 (10 μM) for 4 h or not, further stimulated with 100 ng/mL RANKL for 24 h. p65 mRNA was verified by RT-PCR (F). Proteins were extracted and analyzed by Western blotting using antibodies against p65 and GAPDH. The expression levels of total p65 protein (G, H) were determined using ImageJ software. The NFATc1 luciferase activity (I, J) was detected. Values are expressed as the means ± SD (n = 3 independent experiments). **P < 0.01, ***P < 0.001, compared to RANKL-treated controls. 'ns', P > 0.05, compared to LV-sh1 and LV-sh2, respectively.",
+            "Figure 7E - Sensorgram data": "KD (M) = 4.466 × 10⁻⁵ 0.78 μM 1.56 μM 3.13 μM 6.25 μM 12.5 μM 25 μM 50 μM Relative response (RU) Time (s) 0 100 200 -10 0 10 20 30 40"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "p65 protein",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": "diluted in sodium acetate buffer at pH 4.5"
+            },
+            "analyte": {
+                "description": "2",
+                "concentration_range": "0.78 μM - 50 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 10,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

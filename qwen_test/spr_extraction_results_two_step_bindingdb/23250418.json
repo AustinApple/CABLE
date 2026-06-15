@@ -1,0 +1,258 @@
+{
+    "51622720": {
+        "reactant_set_id": 51622720,
+        "pmid": 23250418,
+        "protein": "Histone-lysine N-methyltransferase, H3 lysine-79 specific",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc(NC(=O)NCCCNC[C@H]2O[C@@H](n3cc(Br)c4c(N)ncnc43)[C@H](O)[C@@H]2O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant N-terminal DOT1L (1 to 420 residues) (unknown origin) expressed in Escherichia coli (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance. SPR studies were performed using a Biacore™ T200 instrument (GE Healthcare Sciences Inc.). DOT1L (1–420, ~400 kDa) was stably immobilized to CM5 chips through amine coupling at pH 7.4 according to the manufacturer’s protocol (GE Healthcare Sciences Inc.). Compounds were dissolved in 100% DMSO and twofold serial dilutions were performed in 100% DMSO. For testing, the serially diluted compounds were diluted 1:20 into HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA and 0.05% P-20) giving a final concentration of 5% DMSO. The flow rate was set at 70 μl min−1. For each compound, single-cycle kinetic analysis was performed with an on-time of 300 s, and an off-time of 1800 s. SAM and SAH were used as positive controls. Curve fitting and Kd determinations were performed with the Biacore T200 Evaluation software (GE Healthcare Sciences Inc.). Five concentrations of each compound were tested in twofold serial dilution experiments within the ranges listed. All compounds were fitted using the on and off rates, which were used to calculate the Kd. The stoichiometry was determined by reference to the binding levels of the 1:1 binding controls, SAM and SAH. The SPR profile is unusual for the most potent compounds owing to their extreme binding affinity. The results were based on four independent repeats.",
+            "Figure 3 caption": "Figure 3 | Biochemical and cellular characterization of DOT1L inhibitors. (a) Biacore SPR sensorgram from single-cycle kinetics runs with five concentrations, normalized to the calculated Rmax, indicate that EPZ004777 and SGC0946 bind to DOT1L with 1:1 stoichiometry and dissociation constants (Kd) of 0.25 and 0.06 nM, respectively. (b) EPZ004777 and SGC0946 inhibit DOT1L enzymatic activity with IC50 values of 0.5 and 0.3 nM, respectively. (c) Inhibition of H3K79me2 by a series of DOT1L inhibitors measured by immunoblot (10 μM except SGC0946, 1 μM; 4 days) and (d) cellular H3K79 methylation assay using fluorescence microscopy. (e) SGC0946 (1 and 5 μM) kills human cord blood cells transformed with an MLL-AF9 fusion oncogene, while EPZ004777 was less efficacious at the lower concentration (1 μM). (f) SGC0946 (1 and 5 μM) does not affect viability of cord blood cells transformed with an unrelated oncogene, TLS-ERG. VEH: DMSO control. Error bars represent s.e. of the mean from at least two independent experiments, with each experiment representing three repeats.",
+            "Table 1": "Table 1 | Biochemical and cellular assay summary of EPZ004777 and analogues. Compound X R1 R2 Kd (nM) DOT1L IC50 (nM) H3K79me2 IC50 (nM) EPZ004777 C–H iPr 0.25 ± 0.02 0.5 ± 0.1 84 ± 20 SGC0946 C–Br iPr 0.06 ± 0.01 0.3 ± 0.1 8.8 ± 1.6 FED1 N iPr 1.99 ± 0.15 2.9 ± 0.2 1452 SGC0947 C–Br H 3.35 ± 0.23 3.6 ± 0.7 ND FED2 N iPr 26.9 ± 2.2 40.3 ± 7.3 ND EJC1 N iPr ND NA ND Abbreviations: NA, not active; ND, not determined; iPr, isopropyl. The s.d. (indicated by ±) of the Kd is from the mean of four independent SPR repeats. The s.d. of IC50 in the DOT1L methyltransferase assay is from the mean of two measurements. The s.d. of cellular IC50 represents s.e.m. of four experiments, with three repeats for each experiment."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "DOT1L (1–420, ~400 kDa)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds dissolved in DMSO, tested in twofold serial dilutions",
+                "concentration_range": "Five concentrations in twofold serial dilution (final DMSO concentration 5%)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% P-20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 70,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 300,
+                "dissociation_time_s": 1800,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference to binding levels of 1:1 binding controls SAM and SAH",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Healthcare Sciences Inc.)"
+            }
+        }
+    },
+    "51622722": {
+        "reactant_set_id": 51622722,
+        "pmid": 23250418,
+        "protein": "Histone-lysine N-methyltransferase, H3 lysine-79 specific",
+        "ligand": {
+            "smiles": "Cc1ccc(NC(=O)NCCCN(C[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)C(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.7,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant N-terminal DOT1L (1 to 420 residues) (unknown origin) expressed in Escherichia coli (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance. SPR studies were performed using a Biacore™ T200 instrument (GE Healthcare Sciences Inc.). DOT1L (1–420, ~400 kDa) was stably immobilized to CM5 chips through amine coupling at pH 7.4 according to the manufacturer’s protocol (GE Healthcare Sciences Inc.). Compounds were dissolved in 100% DMSO and twofold serial dilutions were performed in 100% DMSO. For testing, the serially diluted compounds were diluted 1:20 into HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA and 0.05% P-20) giving a final concentration of 5% DMSO. The flow rate was set at 70 μl min−1. For each compound, single-cycle kinetic analysis was performed with an on-time of 300 s, and an off-time of 1800 s. SAM and SAH were used as positive controls. Curve fitting and Kd determinations were performed with the Biacore T200 Evaluation software (GE Healthcare Sciences Inc.). Five concentrations of each compound were tested in twofold serial dilution experiments within the ranges listed. All compounds were fitted using the on and off rates, which were used to calculate the Kd. The stoichiometry was determined by reference to the binding levels of the 1:1 binding controls, SAM and SAH. The SPR profile is unusual for the most potent compounds owing to their extreme binding affinity. The results were based on four independent repeats.",
+            "Figure 3 caption": "Figure 3 | Biochemical and cellular characterization of DOT1L inhibitors. (a) Biacore SPR sensorgram from single-cycle kinetics runs with five concentrations, normalized to the calculated Rmax, indicate that EPZ004777 and SGC0946 bind to DOT1L with 1:1 stoichiometry and dissociation constants (Kd) of 0.25 and 0.06 nM, respectively. (b) EPZ004777 and SGC0946 inhibit DOT1L enzymatic activity with IC50 values of 0.5 and 0.3 nM, respectively. (c) Inhibition of H3K79me2 by a series of DOT1L inhibitors measured by immunoblot (10 μM except SGC0946, 1 μM; 4 days) and (d) cellular H3K79 methylation assay using fluorescence microscopy. (e) SGC0946 (1 and 5 μM) kills human cord blood cells transformed with an MLL-AF9 fusion oncogene, while EPZ004777 was less efficacious at the lower concentration (1 μM). (f) SGC0946 (1 and 5 μM) does not affect viability of cord blood cells transformed with an unrelated oncogene, TLS-ERG. VEH: DMSO control. Error bars represent s.e. of the mean from at least two independent experiments, with each experiment representing three repeats.",
+            "Table 1": "Table 1 | Biochemical and cellular assay summary of EPZ004777 and analogues. Compound X R1 R2 Kd (nM) DOT1L IC50 (nM) H3K79me2 IC50 (nM) EPZ004777 C–H iPr 0.25 ± 0.02 0.5 ± 0.1 84 ± 20 SGC0946 C–Br iPr 0.06 ± 0.01 0.3 ± 0.1 8.8 ± 1.6 FED1 N iPr 1.99 ± 0.15 2.9 ± 0.2 1452 SGC0947 C–Br H 3.35 ± 0.23 3.6 ± 0.7 ND FED2 N iPr 26.9 ± 2.2 40.3 ± 7.3 ND EJC1 N iPr ND NA ND Abbreviations: NA, not active; ND, not determined; iPr, isopropyl. The s.d. (indicated by ±) of the Kd is from the mean of four independent SPR repeats. The s.d. of IC50 in the DOT1L methyltransferase assay is from the mean of two measurements. The s.d. of cellular IC50 represents s.e.m. of four experiments, with three repeats for each experiment."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "DOT1L (1–420, ~400 kDa)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds dissolved in DMSO, tested in twofold serial dilutions",
+                "concentration_range": "Five concentrations in twofold serial dilution (final DMSO concentration 5%)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% P-20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 70,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 300,
+                "dissociation_time_s": 1800,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference to binding levels of 1:1 binding controls SAM and SAH",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Healthcare Sciences Inc.)"
+            }
+        }
+    },
+    "51622710": {
+        "reactant_set_id": 51622710,
+        "pmid": 23250418,
+        "protein": "Histone-lysine N-methyltransferase, H3 lysine-79 specific",
+        "ligand": {
+            "smiles": "CC(C)(C)c1ccc(NC(=O)NCCCNC[C@H]2O[C@@H](n3cc(Br)c4c(N)ncnc43)[C@H](O)[C@@H]2O)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 3.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant N-terminal DOT1L (1 to 420 residues) (unknown origin) expressed in Escherichia coli (DE3) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance. SPR studies were performed using a Biacore™ T200 instrument (GE Healthcare Sciences Inc.). DOT1L (1–420, ~400 kDa) was stably immobilized to CM5 chips through amine coupling at pH 7.4 according to the manufacturer’s protocol (GE Healthcare Sciences Inc.). Compounds were dissolved in 100% DMSO and twofold serial dilutions were performed in 100% DMSO. For testing, the serially diluted compounds were diluted 1:20 into HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA and 0.05% P-20) giving a final concentration of 5% DMSO. The flow rate was set at 70 μl min−1. For each compound, single-cycle kinetic analysis was performed with an on-time of 300 s, and an off-time of 1800 s. SAM and SAH were used as positive controls. Curve fitting and Kd determinations were performed with the Biacore T200 Evaluation software (GE Healthcare Sciences Inc.). Five concentrations of each compound were tested in twofold serial dilution experiments within the ranges listed. All compounds were fitted using the on and off rates, which were used to calculate the Kd. The stoichiometry was determined by reference to the binding levels of the 1:1 binding controls, SAM and SAH. The SPR profile is unusual for the most potent compounds owing to their extreme binding affinity. The results were based on four independent repeats.",
+            "Figure 3 caption": "Figure 3 | Biochemical and cellular characterization of DOT1L inhibitors. (a) Biacore SPR sensorgram from single-cycle kinetics runs with five concentrations, normalized to the calculated Rmax, indicate that EPZ004777 and SGC0946 bind to DOT1L with 1:1 stoichiometry and dissociation constants (Kd) of 0.25 and 0.06 nM, respectively. (b) EPZ004777 and SGC0946 inhibit DOT1L enzymatic activity with IC50 values of 0.5 and 0.3 nM, respectively. (c) Inhibition of H3K79me2 by a series of DOT1L inhibitors measured by immunoblot (10 μM except SGC0946, 1 μM; 4 days) and (d) cellular H3K79 methylation assay using fluorescence microscopy. (e) SGC0946 (1 and 5 μM) kills human cord blood cells transformed with an MLL-AF9 fusion oncogene, while EPZ004777 was less efficacious at the lower concentration (1 μM). (f) SGC0946 (1 and 5 μM) does not affect viability of cord blood cells transformed with an unrelated oncogene, TLS-ERG. VEH: DMSO control. Error bars represent s.e. of the mean from at least two independent experiments, with each experiment representing three repeats.",
+            "Table 1": "Table 1 | Biochemical and cellular assay summary of EPZ004777 and analogues. Compound X R1 R2 Kd (nM) DOT1L IC50 (nM) H3K79me2 IC50 (nM) EPZ004777 C–H iPr 0.25 ± 0.02 0.5 ± 0.1 84 ± 20 SGC0946 C–Br iPr 0.06 ± 0.01 0.3 ± 0.1 8.8 ± 1.6 FED1 N iPr 1.99 ± 0.15 2.9 ± 0.2 1452 SGC0947 C–Br H 3.35 ± 0.23 3.6 ± 0.7 ND FED2 N iPr 26.9 ± 2.2 40.3 ± 7.3 ND EJC1 N iPr ND NA ND Abbreviations: NA, not active; ND, not determined; iPr, isopropyl. The s.d. (indicated by ±) of the Kd is from the mean of four independent SPR repeats. The s.d. of IC50 in the DOT1L methyltransferase assay is from the mean of two measurements. The s.d. of cellular IC50 represents s.e.m. of four experiments, with three repeats for each experiment."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "DOT1L (1–420, ~400 kDa)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds dissolved in DMSO, tested in serial dilutions (five concentrations per compound)",
+                "concentration_range": "Five concentrations in twofold serial dilution (final DMSO concentration 5%)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% P-20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 70,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 300,
+                "dissociation_time_s": 1800,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference to binding levels of 1:1 binding controls SAM and SAH",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Healthcare Sciences Inc.)"
+            }
+        }
+    },
+    "51622711": {
+        "reactant_set_id": 51622711,
+        "pmid": 23250418,
+        "protein": "Histone-lysine N-methyltransferase, H3 lysine-79 specific",
+        "ligand": {
+            "smiles": "Cc1ccc(NC(=O)NCCCN(C[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)C(C)C)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant N-terminal DOT1L (1 to 420 residues) (unknown origin) expressed in Escherichia coli (DE3) assessed as dissociation constant by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Surface plasmon resonance. SPR studies were performed using a Biacore™ T200 instrument (GE Healthcare Sciences Inc.). DOT1L (1–420, ~400 kDa) was stably immobilized to CM5 chips through amine coupling at pH 7.4 according to the manufacturer’s protocol (GE Healthcare Sciences Inc.). Compounds were dissolved in 100% DMSO and twofold serial dilutions were performed in 100% DMSO. For testing, the serially diluted compounds were diluted 1:20 into HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA and 0.05% P-20) giving a final concentration of 5% DMSO. The flow rate was set at 70 μl min−1. For each compound, single-cycle kinetic analysis was performed with an on-time of 300 s, and an off-time of 1800 s. SAM and SAH were used as positive controls. Curve fitting and Kd determinations were performed with the Biacore T200 Evaluation software (GE Healthcare Sciences Inc.). Five concentrations of each compound were tested in twofold serial dilution experiments within the ranges listed. All compounds were fitted using the on and off rates, which were used to calculate the Kd. The stoichiometry was determined by reference to the binding levels of the 1:1 binding controls, SAM and SAH. The SPR profile is unusual for the most potent compounds owing to their extreme binding affinity. The results were based on four independent repeats.",
+            "Figure 3 caption": "Figure 3 | Biochemical and cellular characterization of DOT1L inhibitors. (a) Biacore SPR sensorgram from single-cycle kinetics runs with five concentrations, normalized to the calculated Rmax, indicate that EPZ004777 and SGC0946 bind to DOT1L with 1:1 stoichiometry and dissociation constants (Kd) of 0.25 and 0.06 nM, respectively. (b) EPZ004777 and SGC0946 inhibit DOT1L enzymatic activity with IC50 values of 0.5 and 0.3 nM, respectively. (c) Inhibition of H3K79me2 by a series of DOT1L inhibitors measured by immunoblot (10 μM except SGC0946, 1 μM; 4 days) and (d) cellular H3K79 methylation assay using fluorescence microscopy. (e) SGC0946 (1 and 5 μM) kills human cord blood cells transformed with an MLL-AF9 fusion oncogene, while EPZ004777 was less efficacious at the lower concentration (1 μM). (f) SGC0946 (1 and 5 μM) does not affect viability of cord blood cells transformed with an unrelated oncogene, TLS-ERG. VEH: DMSO control. Error bars represent s.e. of the mean from at least two independent experiments, with each experiment representing three repeats.",
+            "Table 1": "Table 1 | Biochemical and cellular assay summary of EPZ004777 and analogues. Compound X R1 R2 Kd (nM) DOT1L IC50 (nM) H3K79me2 IC50 (nM) EPZ004777 C–H iPr 0.25 ± 0.02 0.5 ± 0.1 84 ± 20 SGC0946 C–Br iPr 0.06 ± 0.01 0.3 ± 0.1 8.8 ± 1.6 FED1 N iPr 1.99 ± 0.15 2.9 ± 0.2 1452 SGC0947 C–Br H 3.35 ± 0.23 3.6 ± 0.7 ND FED2 N iPr 26.9 ± 2.2 40.3 ± 7.3 ND EJC1 N iPr ND NA ND Abbreviations: NA, not active; ND, not determined; iPr, isopropyl. The s.d. (indicated by ±) of the Kd is from the mean of four independent SPR repeats. The s.d. of IC50 in the DOT1L methyltransferase assay is from the mean of two measurements. The s.d. of cellular IC50 represents s.e.m. of four experiments, with three repeats for each experiment."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare Sciences Inc.",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare Sciences Inc."
+            },
+            "immobilization": {
+                "ligand_name": "DOT1L (1–420, ~400 kDa)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compounds dissolved in DMSO, tested in serial dilutions (five concentrations per compound)",
+                "concentration_range": "Five concentrations in twofold serial dilution (final DMSO concentration 5%)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-EP buffer (20 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.05% P-20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 70,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": 300,
+                "dissociation_time_s": 1800,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Reference to binding levels of 1:1 binding controls SAM and SAH",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation software (GE Healthcare Sciences Inc.)"
+            }
+        }
+    }
+}

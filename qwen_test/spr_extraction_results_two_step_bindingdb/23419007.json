@@ -1,0 +1,69 @@
+{
+    "51047813": {
+        "reactant_set_id": 51047813,
+        "pmid": 23419007,
+        "protein": "Steroid Delta-isomerase",
+        "ligand": {
+            "smiles": "C[C@H](CCC(O)=O)[C@H]1CC[C@H]2[C@@H]3CC[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 16000.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to Pseudomonas putida KSI by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - SPR Screening": "Fragment screening was conducted in a Biacore T200 instrument (GE Healthcare, Piscataway, NJ). KSI was immobilized on a CM5 sensor chip by the amine-coupling reaction or on a SA sensor chip after protein modification with an EZ-Link sulfo-NHS-LC-LC-biotin kit (Thermo Scientific, Waltham, MA). The fragments were injected at 200 μM and flow rate of 30 μL min−1 in PBS buffer supplemented with 5% DMSO. Negative and positive control experiments were performed periodically to confirm the stability of the protein on the sensor chip by injecting buffer and DOC (100 μM), respectively. A new sensor chip was prepared after screening every 384 compounds (one plate). The binding level of each fragment was determined with the Biacore T200 evaluation software using a standard solvent correction (4–8% DMSO in eight steps).",
+            "Materials and Methods - Equilibrium SPR Analysis": "Dissociation constant (K_D) was determined by SPR. KSI immobilized on a CM5 sensor chip was tested with fragments at different concentrations in PBS buffer supplemented with 5% DMSO. K_D was calculated from the maximal response in equilibrium.",
+            "Figure 2 caption": "Figure 2. Binding of DOC (positive control) to KSI. (a) Comparison of the structure of KSI in the apo form (orange) and with DOC bound (blue and green). (b) Real-time sensorgrams of the binding of DOC (analyte) to a CM5 sensor chip decorated with KSI at the concentrations indicated. (c) K_D was calculated by the Scatchard method using the SPR responses in equilibrium. (d) Thermodynamic characterization by ITC. KSI (500 μM) was titrated with DOC (5 mM). Top and lower panels correspond to the titration kinetics and the binding isotherm, respectively. Regression analysis with the program ORIGIN7 is indicated with a red trace (bottom panel).",
+            "Figure 3 caption": "Figure 3. Fragment screening by SPR. (a) Relative binding level of fragments 1–384 to KSI immobilized on a CM5 (blue squares) or SA (black squares) sensor chips. Yellow and green triangles correspond to the SPR response obtained with buffer (no binding) and DOC (100% signal) in the experiment with CM5. (b–e) Representative sensorgrams illustrating typical response profiles. Arrows indicate injection of fragment and buffer.",
+            "Table 1": "Table 1. Properties of Top Candidates No. Structure K_D^ITC (μM) SITE (%) EE (kcal mol⁻¹) DOC 16 ± 2 N.A. 0.08 11 50 ± 4 87 ± 10 0.38 26 46 ± 7 112 ± 4 0.31 30 180 ± 24 15 ± 10 0.07 32 63 ± 6 102 ± 7 0.37 41 22 ± 2 79 ± 13 0.18",
+            "Results section - SPR screening": "The initial screening of an optimized library comprising 2000 compounds was performed by SPR on two different sensor chips: CM5 or SA (Figure 3a). Double screening reduces the number of false positives at the initial stage. The integrity of the sensor chip was checked periodically by injecting DOC. Response levels were corrected using standard methodologies. The binding responses were normalized with respect to DOC and buffer. Representative binding responses are shown in Figure 3b–e. Often, nonspecific and promiscuous binders exceeded the binding response of the positive control (Figure 3d,e). We applied strict selection criteria to minimize the number of false positives. Only fragments with binding response levels between 20% and 200% to that of DOC in CM5 and SA sensor chips and simultaneously displaying box-type kinetic responses were considered genuine hits. A total of 129 fragments matched these strict criteria (6.5% of total). These compounds were grouped into four family clusters according to their molecular structure (Supporting Information Table S3). A total of 44 fragments available with high purity from commercial sources were selected for in-depth characterization (Supporting Information Table S4)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "KSI",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Fragments (including DOC as positive control)",
+                "concentration_range": "200 μM (screening), variable concentrations (equilibrium analysis)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer supplemented with 5% DMSO",
+                "pH": null,
+                "assay_type": "Screening",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": "Buffer (no binding) and DOC (positive control)",
+                "subtraction_method": "Solvent correction",
+                "fitting_model": "Steady-state affinity",
+                "software": "Biacore T200 evaluation software"
+            }
+        }
+    }
+}

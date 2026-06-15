@@ -1,0 +1,62 @@
+{
+    "51575732": {
+        "reactant_set_id": 51575732,
+        "pmid": 37838340,
+        "protein": "ATP-dependent RNA helicase DHX33",
+        "ligand": {
+            "smiles": "Cc1cc(\\C=C(/C#N)c2nc3ccccc3[nH]2)c(C)n1-c1oc(C)c(C)c1C#N"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4700.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal/C-terminal 6x His-tagged recombinant wild type mouse DHX33 transformed in Escherichia coli BL21(DE3)pLysS cells assessed as dissociation constant by ITC analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding studies by isothermal titration calorimetry (ITC)": "Recombinant protein DHX33 was diluted to 150 μM and dialyzed in the buffer containing 50 mM Tris-HCl (pH 7.4), 100 mM NaCl, 2 mM MgCl2. DHX33 inhibitor was prepared at a concentration of 10 μM in the protein buffer supplemented at room temperature. The recombinant protein was positioned in the titration cell in the microcalorimeter. The increments were injected into the reaction cell in the microcalorimeter maintained at room temperature. Microcalorimeter (MicroCal VP-ITC, GE Healthcare) was used to detect the heat generated from the titrations of the protein into ligands. The data were fit into the one-site model with MicroCal-customized Origin7 software.",
+            "Figure 2 caption - C": "C. Thermodynamic parameters of BCD38 binding to recombinant DHX33 protein. ITC data are shown. The titration curve indicated that BCD38 binds to DHX33 with a K_D value of 4.7 μM; the ITC analysis result was shown in Fig. 2C. Other than DHX33 protein, other representative RNA helicases were also purified and analyzed for the inhibitory activity of BCD38 (Supplemental Fig. S4). Fig. 2D shows that in these three helicases, the IC50 is more than 5 μM.",
+            "Figure 2C - ITC thermogram": "K_A=21.2±3 (E4 M⁻¹) K_D=4.7μM",
+            "Figure 2D - Table": "Chemical No. | IC50 for DHX33 (μM) | IC50 for DDX59 (μM) | IC50 for DHX32(μM) | IC50 for DDX6 (μM) BCD38 | 0.8 | >5 | >5 | >4"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal VP-ITC"
+            },
+            "protein": {
+                "name": "DHX33",
+                "location": "cell",
+                "concentration": "150",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "BCD38",
+                "location": "syringe",
+                "concentration": "10"
+            },
+            "assay_conditions": {
+                "buffer_composition": "50 mM Tris-HCl, 100 mM NaCl, 2 mM MgCl2",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

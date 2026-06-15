@@ -1,0 +1,66 @@
+{
+    "51562659": {
+        "reactant_set_id": 51562659,
+        "pmid": 37560786,
+        "protein": "Protein arginine N-methyltransferase 9",
+        "ligand": {
+            "smiles": "COC(=O)c1cc(O)c2cc(NC(=O)NCCCNC(=N)NC[C@H]3O[C@H]([C@H](O)[C@@H]3O)n3cnc4c(N)ncnc34)cc(c2c1)C(F)(F)F"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 188.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal/C-terminal FLAG/6His-tagged human PRMT9 (2 to 845 residues) assessed as dissociation constant by SPR assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "PRMT9 SPR Experiments. SPR experiments were performed on a Biacore T200 biosensor (Cytiva). PBS buffer (phosphate buffered saline, pH 7.5) supplemented with 0.05% Tween-20 was used as the running buffer. Full-length recombinant PRMT9 (2–285, BPS Bioscience, # BPS-79124) was covalently immobilized on the carboxymethylated surface of a Series S Sensor Chip CM5 in amine coupling. In detail, 50 μg/mL of protein in phosphate buffer (40 mM NaH2PO4/Na2HPO4 pH 8.0, 110 mM NaCl, 2.2 mM KCl, 0.04% Tween-20, and 2 mM TCEP) was preconcentrated on the surface with 10 mM of sodium acetate pH 4.5 after surface activation with EDC/NHS (1:1) was covalently immobilized using the running buffer 1X HBS – 0.05% Tween20 at a flow rate of 10 μL/min to obtain densities of 8.3 kRU. The compound of interest was diluted in PBS supplemented with 0.05% Tween-20 and injected over the active and reference cells at 10 different concentrations (2-fold dilution series) from 25 μM to 0.05 μM, keeping a final 2% DMSO concentration, using the multicycle modality. Binding experiments were performed at 25 °C by using a flow rate of 30 μL/min, with 90 s of monitoring of association and 180 s of monitoring of dissociation. Regeneration of the surfaces was performed, when necessary, by a 10 s injection of 5 mM NaOH. The sensorgrams obtained at the 10 concentrations of the compound were first corrected taking advantage of the solvent correction performed by the instrument (correction range from 1.5 to 2.8% DMSO), and then they were double-referenced. The corrected sensorgrams were fitted simultaneously by kinetic analysis using the 1:1 Langmuir model of the BIAevaluation software to obtain equilibrium dissociation constants (KD) and kinetic dissociation (koff) and association (kon) constants. The curve-fitting efficiency was evaluated by the chi-square (χ²). The χ² value denotes the fitting degree between the estimative and experimental curves.",
+            "Figure 7 caption": "Figure 7. Sensorgrams obtained from the SPR interaction analysis of compound 1j binding to immobilized PRMT9. The compound was injected at different concentrations (from 25 to 0.05 mM) with an association and a dissociation time of 90 and 180 s, respectively, and with a flow rate of 30 μL/min. The equilibrium dissociation constant (KD) was derived from the ratio between kinetic dissociation (koff) and association (kon) constants.",
+            "Results section": "To characterize the effect of compound 1j on PRMT9, we resolved to evaluate its direct binding to the target protein using surface plasmon resonance (SPR). To this aim, human recombinant PRMT9 (2–845; N-terminal FLAG-tag, C-terminal His6-tag) was covalently immobilized on a sensor chip surface using an amine coupling approach and compound 1j was injected over the active and reference cells at 10 different concentrations (2-fold dilution series) from 25 to 0.05 μM using the multicycle modality. Each injection was performed with an association and a dissociation time of 90 and 180 s, respectively, and with a flow rate of 30 μL/min. To reduce false positives from detergent-sensitive, nonspecific aggregation-based binding, detergents (0.05% Tween20) were added to the running buffer in all experiments. The corrected sensorgrams were fitted simultaneously by kinetic analysis using the 1:1 Langmuir model of the BIAevaluation software to obtain equilibrium dissociation constants (KD) and kinetic dissociation (koff) and association (kon) constants, and the curve-fitting efficiency was evaluated by chi-square (χ²). The χ² value of 1j was calculated to be 0.650, indicating a good fit. SPR studies demonstrated a specific and strong interaction between PRMT9 and the compound, with an equilibrium dissociation constant (KD) value in the sub-micromolar range (KD = 188 nM; Figure 7) and a rather high in vitro residence time value (τR = 500 s)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "Series S Sensor Chip CM5",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "Full-length recombinant PRMT9 (2–845; N-terminal FLAG-tag, C-terminal His6-tag)",
+                "strategy": "Amine coupling",
+                "density_ru": "8.3",
+                "concentration_for_immobilization": "50 μg/mL"
+            },
+            "analyte": {
+                "description": "Compound 1j",
+                "concentration_range": "25 μM to 0.05 μM (2-fold dilution series)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS buffer (phosphate buffered saline, pH 7.5) supplemented with 0.05% Tween-20",
+                "pH": 7.5,
+                "assay_type": "Multi Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 90,
+                "dissociation_time_s": 180,
+                "regeneration_solution": "5 mM NaOH"
+            },
+            "data_analysis": {
+                "reference_description": "Reference cell (active and reference cells)",
+                "subtraction_method": "Double referenced",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation software"
+            }
+        }
+    }
+}

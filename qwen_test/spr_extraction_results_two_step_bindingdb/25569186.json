@@ -1,0 +1,197 @@
+{
+    "50312189": {
+        "reactant_set_id": 50312189,
+        "pmid": 25569186,
+        "protein": "Growth/differentiation factor 8",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](C)N)[C@@H](C)O)[C@@H](C)CC)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(C)C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 36.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant myostatin (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) Assay": "The binding dissociation constant K_D, the association rate constant k_on, and the dissociation rate constant k_off of peptides were determined by SPR using Biacore X (GE Healthcare). Recombinant myostatin (carrier-free, R&D Systems) was dissolved in 10 mM sodium acetate (pH 5.5) at a final concentration of 1 μg/mL and immobilized onto CM5 sensor chip activated by the amine coupling kit (GE Healthcare) according to the instruction. About 650 response units (RU) of myostatin were coupled to flow cell 2. Flow cell 1 was not treated at all and was served as a reference. Each peptide was diluted in HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20), which was also used as running buffer. A serial concentrations of peptides were injected at 25 °C and a flow rate of 20 μL/min. Association and dissociation were measured over 120 s; 1 M NaCl was used for regeneration. To determine each parameter, BIAevaluation software 4.1 was used. All sensorgrams were fitted to a 1:1 (Langmuir) binding model.",
+            "Figure 3 caption": "Figure 3. (A) CD spectra of peptide 2 in the presence of 0–20% TFE solution prepared in 20 mM sodium phosphate buffer (pH 7.4); peptide concentration, 5 μM. (B) Sensorgrams and their fitting curves of peptide 2 to surface plasmon resonance (SPR) assay to analyze the affinity with myostatin; peptide concentrations, 6.25, 12.5, 25, 50, and 100 nM from the bottom sensorgram. Serial concentrations of peptides in HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20) were injected over myostatin-immobilized CM5 sensor chip. (C) Kinetic parameters of interaction with myostatin in peptides 2, 7, and 8. The binding dissociation constant (K_D) and the rate constants of association (k_on) and dissociation (k_off) were determined with BIAevaluation software 3.0 from respective fitting curves based on sensorgrams.",
+            "Table in Figure 3C": "peptide 2 35.9 8.06×10^5 2.89×10^2 peptide 7 29.7 6.83×10^5 2.03×10^2 peptide 8 117 1.63×10^5 1.91×10^2",
+            "Results and Discussion": "Next, we performed surface plasmon resonance (SPR) assay to investigate the affinity of peptides 2, 7, and 8 to myostatin. Sensorgrams and their fitting curves of peptides were depicted in Figures 3B (peptide 2) and SI, Figure S4 (peptides 7 and 8), and the kinetic parameters [the binding dissociation constant (K_D) and the rate constants of association (k_on) and dissociation (k_off)] of interaction with myostatin in respective peptides are described in Figure 3C. Myostatin inhibitory peptides 2 and 7 showed potent affinities to myostatin with K_D values of 35.9 and 29.7 nM, respectively (Figure 3C). These values were at least 3-fold higher affinity than less effective peptide 8 lacking Trp residue at position 21 of the prodromain. These results correlate with the result of luciferase reporter assay shown in Figure 2, repeatedly suggesting that the Trp residue at position 21 plays an effective role in the direct binding of peptides 2 and 7 to myostatin for the significant inhibitory activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant myostatin",
+                "strategy": "Amine coupling",
+                "density_ru": "650",
+                "concentration_for_immobilization": "1 μg/mL"
+            },
+            "analyte": {
+                "description": "peptides 2, 7, and 8",
+                "concentration_range": "6.25, 12.5, 25, 50, and 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1, not treated and served as a reference",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation software 4.1"
+            }
+        }
+    },
+    "50312190": {
+        "reactant_set_id": 50312190,
+        "pmid": 25569186,
+        "protein": "Growth/differentiation factor 8",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](N)Cc1c[nH]c2ccccc12)[C@@H](C)O)[C@@H](C)CC)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(C)C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 30.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant myostatin (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) Assay": "The binding dissociation constant K_D, the association rate constant k_on, and the dissociation rate constant k_off of peptides were determined by SPR using Biacore X (GE Healthcare). Recombinant myostatin (carrier-free, R&D Systems) was dissolved in 10 mM sodium acetate (pH 5.5) at a final concentration of 1 μg/mL and immobilized onto CM5 sensor chip activated by the amine coupling kit (GE Healthcare) according to the instruction. About 650 response units (RU) of myostatin were coupled to flow cell 2. Flow cell 1 was not treated at all and was served as a reference. Each peptide was diluted in HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20), which was also used as running buffer. A serial concentrations of peptides were injected at 25 °C and a flow rate of 20 μL/min. Association and dissociation were measured over 120 s; 1 M NaCl was used for regeneration. To determine each parameter, BIAevaluation software 4.1 was used. All sensorgrams were fitted to a 1:1 (Langmuir) binding model.",
+            "Figure 3 caption": "Figure 3. (A) CD spectra of peptide 2 in the presence of 0–20% TFE solution prepared in 20 mM sodium phosphate buffer (pH 7.4); peptide concentration, 5 μM. (B) Sensorgrams and their fitting curves of peptide 2 to surface plasmon resonance (SPR) assay to analyze the affinity with myostatin; peptide concentrations, 6.25, 12.5, 25, 50, and 100 nM from the bottom sensorgram. Serial concentrations of peptides in HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20) were injected over myostatin-immobilized CM5 sensor chip. (C) Kinetic parameters of interaction with myostatin in peptides 2, 7, and 8. The binding dissociation constant (K_D) and the rate constants of association (k_on) and dissociation (k_off) were determined with BIAevaluation software 3.0 from respective fitting curves based on sensorgrams.",
+            "Table in Figure 3C": "peptide 2 35.9 8.06×10^5 2.89×10^2 peptide 7 29.7 6.83×10^5 2.03×10^2 peptide 8 117 1.63×10^5 1.91×10^2",
+            "Results and Discussion": "Next, we performed surface plasmon resonance (SPR) assay to investigate the affinity of peptides 2, 7, and 8 to myostatin. Sensorgrams and their fitting curves of peptides were depicted in Figures 3B (peptide 2) and SI, Figure S4 (peptides 7 and 8), and the kinetic parameters [the binding dissociation constant (K_D) and the rate constants of association (k_on) and dissociation (k_off)] of interaction with myostatin in respective peptides are described in Figure 3C. Myostatin inhibitory peptides 2 and 7 showed potent affinities to myostatin with K_D values of 35.9 and 29.7 nM, respectively (Figure 3C). These values were at least 3-fold higher affinity than less effective peptide 8 lacking Trp residue at position 21 of the prodromain. These results correlate with the result of luciferase reporter assay shown in Figure 2, repeatedly suggesting that the Trp residue at position 21 plays an effective role in the direct binding of peptides 2 and 7 to myostatin for the significant inhibitory activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant myostatin",
+                "strategy": "Amine coupling",
+                "density_ru": "650",
+                "concentration_for_immobilization": "1 μg/mL"
+            },
+            "analyte": {
+                "description": "peptides 2, 7, and 8",
+                "concentration_range": "6.25, 12.5, 25, 50, and 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1, not treated and served as a reference",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation software 4.1"
+            }
+        }
+    },
+    "50312191": {
+        "reactant_set_id": 50312191,
+        "pmid": 25569186,
+        "protein": "Growth/differentiation factor 8",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](C)NC(=O)[C@H](CCC(O)=O)NC(=O)[C@@H](NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](CCCNC(N)=N)NC(=O)[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H](N)CCCNC(N)=N)[C@@H](C)O)[C@@H](C)CC)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CO)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(C)C)C(N)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 117.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant myostatin (unknown origin) by surface plasmon resonance assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) Assay": "The binding dissociation constant K_D, the association rate constant k_on, and the dissociation rate constant k_off of peptides were determined by SPR using Biacore X (GE Healthcare). Recombinant myostatin (carrier-free, R&D Systems) was dissolved in 10 mM sodium acetate (pH 5.5) at a final concentration of 1 μg/mL and immobilized onto CM5 sensor chip activated by the amine coupling kit (GE Healthcare) according to the instruction. About 650 response units (RU) of myostatin were coupled to flow cell 2. Flow cell 1 was not treated at all and was served as a reference. Each peptide was diluted in HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20), which was also used as running buffer. A serial concentrations of peptides were injected at 25 °C and a flow rate of 20 μL/min. Association and dissociation were measured over 120 s; 1 M NaCl was used for regeneration. To determine each parameter, BIAevaluation software 4.1 was used. All sensorgrams were fitted to a 1:1 (Langmuir) binding model.",
+            "Figure 3 caption": "Figure 3. (A) CD spectra of peptide 2 in the presence of 0–20% TFE solution prepared in 20 mM sodium phosphate buffer (pH 7.4); peptide concentration, 5 μM. (B) Sensorgrams and their fitting curves of peptide 2 to surface plasmon resonance (SPR) assay to analyze the affinity with myostatin; peptide concentrations, 6.25, 12.5, 25, 50, and 100 nM from the bottom sensorgram. Serial concentrations of peptides in HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20) were injected over myostatin-immobilized CM5 sensor chip. (C) Kinetic parameters of interaction with myostatin in peptides 2, 7, and 8. The binding dissociation constant (K_D) and the rate constants of association (k_on) and dissociation (k_off) were determined with BIAevaluation software 3.0 from respective fitting curves based on sensorgrams.",
+            "Table in Figure 3C": "peptide 2 35.9 8.06×10^5 2.89×10^2 peptide 7 29.7 6.83×10^5 2.03×10^2 peptide 8 117 1.63×10^5 1.91×10^2",
+            "Results and Discussion": "Next, we performed surface plasmon resonance (SPR) assay to investigate the affinity of peptides 2, 7, and 8 to myostatin. Sensorgrams and their fitting curves of peptides were depicted in Figures 3B (peptide 2) and SI, Figure S4 (peptides 7 and 8), and the kinetic parameters [the binding dissociation constant (K_D) and the rate constants of association (k_on) and dissociation (k_off)] of interaction with myostatin in respective peptides are described in Figure 3C. Myostatin inhibitory peptides 2 and 7 showed potent affinities to myostatin with K_D values of 35.9 and 29.7 nM, respectively (Figure 3C). These values were at least 3-fold higher affinity than less effective peptide 8 lacking Trp residue at position 21 of the prodromain. These results correlate with the result of luciferase reporter assay shown in Figure 2, repeatedly suggesting that the Trp residue at position 21 plays an effective role in the direct binding of peptides 2 and 7 to myostatin for the significant inhibitory activity."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore X"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant myostatin",
+                "strategy": "Amine coupling",
+                "density_ru": "650",
+                "concentration_for_immobilization": "1 μg/mL"
+            },
+            "analyte": {
+                "description": "peptides 2, 7, and 8",
+                "concentration_range": "6.25, 12.5, 25, 50, and 100 nM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "HBS-P buffer (10 mM HEPES, pH 7.4, 300 mM NaCl, 0.005% (v/v) surfactant P20)",
+                "pH": 7.4,
+                "assay_type": "Single Cycle Kinetics",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 120,
+                "regeneration_solution": "1 M NaCl"
+            },
+            "data_analysis": {
+                "reference_description": "Flow cell 1, not treated and served as a reference",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "BIAevaluation software 4.1"
+            }
+        }
+    }
+}

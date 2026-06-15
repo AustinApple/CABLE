@@ -1,0 +1,67 @@
+{
+    "51580970": {
+        "reactant_set_id": 51580970,
+        "pmid": 38635563,
+        "protein": "ADP-sugar pyrophosphatase",
+        "ligand": {
+            "smiles": "CN1CCC(n2nc(-c3ccc(Oc4ccccc4)cc3)c3c(N)ncnc32)CC1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 250.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to N-terminal his6-tagged human recombinant NUDT5 (1 to 208 residues) expressed in Escherichia coli Rosetta (DE3) assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Affinity Determination": "Binding Affinity Determination. Surface plasmon resonance (SPR) experiments were performed using a Biacore S200 instrument at 25 °C. Samples were immobilized on a CMS chip using amine-coupling method according to the manufacturer’s instructions using a running buffer containing 50 mM HEPES, 150 mM NaCl, 2 mM MgCl2, and 0.05% Tween-20, pH 7.5. The binding affinity assay was run with 2% DMSO in the running buffer at a flow rate of 30 μL/min with a 60 s association and 200 s dissociation times. All of the assays were performed twice, and binding affinity was calculated using BIAevaluation software.",
+            "Figure 1C caption": "SPR sensorgram showing binding of 1 to NUDT5 (KD ≈ 200 nM).",
+            "Figure 3A caption": "SPR results for compound 9 indicating a KD value of approximately 250 nM for NUDT5. Data are from two independent experiments (n = 2).",
+            "Figure 4A caption": "SPR results for compound 9 indicating a KD value of approximately 400 nM for NUDT14. Data are from two independent experiments (n = 2)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Cytiva",
+                "model": "Biacore S200"
+            },
+            "sensor_chip": {
+                "type": "CMS",
+                "manufacturer": "Cytiva"
+            },
+            "immobilization": {
+                "ligand_name": "N-terminal his6-tagged human recombinant NUDT5 (1 to 208 residues)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Compound 1, Compound 9",
+                "concentration_range": null
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "50 mM HEPES, 150 mM NaCl, 2 mM MgCl2, 0.05% Tween-20, 2% DMSO, pH 7.5",
+                "pH": 7.5,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 30,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 60,
+                "dissociation_time_s": 200,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": null,
+                "software": "BIAevaluation"
+            }
+        }
+    }
+}

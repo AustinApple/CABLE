@@ -1,0 +1,61 @@
+{
+    "51502188": {
+        "reactant_set_id": 51502188,
+        "pmid": 35429911,
+        "protein": "Programmed cell death 1 ligand 1",
+        "ligand": {
+            "smiles": "Clc1ccc(N2N=C(CC2=O)C23CC4CC(CC(C4)C2)C3)c(Cl)c1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 177.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity towards His-tagged recombinant human PD-L1 measured by Isothermal Titration Calorimetry (ITC) assay",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Isothermal Titration Calorimetry (ITC)": "Isothermal Titration Calorimetry (ITC). ITC was performed by a CRO according to 2bind protocol (2bind molecular interactions, Regensburg, Germany). All samples were stored at −80 °C prior to experiments. To prepare samples, the stock solution of the test compound (20 mM in DMSO) was diluted to achieve the desired final concentration while maintaining the required buffer condition (PBS). A stock solution of the protein (20 μM) was prepared using the same buffer. The final ligand assay solution was filled into the titration syringe of the ITC device. The experiments were performed on a Malvern PEAQ-ITC device. Data were analyzed using the corresponding PEAQ-ITC Analysis Software.",
+            "Figure 10 caption": "Fig. 10. Results of the ITC experiments performed with compound 32. (A) The titration of raw data between differential power (DP, μcal/s) and time (min) after sequential injection of ligand (12.4 μM) into the protein solution (1.24 μM) was plotted. (B) The integrated heat after the correlation between enthalpy changes versus the molar ratios of compound 32 to protein (rhPD-L1 Fc Chimera) was plotted. Data were fitted using a one-site binding model where the solid lines represented the best-fit results.",
+            "Results - 2.3. Isothermal Titration Calorimetry (ITC) assay": "To complete this study and to support the MST results, the affinity of compound 32 for PD-L1 was evaluated by Isothermal Titration Calorimetry (ITC). We selected compound 32 (obtained in a large quantity) as an example of potent PD-L1 binder (according to the above MST data) to confirm the PD-L1 interaction with an independent orthogonal method. Every interaction between two molecules generates or absorbs heat, depending on the thermodynamic nature of the interaction. This heat change can be measured by ITC. From the raw heat pulses, binding isotherms are derived that deliver comprehensive informations of the affinity, stoichiometry, and thermodynamics of molecular interactions. The raw heat plot (Fig. 10A) shows titration peaks with an overall signal spread of 0.3 μcal/s. The enthalpy plot (Fig. 10B) indicates an interaction between compound 32 and PD-L1. The following binding parameters were obtained: a Kp (steady state affinity) = 177 ± 93 nM, N (reaction stoichiometry) = 0.97 ± 0.09 (indicating 1:1 interaction), ΔG (free energy of binding) = −0.922 kcal/mol (indicating exergonic reaction). These ITC data thus support and validate the MST data."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "rhPD-L1 Fc Chimera",
+                "location": "cell",
+                "concentration": "1.24",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "compound 32",
+                "location": "syringe",
+                "concentration": "12.4"
+            },
+            "assay_conditions": {
+                "buffer_composition": "PBS",
+                "pH": null,
+                "temperature_c": null,
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": null,
+                    "subsequent_volume": null,
+                    "duration": null,
+                    "spacing": null,
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

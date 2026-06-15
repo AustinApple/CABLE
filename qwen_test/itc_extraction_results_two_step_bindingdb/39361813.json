@@ -1,0 +1,61 @@
+{
+    "51609584": {
+        "reactant_set_id": 51609584,
+        "pmid": 39361813,
+        "protein": "Histone-arginine methyltransferase CARM1",
+        "ligand": {
+            "smiles": "Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCCNCc2cccc(Br)c2)[C@@H](O)[C@H]1O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 188.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to PRMT4 (140 to 480 residues) (unknown origin) assessed as dissociation constant by ITC method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "ITC Measurements": "Isothermal Titration Calorimetry. ITC measurements were performed at 25 °C by using a MicroCal PEAQ-ITC calorimeter. For titrations, purified PRMT4 (140–480) was diluted with 1× buffer (pH 8.0, 25 mM Tris 8.0, 100 mM NaCl) to a final concentration of 4 μM, and YD1130 was dissolved to 100 μM in the same buffer. YD1130 was titrated into the protein solution with 18 injections of 2 μL each. Injections were spaced 150 s with a reference power of 10 μcal/s. The titration curves were fitted to obtain the association constant (1/Ka), enthalpy of binding (ΔH), and stoichiometry of binding (N) using MicroCal PEAQ-ITC analysis software. All data were fitted by using the one-site binding model.",
+            "Figure 9c caption": "Representative ITC data of YD1130 bound to PRMT4 (140–480 aa). The experiment was performed in duplicate (n = 2).",
+            "Figure 9c data": "N = 1.10, Kd = 188 ± 41.7 nM, ΔH = -40.1 ± 1.66 Kcal/mol, ΔG = -41.7 Kcal/mol, -TΔS = -1.64 Kcal/mol"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal PEAQ-ITC"
+            },
+            "protein": {
+                "name": "PRMT4 (140–480)",
+                "location": "cell",
+                "concentration": "4",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "YD1130",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "25 mM Tris, 100 mM NaCl",
+                "pH": "8.0",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "150",
+                    "total_count": "18"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

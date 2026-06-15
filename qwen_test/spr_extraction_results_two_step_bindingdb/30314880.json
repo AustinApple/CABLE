@@ -1,0 +1,67 @@
+{
+    "51135759": {
+        "reactant_set_id": 51135759,
+        "pmid": 30314880,
+        "protein": "Receptor tyrosine-protein kinase erbB-2",
+        "ligand": {
+            "smiles": "CCCCCCCCCCCCCCCCCC(=O)N[C@@H](CCCNC(N)=N)C(=O)N[C@@H](CC(=O)N[C@@H](Cc1ccccc1)C(O)=O)c1cccc2ccccc12"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1160.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to HER2 extracellular domain (unknown origin) by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "SPR Analysis": "The binding affinity of lipid conjugate SA-5 to HER2 protein extracellular domain was examined by surface plasmon resonance analysis. HER2 protein was immobilized on a CM5 chip, and lipid conjugate SA-5 was used as analyte. Upon addition of SA-5, there was an increase in sensorgram response, suggesting that SA-5 binds to HER2 ECD (Fig. 4A). Addition of different concentrations of SA-5 showed concentration-dependent binding to HER2 -ECD. The kinetics of association and dissociation were calculated based on a 1:1 Langmuir interaction model and the Kd value was calculated by curve fitting. The Kd for SA-5: HER2 ECD was 1.16 μM. Similar experiments were conducted on a control peptide. The control peptide did not show any binding to HER2- ECD (Supporting Information). These results clearly indicate the specific binding of SA-5 to HER2 -ECD. A fluorescently labeled conjugate SA-5-6FAM also showed the binding ability to HER2 -ECD (Fig. 4B).",
+            "Figure 4 caption": "Fig. 4. SPR analysis of binding of conjugates to HER2 ECD. A) Concentration-dependent binding of conjugate SA-5 to HER2 protein was seen. Experiments were repeated twice, and a representative sensorgram is shown here. B) SPR sensorgrams for the binding kinetics of SA-5-6FAM with HER2 protein extracellular domain. Concentration-dependent binding of conjugate SA-5-6FAM to HER2 protein was seen. Experiments were repeated twice, and a representative sensorgram is shown here.",
+            "Figure 4A sensorgram data": "Figure 4A shows sensorgrams for SA-5 at concentrations of 0.5 μM, 1 μM, 5 μM, 10 μM, 25 μM, 50 μM, and 100 μM. The x-axis represents Time (Sec) from 0 to 600, and the y-axis represents Response units (RU) from 0 to 160. The curves show increasing response with higher concentrations, with the 100 μM curve reaching approximately 140 RU.",
+            "Figure 4B sensorgram data": "Figure 4B shows sensorgrams for SA-5-6FAM at concentrations of 0 μM, 5 μM, 10 μM, 25 μM, 50 μM, and 100 μM. The x-axis represents Time (Sec) from 0 to 600, and the y-axis represents Response units (RU) from 0 to 120. The curves show increasing response with higher concentrations, with the 100 μM curve reaching approximately 110 RU."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": null,
+                "model": null
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": null
+            },
+            "immobilization": {
+                "ligand_name": "HER2 protein extracellular domain",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "Lipid conjugate SA-5 and SA-5-6FAM",
+                "concentration_range": "0.5 μM - 100 μM (for SA-5); 0 μM - 100 μM (for SA-5-6FAM)"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": null,
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": null
+            }
+        }
+    }
+}

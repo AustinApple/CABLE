@@ -1,0 +1,66 @@
+{
+    "51598993": {
+        "reactant_set_id": 51598993,
+        "pmid": 38593344,
+        "protein": "Macrophage colony-stimulating factor 1 receptor",
+        "ligand": {
+            "smiles": "CC(C)(C)c1cc(NC(=O)Nc2ccc3c(c2)NC(=O)/C3=C\\c2cnc[nH]2)no1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 0.002,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human CSF-1R assessed as dissociation constant by SPR analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Surface Plasmon Resonance (SPR) Assay": "To investigate the binding affinity between C19 and recombinant human CSF-1R (rhCSF-1R), a SPR test was carried out using a Biacore T200 instrument (GE Healthcare, Chicago, Illinois). First, the protein CSF-1R was immobilized on a CM5 sensor chip (BR100012, GE Healthcare, Chicago, Illinois) using the EDC/NHS-mediated cross-linking reaction. Then, concentration gradients of C19 samples were prepared using running buffer (1.05 × PBS-P, 5% DMSO) and flowed through designated channels on the sensor chip. The parameters of SPR were set as follows: temperature, 25 °C; flow rate, 20 μL/min; contact time, 120 s; dissociation time, 300 s. Thereafter, the dissociation constant Kd was analyzed by using Biacore T200 Evaluation Software (GE, Boston, Massachusetts) supposing a 1:1 binding ratio.",
+            "Figure 3 caption": "Figure 3. C19 tightly binds to CSF-1R and strongly inhibits CSF-1R signaling pathway activation. (A) Direct binding affinity between rhCSF-1R protein and C19 was determined by SPR assay. (B, D) BMDMs were incubated with C19 (500 nM) or DMSO for 1 h. Subsequently, CSF-1R protein expression was analyzed by Western blotting under conditions where cell lysates were treated at varying temperatures or concentrations of chemical reagents (A.E.A.). (C, E) BMDMs were incubated with C19 (0, 4, 20, 100, 500, or 2500 nM) for 1 h. Thereafter, CSF-1R protein expression was determined by Western blotting under conditions where cell lysates were treated at 70 °C or the ratio of 16% chemical reagents (A.E.A.). (F) Molecular docking was used to examine the binding mode between C19 and CSF-1R. (G, H) BMDMs were treated with C19 for 24 h and subsequently treated for half an hour with M-CSF (100 ng/mL). The phosphorylation levels of CSF-1R, AKT, and mTORC1 were detected by Western blotting assay. Three independent in vitro assays are shown on the statistical graph, and the data are shown by means ± SEM. ##P < 0.01 vs control group; *P < 0.05, **P < 0.01 vs M-CSF (100 ng/mL) group.",
+            "Figure 3A": "ka (1/Ms)=8.406E+04 kd (1/s)=0.001569 Kd (M)=1.866E-08"
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "GE Healthcare",
+                "model": "Biacore T200"
+            },
+            "sensor_chip": {
+                "type": "CM5",
+                "manufacturer": "GE Healthcare"
+            },
+            "immobilization": {
+                "ligand_name": "recombinant human CSF-1R (rhCSF-1R)",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "C19",
+                "concentration_range": "not explicitly stated in text"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "1.05 × PBS-P, 5% DMSO",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": 20,
+                    "unit": "µL/min"
+                },
+                "temperature_c": 25,
+                "association_time_s": 120,
+                "dissociation_time_s": 300,
+                "regeneration_solution": null
+            },
+            "data_analysis": {
+                "reference_description": null,
+                "subtraction_method": null,
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "Biacore T200 Evaluation Software"
+            }
+        }
+    }
+}

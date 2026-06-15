@@ -1,0 +1,179 @@
+{
+    "51551355": {
+        "reactant_set_id": 51551355,
+        "pmid": 37449845,
+        "protein": "Protein-glutamine gamma-glutamyltransferase 2",
+        "ligand": {
+            "smiles": "CN(CCOCCC(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C)c1cc(C)nc(Nc2ccc(NC(=O)Cc3ccccc3)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 100000.0,
+            "relation": ">",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TG2 (unknown origin) assessed as dissociation constant at 30 degree C by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 40: Yakubov, B.; Matei, D. Small molecule inhibitors target the tissue transglutaminase and fibronectin interaction. PLoS One 2014, 9, No. e89285. Reference 41: Sima, L. E.; Yakubov, B.; Zhang, S.; Condello, S.; Grigorescu, A. A.; Nwani, N. G.; Chen, L.; Schiltz, G. E.; Arvanitis, C.; Zhang, Z. Y.; Matei, D. Small Molecules Target the Interaction between Tissue Transglutaminase and Fibronectin. Mol. Cancer Ther. 2019, 18, 1057–1068.",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). Sample Preparation. Protein dilutions in PBS with 1% DMSO were prepared from stock solutions of 108 mM TG2. The protein dilutions were initially equilibrated on ice for 5 min, then for 20 min at 30 °C. The solutions were filtered using a 0.22 μM Millipore centrifugal device just prior to insertion in the ITC cell. The solubility of the protein solutions was confirmed independently by DLS (data not shown), and the concentration of each solution (after filtration) was measured with a NanoDrop 2000 Instrument. ITC Experiments. All ITC experiments were performed on an Affinity Low Volume instrument (Waters/TA Instruments) equipped with a fixed 198 μL gold cell. In each experiment, 320 μL of protein solution was loaded into the ITC cell, and 200 μL of the corresponding compound was in the syringe. The data were acquired using ITCRun data acquisition software. The incremental ITC experiments consisted of multiple 2 μL injections at 50-350-second intervals with a stirring speed of 100 revolutions per minute (rpm). The Auto Equilibrate function allowed for the equilibration of the baseline to a peak-to-peak standard deviation of less than 12 nW. For each compound, separate control experiments were performed to evaluate the heat of dilution. The control experiments were set with identical parameters but consisted of fewer (6–10) injections. Data Analysis. Data are presented as means ± standard deviation (SD) with *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001. Statistical significance was determined by using a two-tailed Student’s t-test (Prism 8, GraphPad Software). P-values less than 0.05 were considered statistically significant. The number of biological replicates in each experiment is indicated by n in every figure caption.",
+            "Figure 6 caption": "Figure 6. Isothermal calorimetry (ITC) binding studies of compounds to TG2. (A) Calorimetric titrations of 100 μM MT4 into 2 μM TG2 at 30 °C; each peak corresponds to a single injection of 2 μL. Binding of MT4 to TG2 shows a K_D = 7.8 μM. The c value for this experiment is 0.26. (B) Calorimetric titrations of 200 μM 11 into 20 μM TG2 at 30 °C; each peak corresponds to a single injection of 2 μL. The binding of 11 to TG2 shows a K_D = 68.9 μM. The c value for this experiment is 0.29.",
+            "Results section": "MT4 and PROTAC Bind to TG2. To confirm the direct binding of our PROTAC with TG2 and evaluate the effect of modifying our inhibitor into a bifunctional degrader on affinity, we carried out binding studies using isothermal calorimetry (ITC). We first measured the affinity of our parental inhibitor, MT4, toward full-length TG2.40 Titration of MT4 into a solution of TG2 showed an equilibrium dissociation constant K_D = 7.8 μM (Figure 6A), which is in close agreement with the result we recently published for this compound (5.1 μM).41 We then tested the binding affinity of the two active PROTACs 7 and 11 to TG2. Compound 11, with a PEG5 linker, showed a K_D = 68.9 μM, which was a decrease of 8.8-fold relative to the parental compound (Figure 6B). Compound 7 did not show a significant dose-dependent saturation under these experimental conditions, indicating its K_D > 100 μM or a >12.8-fold decrease in affinity (Supplementary Figure S8)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Affinity Low Volume instrument (Waters/TA Instruments)"
+            },
+            "protein": {
+                "name": "TG2",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": "320"
+            },
+            "ligand": {
+                "name": "MT4",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "PBS with 1% DMSO",
+                "pH": null,
+                "temperature_c": "30",
+                "stirring_speed": "100",
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (heat of dilution evaluated with separate control experiments)",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "50-350",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51551356": {
+        "reactant_set_id": 51551356,
+        "pmid": 37449845,
+        "protein": "Protein-glutamine gamma-glutamyltransferase 2",
+        "ligand": {
+            "smiles": "CN(CCOCCOCCOCCOCCOCCC(=O)N[C@H](C(=O)N1C[C@H](O)C[C@H]1C(=O)NCc1ccc(cc1)-c1scnc1C)C(C)(C)C)c1cc(C)nc(Nc2ccc(NC(=O)Cc3ccccc3)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 68900.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TG2 (unknown origin) assessed as dissociation constant at 30 degree C by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 40: Yakubov, B.; Matei, D. Small molecule inhibitors target the tissue transglutaminase and fibronectin interaction. PLoS One 2014, 9, No. e89285. Reference 41: Sima, L. E.; Yakubov, B.; Zhang, S.; Condello, S.; Grigorescu, A. A.; Nwani, N. G.; Chen, L.; Schiltz, G. E.; Arvanitis, C.; Zhang, Z. Y.; Matei, D. Small Molecules Target the Interaction between Tissue Transglutaminase and Fibronectin. Mol. Cancer Ther. 2019, 18, 1057–1068.",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). Sample Preparation. Protein dilutions in PBS with 1% DMSO were prepared from stock solutions of 108 mM TG2. The protein dilutions were initially equilibrated on ice for 5 min, then for 20 min at 30 °C. The solutions were filtered using a 0.22 μM Millipore centrifugal device just prior to insertion in the ITC cell. The solubility of the protein solutions was confirmed independently by DLS (data not shown), and the concentration of each solution (after filtration) was measured with a NanoDrop 2000 Instrument. ITC Experiments. All ITC experiments were performed on an Affinity Low Volume instrument (Waters/TA Instruments) equipped with a fixed 198 μL gold cell. In each experiment, 320 μL of protein solution was loaded into the ITC cell, and 200 μL of the corresponding compound was in the syringe. The data were acquired using ITCRun data acquisition software. The incremental ITC experiments consisted of multiple 2 μL injections at 50-350-second intervals with a stirring speed of 100 revolutions per minute (rpm). The Auto Equilibrate function allowed for the equilibration of the baseline to a peak-to-peak standard deviation of less than 12 nW. For each compound, separate control experiments were performed to evaluate the heat of dilution. The control experiments were set with identical parameters but consisted of fewer (6–10) injections. Data Analysis. Data are presented as means ± standard deviation (SD) with *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001. Statistical significance was determined by using a two-tailed Student’s t-test (Prism 8, GraphPad Software). P-values less than 0.05 were considered statistically significant. The number of biological replicates in each experiment is indicated by n in every figure caption.",
+            "Figure 6 caption": "Figure 6. Isothermal calorimetry (ITC) binding studies of compounds to TG2. (A) Calorimetric titrations of 100 μM MT4 into 2 μM TG2 at 30 °C; each peak corresponds to a single injection of 2 μL. Binding of MT4 to TG2 shows a K_D = 7.8 μM. The c value for this experiment is 0.26. (B) Calorimetric titrations of 200 μM 11 into 20 μM TG2 at 30 °C; each peak corresponds to a single injection of 2 μL. The binding of 11 to TG2 shows a K_D = 68.9 μM. The c value for this experiment is 0.29.",
+            "Results section": "MT4 and PROTAC Bind to TG2. To confirm the direct binding of our PROTAC with TG2 and evaluate the effect of modifying our inhibitor into a bifunctional degrader on affinity, we carried out binding studies using isothermal calorimetry (ITC). We first measured the affinity of our parental inhibitor, MT4, toward full-length TG2.40 Titration of MT4 into a solution of TG2 showed an equilibrium dissociation constant K_D = 7.8 μM (Figure 6A), which is in close agreement with the result we recently published for this compound (5.1 μM).41 We then tested the binding affinity of the two active PROTACs 7 and 11 to TG2. Compound 11, with a PEG5 linker, showed a K_D = 68.9 μM, which was a decrease of 8.8-fold relative to the parental compound (Figure 6B). Compound 7 did not show a significant dose-dependent saturation under these experimental conditions, indicating its K_D > 100 μM or a >12.8-fold decrease in affinity (Supplementary Figure S8)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Affinity Low Volume instrument (Waters/TA Instruments)"
+            },
+            "protein": {
+                "name": "TG2",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": "320"
+            },
+            "ligand": {
+                "name": "MT4",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "PBS with 1% DMSO",
+                "pH": null,
+                "temperature_c": "30",
+                "stirring_speed": "100",
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (heat of dilution evaluated with separate control experiments)",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "50-350",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    },
+    "51551357": {
+        "reactant_set_id": 51551357,
+        "pmid": 37449845,
+        "protein": "Protein-glutamine gamma-glutamyltransferase 2",
+        "ligand": {
+            "smiles": "CN(C)c1cc(C)nc(Nc2ccc(NC(=O)Cc3ccccc3)cc2)n1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 7800.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to TG2 (unknown origin) assessed as dissociation constant at 30 degree C by isothermal titration calorimetry",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "Reference 40: Yakubov, B.; Matei, D. Small molecule inhibitors target the tissue transglutaminase and fibronectin interaction. PLoS One 2014, 9, No. e89285. Reference 41: Sima, L. E.; Yakubov, B.; Zhang, S.; Condello, S.; Grigorescu, A. A.; Nwani, N. G.; Chen, L.; Schiltz, G. E.; Arvanitis, C.; Zhang, Z. Y.; Matei, D. Small Molecules Target the Interaction between Tissue Transglutaminase and Fibronectin. Mol. Cancer Ther. 2019, 18, 1057–1068.",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal Titration Calorimetry (ITC). Sample Preparation. Protein dilutions in PBS with 1% DMSO were prepared from stock solutions of 108 mM TG2. The protein dilutions were initially equilibrated on ice for 5 min, then for 20 min at 30 °C. The solutions were filtered using a 0.22 μM Millipore centrifugal device just prior to insertion in the ITC cell. The solubility of the protein solutions was confirmed independently by DLS (data not shown), and the concentration of each solution (after filtration) was measured with a NanoDrop 2000 Instrument. ITC Experiments. All ITC experiments were performed on an Affinity Low Volume instrument (Waters/TA Instruments) equipped with a fixed 198 μL gold cell. In each experiment, 320 μL of protein solution was loaded into the ITC cell, and 200 μL of the corresponding compound was in the syringe. The data were acquired using ITCRun data acquisition software. The incremental ITC experiments consisted of multiple 2 μL injections at 50-350-second intervals with a stirring speed of 100 revolutions per minute (rpm). The Auto Equilibrate function allowed for the equilibration of the baseline to a peak-to-peak standard deviation of less than 12 nW. For each compound, separate control experiments were performed to evaluate the heat of dilution. The control experiments were set with identical parameters but consisted of fewer (6–10) injections. Data Analysis. Data are presented as means ± standard deviation (SD) with *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001. Statistical significance was determined by using a two-tailed Student’s t-test (Prism 8, GraphPad Software). P-values less than 0.05 were considered statistically significant. The number of biological replicates in each experiment is indicated by n in every figure caption.",
+            "Figure 6 caption": "Figure 6. Isothermal calorimetry (ITC) binding studies of compounds to TG2. (A) Calorimetric titrations of 100 μM MT4 into 2 μM TG2 at 30 °C; each peak corresponds to a single injection of 2 μL. Binding of MT4 to TG2 shows a K_D = 7.8 μM. The c value for this experiment is 0.26. (B) Calorimetric titrations of 200 μM 11 into 20 μM TG2 at 30 °C; each peak corresponds to a single injection of 2 μL. The binding of 11 to TG2 shows a K_D = 68.9 μM. The c value for this experiment is 0.29.",
+            "Results section": "MT4 and PROTAC Bind to TG2. To confirm the direct binding of our PROTAC with TG2 and evaluate the effect of modifying our inhibitor into a bifunctional degrader on affinity, we carried out binding studies using isothermal calorimetry (ITC). We first measured the affinity of our parental inhibitor, MT4, toward full-length TG2.40 Titration of MT4 into a solution of TG2 showed an equilibrium dissociation constant K_D = 7.8 μM (Figure 6A), which is in close agreement with the result we recently published for this compound (5.1 μM).41 We then tested the binding affinity of the two active PROTACs 7 and 11 to TG2. Compound 11, with a PEG5 linker, showed a K_D = 68.9 μM, which was a decrease of 8.8-fold relative to the parental compound (Figure 6B). Compound 7 did not show a significant dose-dependent saturation under these experimental conditions, indicating its K_D > 100 μM or a >12.8-fold decrease in affinity (Supplementary Figure S8)."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "Affinity Low Volume instrument (Waters/TA Instruments)"
+            },
+            "protein": {
+                "name": "TG2",
+                "location": "cell",
+                "concentration": "2",
+                "solution_volume": "320"
+            },
+            "ligand": {
+                "name": "MT4",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "PBS with 1% DMSO",
+                "pH": null,
+                "temperature_c": "30",
+                "stirring_speed": "100",
+                "reference_cell_content": null,
+                "control_method": "Titration of ligand into buffer (heat of dilution evaluated with separate control experiments)",
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "50-350",
+                    "total_count": null
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "50990879": {
+        "reactant_set_id": 50990879,
+        "pmid": 29990434,
+        "protein": "Nuclear receptor ROR-gamma",
+        "ligand": {
+            "smiles": "CCS(=O)(=O)c1ccc(CC(=O)Nc2cnc(O[C@@H](C)c3ccccc3)c(Cl)c2)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 8.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to RORgammat (unknown origin) by ITC",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "ITC measurements were performed on a MicroCal iTC200 instrument (Malvern Panalytical) at 25 °C. The RORγt LBD (100 μM) was dialyzed against 20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.01% CHAPS, pH 7.4, and loaded into the sample cell. The ligand (100 μM) was dissolved in the same buffer and loaded into the syringe. The reference cell was filled with buffer. The titration consisted of 20 injections of 2 μL each, spaced 180 s apart. The data were analyzed using Origin 7.0 software (MicroCal) with a one-site binding model. The reported Kd values are the mean of at least two independent experiments."
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "RORγt LBD",
+                "location": "cell",
+                "concentration": "100",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": null,
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 100 mM NaCl, 1 mM DTT, 0.01% CHAPS",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": null,
+                "reference_cell_content": "buffer",
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "180",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}

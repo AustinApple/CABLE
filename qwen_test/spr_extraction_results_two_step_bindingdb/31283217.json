@@ -1,0 +1,262 @@
+{
+    "51261228": {
+        "reactant_set_id": 51261228,
+        "pmid": 31283217,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CC(=O)NCCCC[C@H](NC1=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](N)CC(C)C)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 2.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human MD2 assessed as dissociation constant up to 200 uM by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Kinetics of PIP2 and cPIP2 Using SPR": "SPR experiments were performed using the ProteOn XPR36 instrument (Bio-Rad Laboratories, Inc.) with a ProteOn GLM sensor chip and Biacore T200 instrument (Hyclone Laboratories, Inc.) with a Biacore C1 sensor chip. PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO) was used as running buffer and 10 mM HCl or PBST 0.1% for regeneration. hTLR4, hTLR2, and hMD2 (R&D systems) were immobilized by amine coupling onto the surfaces of a GLM sensor chip (Bio-Rad Laboratories, Inc.) or C1 sensor chip (Hyclone Laboratories, Inc.). Varying concentrations of the PIP2 and cPIP2 molecules (0, 12.5, 25, 50, 100, and 200 μM) were injected into the chips to evaluate their binding to the immobilized proteins; running buffer was injected into the empty channel as a reference. The experiments were performed in duplicate using freshly prepared reagents. ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0) were used to analyze the data. The binding curves were processed for determining the starting injection alignment and baseline. The reference-subtracted sensorgram was fitted globally to the curves describing a homogeneous 1:1 Langmuir bimolecular reaction model. Data from the protein surfaces were grouped to fit the kinetic rate constants (ka and kd). The binding constant, KD, was calculated from the equation KD = kd/ka.",
+            "Figure 5 caption": "Figure 5. Imaging and biophysical analysis of the PIP2-TLR4 complex and structural evaluation of PIP2. (A) The expression level of TLR4 (red staining) and the localization of FITC-PIP2 (green staining) were evaluated by immunofluorescence and detected using confocal microscopy. Hoechst staining (blue color) corresponds to the nuclei (scale bar = 20 μm). The confocal images show co-localization of the FITC-PIP2 and TLR4. (B) The binding affinities of PIP2 and cPIP2 were evaluated using SPR. The hTLR4 and hMD2 were immobilized to the sensor chip, and the peptides were used as analyte. The sensorgram suggests that PIP2 and cPIP2 bind to TLR4 ECD and MD2 in a concentration-dependent manner. (C) Molecular dynamics simulation (MDS) was performed for PIP2. The N-terminus of PIP2 retains its helical structure at the end of",
+            "Results - Structural Investigations of PIP2 and Plausible TLR4 Inhibitory Mechanism": "immobilized on the SPR sensor chip. PIP2 (analyte) was added to the sensor chip at different concentrations between 12.5 and 200 μM. The calculated association (ka) and dissociation (kd) values were recorded as 3.45 × 10⁴ M⁻¹ S⁻¹ and 1.13 × 10⁻² S⁻¹ for PIP2-TLR4 and 1.27 M⁻¹ S⁻¹ and 4.92 × 10⁻⁴ S⁻¹ for PIP2-MD2, respectively. Nonetheless, PIP2 exhibited a dose-dependent binding to MD2 at lower concentration (<50 μM) as compared to TLR4 (Figure 5B). MD2 contains a single cavity to accommodate the binding ligand, and PIP2 has a flexible nature; this flexibility and structural freedom could be a possible factor that hinders the binding of PIP2 with MD2 at higher concentration. Similar conditions were used for the PIP2 and TLR2 binding kinetics. Nonetheless, we observed a concentration-dependent interaction pattern between PIP2 and TLR2, as presented in Supporting Figure 1. PIP2 was used as an analyte at concentrations of 12.5, 25, and 50 μM, which corresponded to a narrow window of response units (RU), 8–9. This was further supported by the overlapping RU values when 100 and 200 μM PIP2 concentrations were used. These and the nonsignificant in vitro results, discussed above, could partly explain that the interaction of PIP2 with TLR2 is nonspecific.",
+            "Results - Docking Simulation and Interfacial Analysis of PIP2-Bound TLR4 Complexes": "To evaluate that cPIP2 could have durable TLR4-inhibitory effect, the binding affinity of cPIP2 to TLR4 and MD2 was examined through SPR. The calculated Ka and Kd constants for the cPIP2–TLR4 interaction were recorded as 7.32 × 10⁴ M⁻¹ S⁻¹ and 1.4 × 10⁻³ S⁻¹, respectively. However, for cPIP2-MD2, these values were 1.04 × 10⁵ M⁻¹ S⁻¹ and 2.39 × 10⁻³ S⁻¹, respectively. These data suggest that cPIP2 exhibits stronger association and reduced dissociation behaviors with TLR4 and MD2 as compared to PIP2 (Figure 5B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLM",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "hTLR4, hTLR2, hMD2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PIP2 and cPIP2",
+                "concentration_range": "0, 12.5, 25, 50, 100, and 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO)",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM HCl or PBST 0.1%"
+            },
+            "data_analysis": {
+                "reference_description": "Empty channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0)"
+            }
+        }
+    },
+    "51261230": {
+        "reactant_set_id": 51261230,
+        "pmid": 31283217,
+        "protein": "Lymphocyte antigen 96",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](N)CC(C)C)C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 4.9,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human MD2 assessed as dissociation constant up to 200 uM by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Kinetics of PIP2 and cPIP2 Using SPR": "SPR experiments were performed using the ProteOn XPR36 instrument (Bio-Rad Laboratories, Inc.) with a ProteOn GLM sensor chip and Biacore T200 instrument (Hyclone Laboratories, Inc.) with a Biacore C1 sensor chip. PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO) was used as running buffer and 10 mM HCl or PBST 0.1% for regeneration. hTLR4, hTLR2, and hMD2 (R&D systems) were immobilized by amine coupling onto the surfaces of a GLM sensor chip (Bio-Rad Laboratories, Inc.) or C1 sensor chip (Hyclone Laboratories, Inc.). Varying concentrations of the PIP2 and cPIP2 molecules (0, 12.5, 25, 50, 100, and 200 μM) were injected into the chips to evaluate their binding to the immobilized proteins; running buffer was injected into the empty channel as a reference. The experiments were performed in duplicate using freshly prepared reagents. ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0) were used to analyze the data. The binding curves were processed for determining the starting injection alignment and baseline. The reference-subtracted sensorgram was fitted globally to the curves describing a homogeneous 1:1 Langmuir bimolecular reaction model. Data from the protein surfaces were grouped to fit the kinetic rate constants (ka and kd). The binding constant, KD, was calculated from the equation KD = kd/ka.",
+            "Figure 5 caption": "Figure 5. Imaging and biophysical analysis of the PIP2-TLR4 complex and structural evaluation of PIP2. (A) The expression level of TLR4 (red staining) and the localization of FITC-PIP2 (green staining) were evaluated by immunofluorescence and detected using confocal microscopy. Hoechst staining (blue color) corresponds to the nuclei (scale bar = 20 μm). The confocal images show co-localization of the FITC-PIP2 and TLR4. (B) The binding affinities of PIP2 and cPIP2 were evaluated using SPR. The hTLR4 and hMD2 were immobilized to the sensor chip, and the peptides were used as analyte. The sensorgram suggests that PIP2 and cPIP2 bind to TLR4 ECD and MD2 in a concentration-dependent manner. (C) Molecular dynamics simulation (MDS) was performed for PIP2. The N-terminus of PIP2 retains its helical structure at the end of",
+            "Results - Structural Investigations of PIP2 and Plausible TLR4 Inhibitory Mechanism": "immobilized on the SPR sensor chip. PIP2 (analyte) was added to the sensor chip at different concentrations between 12.5 and 200 μM. The calculated association (ka) and dissociation (kd) values were recorded as 3.45 × 10⁴ M⁻¹ S⁻¹ and 1.13 × 10⁻² S⁻¹ for PIP2-TLR4 and 1.27 M⁻¹ S⁻¹ and 4.92 × 10⁻⁴ S⁻¹ for PIP2-MD2, respectively. Nonetheless, PIP2 exhibited a dose-dependent binding to MD2 at lower concentration (<50 μM) as compared to TLR4 (Figure 5B). MD2 contains a single cavity to accommodate the binding ligand, and PIP2 has a flexible nature; this flexibility and structural freedom could be a possible factor that hinders the binding of PIP2 with MD2 at higher concentration. Similar conditions were used for the PIP2 and TLR2 binding kinetics. Nonetheless, we observed a concentration-dependent interaction pattern between PIP2 and TLR2, as presented in Supporting Figure 1. PIP2 was used as an analyte at concentrations of 12.5, 25, and 50 μM, which corresponded to a narrow window of response units (RU), 8–9. This was further supported by the overlapping RU values when 100 and 200 μM PIP2 concentrations were used. These and the nonsignificant in vitro results, discussed above, could partly explain that the interaction of PIP2 with TLR2 is nonspecific.",
+            "Results - Docking Simulation and Interfacial Analysis of PIP2-Bound TLR4 Complexes": "To evaluate that cPIP2 could have durable TLR4-inhibitory effect, the binding affinity of cPIP2 to TLR4 and MD2 was examined through SPR. The calculated Ka and Kd constants for the cPIP2–TLR4 interaction were recorded as 7.32 × 10⁴ M⁻¹ S⁻¹ and 1.4 × 10⁻³ S⁻¹, respectively. However, for cPIP2-MD2, these values were 1.04 × 10⁵ M⁻¹ S⁻¹ and 2.39 × 10⁻³ S⁻¹, respectively. These data suggest that cPIP2 exhibits stronger association and reduced dissociation behaviors with TLR4 and MD2 as compared to PIP2 (Figure 5B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLM",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "hTLR4, hTLR2, hMD2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PIP2 and cPIP2",
+                "concentration_range": "0, 12.5, 25, 50, 100, and 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO)",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM HCl or PBST 0.1%"
+            },
+            "data_analysis": {
+                "reference_description": "Empty channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0)"
+            }
+        }
+    },
+    "51261227": {
+        "reactant_set_id": 51261227,
+        "pmid": 31283217,
+        "protein": "Toll-like receptor 4",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CC(=O)NCCCC[C@H](NC1=O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(O)=O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](N)CC(C)C)C(C)C"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.4,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human TLR4 assessed as dissociation constant up to 200 uM by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Kinetics of PIP2 and cPIP2 Using SPR": "SPR experiments were performed using the ProteOn XPR36 instrument (Bio-Rad Laboratories, Inc.) with a ProteOn GLM sensor chip and Biacore T200 instrument (HyClone Laboratories, Inc.) with a Biacore C1 sensor chip. PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO) was used as running buffer and 10 mM HCl or PBST 0.1% for regeneration. hTLR4, hTLR2, and hMD2 (R&D systems) were immobilized by amine coupling onto the surfaces of a GLM sensor chip (Bio-Rad Laboratories, Inc.) or C1 sensor chip (HyClone Laboratories, Inc.). Varying concentrations of the PIP2 and cPIP2 molecules (0, 12.5, 25, 50, 100, and 200 μM) were injected into the chips to evaluate their binding to the immobilized proteins; running buffer was injected into the empty channel as a reference. The experiments were performed in duplicate using freshly prepared reagents. ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0) were used to analyze the data. The binding curves were processed for determining the starting injection alignment and baseline. The reference-subtracted sensorgram was fitted globally to the curves describing a homogeneous 1:1 Langmuir bimolecular reaction model. Data from the protein surfaces were grouped to fit the kinetic rate constants (ka and kd). The binding constant, KD, was calculated from the equation KD = kd/ka.",
+            "Figure 5 caption": "Figure 5. Imaging and biophysical analysis of the PIP2-TLR4 complex and structural evaluation of PIP2. (A) The expression level of TLR4 (red staining) and the localization of FITC-PIP2 (green staining) were evaluated by immunofluorescence and detected using confocal microscopy. Hoechst staining (blue color) corresponds to the nuclei (scale bar = 20 μm). The confocal images show co-localization of the FITC-PIP2 and TLR4. (B) The binding affinities of PIP2 and cPIP2 were evaluated using SPR. The hTLR4 and hMD2 were immobilized to the sensor chip, and the peptides were used as analyte. The sensorgram suggests that PIP2 and cPIP2 bind to TLR4 ECD and MD2 in a concentration-dependent manner. (C) Molecular dynamics simulation (MDS) was performed for PIP2. The N-terminus of PIP2 retains its helical structure at the end of",
+            "Results - Structural Investigations of PIP2 and Plausible TLR4 Inhibitory Mechanism": "immobilized on the SPR sensor chip. PIP2 (analyte) was added to the sensor chip at different concentrations between 12.5 and 200 μM. The calculated association (ka) and dissociation (kd) values were recorded as 3.45 × 10⁴ M⁻¹ S⁻¹ and 1.13 × 10⁻² S⁻¹ for PIP2-TLR4 and 1.27 M⁻¹ S⁻¹ and 4.92 × 10⁻⁴ S⁻¹ for PIP2-MD2, respectively. Nonetheless, PIP2 exhibited a dose-dependent binding to MD2 at lower concentration (<50 μM) as compared to TLR4 (Figure 5B). MD2 contains a single cavity to accommodate the binding ligand, and PIP2 has a flexible nature; this flexibility and structural freedom could be a possible factor that hinders the binding of PIP2 with MD2 at higher concentration. Similar conditions were used for the PIP2 and TLR2 binding kinetics. Nonetheless, we observed a concentration-dependent interaction pattern between PIP2 and TLR2, as presented in Supporting Figure 1. PIP2 was used as an analyte at concentrations of 12.5, 25, and 50 μM, which corresponded to a narrow window of response units (RU), 8–9. This was further supported by the overlapping RU values when 100 and 200 μM PIP2 concentrations were used. These and the nonsignificant in vitro results, discussed above, could partly explain that the interaction of PIP2 with TLR2 is nonspecific.",
+            "Results - Structural Dynamics of PIP2-Bound TLR4": "To evaluate that cPIP2 could have durable TLR4-inhibitory effect, the binding affinity of cPIP2 to TLR4 and MD2 was examined through SPR. The calculated Ka and Kd constants for the cPIP2–TLR4 interaction were recorded as 7.32 × 10⁴ M⁻¹ S⁻¹ and 1.4 × 10⁻³ S⁻¹, respectively. However, for cPIP2-MD2, these values were 1.04 × 10⁵ M⁻¹ S⁻¹ and 2.39 × 10⁻³ S⁻¹, respectively. These data suggest that cPIP2 exhibits stronger association and reduced dissociation behaviors with TLR4 and MD2 as compared to PIP2 (Figure 5B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLM",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "hTLR4, hTLR2, and hMD2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PIP2 and cPIP2",
+                "concentration_range": "0, 12.5, 25, 50, 100, and 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO)",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM HCl or PBST 0.1%"
+            },
+            "data_analysis": {
+                "reference_description": "Empty channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0)"
+            }
+        }
+    },
+    "51261229": {
+        "reactant_set_id": 51261229,
+        "pmid": 31283217,
+        "protein": "Toll-like receptor 4",
+        "ligand": {
+            "smiles": "CC[C@H](C)[C@H](NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@H](Cc1ccccc1)NC(=O)[C@@H](NC(=O)CNC(=O)[C@@H](N)CC(C)C)C(C)C)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(O)=O"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 1.1,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity to recombinant human TLR4 assessed as dissociation constant up to 200 uM by surface plasmon resonance analysis",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods - Binding Kinetics of PIP2 and cPIP2 Using SPR": "SPR experiments were performed using the ProteOn XPR36 instrument (Bio-Rad Laboratories, Inc.) with a ProteOn GLM sensor chip and Biacore T200 instrument (HyClone Laboratories, Inc.) with a Biacore C1 sensor chip. PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO) was used as running buffer and 10 mM HCl or PBST 0.1% for regeneration. hTLR4, hTLR2, and hMD2 (R&D systems) were immobilized by amine coupling onto the surfaces of a GLM sensor chip (Bio-Rad Laboratories, Inc.) or C1 sensor chip (HyClone Laboratories, Inc.). Varying concentrations of the PIP2 and cPIP2 molecules (0, 12.5, 25, 50, 100, and 200 μM) were injected into the chips to evaluate their binding to the immobilized proteins; running buffer was injected into the empty channel as a reference. The experiments were performed in duplicate using freshly prepared reagents. ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0) were used to analyze the data. The binding curves were processed for determining the starting injection alignment and baseline. The reference-subtracted sensorgram was fitted globally to the curves describing a homogeneous 1:1 Langmuir bimolecular reaction model. Data from the protein surfaces were grouped to fit the kinetic rate constants (ka and kd). The binding constant, KD, was calculated from the equation KD = kd/ka.",
+            "Figure 5 caption": "Figure 5. Imaging and biophysical analysis of the PIP2-TLR4 complex and structural evaluation of PIP2. (A) The expression level of TLR4 (red staining) and the localization of FITC-PIP2 (green staining) were evaluated by immunofluorescence and detected using confocal microscopy. Hoechst staining (blue color) corresponds to the nuclei (scale bar = 20 μm). The confocal images show co-localization of the FITC-PIP2 and TLR4. (B) The binding affinities of PIP2 and cPIP2 were evaluated using SPR. The hTLR4 and hMD2 were immobilized to the sensor chip, and the peptides were used as analyte. The sensorgram suggests that PIP2 and cPIP2 bind to TLR4 ECD and MD2 in a concentration-dependent manner. (C) Molecular dynamics simulation (MDS) was performed for PIP2. The N-terminus of PIP2 retains its helical structure at the end of",
+            "Results - Structural Investigations of PIP2 and Plausible TLR4 Inhibitory Mechanism": "immobilized on the SPR sensor chip. PIP2 (analyte) was added to the sensor chip at different concentrations between 12.5 and 200 μM. The calculated association (ka) and dissociation (kd) values were recorded as 3.45 × 10⁴ M⁻¹ S⁻¹ and 1.13 × 10⁻² S⁻¹ for PIP2-TLR4 and 1.27 M⁻¹ S⁻¹ and 4.92 × 10⁻⁴ S⁻¹ for PIP2-MD2, respectively. Nonetheless, PIP2 exhibited a dose-dependent binding to MD2 at lower concentration (<50 μM) as compared to TLR4 (Figure 5B). MD2 contains a single cavity to accommodate the binding ligand, and PIP2 has a flexible nature; this flexibility and structural freedom could be a possible factor that hinders the binding of PIP2 with MD2 at higher concentration. Similar conditions were used for the PIP2 and TLR2 binding kinetics. Nonetheless, we observed a concentration-dependent interaction pattern between PIP2 and TLR2, as presented in Supporting Figure 1. PIP2 was used as an analyte at concentrations of 12.5, 25, and 50 μM, which corresponded to a narrow window of response units (RU), 8–9. This was further supported by the overlapping RU values when 100 and 200 μM PIP2 concentrations were used. These and the nonsignificant in vitro results, discussed above, could partly explain that the interaction of PIP2 with TLR2 is nonspecific.",
+            "Results - Structural Dynamics of PIP2-Bound TLR4": "To evaluate that cPIP2 could have durable TLR4-inhibitory effect, the binding affinity of cPIP2 to TLR4 and MD2 was examined through SPR. The calculated Ka and Kd constants for the cPIP2–TLR4 interaction were recorded as 7.32 × 10⁴ M⁻¹ S⁻¹ and 1.4 × 10⁻³ S⁻¹, respectively. However, for cPIP2-MD2, these values were 1.04 × 10⁵ M⁻¹ S⁻¹ and 2.39 × 10⁻³ S⁻¹, respectively. These data suggest that cPIP2 exhibits stronger association and reduced dissociation behaviors with TLR4 and MD2 as compared to PIP2 (Figure 5B)."
+        },
+        "structured_description": {
+            "instrument": {
+                "manufacturer": "Bio-Rad Laboratories, Inc.",
+                "model": "ProteOn XPR36"
+            },
+            "sensor_chip": {
+                "type": "GLM",
+                "manufacturer": "Bio-Rad Laboratories, Inc."
+            },
+            "immobilization": {
+                "ligand_name": "hTLR4, hTLR2, and hMD2",
+                "strategy": "Amine coupling",
+                "density_ru": null,
+                "concentration_for_immobilization": null
+            },
+            "analyte": {
+                "description": "PIP2 and cPIP2",
+                "concentration_range": "0, 12.5, 25, 50, 100, and 200 μM"
+            },
+            "assay_conditions": {
+                "running_buffer_composition": "PBS supplemented with 0.1% Tween 20 (PBST containing 2% DMSO)",
+                "pH": null,
+                "assay_type": "Unknown",
+                "assay_flow_rate": {
+                    "value": null,
+                    "unit": null
+                },
+                "temperature_c": null,
+                "association_time_s": null,
+                "dissociation_time_s": null,
+                "regeneration_solution": "10 mM HCl or PBST 0.1%"
+            },
+            "data_analysis": {
+                "reference_description": "Empty channel",
+                "subtraction_method": "Reference subtracted",
+                "fitting_model": "1:1 Langmuir binding model",
+                "software": "ProteOn manager software (version 2.0) and Biacore T200 evaluation software (version 3.0)"
+            }
+        }
+    }
+}

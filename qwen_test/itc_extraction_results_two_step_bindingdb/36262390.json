@@ -1,0 +1,61 @@
+{
+    "51465856": {
+        "reactant_set_id": 51465856,
+        "pmid": 36262390,
+        "protein": "Bromodomain-containing protein 4",
+        "ligand": {
+            "smiles": "Cc1nnc2[C@H](CC(=O)OC(C)(C)C)N=C(c3c(C)c(C)sc3-n12)c1ccc(Cl)cc1"
+        },
+        "affinity_data": {
+            "type": "Kd",
+            "value": 27.0,
+            "relation": "=",
+            "unit": "nM"
+        },
+        "DESCRIPTION": "Binding affinity towards BRD4-BD1 (unknown origin) measured by isothermal titration calorimetry (ITC) method",
+        "search_path": [
+            "main"
+        ],
+        "supplementary_source": [],
+        "references_previous": "none",
+        "original_paragraph": {
+            "Materials and Methods": "Isothermal titration calorimetry (ITC) experiments were performed on a MicroCal iTC200 instrument (Malvern Panalytical) at 25 °C. BRD4-BD1 (10 μM) was loaded into the sample cell, and the ligand (iBRD4-BD1 or (+)-JQ1) was loaded into the syringe (100 μM). The ligand was injected in 20 aliquots of 2 μL each, with a 120 s spacing between injections. The stirring speed was set to 750 rpm. Data were analyzed using Origin 7.0 software (Malvern Panalytical) with a one-site binding model. The buffer used was 20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20, pH 7.4. All experiments were performed in triplicate. The binding affinity (Kd), enthalpy (ΔH), entropy (ΔS), and stoichiometry (n) were calculated from the binding isotherm.",
+            "Figure 2 caption": "Figure 2. Role of BD1 in BRD4 degradation and biophysical characterization of iBRD4-BD1. (A) Competition of pan-BET degrader, MZ1, with pan-BD1 or pan-BD2 inhibitors, iBET-BD1/iBET-BD2. (B) Trisubstituted imidazoles with BET-bromodomain selectivity for BRD4-BD1. (C) Commercial Alphascreen with BET-bromodomains from reaction biology and summary of thermodynamic parameters from BRD4-BD1 isothermal titration calorimetry (ITC) assays. See Figures S2 and S3 for source data, reported as mean values of duplicate and triplicate experiments, respectively. (D) Isothermal dose–response CETSA demonstrating target engagement of BRD4 in MM.1S cells after 1 h of treatment.",
+            "Table 2C": "BRD4-BD1 ITC Kd (nM) 45.6 ± 6.8 ΔG (kcal/mol) -9.9 ± 0.09 ΔH (kcal/mol) -6.3 ± 0.13 -TΔS (kcal/mol) -3.7 ± 0.06 n 1.0 ± 0.04"
+        },
+        "structured_description": {
+            "instrument": {
+                "model": "MicroCal iTC200"
+            },
+            "protein": {
+                "name": "BRD4-BD1",
+                "location": "cell",
+                "concentration": "10",
+                "solution_volume": null
+            },
+            "ligand": {
+                "name": "iBRD4-BD1 or (+)-JQ1",
+                "location": "syringe",
+                "concentration": "100"
+            },
+            "assay_conditions": {
+                "buffer_composition": "20 mM HEPES, 150 mM NaCl, 1 mM DTT, 0.01% Tween-20",
+                "pH": "7.4",
+                "temperature_c": "25",
+                "stirring_speed": "750",
+                "reference_cell_content": null,
+                "control_method": null,
+                "injection_parameters": {
+                    "first_volume": "2",
+                    "subsequent_volume": "2",
+                    "duration": null,
+                    "spacing": "120",
+                    "total_count": "20"
+                }
+            },
+            "data_analysis": {
+                "binding_model": "one-site"
+            }
+        }
+    }
+}
